@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<template id="__bundler_thumbnail" data-bg-color="#1c1212">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#1c1212"></rect><text x="100" y="118" font-family="Georgia,serif" font-size="72" font-weight="700" fill="#E73131" text-anchor="middle">AJ</text></svg>
+</template>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Barlow:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #FFFBF3; color: #2D2D2D; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: #E73131; }
+    input, textarea { font-family: 'Barlow', sans-serif; }
+    input::placeholder, textarea::placeholder { color: rgba(45,45,45,0.35); }
+    @media (max-width: 700px) {
+      [data-mq="section-h2"] { font-size: 32px !important; }
+      [data-mq="nav-links"] { display: none !important; }
+      [data-mq="nav-burger"] { display: flex !important; }
+    }
+    [data-mq="nav-mobile-menu"] { display: flex; }
+  </style>
+</helmet>
+
+<div style="background:#FFFBF3;font-family:'Barlow',sans-serif;font-size:18px;line-height:1.6;">
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FFFBF3;border-bottom:1px solid rgba(45,45,45,0.08);padding:16px 0;">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;max-width:1600px;margin:0 auto;padding:0 clamp(24px,5vw,80px);">
+    <a href="home.dc.html"><img src="assets/wordmark-black.png" alt="Ariba Jahan" style="height:26px;width:auto;object-fit:contain;"></a>
+    <ul data-mq="nav-links" style="display:flex;align-items:center;gap:clamp(16px,3vw,36px);list-style:none;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;flex-wrap:wrap;white-space:nowrap;">
+      <li style="white-space:nowrap;"><a href="speaking.dc.html" style="color:#E73131;white-space:nowrap;">Speaking</a></li>
+      <li style="white-space:nowrap;"><a href="work-with-me.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Work With Me</a></li>
+      <li style="white-space:nowrap;"><a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Unmissables</a></li>
+      <li style="white-space:nowrap;"><a href="reading-room.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Reading Room</a></li>
+      <li style="white-space:nowrap;"><a href="about.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">About</a></li>
+      <li style="white-space:nowrap;"><a href="#inquiry" style="background:#E73131;color:#FFFBF3;padding:8px 22px;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;display:inline-block;transition:background .15s;white-space:nowrap;" style-hover="background:#2D2D2D;color:#FFFBF3;">Contact</a></li>
+    </ul>
+    <div data-mq="nav-burger" onClick="{{ toggleMobileNav }}" style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;">
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+    </div>
+  </div>
+  <div data-mq="nav-mobile-menu" style="{{ mobileNavStyle }}">
+    <a href="speaking.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Speaking</a>
+    <a href="work-with-me.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Work With Me</a>
+    <a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Unmissables</a>
+    <a href="reading-room.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Reading Room</a>
+    <a href="about.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">About</a>
+    <a href="#inquiry" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;padding:14px 0;">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="min-height:100vh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#1c1212;">
+  <div style="position:absolute;inset:0;z-index:1;"><image-slot id="speaking-hero-photo" shape="rect" placeholder="Wide speaking / stage photo" src="uploads/54919346180_4cbc9b23fc_b-6f7fbf39-sm.jpg"></image-slot></div>
+  <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(100deg, rgba(20,12,12,0.85) 0%, rgba(20,12,12,0.55) 30%, rgba(20,12,12,0.05) 62%), linear-gradient(to bottom, rgba(20,12,12,0.05) 0%, rgba(20,12,12,0.25) 45%, rgba(20,12,12,0.9) 100%);pointer-events:none;"></div>
+  <div style="position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;padding:210px clamp(24px,5vw,80px) 80px;pointer-events:none;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,251,243,0.6);margin-bottom:18px;">Speaking</div>
+    <div style="font-family: 'Big Shoulders Display',sans-serif; font-size: clamp(34px,4.6vw,68px); font-weight: 900; color: #FFFBF3; line-height: 0.95; letter-spacing: -0.02em; max-width: 800px; margin-bottom: 36px">The future isn't inevitable. <br><b><strong class="nim-text-bold" style="white-space: pre-wrap;">It reflects what we question, what we build, what we choose to protect and what we’re willing to take responsibility for</strong></b>.</div>
+    <a href="#inquiry" style="display:inline-block;background:#E73131;color:#FFFBF3;padding:16px 30px;font-size:15px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;width:fit-content;pointer-events:auto;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);" style-hover="transform:translateY(-4px);box-shadow:0 12px 20px -8px rgba(231,49,49,0.6);" style-active="transform:translateY(-1px);box-shadow:0 6px 10px -6px rgba(231,49,49,0.6);">Bring Ariba to Your Event →</a>
+  </div>
+</section>
+
+<!-- SPEAKING THEMES -->
+<section id="themes" style="background:#FFFBF3;padding:120px clamp(24px,5vw,80px) 0;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="max-width:720px;margin-bottom:64px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:18px;">Current Speaking Themes</div>
+      <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1;color:#2D2D2D;margin-bottom:20px;">What I Speak About</div>
+      <div style="font-size:clamp(20px,1.8vw,26px);line-height:1.4;color:#2D2D2D;margin-bottom:20px;"><p class="nim-paragraph"><b style="font-size: clamp(20px, 1.8vw, 26px);"><strong class="nim-text-bold" style="white-space: pre-wrap;">What happens when technology changes not only what we can build, but how people think, behave, work, and decide?</strong></b></p></div>
+      <div style="font-size:17px;line-height:1.62;color:rgba(45,45,45,0.65);">My speaking focuses on the relationship between technology, human behavior, and the things we build. I’m interested in how AI and other shifts in technology reshape customer expectations, experiences, judgment, and the way people move through the world — and what that means for the products, services, and organizations being created in response. For more than fifteen years, I've spoken at companies, universities, and conferences, bringing together research, practical experience, and emerging ideas to help people make sense of a rapidly changing world.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid rgba(45,45,45,0.12);">
+      <div style="position:relative;min-height:300px;overflow:hidden;border-bottom:1px solid rgba(45,45,45,0.12);">
+        <div style="position:absolute;inset:0;z-index:0;"><image-slot id="theme-photo-1" shape="rect" placeholder="Background image for this theme" src="assets/theme-bg-1-nebula-xs.jpg"></image-slot></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg, rgba(8,8,12,0.88) 0%, rgba(8,8,12,0.62) 55%, rgba(8,8,12,0.22) 100%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;height:100%;padding:44px 44px;">
+          <div style="max-width:760px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:clamp(26px,2.8vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.02;color:#FFFBF3;margin-bottom:10px;">Cognitive Endurance</div>
+            <p style="font-size:16px;font-style:italic;line-height:1.5;color:rgba(255,251,243,0.82);margin-bottom:14px;">How do we preserve human judgment in the age of AI?</p>
+            <p style="font-size:16px;line-height:1.6;color:rgba(255,251,243,0.72);"><span style="white-space: pre-wrap;">As AI becomes more capable of generating ideas, summarizing information, and making recommendations, the role of human thinking doesn’t disappear, but it does change. This talk explores Cognitive Endurance, my framework for strengthening discernment, creativity, critical thinking, and independent judgment in a world where more and more cognitive work can be outsourced.</span></p>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;min-height:300px;overflow:hidden;border-bottom:1px solid rgba(45,45,45,0.12);">
+        <div style="position:absolute;inset:0;z-index:0;"><image-slot id="theme-photo-2" shape="rect" placeholder="Background image for this theme" src="assets/theme-bg-2-dunes-xs.jpg"></image-slot></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg, rgba(8,8,12,0.88) 0%, rgba(8,8,12,0.62) 55%, rgba(8,8,12,0.22) 100%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;height:100%;padding:44px 44px;">
+          <div style="max-width:760px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:clamp(26px,2.8vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.02;color:#FFFBF3;margin-bottom:10px;">Leading with Momentum Through Uncertainty</div>
+            <p style="font-size:16px;font-style:italic;line-height:1.5;color:rgba(255,251,243,0.82);margin-bottom:14px;"><b><strong class="nim-text-bold" style="white-space: pre-wrap;">How do leaders create momentum when the path isn’t clear?</strong></b></p>
+            <p style="font-size:16px;line-height:1.6;color:rgba(255,251,243,0.72);"><span style="white-space: pre-wrap;">When technology is moving fast and the answer isn’t obvious yet, teams need more than urgency. They need shared language, room to experiment, and a way to move forward without pretending to have certainty they don’t. This talk explores how to create that kind of environment while working with AI in ways that build trust instead of eroding it.</span></p>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;min-height:300px;overflow:hidden;border-bottom:1px solid rgba(45,45,45,0.12);">
+        <div style="position:absolute;inset:0;z-index:0;"><image-slot id="theme-photo-3" shape="rect" placeholder="Background image for this theme" src="assets/theme-bg-3-bark-xs.jpg"></image-slot></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg, rgba(8,8,12,0.88) 0%, rgba(8,8,12,0.62) 55%, rgba(8,8,12,0.22) 100%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;height:100%;padding:44px 44px;">
+          <div style="max-width:760px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:clamp(26px,2.8vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.02;color:#FFFBF3;margin-bottom:10px;">BRAND UTILITY AS A MOAT</div>
+            <p style="font-size:16px;font-style:italic;line-height:1.5;color:rgba(255,251,243,0.82);margin-bottom:14px;"><b><strong class="nim-text-bold" style="white-space: pre-wrap;">What earns an organization a lasting place in people’s lives?</strong></b></p>
+            <p style="font-size:16px;line-height:1.6;color:rgba(255,251,243,0.72);">The strongest brands are no longer defined solely by awareness or affinity. They're defined by the value they create. This talk explores why usefulness has become one of the most defensible competitive advantages and how organizations can rethink customer relationships, products, services, and experiences through that lens.</p>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;min-height:300px;overflow:hidden;">
+        <div style="position:absolute;inset:0;z-index:0;"><image-slot id="theme-photo-4" shape="rect" placeholder="Background image for this theme" src="assets/theme-bg-4-coral-xs.jpg"></image-slot></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg, rgba(8,8,12,0.88) 0%, rgba(8,8,12,0.62) 55%, rgba(8,8,12,0.22) 100%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;height:100%;padding:44px 44px;">
+          <div style="max-width:760px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:clamp(26px,2.8vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.02;color:#FFFBF3;margin-bottom:10px;">Experience Design at the Edge of Expectation</div>
+            <p style="font-size:16px;font-style:italic;line-height:1.5;color:rgba(255,251,243,0.82);margin-bottom:14px;"><b><strong class="nim-text-bold" style="white-space: pre-wrap;">How is AI reshaping what people expect from products and experiences?</strong></b></p>
+            <p style="font-size:16px;line-height:1.6;color:rgba(255,251,243,0.72);"><span style="white-space: pre-wrap;">AI is changing more than what products can do. It’s changing what an experience even is. As interfaces become more generative, personalized, and adaptive, expectations around usefulness, trust, and quality are shifting too — especially in a world where infinite content and AI slop make good experience design matter even more. This talk explores what that means for the people building now.</span></p>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative;min-height:300px;overflow:hidden;border-top:1px solid rgba(45,45,45,0.12);">
+        <div style="position:absolute;inset:0;z-index:0;"><image-slot id="theme-photo-5" shape="rect" placeholder="Background image for this theme" src="assets/theme-bg-5-moss-xs.jpg"></image-slot></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg, rgba(8,8,12,0.88) 0%, rgba(8,8,12,0.62) 55%, rgba(8,8,12,0.22) 100%);pointer-events:none;"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;height:100%;padding:44px 44px;">
+          <div style="max-width:760px;">
+            <div style="font-family:'Big Shoulders Display',sans-serif;font-size:clamp(26px,2.8vw,40px);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1.02;color:#FFFBF3;margin-bottom:10px;">Ethical &amp; Responsible AI</div>
+            <p style="font-size:16px;font-style:italic;line-height:1.5;color:rgba(255,251,243,0.82);margin-bottom:14px;">Who is accountable when AI gets it wrong?</p>
+            <p style="font-size:16px;line-height:1.6;color:rgba(255,251,243,0.72);">As organizations rush to adopt AI, the hardest questions aren't technical. They're about accountability, consent, and who bears the cost when systems fail. This talk looks at what it actually takes to build and deploy AI responsibly: the guardrails, the governance, and the judgment calls no framework can automate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:#FFFBF3;padding:120px 0 120px;overflow:hidden;">
+  <div style="max-width:1400px;margin:0 auto;padding:0 clamp(24px,5vw,80px);">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px;">
+      <div>
+        <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:16px;">TESTIMONIALS</div>
+        <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;color:#2D2D2D;">What People Say</div>
+      </div>
+      <div style="display:flex;gap:10px;">
+        <button onclick="{{ scrollPrev }}" style="width:44px;height:44px;border:1px solid rgba(45,45,45,0.25);border-radius:50%;background:transparent;color:#2D2D2D;font-size:16px;cursor:pointer;transition:border-color .15s;" style-hover="border-color:#2D2D2D;" style-active="border-color:#2D2D2D;transform:scale(0.92);">←</button>
+        <button onclick="{{ scrollNext }}" style="width:44px;height:44px;border:1px solid rgba(45,45,45,0.25);border-radius:50%;background:transparent;color:#2D2D2D;font-size:16px;cursor:pointer;transition:border-color .15s;" style-hover="border-color:#2D2D2D;" style-active="border-color:#2D2D2D;transform:scale(0.92);">→</button>
+      </div>
+    </div>
+  </div>
+  <div style="position:relative;max-width:1400px;margin:0 auto;padding:0 clamp(24px,5vw,80px);">
+    <div id="speaking-testimonial-carousel" style="display:flex;gap:24px;overflow-x:scroll;scroll-snap-type:x mandatory;padding:0 0 12px;scrollbar-width:none;">
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"In 2025 we held a Leading Design AI Summit in New York to bring global design leaders together for a conversation on the future of design in a rapidly changing, AI-driven world. Ariba played a vital role - she facilitated big conversations, moderated opposing opinions, and held space for the emotions of these transformational times. She did such a fantastic job we invited her back to our London conference."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Rebecca Groves</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Curator, Leading Design</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"Ariba was a standout speaker, combining warmth, clarity, and confidence. Her delivery made complex topics easier to understand, while her engaging style held the audience's attention. Her presence at our event was a great choice - she shared valuable insights and created a dynamic, interactive atmosphere."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Mira Myllylä</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Director of UX Design, Reaktor and CXSphere</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"Ariba is doing some of the most vital work in design today, and excels at talking about it in an accessible, inspiring way."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">David Dylan Thomas</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Author, "Design for Cognitive Bias"</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"Ariba brought both pragmatic advice on action steps businesses could take today AND a philosophical lens on how to think about AI and other transformative technologies in the long run. She was quick-witted, sharp, and insightful without losing a warm, welcoming presence and tone. I'd recommend her for any speaking engagement."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Kyle Hagge</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Chief of Staff, Morning Brew</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"She's brilliant, curious, thoughtful, and honest: the traits of an engaging, impactful speaker. Ariba truly cares about understanding her audience and asks the right questions to deliver exactly what they need. She doesn't shy away from tough topics, and brings herself and her story into every message, which makes her presentations so resonant."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Danielle Barnes</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">CEO, Women Talk Design</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"Ariba's insights into AI were truly enlightening. She eloquently addressed the misconception that AI is an overly complex field - her ability to humanize AI experiences made the topic accessible and relatable. Her message was clear: we cannot afford to sit on the sidelines while innovation unfolds."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Michelle Green</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">VP of Insights &amp; Intelligence, Paramount+</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"First of all, I was completely floored by Ariba's talk; so powerful, and so on point. Ariba's talk was enlightening, powerful, and much needed - I deeply appreciate her posing thought-provoking questions and providing CTAs for us to become better, inclusive designers."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Nikhila N</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Product Designer, HubSpot</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"I really appreciated the way you shared your ideas and methods with us, but also encouraged us to share as well. It really made this feel like the talk was a safe space and helped me learn what I should specifically be looking for in the next team that I work with."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Aska M</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Brand Designer</div></div>
+      </div>
+      <div data-stcard="" style="scroll-snap-align:start;flex:0 0 min(420px,80vw);background:#2D2D2D;padding:36px 32px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-10px;left:16px;font-family:'Big Shoulders Display',sans-serif;font-size:100px;font-weight:900;color:rgba(255,251,243,.1);line-height:1;">"</div>
+        <p style="position:relative;font-size:17px;line-height:1.5;color:rgba(255,251,243,0.88);">"Ariba Jahan is already a celebrated speaker, and it was a privilege to share the stage with her during our panel on Motherhood &amp; Creativity through AIGA NY. She brought a combination of honesty and professionalism that made the conversation come alive. Ariba's perspective on achievement - shaped by her experiences as a creative person, a daughter of immigrants, and a mother - was so important to hear. Anyone who has the chance to hear her speak or work alongside her is in for a treat."</p>
+        <div style="margin-top:16px;"><div style="font-size:12px;font-weight:700;color:#FFFBF3;">Carrie Ingoglia</div><div style="font-size:11px;color:rgba(255,251,243,0.55);">Creative Director</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<section id="logos" style="background:#2D2D2D;padding:120px clamp(24px,5vw,80px) 120px;border-top:1px solid rgba(255,251,243,0.08);">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:14px;">Trusted By</div>
+    <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1;color:#FFFBF3;margin-bottom:32px;max-width:800px;">SPOKEN AT 200+ GATHERINGS AT CONFERENCES, COMPANIES, AND UNIVERSITIES</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:44px 32px;align-items:center;">
+        <img src="assets/logo-google.png" alt="Google" style="height:64px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-un.png" alt="United Nations" style="height:83px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-tiktok.png" alt="TikTok" style="height:76px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-womenwhocode.png" alt="Women Who Code" style="height:71px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-adweekny.png" alt="Advertising Week New York" style="height:60px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-snap.png" alt="Snap Inc." style="height:49px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-marketingbrew.png" alt="Marketing Brew" style="height:57px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-etsy.png" alt="Etsy" style="height:60px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-columbia.png" alt="Columbia University" style="height:71px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-nftnyc.png" alt="NFT NYC" style="height:49px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-aigany.png" alt="AIGA NY" style="height:53px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ixda.png" alt="IxDA" style="height:83px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-hubspot.png" alt="HubSpot" style="height:45px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ally.png" alt="Ally" style="height:49px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-fq.png" alt="The Female Quotient" style="height:64px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-radicalresearch.png" alt="Radical Research Summit" style="height:64px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-anomaly.png" alt="Anomaly" style="height:45px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-voxmedia.png" alt="Vox Media" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-womeninnovation.png" alt="Women in Innovation" style="height:69px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-designcontent.png" alt="Design + Content" style="height:45px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-aigapro.png" alt="AIGA" style="height:76px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-adcolor.png" alt="AdColor" style="height:57px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ogilvy.png" alt="Ogilvy" style="height:60px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-onbe.png" alt="Onbe" style="height:49px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-paramount.png" alt="Paramount" style="height:71px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-designops.png" alt="DesignOps Summit" style="height:57px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-boardofinnovation.png" alt="Board of Innovation" style="height:71px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ama.png" alt="American Marketing Association" style="height:64px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-chief.png" alt="Chief" style="height:53px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-alltechishuman.png" alt="All Tech Is Human" style="height:69px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-uxsouthafrica.png" alt="UX South Africa" style="height:76px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-valence.png" alt="Valence" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-svb.png" alt="Silicon Valley Bank" style="height:64px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-confab.png" alt="Confab" style="height:49px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-asiansinadvertising.png" alt="Asians in Advertising" style="height:57px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-fanduel.png" alt="FanDuel" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ndclondon.png" alt="NDC London" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-newschool.png" alt="The New School" style="height:69px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+      </div>
+    <div style="display:flex;justify-content:center;margin-top:56px;">
+      <a href="#inquiry" style="display:inline-block;background:#E73131;color:#FFFBF3;padding:16px 30px;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);" style-hover="transform:translateY(-4px);box-shadow:0 12px 20px -8px rgba(231,49,49,0.6);" style-active="transform:translateY(-1px);box-shadow:0 6px 10px -6px rgba(231,49,49,0.6);">Bring Ariba to Your Event →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY OF ENGAGEMENTS -->
+<section id="gallery" style="background:#FFFBF3;padding:120px clamp(24px,5vw,80px);">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="max-width:760px;margin-bottom:56px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:18px;">Selected Speaking Engagements</div>
+      <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1;color:#2D2D2D;margin-bottom:20px;">Where I've Spoken</div>
+      <p style="font-size:clamp(20px,1.8vw,26px);line-height:1.4;color:#2D2D2D;margin-bottom:20px;">I've had the privilege of speaking at more than 200 conferences, leadership events, executive offsites, universities, and workshops, including the United Nations General Assembly, Google, TikTok, Paramount, and Vox Media.</p>
+      <ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:0;">
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Keynotes</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.35);">·</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Executive Offsites</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.35);">·</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Workshops</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.35);">·</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Fireside Conversations</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.35);">·</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Panel Discussions</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.35);">·</li>
+        <li style="font-size:13px;font-weight:700;color:rgba(45,45,45,0.65);">Podcast Interviews</li>
+      </ul>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,260px);gap:3px;">
+      <div style="grid-column:span 2;grid-row:span 2;min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-1" shape="rect" placeholder="Speaking photo" src="uploads/IMG_0075-sm.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-2" shape="rect" placeholder="Speaking photo" src="uploads/marketing-brew-summit-2025-compressed.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-3" shape="rect" placeholder="Speaking photo" src="uploads/_DSC8464.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-4" shape="rect" placeholder="Speaking photo" src="uploads/tfqces2020-compressed.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-5" shape="rect" placeholder="Speaking photo" src="uploads/img-1773-compressed.jpg"></image-slot></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSE -->
+<section id="close" style="background:#E73131;padding:120px clamp(24px,5vw,80px);">
+  <div style="max-width:1000px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:56px;">
+      <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;color:#FFFBF3;margin-bottom:16px;">Bring Ariba to Your Event</div>
+      <p style="font-size:19px;line-height:1.6;color:rgba(255,251,243,0.85);max-width:520px;margin:0 auto;"><span style="white-space: pre-wrap;">If you’re planning an event and think this would resonate with your audience, let’s talk.</span></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(255,251,243,0.2);">
+      <a href="mailto:ariba@aribajahan.com?subject=Speaker%20Request" style="padding:36px 20px 32px;background:#E73131;border-top:3px solid #2D2D2D;display:flex;flex-direction:column;gap:10px;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);position:relative;z-index:0;" style-hover="transform:translateY(-6px);box-shadow:0 16px 26px -10px rgba(0,0,0,0.35);z-index:1;" style-active="transform:translateY(-2px);box-shadow:0 8px 14px -8px rgba(0,0,0,0.35);z-index:1;">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:16px;font-weight:800;color:#2D2D2D;">01</span>
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:19px;font-weight:900;text-transform:uppercase;color:#FFFBF3;">Speaking</span>
+        <span style="font-size:15px;font-weight:700;color:#FFFBF3;">Speaker inquiry →</span>
+      </a>
+      <a href="work-with-me.dc.html" style="padding:36px 20px 32px;background:#E73131;border-top:3px solid #2D2D2D;display:flex;flex-direction:column;gap:10px;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);position:relative;z-index:0;" style-hover="transform:translateY(-6px);box-shadow:0 16px 26px -10px rgba(0,0,0,0.35);z-index:1;" style-active="transform:translateY(-2px);box-shadow:0 8px 14px -8px rgba(0,0,0,0.35);z-index:1;">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:16px;font-weight:800;color:#2D2D2D;">02</span>
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:19px;font-weight:900;text-transform:uppercase;color:#FFFBF3;">Work With Me</span>
+        <span style="font-size:15px;font-weight:700;color:#FFFBF3;">Sprints &amp; strategy sessions →</span>
+      </a>
+      <a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style="padding:36px 20px 32px;background:#E73131;border-top:3px solid #2D2D2D;display:flex;flex-direction:column;gap:10px;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);position:relative;z-index:0;" style-hover="transform:translateY(-6px);box-shadow:0 16px 26px -10px rgba(0,0,0,0.35);z-index:1;" style-active="transform:translateY(-2px);box-shadow:0 8px 14px -8px rgba(0,0,0,0.35);z-index:1;">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:16px;font-weight:800;color:#2D2D2D;">03</span>
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:19px;font-weight:900;text-transform:uppercase;color:#FFFBF3;">Unmissables</span>
+        <span style="font-size:15px;font-weight:700;color:#FFFBF3;">Read &amp; subscribe →</span>
+      </a>
+      <a href="mailto:ariba@aribajahan.com?subject=General%20Inquiry" style="padding:36px 20px 32px;background:#E73131;border-top:3px solid #2D2D2D;display:flex;flex-direction:column;gap:10px;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);position:relative;z-index:0;" style-hover="transform:translateY(-6px);box-shadow:0 16px 26px -10px rgba(0,0,0,0.35);z-index:1;" style-active="transform:translateY(-2px);box-shadow:0 8px 14px -8px rgba(0,0,0,0.35);z-index:1;">
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:16px;font-weight:800;color:#2D2D2D;">04</span>
+        <span style="font-family:'Big Shoulders Display',sans-serif;font-size:19px;font-weight:900;text-transform:uppercase;color:#FFFBF3;">Everything Else</span>
+        <span style="font-size:15px;font-weight:700;color:#FFFBF3;">Get in touch →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#2D2D2D;padding:44px clamp(24px,5vw,80px);">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div style="max-width:480px;">
+      <img src="assets/wordmark-white.png" alt="Ariba Jahan" style="height:16px;width:auto;object-fit:contain;">
+      <div style="font-size:11px;font-weight:500;color:rgba(255,251,243,0.5);margin-top:6px;">Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son, and built by working with Claude Code, Claude Design, Gemini, and ChatGPT.</div>
+    </div>
+    <div style="display:flex;gap:24px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,251,243,0.28);flex-wrap:wrap;white-space:nowrap;">
+      <a href="https://www.linkedin.com/in/aribajahan/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">LinkedIn</a><a href="https://www.instagram.com/ariba.jahan/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Instagram</a><a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Substack</a><a href="https://www.youtube.com/@unmissableswithariba" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">YouTube</a><a href="https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Spotify</a>
+    </div>
+    <div style="font-size:11px;color:rgba(255,251,243,0.32);width:100%;margin-top:4px;">© 2026 Ariba Jahan. All rights reserved.</div>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { showAllTestimonials: false, mobileNavOpen: false };
+  toggleMobileNav = () => this.setState(s => ({ mobileNavOpen: !s.mobileNavOpen }));
+  scrollTestimonials = (dir) => {
+    const el = document.getElementById('speaking-testimonial-carousel');
+    if (!el) return;
+    const card = el.querySelector('[data-stcard]');
+    const w = card ? card.getBoundingClientRect().width + 24 : 440;
+    el.scrollBy({ left: dir * w, behavior: 'smooth' });
+  };
+  renderVals() {
+    return {
+      scrollPrev: () => this.scrollTestimonials(-1),
+      scrollNext: () => this.scrollTestimonials(1),
+      toggleMobileNav: this.toggleMobileNav,
+      mobileNavStyle: `flex-direction:column;padding:${this.state.mobileNavOpen ? '8px' : '0'} clamp(24px,5vw,80px);max-height:${this.state.mobileNavOpen ? '400px' : '0'};overflow:hidden;transition:max-height .25s ease,padding .25s ease;`,
+    };
+  }
+}
+</script>
+</body>
+</html>

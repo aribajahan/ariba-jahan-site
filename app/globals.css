@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #FFFBF3;
+  --charcoal: #2D2D2D;
+  --tennis: #8EF942;
+  --cherish: #E73131;
+  --femme-pink: #F5A8D5;
+  --tangerine: #FF6D24;
+  --highlighter: #F3FF00;
+  --outerspace: #0F0FF4;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-charcoal: var(--charcoal);
+  --color-tennis: var(--tennis);
+  --color-cherish: var(--cherish);
+  --color-femme-pink: var(--femme-pink);
+  --color-tangerine: var(--tangerine);
+  --color-highlighter: var(--highlighter);
+  --color-outerspace: var(--outerspace);
+  --font-display: var(--font-big-shoulders), sans-serif;
+  --font-body: var(--font-barlow), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-family: var(--font-body);
+}
+
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@keyframes logoScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Home page Community section photo strip (list is duplicated once in app/data/home.ts
+   so this loops seamlessly, same pattern as logoScroll). */
+@keyframes communityScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
