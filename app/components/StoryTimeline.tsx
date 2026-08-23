@@ -36,7 +36,7 @@ function PhotoPair({
   return (
     <div
       ref={setRef}
-      className={`relative w-full max-w-[420px] max-[1024px]:max-w-[340px] max-[700px]:max-w-none will-change-transform ${
+      className={`relative w-full max-w-[420px] max-[1024px]:max-w-[340px] max-[700px]:max-w-none will-change-transform max-[700px]:order-1 ${
         chapter.align === "photo-left"
           ? "justify-self-end mr-6"
           : "justify-self-start ml-6"
@@ -91,7 +91,7 @@ function PhotoPair({
 function ChapterText({ chapter, align }: { chapter: StoryChapter; align: "left" | "right" }) {
   return (
     <div
-      className={`max-w-[460px] max-[1024px]:max-w-[380px] max-[700px]:max-w-none max-[700px]:mx-0 max-[700px]:text-left ${
+      className={`max-w-[460px] max-[1024px]:max-w-[380px] max-[700px]:max-w-none max-[700px]:mx-0 max-[700px]:text-left max-[700px]:order-2 ${
         align === "right"
           ? "justify-self-end mr-6 text-right max-[700px]:justify-self-stretch"
           : "justify-self-start ml-6 max-[700px]:justify-self-stretch"
