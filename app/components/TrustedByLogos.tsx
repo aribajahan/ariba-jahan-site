@@ -1,0 +1,41 @@
+import Image from "next/image";
+import { speakingLogos } from "../data/speaking";
+
+export default function TrustedByLogos() {
+  return (
+    <section
+      id="logos"
+      className="bg-charcoal pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] border-t border-cream/[0.08]"
+    >
+      <div className="max-w-[1400px] mx-auto">
+        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[14px]">
+          Trusted By
+        </div>
+        <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-cream mb-8 max-w-[800px]">
+          Spoken at 200+ Gatherings at Conferences, Companies, and Universities
+        </h2>
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] max-[700px]:[grid-template-columns:repeat(2,1fr)] gap-11 gap-x-8 items-center">
+          {speakingLogos.map((logo) => (
+            <Image
+              key={logo.alt}
+              src={logo.src}
+              alt={logo.alt}
+              width={200}
+              height={logo.heightPx}
+              style={{ height: logo.heightPx, width: "auto", maxWidth: "100%" }}
+              className="object-contain opacity-[0.92]"
+            />
+          ))}
+        </div>
+        <div className="flex justify-center mt-14">
+          <a
+            href="#close"
+            className="inline-block bg-cherish text-cream px-[30px] py-4 text-xs font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
+          >
+            Bring Ariba to Your Event →
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
