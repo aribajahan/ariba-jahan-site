@@ -25,26 +25,26 @@ export default function AboutHero() {
         </div>
       </div>
 
-      {/* Mobile (<=700px): the reference has no mobile treatment for this hero,
-          and the wide 2400x1000 source photo has no crop that both keeps the
-          subject in frame and leaves room for the headline in an overlay at
-          mobile's tall/narrow aspect. Stacking text above a shorter photo
-          panel avoids that conflict instead of fighting it with a scrim. */}
-      <div className="min-[701px]:hidden">
-        <div className="bg-cream px-6 pt-[130px] pb-8">
+      {/* Mobile (<=700px): the reference has no mobile treatment for this hero.
+          A full-bleed overlay either hid the subject or overlapped her face
+          with the headline, so instead this mirrors the desktop's side-by-side
+          composition (text left, photo right) at a compact, scaled-down size
+          rather than a tall full-width photo. */}
+      <div className="min-[701px]:hidden bg-cream flex items-start gap-4 px-6 pt-[130px] pb-8">
+        <div className="flex-1 min-w-0">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[14px]">
             {aboutHero.eyebrow}
           </div>
-          <div className="font-display text-[38px] font-black text-charcoal leading-[0.98] tracking-[-0.02em]">
+          <div className="font-display text-[28px] font-black text-charcoal leading-[1.02] tracking-[-0.02em]">
             {aboutHero.headline}
           </div>
         </div>
-        <div className="relative w-full aspect-[4/5]">
+        <div className="relative w-[38%] flex-shrink-0 aspect-[3/4] mt-6">
           <Image
             src="/assets/about-hero-photo-mobile.jpg"
             alt="Ariba Jahan"
             fill
-            sizes="100vw"
+            sizes="40vw"
             style={{ objectFit: "cover", objectPosition: "center top" }}
           />
         </div>
