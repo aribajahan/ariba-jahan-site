@@ -34,7 +34,7 @@ export default function AboutHero() {
           the right. */}
       <div className="min-[701px]:hidden relative min-h-[260px] pt-[130px] pb-8">
         <Image
-          src="/assets/about-hero-photo-mobile-v2.jpg"
+          src="/assets/about-hero-photo-mobile-v4.jpg"
           alt="Ariba Jahan"
           fill
           priority
