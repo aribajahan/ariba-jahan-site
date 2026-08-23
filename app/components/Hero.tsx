@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { heroSocials } from "../data/home";
 
 export default function Hero() {
   return (
@@ -48,19 +47,6 @@ export default function Hero() {
           >
             Read Unmissables
           </a>
-          <div className="flex gap-5 ml-auto max-[700px]:ml-0 max-[700px]:flex-wrap">
-            {heroSocials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener"
-                className="text-[11px] font-semibold tracking-[0.1em] uppercase text-cream/[0.32] transition-colors hover:text-cream/70 active:text-cream/70"
-              >
-                {s.label}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </section>
