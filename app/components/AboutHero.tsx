@@ -26,27 +26,29 @@ export default function AboutHero() {
       </div>
 
       {/* Mobile (<=700px): the reference has no mobile treatment for this hero.
-          A full-bleed overlay either hid the subject or overlapped her face
-          with the headline, so instead this mirrors the desktop's side-by-side
-          composition (text left, photo right) at a compact, scaled-down size
-          rather than a tall full-width photo. */}
-      <div className="min-[701px]:hidden bg-cream flex items-start gap-4 px-6 pt-[130px] pb-8">
-        <div className="flex-1 min-w-0">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[14px]">
+          A full-bleed overlay at the desktop's tall section height either hid
+          the subject or overlapped her face with the headline. This keeps the
+          same full-bleed-background-with-text-overlay composition as desktop,
+          just at a much shorter section height, using a wider mobile crop
+          that keeps blank backdrop behind the text and her fully in frame on
+          the right. */}
+      <div className="min-[701px]:hidden relative min-h-[260px] pt-[130px] pb-8">
+        <Image
+          src="/assets/about-hero-photo-mobile-v2.jpg"
+          alt="Ariba Jahan"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center top" }}
+          className="absolute inset-0"
+        />
+        <div className="relative z-[2] px-6">
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[12px]">
             {aboutHero.eyebrow}
           </div>
-          <div className="font-display text-[28px] font-black text-charcoal leading-[1.02] tracking-[-0.02em]">
+          <div className="font-display text-[26px] font-black text-charcoal leading-[1.05] tracking-[-0.02em] max-w-[220px]">
             {aboutHero.headline}
           </div>
-        </div>
-        <div className="relative w-[38%] flex-shrink-0 aspect-[3/4] mt-6">
-          <Image
-            src="/assets/about-hero-photo-mobile.jpg"
-            alt="Ariba Jahan"
-            fill
-            sizes="40vw"
-            style={{ objectFit: "cover", objectPosition: "center top" }}
-          />
         </div>
       </div>
     </section>
