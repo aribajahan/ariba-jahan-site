@@ -30,6 +30,18 @@ This was a long session focused on cross-page consistency and a few structural r
 - **Deployed to Vercel** — Ariba created the account/project and connected it herself (no Vercel MCP connector exists in this environment's registry, so this has to go through her own dashboard, not through Claude directly). Verified the live site matches localhost exactly across pages/breakpoints after connecting.
 - **Misc fixes**: swapped the Strategy Sessions photo to a new one Ariba provided; Home's teaser title corrected to "1:1 CX Strategy Sessions" (was missing "CX"); several one-off closing-CTA and testimonials headline sizes that had drifted onto a `clamp()` scale instead of the standard fixed 48px/32px pattern.
 
+## Recurring pattern: what Claude should catch without being told
+
+Across this session and the one before it, Ariba repeatedly had to be the one to spot padding/margin/consistency issues that should have been caught before she ever saw them — this happened often enough that it's a pattern worth naming, not just individual bugs. The common thread: changes got verified in isolation (does *this* section look right?) rather than in context (does this section match its neighbors, and does this same component look right at every breakpoint, on every page it appears on?).
+
+Before calling a change "done," run this checklist — not just for the thing you touched, but for its neighbors and its siblings elsewhere in the codebase:
+
+1. **Check the same component/pattern on every page it appears on, not just the one you were asked about.** Testimonials, Trusted-By logos, closing CTAs, and section padding all exist on multiple pages as near-duplicate components. A fix applied to one and not the others is exactly how this session's bugs kept happening — e.g. `WwmTestimonials` never got the padding tightening `Testimonials.tsx` got, for two sessions running, until Ariba caught it a second time.
+2. **Check all three breakpoints, not just the one being discussed.** A mobile fix can leave tablet or desktop untouched and now the odd one out (this happened repeatedly: mobile got fixed, tablet didn't, then tablet got fixed and desktop's base value was still stale).
+3. **Measure, don't eyeball.** Padding/height "looks consistent" is unreliable from a screenshot. Use `javascript_tool` to read `getComputedStyle().paddingTop` (or card `getBoundingClientRect().height` for card grids) across every section/card at once, at each breakpoint. This is how every real bug this session was actually confirmed, not just felt.
+4. **When a design pattern is copy-pasted to a sibling component, re-derive the numbers, don't just copy them.** The testimonial "shortest quote shows fully" pattern broke on `WwmTestimonials` because that component uses a bigger font and wider padding than the original it was copied from — the same character-count threshold didn't produce the same result. Any ported pattern needs its own verification pass in its new context.
+5. **After a multi-file batch of similar fixes, grep for the pattern across the whole codebase** to confirm every instance got it, not just the ones that came up in conversation. (e.g. `grep -rn "max-\[700px\]:pt-20"` was how the mobile-padding rollout confirmed it caught all 21 instances, not just the ones on the page being discussed at the time.)
+
 ## Outstanding work, in priority order
 
 1. **Women In Innovation quest blurb** — Asha and Daboodle have real copy; WII still shows placeholder text, needs a sentence from Ariba.
