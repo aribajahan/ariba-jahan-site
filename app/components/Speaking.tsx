@@ -5,7 +5,7 @@ export default function Speaking() {
   return (
     <section id="speaker" className="bg-cream overflow-hidden">
       <div className="flex flex-wrap min-h-[640px] max-w-[1400px] mx-auto">
-        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] max-[1024px]:pt-9 max-[1024px]:pb-11 max-[700px]:pt-[70px] flex flex-col justify-start">
+        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] max-[1024px]:pt-24 max-[1024px]:pb-11 max-[700px]:pt-[70px] flex flex-col justify-start">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
             Speaking &amp; Writing
           </div>
@@ -14,13 +14,13 @@ export default function Speaking() {
           </div>
 
           <div className="hidden max-[1024px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
-            <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[220px]">
+            <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[280px] max-[700px]:h-[220px]">
               <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
             </div>
-            <div className="min-w-0 min-h-0 overflow-hidden relative h-[130px]">
+            <div className="min-w-0 min-h-0 overflow-hidden relative h-[165px] max-[700px]:h-[130px]">
               <Image quality={90} src={speakingPhotos[1]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
             </div>
-            <div className="min-w-0 min-h-0 overflow-hidden relative h-[130px]">
+            <div className="min-w-0 min-h-0 overflow-hidden relative h-[165px] max-[700px]:h-[130px]">
               <Image quality={90} src={speakingPhotos[2]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
             </div>
           </div>

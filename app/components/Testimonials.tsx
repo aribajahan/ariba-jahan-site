@@ -38,7 +38,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-cream pt-16 max-[700px]:pt-[70px] pb-[120px] max-[1024px]:pb-24 max-[700px]:pb-20 border-t border-charcoal/10 overflow-hidden">
+    <section className="bg-cream pt-16 max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-[120px] max-[1024px]:pb-24 max-[700px]:pb-20 border-t border-charcoal/10 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-4">
           <div>
