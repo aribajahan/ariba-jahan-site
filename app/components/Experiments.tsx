@@ -33,7 +33,7 @@ export default function Experiments() {
             return (
               <div
                 key={entry.headline}
-                className="flex-[0_0_391px] max-[700px]:flex-[0_0_82vw]"
+                className="relative flex-[0_0_391px] max-[700px]:flex-[0_0_82vw]"
                 style={{
                   scrollSnapAlign: "start",
                   transform: `rotate(${CARD_ROTATIONS[i % CARD_ROTATIONS.length]}deg)`,
@@ -42,13 +42,18 @@ export default function Experiments() {
                   padding: "16px 16px 20px",
                 }}
               >
+                <span
+                  className="absolute z-[2] left-1/2 whitespace-nowrap text-[12px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-5 py-[7px]"
+                  style={{
+                    background: tagBg,
+                    top: "-11px",
+                    transform: "translateX(-50%) rotate(-3deg)",
+                    boxShadow: "0 3px 8px rgba(0,0,0,0.25)",
+                  }}
+                >
+                  {entry.tag} · {entry.tagIndex}
+                </span>
                 <div className="w-full h-[253px] max-[700px]:h-[200px] overflow-hidden mb-[18px] relative bg-charcoal/[0.06]">
-                  <span
-                    className="absolute top-3 left-3 z-[1] -rotate-1 text-[10px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-[9px] py-[3px]"
-                    style={{ background: tagBg }}
-                  >
-                    {entry.tag} · {entry.tagIndex}
-                  </span>
                   {entry.photoSrc ? (
                     <Image quality={90}
                       src={entry.photoSrc}

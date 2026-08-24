@@ -102,34 +102,34 @@ export const experiments: Experiment[] = [
     photoSrc: "/assets/wwm-case-1.jpg",
   },
   {
-    tag: "Case Study",
+    tag: "Quest",
     tagIndex: 2,
+    headline: "Asha",
+    description: "A personal quest project. Copy and photos coming soon.",
+    photoSrc: null,
+  },
+  {
+    tag: "Case Study",
+    tagIndex: 3,
     headline: "WeightWatchers — Reimagining WW for a more adaptive, everyday relationship",
     description:
       "Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.",
     photoSrc: "/assets/wwm-case-2.jpg",
   },
   {
+    tag: "Quest",
+    tagIndex: 4,
+    headline: "Women In Innovation",
+    description: "A personal quest project. Copy and photos coming soon.",
+    photoSrc: null,
+  },
+  {
     tag: "Case Study",
-    tagIndex: 3,
+    tagIndex: 5,
     headline: "Stagwell — Shaping an enterprise AI research product from strategy to prototype",
     description:
       "Working from enterprise user research through product strategy, positioning, GTM and prototype development for a new AI-native research platform.",
     photoSrc: "/assets/wwm-case-study-3.jpg",
-  },
-  {
-    tag: "Quest",
-    tagIndex: 4,
-    headline: "Asha",
-    description: "A personal quest project. Copy and photos coming soon.",
-    photoSrc: null,
-  },
-  {
-    tag: "Quest",
-    tagIndex: 5,
-    headline: "Women In Innovation",
-    description: "A personal quest project. Copy and photos coming soon.",
-    photoSrc: null,
   },
   {
     tag: "Quest",

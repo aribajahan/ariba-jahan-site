@@ -5,6 +5,9 @@ import { testimonials } from "../data/home";
 
 const CARD_WIDTH = 540;
 const GAP = 24;
+// Lauren Lavalle's quote (the shortest) is the reference length mobile cards
+// truncate to; anything longer gets a "Read more" toggle on mobile only.
+const MOBILE_TRUNCATE_AT = 260;
 
 const categoryStyles: Record<string, { bg: string; text: string; sub: string; border?: string }> = {
   LEADERSHIP: { bg: "var(--color-cream)", text: "#2D2D2D", sub: "rgba(45,45,45,0.5)", border: "2px solid #2D2D2D" },
@@ -58,10 +61,11 @@ export default function Testimonials() {
           {testimonials.map((t, i) => {
             const style = categoryStyles[t.category];
             const isExpanded = !!expanded[i];
+            const needsTruncation = t.quote.length > MOBILE_TRUNCATE_AT;
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-7 px-7 flex flex-col justify-end h-[340px] max-[700px]:h-[260px]"
+                className="relative overflow-hidden py-7 px-7 flex flex-col justify-end min-h-[360px] max-[700px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -75,22 +79,24 @@ export default function Testimonials() {
                 >
                   {t.category}
                 </div>
-                <div className={isExpanded ? "overflow-y-auto pr-1 mb-4" : "overflow-hidden mb-4"}>
-                  <p
-                    className={`relative text-base leading-[1.45] ${isExpanded ? "" : "line-clamp-6 max-[700px]:line-clamp-4"}`}
-                    style={{ color: style.text }}
-                  >
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
+                <p
+                  className={`relative text-base leading-[1.45] mb-4 ${
+                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                  }`}
+                  style={{ color: style.text }}
+                >
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                {needsTruncation && (
                   <button
                     type="button"
                     onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
-                    className="relative text-xs font-bold underline mt-2 cursor-pointer"
+                    className="hidden max-[700px]:block relative text-xs font-bold underline mb-4 -mt-2 cursor-pointer w-fit"
                     style={{ color: style.text }}
                   >
                     {isExpanded ? "Show less" : "Read more"}
                   </button>
-                </div>
+                )}
                 <div
                   className="relative text-[13px] font-bold mb-[2px]"
                   style={{ color: style.text }}
