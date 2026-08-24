@@ -59,7 +59,7 @@ export default function WwmTestimonials() {
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[700px]:min-h-0"
+                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[1024px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -75,7 +75,7 @@ export default function WwmTestimonials() {
                 </div>
                 <p
                   className={`relative text-lg leading-[1.6] mb-4 ${
-                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                    needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
                 >
@@ -85,7 +85,7 @@ export default function WwmTestimonials() {
                   <button
                     type="button"
                     onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
-                    className="hidden max-[700px]:block relative text-xs font-bold underline mb-4 -mt-1 cursor-pointer w-fit"
+                    className="hidden max-[1024px]:block relative text-xs font-bold underline mb-4 -mt-1 cursor-pointer w-fit"
                     style={{ color: style.text }}
                   >
                     {isExpanded ? "Show less" : "Read more"}

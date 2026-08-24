@@ -64,7 +64,7 @@ export default function SpeakingTestimonials() {
             return (
               <div
                 key={i}
-                className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[700px]:min-h-0"
+                className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[1024px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 80vw)`,
@@ -78,7 +78,7 @@ export default function SpeakingTestimonials() {
                 </div>
                 <p
                   className={`relative text-lg leading-[1.5] text-cream/[0.88] ${
-                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                    needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                 >
                   &ldquo;{t.quote}&rdquo;
@@ -87,7 +87,7 @@ export default function SpeakingTestimonials() {
                   <button
                     type="button"
                     onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
-                    className="hidden max-[700px]:block relative text-xs font-bold text-cream/70 underline mt-3 cursor-pointer w-fit"
+                    className="hidden max-[1024px]:block relative text-xs font-bold text-cream/70 underline mt-3 cursor-pointer w-fit"
                   >
                     {isExpanded ? "Show less" : "Read more"}
                   </button>

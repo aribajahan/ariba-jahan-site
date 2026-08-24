@@ -139,7 +139,7 @@ export default function Unmissables() {
           </div>
         </div>
 
-        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] [grid-auto-rows:240px] gap-1">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] min-[701px]:max-[1024px]:grid-cols-3 [grid-auto-rows:240px] gap-1">
           {tiles.map((tile, i) => (
             <a
               key={tile.id}
@@ -148,7 +148,7 @@ export default function Unmissables() {
               rel={tile.href !== "#" ? "noopener" : undefined}
               className={`relative overflow-hidden block min-w-0 min-h-0 ${
                 i >= previewCount && !showAll ? "max-[700px]:hidden" : ""
-              }`}
+              } ${i === tiles.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""}`}
               style={{ background: tile.bg }}
             >
               <Image quality={90}

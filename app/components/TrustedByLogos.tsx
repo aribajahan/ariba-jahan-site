@@ -5,7 +5,7 @@ import Image from "next/image";
 import { speakingLogos } from "../data/speaking";
 
 const INITIAL_ROWS = 7;
-const COLS = 3;
+const COLS = 4;
 const INITIAL_COUNT = INITIAL_ROWS * COLS;
 
 export default function TrustedByLogos() {
@@ -24,7 +24,7 @@ export default function TrustedByLogos() {
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-cream mb-8 max-w-[800px]">
           Spoken at 200+ Gatherings at Conferences, Companies, and Universities
         </h2>
-        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] max-[700px]:!grid-cols-3 gap-11 gap-x-8 max-[700px]:gap-y-6 max-[700px]:gap-x-5 items-center">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(150px,1fr))] max-[1024px]:[grid-template-columns:repeat(4,1fr)] max-[700px]:!grid-cols-4 gap-11 gap-x-8 max-[1024px]:gap-y-8 max-[700px]:gap-y-6 max-[700px]:gap-x-4 items-center">
           {visibleLogos.map((logo) => (
             <Image quality={90}
               key={logo.alt}
@@ -33,7 +33,7 @@ export default function TrustedByLogos() {
               width={200}
               height={logo.heightPx}
               style={{ height: logo.heightPx, width: "auto", maxWidth: "100%" }}
-              className="object-contain opacity-[0.92] max-[700px]:max-h-[28px] max-[700px]:w-auto"
+              className="object-contain opacity-[0.92] max-[1024px]:max-h-[30px] max-[1024px]:w-auto max-[700px]:max-h-[24px]"
             />
           ))}
         </div>

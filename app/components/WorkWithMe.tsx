@@ -41,7 +41,7 @@ export default function WorkWithMe() {
           </div>
         </div>
 
-        <div className="grid gap-8 max-[700px]:gap-5 [grid-template-columns:repeat(auto-fit,minmax(380px,1fr))] max-[1024px]:[grid-template-columns:repeat(auto-fit,minmax(320px,1fr))] max-[700px]:!grid-cols-1">
+        <div className="grid gap-8 max-[700px]:gap-5 [grid-template-columns:repeat(auto-fit,minmax(380px,1fr))] max-[1024px]:!grid-cols-1">
           {offers.map((offer) => (
             <div
               key={offer.index}

@@ -65,7 +65,7 @@ export default function Testimonials() {
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-7 px-7 flex flex-col justify-end min-h-[360px] max-[700px]:min-h-0"
+                className="relative overflow-hidden py-7 px-7 flex flex-col justify-end min-h-[360px] max-[1024px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -81,7 +81,7 @@ export default function Testimonials() {
                 </div>
                 <p
                   className={`relative text-base leading-[1.45] mb-4 ${
-                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                    needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
                 >
@@ -91,7 +91,7 @@ export default function Testimonials() {
                   <button
                     type="button"
                     onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
-                    className="hidden max-[700px]:block relative text-xs font-bold underline mb-4 -mt-2 cursor-pointer w-fit"
+                    className="hidden max-[1024px]:block relative text-xs font-bold underline mb-4 -mt-2 cursor-pointer w-fit"
                     style={{ color: style.text }}
                   >
                     {isExpanded ? "Show less" : "Read more"}
