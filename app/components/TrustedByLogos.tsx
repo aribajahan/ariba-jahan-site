@@ -1,7 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { speakingLogos } from "../data/speaking";
 
+const INITIAL_ROWS = 7;
+const COLS = 3;
+const INITIAL_COUNT = INITIAL_ROWS * COLS;
+
 export default function TrustedByLogos() {
+  const [expanded, setExpanded] = useState(false);
+  const visibleLogos = expanded ? speakingLogos : speakingLogos.slice(0, INITIAL_COUNT);
+
   return (
     <section
       id="logos"
@@ -15,7 +25,7 @@ export default function TrustedByLogos() {
           Spoken at 200+ Gatherings at Conferences, Companies, and Universities
         </h2>
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] max-[700px]:!grid-cols-3 gap-11 gap-x-8 max-[700px]:gap-y-6 max-[700px]:gap-x-5 items-center">
-          {speakingLogos.map((logo) => (
+          {visibleLogos.map((logo) => (
             <Image quality={90}
               key={logo.alt}
               src={logo.src}
@@ -27,6 +37,17 @@ export default function TrustedByLogos() {
             />
           ))}
         </div>
+        {speakingLogos.length > INITIAL_COUNT && (
+          <div className="flex justify-center mt-10">
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              className="text-[13px] font-bold tracking-[0.1em] uppercase text-cherish border-b border-cherish pb-[2px] cursor-pointer"
+            >
+              {expanded ? "Show less" : "Show more →"}
+            </button>
+          </div>
+        )}
         <div className="flex justify-center mt-14">
           <a
             href="#close"
