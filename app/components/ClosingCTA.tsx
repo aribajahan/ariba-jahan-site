@@ -4,7 +4,7 @@ export default function ClosingCTA() {
   return (
     <section
       id="close"
-      className="bg-charcoal pt-[120px] max-[700px]:pt-20 pb-[120px] max-[700px]:pb-20 px-[clamp(24px,5vw,80px)] border-t border-cream/[0.08]"
+      className="bg-charcoal pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-20 pb-[120px] max-[1024px]:pb-24 max-[700px]:pb-20 px-[clamp(24px,5vw,80px)] border-t border-cream/[0.08]"
     >
       <div className="max-w-[1000px] mx-auto">
         <div className="text-center mb-14">
