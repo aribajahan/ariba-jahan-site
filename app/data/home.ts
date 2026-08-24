@@ -105,7 +105,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 2,
     headline: "Asha",
-    description: "A personal quest project. Full write-up coming soon.",
+    description:
+      "Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.",
     photoSrc: "/assets/quest-asha-v1.png",
   },
   {
@@ -135,7 +136,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 6,
     headline: "Daboodle",
-    description: "A personal quest project. Full write-up coming soon.",
+    description:
+      "Building a digital creative toolkit on Replit: the brand, content, and SEO tools solopreneurs reach for every day, all in one digital caboodle.",
     photoSrc: "/assets/quest-daboodle-v1.jpg",
   },
 ];
