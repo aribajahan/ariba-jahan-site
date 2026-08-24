@@ -40,7 +40,7 @@ export default function CaseStudies() {
   return (
     <section
       id="case-studies"
-      className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden"
+      className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden"
     >
       <div className="max-w-[1600px] mx-auto">
         <div className="mb-14">

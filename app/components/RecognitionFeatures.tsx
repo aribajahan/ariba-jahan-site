@@ -29,7 +29,7 @@ function RecognitionRow({ item, isLast }: { item: RecognitionItem; isLast: boole
 
 export default function RecognitionFeatures() {
   return (
-    <section className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] border-t border-charcoal/[0.08]">
+    <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] border-t border-charcoal/[0.08]">
       <div className="max-w-[640px] mx-auto mb-14 text-center">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
           Recognition &amp; Features

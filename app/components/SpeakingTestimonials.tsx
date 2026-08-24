@@ -20,7 +20,7 @@ export default function SpeakingTestimonials() {
   return (
     <section
       id="testimonials"
-      className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 overflow-hidden"
+      className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 overflow-hidden"
     >
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-9">

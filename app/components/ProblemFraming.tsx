@@ -3,7 +3,7 @@ import { problemCards } from "../data/work-with-me";
 
 export default function ProblemFraming() {
   return (
-    <section className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
+    <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
       <div className="max-w-[1400px] mx-auto">
         <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
           Why Experience-Led Growth Is Needed Now More Than Ever

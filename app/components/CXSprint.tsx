@@ -11,7 +11,7 @@ export default function CXSprint() {
   return (
     <section
       id="cx-sprint"
-      className="bg-cherish pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)]"
+      className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)]"
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-3">

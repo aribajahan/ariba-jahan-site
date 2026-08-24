@@ -2,7 +2,7 @@ import { aboutClosingLinks } from "../data/about";
 
 export default function AboutClosingCTA() {
   return (
-    <section id="close" className="bg-charcoal pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] relative overflow-hidden">
+    <section id="close" className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] relative overflow-hidden">
       <div className="max-w-[1000px] mx-auto relative z-[1]">
         <div className="text-center mb-14">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
