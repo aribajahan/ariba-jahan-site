@@ -26,27 +26,29 @@ export default function ProblemFraming() {
           business value by becoming more useful, more relevant, and more worth returning to over
           time.
         </p>
-        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[1024px]:!grid-cols-2 max-[700px]:!grid-cols-1 gap-8">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[1024px]:!grid-cols-2 max-[700px]:!grid-cols-1 gap-8 max-[700px]:gap-1">
           {problemCards.map((card, i) => {
             const open = !!openCards[i];
             return (
-              <div key={card.title} className="pb-6 border-t border-charcoal/[0.12] pt-6">
+              <div key={card.title} className="max-[700px]:border-b max-[700px]:border-charcoal/[0.1] max-[700px]:py-3">
                 <button
                   type="button"
                   onClick={() => toggleCard(i)}
                   aria-expanded={open}
-                  className="flex items-center justify-between gap-4 w-full text-left cursor-pointer min-h-11"
+                  className="flex items-center justify-between gap-4 w-full text-left max-[700px]:cursor-pointer min-h-11"
                 >
                   <span className="font-display text-lg font-extrabold uppercase text-charcoal leading-[1.2]">
                     {card.title}
                   </span>
-                  <span className="flex-none text-xl text-cherish font-light">{open ? "−" : "+"}</span>
+                  <span className="hidden max-[700px]:inline-block flex-none text-xl text-cherish font-light">
+                    {open ? "−" : "+"}
+                  </span>
                 </button>
                 <div
-                  className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+                  className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
                   style={{ maxHeight: open ? 400 : 0 }}
                 >
-                  <div className="relative h-40 mt-5 mb-[14px]">
+                  <div className="relative h-40 mt-4 max-[700px]:mt-3 mb-[14px] max-[700px]:mb-2">
                     <Image quality={90}
                       src={card.photoSrc}
                       alt={card.title}
