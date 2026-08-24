@@ -52,7 +52,7 @@ export default function Unmissables() {
   return (
     <section
       id="unmissables"
-      className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-20 pb-[120px] max-[1024px]:pb-24 max-[700px]:pb-20 border-t border-charcoal/[0.08]"
+      className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-[120px] max-[1024px]:pb-24 max-[700px]:pb-20 border-t border-charcoal/[0.08]"
     >
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-3">

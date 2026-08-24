@@ -21,7 +21,7 @@ export default function WorkWithMe() {
   return (
     <section
       id="work-with-me"
-      className="pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-20 pb-[90px] max-[1024px]:pb-16 max-[700px]:pb-14 border-t border-charcoal/[0.08] bg-cherish"
+      className="pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-[90px] max-[1024px]:pb-16 max-[700px]:pb-14 border-t border-charcoal/[0.08] bg-cherish"
     >
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-12 flex-wrap gap-3">

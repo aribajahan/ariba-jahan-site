@@ -5,7 +5,7 @@ export default function Recognition() {
   return (
     <section className="bg-cream overflow-hidden relative z-10">
       <div className="flex flex-wrap min-h-[520px]">
-        <div className="hidden max-[1024px]:block w-full px-[clamp(24px,5vw,80px)] pt-14 pb-6 bg-charcoal">
+        <div className="hidden max-[1024px]:block w-full px-[clamp(24px,5vw,80px)] pt-14 max-[700px]:pt-[70px] pb-6 bg-charcoal">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
             Credentials
           </div>
