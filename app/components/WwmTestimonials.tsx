@@ -5,9 +5,10 @@ import { wwmTestimonials } from "../data/work-with-me";
 
 const CARD_WIDTH = 540;
 const GAP = 24;
-// Shortest quote is the reference length mobile cards truncate to;
-// longer gets a Read more toggle. Matches the Home testimonials pattern.
-const MOBILE_TRUNCATE_AT = 260;
+// Two quotes share the shortest length here (unlike Home, which has a
+// single clear-shortest reference), so clamp every card for guaranteed
+// uniform height instead of leaving one unclamped.
+const MOBILE_TRUNCATE_AT = 0;
 
 const categoryStyles: Record<string, { bg: string; text: string; sub: string; border?: string }> = {
   LEADERSHIP: { bg: "var(--color-cream)", text: "#2D2D2D", sub: "rgba(45,45,45,0.5)", border: "2px solid #2D2D2D" },
@@ -59,7 +60,7 @@ export default function WwmTestimonials() {
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[1024px]:min-h-0"
+                className="relative overflow-hidden py-11 px-10 max-[1024px]:py-7 max-[1024px]:px-7 flex flex-col justify-end min-h-[400px] max-[1024px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -74,7 +75,7 @@ export default function WwmTestimonials() {
                   {t.category}
                 </div>
                 <p
-                  className={`relative text-lg leading-[1.6] mb-4 ${
+                  className={`relative text-lg max-[1024px]:text-base leading-[1.6] max-[1024px]:leading-[1.45] mb-4 ${
                     needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
