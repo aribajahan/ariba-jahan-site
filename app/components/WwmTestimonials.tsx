@@ -41,7 +41,7 @@ export default function WwmTestimonials() {
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
           Client Voices
         </div>
-        <h2 className="uppercase font-display text-[clamp(34px,4.2vw,58px)] font-black tracking-[-0.01em] mb-9">
+        <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] mb-9">
           What Clients Say
         </h2>
       </div>

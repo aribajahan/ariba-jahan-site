@@ -8,7 +8,7 @@ export default function WorkWithMeClosingCTA() {
     >
       <div className="max-w-[1000px] mx-auto">
         <div className="text-center mb-14">
-          <h2 className="uppercase font-display text-[clamp(34px,4.2vw,58px)] font-black tracking-[-0.01em] text-cream mb-4">
+          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
             Ready To Build Something Unmissable?
           </h2>
           <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.68] max-w-[480px] mx-auto">

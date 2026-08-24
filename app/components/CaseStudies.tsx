@@ -68,21 +68,21 @@ export default function CaseStudies() {
                 <div
                   key={c.client + c.title}
                   data-flipcard
-                  className="relative flex-none w-[560px] h-[800px] max-[1024px]:w-[440px] max-[1024px]:h-[720px] max-[700px]:w-[92vw] max-[700px]:h-[680px] [perspective:2000px]"
+                  className="relative flex-none w-[560px] h-[800px] max-[1024px]:w-[440px] max-[1024px]:h-[720px] max-[700px]:w-[92vw] max-[700px]:h-[580px] [perspective:2000px]"
                 >
                   <div
                     className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-[450ms] ease-[cubic-bezier(0.65,0,0.35,1)]"
                     style={{ transform: flipped ? "rotateY(180deg)" : "none", transitionDelay: flipped ? "50ms" : "0ms" }}
                   >
                     {/* FRONT */}
-                    <div className="absolute inset-0 [backface-visibility:hidden] bg-cream shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] p-[30px_30px_34px] max-[700px]:p-7">
+                    <div className="absolute inset-0 [backface-visibility:hidden] bg-cream shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] p-[30px_30px_34px] max-[700px]:p-5">
                       <span
-                        className="absolute -top-[18px] left-1/2 px-6 py-[9px] font-display text-[13px] font-extrabold tracking-[0.06em] uppercase text-charcoal bg-femme-pink shadow-[0_4px_8px_rgba(0,0,0,0.15)] whitespace-nowrap z-[5] pointer-events-none"
+                        className="absolute -top-[18px] left-1/2 px-6 py-[9px] max-[700px]:px-4 max-[700px]:py-[6px] font-display text-[13px] max-[700px]:text-[11px] font-extrabold tracking-[0.06em] uppercase text-charcoal bg-femme-pink shadow-[0_4px_8px_rgba(0,0,0,0.15)] whitespace-nowrap z-[5] pointer-events-none"
                         style={{ transform: `translateX(-50%) rotate(${c.tagRotationDeg}deg)` }}
                       >
                         Case Study {i + 1}
                       </span>
-                      <div className="relative h-[460px] max-[1024px]:h-[380px] max-[700px]:h-[260px] mb-6 overflow-hidden">
+                      <div className="relative h-[460px] max-[1024px]:h-[380px] max-[700px]:h-[300px] mb-6 max-[700px]:mb-3 overflow-hidden">
                         <Image quality={90}
                           src={c.photoSrc}
                           alt={`${c.client} case study`}
@@ -91,18 +91,20 @@ export default function CaseStudies() {
                           style={{ objectFit: "cover" }}
                         />
                       </div>
-                      <div className="text-[11px] font-extrabold tracking-[0.15em] uppercase text-cherish mb-2">
+                      <div className="text-[11px] max-[700px]:text-[10px] font-extrabold tracking-[0.15em] uppercase text-cherish mb-2 max-[700px]:mb-1">
                         {c.client}
                       </div>
-                      <div className="font-display text-2xl font-black uppercase leading-[1.05] text-charcoal mb-[14px]">
+                      <div className="font-display text-2xl max-[700px]:text-base font-black uppercase leading-[1.05] text-charcoal mb-[14px] max-[700px]:mb-[6px]">
                         {c.title}
                       </div>
-                      <p className="text-[15px] leading-[1.55] text-charcoal/65">{c.summary}</p>
-                      <div className="flex flex-wrap gap-[6px] mt-[14px]">
-                        {c.pills.map((pill) => (
+                      <p className="text-[15px] leading-[1.55] max-[700px]:text-[13px] max-[700px]:leading-[1.35] text-charcoal/65">{c.summary}</p>
+                      <div className="flex flex-wrap gap-[6px] mt-[14px] max-[700px]:mt-2">
+                        {c.pills.map((pill, pillIdx) => (
                           <span
                             key={pill}
-                            className="text-[11px] font-bold tracking-[0.03em] uppercase text-charcoal bg-charcoal/[0.08] px-[10px] py-[5px] rounded-full"
+                            className={`text-[11px] max-[700px]:text-[10px] font-bold tracking-[0.03em] uppercase text-charcoal bg-charcoal/[0.08] px-[10px] py-[5px] max-[700px]:px-2 max-[700px]:py-1 rounded-full ${
+                              pillIdx >= 2 ? "max-[700px]:hidden" : ""
+                            }`}
                           >
                             {pill}
                           </span>
@@ -113,7 +115,7 @@ export default function CaseStudies() {
                         onClick={() => toggleFlip(i)}
                         aria-label="See case study details"
                         title="See details"
-                        className="absolute bottom-[18px] right-[18px] w-9 h-9 max-[1024px]:w-11 max-[1024px]:h-11 rounded-full bg-charcoal text-cream flex items-center justify-center cursor-pointer shadow-[0_8px_18px_-6px_rgba(0,0,0,0.35)] transition-transform duration-[180ms] hover:scale-[1.08] active:scale-95 text-[15px]"
+                        className="absolute bottom-[18px] right-[18px] max-[700px]:bottom-3 max-[700px]:right-3 w-9 h-9 max-[1024px]:w-11 max-[1024px]:h-11 rounded-full bg-charcoal text-cream flex items-center justify-center cursor-pointer shadow-[0_8px_18px_-6px_rgba(0,0,0,0.35)] transition-transform duration-[180ms] hover:scale-[1.08] active:scale-95 text-[15px]"
                       >
                         ⇄
                       </button>
@@ -121,7 +123,7 @@ export default function CaseStudies() {
 
                     {/* BACK */}
                     <div
-                      className="absolute inset-0 [backface-visibility:hidden] bg-cream shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] flex flex-col justify-center gap-[18px] max-[700px]:gap-[14px] p-10 max-[700px]:p-7"
+                      className="absolute inset-0 [backface-visibility:hidden] bg-cream shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] flex flex-col justify-center gap-[18px] max-[700px]:gap-[10px] p-10 max-[700px]:p-5"
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <span
@@ -131,20 +133,20 @@ export default function CaseStudies() {
                         Case Study {i + 1}
                       </span>
 
-                      <div className="flex gap-3 text-[15px] leading-[1.55]">
-                        <span className="flex-none w-[120px] font-bold text-cherish uppercase text-xs tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
                           Challenge
                         </span>
                         <span className="text-charcoal/70">{c.challenge}</span>
                       </div>
-                      <div className="flex gap-3 text-[15px] leading-[1.55]">
-                        <span className="flex-none w-[120px] font-bold text-cherish uppercase text-xs tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
                           Solution
                         </span>
                         <span className="text-charcoal/70">{c.solution}</span>
                       </div>
-                      <div className="flex gap-3 text-[15px] leading-[1.55]">
-                        <span className="flex-none w-[120px] font-bold text-cherish uppercase text-xs tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
                           Impact
                         </span>
                         <span className="text-charcoal/70">{c.impact}</span>
