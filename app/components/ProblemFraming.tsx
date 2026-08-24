@@ -29,7 +29,7 @@ export default function ProblemFraming() {
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              <div className="font-display text-lg font-extrabold uppercase text-charcoal mb-[10px] leading-[1.2] text-center">
+              <div className="font-display text-lg font-extrabold uppercase text-charcoal mb-[10px] leading-[1.2]">
                 {card.title}
               </div>
               <p className="text-[12.5px] leading-[1.55] text-charcoal/60">{card.description}</p>

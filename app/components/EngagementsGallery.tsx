@@ -32,13 +32,36 @@ export default function EngagementsGallery() {
           </ul>
         </div>
 
-        <div className="grid grid-cols-4 grid-rows-2 max-[1024px]:grid-cols-3 max-[1024px]:grid-rows-none max-[1024px]:auto-rows-[220px] max-[1024px]:[grid-auto-flow:dense] max-[700px]:grid-cols-2 max-[700px]:auto-rows-[220px] gap-[3px]">
+        <div className="hidden max-[700px]:grid grid-cols-2 gap-[3px]">
+          <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[260px]">
+            <Image quality={90}
+              src={galleryPhotos[0]}
+              alt="Ariba Jahan speaking engagement"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          {galleryPhotos.slice(1, 3).map((src) => (
+            <div key={src} className="min-w-0 min-h-0 overflow-hidden relative h-[180px]">
+              <Image quality={90}
+                src={src}
+                alt="Ariba Jahan speaking engagement"
+                fill
+                sizes="50vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="max-[700px]:hidden grid grid-cols-4 grid-rows-2 max-[1024px]:grid-cols-3 max-[1024px]:grid-rows-none max-[1024px]:auto-rows-[220px] max-[1024px]:[grid-auto-flow:dense] gap-[3px]">
           <div className="col-span-2 row-span-2 min-w-0 min-h-0 overflow-hidden relative h-[260px] max-[1024px]:h-auto">
             <Image quality={90}
               src={galleryPhotos[0]}
               alt="Ariba Jahan speaking engagement"
               fill
-              sizes="(max-width: 700px) 100vw, (max-width: 1024px) 66vw, 50vw"
+              sizes="(max-width: 1024px) 66vw, 50vw"
               style={{ objectFit: "cover" }}
             />
           </div>
@@ -51,7 +74,7 @@ export default function EngagementsGallery() {
                 src={src}
                 alt="Ariba Jahan speaking engagement"
                 fill
-                sizes="(max-width: 700px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                sizes="(max-width: 1024px) 33vw, 25vw"
                 style={{ objectFit: "cover" }}
               />
             </div>
