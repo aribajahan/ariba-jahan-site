@@ -22,54 +22,50 @@ export default function WorkWithMeOffers() {
       {/* CX Ambition Sprint */}
       <section
         id="cx-sprint"
-        className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-0 px-[clamp(24px,5vw,80px)]"
+        className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9 px-[clamp(24px,5vw,80px)]"
       >
         <div className="max-w-[1400px] mx-auto">
-          <div className="max-[700px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-3">
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-3">
             01 · I Work With Teams &amp; Organizations
           </div>
-          <h2 className="max-[700px]:hidden uppercase font-display text-[48px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
+          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
             CX Ambition Sprint
           </h2>
 
-          <button
-            type="button"
-            onClick={() => setOpenOffer((v) => (v === "cx" ? null : "cx"))}
-            aria-expanded={cxOpen}
-            className="hidden max-[700px]:flex w-full items-center justify-between gap-4 text-left py-6 border-b border-cream/25"
-          >
-            <span>
-              <span className="block text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-2">
-                01 · Teams &amp; Organizations
-              </span>
-              <span className="block uppercase font-display text-[26px] font-black tracking-[-0.01em] leading-[1.05] text-cream">
-                CX Ambition Sprint
-              </span>
-            </span>
-            <span className="flex-none text-2xl text-cream font-light">{cxOpen ? "−" : "+"}</span>
-          </button>
+          <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
+            <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
+              <Image quality={90}
+                src="/uploads/vox1-copy-opt.jpg"
+                alt="CX Ambition Sprint"
+                fill
+                sizes="(max-width: 1024px) 100vw, 440px"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
 
-          <div
-            className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
-            style={{ maxHeight: cxOpen ? 4000 : 0 }}
-          >
-            <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch max-[700px]:pt-7 max-[700px]:pb-9">
-              <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
-                <Image quality={90}
-                  src="/uploads/vox1-copy-opt.jpg"
-                  alt="CX Ambition Sprint"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 440px"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+            <div className="max-w-[640px]">
+              <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/90 mb-[14px] font-bold">
+                A 6-week sprint for teams that need a sharper point of view on how their product,
+                service, or experience should evolve.
+              </p>
 
-              <div className="max-w-[640px]">
-                <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/90 mb-[14px] font-bold">
-                  A 6-week sprint for teams that need a sharper point of view on how their product,
-                  service, or experience should evolve.
-                </p>
-                <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-6 flex flex-col gap-4">
+              <button
+                type="button"
+                onClick={() => setOpenOffer((v) => (v === "cx" ? null : "cx"))}
+                aria-expanded={cxOpen}
+                className="hidden max-[700px]:flex items-center gap-2 cursor-pointer min-h-11 -ml-1 mb-2"
+              >
+                <span className="text-[13px] font-extrabold tracking-[0.06em] uppercase text-cream underline">
+                  {cxOpen ? "Show less" : "Read the full sprint details"}
+                </span>
+                <span className="text-lg text-cream font-light">{cxOpen ? "−" : "+"}</span>
+              </button>
+
+              <div
+                className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
+                style={{ maxHeight: cxOpen ? 4000 : 0 }}
+              >
+                <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
                   <p>
                     This is for organizations at an inflection point: when customer expectations are
                     changing, engagement has flattened, the market is shifting, or new technology is
@@ -173,56 +169,50 @@ export default function WorkWithMeOffers() {
       {/* 1:1 CX Strategy Sessions */}
       <section
         id="strategy-sessions"
-        className="bg-charcoal pt-[120px] max-[700px]:pt-0 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
+        className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
       >
         <div className="max-w-[1400px] mx-auto">
-          <div className="max-[700px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
             02 · I Work With Individual Leaders
           </div>
-          <h2 className="max-[700px]:hidden uppercase font-display text-[48px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
+          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
             1:1 CX Strategy Sessions
           </h2>
 
-          <button
-            type="button"
-            onClick={() => setOpenOffer((v) => (v === "strategy" ? null : "strategy"))}
-            aria-expanded={strategyOpen}
-            className="hidden max-[700px]:flex w-full items-center justify-between gap-4 text-left py-6 border-b border-cream/15"
-          >
-            <span>
-              <span className="block text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-2">
-                02 · Individual Leaders
-              </span>
-              <span className="block uppercase font-display text-[26px] font-black tracking-[-0.01em] leading-[1.05] text-cream">
-                1:1 CX Strategy Sessions
-              </span>
-            </span>
-            <span className="flex-none text-2xl text-cherish font-light">
-              {strategyOpen ? "−" : "+"}
-            </span>
-          </button>
+          <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
+            <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
+              <Image quality={90}
+                src="/uploads/IMG_4434-opt.jpg"
+                alt="1:1 Strategy Sessions"
+                fill
+                sizes="(max-width: 1024px) 100vw, 440px"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
 
-          <div
-            className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
-            style={{ maxHeight: strategyOpen ? 4000 : 0 }}
-          >
-            <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch max-[700px]:pt-7">
-              <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
-                <Image quality={90}
-                  src="/uploads/IMG_4434-opt.jpg"
-                  alt="1:1 Strategy Sessions"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 440px"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+            <div className="max-w-[640px]">
+              <p className="text-[19px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.82] mb-5 font-bold">
+                A focused session for leaders working through a product, customer experience,
+                growth, or AI-related decision.
+              </p>
 
-              <div className="max-w-[640px]">
-                <p className="text-[19px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.82] mb-5 font-bold">
-                  A focused session for leaders working through a product, customer experience,
-                  growth, or AI-related decision.
-                </p>
-                <div className="text-[17px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/70 mb-6 flex flex-col gap-4">
+              <button
+                type="button"
+                onClick={() => setOpenOffer((v) => (v === "strategy" ? null : "strategy"))}
+                aria-expanded={strategyOpen}
+                className="hidden max-[700px]:flex items-center gap-2 cursor-pointer min-h-11 -ml-1 mb-2"
+              >
+                <span className="text-[13px] font-extrabold tracking-[0.06em] uppercase text-cherish underline">
+                  {strategyOpen ? "Show less" : "Read the full session details"}
+                </span>
+                <span className="text-lg text-cherish font-light">{strategyOpen ? "−" : "+"}</span>
+              </button>
+
+              <div
+                className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
+                style={{ maxHeight: strategyOpen ? 4000 : 0 }}
+              >
+                <div className="text-[17px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/70 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
                   <p>
                     Sometimes you don&rsquo;t need a full sprint. You need a clear outside
                     perspective, a thoughtful working session, and enough room to think through a

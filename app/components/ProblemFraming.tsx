@@ -1,7 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { problemCards } from "../data/work-with-me";
 
 export default function ProblemFraming() {
+  const [openCards, setOpenCards] = useState<Record<number, boolean>>({});
+
+  const toggleCard = (i: number) => {
+    setOpenCards((prev) => ({ ...prev, [i]: !prev[i] }));
+  };
+
   return (
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
       <div className="max-w-[1400px] mx-auto">
@@ -18,23 +27,39 @@ export default function ProblemFraming() {
           time.
         </p>
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[1024px]:!grid-cols-2 max-[700px]:!grid-cols-1 gap-8">
-          {problemCards.map((card) => (
-            <div key={card.title} className="pb-6">
-              <div className="relative h-40 mb-[18px]">
-                <Image quality={90}
-                  src={card.photoSrc}
-                  alt={card.title}
-                  fill
-                  sizes="(max-width: 700px) 92vw, (max-width: 1024px) 45vw, 22vw"
-                  style={{ objectFit: "cover" }}
-                />
+          {problemCards.map((card, i) => {
+            const open = !!openCards[i];
+            return (
+              <div key={card.title} className="pb-6 border-t border-charcoal/[0.12] pt-6">
+                <button
+                  type="button"
+                  onClick={() => toggleCard(i)}
+                  aria-expanded={open}
+                  className="flex items-center justify-between gap-4 w-full text-left cursor-pointer min-h-11"
+                >
+                  <span className="font-display text-lg font-extrabold uppercase text-charcoal leading-[1.2]">
+                    {card.title}
+                  </span>
+                  <span className="flex-none text-xl text-cherish font-light">{open ? "−" : "+"}</span>
+                </button>
+                <div
+                  className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+                  style={{ maxHeight: open ? 400 : 0 }}
+                >
+                  <div className="relative h-40 mt-5 mb-[14px]">
+                    <Image quality={90}
+                      src={card.photoSrc}
+                      alt={card.title}
+                      fill
+                      sizes="(max-width: 700px) 92vw, (max-width: 1024px) 45vw, 22vw"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <p className="text-[12.5px] leading-[1.55] text-charcoal/60">{card.description}</p>
+                </div>
               </div>
-              <div className="font-display text-lg font-extrabold uppercase text-charcoal mb-[10px] leading-[1.2]">
-                {card.title}
-              </div>
-              <p className="text-[12.5px] leading-[1.55] text-charcoal/60">{card.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

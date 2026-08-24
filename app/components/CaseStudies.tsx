@@ -133,20 +133,20 @@ export default function CaseStudies() {
                         Case Study {i + 1}
                       </span>
 
-                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
-                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 max-[700px]:flex-col max-[700px]:gap-[2px] text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-auto font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px] max-[700px]:pt-0">
                           Challenge
                         </span>
                         <span className="text-charcoal/70">{c.challenge}</span>
                       </div>
-                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
-                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 max-[700px]:flex-col max-[700px]:gap-[2px] text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-auto font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px] max-[700px]:pt-0">
                           Solution
                         </span>
                         <span className="text-charcoal/70">{c.solution}</span>
                       </div>
-                      <div className="flex gap-3 text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
-                        <span className="flex-none w-[120px] max-[700px]:w-[80px] font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px]">
+                      <div className="flex gap-3 max-[700px]:flex-col max-[700px]:gap-[2px] text-[15px] max-[700px]:text-[12.5px] leading-[1.55] max-[700px]:leading-[1.4]">
+                        <span className="flex-none w-[120px] max-[700px]:w-auto font-bold text-cherish uppercase text-xs max-[700px]:text-[10px] tracking-[0.06em] pt-[2px] max-[700px]:pt-0">
                           Impact
                         </span>
                         <span className="text-charcoal/70">{c.impact}</span>
