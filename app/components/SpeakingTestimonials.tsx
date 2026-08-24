@@ -1,13 +1,17 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { speakingTestimonials } from "../data/speaking";
 
 const CARD_WIDTH = 420;
 const GAP = 24;
+// Shortest "normal-length" quote (the 123-char one is an outlier) is the
+// reference length mobile cards truncate to; longer gets a Read more toggle.
+const MOBILE_TRUNCATE_AT = 270;
 
 export default function SpeakingTestimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
 
   const scrollBy = (dir: 1 | -1) => {
     scrollRef.current?.scrollBy({ left: dir * (CARD_WIDTH + GAP), behavior: "smooth" });
@@ -54,30 +58,47 @@ export default function SpeakingTestimonials() {
           ref={scrollRef}
           className="no-scrollbar flex items-start gap-6 overflow-x-scroll [scroll-snap-type:x_mandatory] pb-3"
         >
-          {speakingTestimonials.map((t, i) => (
-            <div
-              key={i}
-              className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[700px]:min-h-[220px]"
-              style={{
-                scrollSnapAlign: "start",
-                flex: `0 0 min(${CARD_WIDTH}px, 80vw)`,
-              }}
-            >
+          {speakingTestimonials.map((t, i) => {
+            const isExpanded = !!expanded[i];
+            const needsTruncation = t.quote.length > MOBILE_TRUNCATE_AT;
+            return (
               <div
-                className="absolute -top-[10px] left-4 font-display text-[100px] max-[700px]:text-[45px] font-black leading-none pointer-events-none"
-                style={{ color: "rgba(255,251,243,.1)" }}
+                key={i}
+                className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[700px]:min-h-0"
+                style={{
+                  scrollSnapAlign: "start",
+                  flex: `0 0 min(${CARD_WIDTH}px, 80vw)`,
+                }}
               >
-                &quot;
+                <div
+                  className="absolute -top-[10px] left-4 font-display text-[100px] max-[700px]:text-[45px] font-black leading-none pointer-events-none"
+                  style={{ color: "rgba(255,251,243,.1)" }}
+                >
+                  &quot;
+                </div>
+                <p
+                  className={`relative text-lg leading-[1.5] text-cream/[0.88] ${
+                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                  }`}
+                >
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                {needsTruncation && (
+                  <button
+                    type="button"
+                    onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
+                    className="hidden max-[700px]:block relative text-xs font-bold text-cream/70 underline mt-3 cursor-pointer w-fit"
+                  >
+                    {isExpanded ? "Show less" : "Read more"}
+                  </button>
+                )}
+                <div className="relative mt-4">
+                  <div className="text-xs font-bold text-cream">{t.name}</div>
+                  <div className="text-[11px] text-cream/55">{t.role}</div>
+                </div>
               </div>
-              <p className="relative text-lg leading-[1.5] text-cream/[0.88]">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="relative mt-4">
-                <div className="text-xs font-bold text-cream">{t.name}</div>
-                <div className="text-[11px] text-cream/55">{t.role}</div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

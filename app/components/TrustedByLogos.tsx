@@ -14,7 +14,7 @@ export default function TrustedByLogos() {
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-cream mb-8 max-w-[800px]">
           Spoken at 200+ Gatherings at Conferences, Companies, and Universities
         </h2>
-        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] max-[700px]:[grid-template-columns:repeat(2,1fr)] gap-11 gap-x-8 items-center">
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] gap-11 gap-x-8 items-center max-[700px]:no-scrollbar max-[700px]:flex max-[700px]:flex-nowrap max-[700px]:overflow-x-auto max-[700px]:gap-8 max-[700px]:-mx-6 max-[700px]:px-6">
           {speakingLogos.map((logo) => (
             <Image quality={90}
               key={logo.alt}
@@ -23,7 +23,7 @@ export default function TrustedByLogos() {
               width={200}
               height={logo.heightPx}
               style={{ height: logo.heightPx, width: "auto", maxWidth: "100%" }}
-              className="object-contain opacity-[0.92]"
+              className="object-contain opacity-[0.92] max-[700px]:flex-shrink-0 max-[700px]:max-h-[32px] max-[700px]:w-auto"
             />
           ))}
         </div>

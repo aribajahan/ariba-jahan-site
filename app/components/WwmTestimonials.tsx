@@ -5,6 +5,9 @@ import { wwmTestimonials } from "../data/work-with-me";
 
 const CARD_WIDTH = 540;
 const GAP = 24;
+// Shortest quote is the reference length mobile cards truncate to;
+// longer gets a Read more toggle. Matches the Home testimonials pattern.
+const MOBILE_TRUNCATE_AT = 260;
 
 const categoryStyles: Record<string, { bg: string; text: string; sub: string; border?: string }> = {
   LEADERSHIP: { bg: "var(--color-cream)", text: "#2D2D2D", sub: "rgba(45,45,45,0.5)", border: "2px solid #2D2D2D" },
@@ -19,6 +22,7 @@ const ghostOpacity: Record<string, string> = {
 export default function WwmTestimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
 
   const handleScroll = () => {
     const el = scrollRef.current;
@@ -32,7 +36,7 @@ export default function WwmTestimonials() {
   };
 
   return (
-    <section className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-14 border-t border-charcoal/[0.08] overflow-hidden">
+    <section className="bg-cream pt-[120px] max-[700px]:pt-20 max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 border-t border-charcoal/[0.08] overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
           Client Voices
@@ -50,10 +54,12 @@ export default function WwmTestimonials() {
         >
           {wwmTestimonials.map((t, i) => {
             const style = categoryStyles[t.category];
+            const isExpanded = !!expanded[i];
+            const needsTruncation = t.quote.length > MOBILE_TRUNCATE_AT;
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[700px]:min-h-[220px]"
+                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[700px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -67,9 +73,24 @@ export default function WwmTestimonials() {
                 >
                   {t.category}
                 </div>
-                <p className="relative text-lg leading-[1.6] mb-6" style={{ color: style.text }}>
+                <p
+                  className={`relative text-lg leading-[1.6] mb-4 ${
+                    needsTruncation && !isExpanded ? "max-[700px]:line-clamp-8" : ""
+                  }`}
+                  style={{ color: style.text }}
+                >
                   &ldquo;{t.quote}&rdquo;
                 </p>
+                {needsTruncation && (
+                  <button
+                    type="button"
+                    onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
+                    className="hidden max-[700px]:block relative text-xs font-bold underline mb-4 -mt-1 cursor-pointer w-fit"
+                    style={{ color: style.text }}
+                  >
+                    {isExpanded ? "Show less" : "Read more"}
+                  </button>
+                )}
                 <div className="relative text-[13px] font-bold mb-[2px]" style={{ color: style.text }}>
                   {t.name}
                 </div>

@@ -63,7 +63,7 @@ export default function WorkWithMe() {
               </p>
               <a
                 href={offer.href}
-                className="text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[1px] w-fit inline-block"
+                className="text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b-2 border-cherish pb-[3px] w-fit inline-block max-[700px]:text-[12px] max-[700px]:tracking-[0.08em]"
               >
                 {offer.cta}
               </a>

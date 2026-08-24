@@ -33,7 +33,7 @@ export default function Recognition() {
             {recognitionItems.map((item, i) => (
               <div
                 key={item}
-                className={`text-[17px] max-[700px]:text-[16px] font-semibold text-cream leading-[1.3] py-4 ${
+                className={`text-[17px] max-[700px]:text-[16px] font-normal text-cream leading-[1.3] py-4 ${
                   i < recognitionItems.length - 1 ? "border-b border-cream/[0.12]" : ""
                 }`}
               >
@@ -45,7 +45,7 @@ export default function Recognition() {
             href="/about"
             className="inline-block mt-7 text-[15px] font-bold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[1px] w-fit"
           >
-            View all recognition →
+            More About Ariba →
           </a>
         </div>
       </div>
