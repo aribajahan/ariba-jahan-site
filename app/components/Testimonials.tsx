@@ -21,6 +21,7 @@ const ghostOpacity: Record<string, string> = {
 export default function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
 
   const handleScroll = () => {
     const el = scrollRef.current;
@@ -34,7 +35,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="bg-cream pt-[120px] max-[700px]:pt-20 pb-[120px] max-[700px]:pb-20 border-t border-charcoal/10 overflow-hidden">
+    <section className="bg-cream pt-16 max-[700px]:pt-14 pb-[120px] max-[700px]:pb-20 border-t border-charcoal/10 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-4">
           <div>
@@ -56,10 +57,11 @@ export default function Testimonials() {
         >
           {testimonials.map((t, i) => {
             const style = categoryStyles[t.category];
+            const isExpanded = !!expanded[i];
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[700px]:min-h-[220px]"
+                className="relative overflow-hidden py-7 px-7 flex flex-col justify-end h-[340px] max-[700px]:h-[260px]"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
@@ -73,12 +75,22 @@ export default function Testimonials() {
                 >
                   {t.category}
                 </div>
-                <p
-                  className="relative text-lg leading-[1.6] mb-6"
-                  style={{ color: style.text }}
-                >
-                  &ldquo;{t.quote}&rdquo;
-                </p>
+                <div className={isExpanded ? "overflow-y-auto pr-1 mb-4" : "overflow-hidden mb-4"}>
+                  <p
+                    className={`relative text-base leading-[1.45] ${isExpanded ? "" : "line-clamp-6 max-[700px]:line-clamp-4"}`}
+                    style={{ color: style.text }}
+                  >
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
+                    className="relative text-xs font-bold underline mt-2 cursor-pointer"
+                    style={{ color: style.text }}
+                  >
+                    {isExpanded ? "Show less" : "Read more"}
+                  </button>
+                </div>
                 <div
                   className="relative text-[13px] font-bold mb-[2px]"
                   style={{ color: style.text }}

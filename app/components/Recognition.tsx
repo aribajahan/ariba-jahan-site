@@ -5,6 +5,14 @@ export default function Recognition() {
   return (
     <section className="bg-cream overflow-hidden relative z-10">
       <div className="flex flex-wrap min-h-[520px]">
+        <div className="hidden max-[700px]:block w-full px-[clamp(24px,5vw,80px)] pt-14 pb-6 bg-charcoal">
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+            Credentials
+          </div>
+          <div className="font-display text-[32px] font-black uppercase tracking-[-0.01em] text-cream">
+            Recognition
+          </div>
+        </div>
         <div className="flex-[1_1_380px] min-h-[min(420px,80vw)] min-w-0 overflow-hidden relative">
           <Image quality={90}
             src="/uploads/603A5509-opt.jpg"
@@ -14,11 +22,11 @@ export default function Recognition() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="flex-[1_1_480px] px-[clamp(24px,5vw,80px)] py-[72px] flex flex-col justify-center bg-charcoal">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+        <div className="flex-[1_1_480px] px-[clamp(24px,5vw,80px)] py-[72px] max-[700px]:pt-8 flex flex-col justify-center bg-charcoal">
+          <div className="max-[700px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
             Credentials
           </div>
-          <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] mb-9 text-cream">
+          <div className="max-[700px]:hidden font-display text-[48px] font-black uppercase tracking-[-0.01em] mb-9 text-cream">
             Recognition
           </div>
           <div className="flex flex-col">

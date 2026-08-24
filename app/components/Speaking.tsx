@@ -15,7 +15,7 @@ export default function Speaking() {
 
           <div className="hidden max-[700px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
             <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[220px]">
-              <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover" }} />
+              <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
             </div>
             <div className="min-w-0 min-h-0 overflow-hidden relative h-[130px]">
               <Image quality={90} src={speakingPhotos[1]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
@@ -44,7 +44,7 @@ export default function Speaking() {
 
         <div className="max-[700px]:hidden flex-[1_1_480px] pt-12 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
           <div className="row-span-2 min-w-0 min-h-0 overflow-hidden relative max-[700px]:h-[300px] max-[700px]:row-span-1">
-            <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover" }} />
+            <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
           </div>
           <div className="min-w-0 min-h-0 overflow-hidden relative max-[700px]:h-[300px]">
             <Image quality={90} src={speakingPhotos[1]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover" }} />

@@ -61,11 +61,11 @@ export const logoRows: LogoRow[] = [
 ];
 
 export const stats = [
-  { value: "215+", label: "Talks & panels" },
-  { value: "6", label: "Industry awards" },
-  { value: "2", label: "Books contributed to" },
-  { value: "15+", label: "Years across sectors" },
-  { value: "20+", label: "Essays & podcasts published" },
+  { value: "215+", labelLine1: "Talks &", labelLine2: "Panels" },
+  { value: "6", labelLine1: "Industry", labelLine2: "Awards" },
+  { value: "2", labelLine1: "Books", labelLine2: "Contributed to" },
+  { value: "15+", labelLine1: "Years across", labelLine2: "Sectors" },
+  { value: "20+", labelLine1: "Essays & podcasts", labelLine2: "Published" },
 ];
 
 export const speakingPhotos = [
