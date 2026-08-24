@@ -42,13 +42,13 @@ export default function Experiments() {
                   padding: "16px 16px 20px",
                 }}
               >
-                <span
-                  className="inline-block -rotate-1 text-[10px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-[9px] py-[3px] mb-3"
-                  style={{ background: tagBg }}
-                >
-                  {entry.tag} · {entry.tagIndex}
-                </span>
-                <div className="w-full h-[253px] max-[700px]:h-[300px] overflow-hidden mb-[18px] relative bg-charcoal/[0.06]">
+                <div className="w-full h-[253px] max-[700px]:h-[200px] overflow-hidden mb-[18px] relative bg-charcoal/[0.06]">
+                  <span
+                    className="absolute top-3 left-3 z-[1] -rotate-1 text-[10px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-[9px] py-[3px]"
+                    style={{ background: tagBg }}
+                  >
+                    {entry.tag} · {entry.tagIndex}
+                  </span>
                   {entry.photoSrc ? (
                     <Image quality={90}
                       src={entry.photoSrc}

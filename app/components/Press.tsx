@@ -20,7 +20,7 @@ export default function Press() {
               href={item.href}
               target="_blank"
               rel="noopener"
-              className={`flex justify-between items-baseline gap-3 py-4 min-h-[44px] ${
+              className={`flex justify-between items-baseline gap-3 py-3 min-h-[44px] ${
                 i < pressItems.length - 1 ? "border-b border-charcoal/10" : ""
               }`}
             >

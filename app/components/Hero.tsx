@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[92vh]">
+    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[78vh]">
       <div className="absolute inset-0 z-0">
         <Image quality={90}
           src="/assets/hero-photo.jpg"
@@ -11,7 +11,7 @@ export default function Hero() {
           priority
           sizes="100vw"
           style={{ objectFit: "cover", objectPosition: "85% 0%" }}
-          className="max-[700px]:![object-position:65%_15%]"
+          className="max-[700px]:![object-position:38%_25%]"
         />
       </div>
       {/* heroOverlay: gradient scrim for text legibility over the photo */}

@@ -12,7 +12,20 @@ export default function Speaking() {
           <div className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase text-charcoal leading-[0.88] tracking-[-0.02em]">
             People + Technology
           </div>
-          <p className="text-base leading-[1.62] text-charcoal/75 mt-7 mb-[18px]">
+
+          <div className="hidden max-[700px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
+            <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[220px]">
+              <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover" }} />
+            </div>
+            <div className="min-w-0 min-h-0 overflow-hidden relative h-[130px]">
+              <Image quality={90} src={speakingPhotos[1]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
+            </div>
+            <div className="min-w-0 min-h-0 overflow-hidden relative h-[130px]">
+              <Image quality={90} src={speakingPhotos[2]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
+            </div>
+          </div>
+
+          <p className="text-base leading-[1.62] text-charcoal/75 mt-7 max-[700px]:mt-2 mb-[18px]">
             I&rsquo;m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.
           </p>
           <p className="text-base leading-[1.62] text-charcoal/75 mb-[18px]">
@@ -29,7 +42,7 @@ export default function Speaking() {
           </a>
         </div>
 
-        <div className="flex-[1_1_480px] pt-12 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)] max-[700px]:grid-cols-1 max-[700px]:grid-rows-5 max-[700px]:h-[1100px]">
+        <div className="max-[700px]:hidden flex-[1_1_480px] pt-12 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
           <div className="row-span-2 min-w-0 min-h-0 overflow-hidden relative max-[700px]:h-[300px] max-[700px]:row-span-1">
             <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover" }} />
           </div>

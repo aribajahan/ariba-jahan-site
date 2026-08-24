@@ -1,13 +1,22 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 const links = [
-  { label: "Read on Substack", href: "https://www.unmissables.xyz/" },
+  {
+    label: "Read on Substack",
+    shortLabel: "Substack",
+    href: "https://www.unmissables.xyz/",
+  },
   {
     label: "Listen on Spotify",
+    shortLabel: "Spotify",
     href: "https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315",
   },
   {
     label: "Apple Podcasts",
+    shortLabel: "Apple",
     href: "https://podcasts.apple.com/ph/podcast/unmissables-with-ariba-jahan/id1707384312",
   },
 ];
@@ -37,6 +46,9 @@ const tiles: Tile[] = [
 ];
 
 export default function Unmissables() {
+  const [showAll, setShowAll] = useState(false);
+  const previewCount = 4;
+
   return (
     <section
       id="unmissables"
@@ -58,16 +70,17 @@ export default function Unmissables() {
           Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
         </p>
 
-        <div className="mb-9 flex gap-3 flex-wrap">
+        <div className="mb-9 flex gap-3 flex-wrap max-[700px]:grid max-[700px]:grid-cols-3 max-[700px]:gap-2">
           {links.map((l) => (
             <a
               key={l.label}
               href={l.href}
               target="_blank"
               rel="noopener"
-              className="px-[22px] py-[11px] text-xs font-bold tracking-[0.1em] uppercase border border-cherish text-charcoal whitespace-nowrap transition-all duration-150 hover:bg-cherish hover:text-cream hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(45,45,45,0.4)] active:bg-cherish active:text-cream active:-translate-y-[2px]"
+              className="px-[22px] py-[11px] text-xs font-bold tracking-[0.1em] uppercase border border-cherish text-charcoal whitespace-nowrap transition-all duration-150 hover:bg-cherish hover:text-cream hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(45,45,45,0.4)] active:bg-cherish active:text-cream active:-translate-y-[2px] max-[700px]:px-2 max-[700px]:py-[11px] max-[700px]:text-center max-[700px]:whitespace-normal"
             >
-              {l.label}
+              <span className="max-[700px]:hidden">{l.label}</span>
+              <span className="hidden max-[700px]:inline">{l.shortLabel}</span>
             </a>
           ))}
         </div>
@@ -127,13 +140,15 @@ export default function Unmissables() {
         </div>
 
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] [grid-auto-rows:240px] gap-1">
-          {tiles.map((tile) => (
+          {tiles.map((tile, i) => (
             <a
               key={tile.id}
               href={tile.href}
               target={tile.href !== "#" ? "_blank" : undefined}
               rel={tile.href !== "#" ? "noopener" : undefined}
-              className="relative overflow-hidden block min-w-0 min-h-0"
+              className={`relative overflow-hidden block min-w-0 min-h-0 ${
+                i >= previewCount && !showAll ? "max-[700px]:hidden" : ""
+              }`}
               style={{ background: tile.bg }}
             >
               <Image quality={90}
@@ -173,6 +188,16 @@ export default function Unmissables() {
               )}
             </a>
           ))}
+        </div>
+
+        <div className="hidden max-[700px]:flex justify-center mt-5">
+          <button
+            type="button"
+            onClick={() => setShowAll((prev) => !prev)}
+            className="text-xs font-bold tracking-[0.1em] uppercase text-cherish border-b border-cherish pb-[2px]"
+          >
+            {showAll ? "See less" : "See more"}
+          </button>
         </div>
       </div>
     </section>
