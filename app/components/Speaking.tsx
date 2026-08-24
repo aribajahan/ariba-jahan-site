@@ -42,7 +42,7 @@ export default function Speaking() {
           </a>
         </div>
 
-        <div className="max-[1024px]:hidden flex-[1_1_480px] pt-8 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
+        <div className="max-[1024px]:hidden flex-[1_1_480px] grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
           <div className="row-span-2 min-w-0 min-h-0 overflow-hidden relative max-[700px]:h-[300px] max-[700px]:row-span-1">
             <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
           </div>
