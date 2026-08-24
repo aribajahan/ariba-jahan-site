@@ -5,7 +5,7 @@ export default function Speaking() {
   return (
     <section id="speaker" className="bg-cream overflow-hidden">
       <div className="flex flex-wrap min-h-[640px] max-w-[1400px] mx-auto">
-        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] max-[700px]:pt-9 max-[700px]:pb-11 flex flex-col justify-start">
+        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] max-[1024px]:pt-9 max-[1024px]:pb-11 flex flex-col justify-start">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
             Speaking &amp; Writing
           </div>
@@ -13,7 +13,7 @@ export default function Speaking() {
             People + Technology
           </div>
 
-          <div className="hidden max-[700px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
+          <div className="hidden max-[1024px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
             <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[220px]">
               <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
             </div>
@@ -25,7 +25,7 @@ export default function Speaking() {
             </div>
           </div>
 
-          <p className="text-base leading-[1.62] text-charcoal/75 mt-7 max-[700px]:mt-2 mb-[18px]">
+          <p className="text-base leading-[1.62] text-charcoal/75 mt-7 max-[1024px]:mt-2 mb-[18px]">
             I&rsquo;m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.
           </p>
           <p className="text-base leading-[1.62] text-charcoal/75 mb-[18px]">
@@ -42,7 +42,7 @@ export default function Speaking() {
           </a>
         </div>
 
-        <div className="max-[700px]:hidden flex-[1_1_480px] pt-8 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
+        <div className="max-[1024px]:hidden flex-[1_1_480px] pt-8 grid grid-cols-2 grid-rows-3 gap-[3px] min-h-[min(500px,88vw)]">
           <div className="row-span-2 min-w-0 min-h-0 overflow-hidden relative max-[700px]:h-[300px] max-[700px]:row-span-1">
             <Image quality={90} src={speakingPhotos[0]} alt="Ariba Jahan speaking on stage" fill sizes="(max-width: 700px) 100vw, 25vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
           </div>
