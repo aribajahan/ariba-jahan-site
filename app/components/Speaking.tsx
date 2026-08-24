@@ -5,7 +5,7 @@ export default function Speaking() {
   return (
     <section id="speaker" className="bg-cream overflow-hidden">
       <div className="flex flex-wrap min-h-[640px] max-w-[1400px] mx-auto">
-        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] flex flex-col justify-start">
+        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-12 pb-[72px] max-[700px]:pt-9 max-[700px]:pb-11 flex flex-col justify-start">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
             Speaking &amp; Writing
           </div>
