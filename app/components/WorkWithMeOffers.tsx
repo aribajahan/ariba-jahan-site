@@ -182,7 +182,7 @@ export default function WorkWithMeOffers() {
           <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
               <Image quality={90}
-                src="/uploads/IMG_4434-opt.jpg"
+                src="/uploads/strategy-sessions-red-sweater-v1.jpg"
                 alt="1:1 Strategy Sessions"
                 fill
                 sizes="(max-width: 1024px) 100vw, 440px"

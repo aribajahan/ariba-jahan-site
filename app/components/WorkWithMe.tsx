@@ -9,7 +9,7 @@ const offers = [
   },
   {
     index: "02",
-    title: "1:1 Strategy Sessions",
+    title: "1:1 CX Strategy Sessions",
     lead: "Dedicated thinking time for leaders navigating important decisions.",
     body: "Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.",
     cta: "See the Sessions →",
