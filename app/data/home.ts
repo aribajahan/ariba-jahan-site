@@ -105,8 +105,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 2,
     headline: "Asha",
-    description: "A personal quest project. Copy and photos coming soon.",
-    photoSrc: null,
+    description: "A personal quest project. Full write-up coming soon.",
+    photoSrc: "/assets/quest-asha-v1.png",
   },
   {
     tag: "Case Study",
@@ -120,8 +120,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 4,
     headline: "Women In Innovation",
-    description: "A personal quest project. Copy and photos coming soon.",
-    photoSrc: null,
+    description: "A personal quest project. Full write-up coming soon.",
+    photoSrc: "/assets/quest-women-in-innovation-v1.png",
   },
   {
     tag: "Case Study",
@@ -135,8 +135,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 6,
     headline: "Daboodle",
-    description: "A personal quest project. Copy and photos coming soon.",
-    photoSrc: null,
+    description: "A personal quest project. Full write-up coming soon.",
+    photoSrc: "/assets/quest-daboodle-v1.jpg",
   },
 ];
 
