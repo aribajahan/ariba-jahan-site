@@ -33,7 +33,7 @@ export default function SpeakingTestimonials() {
               type="button"
               aria-label="Previous testimonial"
               onClick={() => scrollBy(-1)}
-              className="w-11 h-11 rounded-full border border-charcoal/25 bg-transparent text-charcoal text-base cursor-pointer transition-colors duration-150 hover:border-charcoal active:border-charcoal active:scale-[0.92]"
+              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/50 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
             >
               ←
             </button>
@@ -41,7 +41,7 @@ export default function SpeakingTestimonials() {
               type="button"
               aria-label="Next testimonial"
               onClick={() => scrollBy(1)}
-              className="w-11 h-11 rounded-full border border-charcoal/25 bg-transparent text-charcoal text-base cursor-pointer transition-colors duration-150 hover:border-charcoal active:border-charcoal active:scale-[0.92]"
+              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/50 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
             >
               →
             </button>
@@ -52,20 +52,19 @@ export default function SpeakingTestimonials() {
       <div className="relative max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div
           ref={scrollRef}
-          className="no-scrollbar flex gap-6 overflow-x-scroll [scroll-snap-type:x_mandatory] pb-3"
+          className="no-scrollbar flex items-start gap-6 overflow-x-scroll [scroll-snap-type:x_mandatory] pb-3"
         >
           {speakingTestimonials.map((t, i) => (
             <div
               key={i}
-              className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between"
+              className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[700px]:min-h-[220px]"
               style={{
                 scrollSnapAlign: "start",
                 flex: `0 0 min(${CARD_WIDTH}px, 80vw)`,
-                minHeight: 340,
               }}
             >
               <div
-                className="absolute -top-[10px] left-4 font-display text-[100px] font-black leading-none pointer-events-none"
+                className="absolute -top-[10px] left-4 font-display text-[100px] max-[700px]:text-[45px] font-black leading-none pointer-events-none"
                 style={{ color: "rgba(255,251,243,.1)" }}
               >
                 &quot;

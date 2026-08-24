@@ -32,7 +32,7 @@ export default function WorkWithMe() {
             <div className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase tracking-[-0.01em] leading-none text-cream">
               Let&rsquo;s Work Together
             </div>
-            <p className="text-[17px] leading-[1.6] text-cream/85 max-w-[560px] mt-5">
+            <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 max-w-[560px] mt-5">
               Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they&rsquo;re identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.
               <br />
               <br />
@@ -55,7 +55,7 @@ export default function WorkWithMe() {
                   {offer.title}
                 </span>
               </div>
-              <p className="text-[19px] leading-[1.65] text-charcoal/[0.62] mb-8">
+              <p className="text-[19px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/[0.62] mb-8">
                 <b>{offer.lead}</b>
                 <br />
                 <br />

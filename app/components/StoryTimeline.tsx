@@ -66,7 +66,7 @@ function PhotoPair({
           }
         >
           <div className="relative w-full h-40">
-            <Image
+            <Image quality={90}
               src={photo.src}
               alt={chapter.headline}
               fill
@@ -100,7 +100,7 @@ function ChapterText({ chapter, align }: { chapter: StoryChapter; align: "left" 
       <div className="text-xs font-bold tracking-[0.1em] uppercase text-charcoal/40 mb-[14px]">
         {chapter.headline}
       </div>
-      <p className="text-[17px] leading-[1.6] text-charcoal/[0.68]">{chapter.body}</p>
+      <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/[0.68]">{chapter.body}</p>
     </div>
   );
 }
@@ -221,7 +221,7 @@ export default function StoryTimeline() {
               }}
             >
               <div className="relative w-full h-40">
-                <Image
+                <Image quality={90}
                   src={photo.src}
                   alt="Ariba Jahan, right now"
                   fill
@@ -239,7 +239,7 @@ export default function StoryTimeline() {
           <div className="text-xs font-bold tracking-[0.1em] uppercase text-charcoal/40 mb-[14px]">
             Right Now
           </div>
-          <p className="text-[17px] leading-[1.6] text-charcoal/[0.68]">{rightNowCopy}</p>
+          <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/[0.68]">{rightNowCopy}</p>
         </div>
       </div>
     </section>

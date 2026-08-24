@@ -16,7 +16,7 @@ export default function AboutBio() {
         {bioIntro.map((p, i) => (
           <p
             key={i}
-            className={`text-lg leading-[1.75] mb-6 ${
+            className={`text-lg leading-[1.75] max-[700px]:text-[16px] max-[700px]:leading-[1.45] mb-6 ${
               i === 0 ? "text-cream" : "text-cream/[0.82]"
             }`}
           >
@@ -29,7 +29,7 @@ export default function AboutBio() {
           style={{ maxHeight: expanded ? 3200 : 0 }}
         >
           {bioExpanded.map((p, i) => (
-            <p key={i} className="text-lg leading-[1.75] text-cream/[0.82] mb-6">
+            <p key={i} className="text-lg leading-[1.75] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.82] mb-6">
               {p}
             </p>
           ))}

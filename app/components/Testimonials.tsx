@@ -52,24 +52,23 @@ export default function Testimonials() {
         <div
           ref={scrollRef}
           onScroll={handleScroll}
-          className="no-scrollbar flex gap-6 overflow-x-scroll [scroll-snap-type:x_mandatory] pb-3"
+          className="no-scrollbar flex items-start gap-6 overflow-x-scroll [scroll-snap-type:x_mandatory] pb-3"
         >
           {testimonials.map((t, i) => {
             const style = categoryStyles[t.category];
             return (
               <div
                 key={i}
-                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end"
+                className="relative overflow-hidden py-11 px-10 flex flex-col justify-end min-h-[400px] max-[700px]:min-h-[220px]"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 76vw)`,
-                  minHeight: 400,
                   background: style.bg,
                   border: style.border,
                 }}
               >
                 <div
-                  className="absolute top-5 -left-1.5 font-display text-[90px] font-black leading-none pointer-events-none"
+                  className="absolute top-5 -left-1.5 font-display text-[90px] max-[700px]:text-[45px] font-black leading-none pointer-events-none"
                   style={{ color: ghostOpacity[t.category] }}
                 >
                   {t.category}
@@ -100,7 +99,7 @@ export default function Testimonials() {
             type="button"
             aria-label="Previous testimonial"
             onClick={() => scrollBy(-1)}
-            className="w-11 h-11 border-[1.5px] border-charcoal/25 flex items-center justify-center text-lg cursor-pointer transition-colors duration-150 hover:bg-charcoal hover:text-cream active:bg-charcoal active:text-cream active:scale-[0.92]"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             ←
           </button>
@@ -108,7 +107,7 @@ export default function Testimonials() {
             type="button"
             aria-label="Next testimonial"
             onClick={() => scrollBy(1)}
-            className="w-11 h-11 border-[1.5px] border-charcoal/25 flex items-center justify-center text-lg cursor-pointer transition-colors duration-150 hover:bg-charcoal hover:text-cream active:bg-charcoal active:text-cream active:scale-[0.92]"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             →
           </button>

@@ -6,7 +6,7 @@ export default function Recognition() {
     <section className="bg-cream overflow-hidden relative z-10">
       <div className="flex flex-wrap min-h-[520px]">
         <div className="flex-[1_1_380px] min-h-[min(420px,80vw)] min-w-0 overflow-hidden relative">
-          <Image
+          <Image quality={90}
             src="/uploads/603A5509-opt.jpg"
             alt="Ariba Jahan receiving an award"
             fill
@@ -25,7 +25,7 @@ export default function Recognition() {
             {recognitionItems.map((item, i) => (
               <div
                 key={item}
-                className={`text-[17px] font-semibold text-cream leading-[1.3] py-4 ${
+                className={`text-[17px] max-[700px]:text-[16px] font-semibold text-cream leading-[1.3] py-4 ${
                   i < recognitionItems.length - 1 ? "border-b border-cream/[0.12]" : ""
                 }`}
               >

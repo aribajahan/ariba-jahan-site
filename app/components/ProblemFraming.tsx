@@ -11,7 +11,7 @@ export default function ProblemFraming() {
         <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-5 max-[700px]:whitespace-normal whitespace-nowrap">
           From Share Of Attention To Share Of Life
         </h2>
-        <p className="text-[17px] leading-[1.6] text-charcoal/65 max-w-[640px] mb-11">
+        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[640px] mb-11">
           I think more organizations need to shift from chasing attention to earning a real place
           in people&rsquo;s lives. That&rsquo;s what I mean by Experience-Led Growth: creating
           business value by becoming more useful, more relevant, and more worth returning to over
@@ -21,7 +21,7 @@ export default function ProblemFraming() {
           {problemCards.map((card) => (
             <div key={card.title} className="pb-6">
               <div className="relative h-40 mb-[18px]">
-                <Image
+                <Image quality={90}
                   src={card.photoSrc}
                   alt={card.title}
                   fill

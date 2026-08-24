@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-cream border-b border-charcoal/[0.08] py-4">
       <div className="flex items-center justify-between gap-5 max-w-[1600px] mx-auto px-[clamp(24px,5vw,80px)]">
         <Link href="/">
-          <Image
+          <Image quality={90}
             src="/assets/wordmark-black.png"
             alt="Ariba Jahan"
             height={26}

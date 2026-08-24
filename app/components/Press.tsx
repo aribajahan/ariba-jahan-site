@@ -46,7 +46,7 @@ export default function Press() {
               className="relative aspect-square overflow-hidden block"
               style={{ background: item.bg }}
             >
-              <Image
+              <Image quality={90}
                 src={item.photoSrc}
                 alt={item.title}
                 fill

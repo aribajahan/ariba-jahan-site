@@ -39,7 +39,7 @@ export default function SpeakingThemes() {
               }`}
             >
               <div className="absolute inset-0 z-0">
-                <Image
+                <Image quality={90}
                   src={theme.photoSrc}
                   alt={theme.title}
                   fill

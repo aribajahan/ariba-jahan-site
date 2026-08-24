@@ -23,7 +23,7 @@ export default function Community() {
                 <span className="absolute top-2 left-2 z-[2] text-cream font-display font-extrabold text-base w-[26px] h-[26px] flex items-center justify-center [text-shadow:0_1px_4px_rgba(0,0,0,0.6)]">
                   {photo.number}
                 </span>
-                <Image
+                <Image quality={90}
                   src={photo.photoSrc}
                   alt={photo.caption}
                   fill

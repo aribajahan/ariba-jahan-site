@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[92vh]">
       <div className="absolute inset-0 z-0">
-        <Image
+        <Image quality={90}
           src="/assets/hero-photo.jpg"
           alt="Ariba Jahan"
           fill
@@ -23,7 +23,7 @@ export default function Hero() {
         }}
       />
       <div className="relative z-[2] max-w-[1200px] mx-auto w-full px-[clamp(24px,5vw,80px)] pb-16 pt-[210px] pointer-events-none max-[700px]:pt-[120px] max-[700px]:px-6">
-        <Image
+        <Image quality={90}
           src="/assets/wordmark-large-white.png"
           alt="Ariba Jahan"
           width={1200}

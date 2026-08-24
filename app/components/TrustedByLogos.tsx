@@ -16,7 +16,7 @@ export default function TrustedByLogos() {
         </h2>
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(180px,1fr))] max-[1024px]:[grid-template-columns:repeat(3,1fr)] max-[700px]:[grid-template-columns:repeat(2,1fr)] gap-11 gap-x-8 items-center">
           {speakingLogos.map((logo) => (
-            <Image
+            <Image quality={90}
               key={logo.alt}
               src={logo.src}
               alt={logo.alt}
@@ -30,7 +30,7 @@ export default function TrustedByLogos() {
         <div className="flex justify-center mt-14">
           <a
             href="#close"
-            className="inline-block bg-cherish text-cream px-[30px] py-4 text-xs font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
+            className="inline-block bg-cherish text-cream px-[30px] py-4 max-[700px]:px-[22px] max-[700px]:py-[14px] text-xs font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
           >
             Bring Ariba to Your Event →
           </a>

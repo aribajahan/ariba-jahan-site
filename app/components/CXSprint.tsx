@@ -23,7 +23,7 @@ export default function CXSprint() {
 
         <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
           <div className="h-[560px] max-[700px]:h-[320px] overflow-hidden relative">
-            <Image
+            <Image quality={90}
               src="/uploads/vox1-copy-opt.jpg"
               alt="CX Ambition Sprint"
               fill
@@ -33,11 +33,11 @@ export default function CXSprint() {
           </div>
 
           <div className="max-w-[640px]">
-            <p className="text-[19px] leading-[1.6] text-cream/90 mb-[14px] font-bold">
+            <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/90 mb-[14px] font-bold">
               A 6-week sprint for teams that need a sharper point of view on how their product,
               service, or experience should evolve.
             </p>
-            <div className="text-[17px] leading-[1.6] text-cream/85 mb-6 flex flex-col gap-4">
+            <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-6 flex flex-col gap-4">
               <p>
                 This is for organizations at an inflection point: when customer expectations are
                 changing, engagement has flattened, the market is shifting, or new technology is
@@ -128,7 +128,7 @@ export default function CXSprint() {
 
             <a
               href="mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry"
-              className="inline-block bg-charcoal text-cream px-7 py-[15px] text-[15px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(0,0,0,0.4)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(0,0,0,0.4)]"
+              className="inline-block bg-charcoal text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(0,0,0,0.4)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(0,0,0,0.4)]"
             >
               Book an intro call →
             </a>

@@ -10,7 +10,7 @@ export default function WwmTrustedBy() {
         </div>
         <div className="flex flex-wrap items-center gap-10 max-[1024px]:gap-8 max-[700px]:gap-6">
           {wwmTrustedByLogos.map((logo) => (
-            <Image
+            <Image quality={90}
               key={logo.alt}
               src={logo.src}
               alt={logo.alt}

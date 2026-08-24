@@ -34,7 +34,7 @@ export default function EngagementsGallery() {
 
         <div className="grid grid-cols-4 grid-rows-2 max-[1024px]:grid-cols-3 max-[1024px]:grid-rows-none max-[1024px]:auto-rows-[220px] max-[1024px]:[grid-auto-flow:dense] max-[700px]:grid-cols-2 max-[700px]:auto-rows-[220px] gap-[3px]">
           <div className="col-span-2 row-span-2 min-w-0 min-h-0 overflow-hidden relative h-[260px] max-[1024px]:h-auto">
-            <Image
+            <Image quality={90}
               src={galleryPhotos[0]}
               alt="Ariba Jahan speaking engagement"
               fill
@@ -47,7 +47,7 @@ export default function EngagementsGallery() {
               key={src}
               className="min-w-0 min-h-0 overflow-hidden relative h-[260px] max-[1024px]:h-auto"
             >
-              <Image
+              <Image quality={90}
                 src={src}
                 alt="Ariba Jahan speaking engagement"
                 fill

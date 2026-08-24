@@ -54,7 +54,7 @@ export default function Unmissables() {
           </div>
         </div>
 
-        <p className="text-[19px] leading-[1.62] text-charcoal/65 max-w-[720px] mb-9">
+        <p className="text-[19px] leading-[1.62] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[720px] mb-9">
           Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
         </p>
 
@@ -74,7 +74,7 @@ export default function Unmissables() {
 
         <div className="flex flex-wrap gap-1 items-stretch mb-1">
           <div className="relative flex-[1_1_340px] bg-cherish p-9 flex flex-col justify-end overflow-hidden min-h-[340px]">
-            <Image
+            <Image quality={90}
               src="/assets/unmissables-ce.jpg"
               alt="Cognitive Endurance framework"
               fill
@@ -136,7 +136,7 @@ export default function Unmissables() {
               className="relative overflow-hidden block min-w-0 min-h-0"
               style={{ background: tile.bg }}
             >
-              <Image
+              <Image quality={90}
                 src={tile.photoSrc}
                 alt={tile.hidden ? "" : tile.title}
                 fill

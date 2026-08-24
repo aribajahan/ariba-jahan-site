@@ -14,14 +14,14 @@ export default function AboutClosingCTA() {
           </p>
         </div>
 
-        <div className="grid gap-px bg-cream/[0.15] [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[700px]:!grid-cols-2">
+        <div className="grid gap-px bg-cream/[0.15] [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[700px]:!grid-cols-1 max-[700px]:!gap-0 max-[700px]:!bg-transparent max-[700px]:divide-y max-[700px]:divide-cream/15">
           {aboutClosingLinks.map((link) => (
             <a
               key={link.index}
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener" : undefined}
-              className="relative z-0 bg-charcoal border-t-[3px] border-cherish px-5 pt-9 pb-8 flex flex-col gap-[10px] transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-[6px] hover:shadow-[0_16px_26px_-10px_rgba(0,0,0,0.5)] hover:z-[1] active:-translate-y-[2px] active:shadow-[0_8px_14px_-8px_rgba(0,0,0,0.5)] active:z-[1]"
+              className="relative z-0 bg-charcoal border-t-[3px] border-cherish px-5 pt-9 pb-8 flex flex-col gap-[10px] transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-[6px] hover:shadow-[0_16px_26px_-10px_rgba(0,0,0,0.5)] hover:z-[1] active:-translate-y-[2px] active:shadow-[0_8px_14px_-8px_rgba(0,0,0,0.5)] active:z-[1] max-[700px]:border-t-0 max-[700px]:px-0 max-[700px]:py-5 max-[700px]:hover:translate-y-0 max-[700px]:hover:shadow-none max-[700px]:active:translate-y-0 max-[700px]:active:shadow-none"
             >
               <span className="font-display text-base font-extrabold text-cherish">
                 {link.index}

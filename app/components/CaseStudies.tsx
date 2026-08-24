@@ -50,7 +50,7 @@ export default function CaseStudies() {
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal mb-[14px]">
             Case Studies
           </h2>
-          <p className="text-[17px] leading-[1.6] text-charcoal max-w-[640px]">
+          <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal max-w-[640px]">
             A few examples of what this looks like in practice, from rethinking customer value to
             shaping products, experiences, and AI-enabled services.
           </p>
@@ -83,7 +83,7 @@ export default function CaseStudies() {
                         Case Study {i + 1}
                       </span>
                       <div className="relative h-[460px] max-[1024px]:h-[380px] max-[700px]:h-[260px] mb-6 overflow-hidden">
-                        <Image
+                        <Image quality={90}
                           src={c.photoSrc}
                           alt={`${c.client} case study`}
                           fill
@@ -204,7 +204,7 @@ export default function CaseStudies() {
             type="button"
             aria-label="Previous case study"
             onClick={() => scrollBy(-1)}
-            className="w-11 h-11 border-[1.5px] border-charcoal/25 flex items-center justify-center text-lg cursor-pointer transition-colors duration-150 hover:bg-charcoal hover:text-cream active:bg-charcoal active:text-cream active:scale-[0.92]"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             ←
           </button>
@@ -212,7 +212,7 @@ export default function CaseStudies() {
             type="button"
             aria-label="Next case study"
             onClick={() => scrollBy(1)}
-            className="w-11 h-11 border-[1.5px] border-charcoal/25 flex items-center justify-center text-lg cursor-pointer transition-colors duration-150 hover:bg-charcoal hover:text-cream active:bg-charcoal active:text-cream active:scale-[0.92]"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             →
           </button>

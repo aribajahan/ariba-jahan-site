@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-charcoal py-11 px-[clamp(24px,5vw,80px)]">
       <div className="max-w-[1200px] mx-auto flex items-start justify-between flex-wrap gap-5">
         <div className="max-w-[480px]">
-          <Image
+          <Image quality={90}
             src="/assets/wordmark-white.png"
             alt="Ariba Jahan"
             width={140}
