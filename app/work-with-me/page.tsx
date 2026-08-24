@@ -3,8 +3,7 @@ import WorkWithMeHero from "../components/WorkWithMeHero";
 import WwmTrustedBy from "../components/WwmTrustedBy";
 import ProblemFraming from "../components/ProblemFraming";
 import TwoWaysDivider from "../components/TwoWaysDivider";
-import CXSprint from "../components/CXSprint";
-import StrategySessions from "../components/StrategySessions";
+import WorkWithMeOffers from "../components/WorkWithMeOffers";
 import WwmTestimonials from "../components/WwmTestimonials";
 import CaseStudies from "../components/CaseStudies";
 import WorkWithMeClosingCTA from "../components/WorkWithMeClosingCTA";
@@ -18,8 +17,7 @@ export default function WorkWithMe() {
       <WwmTrustedBy />
       <ProblemFraming />
       <TwoWaysDivider />
-      <CXSprint />
-      <StrategySessions />
+      <WorkWithMeOffers />
       <WwmTestimonials />
       <CaseStudies />
       <WorkWithMeClosingCTA />
