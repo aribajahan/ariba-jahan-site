@@ -22,7 +22,7 @@ export default function Recognition() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="flex-[1_1_480px] px-[clamp(24px,5vw,80px)] py-[72px] max-[1024px]:pt-8 max-[1024px]:pb-11 flex flex-col justify-center bg-charcoal">
+        <div className="flex-[1_1_480px] px-[clamp(24px,5vw,80px)] pt-[120px] pb-[72px] max-[1024px]:pt-8 max-[1024px]:pb-11 flex flex-col justify-center bg-charcoal">
           <div className="max-[1024px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
             Credentials
           </div>
