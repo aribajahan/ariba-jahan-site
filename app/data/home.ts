@@ -7,7 +7,7 @@ export const navLinks: NavLink[] = [
   { label: "Speaking", href: "/speaking" },
   { label: "Work With Me", href: "/work-with-me" },
   { label: "Unmissables", href: "https://www.unmissables.xyz/", external: true },
-  { label: "Reading Room", href: "/reading-room" },
+  // Reading Room hidden from nav until the page is built.
   { label: "About", href: "/about" },
 ];
 
@@ -121,7 +121,8 @@ export const experiments: Experiment[] = [
     tag: "Quest",
     tagIndex: 4,
     headline: "Women In Innovation",
-    description: "A personal quest project. Full write-up coming soon.",
+    description:
+      "Shaping a new platform for the women building what comes next in AI and innovation.",
     photoSrc: "/assets/quest-women-in-innovation-v1.png",
   },
   {

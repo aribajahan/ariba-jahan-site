@@ -234,7 +234,7 @@ export const featuredItems: RecognitionItem[] = [
   },
   {
     label: "LBB - \"Women Don't Need Rescuing\"",
-    href: "https://www.aribajahan.com/about-folio/k4p347flryam6wfd23om170hqilstx",
+    href: "https://lbbonline.com/news/ai-gender-gap-advertising",
   },
   {
     label: "Recess Playbook - Contributing Creative",

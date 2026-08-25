@@ -2,21 +2,23 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import SubstackEmbed from "./SubstackEmbed";
+import SocialIcon from "./SocialIcon";
 
 const links = [
   {
     label: "Read on Substack",
-    shortLabel: "Substack",
+    icon: "Substack" as const,
     href: "https://www.unmissables.xyz/",
   },
   {
     label: "Listen on Spotify",
-    shortLabel: "Spotify",
+    icon: "Spotify" as const,
     href: "https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315",
   },
   {
     label: "Apple Podcasts",
-    shortLabel: "Apple",
+    icon: "Apple Podcasts" as const,
     href: "https://podcasts.apple.com/ph/podcast/unmissables-with-ariba-jahan/id1707384312",
   },
 ];
@@ -66,23 +68,47 @@ export default function Unmissables() {
           </div>
         </div>
 
-        <p className="text-[19px] leading-[1.62] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[720px] mb-9">
-          Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
-        </p>
+        <div
+          className={`grid gap-x-10 gap-y-4 mb-9 [grid-template-columns:1fr_auto] [grid-template-areas:'para_embed'_'links_links'] max-[1024px]:grid-cols-1 max-[1024px]:[grid-template-areas:'para'_'links'_'embed']`}
+        >
+          <p className="[grid-area:para] text-[19px] leading-[1.62] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[720px]">
+            Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
+          </p>
 
-        <div className="mb-9 flex gap-3 flex-wrap max-[700px]:grid max-[700px]:grid-cols-3 max-[700px]:gap-2">
-          {links.map((l) => (
-            <a
-              key={l.label}
-              href={l.href}
-              target="_blank"
-              rel="noopener"
-              className="px-[22px] py-[11px] text-xs font-bold tracking-[0.1em] uppercase border border-cherish text-charcoal whitespace-nowrap transition-all duration-150 hover:bg-cherish hover:text-cream hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(45,45,45,0.4)] active:bg-cherish active:text-cream active:-translate-y-[2px] max-[700px]:px-2 max-[700px]:py-[11px] max-[700px]:text-center max-[700px]:whitespace-normal"
-            >
-              <span className="max-[700px]:hidden">{l.label}</span>
-              <span className="hidden max-[700px]:inline">{l.shortLabel}</span>
-            </a>
-          ))}
+          {/* Icon links: mobile + tablet, where the embed sits full-width below */}
+          <div className="[grid-area:links] min-[1025px]:hidden flex gap-5 self-start mt-1">
+            {links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noopener"
+                aria-label={l.label}
+                className="text-charcoal/70 transition-colors duration-150 hover:text-cherish active:text-cherish"
+              >
+                <SocialIcon name={l.icon} className="w-6 h-6" />
+              </a>
+            ))}
+          </div>
+
+          {/* Text links: desktop, where the embed sits beside the paragraph */}
+          <div className="[grid-area:links] hidden min-[1025px]:flex gap-x-6 gap-y-2 flex-wrap self-start">
+            {links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noopener"
+                className="text-xs font-bold tracking-[0.1em] uppercase text-charcoal border-b border-charcoal/25 pb-[2px] w-fit transition-colors duration-150 hover:text-cherish hover:border-cherish active:text-cherish active:border-cherish"
+              >
+                {l.label}
+              </a>
+            ))}
+          </div>
+
+          <div className="[grid-area:embed] self-start max-[1024px]:mt-2">
+            <SubstackEmbed />
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-1 items-stretch mb-1">

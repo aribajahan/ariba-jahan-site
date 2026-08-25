@@ -3,7 +3,7 @@ import { wwmClosingLinks } from "../data/work-with-me";
 export default function WorkWithMeClosingCTA() {
   return (
     <section
-      id="inquiry"
+      id="close"
       className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
     >
       <div className="max-w-[1000px] mx-auto">

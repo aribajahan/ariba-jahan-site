@@ -5,9 +5,10 @@ import { speakingTestimonials } from "../data/speaking";
 
 const CARD_WIDTH = 420;
 const GAP = 24;
-// Shortest "normal-length" quote (the 123-char one is an outlier) is the
-// reference length mobile cards truncate to; longer gets a Read more toggle.
-const MOBILE_TRUNCATE_AT = 270;
+// One quote is a clear outlier (127 chars vs ~270+ for the rest), so it
+// can't stand in as an unclamped "shortest" reference — clamp every card
+// for guaranteed uniform height instead.
+const MOBILE_TRUNCATE_AT = 0;
 
 export default function SpeakingTestimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -78,7 +79,9 @@ export default function SpeakingTestimonials() {
                 </div>
                 <p
                   className={`relative text-lg leading-[1.5] text-cream/[0.88] ${
-                    needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
+                    needsTruncation && !isExpanded
+                      ? "max-[1024px]:line-clamp-8 max-[1024px]:min-h-[216px]"
+                      : ""
                   }`}
                 >
                   &ldquo;{t.quote}&rdquo;

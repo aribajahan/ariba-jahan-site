@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Big_Shoulders, Barlow } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 // NOTE: next/font/google in this Next.js version no longer exports
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${bigShoulders.variable} ${barlow.variable} antialiased`}
     >
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-RN3XCK2GV4" />
     </html>
   );
 }
