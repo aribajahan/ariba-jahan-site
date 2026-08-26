@@ -45,7 +45,7 @@ export default function Recognition() {
             href="/about"
             className="inline-block mt-7 text-[15px] font-bold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[1px] w-fit"
           >
-            More About Ariba →
+            More About Me →
           </a>
         </div>
       </div>

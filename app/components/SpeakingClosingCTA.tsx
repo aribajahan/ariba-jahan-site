@@ -9,7 +9,7 @@ export default function SpeakingClosingCTA() {
       <div className="max-w-[1000px] mx-auto">
         <div className="text-center mb-14">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
-            Bring Ariba to Your Event
+            Bring Me to Your Event
           </h2>
           <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 max-w-[520px] mx-auto">
             If you&rsquo;re planning an event and think this would resonate with your audience,

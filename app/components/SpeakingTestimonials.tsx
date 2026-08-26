@@ -27,10 +27,10 @@ export default function SpeakingTestimonials() {
         <div className="flex items-end justify-between gap-6 flex-wrap mb-9">
           <div>
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              Testimonials
+              From the Stage
             </div>
             <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal">
-              What People Say
+              What Audiences Say
             </h2>
           </div>
           <div className="flex gap-[10px]">
@@ -65,7 +65,7 @@ export default function SpeakingTestimonials() {
             return (
               <div
                 key={i}
-                className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[340px] max-[1024px]:min-h-0"
+                className="relative overflow-hidden bg-charcoal py-9 px-8 flex flex-col justify-between min-h-[446px] max-[1024px]:min-h-0"
                 style={{
                   scrollSnapAlign: "start",
                   flex: `0 0 min(${CARD_WIDTH}px, 80vw)`,

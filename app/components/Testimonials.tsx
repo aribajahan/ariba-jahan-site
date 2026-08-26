@@ -80,7 +80,7 @@ export default function Testimonials() {
                   {t.category}
                 </div>
                 <p
-                  className={`relative text-base leading-[1.45] mb-4 ${
+                  className={`relative text-lg max-[1024px]:text-base leading-[1.5] max-[1024px]:leading-[1.45] mb-4 ${
                     needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
