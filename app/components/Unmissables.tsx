@@ -38,13 +38,13 @@ const tiles: Tile[] = [
   { id: "unmissables-1", photoSrc: "/assets/unmissables-1.jpg", bg: "#2D2D2D", kind: "Essay", title: "Reclaiming Our Agency in the Age of AI", href: "https://www.unmissables.xyz/p/cognitive-endurance-2", overlay: "dark" },
   { id: "unmissables-2", photoSrc: "/assets/unmissables-2.jpg", bg: "#E73131", kind: "Podcast", title: "Ep. 15: Hard Problems, with Daniel Burka", href: "https://www.unmissables.xyz/p/ep-15-hard-problems", overlay: "dark", hidden: true },
   { id: "unmissables-3", photoSrc: "/assets/unmissables-3.jpg", bg: "#F5A8D5", kind: "Essay", title: "Behavior Design in AI #2: When Agreement Is the Product", href: "https://www.unmissables.xyz/p/behavior-design-in-ai-agreement", overlay: "light" },
-  { id: "unmissables-6", photoSrc: "/assets/unmissables-6.jpg", bg: "#F5A8D5", kind: "Podcast", title: "Episode title goes here", href: "#", overlay: "dark", hidden: true },
+  { id: "unmissables-6", photoSrc: "/assets/unmissables-6.jpg", bg: "#F5A8D5", kind: "Podcast", title: "Beyond Dystopia: Designing Futures You Can Live In, with Keely Adler & Caitlin Keeley, RADAR", href: "https://www.unmissables.xyz/p/designing-futures-multiplayer-mode", overlay: "dark", hidden: true },
   { id: "unmissables-4", photoSrc: "/assets/unmissables-4.jpg", bg: "#2D2D2D", kind: "Essay", title: "Behavior Design in AI #1: When the Interface Is the Response", href: "https://www.unmissables.xyz/p/behavior-design-in-ai-1-when-the", overlay: "dark" },
-  { id: "unmissables-7", photoSrc: "/assets/unmissables-7.jpg", bg: "#2D2D2D", kind: "Podcast", title: "Episode title goes here", href: "#", overlay: "dark", hidden: true },
+  { id: "unmissables-7", photoSrc: "/assets/unmissables-7.jpg", bg: "#2D2D2D", kind: "Podcast", title: "Designing Health Tech When Trust Is the Product, with Ambreen Molitor, Zocdoc", href: "https://www.unmissables.xyz/p/designing-health-tech-when-trust", overlay: "dark", hidden: true },
   { id: "unmissables-5", photoSrc: "/assets/unmissables-5.jpg", bg: "#E73131", kind: "Essay", title: "ChatGPT Has Ads Now. Here's What They're Doing to You", href: "https://www.unmissables.xyz/p/chatgpt-has-ads-now-heres-what-theyre", overlay: "dark" },
-  { id: "unmissables-9", photoSrc: "/assets/unmissables-9.jpg", bg: "#E73131", kind: "Podcast", title: "Episode title goes here", href: "#", overlay: "dark", hidden: true },
+  { id: "unmissables-9", photoSrc: "/assets/unmissables-9.jpg", bg: "#E73131", kind: "Podcast", title: "Making the Invisible Interactive: Immersive Storytelling, with Aditi Rajagopal, Atlantic Studios", href: "https://www.unmissables.xyz/p/making-the-invisible-interactive", overlay: "dark", hidden: true },
   { id: "unmissables-8", photoSrc: "/assets/unmissables-8.jpg", bg: "#F5A8D5", kind: "Essay", title: "The Data Pipeline You Never Consented To", href: "https://www.unmissables.xyz/p/the-data-pipeline-you-never-consented", overlay: "light" },
-  { id: "unmissables-10", photoSrc: "/assets/unmissables-10.jpg", bg: "#2D2D2D", kind: "Podcast", title: "Episode title goes here", href: "#", overlay: "dark", hidden: true },
+  { id: "unmissables-10", photoSrc: "/assets/unmissables-10.jpg", bg: "#2D2D2D", kind: "Podcast", title: "The Behaviors You Reward Are Your Real Culture, with Kit Krugman, Foursquare", href: "https://www.unmissables.xyz/p/the-behaviors-you-reward-are-your", overlay: "dark", hidden: true },
 ];
 
 export default function Unmissables() {
