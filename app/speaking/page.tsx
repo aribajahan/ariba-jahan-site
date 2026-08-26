@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Nav from "../components/Nav";
 import SpeakingHero from "../components/SpeakingHero";
 import SpeakingThemes from "../components/SpeakingThemes";
@@ -5,6 +6,12 @@ import SpeakingTestimonials from "../components/SpeakingTestimonials";
 import SpeakingEngagements from "../components/SpeakingEngagements";
 import SpeakingClosingCTA from "../components/SpeakingClosingCTA";
 import Footer from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Speaking",
+  description:
+    "200+ talks, keynotes, and workshops on technology, human behavior, and what to build next. Bring Ariba Jahan to your event.",
+};
 
 export default function Speaking() {
   return (

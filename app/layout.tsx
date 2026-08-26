@@ -22,9 +22,16 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Ariba Jahan",
+  metadataBase: new URL("https://aribajahan.com"),
+  title: {
+    template: "%s | Ariba Jahan",
+    default: "Ariba Jahan",
+  },
   description:
     "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once.",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
