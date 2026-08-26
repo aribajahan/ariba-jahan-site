@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<![CDATA[
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<!-- SPEAKING ENGAGEMENTS (logos + gallery combined) -->
+<section id="logos" style="background:#2D2D2D;padding:120px clamp(24px,5vw,80px) 100px;border-top:1px solid rgba(255,251,243,0.08);font-family:'Barlow',sans-serif;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:14px;">Selected Speaking Engagements</div>
+    <div data-mq="section-h2" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1;color:#FFFBF3;margin-bottom:36px;max-width:800px;">Spoken At 200+ Gatherings</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:32px 28px;align-items:center;margin-bottom:44px;">
+        <img src="assets/logo-un.png" alt="United Nations" style="height:52px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-google.png" alt="Google" style="height:60px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-tiktok.png" alt="TikTok" style="height:58px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-paramount.png" alt="Paramount" style="height:46px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-voxmedia.png" alt="Vox Media" style="height:34px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-snap.png" alt="Snap Inc." style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-etsy.png" alt="Etsy" style="height:40px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-hubspot.png" alt="HubSpot" style="height:36px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-columbia.png" alt="Columbia University" style="height:54px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ixda.png" alt="IxDA" style="height:44px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ogilvy.png" alt="Ogilvy" style="height:40px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-fanduel.png" alt="FanDuel" style="height:34px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-marketingbrew.png" alt="Marketing Brew" style="height:50px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-svb.png" alt="Silicon Valley Bank" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-aigapro.png" alt="AIGA" style="height:46px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ally.png" alt="Ally" style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-adcolor.png" alt="AdColor" style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-anomaly.png" alt="Anomaly" style="height:34px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-newschool.png" alt="The New School" style="height:44px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-womeninnovation.png" alt="Women in Innovation" style="height:40px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-chief.png" alt="Chief" style="height:36px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-alltechishuman.png" alt="All Tech Is Human" style="height:40px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-designops.png" alt="DesignOps Summit" style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-adweekny.png" alt="Advertising Week New York" style="height:40px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-boardofinnovation.png" alt="Board of Innovation" style="height:46px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ama.png" alt="American Marketing Association" style="height:44px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-radicalresearch.png" alt="Radical Research Summit" style="height:44px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-fq.png" alt="The Female Quotient" style="height:48px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-womenwhocode.png" alt="Women Who Code" style="height:52px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-confab.png" alt="Confab" style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-leadingdesign.png" alt="Leading Design" style="height:52px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;filter:brightness(0) invert(1);">
+        <img src="assets/logo-adcouncil-white.png" alt="Ad Council" style="height:44px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-nftnyc.png" alt="NFT NYC" style="height:38px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-uxsouthafrica.png" alt="UX South Africa" style="height:48px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-asiansinadvertising.png" alt="Asians in Advertising" style="height:42px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+        <img src="assets/logo-ndclondon.png" alt="NDC London" style="height:34px;width:auto;max-width:100%;object-fit:contain;opacity:0.92;">
+      </div>
+    <ul style="list-style:none;display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:0 0 44px;">
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Keynotes</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Executive Briefings</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Executive Offsites</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Workshops</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Fireside Conversations</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Panels</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.3);">·</li>
+      <li style="font-size:13px;font-weight:700;color:rgba(255,251,243,0.7);">Podcast Interviews</li>
+    </ul>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,260px);gap:3px;margin-bottom:56px;">
+      <div style="grid-column:span 2;grid-row:span 2;min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-1" shape="rect" placeholder="Speaking photo" src="uploads/IMG_0075-sm.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-2" shape="rect" placeholder="Speaking photo" src="uploads/marketing-brew-summit-2025-compressed.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-3" shape="rect" placeholder="Speaking photo" src="uploads/_DSC8464.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-4" shape="rect" placeholder="Speaking photo" src="uploads/tfqces2020-compressed.jpg"></image-slot></div>
+      <div style="min-width:0;min-height:0;overflow:hidden;"><image-slot id="gallery-photo-5" shape="rect" placeholder="Speaking photo" src="uploads/img-1773-compressed.jpg"></image-slot></div>
+    </div>
+    <div style="display:flex;justify-content:center;">
+      <a href="#inquiry" style="display:inline-block;background:#E73131;color:#FFFBF3;padding:16px 30px;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;transition:transform .18s cubic-bezier(0.23,1,0.32,1),box-shadow .18s cubic-bezier(0.23,1,0.32,1);" style-hover="transform:translateY(-4px);box-shadow:0 12px 20px -8px rgba(231,49,49,0.6);" style-active="transform:translateY(-1px);box-shadow:0 6px 10px -6px rgba(231,49,49,0.6);">Bring Ariba to Your Event →</a>
+    </div>
+  </div>
+</section>
+]]>
+</x-dc>
+</body>
+</html>

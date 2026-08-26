@@ -109,62 +109,70 @@ export const speakingTestimonials: SpeakingTestimonial[] = [
   },
 ];
 
-export type SpeakingLogo = { src: string; alt: string; heightPx: number };
+export type SpeakingLogo = {
+  src: string;
+  alt: string;
+  heightPx: number;
+  // Some source logo files are solid black/dark and need to be flipped to
+  // white to read against this section's dark background.
+  invert?: boolean;
+};
 
 export const speakingLogos: SpeakingLogo[] = [
-  { src: "/assets/logo-google.png", alt: "Google", heightPx: 64 },
-  { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 83 },
-  { src: "/assets/logo-tiktok.png", alt: "TikTok", heightPx: 76 },
-  { src: "/assets/logo-womenwhocode.png", alt: "Women Who Code", heightPx: 71 },
-  { src: "/assets/logo-adweekny.png", alt: "Advertising Week New York", heightPx: 60 },
-  { src: "/assets/logo-snap.png", alt: "Snap Inc.", heightPx: 49 },
-  { src: "/assets/logo-marketingbrew.png", alt: "Marketing Brew", heightPx: 57 },
-  { src: "/assets/logo-etsy.png", alt: "Etsy", heightPx: 60 },
-  { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 71 },
-  { src: "/assets/logo-nftnyc.png", alt: "NFT NYC", heightPx: 49 },
-  { src: "/assets/logo-aigany.png", alt: "AIGA NY", heightPx: 53 },
-  { src: "/assets/logo-ixda.png", alt: "IxDA", heightPx: 83 },
-  { src: "/assets/logo-hubspot.png", alt: "HubSpot", heightPx: 45 },
-  { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 49 },
-  { src: "/assets/logo-fq.png", alt: "The Female Quotient", heightPx: 64 },
-  { src: "/assets/logo-radicalresearch.png", alt: "Radical Research Summit", heightPx: 64 },
-  { src: "/assets/logo-anomaly.png", alt: "Anomaly", heightPx: 45 },
-  { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 42 },
-  { src: "/assets/logo-womeninnovation.png", alt: "Women in Innovation", heightPx: 69 },
-  { src: "/assets/logo-designcontent.png", alt: "Design + Content", heightPx: 45 },
-  { src: "/assets/logo-aigapro.png", alt: "AIGA", heightPx: 76 },
-  { src: "/assets/logo-adcolor.png", alt: "AdColor", heightPx: 57 },
-  { src: "/assets/logo-ogilvy.png", alt: "Ogilvy", heightPx: 60 },
-  { src: "/assets/logo-onbe.png", alt: "Onbe", heightPx: 49 },
-  { src: "/assets/logo-paramount.png", alt: "Paramount", heightPx: 71 },
-  { src: "/assets/logo-designops.png", alt: "DesignOps Summit", heightPx: 57 },
-  { src: "/assets/logo-boardofinnovation.png", alt: "Board of Innovation", heightPx: 71 },
-  { src: "/assets/logo-ama.png", alt: "American Marketing Association", heightPx: 64 },
-  { src: "/assets/logo-chief.png", alt: "Chief", heightPx: 53 },
-  { src: "/assets/logo-alltechishuman.png", alt: "All Tech Is Human", heightPx: 69 },
-  { src: "/assets/logo-uxsouthafrica.png", alt: "UX South Africa", heightPx: 76 },
-  { src: "/assets/logo-valence.png", alt: "Valence", heightPx: 42 },
-  { src: "/assets/logo-svb.png", alt: "Silicon Valley Bank", heightPx: 64 },
-  { src: "/assets/logo-confab.png", alt: "Confab", heightPx: 49 },
-  { src: "/assets/logo-asiansinadvertising.png", alt: "Asians in Advertising", heightPx: 57 },
-  { src: "/assets/logo-fanduel.png", alt: "FanDuel", heightPx: 42 },
-  { src: "/assets/logo-ndclondon.png", alt: "NDC London", heightPx: 42 },
-  { src: "/assets/logo-newschool.png", alt: "The New School", heightPx: 69 },
+  { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 52 },
+  { src: "/assets/logo-google.png", alt: "Google", heightPx: 60 },
+  { src: "/assets/logo-tiktok.png", alt: "TikTok", heightPx: 58 },
+  { src: "/assets/logo-paramount.png", alt: "Paramount", heightPx: 46 },
+  { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 34 },
+  { src: "/assets/logo-snap.png", alt: "Snap Inc.", heightPx: 38 },
+  { src: "/assets/logo-etsy.png", alt: "Etsy", heightPx: 40 },
+  { src: "/assets/logo-hubspot.png", alt: "HubSpot", heightPx: 36 },
+  { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 54 },
+  { src: "/assets/logo-ixda.png", alt: "IxDA", heightPx: 44 },
+  { src: "/assets/logo-ogilvy.png", alt: "Ogilvy", heightPx: 40 },
+  { src: "/assets/logo-fanduel.png", alt: "FanDuel", heightPx: 34 },
+  { src: "/assets/logo-marketingbrew.png", alt: "Marketing Brew", heightPx: 50 },
+  { src: "/assets/logo-svb.png", alt: "Silicon Valley Bank", heightPx: 42 },
+  { src: "/assets/logo-aigapro.png", alt: "AIGA", heightPx: 46 },
+  { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 38 },
+  { src: "/assets/logo-adcolor.png", alt: "AdColor", heightPx: 38 },
+  { src: "/assets/logo-anomaly.png", alt: "Anomaly", heightPx: 34 },
+  { src: "/assets/logo-newschool.png", alt: "The New School", heightPx: 44 },
+  { src: "/assets/logo-womeninnovation.png", alt: "Women in Innovation", heightPx: 40 },
+  { src: "/assets/logo-chief.png", alt: "Chief", heightPx: 36 },
+  { src: "/assets/logo-alltechishuman.png", alt: "All Tech Is Human", heightPx: 40 },
+  { src: "/assets/logo-designops.png", alt: "DesignOps Summit", heightPx: 38 },
+  { src: "/assets/logo-adweekny.png", alt: "Advertising Week New York", heightPx: 40 },
+  { src: "/assets/logo-boardofinnovation.png", alt: "Board of Innovation", heightPx: 46 },
+  { src: "/assets/logo-ama.png", alt: "American Marketing Association", heightPx: 44 },
+  { src: "/assets/logo-radicalresearch.png", alt: "Radical Research Summit", heightPx: 44 },
+  { src: "/assets/logo-fq.png", alt: "The Female Quotient", heightPx: 48 },
+  { src: "/assets/logo-womenwhocode.png", alt: "Women Who Code", heightPx: 52 },
+  { src: "/assets/logo-confab.png", alt: "Confab", heightPx: 38 },
+  { src: "/assets/logo-leading-design.png", alt: "Leading Design", heightPx: 52, invert: true },
+  { src: "/assets/logo-adcouncil-white-sm.png", alt: "Ad Council", heightPx: 44 },
+  { src: "/assets/logo-nftnyc.png", alt: "NFT NYC", heightPx: 38 },
+  { src: "/assets/logo-uxsouthafrica.png", alt: "UX South Africa", heightPx: 48 },
+  { src: "/assets/logo-asiansinadvertising.png", alt: "Asians in Advertising", heightPx: 42 },
+  { src: "/assets/logo-ndclondon.png", alt: "NDC London", heightPx: 34 },
 ];
 
+// Order tuned so these wrap into exactly 3 rows at mobile width (375px).
 export const engagementFormats = [
   "Keynotes",
-  "Executive Offsites",
   "Workshops",
-  "Fireside Conversations",
   "Panel Discussions",
+  "Executive Offsites",
+  "Fireside Conversations",
+  "Executive Briefings",
   "Podcast Interviews",
 ];
 
 export const galleryPhotos = [
-  "/uploads/IMG_0075-sm.jpg",
   "/uploads/marketing-brew-summit-2025-compressed.jpg",
+  "/uploads/IMG_0075-sm.jpg",
   "/uploads/_DSC8464.jpg",
-  "/uploads/tfqces2020-compressed.jpg",
+  "/uploads/speaking-photo-6.jpeg",
   "/uploads/img-1773-compressed.jpg",
+  "/uploads/tfqces2020-compressed.jpg",
 ];

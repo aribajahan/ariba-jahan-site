@@ -2,8 +2,7 @@ import Nav from "../components/Nav";
 import SpeakingHero from "../components/SpeakingHero";
 import SpeakingThemes from "../components/SpeakingThemes";
 import SpeakingTestimonials from "../components/SpeakingTestimonials";
-import TrustedByLogos from "../components/TrustedByLogos";
-import EngagementsGallery from "../components/EngagementsGallery";
+import SpeakingEngagements from "../components/SpeakingEngagements";
 import SpeakingClosingCTA from "../components/SpeakingClosingCTA";
 import Footer from "../components/Footer";
 
@@ -14,8 +13,7 @@ export default function Speaking() {
       <SpeakingHero />
       <SpeakingThemes />
       <SpeakingTestimonials />
-      <TrustedByLogos />
-      <EngagementsGallery />
+      <SpeakingEngagements />
       <SpeakingClosingCTA />
       <Footer />
     </div>
