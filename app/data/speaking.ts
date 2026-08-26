@@ -122,14 +122,14 @@ export type SpeakingLogo = {
 // broadly recognizable, so they're the ones still visible before the
 // mobile/tablet "Show more" toggle is expanded. Order matters here.
 export const speakingLogos: SpeakingLogo[] = [
-  { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 52 },
-  { src: "/assets/logo-google.png", alt: "Google", heightPx: 60 },
+  { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 64 },
+  { src: "/assets/logo-google.png", alt: "Google", heightPx: 66 },
   { src: "/assets/logo-tiktok.png", alt: "TikTok", heightPx: 58 },
   { src: "/assets/logo-paramount.png", alt: "Paramount", heightPx: 46 },
   { src: "/assets/logo-snap.png", alt: "Snap Inc.", heightPx: 38 },
   { src: "/assets/logo-etsy.png", alt: "Etsy", heightPx: 40 },
   { src: "/assets/logo-hubspot.png", alt: "HubSpot", heightPx: 36 },
-  { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 54 },
+  { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 68 },
   { src: "/assets/logo-ogilvy.png", alt: "Ogilvy", heightPx: 40 },
   { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 34 },
   { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 38 },
