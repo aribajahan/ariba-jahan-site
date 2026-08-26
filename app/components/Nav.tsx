@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../data/home";
 
-export default function Nav() {
+export default function Nav({ contactHref = "#close" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -37,7 +37,7 @@ export default function Nav() {
           ))}
           <li className="whitespace-nowrap">
             <a
-              href="#close"
+              href={contactHref}
               className="inline-block bg-cherish text-cream px-[22px] py-2 text-[15px] font-bold tracking-[0.1em] uppercase whitespace-nowrap transition-colors duration-150 hover:bg-charcoal active:bg-charcoal active:scale-[0.97]"
             >
               Contact
