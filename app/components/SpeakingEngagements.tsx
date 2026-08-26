@@ -1,7 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { engagementFormats, galleryPhotos, speakingLogos } from "../data/speaking";
 
+const INITIAL_LOGO_COUNT = 12; // 3 rows at 4-per-row on mobile/tablet
+
 export default function SpeakingEngagements() {
+  const [logosExpanded, setLogosExpanded] = useState(false);
+
   return (
     <section
       id="logos"
@@ -20,8 +27,8 @@ export default function SpeakingEngagements() {
           General Assembly, Google, TikTok, Paramount, and Vox Media.
         </p>
 
-        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(110px,1fr))] max-[1024px]:[grid-template-columns:repeat(4,1fr)] max-[700px]:!grid-cols-4 gap-[32px] gap-x-[28px] max-[1024px]:gap-y-8 max-[700px]:gap-y-6 max-[700px]:gap-x-4 items-center mb-11">
-          {speakingLogos.map((logo) => (
+        <div className="grid [grid-template-columns:repeat(auto-fit,minmax(110px,1fr))] max-[1024px]:[grid-template-columns:repeat(4,1fr)] max-[700px]:!grid-cols-4 gap-[32px] gap-x-[28px] max-[1024px]:gap-y-8 max-[700px]:gap-y-6 max-[700px]:gap-x-4 items-center mb-6">
+          {speakingLogos.map((logo, i) => (
             <Image quality={90}
               key={logo.alt}
               src={logo.src}
@@ -31,9 +38,19 @@ export default function SpeakingEngagements() {
               style={{ height: logo.heightPx, width: "auto", maxWidth: "100%" }}
               className={`object-contain opacity-[0.92] max-[1024px]:max-h-[30px] max-[1024px]:w-auto max-[700px]:max-h-[24px] ${
                 logo.invert ? "brightness-0 invert" : ""
-              }`}
+              } ${i >= INITIAL_LOGO_COUNT && !logosExpanded ? "max-[1024px]:hidden" : ""}`}
             />
           ))}
+        </div>
+
+        <div className="hidden max-[1024px]:flex justify-center mb-11">
+          <button
+            type="button"
+            onClick={() => setLogosExpanded((v) => !v)}
+            className="text-[13px] font-bold tracking-[0.1em] uppercase text-cherish border-b border-cherish pb-[2px] cursor-pointer"
+          >
+            {logosExpanded ? "Show less" : "Show more →"}
+          </button>
         </div>
 
         <ul className="list-none flex flex-wrap gap-x-[18px] gap-y-2 p-0 m-0 mb-11 max-[700px]:mb-9">

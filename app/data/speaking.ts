@@ -118,23 +118,26 @@ export type SpeakingLogo = {
   invert?: boolean;
 };
 
+// The first 12 (three mobile/tablet rows at 4-per-row) are the most
+// broadly recognizable, so they're the ones still visible before the
+// mobile/tablet "Show more" toggle is expanded. Order matters here.
 export const speakingLogos: SpeakingLogo[] = [
   { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 52 },
   { src: "/assets/logo-google.png", alt: "Google", heightPx: 60 },
   { src: "/assets/logo-tiktok.png", alt: "TikTok", heightPx: 58 },
   { src: "/assets/logo-paramount.png", alt: "Paramount", heightPx: 46 },
-  { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 34 },
   { src: "/assets/logo-snap.png", alt: "Snap Inc.", heightPx: 38 },
   { src: "/assets/logo-etsy.png", alt: "Etsy", heightPx: 40 },
   { src: "/assets/logo-hubspot.png", alt: "HubSpot", heightPx: 36 },
   { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 54 },
-  { src: "/assets/logo-ixda.png", alt: "IxDA", heightPx: 44 },
   { src: "/assets/logo-ogilvy.png", alt: "Ogilvy", heightPx: 40 },
+  { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 34 },
+  { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 38 },
   { src: "/assets/logo-fanduel.png", alt: "FanDuel", heightPx: 34 },
+  { src: "/assets/logo-ixda.png", alt: "IxDA", heightPx: 44 },
   { src: "/assets/logo-marketingbrew.png", alt: "Marketing Brew", heightPx: 50 },
   { src: "/assets/logo-svb.png", alt: "Silicon Valley Bank", heightPx: 42 },
   { src: "/assets/logo-aigapro.png", alt: "AIGA", heightPx: 46 },
-  { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 38 },
   { src: "/assets/logo-adcolor.png", alt: "AdColor", heightPx: 38 },
   { src: "/assets/logo-anomaly.png", alt: "Anomaly", heightPx: 34 },
   { src: "/assets/logo-newschool.png", alt: "The New School", heightPx: 44 },
