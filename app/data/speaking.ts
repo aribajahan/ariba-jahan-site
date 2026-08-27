@@ -78,11 +78,6 @@ export const engagementFormats = [
   "Podcast Interviews",
 ];
 
-export const galleryPhotos = [
-  "/uploads/marketing-brew-summit-2025-compressed.jpg",
-  "/uploads/IMG_0075-sm.jpg",
-  "/uploads/_DSC8464.jpg",
-  "/uploads/speaking-photo-6.jpeg",
-  "/uploads/img-1773-compressed.jpg",
-  "/uploads/tfqces2020-compressed.jpg",
-];
+import galleryPhotosData from "../../content/collections/speaking-gallery-photos.json";
+
+export const galleryPhotos: string[] = galleryPhotosData;
