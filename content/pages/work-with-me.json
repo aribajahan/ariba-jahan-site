@@ -4,8 +4,14 @@
     "headline": "Build unmissable products, services, and experiences that earn a place in people's lives.",
     "subhead": "I work with product, growth, and marketing leaders who need a clearer point of view on customer value, experience, and how their products or services should evolve.",
     "ctas": [
-      { "label": "Explore Sprints", "href": "#cx-sprint" },
-      { "label": "Book a Strategy Session", "href": "#strategy-sessions" }
+      {
+        "label": "Explore Sprints",
+        "href": "#cx-sprint"
+      },
+      {
+        "label": "Book a Strategy Session",
+        "href": "#strategy-sessions"
+      }
     ]
   },
   "cxSprint": {
@@ -36,10 +42,22 @@
       }
     ],
     "weeks": [
-      { "title": "Weeks 1 to 2: Discovery.", "description": "Stakeholder & consumer discovery, 4Cs ecosystem audit & journey mapping." },
-      { "title": "Weeks 3 to 4: Analysis.", "description": "CX gap analysis & white space identification." },
-      { "title": "Week 5: Concepting.", "description": "Directional prototyping & visual concepting." },
-      { "title": "Week 6: Roadmap.", "description": "Experience-led growth strategy & prioritized roadmap readout." }
+      {
+        "title": "Weeks 1 to 2: Discovery.",
+        "description": "Stakeholder & consumer discovery, 4Cs ecosystem audit & journey mapping."
+      },
+      {
+        "title": "Weeks 3 to 4: Analysis.",
+        "description": "CX gap analysis & white space identification."
+      },
+      {
+        "title": "Week 5: Concepting.",
+        "description": "Directional prototyping & visual concepting."
+      },
+      {
+        "title": "Week 6: Roadmap.",
+        "description": "Experience-led growth strategy & prioritized roadmap readout."
+      }
     ]
   },
   "strategySessions": {
