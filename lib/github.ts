@@ -55,12 +55,16 @@ export async function publishFiles(files: FileChange[], message: string) {
     })),
   });
 
+  const author = { name: "Ariba Jahan", email: "4304091+aribajahan@users.noreply.github.com" };
+
   const { data: newCommit } = await octokit.git.createCommit({
     owner: OWNER,
     repo: REPO,
     message,
     tree: newTree.sha,
     parents: [latestCommitSha],
+    author,
+    committer: author,
   });
 
   await octokit.git.updateRef({
