@@ -6,6 +6,7 @@ import {
   storyChapters,
   rightNowPhotos,
   rightNowCopy,
+  storyTimelineContent,
   type StoryChapter,
 } from "../data/about";
 
@@ -158,11 +159,10 @@ export default function StoryTimeline() {
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] border-t border-charcoal/[0.08]">
       <div className="max-w-[640px] mx-auto mb-14 text-center">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          My Story
+          {storyTimelineContent.eyebrow}
         </div>
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1] text-charcoal">
-          Here are some chapters of my life. <br />
-          Excited for what&rsquo;s next.
+          {storyTimelineContent.heading}
         </h2>
       </div>
 
@@ -237,7 +237,7 @@ export default function StoryTimeline() {
         </div>
         <div className="max-w-[600px] mx-auto mt-12 text-center">
           <div className="text-xs font-bold tracking-[0.1em] uppercase text-charcoal/40 mb-[14px]">
-            Right Now
+            {storyTimelineContent.rightNowLabel}
           </div>
           <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/[0.68]">{rightNowCopy}</p>
         </div>

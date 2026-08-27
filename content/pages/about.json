@@ -4,5 +4,65 @@
     "photoSrcMobile": "/assets/about-hero-photo-mobile-v4.jpg",
     "eyebrow": "About",
     "headline": "I think it's worth holding on to hope, pluralism, and a relentless creativity to build good in this world."
+  },
+  "intro": {
+    "paragraph": "My career hasn’t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and why those questions matter so much to me."
+  },
+  "storyTimeline": {
+    "eyebrow": "My Story",
+    "heading": "Here are some chapters of my life. Excited for what's next.",
+    "rightNowLabel": "Right Now",
+    "rightNowCopy": "Right now, my work spans strategy, AI, customer experience, writing, and speaking. That includes advisory work, CX sprints, Unmissables, and collaborations with teams thinking through how technology and changing customer expectations should shape what they build, how they grow, and how they stay useful. Outside of work, I’m happiest being a mom to my son, a partner to my husband and dabbling in creative quests."
+  },
+  "bio": {
+    "eyebrow": "Bio",
+    "intro": [
+      "Hi, I'm Ariba Jahan.",
+      "For more than fifteen years, I've partnered with leadership teams across healthcare, financial services, retail, consumer technology, media, education, philanthropy, startups, and government to navigate moments of change - from emerging technologies and shifting customer expectations to new opportunities for growth. My background in bioengineering research taught me to approach uncertainty with curiosity, scientific rigor, systems thinking, and experimentation - a mindset I've carried into product, customer experience, AI, and organizational transformation."
+    ],
+    "expanded": [
+      "The answer looks different every time. Sometimes it's a product, service, AI-powered experience, or go-to-market (GTM) strategy. Other times it's a customer relationship model, executive advisory council, innovation practice, operating model, or new organizational capability. The goal is always the same: helping organizations become more valuable and useful to the people they serve.",
+      "I've built innovation practices, customer experience organizations, executive advisory councils, AI products and experiences, new offerings, and growth strategies. My work has spanned nonprofits, startups, agencies, and Fortune 500 companies, collaborating with organizations including Google, Ally, TIAA, AARP, WeightWatchers, the Ad Council, the U.S. Department of Health and Human Services, and the U.S. Forest Service.",
+      "I write and host Unmissables, a podcast and newsletter where I explore how technology, business, creativity, science, and human experience collide and how those intersections reshape how we think, build, and lead.",
+      "I've delivered more than 200 keynotes, executive workshops, conference talks, panels, podcasts, and leadership sessions, including at the United Nations General Assembly, Google, TikTok, Paramount, and Vox Media. My work has been recognized through the Obama Foundation Leadership Program, the Presidential Lifetime Achievement Award for community service, Campaign US's Inspiring Women Transforming Technology, and the Global Top 100 Women of the Future in Emerging Tech.",
+      "Outside of work, I'm happiest being a mom and knitting. I also believe that the future isn't inevitable. It reflects what we're willing to question, imagine, and build, and I hope my work encourages a little more deliberate participation in all three.",
+      "If you're building something new, navigating AI, rethinking customer relationships, or simply enjoy conversations about technology and human behavior, I'd love to connect."
+    ]
+  },
+  "careerAdvisory": {
+    "eyebrow": "For the Career-Ambitious",
+    "headline": "Career Advisory 1:1",
+    "lead": "For people building a career with range, visibility, and a clear point of view.",
+    "body": "These sessions are for people building across disciplines, growing their visibility, developing a public voice, or figuring out how to shape a more multidimensional career in design, strategy, and technology.",
+    "cta": "Book a Session →",
+    "href": "mailto:ariba@aribajahan.com?subject=Career%20Advisory%20Inquiry",
+    "photoSrc": "/assets/personal-red-wall-sm.jpg"
+  },
+  "recognitionFeatures": {
+    "eyebrow": "Recognition & Features",
+    "heading": "Honors and Press",
+    "recognitionItems": [
+      { "label": "Obama Foundation Leader USA", "year": "2025" },
+      { "label": "Campaign US Inspiring Women Transforming Technology", "year": "2025" },
+      { "label": "Presidential Lifetime Achievement Award", "year": "2024" },
+      { "label": "Advertising Week NY Future is Female Award", "year": "2024" },
+      { "label": "Ad Club NY's Rockstar, Icon & Innovator Award", "year": "2024" },
+      { "label": "Bill Imada's Top 50 Unsung Heroes", "year": "2024" },
+      { "label": "Global Top 100 Women of the Future in Emerging Tech", "year": "2023" },
+      { "label": "Women in Innovation Movers & Makers", "href": "https://www.linkedin.com/feed/update/urn:li:activity:7165839819657461760/" }
+    ],
+    "featuredItems": [
+      { "label": "Cosmopolitan - Your Overdue Digital Safety Intervention", "href": "https://mags.itp.com/CosmopolitanME/2026/124-COSMOPOLITAN-SPRING-2026/#page=80" },
+      { "label": "Marketing Brew - All Things AI", "href": "https://www.marketingbrew.com/stories/2025/02/14/all-things-ai-with-ariba-jahan" },
+      { "label": "LBB - Meet the Career Chameleons", "href": "https://lbbonline.com/news/Career-Chameleons-Strategy-Transformation" },
+      { "label": "LBB - \"Women Don't Need Rescuing\"", "href": "https://lbbonline.com/news/ai-gender-gap-advertising" },
+      { "label": "Recess Playbook - Contributing Creative", "href": "https://www.cometorecess.com/playbook2026" },
+      { "label": "Present Yourself - Contributing Author", "href": "https://www.amazon.com/Present-Yourself-Strategies-Authentic-Impactful/dp/B0CV6V6L7S" },
+      { "label": "Women of the Future Book Vol. 2", "href": "https://womenofthefuture.com/global-vol-2/" }
+    ]
+  },
+  "closingCTA": {
+    "heading": "Get in Touch",
+    "subhead": "Whether it's a role, a project, or just a good conversation, I'd love to hear from you."
   }
 }

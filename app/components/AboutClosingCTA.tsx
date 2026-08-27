@@ -1,4 +1,4 @@
-import { aboutClosingLinks } from "../data/about";
+import { aboutClosingLinks, aboutClosingCTAContent } from "../data/about";
 
 export default function AboutClosingCTA() {
   return (
@@ -6,11 +6,10 @@ export default function AboutClosingCTA() {
       <div className="max-w-[1000px] mx-auto relative z-[1]">
         <div className="text-center mb-14">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
-            Get in Touch
+            {aboutClosingCTAContent.heading}
           </h2>
           <p className="text-base leading-[1.6] text-cream/[0.68] max-w-[480px] mx-auto">
-            Whether it&rsquo;s a role, a project, or just a good conversation, I&rsquo;d love to
-            hear from you.
+            {aboutClosingCTAContent.subhead}
           </p>
         </div>
 
