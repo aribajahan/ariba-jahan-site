@@ -14,6 +14,10 @@ export type MediaItem = {
   usedOn: string[];
   pages: string[];
   collections: string[];
+  /** Raw, un-humanized collection filenames (e.g. "speaking-logos") — a stable
+   * identity for logic that needs to key off a collection, as opposed to
+   * `collections`, which is display text and can change independently. */
+  collectionKeys: string[];
 };
 
 function readMetaFile(): Record<string, MediaMeta> {
@@ -47,12 +51,7 @@ function listImageFiles(): string[] {
 function humanizeContentFile(relativePath: string): string {
   const withoutExt = relativePath.replace(/\.json$/, "");
   const parts = withoutExt.split(path.sep);
-  const label = parts[parts.length - 1]
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
-  if (parts[0] === "pages") return label;
-  if (parts[0] === "collections") return label;
-  return label;
+  return parts[parts.length - 1].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 function findSectionKey(doc: unknown, imagePath: string): string | null {
@@ -81,50 +80,83 @@ function walkContentFiles(dir: string, out: string[] = []): string[] {
   return out;
 }
 
-type Usage = { usedOn: string[]; pages: string[]; collections: string[] };
+type ContentFile = {
+  raw: string;
+  kind: "page" | "collection" | "other";
+  key: string;
+  label: string;
+  doc: unknown;
+};
 
-/** Scans every content/*.json file for references to each image path, so
- * Media Library can show a real "used on" list instead of a static guess.
- * Also buckets each reference into "page" (content/pages/*.json) or
- * "collection" (content/collections/*.json) so the admin UI can filter by
- * either facet, not just a flat used-on string. */
-function usageFor(imagePath: string, allContentFiles: string[]): Usage {
+/** Reads and parses every content file once, up front — not once per image
+ * (getMediaLibrary previously called usageFor per image, and usageFor
+ * re-read+re-parsed every content file inside that per-image call, an
+ * O(images × files) scan). */
+function loadContentFiles(paths: string[]): ContentFile[] {
+  return paths.map((full) => {
+    const relative = path.relative(CONTENT_ROOT, full);
+    let raw = "";
+    try {
+      raw = fs.readFileSync(full, "utf-8");
+    } catch {
+      raw = "";
+    }
+    const kind: ContentFile["kind"] = relative.startsWith("pages" + path.sep)
+      ? "page"
+      : relative.startsWith("collections" + path.sep)
+      ? "collection"
+      : "other";
+    let doc: unknown;
+    if (kind === "page" && raw) {
+      try {
+        doc = JSON.parse(raw);
+      } catch {
+        doc = undefined;
+      }
+    }
+    return { raw, kind, key: path.basename(relative, ".json"), label: humanizeContentFile(relative), doc };
+  });
+}
+
+type Usage = { usedOn: string[]; pages: string[]; collections: string[]; collectionKeys: string[] };
+
+/** Scans every content file for references to an image path, so Media
+ * Library can show a real "used on" list instead of a static guess. Buckets
+ * each reference into "page" or "collection" so the admin UI can filter by
+ * either facet — a file that's neither (e.g. content/seo.json) is recorded
+ * in `usedOn` for the audit trail but left out of both facets, since it's
+ * not a real page section or a real collection. */
+function usageFor(imagePath: string, contentFiles: ContentFile[]): Usage {
   const usedOn: string[] = [];
   const pages = new Set<string>();
   const collections = new Set<string>();
+  const collectionKeys = new Set<string>();
 
-  for (const file of allContentFiles) {
-    let raw: string;
-    try {
-      raw = fs.readFileSync(file, "utf-8");
-    } catch {
-      continue;
-    }
-    if (!raw.includes(imagePath)) continue;
+  for (const file of contentFiles) {
+    if (!file.raw.includes(imagePath)) continue;
 
-    const relative = path.relative(CONTENT_ROOT, file);
-    const label = humanizeContentFile(relative);
-
-    if (relative.startsWith("pages" + path.sep)) {
-      const doc = JSON.parse(raw);
-      const sectionKey = findSectionKey(doc, imagePath);
-      usedOn.push(sectionKey ? `${label} → ${sectionKey}` : label);
-      pages.add(label);
+    if (file.kind === "page") {
+      const sectionKey = file.doc ? findSectionKey(file.doc, imagePath) : null;
+      usedOn.push(sectionKey ? `${file.label} → ${sectionKey}` : file.label);
+      pages.add(file.label);
+    } else if (file.kind === "collection") {
+      usedOn.push(file.label);
+      collections.add(file.label);
+      collectionKeys.add(file.key);
     } else {
-      usedOn.push(label);
-      collections.add(label);
+      usedOn.push(file.label);
     }
   }
-  return { usedOn, pages: Array.from(pages), collections: Array.from(collections) };
+  return { usedOn, pages: Array.from(pages), collections: Array.from(collections), collectionKeys: Array.from(collectionKeys) };
 }
 
 export function getMediaLibrary(): MediaItem[] {
   const meta = readMetaFile();
   const files = listImageFiles();
-  const allContentFiles = walkContentFiles(CONTENT_ROOT);
+  const contentFiles = loadContentFiles(walkContentFiles(CONTENT_ROOT));
 
   return files.map((src) => {
-    const usage = usageFor(src, allContentFiles);
+    const usage = usageFor(src, contentFiles);
     return {
       src,
       alt: meta[src]?.alt ?? "",
@@ -132,6 +164,7 @@ export function getMediaLibrary(): MediaItem[] {
       usedOn: usage.usedOn,
       pages: usage.pages,
       collections: usage.collections,
+      collectionKeys: usage.collectionKeys,
     };
   });
 }

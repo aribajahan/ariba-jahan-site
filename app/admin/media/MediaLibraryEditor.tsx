@@ -5,8 +5,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePublish } from "../_shared/usePublish";
 import { isLogo } from "../_shared/isLogo";
+import { uploadImage } from "../_shared/uploadImage";
+import type { MediaItem } from "../../../lib/mediaLibrary";
 
-type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[]; pages: string[]; collections: string[] };
 type Filter = { type: "all" | "unused" | "tag" | "page" | "collection"; value?: string };
 
 export default function MediaLibraryEditor({ initialItems }: { initialItems: MediaItem[] }) {
@@ -109,20 +110,12 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
     if (!file) return;
     setUploading(true);
     try {
-      const dataUrl: string = await new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result as string);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
-      });
-      const res = await fetch("/api/admin/upload", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ filename: file.name, dataUrl, alt: "", tags: [] }),
-      });
-      const data = await res.json();
-      if (data.ok) {
-        setItems((list) => [{ src: data.src, alt: "", tags: [], usedOn: [], pages: [], collections: [] }, ...list]);
+      const data = await uploadImage(file);
+      if (data.ok && data.src) {
+        setItems((list) => [
+          { src: data.src!, alt: "", tags: [], usedOn: [], pages: [], collections: [], collectionKeys: [] },
+          ...list,
+        ]);
         router.refresh();
       }
     } finally {
@@ -244,7 +237,10 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
                 </div>
                 <button
                   type="button"
-                  onClick={() => setOpenSrc(isOpen ? null : item.src)}
+                  onClick={() => {
+                    setOpenSrc(isOpen ? null : item.src);
+                    setConfirmingDelete(null);
+                  }}
                   className="text-[11px] text-[#888] text-left mt-auto"
                 >
                   {isOpen ? "Close" : "Edit"}

@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { isLogo } from "./isLogo";
-
-type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[]; pages: string[]; collections: string[] };
+import { uploadImage } from "./uploadImage";
+import type { MediaItem } from "../../../lib/mediaLibrary";
 
 export default function MediaPicker({
   value,
@@ -31,6 +31,8 @@ export default function MediaPicker({
   }, [open, items]);
 
   const filtered = (items ?? []).filter((item) => !search || item.src.toLowerCase().includes(search.toLowerCase()));
+  const currentItem = items?.find((item) => item.src === value);
+  const valueIsLogo = currentItem ? isLogo(currentItem) : /\/logo-/.test(value);
 
   const choose = (src: string) => {
     onChange(src);
@@ -42,19 +44,15 @@ export default function MediaPicker({
     if (!file) return;
     setUploading(true);
     try {
-      const dataUrl: string = await new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result as string);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
-      });
-      const res = await fetch("/api/admin/upload", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ filename: file.name, dataUrl, alt: "", tags: [] }),
-      });
-      const data = await res.json();
-      if (data.ok) choose(data.src);
+      const data = await uploadImage(file);
+      if (data.ok && data.src) {
+        choose(data.src);
+        // Prepend the new upload to the cached list so reopening this same
+        // picker instance shows it immediately instead of a stale list.
+        setItems((list) =>
+          list ? [{ src: data.src!, alt: "", tags: [], usedOn: [], pages: [], collections: [], collectionKeys: [] }, ...list] : list
+        );
+      }
     } finally {
       setUploading(false);
       e.target.value = "";
@@ -63,8 +61,21 @@ export default function MediaPicker({
 
   return (
     <div className="flex gap-2 items-center flex-wrap">
-      <div className="relative w-11 h-11 rounded-md overflow-hidden flex-shrink-0 bg-[#f0efec] border border-[#ddd]">
-        {value && <Image src={value} alt="" fill sizes="44px" style={{ objectFit: "contain" }} />}
+      <div
+        className={`relative w-11 h-11 rounded-md overflow-hidden flex-shrink-0 border border-[#ddd] ${
+          valueIsLogo ? "bg-[#f7f6f4]" : "bg-[#f0efec]"
+        }`}
+      >
+        {value && (
+          <Image
+            src={value}
+            alt=""
+            fill
+            sizes="44px"
+            style={{ objectFit: valueIsLogo ? "contain" : "cover" }}
+            className={valueIsLogo ? "p-1" : ""}
+          />
+        )}
       </div>
       <input
         value={value}
