@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Logo = { src: string; alt: string; heightPx: number };
 
@@ -86,12 +87,7 @@ export default function WwmTrustedByEditor({ initialItems }: { initialItems: Log
                   placeholder="Name"
                   className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[12px]"
                 />
-                <input
-                  value={logo.src}
-                  onChange={(e) => update(i, { src: e.target.value })}
-                  placeholder="/assets/logo-x.png"
-                  className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[12px]"
-                />
+                <MediaPicker value={logo.src} onChange={(src) => update(i, { src })} placeholder="/assets/logo-x.png" />
                 <input
                   type="number"
                   value={logo.heightPx}

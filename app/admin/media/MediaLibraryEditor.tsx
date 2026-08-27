@@ -4,17 +4,10 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePublish } from "../_shared/usePublish";
+import { isLogo } from "../_shared/isLogo";
 
 type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[]; pages: string[]; collections: string[] };
 type Filter = { type: "all" | "unused" | "tag" | "page" | "collection"; value?: string };
-
-// Logos are transparent PNGs at wildly different aspect ratios — cropping them to
-// fill a square (objectFit: cover) zooms each one to a different, arbitrary scale.
-// They need objectFit: contain instead, same treatment as the dedicated Logos/WWM
-// Trusted By editors. Filename convention catches even unused logo files that
-// aren't tied to a gallery collection yet.
-const isLogo = (item: MediaItem) =>
-  /\/logo-/.test(item.src) || item.collections.includes("Speaking Logos") || item.collections.includes("Wwm Trusted By");
 
 export default function MediaLibraryEditor({ initialItems }: { initialItems: MediaItem[] }) {
   const router = useRouter();

@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 export default function GalleryEditor({ initialItems }: { initialItems: string[] }) {
   const [items, setItems] = useState(initialItems);
@@ -50,17 +50,9 @@ export default function GalleryEditor({ initialItems }: { initialItems: string[]
               <button type="button" onClick={() => move(i, -1)} disabled={i === 0} className="text-[10px] text-[#888] disabled:opacity-30">▲</button>
               <button type="button" onClick={() => move(i, 1)} disabled={i === items.length - 1} className="text-[10px] text-[#888] disabled:opacity-30">▼</button>
             </div>
-            {src && (
-              <div className="relative w-16 h-16 rounded-md overflow-hidden flex-shrink-0 bg-[#f0efec]">
-                <Image src={src} alt="" fill sizes="64px" style={{ objectFit: "cover" }} />
-              </div>
-            )}
-            <input
-              value={src}
-              onChange={(e) => update(i, e.target.value)}
-              placeholder="/uploads/photo.jpg"
-              className="flex-1 border border-[#ddd] rounded-md px-3 py-[8px] text-sm"
-            />
+            <div className="flex-1">
+              <MediaPicker value={src} onChange={(value) => update(i, value)} />
+            </div>
             <button type="button" onClick={() => remove(i)} className="text-[#c44] text-sm">✕</button>
           </div>
         ))}
