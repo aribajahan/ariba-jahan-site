@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Nav from "./components/Nav";
+import PageGate from "./components/PageGate";
+import { guardPage } from "../lib/guardPage";
+import { getPageSettings } from "../lib/pageSettings";
 import Hero from "./components/Hero";
 import LogoMarquee from "./components/LogoMarquee";
 import Positioning from "./components/Positioning";
@@ -21,7 +25,13 @@ export const metadata: Metadata = {
   description: seo.home.description,
 };
 
-export default function Home() {
+export default async function Home() {
+  const guard = await guardPage("home");
+  if (guard === "notFound") notFound();
+  if (guard === "gate") return <PageGate pageKey="home" />;
+
+  const { showFooter } = getPageSettings("home");
+
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
@@ -38,7 +48,7 @@ export default function Home() {
       <Testimonials />
       <Community />
       <ClosingCTA />
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   );
 }

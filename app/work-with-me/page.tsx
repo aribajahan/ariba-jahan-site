@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Nav from "../components/Nav";
+import PageGate from "../components/PageGate";
 import WorkWithMeHero from "../components/WorkWithMeHero";
 import WwmTrustedBy from "../components/WwmTrustedBy";
 import ProblemFraming from "../components/ProblemFraming";
@@ -10,13 +12,21 @@ import CaseStudies from "../components/CaseStudies";
 import WorkWithMeClosingCTA from "../components/WorkWithMeClosingCTA";
 import Footer from "../components/Footer";
 import seo from "../../content/seo.json";
+import { guardPage } from "../../lib/guardPage";
+import { getPageSettings } from "../../lib/pageSettings";
 
 export const metadata: Metadata = {
   title: seo["work-with-me"].title,
   description: seo["work-with-me"].description,
 };
 
-export default function WorkWithMe() {
+export default async function WorkWithMe() {
+  const guard = await guardPage("work-with-me");
+  if (guard === "notFound") notFound();
+  if (guard === "gate") return <PageGate pageKey="work-with-me" />;
+
+  const { showFooter } = getPageSettings("work-with-me");
+
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
@@ -28,7 +38,7 @@ export default function WorkWithMe() {
       <WwmTestimonials />
       <CaseStudies />
       <WorkWithMeClosingCTA />
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   );
 }

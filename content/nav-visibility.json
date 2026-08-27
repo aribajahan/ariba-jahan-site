@@ -2,6 +2,6 @@
   "home": false,
   "speaking": true,
   "work-with-me": true,
-  "about": false,
+  "about": true,
   "reading-room": false
 }

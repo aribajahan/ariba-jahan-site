@@ -4,11 +4,11 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
 const PAGES = [
-  { label: "Home", href: "/admin/home" },
-  { label: "Speaking", href: "/admin/speaking" },
-  { label: "Work With Me", href: "/admin/work-with-me" },
-  { label: "About", href: "/admin/about" },
-  { label: "Reading Room", href: "/admin/reading-room" },
+  { label: "Home", href: "/admin/home", settingsKey: "home" },
+  { label: "Speaking", href: "/admin/speaking", settingsKey: "speaking" },
+  { label: "Work With Me", href: "/admin/work-with-me", settingsKey: "work-with-me" },
+  { label: "About", href: "/admin/about", settingsKey: "about" },
+  { label: "Reading Room", href: "/admin/reading-room", settingsKey: null },
 ];
 
 const COLLECTIONS = [
@@ -28,7 +28,39 @@ const SITE = [
   { label: "Site Settings", href: "/admin/settings" },
 ];
 
-function NavGroup({ title, items, pathname }: { title: string; items: typeof PAGES; pathname: string }) {
+function PagesNavGroup({ pathname }: { pathname: string }) {
+  return (
+    <div className="mb-4">
+      <div className="text-[11px] font-bold tracking-[0.08em] uppercase text-white/40 px-[10px] pt-2 pb-[6px]">Pages</div>
+      {PAGES.map((item) => {
+        const active = pathname === item.href || pathname.startsWith(item.href + "/");
+        return (
+          <div key={item.href} className="flex items-center">
+            <Link
+              href={item.href}
+              className={`flex-1 px-[10px] py-[9px] rounded-md text-sm mb-[2px] ${
+                active ? "bg-white/[0.08] text-white" : "text-white/55 hover:text-white/80"
+              }`}
+            >
+              {item.label}
+            </Link>
+            {item.settingsKey && (
+              <Link
+                href={`/admin/page-settings/${item.settingsKey}`}
+                className="text-white/40 hover:text-white/70 px-[10px] text-[13px]"
+                title={`${item.label} settings`}
+              >
+                ⚙
+              </Link>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function NavGroup({ title, items, pathname }: { title: string; items: { label: string; href: string }[]; pathname: string }) {
   return (
     <div className="mb-4">
       <div className="text-[11px] font-bold tracking-[0.08em] uppercase text-white/40 px-[10px] pt-2 pb-[6px]">
@@ -71,7 +103,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           Ariba Jahan — Studio
         </div>
         <div className="px-3 py-4 overflow-y-auto flex-1">
-          <NavGroup title="Pages" items={PAGES} pathname={pathname} />
+          <PagesNavGroup pathname={pathname} />
           <NavGroup title="Collections" items={COLLECTIONS} pathname={pathname} />
           <NavGroup title="Site" items={SITE} pathname={pathname} />
         </div>

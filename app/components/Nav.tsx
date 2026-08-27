@@ -5,10 +5,28 @@ import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../data/home";
 import siteSettings from "../../content/site-settings.json";
+import navVisibility from "../../content/nav-visibility.json";
+
+// Maps a nav link's href to its page-settings key, so a page's "Show in
+// Nav" toggle can hide its entry without deleting it from the nav array.
+// Only internal pages need an entry here — external links (Unmissables)
+// are always shown.
+const HREF_TO_PAGE_KEY: Record<string, keyof typeof navVisibility> = {
+  "/speaking": "speaking",
+  "/work-with-me": "work-with-me",
+  "/about": "about",
+};
+
+function isNavLinkVisible(href: string): boolean {
+  const pageKey = HREF_TO_PAGE_KEY[href];
+  if (!pageKey) return true;
+  return navVisibility[pageKey] !== false;
+}
 
 export default function Nav({ contactHref = "/contact" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
   const { announcementBar } = siteSettings;
+  const visibleNavLinks = navLinks.filter((link) => isNavLinkVisible(link.href));
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-cream border-b border-charcoal/[0.08] py-4">
@@ -33,7 +51,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
         </Link>
 
         <ul className="hidden min-[701px]:flex items-center gap-[clamp(16px,3vw,36px)] list-none text-sm font-semibold tracking-[0.1em] uppercase whitespace-nowrap">
-          {navLinks.map((link) => (
+          {visibleNavLinks.map((link) => (
             <li key={link.label} className="whitespace-nowrap">
               <a
                 href={link.href}
@@ -70,7 +88,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
 
       {open && (
         <div className="flex min-[701px]:hidden flex-col px-6 pb-2 bg-cream border-t border-charcoal/[0.08]">
-          {navLinks.map((link) => (
+          {visibleNavLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
