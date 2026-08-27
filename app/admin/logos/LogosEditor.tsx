@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
 
@@ -65,9 +66,16 @@ export default function LogosEditor({ initialItems }: { initialItems: Logo[] }) 
                 {openIndex === i ? "Close" : "Edit"}
               </button>
             </div>
-            <div className="h-11 flex items-center justify-center font-bold text-[#444] text-center text-sm truncate">
-              {logo.alt}
+            <div className="h-16 rounded-md bg-[#f7f6f4] flex items-center justify-center overflow-hidden mb-2">
+              {logo.src ? (
+                <div className="relative w-full h-full">
+                  <Image src={logo.src} alt={logo.alt} fill sizes="200px" style={{ objectFit: "contain" }} className="p-2" />
+                </div>
+              ) : (
+                <span className="text-[11px] text-[#bbb]">No image</span>
+              )}
             </div>
+            <div className="font-bold text-[#444] text-center text-sm truncate">{logo.alt}</div>
             <div className="text-[11px] text-[#999] text-center mt-1">height: {logo.heightPx}px</div>
 
             {openIndex === i && (
