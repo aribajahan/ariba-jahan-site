@@ -1,11 +1,19 @@
 import Image from "next/image";
+import wwmContent from "../../content/pages/work-with-me.json";
+
+const CTA_STYLES = [
+  "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase whitespace-nowrap transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]",
+  "inline-block bg-transparent text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase whitespace-nowrap border-[1.5px] border-cream/50 transition-[border-color,background] duration-150 hover:border-cream hover:bg-cream/[0.08] active:border-cream active:bg-cream/[0.08]",
+];
 
 export default function WorkWithMeHero() {
+  const { hero } = wwmContent;
+
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[78vh] max-[700px]:min-h-[92vh]">
       <div className="absolute inset-0 z-0">
         <Image quality={90}
-          src="/uploads/IMG_9539-opt.jpg"
+          src={hero.photoSrc}
           alt="Ariba Jahan"
           fill
           priority
@@ -25,25 +33,17 @@ export default function WorkWithMeHero() {
           Work With Me
         </div>
         <div className="font-display text-[clamp(38px,4vw,60px)] font-black text-cream leading-none tracking-[-0.02em] max-w-[1040px]">
-          Build unmissable products, services, and experiences that earn a place in people&rsquo;s lives.
+          {hero.headline}
         </div>
         <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 max-w-[640px] mt-[22px]">
-          I work with product, growth, and marketing leaders who need a clearer point of view on
-          customer value, experience, and how their products or services should evolve.
+          {hero.subhead}
         </p>
         <div className="flex flex-wrap gap-4 mt-8 pointer-events-auto">
-          <a
-            href="#cx-sprint"
-            className="inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase whitespace-nowrap transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
-          >
-            Explore Sprints
-          </a>
-          <a
-            href="#strategy-sessions"
-            className="inline-block bg-transparent text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase whitespace-nowrap border-[1.5px] border-cream/50 transition-[border-color,background] duration-150 hover:border-cream hover:bg-cream/[0.08] active:border-cream active:bg-cream/[0.08]"
-          >
-            Book a Strategy Session
-          </a>
+          {hero.ctas.map((cta, i) => (
+            <a key={cta.label} href={cta.href} className={CTA_STYLES[i] ?? CTA_STYLES[1]}>
+              {cta.label}
+            </a>
+          ))}
         </div>
       </div>
     </section>
