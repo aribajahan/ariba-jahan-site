@@ -1,11 +1,14 @@
 import Image from "next/image";
+import speakingContent from "../../content/pages/speaking.json";
 
 export default function SpeakingHero() {
+  const { hero } = speakingContent;
+
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[92vh]">
       <div className="absolute inset-0 z-0">
         <Image quality={90}
-          src="/uploads/54919346180_4cbc9b23fc_b-6f7fbf39-sm.jpg"
+          src={hero.photoSrc}
           alt="Ariba Jahan speaking on stage"
           fill
           priority
@@ -25,19 +28,13 @@ export default function SpeakingHero() {
           Speaking
         </div>
         <div className="font-display text-[clamp(34px,4.6vw,68px)] font-black text-cream leading-[0.95] tracking-[-0.02em] max-w-[800px] mb-9">
-          The future isn&rsquo;t inevitable.{" "}
-          <br className="max-[700px]:hidden" />
-          <b className="font-black">
-            It reflects what we question, what we build, what we choose to protect and what we&rsquo;re
-            willing to take responsibility for
-          </b>
-          .
+          {hero.headline}
         </div>
         <a
-          href="#close"
+          href={hero.ctaHref}
           className="inline-block bg-cherish text-cream px-[30px] py-4 max-[700px]:px-[22px] max-[700px]:py-[13px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase w-fit pointer-events-auto transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
         >
-          Bring Me to Your Event →
+          {hero.ctaLabel} →
         </a>
       </div>
     </section>
