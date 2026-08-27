@@ -34,7 +34,7 @@ export default function AboutHero() {
           the right. */}
       <div className="min-[701px]:hidden relative min-h-[260px] pt-[130px] pb-8">
         <Image quality={90}
-          src="/assets/about-hero-photo-mobile-v4.jpg"
+          src={aboutHero.photoSrcMobile}
           alt="Ariba Jahan"
           fill
           priority

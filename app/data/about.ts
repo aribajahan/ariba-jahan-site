@@ -1,12 +1,9 @@
 // Content data for the About page, extracted from design-reference/about.dc.html
 // and design-reference/site-content.md.
 
-export const aboutHero = {
-  photoSrc: "/assets/about-hero-photo.png",
-  eyebrow: "About",
-  headline:
-    "I think it's worth holding on to hope, pluralism, and a relentless creativity to build good in this world.",
-};
+import aboutContent from "../../content/pages/about.json";
+
+export const aboutHero = aboutContent.hero;
 
 export const introParagraph =
   "My career hasn’t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and why those questions matter so much to me.";
