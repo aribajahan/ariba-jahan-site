@@ -1,12 +1,1 @@
-[
-  {
-    "slug": "a-test-article-title",
-    "title": "A Test Article Title",
-    "coverImage": "",
-    "excerpt": "This is a test excerpt for verifying the Articles pipeline.",
-    "body": "# Hello World\n\nThis is a **test** paragraph with a [link](https://example.com).\n\n## A subheading\n\n- one\n- two",
-    "tags": [],
-    "publishedDate": "2026-08-27",
-    "status": "published"
-  }
-]
+[]
