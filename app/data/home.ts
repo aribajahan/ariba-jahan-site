@@ -225,106 +225,10 @@ export const pressItems: PressItem[] = [
   },
 ];
 
-export type Testimonial = {
-  category: "LEADERSHIP" | "SPEAKING" | "CLIENT";
-  quote: string;
-  name: string;
-  role: string;
-};
+export { type Testimonial } from "./testimonials";
+import { testimonialsFor } from "./testimonials";
 
-export const testimonials: Testimonial[] = [
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.",
-    name: "Lauren Lavalle",
-    role: "Chief Client Officer, Anomaly",
-  },
-  {
-    category: "SPEAKING",
-    quote:
-      "Ariba's insights into AI were truly enlightening. She eloquently addressed the misconception that AI is an overly complex field. Her ability to humanize AI experiences made the topic accessible and relatable. Her message was clear: we cannot afford to sit on the sidelines while innovation unfolds.",
-    name: "Michelle Green",
-    role: "VP of Insights & Intelligence, Paramount+",
-  },
-  {
-    category: "CLIENT",
-    quote:
-      "I worked with Ariba on an enterprise AI SaaS platform for researchers and creatives, from research through product strategy, user testing, and go-to-market. She could sit with potential customers, pull out what they actually needed, and turn it into a product direction, reimagining the user journey and shaping the features that set us apart. Customers, engineers, and executives all trusted her judgment and valued working alongside her.",
-    name: "Mansoor Basha",
-    role: "CTO, Stagwell Marketing Cloud",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba is a multi-faceted, Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She's a warm and engaging storyteller as a speaker, compelling in rooms big and small; a high-level thinker, designing entirely new systems and perspectives where others might have slapped bandaids on problems, and every bit as detailed an artisan as the most junior person on her team, able to see and act in the weeds as well as from the treetops.",
-    name: "Jen Cotton",
-    role: "Comms Strategist, Anomaly",
-  },
-  {
-    category: "SPEAKING",
-    quote:
-      "In 2025 we held a Leading Design AI Summit in New York to bring global design leaders together for a conversation on the future of design in a rapidly changing, AI-driven world. Ariba played a vital role. She facilitated big conversations, moderated opposing opinions, and held space for the emotions of these transformational times. She did such a fantastic job we invited her back to our London conference.",
-    name: "Rebecca Groves",
-    role: "Curator, Leading Design",
-  },
-  {
-    category: "CLIENT",
-    quote:
-      "Ariba was an incredible partner for me to work with as our teams collaborated and co-created on a strategy for deepening customer relationships within the Ally app. They helped us think in terms of how to bring real customer value in a space that is often purely transactional. She and her team brought so many valuable insights and delivered so many exciting concepts in a very short period of time which my team was able to pick up and run with very easily.",
-    name: "Rich Barrett",
-    role: "Director of UX Design, Ally Bank",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council. With her genius guidance, that group helped us understand how to conquer the biggest challenges of our time.",
-    name: "Amanda Ramos",
-    role: "CEO, Women In Innovation",
-  },
-  {
-    category: "SPEAKING",
-    quote:
-      "Ariba was a standout speaker, combining warmth, clarity, and confidence. Her delivery made complex topics easier to understand, while her engaging style held the audience's attention. Her presence at our event was a great choice. She shared valuable insights and created a dynamic, interactive atmosphere.",
-    name: "Mira Myllylä",
-    role: "Director of UX Design, Reaktor and CXSphere",
-  },
-  {
-    category: "CLIENT",
-    quote:
-      "When tasked with leading transformation of our donated media model at the Ad Council, I turned to Ariba, then leading business design and innovation, to co-create and reimagine the possibilities of such an ambitious exploration. Her curiosity, strategic thinking, and ability to start with a blank canvas led to an amazing experience. Her calm resolve and sheer determination helped pave new paths of opportunity across the organization, up through the C-suite.",
-    name: "Kathleen Kayse",
-    role: "Senior Sales & Marketing Executive",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba is passionate about solving problems and pain points by co-creating with people who are the most impacted. She is expert at applying design thinking and lean startup practices as well as best practices in UX to a variety of projects and challenges. She was often asked by senior team leaders to consult on larger projects, including our strategic plan, and is an empathetic listener able to distill insights and present to senior leadership with confidence.",
-    name: "Anastasia Goodstein",
-    role: "SVP, Ad Council",
-  },
-  {
-    category: "SPEAKING",
-    quote:
-      "Ariba brought both pragmatic advice on action steps businesses could take today AND a philosophical lens on how to think about AI and other transformative technologies in the long run. She was quick-witted, sharp, and insightful without losing a warm, welcoming presence and tone. I'd recommend her for any speaking engagement.",
-    name: "Kyle Hagge",
-    role: "Chief of Staff, Morning Brew",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth. Senior leaders relied on her to lead sensitive meetings, and her creations like Splashbox brought the organization into a new era of thinking.",
-    name: "Greg Kelly",
-    role: "Media Director",
-  },
-  {
-    category: "SPEAKING",
-    quote:
-      "She's brilliant, curious, thoughtful, and honest: the traits of an engaging, impactful speaker. Ariba truly cares about understanding her audience and asks the right questions to deliver exactly what they need. She doesn't shy away from tough topics, and brings herself and her story into every message, which makes her presentations so resonant.",
-    name: "Danielle Barnes",
-    role: "CEO, Women Talk Design",
-  },
-];
+export const testimonials = testimonialsFor("home");
 
 export type CommunityPhoto = {
   photoSrc: string;

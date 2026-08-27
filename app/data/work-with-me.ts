@@ -104,64 +104,10 @@ export const strategySessionBestFor: string[] = [
   "sharpening your strategic point of view before making a move",
 ];
 
-export type WwmTestimonial = {
-  category: "CLIENT" | "LEADERSHIP";
-  quote: string;
-  name: string;
-  role: string;
-};
+export { type Testimonial as WwmTestimonial } from "./testimonials";
+import { testimonialsFor } from "./testimonials";
 
-export const wwmTestimonials: WwmTestimonial[] = [
-  {
-    category: "CLIENT",
-    quote:
-      "I worked with Ariba on an enterprise AI SaaS platform for researchers and creatives, from research through product strategy, user testing, and go-to-market. She could sit with potential customers, pull out what they actually needed, and turn it into a product direction. Customers, engineers, and executives all trusted her judgment.",
-    name: "Mansoor Basha",
-    role: "CTO, Stagwell Marketing Cloud",
-  },
-  {
-    category: "CLIENT",
-    quote:
-      "Ariba was an incredible partner as our teams collaborated and co-created on a strategy for deepening customer relationships within the Ally app. She helped us think in terms of how to bring real customer value in a space that is often purely transactional, delivering exciting concepts my team could pick up and run with.",
-    name: "Rich Barrett",
-    role: "Director of UX Design, Ally Bank",
-  },
-  {
-    category: "CLIENT",
-    quote:
-      "When tasked with leading transformation of our donated media model at the Ad Council, I turned to Ariba to co-create and reimagine the possibilities of such an ambitious exploration. Her curiosity, strategic thinking, and ability to start with a blank canvas paved new paths of opportunity across the organization, up through the C-suite.",
-    name: "Kathleen Kayse",
-    role: "Senior Sales & Marketing Executive",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.",
-    name: "Lauren Lavalle",
-    role: "Chief Client Officer, Anomaly",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba is passionate about solving problems and pain points by co-creating with people who are the most impacted. She is expert at applying design thinking and lean startup practices to a variety of projects and challenges, and is an empathetic listener able to distill insights and present to senior leadership with confidence.",
-    name: "Anastasia Goodstein",
-    role: "SVP, Ad Council",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Few people know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council.",
-    name: "Amanda Ramos",
-    role: "CEO, Women In Innovation",
-  },
-  {
-    category: "LEADERSHIP",
-    quote:
-      "Ariba is a multi-faceted, Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She's a high-level thinker, designing entirely new systems and perspectives where others might have slapped bandaids on problems, and every bit as detailed an artisan as the most junior person on her team.",
-    name: "Jen Cotton",
-    role: "Comms Strategist, Anomaly",
-  },
-];
+export const wwmTestimonials = testimonialsFor("work-with-me");
 
 export type CaseStudyTestimonial = { quote: string; name: string; role: string };
 

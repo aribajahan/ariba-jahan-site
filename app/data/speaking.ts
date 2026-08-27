@@ -46,68 +46,10 @@ export const speakingThemes: SpeakingTheme[] = [
   },
 ];
 
-export type SpeakingTestimonial = {
-  quote: string;
-  name: string;
-  role: string;
-};
+export { type Testimonial as SpeakingTestimonial } from "./testimonials";
+import { testimonialsFor } from "./testimonials";
 
-export const speakingTestimonials: SpeakingTestimonial[] = [
-  {
-    quote:
-      "In 2025 we held a Leading Design AI Summit in New York to bring global design leaders together for a conversation on the future of design in a rapidly changing, AI-driven world. Ariba played a vital role - she facilitated big conversations, moderated opposing opinions, and held space for the emotions of these transformational times. She did such a fantastic job we invited her back to our London conference.",
-    name: "Rebecca Groves",
-    role: "Curator, Leading Design",
-  },
-  {
-    quote:
-      "Ariba was a standout speaker, combining warmth, clarity, and confidence. Her delivery made complex topics easier to understand, while her engaging style held the audience's attention. Her presence at our event was a great choice - she shared valuable insights and created a dynamic, interactive atmosphere.",
-    name: "Mira Myllälä",
-    role: "Director of UX Design, Reaktor and CXSphere",
-  },
-  {
-    quote:
-      "Ariba is doing some of the most vital work in design today, and excels at talking about it in an accessible, inspiring way.",
-    name: "David Dylan Thomas",
-    role: "Author, “Design for Cognitive Bias”",
-  },
-  {
-    quote:
-      "Ariba brought both pragmatic advice on action steps businesses could take today AND a philosophical lens on how to think about AI and other transformative technologies in the long run. She was quick-witted, sharp, and insightful without losing a warm, welcoming presence and tone. I'd recommend her for any speaking engagement.",
-    name: "Kyle Hagge",
-    role: "Chief of Staff, Morning Brew",
-  },
-  {
-    quote:
-      "She's brilliant, curious, thoughtful, and honest: the traits of an engaging, impactful speaker. Ariba truly cares about understanding her audience and asks the right questions to deliver exactly what they need. She doesn't shy away from tough topics, and brings herself and her story into every message, which makes her presentations so resonant.",
-    name: "Danielle Barnes",
-    role: "CEO, Women Talk Design",
-  },
-  {
-    quote:
-      "Ariba's insights into AI were truly enlightening. She eloquently addressed the misconception that AI is an overly complex field - her ability to humanize AI experiences made the topic accessible and relatable. Her message was clear: we cannot afford to sit on the sidelines while innovation unfolds.",
-    name: "Michelle Green",
-    role: "VP of Insights & Intelligence, Paramount+",
-  },
-  {
-    quote:
-      "First of all, I was completely floored by Ariba's talk; so powerful, and so on point. Ariba's talk was enlightening, powerful, and much needed - I deeply appreciate her posing thought-provoking questions and providing CTAs for us to become better, inclusive designers.",
-    name: "Nikhila N",
-    role: "Product Designer, HubSpot",
-  },
-  {
-    quote:
-      "I really appreciated the way you shared your ideas and methods with us, but also encouraged us to share as well. It really made this feel like the talk was a safe space and helped me learn what I should specifically be looking for in the next team that I work with.",
-    name: "Aska M",
-    role: "Brand Designer",
-  },
-  {
-    quote:
-      "Ariba Jahan is already a celebrated speaker, and it was a privilege to share the stage with her during our panel on Motherhood & Creativity through AIGA NY. She brought a combination of honesty and professionalism that made the conversation come alive. Ariba's perspective on achievement - shaped by her experiences as a creative person, a daughter of immigrants, and a mother - was so important to hear. Anyone who has the chance to hear her speak or work alongside her is in for a treat.",
-    name: "Carrie Ingoglia",
-    role: "Creative Director",
-  },
-];
+export const speakingTestimonials = testimonialsFor("speaking");
 
 export type SpeakingLogo = {
   src: string;
