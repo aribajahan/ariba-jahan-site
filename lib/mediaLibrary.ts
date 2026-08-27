@@ -12,6 +12,8 @@ export type MediaItem = {
   alt: string;
   tags: string[];
   usedOn: string[];
+  pages: string[];
+  collections: string[];
 };
 
 function readMetaFile(): Record<string, MediaMeta> {
@@ -79,10 +81,18 @@ function walkContentFiles(dir: string, out: string[] = []): string[] {
   return out;
 }
 
+type Usage = { usedOn: string[]; pages: string[]; collections: string[] };
+
 /** Scans every content/*.json file for references to each image path, so
- * Media Library can show a real "used on" list instead of a static guess. */
-function usageFor(imagePath: string, allContentFiles: string[]): string[] {
-  const usages: string[] = [];
+ * Media Library can show a real "used on" list instead of a static guess.
+ * Also buckets each reference into "page" (content/pages/*.json) or
+ * "collection" (content/collections/*.json) so the admin UI can filter by
+ * either facet, not just a flat used-on string. */
+function usageFor(imagePath: string, allContentFiles: string[]): Usage {
+  const usedOn: string[] = [];
+  const pages = new Set<string>();
+  const collections = new Set<string>();
+
   for (const file of allContentFiles) {
     let raw: string;
     try {
@@ -98,12 +108,14 @@ function usageFor(imagePath: string, allContentFiles: string[]): string[] {
     if (relative.startsWith("pages" + path.sep)) {
       const doc = JSON.parse(raw);
       const sectionKey = findSectionKey(doc, imagePath);
-      usages.push(sectionKey ? `${label} → ${sectionKey}` : label);
+      usedOn.push(sectionKey ? `${label} → ${sectionKey}` : label);
+      pages.add(label);
     } else {
-      usages.push(label);
+      usedOn.push(label);
+      collections.add(label);
     }
   }
-  return usages;
+  return { usedOn, pages: Array.from(pages), collections: Array.from(collections) };
 }
 
 export function getMediaLibrary(): MediaItem[] {
@@ -111,10 +123,15 @@ export function getMediaLibrary(): MediaItem[] {
   const files = listImageFiles();
   const allContentFiles = walkContentFiles(CONTENT_ROOT);
 
-  return files.map((src) => ({
-    src,
-    alt: meta[src]?.alt ?? "",
-    tags: meta[src]?.tags ?? [],
-    usedOn: usageFor(src, allContentFiles),
-  }));
+  return files.map((src) => {
+    const usage = usageFor(src, allContentFiles);
+    return {
+      src,
+      alt: meta[src]?.alt ?? "",
+      tags: meta[src]?.tags ?? [],
+      usedOn: usage.usedOn,
+      pages: usage.pages,
+      collections: usage.collections,
+    };
+  });
 }

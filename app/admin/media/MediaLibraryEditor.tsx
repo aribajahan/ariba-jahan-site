@@ -5,15 +5,17 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePublish } from "../_shared/usePublish";
 
-type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[] };
+type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[]; pages: string[]; collections: string[] };
+type Filter = { type: "all" | "unused" | "tag" | "page" | "collection"; value?: string };
 
 export default function MediaLibraryEditor({ initialItems }: { initialItems: MediaItem[] }) {
   const router = useRouter();
   const [items, setItems] = useState(initialItems);
-  const [activeFilter, setActiveFilter] = useState<string>("All");
+  const [filter, setFilter] = useState<Filter>({ type: "all" });
   const [search, setSearch] = useState("");
   const [uploading, setUploading] = useState(false);
   const [confirmingDelete, setConfirmingDelete] = useState<string | null>(null);
+  const [openSrc, setOpenSrc] = useState<string | null>(null);
   const [addingTagFor, setAddingTagFor] = useState<string | null>(null);
   const [newTagValue, setNewTagValue] = useState("");
   const { publish, publishing } = usePublish();
@@ -24,13 +26,28 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
     return Array.from(set).sort();
   }, [items]);
 
+  const allPages = useMemo(() => {
+    const set = new Set<string>();
+    items.forEach((item) => item.pages.forEach((p) => set.add(p)));
+    return Array.from(set).sort();
+  }, [items]);
+
+  const allCollections = useMemo(() => {
+    const set = new Set<string>();
+    items.forEach((item) => item.collections.forEach((c) => set.add(c)));
+    return Array.from(set).sort();
+  }, [items]);
+
   const unusedCount = items.filter((i) => i.usedOn.length === 0).length;
 
   const filtered = items.filter((item) => {
     if (search && !item.src.toLowerCase().includes(search.toLowerCase())) return false;
-    if (activeFilter === "All") return true;
-    if (activeFilter === "Unused") return item.usedOn.length === 0;
-    return item.tags.includes(activeFilter);
+    if (filter.type === "all") return true;
+    if (filter.type === "unused") return item.usedOn.length === 0;
+    if (filter.type === "tag") return item.tags.includes(filter.value!);
+    if (filter.type === "page") return item.pages.includes(filter.value!);
+    if (filter.type === "collection") return item.collections.includes(filter.value!);
+    return true;
   });
 
   const saveMeta = async (updated: MediaItem[]) => {
@@ -83,6 +100,7 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
     );
     setItems(remaining);
     setConfirmingDelete(null);
+    setOpenSrc(null);
   };
 
   const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,7 +121,7 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
       });
       const data = await res.json();
       if (data.ok) {
-        setItems((list) => [{ src: data.src, alt: "", tags: [], usedOn: [] }, ...list]);
+        setItems((list) => [{ src: data.src, alt: "", tags: [], usedOn: [], pages: [], collections: [] }, ...list]);
         router.refresh();
       }
     } finally {
@@ -112,9 +130,15 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
     }
   };
 
+  const isActive = (f: Filter) => filter.type === f.type && filter.value === f.value;
+  const chipCls = (active: boolean) =>
+    `text-xs font-semibold px-3 py-[5px] rounded-full cursor-pointer ${
+      active ? "bg-[#181818] text-white" : "bg-white border border-[#ddd]"
+    }`;
+
   return (
-    <div className="max-w-[900px] p-10">
-      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection</div>
+    <div className="max-w-[1400px] p-10">
+      <div className="text-xs font-semibold text-[#888] mb-[6px]">DAM</div>
       <div className="flex justify-between items-center mb-2">
         <h1 className="text-2xl">Media Library</h1>
         <label className="bg-[#181818] text-white rounded-md px-4 py-[9px] text-[13px] font-semibold cursor-pointer">
@@ -130,104 +154,148 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search by filename…"
-        className="w-full px-3 py-[9px] border border-[#ddd] rounded-md text-[13px] mb-4"
+        className="w-full max-w-[420px] px-3 py-[9px] border border-[#ddd] rounded-md text-[13px] mb-4"
       />
 
-      <div className="flex gap-2 flex-wrap mb-5">
-        {["All", ...allTags].map((tag) => (
+      <div className="flex flex-col gap-[10px] mb-6">
+        <div className="flex gap-2 flex-wrap items-center">
+          <span onClick={() => setFilter({ type: "all" })} className={chipCls(isActive({ type: "all" }))}>
+            All
+          </span>
           <span
-            key={tag}
-            onClick={() => setActiveFilter(tag)}
-            className={`text-xs font-semibold px-3 py-[5px] rounded-full cursor-pointer ${
-              activeFilter === tag ? "bg-[#181818] text-white" : "bg-white border border-[#ddd]"
+            onClick={() => setFilter({ type: "unused" })}
+            className={`text-xs font-semibold px-3 py-[5px] rounded-full cursor-pointer border border-dashed ${
+              isActive({ type: "unused" }) ? "bg-[#181818] text-white border-[#181818]" : "text-[#999] border-[#ccc]"
             }`}
           >
-            {tag}
+            + Unused ({unusedCount})
           </span>
-        ))}
-        <span
-          onClick={() => setActiveFilter("Unused")}
-          className={`text-xs font-semibold px-3 py-[5px] rounded-full cursor-pointer border border-dashed ${
-            activeFilter === "Unused" ? "bg-[#181818] text-white border-[#181818]" : "text-[#999] border-[#ccc]"
-          }`}
-        >
-          + Unused ({unusedCount})
-        </span>
+        </div>
+
+        {allPages.length > 0 && (
+          <div className="flex gap-2 flex-wrap items-center">
+            <span className="text-[11px] font-bold text-[#999] uppercase tracking-[0.06em] mr-1">Page:</span>
+            {allPages.map((p) => (
+              <span key={p} onClick={() => setFilter({ type: "page", value: p })} className={chipCls(isActive({ type: "page", value: p }))}>
+                {p}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {allCollections.length > 0 && (
+          <div className="flex gap-2 flex-wrap items-center">
+            <span className="text-[11px] font-bold text-[#999] uppercase tracking-[0.06em] mr-1">Collection:</span>
+            {allCollections.map((c) => (
+              <span key={c} onClick={() => setFilter({ type: "collection", value: c })} className={chipCls(isActive({ type: "collection", value: c }))}>
+                {c}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {allTags.length > 0 && (
+          <div className="flex gap-2 flex-wrap items-center">
+            <span className="text-[11px] font-bold text-[#999] uppercase tracking-[0.06em] mr-1">Tag:</span>
+            {allTags.map((t) => (
+              <span key={t} onClick={() => setFilter({ type: "tag", value: t })} className={chipCls(isActive({ type: "tag", value: t }))}>
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
-      <div className="flex flex-col gap-[10px]">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4">
         {filtered.map((item) => {
           const isUnused = item.usedOn.length === 0;
+          const isOpen = openSrc === item.src;
           return (
             <div
               key={item.src}
-              className={`bg-white border rounded-[10px] p-[16px] flex gap-4 items-start ${isUnused ? "border-[#f0c0c0]" : "border-[#e2e0dc]"}`}
+              className={`bg-white border rounded-[10px] overflow-hidden flex flex-col ${isUnused ? "border-[#f0c0c0]" : "border-[#e2e0dc]"}`}
             >
-              <div className="relative w-16 h-16 rounded-md overflow-hidden flex-shrink-0 bg-[#f0efec]">
-                <Image src={item.src} alt={item.alt || ""} fill sizes="64px" style={{ objectFit: "cover" }} />
+              <div className="relative w-full aspect-square bg-[#f0efec]">
+                <Image src={item.src} alt={item.alt || ""} fill sizes="180px" style={{ objectFit: "cover" }} />
               </div>
-              <div className="flex-1 min-w-0">
-                <div className="text-sm font-semibold mb-[6px] truncate">{item.src.split("/").pop()}</div>
-                <div className="flex gap-[6px] flex-wrap mb-2">
+              <div className="p-3 flex-1 flex flex-col gap-2">
+                <div className="text-[12px] font-semibold truncate" title={item.src}>
+                  {item.src.split("/").pop()}
+                </div>
+                <div className="flex gap-1 flex-wrap">
                   {isUnused ? (
-                    <span className="bg-[#fbeaea] text-[#b33] text-[11px] font-semibold px-2 py-[2px] rounded-full">Not used anywhere</span>
+                    <span className="bg-[#fbeaea] text-[#b33] text-[10px] font-semibold px-2 py-[2px] rounded-full">Not used anywhere</span>
                   ) : (
                     item.usedOn.map((u) => (
-                      <span key={u} className="bg-[#e8f4ea] text-[#2a7a3e] text-[11px] font-semibold px-2 py-[2px] rounded-full">
-                        Used on {u}
+                      <span key={u} className="bg-[#e8f4ea] text-[#2a7a3e] text-[10px] font-semibold px-2 py-[2px] rounded-full">
+                        {u}
                       </span>
                     ))
                   )}
-                  {item.tags.map((tag) => (
-                    <span key={tag} onClick={() => removeTag(item.src, tag)} className="bg-[#eef0fb] text-[#3d4bb3] text-[11px] font-semibold px-2 py-[2px] rounded-full cursor-pointer">
-                      🏷 {tag} ✕
-                    </span>
-                  ))}
-                  {addingTagFor === item.src ? (
-                    <input
-                      autoFocus
-                      value={newTagValue}
-                      onChange={(e) => setNewTagValue(e.target.value)}
-                      onBlur={() => addTag(item.src)}
-                      onKeyDown={(e) => e.key === "Enter" && addTag(item.src)}
-                      className="text-[11px] border border-[#ddd] rounded-full px-2 py-[2px] w-20"
-                    />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setOpenSrc(isOpen ? null : item.src)}
+                  className="text-[11px] text-[#888] text-left mt-auto"
+                >
+                  {isOpen ? "Close" : "Edit"}
+                </button>
+              </div>
+
+              {isOpen && (
+                <div className="p-3 pt-0 flex flex-col gap-2 border-t border-[#f0efec]">
+                  <input
+                    value={item.alt}
+                    onChange={(e) => updateItem(item.src, { alt: e.target.value })}
+                    onBlur={(e) => commitItemChange(item.src, { alt: e.target.value })}
+                    placeholder="Alt text"
+                    className="w-full text-[12px] px-2 py-[6px] border border-[#ddd] rounded-[5px]"
+                  />
+                  <div className="flex gap-[6px] flex-wrap">
+                    {item.tags.map((tag) => (
+                      <span key={tag} onClick={() => removeTag(item.src, tag)} className="bg-[#eef0fb] text-[#3d4bb3] text-[11px] font-semibold px-2 py-[2px] rounded-full cursor-pointer">
+                        🏷 {tag} ✕
+                      </span>
+                    ))}
+                    {addingTagFor === item.src ? (
+                      <input
+                        autoFocus
+                        value={newTagValue}
+                        onChange={(e) => setNewTagValue(e.target.value)}
+                        onBlur={() => addTag(item.src)}
+                        onKeyDown={(e) => e.key === "Enter" && addTag(item.src)}
+                        className="text-[11px] border border-[#ddd] rounded-full px-2 py-[2px] w-20"
+                      />
+                    ) : (
+                      <span onClick={() => setAddingTagFor(item.src)} className="bg-[#f0efec] text-[#999] text-[11px] font-semibold px-2 py-[2px] rounded-full cursor-pointer">
+                        + tag
+                      </span>
+                    )}
+                  </div>
+                  {confirmingDelete === item.src ? (
+                    <div className="flex flex-col gap-1">
+                      {!isUnused && <span className="text-[10px] text-[#b33]">Used elsewhere — deleting may break it.</span>}
+                      <span className="text-[10px] text-[#b33] font-semibold">Delete for good?</span>
+                      <div className="flex gap-1">
+                        <button type="button" onClick={() => deleteImage(item.src)} disabled={publishing} className="bg-[#b33] text-white rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold">
+                          Yes, delete
+                        </button>
+                        <button type="button" onClick={() => setConfirmingDelete(null)} className="bg-white border border-[#ddd] rounded-[5px] px-[10px] py-[5px] text-[11px]">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
                   ) : (
-                    <span onClick={() => setAddingTagFor(item.src)} className="bg-[#f0efec] text-[#999] text-[11px] font-semibold px-2 py-[2px] rounded-full cursor-pointer">
-                      + tag
-                    </span>
+                    <button type="button" onClick={() => setConfirmingDelete(item.src)} className="bg-[#fdeaea] text-[#b33] border border-[#f0c0c0] rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold">
+                      Delete
+                    </button>
                   )}
                 </div>
-                <input
-                  value={item.alt}
-                  onChange={(e) => updateItem(item.src, { alt: e.target.value })}
-                  onBlur={(e) => commitItemChange(item.src, { alt: e.target.value })}
-                  placeholder="Alt text"
-                  className="w-full text-[12px] px-2 py-[6px] border border-[#ddd] rounded-[5px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[6px] flex-shrink-0">
-                {confirmingDelete === item.src ? (
-                  <div className="flex flex-col gap-1">
-                    {!isUnused && <span className="text-[10px] text-[#b33] max-w-[110px]">Used elsewhere — deleting may break it.</span>}
-                    <span className="text-[10px] text-[#b33] font-semibold">Delete for good?</span>
-                    <button type="button" onClick={() => deleteImage(item.src)} disabled={publishing} className="bg-[#b33] text-white rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold">
-                      Yes, delete
-                    </button>
-                    <button type="button" onClick={() => setConfirmingDelete(null)} className="bg-white border border-[#ddd] rounded-[5px] px-[10px] py-[5px] text-[11px]">
-                      Cancel
-                    </button>
-                  </div>
-                ) : (
-                  <button type="button" onClick={() => setConfirmingDelete(item.src)} className="bg-[#fdeaea] text-[#b33] border border-[#f0c0c0] rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold whitespace-nowrap">
-                    Delete
-                  </button>
-                )}
-              </div>
+              )}
             </div>
           );
         })}
-        {filtered.length === 0 && <div className="text-sm text-[#888] text-center py-10">No images match.</div>}
+        {filtered.length === 0 && <div className="col-span-full text-sm text-[#888] text-center py-10">No images match.</div>}
       </div>
 
       <div className="mt-5 text-[13px] text-[#999]">
