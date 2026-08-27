@@ -17,7 +17,7 @@ export default function PublishBar({
       >
         {publishing ? "Publishing…" : "Publish"}
       </button>
-      {result === "success" && <span className="text-xs text-[#2a7a3e]">Published — live in about a minute.</span>}
+      {result === "success" && <span className="text-xs text-[#2a7a3e]">Published. Live in about a minute.</span>}
       {result === "error" && <span className="text-xs text-[#b33]">Something went wrong publishing. Try again.</span>}
     </div>
   );

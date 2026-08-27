@@ -28,7 +28,7 @@ export default function FormsEditor({ initialForms }: { initialForms: Forms }) {
       <h1 className="text-2xl mb-2">Forms</h1>
       <p className="text-[14px] text-[#888] mb-6">
         One shared Form template, styled the same everywhere. Field labels below are editable and live on the real
-        contact form — adding new fields or changing field types is still a code change, not yet self-service.
+        contact form. Adding new fields or changing field types is still a code change, not yet self-service.
       </p>
 
       <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-6">
@@ -36,7 +36,7 @@ export default function FormsEditor({ initialForms }: { initialForms: Forms }) {
           <span className="bg-[#8EF942] text-[#2D2D2D] text-[10px] font-bold tracking-[0.06em] uppercase px-2 py-[3px] rounded">
             {forms.contactForm.status}
           </span>
-          <h3 className="text-[15px] font-semibold flex-1">Contact Form — {forms.contactForm.link}</h3>
+          <h3 className="text-[15px] font-semibold flex-1">Contact Form ({forms.contactForm.link})</h3>
           <span className="text-xs text-[#999]">{forms.contactForm.fields.length} fields</span>
         </div>
 
@@ -61,7 +61,7 @@ export default function FormsEditor({ initialForms }: { initialForms: Forms }) {
 
         <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mb-2">On Submit</label>
         <div className="text-[13px] text-[#444] mb-1">{forms.contactForm.onSubmit}</div>
-        <div className="text-xs text-[#999]">Submissions are emailed to you via Resend — not stored in this CMS, to keep visitor data out of the public repo.</div>
+        <div className="text-xs text-[#999]">Submissions are emailed to you via Resend. They&rsquo;re not stored in this CMS, to keep visitor data out of the public repo.</div>
       </div>
 
       <PublishBar onPublish={handlePublish} publishing={publishing} result={result} />

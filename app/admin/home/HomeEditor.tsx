@@ -199,7 +199,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Name Marquee" defaultExpanded={false}>
-        <p className="text-xs text-[#999] mb-3">The scrolling strips of company/institution names — text only, not logo images.</p>
+        <p className="text-xs text-[#999] mb-3">The scrolling strips of company/institution names. Text only, not logo images.</p>
         <div className="flex flex-col gap-4">
           {content.nameMarquee.rows.map((row, i) => (
             <div key={i} className="p-3 bg-[#f7f6f4] rounded-md">
@@ -307,7 +307,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
             </div>
           ))}
         </div>
-        <p className="text-xs text-[#999] mt-2">Shared with Speaking&rsquo;s closing CTA — editing here changes both pages.</p>
+        <p className="text-xs text-[#999] mt-2">Shared with Speaking&rsquo;s closing CTA. Editing here changes both pages.</p>
       </SectionCard>
 
       <PublishBar onPublish={handlePublish} publishing={publishing} result={result} />

@@ -51,7 +51,7 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
 
   return (
     <div className="max-w-[820px] p-10">
-      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection — used on Home&rsquo;s Select Work strip</div>
+      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection · used on Home&rsquo;s Select Work strip</div>
       <div className="flex justify-between items-center mb-7">
         <h1 className="text-2xl">Case Studies &amp; Quests</h1>
         <button type="button" onClick={addNew} className="bg-[#181818] text-white rounded-md px-4 py-[9px] text-[13px] font-semibold">

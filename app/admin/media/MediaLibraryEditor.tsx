@@ -279,7 +279,7 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
                   </div>
                   {confirmingDelete === item.src ? (
                     <div className="flex flex-col gap-1">
-                      {!isUnused && <span className="text-[10px] text-[#b33]">Used elsewhere — deleting may break it.</span>}
+                      {!isUnused && <span className="text-[10px] text-[#b33]">Used elsewhere. Deleting may break it.</span>}
                       <span className="text-[10px] text-[#b33] font-semibold">Delete for good?</span>
                       <div className="flex gap-1">
                         <button type="button" onClick={() => deleteImage(item.src)} disabled={publishing} className="bg-[#b33] text-white rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold">
@@ -304,7 +304,7 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
       </div>
 
       <div className="mt-5 text-[13px] text-[#999]">
-        {items.length} total images. Alt text and tags save automatically as you edit — no separate Publish step needed here.
+        {items.length} total images. Alt text and tags save automatically as you edit, no separate Publish step needed here.
       </div>
     </div>
   );

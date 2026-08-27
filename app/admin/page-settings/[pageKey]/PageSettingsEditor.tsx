@@ -91,7 +91,7 @@ export default function PageSettingsEditor({
               onChange={(e) => updateSettings({ navLabel: e.target.value })}
               className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm mb-4"
             />
-            <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mb-[6px]">URL Slug (reference only — changing this doesn&rsquo;t move the route)</label>
+            <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mb-[6px]">URL Slug (reference only, changing this doesn&rsquo;t move the route)</label>
             <input
               value={settings.slug}
               onChange={(e) => updateSettings({ slug: e.target.value })}
@@ -103,10 +103,10 @@ export default function PageSettingsEditor({
               onChange={(e) => updateSettings({ availability: e.target.value as Availability })}
               className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm mb-2"
             >
-              <option value="public">Public — live and in nav</option>
-              <option value="unlisted">Unlisted — live, but hidden from nav (share the link directly)</option>
+              <option value="public">Public: live and in nav</option>
+              <option value="unlisted">Unlisted: live, but hidden from nav (share the link directly)</option>
               <option value="password">Password-protected</option>
-              <option value="draft">Draft — not visible to visitors at all</option>
+              <option value="draft">Draft: not visible to visitors at all</option>
             </select>
             {settings.availability === "password" && (
               <>
@@ -192,7 +192,7 @@ export default function PageSettingsEditor({
           <div>
             <h3 className="text-[13px] font-bold tracking-[0.04em] uppercase mb-2">Advanced</h3>
             <p className="text-[13px] text-[#888] mb-4">
-              Not yet wired into the live pages — a future booking widget or tracking pixel field.
+              Not yet wired into the live pages. For a future booking widget or tracking pixel field.
             </p>
           </div>
         )}
@@ -206,7 +206,7 @@ export default function PageSettingsEditor({
           >
             {publishing ? "Publishing…" : "Publish"}
           </button>
-          {result === "success" && <span className="text-xs text-[#2a7a3e]">Published — live in about a minute.</span>}
+          {result === "success" && <span className="text-xs text-[#2a7a3e]">Published. Live in about a minute.</span>}
           {result === "error" && <span className="text-xs text-[#b33]">Something went wrong publishing. Try again.</span>}
         </div>
       </div>

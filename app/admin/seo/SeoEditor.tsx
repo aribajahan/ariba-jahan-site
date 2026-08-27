@@ -32,7 +32,7 @@ export default function SeoEditor({ initialSeo }: { initialSeo: Seo }) {
     <div className="max-w-[720px] p-10">
       <div className="text-xs font-semibold text-[#888] mb-[6px]">Per-page</div>
       <h1 className="text-2xl mb-2">SEO</h1>
-      <p className="text-[14px] text-[#888] mb-6">Each page gets its own SEO fields, separate from its content — pick a page to edit.</p>
+      <p className="text-[14px] text-[#888] mb-6">Each page gets its own SEO fields, separate from its content. Pick a page to edit.</p>
 
       <div className="flex flex-col gap-2 mb-7">
         {PAGES.map((p) => (

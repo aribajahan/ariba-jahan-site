@@ -35,7 +35,7 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#F4F3F1] font-sans">
       <form onSubmit={handleSubmit} className="w-full max-w-[340px] bg-white border border-[#e2e0dc] rounded-[10px] p-8">
-        <h1 className="text-lg font-bold mb-1">Ariba Jahan — Studio</h1>
+        <h1 className="text-lg font-bold mb-1">Ariba Jahan · Studio</h1>
         <p className="text-sm text-[#888] mb-6">Enter your username and password to continue.</p>
         <input
           type="text"

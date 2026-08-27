@@ -32,7 +32,7 @@ export default function GalleryEditor({ initialItems }: { initialItems: string[]
 
   return (
     <div className="max-w-[820px] p-10">
-      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection — used on Speaking page</div>
+      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection · used on Speaking page</div>
       <div className="flex justify-between items-center mb-2">
         <h1 className="text-2xl">Speaking Gallery Photos</h1>
         <button type="button" onClick={addNew} className="bg-[#181818] text-white rounded-md px-4 py-[9px] text-[13px] font-semibold">

@@ -36,10 +36,10 @@ export default function ReadingRoomEditor({ initialItems }: { initialItems: Book
 
   return (
     <div className="max-w-[820px] p-10">
-      <div className="text-xs font-semibold text-[#888] mb-[6px]">Page — not finished on the live site yet</div>
+      <div className="text-xs font-semibold text-[#888] mb-[6px]">Page · not finished on the live site yet</div>
       <h1 className="text-2xl mb-2">Reading Room</h1>
       <p className="text-[14px] text-[#888] mb-6">
-        Modeled now so the schema is ready whenever you finish the page design — a book/recommendation collection, same pattern as Testimonials.
+        Modeled now so the schema is ready whenever you finish the page design: a book/recommendation collection, same pattern as Testimonials.
       </p>
 
       {items.length === 0 ? (

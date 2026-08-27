@@ -19,7 +19,7 @@ export default function AdminDomains() {
       </div>
 
       <div className="p-[14px] bg-[#FFF7E8] border border-[#F0DFB0] rounded-lg text-[13px] text-[#7a5f1f] leading-[1.5]">
-        Domains and subdomains are DNS/hosting settings, not content — they&rsquo;re configured once in Vercel, then just listed here for visibility. A future product line (e.g. a course or community) could live on its own subdomain without touching the main site&rsquo;s code.
+        Domains and subdomains are DNS/hosting settings, not content. They&rsquo;re configured once in Vercel, then just listed here for visibility. A future product line (e.g. a course or community) could live on its own subdomain without touching the main site&rsquo;s code.
       </div>
     </div>
   );

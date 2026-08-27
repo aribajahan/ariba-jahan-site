@@ -9,11 +9,11 @@ export default function WwmTrustedByEditor({ initialItems }: { initialItems: Log
     <LogoGridEditor
       initialItems={initialItems}
       title="WWM Trusted By"
-      contextLabel="Gallery — used on Work With Me page"
+      contextLabel="Gallery · used on Work With Me page"
       publishPath="content/collections/wwm-trusted-by.json"
       publishMessage="Update WWM Trusted By via Studio"
       defaultHeightPx={30}
-      footerNote="These scroll continuously in the Trusted By marquee — order sets the starting position."
+      footerNote="These scroll continuously in the Trusted By marquee. Order sets the starting position."
     />
   );
 }

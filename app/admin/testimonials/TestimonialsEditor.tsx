@@ -100,7 +100,7 @@ export default function TestimonialsEditor({ initialItems }: { initialItems: Tes
                 </span>
                 <div className="flex-1 text-sm truncate">
                   {t.quote ? `"${t.quote.slice(0, 70)}${t.quote.length > 70 ? "…" : ""}"` : <span className="text-[#bbb]">Empty quote</span>}
-                  {t.name && <> — <strong>{t.name}</strong></>}
+                  {t.name && <> (<strong>{t.name}</strong>)</>}
                 </div>
                 <button type="button" onClick={() => setOpenIndex(open ? null : i)} className="text-[#888] text-sm">
                   {open ? "Close" : "Edit →"}
@@ -181,7 +181,7 @@ export default function TestimonialsEditor({ initialItems }: { initialItems: Tes
         })}
         {items.length === 0 && (
           <div className="bg-[#fafaf8] border border-dashed border-[#d5d2cc] rounded-[10px] p-8 text-center text-sm text-[#888]">
-            No testimonials yet — click + New Testimonial.
+            No testimonials yet. Click + New Testimonial.
           </div>
         )}
       </div>

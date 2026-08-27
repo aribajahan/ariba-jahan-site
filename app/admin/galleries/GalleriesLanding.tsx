@@ -9,7 +9,7 @@ export default function GalleriesLanding({ galleries }: { galleries: Gallery[] }
       <div className="text-xs font-semibold text-[#888] mb-[2px]">Media</div>
       <h1 className="text-2xl mb-1">Galleries</h1>
       <p className="text-[13px] text-[#999] mb-7">
-        Curated, ordered picks from the Media Library — each one a set of images placed on a specific page.
+        Curated, ordered picks from the Media Library. Each one is a set of images placed on a specific page.
       </p>
 
       <div className="grid grid-cols-3 gap-4">

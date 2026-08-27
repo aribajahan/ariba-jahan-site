@@ -117,7 +117,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <div className="w-[260px] bg-[#181818] text-[#e5e5e5] flex-shrink-0 flex flex-col">
         <div className="px-5 py-4 border-b border-white/[0.08] font-bold text-[15px] flex items-center gap-2">
           <div className="w-5 h-5 bg-cherish rounded" />
-          Ariba Jahan — Studio
+          Ariba Jahan · Studio
         </div>
         <div className="px-3 py-4 overflow-y-auto flex-1">
           <PagesNavGroup pathname={pathname} />

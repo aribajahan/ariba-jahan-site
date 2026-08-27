@@ -58,7 +58,7 @@ export default function MarketingToolsEditor({ initialSettings }: { initialSetti
       <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-5 opacity-55">
         <div className="flex justify-between items-center">
           <label className="text-sm font-semibold">Promotional Pop-Up</label>
-          <span className="text-xs text-[#999]">Not built yet — add when you have a lead magnet</span>
+          <span className="text-xs text-[#999]">Not built yet (add when you have a lead magnet)</span>
         </div>
       </div>
 

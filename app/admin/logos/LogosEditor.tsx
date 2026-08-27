@@ -9,7 +9,7 @@ export default function LogosEditor({ initialItems }: { initialItems: Logo[] }) 
     <LogoGridEditor
       initialItems={initialItems}
       title="Speaking Logos"
-      contextLabel="Collection — used on Speaking page"
+      contextLabel="Collection · used on Speaking page"
       publishPath="content/collections/speaking-logos.json"
       publishMessage="Update Speaking Logos via Studio"
       showInvert

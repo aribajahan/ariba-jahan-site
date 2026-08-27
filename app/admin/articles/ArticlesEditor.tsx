@@ -76,7 +76,7 @@ export default function ArticlesEditor({ initialItems }: { initialItems: Article
 
   return (
     <div className="max-w-[820px] p-10">
-      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection — native blog on your own site</div>
+      <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection · native blog on your own site</div>
       <div className="flex justify-between items-center mb-2">
         <h1 className="text-2xl">Articles</h1>
         <button type="button" onClick={addNew} className="bg-[#181818] text-white rounded-md px-4 py-[9px] text-[13px] font-semibold">
@@ -84,7 +84,7 @@ export default function ArticlesEditor({ initialItems }: { initialItems: Article
         </button>
       </div>
       <p className="text-[14px] text-[#888] mb-6">
-        One shared Article template renders every entry here — publishing a new piece is filling out this form, no new page ever
+        One shared Article template renders every entry here. Publishing a new piece is filling out this form, no new page ever
         gets coded. Separate from Unmissables (that lives on unmissables.xyz).
       </p>
 
@@ -206,7 +206,7 @@ export default function ArticlesEditor({ initialItems }: { initialItems: Article
         })}
         {items.length === 0 && (
           <div className="bg-[#fafaf8] border border-dashed border-[#d5d2cc] rounded-[10px] p-8 text-center text-sm text-[#888]">
-            No articles yet — click + New Article.
+            No articles yet. Click + New Article.
           </div>
         )}
       </div>
