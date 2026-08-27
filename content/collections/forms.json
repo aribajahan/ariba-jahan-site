@@ -1,0 +1,14 @@
+{
+  "contactForm": {
+    "status": "Live",
+    "link": "/contact",
+    "accentColor": "#E73131",
+    "onSubmit": "Show a thank-you message on this page",
+    "fields": [
+      { "id": "name", "label": "Name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "reason", "label": "How can I help?", "type": "dropdown", "required": true },
+      { "id": "message", "label": "Message", "type": "textarea", "required": true }
+    ]
+  }
+}

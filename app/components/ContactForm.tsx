@@ -11,6 +11,10 @@ import {
   speakingFormatOptions,
   type ContactReason,
 } from "../data/contact";
+import forms from "../../content/collections/forms.json";
+
+const fieldLabel = (id: string, fallback: string) =>
+  forms.contactForm.fields.find((f) => f.id === id)?.label ?? fallback;
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -89,7 +93,7 @@ export default function ContactForm() {
               />
 
               <div>
-                <label className={labelClasses}>Name</label>
+                <label className={labelClasses}>{fieldLabel("name", "Name")}</label>
                 <input
                   type="text"
                   name="name"
@@ -104,7 +108,7 @@ export default function ContactForm() {
               </div>
 
               <div>
-                <label className={labelClasses}>Email</label>
+                <label className={labelClasses}>{fieldLabel("email", "Email")}</label>
                 <input
                   type="email"
                   name="email"
@@ -130,7 +134,7 @@ export default function ContactForm() {
               </div>
 
               <div>
-                <label className={labelClasses}>How can I help?</label>
+                <label className={labelClasses}>{fieldLabel("reason", "How can I help?")}</label>
                 <select
                   required
                   name="reason"
@@ -234,7 +238,7 @@ export default function ContactForm() {
               )}
 
               <div>
-                <label className={labelClasses}>Message</label>
+                <label className={labelClasses}>{fieldLabel("message", "Message")}</label>
                 <textarea
                   name="message"
                   required
