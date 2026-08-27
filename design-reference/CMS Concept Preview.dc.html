@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:'Inter',sans-serif; background:#F4F3F1; color:#1a1a1a; }
+  </style>
+</helmet>
+
+<div style="display:flex;flex-direction:column;height:100vh;">
+
+  <div style="background:{{ envBarBg }};color:#fff;padding:8px 20px;font-size:12px;display:flex;align-items:center;gap:10px;flex-shrink:0;">
+    <span style="width:7px;height:7px;border-radius:50%;background:{{ envDotColor }};"></span>
+    <span>Content environment: <strong>{{ envLabel }}</strong></span>
+    <input placeholder="Search all content…" style="width:220px;margin-left:24px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:6px;padding:4px 10px;font-size:11px;color:#fff;">
+    <button onClick="{{ toggleEnv }}" style="margin-left:auto;background:rgba(255,255,255,0.15);border:none;color:#fff;padding:4px 10px;border-radius:5px;font-size:11px;cursor:pointer;">Switch to {{ envSwitchLabel }}</button>
+    <sc-if value="{{ isPreviewEnv }}">
+      <button style="background:#8EF942;border:none;color:#181818;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;">Push preview → Production</button>
+    </sc-if>
+  </div>
+
+  <div style="display:flex;flex:1;min-height:0;">
+
+  <!-- SIDEBAR -->
+  <div style="width:260px;background:#181818;color:#e5e5e5;flex-shrink:0;display:flex;flex-direction:column;">
+    <div style="padding:20px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.08);font-weight:700;font-size:15px;display:flex;align-items:center;gap:8px;">
+      <div style="width:20px;height:20px;background:#E73131;border-radius:4px;"></div>
+      Ariba Jahan — Studio
+    </div>
+    <div style="padding:16px 12px;overflow-y:auto;flex:1;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);padding:8px 10px 6px;">Pages</div>
+      <div style="display:flex;align-items:center;"><a href="#home" onClick="{{ goHome }}" style="{{ navItemStyle_home }}flex:1;">Home</a><span onClick="{{ openPageSettings_home }}" style="cursor:pointer;color:rgba(255,255,255,0.4);padding:0 10px;font-size:13px;">⚙</span></div>
+      <div style="display:flex;align-items:center;"><a href="#speaking" onClick="{{ goSpeaking }}" style="{{ navItemStyle_speaking }}flex:1;">Speaking</a><span onClick="{{ openPageSettings_speaking }}" style="cursor:pointer;color:rgba(255,255,255,0.4);padding:0 10px;font-size:13px;">⚙</span></div>
+      <div style="display:flex;align-items:center;"><a href="#wwm" onClick="{{ goWwm }}" style="{{ navItemStyle_wwm }}flex:1;">Work With Me</a><span onClick="{{ openPageSettings_wwm }}" style="cursor:pointer;color:rgba(255,255,255,0.4);padding:0 10px;font-size:13px;">⚙</span></div>
+      <div style="display:flex;align-items:center;"><a href="#about" onClick="{{ goAbout }}" style="{{ navItemStyle_about }}flex:1;">About</a><span onClick="{{ openPageSettings_about }}" style="cursor:pointer;color:rgba(255,255,255,0.4);padding:0 10px;font-size:13px;">⚙</span></div>
+      <a href="#reading-room" onClick="{{ goReadingRoom }}" style="{{ navItemStyle_readingRoom }}">Reading Room</a>
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);padding:16px 10px 6px;">Collections</div>
+      <a href="#articles" onClick="{{ goArticles }}" style="{{ navItemStyle_articles }}">Articles</a>
+      <a href="#casestudies" onClick="{{ goCaseStudies }}" style="{{ navItemStyle_caseStudies }}">Case Studies &amp; Quests</a>
+      <a href="#testimonials" onClick="{{ goTestimonials }}" style="{{ navItemStyle_testimonials }}">Testimonials</a>
+      <a href="#logos" onClick="{{ goLogos }}" style="{{ navItemStyle_logos }}">Speaking Logos</a>
+      <a href="#media" onClick="{{ goMedia }}" style="{{ navItemStyle_media }}">Media Library</a>
+      <a href="#forms" onClick="{{ goForms }}" style="{{ navItemStyle_forms }}">Forms</a>
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);padding:16px 10px 6px;">Site</div>
+      <a href="#seo" onClick="{{ goSeo }}" style="{{ navItemStyle_seo }}">Site-wide SEO</a>
+      <a href="#domains" onClick="{{ goDomains }}" style="{{ navItemStyle_domains }}">Domains</a>
+      <a href="#marketing" onClick="{{ goMarketing }}" style="{{ navItemStyle_marketing }}">Marketing Tools</a>
+      <a href="#settings" onClick="{{ goSettings }}" style="{{ navItemStyle_settings }}">Site Settings</a>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div style="flex:1;overflow-y:auto;">
+
+    <sc-if value="{{ isHome }}">
+      <div style="display:flex;height:100%;">
+
+        <!-- SECTION LIST (scrolling, collapsible, drag-to-reorder) -->
+        <div style="flex:1;min-width:0;overflow-y:auto;padding:32px 32px 60px;border-right:1px solid #e2e0dc;">
+          <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:2px;">Page</div>
+          <h1 style="font-size:24px;margin:0 0 4px;">Home</h1>
+          <p style="font-size:13px;color:#999;margin:0 0 24px;">Drag ⠿ to reorder sections. Click a section to expand and edit its fields.</p>
+
+          <!-- HERO (expanded) -->
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;margin-bottom:12px;overflow:hidden;">
+            <div onClick="{{ toggleSection_hero }}" style="display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;">
+              <span style="cursor:grab;color:#aaa;">⠿</span>
+              <strong style="flex:1;font-size:14px;">Hero</strong>
+              <span style="font-size:12px;color:#999;">{{ chevron_hero }}</span>
+            </div>
+            <sc-if value="{{ expanded_hero }}">
+              <div style="padding:0 20px 20px;">
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Hero Photo</label>
+                <div style="width:100%;height:120px;background:#f0efec;border:2px dashed #d5d2cc;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px;margin-bottom:16px;">Drop image or browse — hero-photo.jpg</div>
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Headline</label>
+                <input value="{{ heroHeadline }}" onChange="{{ onHeroHeadlineChange }}" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:15px;font-family:inherit;margin-bottom:16px;">
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Subhead</label>
+                <textarea rows="3" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;resize:vertical;margin-bottom:16px;">Customer expectations keep rising. I help teams build the strategy, systems, and culture to meet them.</textarea>
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Hero CTAs</label>
+                <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;background:#f7f6f4;border-radius:6px;margin-bottom:8px;">
+                  <span style="cursor:grab;color:#aaa;">⠿</span>
+                  <input value="Work With Me" style="flex:1;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:13px;">
+                  <input value="#work-with-me" style="flex:1;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:13px;color:#888;">
+                  <span style="color:#c44;cursor:pointer;font-size:13px;">✕</span>
+                </div>
+                <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;background:#f7f6f4;border-radius:6px;">
+                  <span style="cursor:grab;color:#aaa;">⠿</span>
+                  <input value="Unmissables" style="flex:1;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:13px;">
+                  <input value="#unmissables" style="flex:1;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:13px;color:#888;">
+                  <span style="color:#c44;cursor:pointer;font-size:13px;">✕</span>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+
+          <!-- UNMISSABLES -->
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;margin-bottom:12px;overflow:hidden;">
+            <div onClick="{{ toggleSection_unmissables }}" style="display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;">
+              <span style="cursor:grab;color:#aaa;">⠿</span>
+              <strong style="flex:1;font-size:14px;">Unmissables</strong>
+              <span style="font-size:12px;color:#999;">{{ chevron_unmissables }}</span>
+            </div>
+            <sc-if value="{{ expanded_unmissables }}">
+              <div style="padding:0 20px 20px;">
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Headline</label>
+                <input value="Unmissables" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:15px;font-family:inherit;margin-bottom:16px;">
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Intro Paragraph</label>
+                <textarea rows="2" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;resize:vertical;">Unmissables explores the unexpected connections between technology, behavior, and culture.</textarea>
+              </div>
+            </sc-if>
+          </div>
+
+          <!-- CLOSE -->
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;margin-bottom:20px;overflow:hidden;">
+            <div onClick="{{ toggleSection_close }}" style="display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;">
+              <span style="cursor:grab;color:#aaa;">⠿</span>
+              <strong style="flex:1;font-size:14px;">Close</strong>
+              <span style="font-size:12px;color:#999;">{{ chevron_close }}</span>
+            </div>
+            <sc-if value="{{ expanded_close }}">
+              <div style="padding:0 20px 20px;">
+                <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Headline</label>
+                <input value="Let's build something unmissable." style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:15px;font-family:inherit;">
+              </div>
+            </sc-if>
+          </div>
+
+          <div style="padding:14px 18px;background:#FFF7E8;border:1px solid #F0DFB0;border-radius:8px;font-size:13px;color:#7a5f1f;line-height:1.5;margin-bottom:20px;">
+            <strong>Block-level:</strong> footer credit line stays one text field, edited in Site Settings — you rewrite it as a whole, not sentence by sentence.
+          </div>
+
+          <div style="display:flex;gap:10px;align-items:center;">
+            <button onClick="{{ onPublish }}" style="background:#181818;color:#fff;border:none;border-radius:6px;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;">Publish</button>
+            <button style="background:#fff;color:#444;border:1px solid #ddd;border-radius:6px;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;">Save Draft</button>
+            <span style="font-size:12px;color:#999;">Autosaved 2s ago</span>
+            <a href="#" style="font-size:12px;color:#888;text-decoration:underline;margin-left:auto;">Version History</a>
+          </div>
+        </div>
+
+        <sc-if value="{{ showPublishedToast }}">
+          <div style="position:fixed;bottom:24px;left:292px;background:#181818;color:#fff;padding:12px 18px;border-radius:8px;font-size:13px;display:flex;align-items:center;gap:14px;box-shadow:0 8px 24px rgba(0,0,0,0.25);z-index:50;">
+            <span>Published to the live site.</span>
+            <a href="#" onClick="{{ onUndoPublish }}" style="color:#8EF942;text-decoration:underline;font-weight:600;">Undo</a>
+          </div>
+        </sc-if>
+
+        <!-- LIVE/PREVIEW PANE -->
+        <div style="width:42%;min-width:340px;background:#e9e7e2;display:flex;flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid #d8d5cf;">
+            <button onClick="{{ setPreviewLive }}" style="{{ previewToggleStyle_live }}">Live</button>
+            <button onClick="{{ setPreviewDraft }}" style="{{ previewToggleStyle_preview }}">Preview (unpublished)</button>
+          </div>
+          <div style="flex:1;overflow-y:auto;padding:20px;">
+            <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+              <div style="background:#f0efec;padding:8px 12px;display:flex;align-items:center;gap:6px;border-bottom:1px solid #e2e0dc;">
+                <span style="width:8px;height:8px;border-radius:50%;background:#e5a;opacity:0.4;"></span>
+                <span style="width:8px;height:8px;border-radius:50%;background:#ea5;opacity:0.4;"></span>
+                <span style="width:8px;height:8px;border-radius:50%;background:#5c5;opacity:0.4;"></span>
+                <span style="font-size:11px;color:#999;margin-left:8px;">ariba{{ previewUrlSuffix }}.com</span>
+              </div>
+              <div style="background:#1c1212;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 22px;">
+                <div style="font-family:Georgia,serif;font-size:22px;font-weight:900;color:#FFFBF3;line-height:1.05;margin-bottom:8px;">{{ heroHeadline }}</div>
+                <div style="font-size:12px;color:rgba(255,251,243,0.7);">Customer expectations keep rising...</div>
+              </div>
+            </div>
+            <div style="font-size:12px;color:#999;margin-top:12px;text-align:center;">{{ previewCaption }}</div>
+          </div>
+        </div>
+
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isReadingRoom }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Page — not finished on the live site yet</div>
+        <h1 style="font-size:26px;margin:0 0 8px;">Reading Room</h1>
+        <p style="font-size:14px;color:#888;margin:0 0 24px;">Modeled now so the schema is ready whenever you finish the page design — a book/recommendation collection, same pattern as Testimonials.</p>
+        <div style="background:#fafaf8;border:1px dashed #d5d2cc;border-radius:10px;padding:32px;text-align:center;margin-bottom:10px;">
+          <div style="font-size:14px;color:#888;margin-bottom:12px;">No books added yet.</div>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;">+ Add Your First Book</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isArticles }}">
+      <div style="max-width:820px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection — native blog on your own site</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h1 style="font-size:26px;margin:0;">Articles</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ New Article</button>
+        </div>
+        <p style="font-size:14px;color:#888;margin:0 0 24px;">One shared Article template renders every entry here — publishing a new piece is filling out this form, no new page ever gets coded. Separate from Unmissables (that lives on unmissables.xyz).</p>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#8EF942;color:#2D2D2D;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Published</span>
+          <div style="flex:1;font-size:14px;">Why Customer Expectations Keep Rising</div>
+          <span style="font-size:12px;color:#999;">Aug 12, 2026</span>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#f0efec;color:#888;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Draft</span>
+          <div style="flex:1;font-size:14px;">Notes From 200 Stages</div>
+          <span style="font-size:12px;color:#999;">Unpublished</span>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+        <div style="margin-top:16px;font-size:13px;color:#999;">Fields per article: title, slug, cover image, body (rich text), excerpt, tags, published date. New topics/formats beyond this — a photo essay layout, an interactive piece — still need a real page built in Claude Design or Claude Code, since those change the template itself, not just its content.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isCaseStudies }}">
+      <div style="max-width:820px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection — used on Home's Select Work strip</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;">
+          <h1 style="font-size:26px;margin:0;">Case Studies &amp; Quests</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ New Entry</button>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#F5A8D5;color:#2D2D2D;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Case Study</span>
+          <div style="flex:1;font-size:14px;">Redesigning Onboarding for a Fintech Startup</div>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#FF6D24;color:#2D2D2D;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Quest</span>
+          <div style="flex:1;font-size:14px;">Building Daboodle Over a Weekend</div>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+        <div style="margin-top:16px;font-size:13px;color:#999;">Same pattern as Testimonials: drag ⠿ to reorder, "Case Study" vs "Quest" tag sets the card color automatically.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isForms }}">
+      <div style="max-width:820px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h1 style="font-size:26px;margin:0;">Forms</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ New Form</button>
+        </div>
+        <p style="font-size:14px;color:#888;margin:0 0 24px;">One shared Form template, styled the same everywhere — each entry here is a different form with its own fields, link, and destination.</p>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#8EF942;color:#2D2D2D;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Live</span>
+          <div style="flex:1;font-size:14px;"><strong>Contact Form</strong> — /contact.dc.html</div>
+          <span style="font-size:12px;color:#999;">4 fields</span>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+          <span style="cursor:grab;color:#aaa;">⠿</span>
+          <span style="background:#f0efec;color:#888;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Draft</span>
+          <div style="flex:1;font-size:14px;color:#999;"><strong>Untitled Form</strong> — no link yet</div>
+          <span style="font-size:12px;color:#999;">0 fields</span>
+          <span style="color:#888;cursor:pointer;">Edit →</span>
+        </div>
+
+        <div style="margin-top:28px;background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;">
+          <h3 style="font-size:15px;margin:0 0 20px;">Contact Form</h3>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:8px;">Fields</label>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px;">
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Name</span><span style="font-size:11px;color:#999;">text · required</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Email</span><span style="font-size:11px;color:#999;">email · required</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">What's this about?</span><span style="font-size:11px;color:#999;">dropdown · required</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Message</span><span style="font-size:11px;color:#999;">textarea · required</span></div>
+            <button style="background:none;border:1px dashed #ccc;padding:7px 12px;border-radius:6px;font-size:12px;color:#888;cursor:pointer;align-self:flex-start;">+ Add Field</button>
+          </div>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:8px;">Accent Color</label>
+          <div style="display:flex;gap:8px;margin-bottom:16px;">
+            <div style="width:28px;height:28px;border-radius:50%;background:#E73131;border:2px solid #181818;"></div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#2D2D2D;"></div>
+            <div style="width:28px;height:28px;border-radius:50%;background:#8EF942;"></div>
+          </div>
+          <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:8px;">On Submit</label>
+          <select style="width:100%;max-width:360px;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px;margin-bottom:8px;">
+            <option>Show a thank-you message on this page</option>
+            <option>Redirect to another page</option>
+          </select>
+          <div style="font-size:12px;color:#999;">Submissions land here in the CMS AND get emailed to you — nothing to check separately.</div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isAbout }}">
+      <div style="display:flex;height:100%;">
+        <div style="flex:1;min-width:0;overflow-y:auto;padding:32px 32px 60px;border-right:1px solid #e2e0dc;">
+          <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:2px;">Page</div>
+          <h1 style="font-size:24px;margin:0 0 4px;">About</h1>
+          <p style="font-size:13px;color:#999;margin:0 0 24px;">Bio fields plus the story-timeline collection — drag ⠿ to reorder timeline entries.</p>
+
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;margin-bottom:20px;">
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Headline</label>
+            <input value="More Than a Sprint" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:15px;font-family:inherit;margin-bottom:16px;">
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Bio</label>
+            <textarea rows="4" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;resize:vertical;">Ariba Jahan is a customer experience strategist, speaker, and writer...</textarea>
+          </div>
+
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+            <label style="font-size:13px;font-weight:600;">Story Timeline</label>
+            <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;">+ Add Entry</button>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <div style="width:36px;height:36px;background:#8b6f5c;border-radius:6px;flex-shrink:0;"></div>
+            <div style="flex:1;font-size:14px;"><strong>2019</strong> — Left agency life to go independent</div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <div style="width:36px;height:36px;background:#E73131;border-radius:6px;flex-shrink:0;"></div>
+            <div style="flex:1;font-size:14px;"><strong>2023</strong> — Spoke at the UN General Assembly</div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:#999;">Each entry: year, photo, caption. Tape-color on the photo caption auto-matches the design system's rotation, not manually picked.</div>
+        </div>
+
+        <div style="width:42%;min-width:340px;background:#e9e7e2;padding:20px;">
+          <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.1);">
+            <div style="background:#f0efec;padding:8px 12px;font-size:11px;color:#999;">aribajahan.com/about</div>
+            <div style="background:#FFFBF3;min-height:200px;padding:24px;">
+              <div style="font-family:Georgia,serif;font-size:20px;font-weight:900;color:#2D2D2D;margin-bottom:10px;">More Than a Sprint</div>
+              <div style="font-size:12px;color:rgba(45,45,45,0.6);">Ariba Jahan is a customer experience strategist...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isSettings }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Site-wide</div>
+        <h1 style="font-size:26px;margin:0 0 24px;">Site Settings</h1>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;margin-bottom:16px;">
+          <h3 style="font-size:15px;margin:0 0 16px;">Navigation</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Speaking</span><span style="font-size:11px;color:#999;">→ /speaking</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Work With Me</span><span style="font-size:11px;color:#999;">→ /work-with-me</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Unmissables</span><span style="font-size:11px;color:#999;">→ unmissables.xyz</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Reading Room</span><span style="font-size:11px;color:#999;">→ /reading-room</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">About</span><span style="font-size:11px;color:#999;">→ /about</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="cursor:grab;color:#aaa;">⠿</span><span style="flex:1;font-size:13px;">Contact (button)</span><span style="font-size:11px;color:#999;">→ /contact</span></div>
+            <button style="background:none;border:1px dashed #ccc;padding:7px 12px;border-radius:6px;font-size:12px;color:#888;cursor:pointer;align-self:flex-start;">+ Add Nav Item</button>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;margin-bottom:16px;">
+          <h3 style="font-size:15px;margin:0 0 16px;">Social Links</h3>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="flex:1;font-size:13px;">LinkedIn</span><input value="https://www.linkedin.com/in/aribajahan/" style="flex:2;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:12px;color:#888;"></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="flex:1;font-size:13px;">Instagram</span><input value="https://www.instagram.com/ariba.jahan/" style="flex:2;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:12px;color:#888;"></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="flex:1;font-size:13px;">Substack</span><input value="https://www.unmissables.xyz/" style="flex:2;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:12px;color:#888;"></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="flex:1;font-size:13px;">YouTube</span><input value="https://www.youtube.com/@unmissableswithariba" style="flex:2;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:12px;color:#888;"></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:8px 12px;background:#f7f6f4;border-radius:6px;"><span style="flex:1;font-size:13px;">Spotify</span><input value="https://open.spotify.com/show/..." style="flex:2;border:1px solid #ddd;border-radius:5px;padding:6px 8px;font-size:12px;color:#888;"></div>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;">
+          <h3 style="font-size:15px;margin:0 0 16px;">Footer</h3>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Credit Line</label>
+          <textarea rows="2" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;resize:vertical;margin-bottom:16px;">Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son...</textarea>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Copyright Year</label>
+          <input value="2026" style="width:120px;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;">
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isDomains }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Site-wide</div>
+        <h1 style="font-size:26px;margin:0 0 24px;">Domains</h1>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:20px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;">
+          <div><strong style="font-size:14px;">aribajahan.com</strong><div style="font-size:12px;color:#2a7a3e;margin-top:2px;">Primary — connected to production</div></div>
+          <span style="font-size:12px;color:#888;">Managed in Vercel</span>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:20px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;">
+          <div><strong style="font-size:14px;">blog.aribajahan.com</strong><div style="font-size:12px;color:#999;margin-top:2px;">Subdomain — points to Articles collection</div></div>
+          <button style="background:#fff;border:1px solid #ddd;border-radius:5px;padding:6px 12px;font-size:12px;cursor:pointer;">Manage</button>
+        </div>
+        <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;margin-bottom:20px;">+ Add Subdomain</button>
+        <div style="padding:14px 18px;background:#FFF7E8;border:1px solid #F0DFB0;border-radius:8px;font-size:13px;color:#7a5f1f;line-height:1.5;">Domains and subdomains are DNS/hosting settings, not content — they're configured once in Vercel, then just listed here for visibility. A future product line (e.g. a course or community) could live on its own subdomain without touching the main site's code.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isMarketing }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Site-wide</div>
+        <h1 style="font-size:26px;margin:0 0 24px;">Marketing Tools</h1>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;margin-bottom:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+            <label style="font-size:14px;font-weight:600;">Announcement Bar</label>
+            <div style="width:36px;height:20px;background:#2a7a3e;border-radius:10px;position:relative;cursor:pointer;"><div style="width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px;"></div></div>
+          </div>
+          <label style="display:block;font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Message</label>
+          <input value="New cohort of the CX Sprint opens next month — get on the list." style="width:100%;padding:9px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px;margin-bottom:12px;">
+          <label style="display:block;font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Link</label>
+          <input value="work-with-me.dc.html#cx-sprint" style="width:100%;padding:9px 12px;border:1px solid #ddd;border-radius:6px;font-size:13px;">
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:20px;opacity:0.55;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <label style="font-size:14px;font-weight:600;">Promotional Pop-Up</label>
+            <span style="font-size:12px;color:#999;">Not built yet — add when you have a lead magnet</span>
+          </div>
+        </div>
+        <div style="margin-top:16px;font-size:13px;color:#999;">A one-line, site-wide way to promote a new offer, cohort, or article without editing every page — this is exactly the kind of thing to add as your business adds new things to promote.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ pageSettingsOpen }}">
+      <div style="position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:100;display:flex;">
+        <div style="width:200px;background:#f4f3f1;padding:32px 20px;flex-shrink:0;">
+          <div onClick="{{ closePageSettings }}" style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#888;cursor:pointer;margin-bottom:20px;">Close</div>
+          <h2 style="font-size:20px;margin:0 0 20px;">{{ pageSettingsTitle }} Settings</h2>
+          <a href="#ps-general" style="display:block;padding:6px 0;font-size:13px;color:#555;text-decoration:none;">↓ General</a>
+          <a href="#ps-nav" style="display:block;padding:6px 0;font-size:13px;color:#555;text-decoration:none;">↓ Navigation</a>
+          <a href="#ps-seo" style="display:block;padding:6px 0;font-size:13px;color:#555;text-decoration:none;">↓ SEO</a>
+          <a href="#ps-social" style="display:block;padding:6px 0;font-size:13px;color:#555;text-decoration:none;">↓ Social Image</a>
+          <a href="#ps-advanced" style="display:block;padding:6px 0;font-size:13px;color:#555;text-decoration:none;">↓ Advanced</a>
+        </div>
+        <div style="flex:1;background:#fff;padding:40px 48px;overflow-y:auto;">
+          <div id="ps-general" style="margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid #eee;">
+            <h3 style="font-size:16px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#181818;margin:0 0 20px;">General</h3>
+            <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:6px;">Page Title</label>
+            <input value="{{ pageSettingsTitle }}" style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:14px;margin-bottom:16px;">
+            <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:6px;">URL Slug</label>
+            <input value="{{ pageSettingsSlug }}" style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:14px;margin-bottom:16px;">
+            <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:6px;">Availability</label>
+            <select style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:14px;margin-bottom:8px;">
+              <option>Public — live and in nav</option>
+              <option>Unlisted — live, but hidden from nav (share the link directly)</option>
+              <option>Password-protected</option>
+              <option>Draft — not visible to visitors at all</option>
+            </select>
+            <div style="font-size:12px;color:#999;">Good for a page you're still building, or gating something (like a digital product) behind a direct link before it's announced.</div>
+          </div>
+          <div id="ps-nav" style="margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid #eee;">
+            <h3 style="font-size:16px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#181818;margin:0 0 20px;">Navigation</h3>
+            <div style="display:flex;justify-content:space-between;align-items:center;max-width:420px;padding:10px 0;border-bottom:1px solid #f4f3f1;">
+              <span style="font-size:14px;">Show in Nav</span>
+              <div style="width:36px;height:20px;background:#2a7a3e;border-radius:10px;position:relative;"><div style="width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px;"></div></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;max-width:420px;padding:10px 0;">
+              <span style="font-size:14px;">Show Footer</span>
+              <div style="width:36px;height:20px;background:#2a7a3e;border-radius:10px;position:relative;"><div style="width:16px;height:16px;background:#fff;border-radius:50%;position:absolute;top:2px;right:2px;"></div></div>
+            </div>
+          </div>
+          <div id="ps-seo" style="margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid #eee;">
+            <h3 style="font-size:16px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#181818;margin:0 0 20px;">SEO</h3>
+            <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:6px;">Page Title (search &amp; browser tab)</label>
+            <input value="{{ pageSettingsSeoTitle }}" style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:14px;margin-bottom:16px;">
+            <label style="display:block;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#888;margin-bottom:6px;">Meta Description</label>
+            <textarea rows="3" style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:14px;resize:vertical;">{{ pageSettingsSeoDescription }}</textarea>
+            <div style="max-width:420px;margin-top:16px;">
+              <div style="font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Search Result Preview</div>
+              <div style="border:1px solid #e2e0dc;border-radius:8px;padding:14px 16px;">
+                <div style="color:#1a0dab;font-size:15px;margin-bottom:2px;">{{ pageSettingsSeoTitle }}</div>
+                <div style="color:#006621;font-size:12px;margin-bottom:6px;">aribajahan.com{{ pageSettingsSlug }}</div>
+                <div style="color:#545454;font-size:13px;line-height:1.4;">{{ pageSettingsSeoDescription }}</div>
+              </div>
+            </div>
+          </div>
+          <div id="ps-social" style="margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid #eee;">
+            <h3 style="font-size:16px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#181818;margin:0 0 8px;">Social Image</h3>
+            <p style="font-size:13px;color:#888;margin:0 0 16px;">Shown when this page is shared on LinkedIn, Twitter, etc.</p>
+            <div style="width:100%;max-width:420px;height:120px;background:#f0efec;border:2px dashed #d5d2cc;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px;margin-bottom:16px;">Drop image or browse</div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#888;margin-bottom:8px;">Social Preview</div>
+            <div style="max-width:420px;border:1px solid #e2e0dc;border-radius:8px;overflow:hidden;">
+              <div style="height:130px;background:#1c1212;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:12px;">social image preview</div>
+              <div style="padding:10px 14px;">
+                <div style="font-size:11px;color:#999;text-transform:uppercase;margin-bottom:2px;">aribajahan.com</div>
+                <div style="font-size:14px;font-weight:600;margin-bottom:2px;">{{ pageSettingsSeoTitle }}</div>
+                <div style="font-size:12px;color:#888;">{{ pageSettingsSeoDescription }}</div>
+              </div>
+            </div>
+          </div>
+          <div id="ps-advanced">
+            <h3 style="font-size:16px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#181818;margin:0 0 8px;">Advanced</h3>
+            <p style="font-size:13px;color:#888;margin:0 0 16px;">Custom code for this page only — for a future booking widget or tracking pixel.</p>
+            <textarea rows="5" placeholder="Add code…" style="width:100%;max-width:420px;padding:10px 12px;background:#f4f3f1;border:1px solid #e2e0dc;border-radius:6px;font-size:13px;font-family:monospace;resize:vertical;"></textarea>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isSeo }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Per-page</div>
+        <h1 style="font-size:26px;margin:0 0 8px;">SEO</h1>
+        <p style="font-size:14px;color:#888;margin:0 0 24px;">Each page gets its own SEO fields, separate from its content — pick a page to edit.</p>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:28px;">
+          <div onClick="{{ setSeoPage_home }}" style="{{ seoPageRowStyle_home }}">Home</div>
+          <div onClick="{{ setSeoPage_speaking }}" style="{{ seoPageRowStyle_speaking }}">Speaking</div>
+          <div onClick="{{ setSeoPage_wwm }}" style="{{ seoPageRowStyle_wwm }}">Work With Me</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Page Title (shows in browser tab &amp; Google)</label>
+          <input value="{{ seoTitle }}" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;margin-bottom:16px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Meta Description</label>
+          <textarea rows="3" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:14px;font-family:inherit;resize:vertical;margin-bottom:16px;">{{ seoDescription }}</textarea>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Social Share Image</label>
+          <div style="width:100%;height:100px;background:#f0efec;border:2px dashed #d5d2cc;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px;">og-image.jpg — shown when this page is shared on LinkedIn/Twitter</div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isMedia }}">
+      <div style="max-width:900px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <h1 style="font-size:26px;margin:0;">Media Library</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ Upload</button>
+        </div>
+        <p style="font-size:14px;color:#888;margin:0 0 20px;">Every image, where it's used, its alt text, and auto-generated tags. Unused images are flagged so you can safely delete them.</p>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+          <span style="background:#181818;color:#fff;font-size:12px;font-weight:600;padding:5px 12px;border-radius:14px;cursor:pointer;">All</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Speaking</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Headshot</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Family</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Press</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Portrait</span>
+          <span style="background:#fff;border:1px solid #ddd;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">Event</span>
+          <span style="background:#fff;border:1px dashed #ccc;color:#999;font-size:12px;padding:5px 12px;border-radius:14px;cursor:pointer;">+ Unused (3)</span>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:64px;height:64px;background:#1c1212;border-radius:6px;flex-shrink:0;"></div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:600;margin-bottom:6px;">hero-photo.jpg</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span style="background:#e8f4ea;color:#2a7a3e;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">Used on Home → Hero</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Speaking</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Portrait</span>
+              <span style="background:#f0efec;color:#999;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;">+ tag</span>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input value="Ariba Jahan speaking on stage at a conference, warm lighting" style="flex:1;font-size:12px;padding:6px 8px;border:1px solid #ddd;border-radius:5px;">
+              <button style="background:#f0efec;border:1px solid #ddd;border-radius:5px;padding:6px 10px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;">✨ Generate Alt Text</button>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <button style="background:#fff;border:1px solid #ddd;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;">Swap</button>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:64px;height:64px;background:#E73131;border-radius:6px;flex-shrink:0;"></div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:600;margin-bottom:6px;">unmissables-ce.jpg</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span style="background:#e8f4ea;color:#2a7a3e;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">Used on Home → Unmissables</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Article</span>
+              <span style="background:#f0efec;color:#999;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;">+ tag</span>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input value="Illustration for the Cognitive Endurance essay" style="flex:1;font-size:12px;padding:6px 8px;border:1px solid #ddd;border-radius:5px;">
+              <button style="background:#f0efec;border:1px solid #ddd;border-radius:5px;padding:6px 10px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;">✨ Generate Alt Text</button>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <button style="background:#fff;border:1px solid #ddd;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;">Swap</button>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;margin-bottom:10px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:64px;height:64px;background:#8b6f5c;border-radius:6px;flex-shrink:0;"></div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:600;margin-bottom:6px;">personal-red-wall.jpg</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span style="background:#e8f4ea;color:#2a7a3e;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">Used on About → Story Timeline</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Family</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Candid</span>
+              <span style="background:#f0efec;color:#999;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;">+ tag</span>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input value="Ariba smiling in front of a red brick wall, casual portrait" style="flex:1;font-size:12px;padding:6px 8px;border:1px solid #ddd;border-radius:5px;">
+              <button style="background:#f0efec;border:1px solid #ddd;border-radius:5px;padding:6px 10px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;">✨ Generate Alt Text</button>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <button style="background:#fff;border:1px solid #ddd;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;">Swap</button>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #f0c0c0;border-radius:10px;padding:16px 18px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:64px;height:64px;background:#ccc;border-radius:6px;flex-shrink:0;"></div>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:600;margin-bottom:6px;">old-headshot-v2.jpg</div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span style="background:#fbeaea;color:#b33;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">Not used anywhere</span>
+              <span style="background:#eef0fb;color:#3d4bb3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;">🏷 Headshot</span>
+            </div>
+            <div style="font-size:12px;color:#999;">No alt text set</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <sc-if value="{{ confirmingDelete }}">
+              <div style="display:flex;flex-direction:column;gap:4px;">
+                <span style="font-size:10px;color:#b33;font-weight:600;">Delete for good?</span>
+                <button onClick="{{ onConfirmDelete }}" style="background:#b33;color:#fff;border:none;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;font-weight:600;">Yes, delete</button>
+                <button onClick="{{ onCancelDelete }}" style="background:#fff;border:1px solid #ddd;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;">Cancel</button>
+              </div>
+            </sc-if>
+            <sc-if value="{{ notConfirmingDelete }}">
+              <button onClick="{{ onAskDelete }}" style="background:#fdeaea;color:#b33;border:1px solid #f0c0c0;border-radius:5px;padding:5px 10px;font-size:11px;cursor:pointer;font-weight:600;">Delete</button>
+            </sc-if>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;font-size:13px;color:#999;">Tags (🏷) are auto-suggested by AI on upload from what's in the photo and which section it's dropped into — click "+ tag" to add your own or remove one. "Generate Alt Text" works the same way: a draft you review before saving, never auto-published without a look.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTestimonials }}">
+      <div style="max-width:820px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;">
+          <h1 style="font-size:26px;margin:0;">Testimonials</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ New Testimonial</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <span style="background:#2D2D2D;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Speaking</span>
+            <div style="flex:1;font-size:14px;">"Ariba doesn't just speak, she transforms how the room thinks about..." — <strong>Sarah K., VP Marketing</strong></div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <span style="background:#E73131;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Client</span>
+            <div style="flex:1;font-size:14px;">"The CX sprint completely reframed how we think about our funnel..." — <strong>James O., Founder</strong></div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <span style="background:#FFFBF3;color:#2D2D2D;border:1px solid #ddd;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Leadership</span>
+            <div style="flex:1;font-size:14px;">"One of the sharpest strategic minds I've worked with..." — <strong>Dana R., CMO</strong></div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+        </div>
+        <div style="margin-top:20px;font-size:13px;color:#999;">Drag ⠿ to reorder how testimonials appear on the site. Category badge controls the card color automatically.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isLogos }}">
+      <div style="max-width:820px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Collection — used on Speaking page</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;">
+          <h1 style="font-size:26px;margin:0;">Speaking Logos</h1>
+          <button style="background:#181818;color:#fff;border:none;border-radius:6px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;">+ Add Logo</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:14px;text-align:center;">
+            <div style="height:44px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#444;">Google</div>
+            <div style="font-size:11px;color:#999;">display size: L</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:14px;text-align:center;">
+            <div style="height:44px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#444;">TikTok</div>
+            <div style="font-size:11px;color:#999;">display size: L</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:14px;text-align:center;">
+            <div style="height:44px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#444;">Paramount</div>
+            <div style="font-size:11px;color:#999;">display size: M</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:14px;text-align:center;">
+            <div style="height:44px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#444;">+ more…</div>
+            <div style="font-size:11px;color:#999;">29 total</div>
+          </div>
+        </div>
+        <div style="margin-top:20px;font-size:13px;color:#999;">Add/remove/reorder logos here — no code touched. Size field controls how prominent each logo renders.</div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isSpeaking }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Speaking Page</div>
+        <h1 style="font-size:26px;margin:0 0 12px;">Engagements Section</h1>
+        <p style="font-size:14px;color:#888;margin:0 0 28px;">Headline &amp; format list are fields here. Logos and photos are managed in their own collections (left sidebar) so you can reorder them without opening this page.</p>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;margin-bottom:20px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Headline</label>
+          <input value="Spoken At 200+ Gatherings" style="width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:6px;font-size:15px;font-family:inherit;">
+        </div>
+        <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:24px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Format Tags</label>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="background:#f0efec;padding:5px 12px;border-radius:14px;font-size:13px;">Keynotes ✕</span>
+            <span style="background:#f0efec;padding:5px 12px;border-radius:14px;font-size:13px;">Executive Briefings ✕</span>
+            <span style="background:#f0efec;padding:5px 12px;border-radius:14px;font-size:13px;">Workshops ✕</span>
+            <span style="background:#f0efec;padding:5px 12px;border-radius:14px;font-size:13px;">Panels ✕</span>
+            <button style="background:none;border:1px dashed #ccc;padding:5px 12px;border-radius:14px;font-size:13px;color:#888;cursor:pointer;">+ Add tag</button>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isWwm }}">
+      <div style="max-width:720px;padding:48px 40px;">
+        <div style="font-size:12px;font-weight:600;color:#888;margin-bottom:6px;">Work With Me Page</div>
+        <h1 style="font-size:26px;margin:0 0 28px;">Offer Cards</h1>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <span style="background:#E73131;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">Career Advisory</span>
+            <div style="flex:1;font-size:14px;">1:1 sessions for leaders navigating a career pivot</div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+          <div style="background:#fff;border:1px solid #e2e0dc;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;">
+            <span style="cursor:grab;color:#aaa;">⠿</span>
+            <span style="background:#2D2D2D;color:#fff;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;">CX Sprint</span>
+            <div style="flex:1;font-size:14px;">A focused 2-week engagement to fix your funnel</div>
+            <span style="color:#888;cursor:pointer;">Edit →</span>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+  </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 'home', expanded: { hero: true, unmissables: false, close: false }, heroHeadline: "Let's build something unmissable.", previewMode: 'live', seoPage: 'home', env: 'production' };
+  seoData = {
+    home: { title: 'Ariba Jahan — Speaker, Advisor, Writer', description: "Customer experience strategist and speaker. Let's build something unmissable." },
+    speaking: { title: 'Speaking — Ariba Jahan', description: 'Book Ariba for your next keynote, workshop, or executive offsite. 200+ gatherings and counting.' },
+    wwm: { title: 'Work With Me — Ariba Jahan', description: 'CX sprints, 1:1 strategy sessions, and career advisory for leaders and teams.' },
+  };
+  setTab = (tab) => this.setState({ tab });
+  goHome = () => this.setTab('home');
+  toggleSection = (key) => this.setState(s => ({ expanded: { ...s.expanded, [key]: !s.expanded[key] } }));
+  onHeroHeadlineChange = (e) => this.setState({ heroHeadline: e.target.value });
+  setPreviewLive = () => this.setState({ previewMode: 'live' });
+  setPreviewDraft = () => this.setState({ previewMode: 'draft' });
+  goSeo = () => this.setState({ tab: 'seo', seoPage: this.state.seoPage || 'home' });
+  goMedia = () => this.setTab('media');
+  goReadingRoom = () => this.setTab('readingRoom');
+  goArticles = () => this.setTab('articles');
+  goCaseStudies = () => this.setTab('caseStudies');
+  setSeoPage = (page) => this.setState({ seoPage: page });
+  onPublish = () => { this.setState({ showPublishedToast: true }); clearTimeout(this._toastTimer); this._toastTimer = setTimeout(() => this.setState({ showPublishedToast: false }), 6000); };
+  onUndoPublish = () => this.setState({ showPublishedToast: false });
+  toggleEnv = () => this.setState(s => ({ env: s.env === 'production' ? 'preview' : 'production' }));
+  onAskDelete = () => this.setState({ confirmingDelete: true });
+  onCancelDelete = () => this.setState({ confirmingDelete: false });
+  onConfirmDelete = () => this.setState({ confirmingDelete: false });
+  goDomains = () => this.setTab('domains');
+  goForms = () => this.setTab('forms');
+  goAbout = () => this.setTab('about');
+  goSettings = () => this.setTab('settings');
+  goMarketing = () => this.setTab('marketing');
+  openPageSettings = (page) => this.setState({ pageSettingsOpen: page, pageSettingsTab: 'general' });
+  closePageSettings = () => this.setState({ pageSettingsOpen: null });
+  setPageSettingsTab = (tab) => this.setState({ pageSettingsTab: tab });
+  pageSettingsData = {
+    home: { title: 'Home', slug: '/', seoTitle: 'Ariba Jahan — Speaker, Advisor, Writer', seoDescription: "Customer experience strategist and speaker. Let's build something unmissable." },
+    speaking: { title: 'Speaking', slug: '/speaking', seoTitle: 'Speaking — Ariba Jahan', seoDescription: 'Book Ariba for your next keynote, workshop, or executive offsite.' },
+    wwm: { title: 'Work With Me', slug: '/work-with-me', seoTitle: 'Work With Me — Ariba Jahan', seoDescription: 'CX sprints, 1:1 strategy sessions, and career advisory for leaders and teams.' },
+    about: { title: 'About', slug: '/about', seoTitle: 'About — Ariba Jahan', seoDescription: 'The story behind the strategy: how Ariba got here.' },
+  };
+  goSpeaking = () => this.setTab('speaking');
+  goWwm = () => this.setTab('wwm');
+  goTestimonials = () => this.setTab('testimonials');
+  goLogos = () => this.setTab('logos');
+  navStyle(tab) {
+    const active = this.state.tab === tab;
+    return `display:block;padding:9px 10px;border-radius:6px;font-size:14px;text-decoration:none;margin-bottom:2px;color:${active ? '#fff' : 'rgba(255,255,255,0.55)'};background:${active ? 'rgba(255,255,255,0.08)' : 'transparent'};`;
+  }
+  renderVals() {
+    return {
+      setTab: this.setTab,
+      goHome: this.goHome, goSpeaking: this.goSpeaking, goWwm: this.goWwm, goTestimonials: this.goTestimonials, goLogos: this.goLogos,
+      isHome: this.state.tab === 'home',
+      isSpeaking: this.state.tab === 'speaking',
+      isWwm: this.state.tab === 'wwm',
+      isTestimonials: this.state.tab === 'testimonials',
+      isLogos: this.state.tab === 'logos',
+      isSeo: this.state.tab === 'seo',
+      isMedia: this.state.tab === 'media',
+      isReadingRoom: this.state.tab === 'readingRoom',
+      isArticles: this.state.tab === 'articles',
+      isCaseStudies: this.state.tab === 'caseStudies',
+      navItemStyle_home: this.navStyle('home'),
+      navItemStyle_seo: this.navStyle('seo'),
+      navItemStyle_media: this.navStyle('media'),
+      navItemStyle_readingRoom: this.navStyle('readingRoom'),
+      navItemStyle_articles: this.navStyle('articles'),
+      navItemStyle_caseStudies: this.navStyle('caseStudies'),
+      goSeo: this.goSeo, goMedia: this.goMedia, goReadingRoom: this.goReadingRoom, goArticles: this.goArticles, goCaseStudies: this.goCaseStudies,
+      setSeoPage_home: () => this.setSeoPage('home'),
+      setSeoPage_speaking: () => this.setSeoPage('speaking'),
+      setSeoPage_wwm: () => this.setSeoPage('wwm'),
+      seoPageRowStyle_home: `padding:10px 14px;border-radius:8px;cursor:pointer;font-size:14px;background:${this.state.seoPage === 'home' ? '#181818' : '#fff'};color:${this.state.seoPage === 'home' ? '#fff' : '#1a1a1a'};border:1px solid ${this.state.seoPage === 'home' ? '#181818' : '#e2e0dc'};`,
+      seoPageRowStyle_speaking: `padding:10px 14px;border-radius:8px;cursor:pointer;font-size:14px;background:${this.state.seoPage === 'speaking' ? '#181818' : '#fff'};color:${this.state.seoPage === 'speaking' ? '#fff' : '#1a1a1a'};border:1px solid ${this.state.seoPage === 'speaking' ? '#181818' : '#e2e0dc'};`,
+      seoPageRowStyle_wwm: `padding:10px 14px;border-radius:8px;cursor:pointer;font-size:14px;background:${this.state.seoPage === 'wwm' ? '#181818' : '#fff'};color:${this.state.seoPage === 'wwm' ? '#fff' : '#1a1a1a'};border:1px solid ${this.state.seoPage === 'wwm' ? '#181818' : '#e2e0dc'};`,
+      seoTitle: this.seoData[this.state.seoPage].title,
+      seoDescription: this.seoData[this.state.seoPage].description,
+      onPublish: this.onPublish, onUndoPublish: this.onUndoPublish,
+      showPublishedToast: !!this.state.showPublishedToast,
+      toggleEnv: this.toggleEnv,
+      isPreviewEnv: this.state.env === 'preview',
+      envLabel: this.state.env === 'production' ? 'Production (main branch → aribajahan.com)' : 'Preview (feature/new-homepage branch)',
+      envSwitchLabel: this.state.env === 'production' ? 'Preview' : 'Production',
+      envBarBg: this.state.env === 'production' ? '#181818' : '#8a5a1f',
+      envDotColor: this.state.env === 'production' ? '#8EF942' : '#F3FF00',
+      onAskDelete: this.onAskDelete, onCancelDelete: this.onCancelDelete, onConfirmDelete: this.onConfirmDelete,
+      confirmingDelete: !!this.state.confirmingDelete,
+      notConfirmingDelete: !this.state.confirmingDelete,
+      isDomains: this.state.tab === 'domains',
+      isMarketing: this.state.tab === 'marketing',
+      isForms: this.state.tab === 'forms',
+      isAbout: this.state.tab === 'about',
+      isSettings: this.state.tab === 'settings',
+      navItemStyle_about: this.navStyle('about'),
+      navItemStyle_settings: this.navStyle('settings'),
+      goAbout: this.goAbout, goSettings: this.goSettings,
+      navItemStyle_domains: this.navStyle('domains'),
+      navItemStyle_marketing: this.navStyle('marketing'),
+      navItemStyle_forms: this.navStyle('forms'),
+      goDomains: this.goDomains, goMarketing: this.goMarketing, goForms: this.goForms,
+      openPageSettings_home: () => this.openPageSettings('home'),
+      openPageSettings_speaking: () => this.openPageSettings('speaking'),
+      openPageSettings_wwm: () => this.openPageSettings('wwm'),
+      openPageSettings_about: () => this.openPageSettings('about'),
+      closePageSettings: this.closePageSettings,
+      pageSettingsOpen: !!this.state.pageSettingsOpen,
+      pageSettingsTitle: this.state.pageSettingsOpen ? this.pageSettingsData[this.state.pageSettingsOpen].title : '',
+      pageSettingsSlug: this.state.pageSettingsOpen ? this.pageSettingsData[this.state.pageSettingsOpen].slug : '',
+      pageSettingsSeoTitle: this.state.pageSettingsOpen ? this.pageSettingsData[this.state.pageSettingsOpen].seoTitle : '',
+      pageSettingsSeoDescription: this.state.pageSettingsOpen ? this.pageSettingsData[this.state.pageSettingsOpen].seoDescription : '',
+      setPageSettingsTab_general: () => this.setPageSettingsTab('general'),
+      setPageSettingsTab_nav: () => this.setPageSettingsTab('nav'),
+      setPageSettingsTab_seo: () => this.setPageSettingsTab('seo'),
+      setPageSettingsTab_social: () => this.setPageSettingsTab('social'),
+      setPageSettingsTab_advanced: () => this.setPageSettingsTab('advanced'),
+      pageSettingsTabIsGeneral: this.state.pageSettingsTab === 'general',
+      pageSettingsTabIsNav: this.state.pageSettingsTab === 'nav',
+      pageSettingsTabIsSeo: this.state.pageSettingsTab === 'seo',
+      pageSettingsTabIsSocial: this.state.pageSettingsTab === 'social',
+      pageSettingsTabIsAdvanced: this.state.pageSettingsTab === 'advanced',
+      pageSettingsTabStyle_general: `padding:9px 10px;border-radius:6px;font-size:14px;cursor:pointer;margin-bottom:2px;font-weight:${this.state.pageSettingsTab === 'general' ? '700' : '400'};text-decoration:${this.state.pageSettingsTab === 'general' ? 'underline' : 'none'};`,
+      pageSettingsTabStyle_nav: `padding:9px 10px;border-radius:6px;font-size:14px;cursor:pointer;margin-bottom:2px;font-weight:${this.state.pageSettingsTab === 'nav' ? '700' : '400'};text-decoration:${this.state.pageSettingsTab === 'nav' ? 'underline' : 'none'};`,
+      pageSettingsTabStyle_seo: `padding:9px 10px;border-radius:6px;font-size:14px;cursor:pointer;margin-bottom:2px;font-weight:${this.state.pageSettingsTab === 'seo' ? '700' : '400'};text-decoration:${this.state.pageSettingsTab === 'seo' ? 'underline' : 'none'};`,
+      pageSettingsTabStyle_social: `padding:9px 10px;border-radius:6px;font-size:14px;cursor:pointer;margin-bottom:2px;font-weight:${this.state.pageSettingsTab === 'social' ? '700' : '400'};text-decoration:${this.state.pageSettingsTab === 'social' ? 'underline' : 'none'};`,
+      pageSettingsTabStyle_advanced: `padding:9px 10px;border-radius:6px;font-size:14px;cursor:pointer;margin-bottom:2px;font-weight:${this.state.pageSettingsTab === 'advanced' ? '700' : '400'};text-decoration:${this.state.pageSettingsTab === 'advanced' ? 'underline' : 'none'};`,
+      toggleSection_hero: () => this.toggleSection('hero'),
+      toggleSection_unmissables: () => this.toggleSection('unmissables'),
+      toggleSection_close: () => this.toggleSection('close'),
+      expanded_hero: this.state.expanded.hero,
+      expanded_unmissables: this.state.expanded.unmissables,
+      expanded_close: this.state.expanded.close,
+      chevron_hero: this.state.expanded.hero ? '▲' : '▼',
+      chevron_unmissables: this.state.expanded.unmissables ? '▲' : '▼',
+      chevron_close: this.state.expanded.close ? '▲' : '▼',
+      heroHeadline: this.state.heroHeadline,
+      onHeroHeadlineChange: this.onHeroHeadlineChange,
+      setPreviewLive: this.setPreviewLive,
+      setPreviewDraft: this.setPreviewDraft,
+      previewUrlSuffix: this.state.previewMode === 'live' ? 'jahan' : 'jahan-draft',
+      previewCaption: this.state.previewMode === 'live' ? 'This is what visitors see right now.' : 'Unpublished changes — not visible to visitors yet.',
+      previewToggleStyle_live: `padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;border:none;cursor:pointer;background:${this.state.previewMode === 'live' ? '#181818' : 'transparent'};color:${this.state.previewMode === 'live' ? '#fff' : '#888'};`,
+      previewToggleStyle_preview: `padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;border:none;cursor:pointer;background:${this.state.previewMode === 'draft' ? '#181818' : 'transparent'};color:${this.state.previewMode === 'draft' ? '#fff' : '#888'};`,
+      navItemStyle_speaking: this.navStyle('speaking'),
+      navItemStyle_wwm: this.navStyle('wwm'),
+      navItemStyle_testimonials: this.navStyle('testimonials'),
+      navItemStyle_logos: this.navStyle('logos'),
+    };
+  }
+}
+</script>
+</body>
+</html>
