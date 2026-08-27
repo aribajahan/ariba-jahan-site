@@ -29,7 +29,7 @@ export default function PageSettingsEditor({
   const [pageSettings, setPageSettings] = useState(allPageSettings);
   const [navVisibility, setNavVisibility] = useState(allNavVisibility);
   const [seo, setSeo] = useState(allSeo);
-  const [tab, setTab] = useState<"general" | "nav" | "seo" | "social" | "advanced">("general");
+  const [tab, setTab] = useState<"general" | "nav" | "seo" | "social">("general");
   const { publish, publishing, result } = usePublish();
 
   const settings = pageSettings[pageKey];
@@ -63,7 +63,6 @@ export default function PageSettingsEditor({
     { key: "nav", label: "Navigation" },
     { key: "seo", label: "SEO" },
     { key: "social", label: "Social Image" },
-    { key: "advanced", label: "Advanced" },
   ];
 
   return (
@@ -178,22 +177,16 @@ export default function PageSettingsEditor({
         {tab === "social" && (
           <div>
             <h3 className="text-[13px] font-bold tracking-[0.04em] uppercase mb-2">Social Image</h3>
-            <p className="text-[13px] text-[#888] mb-4">Shown when this page is shared on LinkedIn, Twitter, etc. Leave blank to use the site default.</p>
+            <p className="text-[13px] text-[#888] mb-4">
+              Not wired to the live pages yet. Every page currently shares one site-wide preview image when shared on
+              LinkedIn, Twitter, etc. This field saves, but a per-page override isn&rsquo;t shown until this gets connected.
+            </p>
             <input
               value={settings.socialImage}
               onChange={(e) => updateSettings({ socialImage: e.target.value })}
               placeholder="/uploads/photo.jpg"
               className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm"
             />
-          </div>
-        )}
-
-        {tab === "advanced" && (
-          <div>
-            <h3 className="text-[13px] font-bold tracking-[0.04em] uppercase mb-2">Advanced</h3>
-            <p className="text-[13px] text-[#888] mb-4">
-              Not yet wired into the live pages. For a future booking widget or tracking pixel field.
-            </p>
           </div>
         )}
 

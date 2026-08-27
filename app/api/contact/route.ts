@@ -24,8 +24,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "Invalid submission." }, { status: 400 });
   }
 
-  const detailRows = Object.entries(rest)
-    .filter(([, value]) => typeof value === "string" && value.trim())
+  const detailRows = [
+    ["Name", name],
+    ["Email", email],
+    ...Object.entries(rest).filter(([, value]) => typeof value === "string" && value.trim()),
+  ]
     .map(([key, value]) => `<tr><td style="padding:4px 12px 4px 0;color:#666;">${escapeHtml(key)}</td><td>${escapeHtml(String(value))}</td></tr>`)
     .join("");
 

@@ -2,7 +2,7 @@
 
 export type ContactReason = "speaking" | "advisory" | "career" | "press" | "other";
 
-export const contactPhotoSrc = "/uploads/strategy-sessions-red-sweater-v1.jpg";
+export const contactPhotoSrc = "/uploads/personal-red-wall-shoes.jpg";
 
 export const reasonOptions: { value: ContactReason; label: string }[] = [
   { value: "speaking", label: "Speaking inquiry" },
