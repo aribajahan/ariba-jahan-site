@@ -6,11 +6,11 @@ import SpeakingTestimonials from "../components/SpeakingTestimonials";
 import SpeakingEngagements from "../components/SpeakingEngagements";
 import SpeakingClosingCTA from "../components/SpeakingClosingCTA";
 import Footer from "../components/Footer";
+import seo from "../../content/seo.json";
 
 export const metadata: Metadata = {
-  title: "Speaking",
-  description:
-    "200+ talks, keynotes, and workshops on technology, human behavior, and what to build next. Bring Ariba Jahan to your event.",
+  title: seo.speaking.title,
+  description: seo.speaking.description,
 };
 
 export default function Speaking() {

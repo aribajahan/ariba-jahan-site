@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import LogoMarquee from "./components/LogoMarquee";
@@ -13,6 +14,12 @@ import Testimonials from "./components/Testimonials";
 import Community from "./components/Community";
 import ClosingCTA from "./components/ClosingCTA";
 import Footer from "./components/Footer";
+import seo from "../content/seo.json";
+
+export const metadata: Metadata = {
+  title: { absolute: seo.home.title },
+  description: seo.home.description,
+};
 
 export default function Home() {
   return (

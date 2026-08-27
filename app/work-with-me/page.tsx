@@ -9,11 +9,11 @@ import WwmTestimonials from "../components/WwmTestimonials";
 import CaseStudies from "../components/CaseStudies";
 import WorkWithMeClosingCTA from "../components/WorkWithMeClosingCTA";
 import Footer from "../components/Footer";
+import seo from "../../content/seo.json";
 
 export const metadata: Metadata = {
-  title: "Work With Me",
-  description:
-    "CX Ambition Sprints and 1:1 Strategy Sessions for leaders navigating product, growth, and AI decisions.",
+  title: seo["work-with-me"].title,
+  description: seo["work-with-me"].description,
 };
 
 export default function WorkWithMe() {

@@ -8,11 +8,11 @@ import CareerAdvisory from "../components/CareerAdvisory";
 import RecognitionFeatures from "../components/RecognitionFeatures";
 import AboutClosingCTA from "../components/AboutClosingCTA";
 import Footer from "../components/Footer";
+import seo from "../../content/seo.json";
 
 export const metadata: Metadata = {
-  title: "About",
-  description:
-    "Product and AI strategist, consultant, speaker, and writer. The story behind the work — and what I'm focused on right now.",
+  title: seo.about.title,
+  description: seo.about.description,
 };
 
 export default function About() {
