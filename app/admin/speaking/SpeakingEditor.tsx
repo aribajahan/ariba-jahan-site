@@ -4,7 +4,7 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
-import StringListEditor from "../_shared/StringListEditor";
+import TagListEditor from "../_shared/TagListEditor";
 
 type Theme = { photoSrc: string; title: string; question: string; description: string };
 type SpeakingContent = {
@@ -91,7 +91,7 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
           <textarea rows={3} value={content.engagements.intro} onChange={(e) => set("engagements", { intro: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
         <label className="block text-[13px] font-semibold mb-2">Format Tags</label>
-        <StringListEditor items={content.engagements.formats} onChange={(formats) => set("engagements", { formats })} />
+        <TagListEditor items={content.engagements.formats} onChange={(formats) => set("engagements", { formats })} placeholder="Add a format…" />
         <p className="text-xs text-[#999] mt-3">Logos and photo gallery are managed in their own collections (Speaking Logos, Speaking Gallery Photos).</p>
       </SectionCard>
 

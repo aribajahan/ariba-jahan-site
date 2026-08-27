@@ -4,7 +4,7 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
-import StringListEditor from "../_shared/StringListEditor";
+import TagListEditor from "../_shared/TagListEditor";
 
 type Cta = { label: string; href: string };
 type Offer = { index: string; title: string; lead: string; body: string; cta: string; href: string };
@@ -216,7 +216,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
                   reverse
                 </label>
               </div>
-              <StringListEditor items={row.items} onChange={(items) => updateMarqueeRow(i, { items })} />
+              <TagListEditor items={row.items} onChange={(items) => updateMarqueeRow(i, { items })} placeholder="Add a name…" />
             </div>
           ))}
         </div>
@@ -228,7 +228,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         <Field label="Photo"><input value={content.recognition.photoSrc} onChange={(e) => set("recognition", { photoSrc: e.target.value })} className={inputCls} /></Field>
         <label className="block text-[13px] font-semibold mb-2">Recognition Items</label>
         <div className="mb-4">
-          <StringListEditor items={content.recognition.items} onChange={(items) => set("recognition", { items })} />
+          <TagListEditor items={content.recognition.items} onChange={(items) => set("recognition", { items })} placeholder="Add an item…" />
         </div>
         <div className="flex gap-2">
           <input value={content.recognition.ctaLabel} onChange={(e) => set("recognition", { ctaLabel: e.target.value })} placeholder="CTA label" className="flex-1 border border-[#ddd] rounded-md px-3 py-[10px] text-sm" />
