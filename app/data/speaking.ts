@@ -51,6 +51,8 @@ import { testimonialsFor } from "./testimonials";
 
 export const speakingTestimonials = testimonialsFor("speaking");
 
+import speakingLogosData from "../../content/collections/speaking-logos.json";
+
 export type SpeakingLogo = {
   src: string;
   alt: string;
@@ -63,44 +65,7 @@ export type SpeakingLogo = {
 // The first 12 (three mobile/tablet rows at 4-per-row) are the most
 // broadly recognizable, so they're the ones still visible before the
 // mobile/tablet "Show more" toggle is expanded. Order matters here.
-export const speakingLogos: SpeakingLogo[] = [
-  { src: "/assets/logo-un.png", alt: "United Nations", heightPx: 64 },
-  { src: "/assets/logo-google.png", alt: "Google", heightPx: 66 },
-  { src: "/assets/logo-tiktok.png", alt: "TikTok", heightPx: 58 },
-  { src: "/assets/logo-paramount.png", alt: "Paramount", heightPx: 46 },
-  { src: "/assets/logo-snap.png", alt: "Snap Inc.", heightPx: 38 },
-  { src: "/assets/logo-etsy.png", alt: "Etsy", heightPx: 40 },
-  { src: "/assets/logo-hubspot.png", alt: "HubSpot", heightPx: 36 },
-  { src: "/assets/logo-columbia.png", alt: "Columbia University", heightPx: 68 },
-  { src: "/assets/logo-ogilvy.png", alt: "Ogilvy", heightPx: 40 },
-  { src: "/assets/logo-voxmedia.png", alt: "Vox Media", heightPx: 34 },
-  { src: "/assets/logo-ally.png", alt: "Ally", heightPx: 38 },
-  { src: "/assets/logo-fanduel.png", alt: "FanDuel", heightPx: 34 },
-  { src: "/assets/logo-ixda.png", alt: "IxDA", heightPx: 44 },
-  { src: "/assets/logo-marketingbrew.png", alt: "Marketing Brew", heightPx: 50 },
-  { src: "/assets/logo-svb.png", alt: "Silicon Valley Bank", heightPx: 42 },
-  { src: "/assets/logo-aigapro.png", alt: "AIGA", heightPx: 46 },
-  { src: "/assets/logo-adcolor.png", alt: "AdColor", heightPx: 38 },
-  { src: "/assets/logo-anomaly.png", alt: "Anomaly", heightPx: 34 },
-  { src: "/assets/logo-newschool.png", alt: "The New School", heightPx: 44 },
-  { src: "/assets/logo-womeninnovation.png", alt: "Women in Innovation", heightPx: 40 },
-  { src: "/assets/logo-chief.png", alt: "Chief", heightPx: 36 },
-  { src: "/assets/logo-alltechishuman.png", alt: "All Tech Is Human", heightPx: 40 },
-  { src: "/assets/logo-designops.png", alt: "DesignOps Summit", heightPx: 38 },
-  { src: "/assets/logo-adweekny.png", alt: "Advertising Week New York", heightPx: 40 },
-  { src: "/assets/logo-boardofinnovation.png", alt: "Board of Innovation", heightPx: 46 },
-  { src: "/assets/logo-ama.png", alt: "American Marketing Association", heightPx: 44 },
-  { src: "/assets/logo-radicalresearch.png", alt: "Radical Research Summit", heightPx: 44 },
-  { src: "/assets/logo-fq.png", alt: "The Female Quotient", heightPx: 48 },
-  { src: "/assets/logo-womenwhocode.png", alt: "Women Who Code", heightPx: 52 },
-  { src: "/assets/logo-confab.png", alt: "Confab", heightPx: 38 },
-  { src: "/assets/logo-leading-design.png", alt: "Leading Design", heightPx: 52, invert: true },
-  { src: "/assets/logo-adcouncil-white-sm.png", alt: "Ad Council", heightPx: 44 },
-  { src: "/assets/logo-nftnyc.png", alt: "NFT NYC", heightPx: 38 },
-  { src: "/assets/logo-uxsouthafrica.png", alt: "UX South Africa", heightPx: 48 },
-  { src: "/assets/logo-asiansinadvertising.png", alt: "Asians in Advertising", heightPx: 42 },
-  { src: "/assets/logo-ndclondon.png", alt: "NDC London", heightPx: 34 },
-];
+export const speakingLogos: SpeakingLogo[] = speakingLogosData;
 
 // Order tuned so these wrap into exactly 3 rows at mobile width (375px).
 export const engagementFormats = [
