@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "photoSrc": "/assets/hero-photo.jpg",
+    "subhead": "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once.",
+    "ctas": [
+      { "label": "Work With Me", "href": "#work-with-me" },
+      { "label": "Read Unmissables", "href": "#unmissables" }
+    ]
+  }
+}
