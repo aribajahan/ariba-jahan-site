@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { engagementFormats, galleryPhotos, speakingLogos } from "../data/speaking";
+import speakingContent from "../../content/pages/speaking.json";
 
 const INITIAL_LOGO_COUNT = 12; // 3 rows at 4-per-row on mobile/tablet
 
@@ -16,15 +17,13 @@ export default function SpeakingEngagements() {
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[14px]">
-          Selected Speaking Engagements
+          {speakingContent.engagements.eyebrow}
         </div>
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-cream mb-5 max-w-[800px]">
-          Spoken At 200+ Gatherings
+          {speakingContent.engagements.heading}
         </h2>
         <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/80 max-w-[720px] mb-9">
-          I&rsquo;ve had the privilege of speaking at more than 200 conferences, leadership
-          events, executive offsites, universities, and workshops, including the United Nations
-          General Assembly, Google, TikTok, Paramount, and Vox Media.
+          {speakingContent.engagements.intro}
         </p>
 
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(110px,1fr))] max-[1024px]:[grid-template-columns:repeat(4,1fr)] max-[700px]:!grid-cols-4 gap-[32px] gap-x-[28px] max-[1024px]:gap-y-8 max-[700px]:gap-y-6 max-[700px]:gap-x-4 items-center mb-6">

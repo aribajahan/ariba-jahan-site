@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { speakingTestimonials } from "../data/speaking";
+import speakingContent from "../../content/pages/speaking.json";
 
 const CARD_WIDTH = 420;
 const GAP = 24;
@@ -27,10 +28,10 @@ export default function SpeakingTestimonials() {
         <div className="flex items-end justify-between gap-6 flex-wrap mb-9">
           <div>
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              From the Stage
+              {speakingContent.testimonialsSection.eyebrow}
             </div>
             <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal">
-              What Audiences Say
+              {speakingContent.testimonialsSection.heading}
             </h2>
           </div>
           <div className="flex gap-[10px]">
