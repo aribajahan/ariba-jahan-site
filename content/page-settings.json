@@ -1,0 +1,47 @@
+{
+  "home": {
+    "navLabel": "Home",
+    "slug": "/",
+    "availability": "public",
+    "password": "",
+    "showInNav": false,
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "speaking": {
+    "navLabel": "Speaking",
+    "slug": "/speaking",
+    "availability": "public",
+    "password": "",
+    "showInNav": true,
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "work-with-me": {
+    "navLabel": "Work With Me",
+    "slug": "/work-with-me",
+    "availability": "public",
+    "password": "",
+    "showInNav": true,
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "about": {
+    "navLabel": "About",
+    "slug": "/about",
+    "availability": "public",
+    "password": "",
+    "showInNav": false,
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "reading-room": {
+    "navLabel": "Reading Room",
+    "slug": "/reading-room",
+    "availability": "draft",
+    "password": "",
+    "showInNav": false,
+    "showFooter": true,
+    "socialImage": ""
+  }
+}
