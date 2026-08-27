@@ -78,12 +78,10 @@ export const speakingPhotos = [
 
 // "Projects & Quests" scroll-snap carousel — the first 3 are real Case Studies
 // pulled from Work With Me (Ally, WeightWatchers, Stagwell). The final 3 are
-// "Quest" (personal project) entries referenced only via
-// <meta ext-resource-dependency> tags in home.dc.html's <head>
-// (quest-asha-logo.png, quest-women-in-innovation.png, quest-daboodle-screenshot.jpg) —
-// no headline/description copy or actual image files exist anywhere in the design
-// bundle for these three. TODO: Ariba to supply real copy + photos for the 3 Quest
-// cards (Asha, Women In Innovation, Daboodle) — placeholders shown for now.
+// "Quest" (personal project) entries. Content lives in
+// content/collections/case-studies-quests.json so it's editable via the Studio.
+import experimentsData from "../../content/collections/case-studies-quests.json";
+
 export type Experiment = {
   tag: "Case Study" | "Quest";
   tagIndex: number;
@@ -92,56 +90,7 @@ export type Experiment = {
   photoSrc: string | null;
 };
 
-export const experiments: Experiment[] = [
-  {
-    tag: "Case Study",
-    tagIndex: 1,
-    headline: "Ally — Turning everyday banking into a reason to come back",
-    description:
-      "Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.",
-    photoSrc: "/assets/wwm-case-1.jpg",
-  },
-  {
-    tag: "Quest",
-    tagIndex: 2,
-    headline: "Asha",
-    description:
-      "Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.",
-    photoSrc: "/assets/quest-asha-v1.png",
-  },
-  {
-    tag: "Case Study",
-    tagIndex: 3,
-    headline: "WeightWatchers — Reimagining WW for a more adaptive, everyday relationship",
-    description:
-      "Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.",
-    photoSrc: "/assets/wwm-case-2.jpg",
-  },
-  {
-    tag: "Quest",
-    tagIndex: 4,
-    headline: "Women In Innovation",
-    description:
-      "Shaping a new platform for the women building what comes next in AI and innovation.",
-    photoSrc: "/assets/quest-women-in-innovation-v1.png",
-  },
-  {
-    tag: "Case Study",
-    tagIndex: 5,
-    headline: "Stagwell — Shaping an enterprise AI research product from strategy to prototype",
-    description:
-      "Working from enterprise user research through product strategy, positioning, GTM and prototype development for a new AI-native research platform.",
-    photoSrc: "/assets/wwm-case-study-3.jpg",
-  },
-  {
-    tag: "Quest",
-    tagIndex: 6,
-    headline: "Daboodle",
-    description:
-      "Building a digital creative toolkit on Replit: the brand, content, and SEO tools solopreneurs reach for every day, all in one digital caboodle.",
-    photoSrc: "/assets/quest-daboodle-v1.jpg",
-  },
-];
+export const experiments: Experiment[] = experimentsData as Experiment[];
 
 export const recognitionItems = [
   "Obama Foundation Leader USA",
