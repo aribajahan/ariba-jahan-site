@@ -53,56 +53,19 @@ export const problemCards: ProblemCard[] = [
   },
 ];
 
-export const cxSprintFitPoints: string[] = [
-  "Engagement, retention, or repeat usage has plateaued",
-  "Customer expectations in your category are shifting",
-  "Your product or experience works, but no longer feels distinctive",
-  "Your brand promise is stronger than what the experience currently delivers",
-  "There's pressure to evolve, but not enough clarity on where the real opportunity is",
-  "You need a stronger read on what customers will value next",
-];
+import wwmContentForOffers from "../../content/pages/work-with-me.json";
+
+export const cxSprintFitPoints: string[] = wwmContentForOffers.cxSprint.fitPoints;
 
 export type SprintDeliverable = { title: string; description: string };
 
-export const cxSprintDeliverables: SprintDeliverable[] = [
-  {
-    title: "Ecosystem Audit & Touchpoint Journey Maps.",
-    description:
-      "Mapping the full experience and opportunity across Customer, Company, Category, and Context to pinpoint where value is breaking or falling short.",
-  },
-  {
-    title: "Consumer Mindset & Stakeholder Discovery.",
-    description:
-      "Targeted interviews and synthesis that surface what your users actually need, care about, and expect.",
-  },
-  {
-    title: "Directional Concepts & Interactive Prototypes.",
-    description:
-      "Visual concepts, swipes, and prototypes that bring fresh experience ideas and digital utility to life.",
-  },
-  {
-    title: "Experience-Led Growth Strategy & Prioritized Roadmap.",
-    description:
-      "A clear North Star vision and actionable strategic framework aligning product, growth, and leadership teams on what to build and test next.",
-  },
-];
+export const cxSprintDeliverables: SprintDeliverable[] = wwmContentForOffers.cxSprint.deliverables;
 
 export type SprintWeek = { title: string; description: string };
 
-export const cxSprintWeeks: SprintWeek[] = [
-  { title: "Weeks 1 to 2: Discovery.", description: "Stakeholder & consumer discovery, 4Cs ecosystem audit & journey mapping." },
-  { title: "Weeks 3 to 4: Analysis.", description: "CX gap analysis & white space identification." },
-  { title: "Week 5: Concepting.", description: "Directional prototyping & visual concepting." },
-  { title: "Week 6: Roadmap.", description: "Experience-led growth strategy & prioritized roadmap readout." },
-];
+export const cxSprintWeeks: SprintWeek[] = wwmContentForOffers.cxSprint.weeks;
 
-export const strategySessionBestFor: string[] = [
-  "pressure-testing a roadmap, product shift, or GTM direction",
-  "diagnosing friction in a current customer experience",
-  "thinking through adoption, retention, or value questions",
-  "getting unstuck on an AI, CX, or growth decision",
-  "sharpening your strategic point of view before making a move",
-];
+export const strategySessionBestFor: string[] = wwmContentForOffers.strategySessions.bestFor;
 
 export { type Testimonial as WwmTestimonial } from "./testimonials";
 import { testimonialsFor } from "./testimonials";

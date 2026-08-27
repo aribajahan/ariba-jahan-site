@@ -4,14 +4,25 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import StringListEditor from "../_shared/StringListEditor";
+import TitleDescListEditor from "../_shared/TitleDescListEditor";
 
 type Cta = { label: string; href: string };
+type TitleDesc = { title: string; description: string };
 type WwmContent = {
   hero: {
     photoSrc: string;
     headline: string;
     subhead: string;
     ctas: Cta[];
+  };
+  cxSprint: {
+    fitPoints: string[];
+    deliverables: TitleDesc[];
+    weeks: TitleDesc[];
+  };
+  strategySessions: {
+    bestFor: string[];
   };
 };
 
@@ -26,6 +37,14 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
   const updateCta = (index: number, patch: Partial<Cta>) => {
     const ctas = content.hero.ctas.map((cta, i) => (i === index ? { ...cta, ...patch } : cta));
     updateHero({ ctas });
+  };
+
+  const updateCxSprint = (patch: Partial<WwmContent["cxSprint"]>) => {
+    setContent((c) => ({ ...c, cxSprint: { ...c.cxSprint, ...patch } }));
+  };
+
+  const updateStrategySessions = (patch: Partial<WwmContent["strategySessions"]>) => {
+    setContent((c) => ({ ...c, strategySessions: { ...c.strategySessions, ...patch } }));
   };
 
   const handlePublish = () =>
@@ -81,6 +100,26 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
             </div>
           ))}
         </div>
+      </SectionCard>
+
+      <SectionCard title="CX Ambition Sprint" defaultExpanded={false}>
+        <label className="block text-[13px] font-semibold mb-2">Is This You? (fit points)</label>
+        <div className="mb-4">
+          <StringListEditor items={content.cxSprint.fitPoints} onChange={(fitPoints) => updateCxSprint({ fitPoints })} />
+        </div>
+
+        <label className="block text-[13px] font-semibold mb-2">Deliverables</label>
+        <div className="mb-4">
+          <TitleDescListEditor items={content.cxSprint.deliverables} onChange={(deliverables) => updateCxSprint({ deliverables })} />
+        </div>
+
+        <label className="block text-[13px] font-semibold mb-2">Weeks</label>
+        <TitleDescListEditor items={content.cxSprint.weeks} onChange={(weeks) => updateCxSprint({ weeks })} />
+      </SectionCard>
+
+      <SectionCard title="1:1 CX Strategy Sessions" defaultExpanded={false}>
+        <label className="block text-[13px] font-semibold mb-2">Best For</label>
+        <StringListEditor items={content.strategySessions.bestFor} onChange={(bestFor) => updateStrategySessions({ bestFor })} />
       </SectionCard>
 
       <PublishBar onPublish={handlePublish} publishing={publishing} result={result} />
