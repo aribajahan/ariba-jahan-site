@@ -17,6 +17,7 @@ const COLLECTIONS = [
   { label: "Testimonials", href: "/admin/testimonials" },
   { label: "Speaking Logos", href: "/admin/logos" },
   { label: "Speaking Gallery Photos", href: "/admin/gallery" },
+  { label: "WWM Trusted By", href: "/admin/wwm-trusted-by" },
   { label: "Media Library", href: "/admin/media" },
   { label: "Forms", href: "/admin/forms" },
 ];

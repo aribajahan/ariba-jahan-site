@@ -3,22 +3,9 @@
 
 export type TrustedByLogo = { src: string; alt: string; heightPx: number };
 
-export const wwmTrustedByLogos: TrustedByLogo[] = [
-  { src: "/assets/logo-google-white-sm.png", alt: "Google", heightPx: 30 },
-  { src: "/assets/logo-anomaly-white-sm.png", alt: "Anomaly", heightPx: 26 },
-  { src: "/assets/logo-ally-white-sm.png", alt: "Ally", heightPx: 30 },
-  { src: "/assets/logo-aigapro-white-sm.png", alt: "AIGA", heightPx: 40 },
-  { src: "/assets/logo-forestservice-white-sm.png", alt: "US Forest Service", heightPx: 46 },
-  { src: "/assets/logo-topgolf-white-sm.png", alt: "Topgolf", heightPx: 26 },
-  { src: "/assets/logo-adcouncil-white-sm.png", alt: "Ad Council", heightPx: 42 },
-  { src: "/assets/logo-huntsman-white-sm.png", alt: "Huntsman Mental Health Foundation", heightPx: 30 },
-  { src: "/assets/logo-weightwatchers-crisp.png", alt: "Weight Watchers", heightPx: 34 },
-  { src: "/assets/logo-stagwell.png", alt: "Stagwell", heightPx: 40 },
-  { src: "/assets/logo-uncf-white-sm.png", alt: "UNCF", heightPx: 38 },
-  { src: "/assets/logo-tiaa-white-sm.png", alt: "TIAA", heightPx: 32 },
-  { src: "/assets/logo-covidcollab-white-sm.png", alt: "COVID Collaborative", heightPx: 32 },
-  { src: "/assets/logo-aarp-white-sm.png", alt: "AARP", heightPx: 28 },
-];
+import wwmTrustedByLogosData from "../../content/collections/wwm-trusted-by.json";
+
+export const wwmTrustedByLogos: TrustedByLogo[] = wwmTrustedByLogosData;
 
 export type ProblemCard = {
   photoSrc: string;
