@@ -1,0 +1,562 @@
+{
+  "/assets/about-hero-photo-mobile-v4.jpg": {
+    "alt": "Ariba's About page hero photo, mobile crop",
+    "tags": []
+  },
+  "/assets/about-hero-photo.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/hero-photo.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-aarp-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-adcolor.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-adcouncil-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-adweekny.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-aigany.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-aigapro-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-aigapro.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-alltechishuman.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ally-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ally.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ama.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-anomaly-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-anomaly.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-asiansinadvertising.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-boardofinnovation.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-chief.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-columbia.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-confab.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-covidcollab-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-designcontent.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-designops.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-etsy.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-fanduel.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-forestservice-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-fq.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-google-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-google.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-hubspot.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-huntsman-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ixda.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-leading-design.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-marketingbrew.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ndclondon.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-newschool.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-nftnyc.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-ogilvy.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-onbe.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-paramount.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-radicalresearch.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-snap.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-stagwell.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-svb.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-tiaa-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-tiktok.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-topgolf-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-un.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-uncf-white-sm.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-uxsouthafrica.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-valence.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-voxmedia.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-weightwatchers-crisp.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-womeninnovation.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/logo-womenwhocode.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/personal-red-wall-sm.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-adweek-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-campaignus-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-career-chameleons-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-digitalsafety-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-gendergap.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-marketingbrew-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-obama-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-staysharp.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/press-winwin-new.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/quest-asha-v1.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/quest-daboodle-v1.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/quest-women-in-innovation-v1.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/reading-room-this-month-cover.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/speaking-photo-1.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/speaking-photo-2.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/speaking-photo-3.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/speaking-photo-4.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/speaking-photo-5.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-10a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-10b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-1a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-1b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-2a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-2b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-3a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-3b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-4a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-4b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-5a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-5b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-6a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-6b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-7a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-7b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-8a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-8b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-9a.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/story-photo-9b.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/theme-bg-1-nebula-xs.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/theme-bg-2-dunes-xs.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/theme-bg-3-bark-xs.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/theme-bg-4-coral-xs.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/theme-bg-5-moss-xs.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-1.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-10.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-2.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-3.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-4.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-5.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-6.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-7.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-8.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-9.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/unmissables-ce.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wordmark-black.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wordmark-large-white.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wordmark-white.png": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-1.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-2.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-4.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-5.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-study-3.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/assets/wwm-case-study-6.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/54919346180_4cbc9b23fc_b-6f7fbf39-sm.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/603A5509-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/IMG_0075-sm.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/IMG_4434-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/IMG_9539-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/_DSC8464.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/img-1773-compressed.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/marketing-brew-summit-2025-compressed.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/now-1-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/now-2-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/now-3-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/now-4-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/problem-1-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/problem-2-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/problem-3-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/problem-4-opt.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/speaking-photo-6.jpeg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/strategy-sessions-red-sweater-v1.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/tfqces2020-compressed.jpg": {
+    "alt": "",
+    "tags": []
+  },
+  "/uploads/vox1-copy-opt.jpg": {
+    "alt": "",
+    "tags": []
+  }
+}
