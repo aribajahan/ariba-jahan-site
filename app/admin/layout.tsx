@@ -15,11 +15,16 @@ const COLLECTIONS = [
   { label: "Articles", href: "/admin/articles" },
   { label: "Case Studies & Quests", href: "/admin/case-studies" },
   { label: "Testimonials", href: "/admin/testimonials" },
-  { label: "Speaking Logos", href: "/admin/logos" },
-  { label: "Speaking Gallery Photos", href: "/admin/gallery" },
-  { label: "WWM Trusted By", href: "/admin/wwm-trusted-by" },
-  { label: "Media Library", href: "/admin/media" },
   { label: "Forms", href: "/admin/forms" },
+];
+
+const MEDIA = [
+  { label: "Media Library", href: "/admin/media" },
+  {
+    label: "Galleries",
+    href: "/admin/galleries",
+    matchPrefixes: ["/admin/logos", "/admin/gallery", "/admin/wwm-trusted-by"],
+  },
 ];
 
 const SITE = [
@@ -61,14 +66,25 @@ function PagesNavGroup({ pathname }: { pathname: string }) {
   );
 }
 
-function NavGroup({ title, items, pathname }: { title: string; items: { label: string; href: string }[]; pathname: string }) {
+function NavGroup({
+  title,
+  items,
+  pathname,
+}: {
+  title: string;
+  items: { label: string; href: string; matchPrefixes?: string[] }[];
+  pathname: string;
+}) {
   return (
     <div className="mb-4">
       <div className="text-[11px] font-bold tracking-[0.08em] uppercase text-white/40 px-[10px] pt-2 pb-[6px]">
         {title}
       </div>
       {items.map((item) => {
-        const active = pathname === item.href || pathname.startsWith(item.href + "/");
+        const active =
+          pathname === item.href ||
+          pathname.startsWith(item.href + "/") ||
+          (item.matchPrefixes ?? []).some((p) => pathname === p || pathname.startsWith(p + "/"));
         return (
           <Link
             key={item.href}
@@ -106,6 +122,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="px-3 py-4 overflow-y-auto flex-1">
           <PagesNavGroup pathname={pathname} />
           <NavGroup title="Collections" items={COLLECTIONS} pathname={pathname} />
+          <NavGroup title="Media" items={MEDIA} pathname={pathname} />
           <NavGroup title="Site" items={SITE} pathname={pathname} />
         </div>
         <div className="p-3 border-t border-white/[0.08]">
