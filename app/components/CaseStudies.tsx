@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { caseStudies } from "../data/work-with-me";
+import wwmContent from "../../content/pages/work-with-me.json";
 
 const CARD_GAP = 32;
 
@@ -45,14 +46,13 @@ export default function CaseStudies() {
       <div className="max-w-[1600px] mx-auto">
         <div className="mb-14">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-            Some Of My Work
+            {wwmContent.caseStudiesSection.eyebrow}
           </div>
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal mb-[14px]">
-            Case Studies
+            {wwmContent.caseStudiesSection.heading}
           </h2>
           <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal max-w-[640px]">
-            A few examples of what this looks like in practice, from rethinking customer value to
-            shaping products, experiences, and AI-enabled services.
+            {wwmContent.caseStudiesSection.intro}
           </p>
         </div>
 

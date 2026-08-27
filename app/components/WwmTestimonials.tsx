@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { wwmTestimonials } from "../data/work-with-me";
+import wwmContent from "../../content/pages/work-with-me.json";
 
 const CARD_WIDTH = 540;
 const GAP = 24;
@@ -40,10 +41,10 @@ export default function WwmTestimonials() {
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-8 border-t border-charcoal/[0.08] overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          Client Voices
+          {wwmContent.testimonialsSection.eyebrow}
         </div>
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] mb-9">
-          What Clients Say
+          {wwmContent.testimonialsSection.heading}
         </h2>
       </div>
 

@@ -50,5 +50,51 @@
       "getting unstuck on an AI, CX, or growth decision",
       "sharpening your strategic point of view before making a move"
     ]
+  },
+  "wwmTrustedBy": {
+    "eyebrow": "Trusted By"
+  },
+  "problemFraming": {
+    "eyebrow": "Why Experience-Led Growth Is Needed Now More Than Ever",
+    "heading": "From Share Of Attention To Share Of Life",
+    "body": "I think more organizations need to shift from chasing attention to earning a real place in people's lives. That's what I mean by Experience-Led Growth: creating business value by becoming more useful, more relevant, and more worth returning to over time.",
+    "cards": [
+      {
+        "photoSrc": "/uploads/problem-1-opt.jpg",
+        "title": "Trust Is Distributed",
+        "description": "People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing."
+      },
+      {
+        "photoSrc": "/uploads/problem-2-opt.jpg",
+        "title": "Attention Isn't Relationship",
+        "description": "Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to."
+      },
+      {
+        "photoSrc": "/uploads/problem-3-opt.jpg",
+        "title": "Expectations Became Liquid",
+        "description": "What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline."
+      },
+      {
+        "photoSrc": "/uploads/problem-4-opt.jpg",
+        "title": "Utility Has To Justify The Ask",
+        "description": "People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself."
+      }
+    ]
+  },
+  "twoWaysDivider": {
+    "heading": "Two Ways To Work Together"
+  },
+  "testimonialsSection": {
+    "eyebrow": "Client Voices",
+    "heading": "What Clients Say"
+  },
+  "caseStudiesSection": {
+    "eyebrow": "Some Of My Work",
+    "heading": "Case Studies",
+    "intro": "A few examples of what this looks like in practice, from rethinking customer value to shaping products, experiences, and AI-enabled services."
+  },
+  "closingCTA": {
+    "heading": "Ready To Build Something Unmissable?",
+    "subhead": "If you're thinking through a product, CX, AI, or growth question, let's chat"
   }
 }

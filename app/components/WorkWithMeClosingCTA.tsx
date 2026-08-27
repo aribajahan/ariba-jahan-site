@@ -1,6 +1,8 @@
 import { wwmClosingLinks } from "../data/work-with-me";
+import wwmContent from "../../content/pages/work-with-me.json";
 
 export default function WorkWithMeClosingCTA() {
+  const { closingCTA } = wwmContent;
   return (
     <section
       id="close"
@@ -9,11 +11,10 @@ export default function WorkWithMeClosingCTA() {
       <div className="max-w-[1000px] mx-auto">
         <div className="text-center mb-14">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
-            Ready To Build Something Unmissable?
+            {closingCTA.heading}
           </h2>
           <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.68] max-w-[480px] mx-auto">
-            If you&rsquo;re thinking through a product, CX, AI, or growth question, let&rsquo;s
-            chat
+            {closingCTA.subhead}
           </p>
         </div>
 

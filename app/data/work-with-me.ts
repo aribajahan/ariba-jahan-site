@@ -26,34 +26,9 @@ export type ProblemCard = {
   description: string;
 };
 
-export const problemCards: ProblemCard[] = [
-  {
-    photoSrc: "/uploads/problem-1-opt.jpg",
-    title: "Trust Is Distributed",
-    description:
-      "People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.",
-  },
-  {
-    photoSrc: "/uploads/problem-2-opt.jpg",
-    title: "Attention Isn't Relationship",
-    description:
-      "Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.",
-  },
-  {
-    photoSrc: "/uploads/problem-3-opt.jpg",
-    title: "Expectations Became Liquid",
-    description:
-      "What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.",
-  },
-  {
-    photoSrc: "/uploads/problem-4-opt.jpg",
-    title: "Utility Has To Justify The Ask",
-    description:
-      "People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.",
-  },
-];
-
 import wwmContentForOffers from "../../content/pages/work-with-me.json";
+
+export const problemCards: ProblemCard[] = wwmContentForOffers.problemFraming.cards;
 
 export const cxSprintFitPoints: string[] = wwmContentForOffers.cxSprint.fitPoints;
 
