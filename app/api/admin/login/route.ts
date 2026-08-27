@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { checkPassword, createSessionToken, SESSION_COOKIE } from "../../../../lib/auth";
+import { checkCredentials, createSessionToken, SESSION_COOKIE } from "../../../../lib/auth";
 
 export async function POST(request: Request) {
-  const { password } = await request.json();
+  const { username, password } = await request.json();
 
-  if (typeof password !== "string" || !checkPassword(password)) {
-    return NextResponse.json({ ok: false, error: "Incorrect password." }, { status: 401 });
+  if (typeof username !== "string" || typeof password !== "string" || !checkCredentials(username, password)) {
+    return NextResponse.json({ ok: false, error: "Incorrect username or password." }, { status: 401 });
   }
 
   const response = NextResponse.json({ ok: true });

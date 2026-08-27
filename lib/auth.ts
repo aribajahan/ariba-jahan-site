@@ -49,10 +49,16 @@ export async function verifySessionToken(token: string | undefined | null): Prom
   return Number.isFinite(expiresAt) && Date.now() < expiresAt;
 }
 
-export function checkPassword(candidate: string): boolean {
-  const password = process.env.ADMIN_PASSWORD;
-  if (!password) throw new Error("ADMIN_PASSWORD is not set");
-  return constantTimeEqual(candidate, password);
+export function checkCredentials(username: string, password: string): boolean {
+  const expectedUsername = process.env.ADMIN_USERNAME;
+  const expectedPassword = process.env.ADMIN_PASSWORD;
+  if (!expectedUsername) throw new Error("ADMIN_USERNAME is not set");
+  if (!expectedPassword) throw new Error("ADMIN_PASSWORD is not set");
+  // Check both regardless of the first result so a wrong username doesn't
+  // short-circuit before the password comparison, keeping timing consistent.
+  const usernameOk = constantTimeEqual(username, expectedUsername);
+  const passwordOk = constantTimeEqual(password, expectedPassword);
+  return usernameOk && passwordOk;
 }
 
 export { SESSION_COOKIE };
