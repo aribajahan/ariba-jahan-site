@@ -1,26 +1,14 @@
 // Central content data for the Home page, extracted from design-reference/home.dc.html
 // and design-reference/site-content.md.
 
+import siteSettings from "../../content/site-settings.json";
+
 export type NavLink = { label: string; href: string; external?: boolean };
 
-export const navLinks: NavLink[] = [
-  { label: "Speaking", href: "/speaking" },
-  { label: "Work With Me", href: "/work-with-me" },
-  { label: "Unmissables", href: "https://www.unmissables.xyz/", external: true },
-  // Reading Room hidden from nav until the page is built.
-  { label: "About", href: "/about" },
-];
+// Reading Room is intentionally left out here — hidden from nav until the page is built.
+export const navLinks: NavLink[] = siteSettings.navLinks;
 
-export const heroSocials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/aribajahan/" },
-  { label: "Instagram", href: "https://www.instagram.com/ariba.jahan/" },
-  { label: "Substack", href: "https://www.unmissables.xyz/" },
-  { label: "YouTube", href: "https://www.youtube.com/@unmissableswithariba" },
-  {
-    label: "Spotify",
-    href: "https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315",
-  },
-] as const;
+export const heroSocials = siteSettings.socialLinks;
 
 // "Spoken at" logo row
 const spokenAt = [

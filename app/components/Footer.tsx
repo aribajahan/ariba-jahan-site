@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerSocials } from "../data/home";
+import siteSettings from "../../content/site-settings.json";
 import SocialIcon from "./SocialIcon";
 
 export default function Footer() {
@@ -15,7 +16,7 @@ export default function Footer() {
             style={{ height: 16, width: "auto" }}
           />
           <div className="text-[11px] font-medium text-cream/50 mt-[6px]">
-            Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son, and built by working with Claude Code, Claude Design, Gemini, and ChatGPT.
+            {siteSettings.footer.creditLine}
           </div>
         </div>
 
@@ -35,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="text-[11px] text-cream/[0.32] w-full mt-1">
-          © 2026 Ariba Jahan. All rights reserved.
+          © {siteSettings.footer.copyrightYear} Ariba Jahan. All rights reserved.
         </div>
       </div>
     </footer>

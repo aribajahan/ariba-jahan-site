@@ -1,0 +1,19 @@
+{
+  "navLinks": [
+    { "label": "Speaking", "href": "/speaking", "external": false },
+    { "label": "Work With Me", "href": "/work-with-me", "external": false },
+    { "label": "Unmissables", "href": "https://www.unmissables.xyz/", "external": true },
+    { "label": "About", "href": "/about", "external": false }
+  ],
+  "socialLinks": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/aribajahan/" },
+    { "label": "Instagram", "href": "https://www.instagram.com/ariba.jahan/" },
+    { "label": "Substack", "href": "https://www.unmissables.xyz/" },
+    { "label": "YouTube", "href": "https://www.youtube.com/@unmissableswithariba" },
+    { "label": "Spotify", "href": "https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315" }
+  ],
+  "footer": {
+    "creditLine": "Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son, and built by working with Claude Code, Claude Design, Gemini, and ChatGPT.",
+    "copyrightYear": "2026"
+  }
+}
