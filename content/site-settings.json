@@ -15,5 +15,10 @@
   "footer": {
     "creditLine": "Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son, and built by working with Claude Code, Claude Design, Gemini, and ChatGPT.",
     "copyrightYear": "2026"
+  },
+  "announcementBar": {
+    "enabled": false,
+    "message": "",
+    "link": ""
   }
 }

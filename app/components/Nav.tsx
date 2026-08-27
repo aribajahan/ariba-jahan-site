@@ -4,12 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../data/home";
+import siteSettings from "../../content/site-settings.json";
 
 export default function Nav({ contactHref = "/contact" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
+  const { announcementBar } = siteSettings;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] bg-cream border-b border-charcoal/[0.08] py-4">
+      {announcementBar.enabled && announcementBar.message && (
+        <a
+          href={announcementBar.link || undefined}
+          className="block bg-cherish text-cream text-center text-[13px] font-semibold py-2 px-4 -mt-4 mb-4"
+        >
+          {announcementBar.message}
+        </a>
+      )}
       <div className="flex items-center justify-between gap-5 max-w-[1600px] mx-auto px-[clamp(24px,5vw,80px)]">
         <Link href="/">
           <Image quality={90}
