@@ -9,7 +9,7 @@ import StringListEditor from "../_shared/StringListEditor";
 type Cta = { label: string; href: string };
 type Offer = { index: string; title: string; lead: string; body: string; cta: string; href: string };
 type Stat = { value: string; labelLine1: string; labelLine2: string };
-type LogoRow = { label: string; items: string[]; durationSec: number; reverse?: boolean };
+type MarqueeRow = { label: string; items: string[]; durationSec: number; reverse?: boolean };
 type PressItem = { outlet: string; title: string; href: string; photoSrc: string; bg: string };
 type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
@@ -20,7 +20,7 @@ type HomeContent = {
   workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[] };
   credentials: { stats: Stat[] };
   speakingTeaser: { eyebrow: string; heading: string; paragraphs: string[]; ctaLabel: string; ctaHref: string; photos: string[] };
-  logoMarquee: { rows: LogoRow[] };
+  nameMarquee: { rows: MarqueeRow[] };
   recognition: { eyebrow: string; heading: string; photoSrc: string; items: string[]; ctaLabel: string; ctaHref: string };
   press: { eyebrow: string; heading: string; items: PressItem[] };
   community: { heading: string; intro: string; photos: CommunityPhoto[] };
@@ -73,8 +73,8 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
     set("speakingTeaser", { photos });
   };
 
-  const updateLogoRow = (i: number, patch: Partial<LogoRow>) => {
-    set("logoMarquee", { rows: content.logoMarquee.rows.map((r, idx) => (idx === i ? { ...r, ...patch } : r)) });
+  const updateMarqueeRow = (i: number, patch: Partial<MarqueeRow>) => {
+    set("nameMarquee", { rows: content.nameMarquee.rows.map((r, idx) => (idx === i ? { ...r, ...patch } : r)) });
   };
 
   const updatePressItem = (i: number, patch: Partial<PressItem>) => {
@@ -198,24 +198,25 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         </div>
       </SectionCard>
 
-      <SectionCard title="Logo Marquee" defaultExpanded={false}>
+      <SectionCard title="Name Marquee" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The scrolling strips of company/institution names — text only, not logo images.</p>
         <div className="flex flex-col gap-4">
-          {content.logoMarquee.rows.map((row, i) => (
+          {content.nameMarquee.rows.map((row, i) => (
             <div key={i} className="p-3 bg-[#f7f6f4] rounded-md">
               <div className="flex gap-2 mb-2">
-                <input value={row.label} onChange={(e) => updateLogoRow(i, { label: e.target.value })} className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
+                <input value={row.label} onChange={(e) => updateMarqueeRow(i, { label: e.target.value })} className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
                 <input
                   type="number"
                   value={row.durationSec}
-                  onChange={(e) => updateLogoRow(i, { durationSec: Number(e.target.value) })}
+                  onChange={(e) => updateMarqueeRow(i, { durationSec: Number(e.target.value) })}
                   className="w-24 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]"
                 />
                 <label className="flex items-center gap-1 text-[11px] text-[#888] whitespace-nowrap">
-                  <input type="checkbox" checked={!!row.reverse} onChange={(e) => updateLogoRow(i, { reverse: e.target.checked })} />
+                  <input type="checkbox" checked={!!row.reverse} onChange={(e) => updateMarqueeRow(i, { reverse: e.target.checked })} />
                   reverse
                 </label>
               </div>
-              <StringListEditor items={row.items} onChange={(items) => updateLogoRow(i, { items })} />
+              <StringListEditor items={row.items} onChange={(items) => updateMarqueeRow(i, { items })} />
             </div>
           ))}
         </div>

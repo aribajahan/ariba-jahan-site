@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import homeContent from "../../content/pages/home.json";
 
-export default function LogoMarquee() {
-  const rows = homeContent.logoMarquee.rows;
+export default function NameMarquee() {
+  const rows = homeContent.nameMarquee.rows;
 
   return (
     <section className="bg-cherish border-t border-charcoal/[0.07] overflow-hidden">

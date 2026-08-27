@@ -11,14 +11,14 @@ export const navLinks: NavLink[] = siteSettings.navLinks;
 
 export const heroSocials = siteSettings.socialLinks;
 
-export type LogoRow = {
+export type MarqueeRow = {
   label: string;
   items: string[];
   durationSec: number;
   reverse?: boolean;
 };
 
-export const logoRows: LogoRow[] = homeContent.logoMarquee.rows;
+export const nameMarqueeRows: MarqueeRow[] = homeContent.nameMarquee.rows;
 
 export const stats = homeContent.credentials.stats;
 

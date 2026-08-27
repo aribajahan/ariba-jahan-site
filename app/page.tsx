@@ -5,7 +5,7 @@ import PageGate from "./components/PageGate";
 import { guardPage } from "../lib/guardPage";
 import { getPageSettings } from "../lib/pageSettings";
 import Hero from "./components/Hero";
-import LogoMarquee from "./components/LogoMarquee";
+import NameMarquee from "./components/NameMarquee";
 import Positioning from "./components/Positioning";
 import WorkWithMe from "./components/WorkWithMe";
 import Unmissables from "./components/Unmissables";
@@ -36,7 +36,7 @@ export default async function Home() {
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
       <Hero />
-      <LogoMarquee />
+      <NameMarquee />
       <Positioning />
       <WorkWithMe />
       <Unmissables />
