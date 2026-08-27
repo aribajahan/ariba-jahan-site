@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../data/home";
 
-export default function Nav({ contactHref = "#close" }: { contactHref?: string }) {
+export default function Nav({ contactHref = "/contact" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -73,7 +73,7 @@ export default function Nav({ contactHref = "#close" }: { contactHref?: string }
             </a>
           ))}
           <a
-            href="#close"
+            href={contactHref}
             onClick={() => setOpen(false)}
             className="text-base font-bold tracking-[0.06em] uppercase text-cherish py-[14px] min-h-[44px] flex items-center"
           >

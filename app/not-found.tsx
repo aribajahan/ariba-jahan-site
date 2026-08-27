@@ -32,7 +32,7 @@ const cards = [
 export default function NotFound() {
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
-      <Nav contactHref="/work-with-me#close" />
+      <Nav />
 
       <section className="relative overflow-hidden bg-cherish min-h-[100vh] flex items-center pt-[150px] pb-20 max-[700px]:pt-[130px] px-[clamp(24px,5vw,80px)]">
         <div className="absolute top-[60px] left-1/2 -translate-x-1/2 font-display text-[280px] max-[700px]:text-[120px] font-black text-cream/[0.08] leading-none whitespace-nowrap pointer-events-none">

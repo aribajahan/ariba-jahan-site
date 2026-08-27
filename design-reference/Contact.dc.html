@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<![CDATA[
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #FFFBF3; color: #2D2D2D; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: #E73131; }
+    input, select, textarea { font-family: 'Barlow', sans-serif; }
+    input::placeholder, textarea::placeholder { color: rgba(45,45,45,0.4); }
+    @media (max-width: 700px) {
+      [data-mq="nav-links"] { display: none !important; }
+      [data-mq="nav-burger"] { display: flex !important; }
+      [data-mq="contact-headline"] { font-size: 32px !important; }
+      [data-mq="contact-grid"] { grid-template-columns: 1fr !important; }
+      [data-mq="contact-side"] { position: static !important; order: -1; max-width: 280px; }
+    }
+    [data-mq="nav-mobile-menu"] { display: flex; }
+  </style>
+</helmet>
+
+<div style="background:#FFFBF3;font-family:'Barlow',sans-serif;font-size:18px;line-height:1.6;">
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:#FFFBF3;border-bottom:1px solid rgba(45,45,45,0.08);padding:16px 0;">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1600px;margin:0 auto;padding:0 clamp(24px,5vw,80px);">
+    <a href="home.dc.html"><img src="assets/wordmark-black.png" alt="Ariba Jahan" style="height:26px;width:auto;object-fit:contain;"></a>
+    <ul data-mq="nav-links" style="display:flex;align-items:center;gap:clamp(16px,3vw,36px);list-style:none;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;white-space:nowrap;">
+      <li style="white-space:nowrap;"><a href="speaking.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Speaking</a></li>
+      <li style="white-space:nowrap;"><a href="work-with-me.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Work With Me</a></li>
+      <li style="white-space:nowrap;"><a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Unmissables</a></li>
+      <li style="white-space:nowrap;"><a href="reading-room.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">Reading Room</a></li>
+      <li style="white-space:nowrap;"><a href="about.dc.html" style="transition:color .15s;white-space:nowrap;" style-hover="color:#E73131;">About</a></li>
+      <li style="white-space:nowrap;"><a href="contact.dc.html" style="background:#E73131;color:#FFFBF3;padding:8px 22px;font-size:15px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;display:inline-block;transition:background .15s;white-space:nowrap;" style-hover="background:#2D2D2D;color:#FFFBF3;">Contact</a></li>
+    </ul>
+    <div data-mq="nav-burger" onClick="{{ toggleMobileNav }}" style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;">
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+      <span style="width:24px;height:2px;background:#2D2D2D;"></span>
+    </div>
+  </div>
+  <div data-mq="nav-mobile-menu" style="{{ mobileNavStyle }}">
+    <a href="speaking.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Speaking</a>
+    <a href="work-with-me.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Work With Me</a>
+    <a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Unmissables</a>
+    <a href="reading-room.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">Reading Room</a>
+    <a href="about.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;padding:14px 0;border-bottom:1px solid rgba(45,45,45,0.08);">About</a>
+    <a href="contact.dc.html" style="font-size:16px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;padding:14px 0;">Contact</a>
+  </div>
+</nav>
+
+<section style="min-height:100vh;display:flex;align-items:center;padding:150px clamp(24px,5vw,80px) 80px;">
+  <div style="max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.3fr 0.9fr;gap:72px;align-items:start;" data-mq="contact-grid">
+  <div style="max-width:640px;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:#E73131;margin-bottom:16px;">Get In Touch</div>
+    <div data-mq="contact-headline" style="font-family:'Big Shoulders Display',sans-serif;font-size:48px;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em;line-height:1;color:#2D2D2D;margin-bottom:20px;">Let's Talk</div>
+    <p style="font-size:19px;line-height:1.6;color:rgba(45,45,45,0.7);max-width:520px;margin-bottom:48px;">Speaking, advisory, or something else entirely. Tell me what's on your mind and I'll get back to you within a few days.</p>
+
+    <sc-if value="{{ !submitted }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ onSubmit }}" style="display:flex;flex-direction:column;gap:24px;">
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+        <div>
+          <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Name</label>
+          <input type="text" required placeholder="Your name" onBlur="{{ onNameBlur }}" onChange="{{ onNameChange }}" style="{{ nameInputStyle }}">
+          <sc-if value="{{ showNameError }}" hint-placeholder-val="{{ false }}"><div style="font-size:12px;color:#E73131;margin-top:6px;">Please enter your name.</div></sc-if>
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Email</label>
+          <input type="email" required placeholder="you@company.com" onBlur="{{ onEmailBlur }}" onChange="{{ onEmailChange }}" style="{{ emailInputStyle }}">
+          <sc-if value="{{ showEmailError }}" hint-placeholder-val="{{ false }}"><div style="font-size:12px;color:#E73131;margin-top:6px;">Please enter a valid email address.</div></sc-if>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <div style="flex:1;min-width:200px;">
+            <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Organization</label>
+            <input type="text" placeholder="Where you work (optional)" style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+          </div>
+          <div style="flex:1;min-width:200px;">
+            <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Role / Title</label>
+            <input type="text" placeholder="Your title (optional)" style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+          </div>
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">How can I help?</label>
+          <select required onChange="{{ onReasonChange }}" style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+            <option value="">Select one</option>
+            <option value="speaking">Speaking inquiry</option>
+            <option value="advisory">CX Sprint / advisory</option>
+            <option value="career">Career Advisory</option>
+            <option value="press">Press or media</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <sc-if value="{{ isSpeaking }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#f2efe6;padding:24px;display:flex;flex-direction:column;gap:20px;">
+            <div style="font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;">A few details for speaking requests</div>
+            <div>
+              <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Event Name</label>
+              <input type="text" required placeholder="e.g. Marketing Brew Summit" style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Event Date</label>
+                <input type="date" required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+              </div>
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Format</label>
+                <select required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+                  <option value="">Select one</option>
+                  <option>Keynote</option>
+                  <option>Workshop</option>
+                  <option>Panel</option>
+                  <option>Fireside chat</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Speaking Budget</label>
+              <select required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+                <option value="">Select a range</option>
+                <option>Under $5,000</option>
+                <option>$5,000–$15,000</option>
+                <option>$15,000–$30,000</option>
+                <option>$30,000+</option>
+                <option>Not sure yet, let's discuss</option>
+              </select>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isAdvisory }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#f2efe6;padding:24px;display:flex;flex-direction:column;gap:20px;">
+            <div style="font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;">A few details for advisory requests</div>
+            <div>
+              <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Company Name</label>
+              <input type="text" required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Team Size</label>
+                <select required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+                  <option value="">Select one</option>
+                  <option>1–10</option>
+                  <option>11–50</option>
+                  <option>51–200</option>
+                  <option>200+</option>
+                </select>
+              </div>
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Timeline</label>
+                <select required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+                  <option value="">Select one</option>
+                  <option>ASAP</option>
+                  <option>Within a month</option>
+                  <option>1–3 months out</option>
+                  <option>Just exploring</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isPress }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#f2efe6;padding:24px;display:flex;flex-direction:column;gap:20px;">
+            <div style="font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#E73131;">A few details for press &amp; media</div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Outlet / Publication</label>
+                <input type="text" required style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+              </div>
+              <div style="flex:1;min-width:200px;">
+                <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Deadline</label>
+                <input type="date" style="width:100%;padding:14px 16px;border:1px solid rgba(45,45,45,0.2);background:#fff;font-size:16px;color:#2D2D2D;">
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <div>
+          <label style="display:block;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#2D2D2D;margin-bottom:8px;">Message</label>
+          <textarea required rows="5" placeholder="Tell me a bit more on how I can help or how we might work together." onBlur="{{ onMessageBlur }}" onChange="{{ onMessageChange }}" style="{{ messageInputStyle }}"></textarea>
+          <sc-if value="{{ showMessageError }}" hint-placeholder-val="{{ false }}"><div style="font-size:12px;color:#E73131;margin-top:6px;">Say a little more so I know how to help (20+ characters).</div></sc-if>
+        </div>
+        <button type="submit" style="align-self:flex-start;background:#E73131;color:#FFFBF3;padding:16px 34px;font-size:15px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;transition:transform .18s cubic-bezier(0.23,1,0.32,1);" style-hover="transform:translateY(-4px);">Send Message →</button>
+      </form>
+    </sc-if>
+
+    <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+      <div style="background:#2D2D2D;padding:44px 40px;">
+        <div style="font-family:'Big Shoulders Display',sans-serif;font-size:28px;font-weight:900;text-transform:uppercase;color:#FFFBF3;margin-bottom:12px;">Got It.</div>
+        <p style="font-size:17px;color:rgba(255,251,243,0.8);">Thanks so much for reaching out, I'll be in touch soon.</p>
+      </div>
+    </sc-if>
+  </div>
+
+  <div data-mq="contact-side" style="position:sticky;top:150px;">
+    <div style="aspect-ratio:4/5;overflow:hidden;"><image-slot id="contact-photo" shape="rect" placeholder="Portrait photo" src="assets/headshot.jpg"></image-slot></div>
+  </div>
+
+  </div>
+</section>
+
+<footer style="background:#2D2D2D;padding:44px clamp(24px,5vw,80px);">
+  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div style="max-width:480px;">
+      <img src="assets/wordmark-white.png" alt="Ariba Jahan" style="height:16px;width:auto;object-fit:contain;">
+      <div style="font-size:11px;font-weight:500;color:rgba(255,251,243,0.5);margin-top:6px;">Created by my feral brain and insane documentation, fueled by coffee and hugs from my toddler son, and built by working with Claude Code, Claude Design, Gemini, and ChatGPT.</div>
+    </div>
+    <div style="display:flex;gap:24px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,251,243,0.28);flex-wrap:wrap;white-space:nowrap;">
+      <a href="https://www.linkedin.com/in/aribajahan/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">LinkedIn</a><a href="https://www.instagram.com/ariba.jahan/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Instagram</a><a href="https://www.unmissables.xyz/" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Substack</a><a href="https://www.youtube.com/@unmissableswithariba" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">YouTube</a><a href="https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315" target="_blank" rel="noopener" style-hover="color:#FFFBF3;">Spotify</a>
+    </div>
+    <div style="font-size:11px;color:rgba(255,251,243,0.32);width:100%;margin-top:4px;">© 2026 Ariba Jahan. All rights reserved.</div>
+  </div>
+</footer>
+
+</div>
+]]>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { mobileNavOpen: false, submitted: false, reason: '', name: '', email: '', message: '', touched: {} };
+  toggleMobileNav = () => this.setState(s => ({ mobileNavOpen: !s.mobileNavOpen }));
+  onReasonChange = (e) => this.setState({ reason: e.target.value });
+  onNameChange = (e) => this.setState({ name: e.target.value });
+  onEmailChange = (e) => this.setState({ email: e.target.value });
+  onMessageChange = (e) => this.setState({ message: e.target.value });
+  onNameBlur = () => this.setState(s => ({ touched: { ...s.touched, name: true } }));
+  onEmailBlur = () => this.setState(s => ({ touched: { ...s.touched, email: true } }));
+  onMessageBlur = () => this.setState(s => ({ touched: { ...s.touched, message: true } }));
+  onSubmit = (e) => {
+    e.preventDefault();
+    if (e.target.company_website && e.target.company_website.value) return; // honeypot: silently drop bot submissions
+    this.setState({ submitted: true });
+  };
+  fieldStyle(hasError) {
+    return `width:100%;padding:14px 16px;border:1px solid ${hasError ? '#E73131' : 'rgba(45,45,45,0.2)'};background:#fff;font-size:16px;color:#2D2D2D;font-family:inherit;`;
+  }
+  renderVals() {
+    const mobileNavStyle = `flex-direction:column;padding:${this.state.mobileNavOpen ? '8px' : '0'} clamp(24px,5vw,80px);max-height:${this.state.mobileNavOpen ? '400px' : '0'};overflow:hidden;transition:max-height .25s,padding .25s;background:#FFFBF3;`;
+    const nameError = this.state.touched.name && !this.state.name.trim();
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.state.email);
+    const emailError = this.state.touched.email && !emailValid;
+    const messageError = this.state.touched.message && this.state.message.trim().length < 20;
+    return {
+      toggleMobileNav: this.toggleMobileNav, mobileNavStyle, onSubmit: this.onSubmit, submitted: this.state.submitted,
+      onReasonChange: this.onReasonChange, isSpeaking: this.state.reason === 'speaking', isAdvisory: this.state.reason === 'advisory', isPress: this.state.reason === 'press',
+      onNameChange: this.onNameChange, onEmailChange: this.onEmailChange, onMessageChange: this.onMessageChange,
+      onNameBlur: this.onNameBlur, onEmailBlur: this.onEmailBlur, onMessageBlur: this.onMessageBlur,
+      showNameError: !!nameError, showEmailError: !!emailError, showMessageError: !!messageError,
+      nameInputStyle: this.fieldStyle(nameError), emailInputStyle: this.fieldStyle(emailError), messageInputStyle: this.fieldStyle(messageError),
+    };
+  }
+}
+</script>
+</body>
+</html>
