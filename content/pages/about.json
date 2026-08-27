@@ -42,23 +42,68 @@
     "eyebrow": "Recognition & Features",
     "heading": "Honors and Press",
     "recognitionItems": [
-      { "label": "Obama Foundation Leader USA", "year": "2025" },
-      { "label": "Campaign US Inspiring Women Transforming Technology", "year": "2025" },
-      { "label": "Presidential Lifetime Achievement Award", "year": "2024" },
-      { "label": "Advertising Week NY Future is Female Award", "year": "2024" },
-      { "label": "Ad Club NY's Rockstar, Icon & Innovator Award", "year": "2024" },
-      { "label": "Bill Imada's Top 50 Unsung Heroes", "year": "2024" },
-      { "label": "Global Top 100 Women of the Future in Emerging Tech", "year": "2023" },
-      { "label": "Women in Innovation Movers & Makers", "href": "https://www.linkedin.com/feed/update/urn:li:activity:7165839819657461760/" }
+      {
+        "label": "Obama Foundation Leader USA",
+        "year": "2025"
+      },
+      {
+        "label": "Campaign US Inspiring Women Transforming Technology",
+        "year": "2025"
+      },
+      {
+        "label": "Presidential Lifetime Achievement Award",
+        "year": "2024"
+      },
+      {
+        "label": "Advertising Week NY Future is Female Award",
+        "year": "2024"
+      },
+      {
+        "label": "Ad Club NY's Rockstar, Icon & Innovator Award",
+        "year": "2024"
+      },
+      {
+        "label": "Bill Imada's Top 50 Unsung Heroes",
+        "year": "2024"
+      },
+      {
+        "label": "Global Top 100 Women of the Future in Emerging Tech",
+        "year": "2023"
+      },
+      {
+        "label": "Women in Innovation Movers & Makers",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:7165839819657461760/"
+      }
     ],
     "featuredItems": [
-      { "label": "Cosmopolitan - Your Overdue Digital Safety Intervention", "href": "https://mags.itp.com/CosmopolitanME/2026/124-COSMOPOLITAN-SPRING-2026/#page=80" },
-      { "label": "Marketing Brew - All Things AI", "href": "https://www.marketingbrew.com/stories/2025/02/14/all-things-ai-with-ariba-jahan" },
-      { "label": "LBB - Meet the Career Chameleons", "href": "https://lbbonline.com/news/Career-Chameleons-Strategy-Transformation" },
-      { "label": "LBB - \"Women Don't Need Rescuing\"", "href": "https://lbbonline.com/news/ai-gender-gap-advertising" },
-      { "label": "Recess Playbook - Contributing Creative", "href": "https://www.cometorecess.com/playbook2026" },
-      { "label": "Present Yourself - Contributing Author", "href": "https://www.amazon.com/Present-Yourself-Strategies-Authentic-Impactful/dp/B0CV6V6L7S" },
-      { "label": "Women of the Future Book Vol. 2", "href": "https://womenofthefuture.com/global-vol-2/" }
+      {
+        "label": "Cosmopolitan - Your Overdue Digital Safety Intervention",
+        "href": "https://mags.itp.com/CosmopolitanME/2026/124-COSMOPOLITAN-SPRING-2026/#page=80"
+      },
+      {
+        "label": "Marketing Brew - All Things AI",
+        "href": "https://www.marketingbrew.com/stories/2025/02/14/all-things-ai-with-ariba-jahan"
+      },
+      {
+        "label": "LBB - Meet the Career Chameleons",
+        "href": "https://lbbonline.com/news/Career-Chameleons-Strategy-Transformation"
+      },
+      {
+        "label": "LBB - \"Women Don't Need Rescuing\"",
+        "href": "https://lbbonline.com/news/ai-gender-gap-advertising"
+      },
+      {
+        "label": "Recess Playbook - Contributing Creative",
+        "href": "https://www.cometorecess.com/playbook2026"
+      },
+      {
+        "label": "Present Yourself - Contributing Author",
+        "href": "https://www.amazon.com/Present-Yourself-Strategies-Authentic-Impactful/dp/B0CV6V6L7S"
+      },
+      {
+        "label": "Women of the Future Book Vol. 2",
+        "href": "https://womenofthefuture.com/global-vol-2/"
+      }
     ]
   },
   "closingCTA": {
