@@ -1,14 +1,16 @@
 import { Fragment } from "react";
-import { logoRows } from "../data/home";
+import homeContent from "../../content/pages/home.json";
 
 export default function LogoMarquee() {
+  const rows = homeContent.logoMarquee.rows;
+
   return (
     <section className="bg-cherish border-t border-charcoal/[0.07] overflow-hidden">
-      {logoRows.map((row, i) => (
+      {rows.map((row, i) => (
         <div
           key={row.label}
           className={`flex items-stretch overflow-hidden relative ${
-            i < logoRows.length - 1 ? "border-b border-cream/[0.15]" : ""
+            i < rows.length - 1 ? "border-b border-cream/[0.15]" : ""
           }`}
         >
           <div className="flex-shrink-0 w-[170px] max-[700px]:w-[110px] pl-[clamp(24px,5vw,80px)] max-[700px]:pl-5 text-xs max-[700px]:text-[10px] font-extrabold tracking-[0.14em] uppercase text-cream border-r border-cream/[0.15] z-[2] bg-[#B3261E] relative flex items-center">

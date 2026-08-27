@@ -1,27 +1,30 @@
 import Image from "next/image";
-import { pressItems } from "../data/home";
+import homeContent from "../../content/pages/home.json";
 
 export default function Press() {
+  const { press } = homeContent;
+  const items = press.items;
+
   return (
     <section className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-16 max-[700px]:pb-14 border-t border-charcoal/[0.08]">
       <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          In The Press
+          {press.eyebrow}
         </div>
         <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-9">
-          Press &amp; Bylines
+          {press.heading}
         </div>
 
         {/* Phone tier: flat list */}
         <div className="hidden max-[700px]:flex flex-col">
-          {pressItems.map((item, i) => (
+          {items.map((item, i) => (
             <a
               key={item.title}
               href={item.href}
               target="_blank"
               rel="noopener"
               className={`flex justify-between items-baseline gap-3 py-3 min-h-[44px] ${
-                i < pressItems.length - 1 ? "border-b border-charcoal/10" : ""
+                i < items.length - 1 ? "border-b border-charcoal/10" : ""
               }`}
             >
               <span>
@@ -37,7 +40,7 @@ export default function Press() {
 
         {/* Desktop/tablet tier: photo grid */}
         <div className="grid grid-cols-5 max-[1024px]:grid-cols-3 max-[700px]:hidden gap-1">
-          {pressItems.map((item) => (
+          {items.map((item) => (
             <a
               key={item.title}
               href={item.href}
