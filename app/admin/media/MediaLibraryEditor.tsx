@@ -8,6 +8,14 @@ import { usePublish } from "../_shared/usePublish";
 type MediaItem = { src: string; alt: string; tags: string[]; usedOn: string[]; pages: string[]; collections: string[] };
 type Filter = { type: "all" | "unused" | "tag" | "page" | "collection"; value?: string };
 
+// Logos are transparent PNGs at wildly different aspect ratios — cropping them to
+// fill a square (objectFit: cover) zooms each one to a different, arbitrary scale.
+// They need objectFit: contain instead, same treatment as the dedicated Logos/WWM
+// Trusted By editors. Filename convention catches even unused logo files that
+// aren't tied to a gallery collection yet.
+const isLogo = (item: MediaItem) =>
+  /\/logo-/.test(item.src) || item.collections.includes("Speaking Logos") || item.collections.includes("Wwm Trusted By");
+
 export default function MediaLibraryEditor({ initialItems }: { initialItems: MediaItem[] }) {
   const router = useRouter();
   const [items, setItems] = useState(initialItems);
@@ -210,13 +218,21 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
         {filtered.map((item) => {
           const isUnused = item.usedOn.length === 0;
           const isOpen = openSrc === item.src;
+          const logo = isLogo(item);
           return (
             <div
               key={item.src}
               className={`bg-white border rounded-[10px] overflow-hidden flex flex-col ${isUnused ? "border-[#f0c0c0]" : "border-[#e2e0dc]"}`}
             >
-              <div className="relative w-full aspect-square bg-[#f0efec]">
-                <Image src={item.src} alt={item.alt || ""} fill sizes="180px" style={{ objectFit: "cover" }} />
+              <div className={`relative w-full aspect-square ${logo ? "bg-[#f7f6f4]" : "bg-[#f0efec]"}`}>
+                <Image
+                  src={item.src}
+                  alt={item.alt || ""}
+                  fill
+                  sizes="180px"
+                  style={{ objectFit: logo ? "contain" : "cover" }}
+                  className={logo ? "p-4" : ""}
+                />
               </div>
               <div className="p-3 flex-1 flex flex-col gap-2">
                 <div className="text-[12px] font-semibold truncate" title={item.src}>
