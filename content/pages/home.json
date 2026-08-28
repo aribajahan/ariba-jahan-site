@@ -7,7 +7,7 @@
   },
   "hero": {
     "photoSrc": "/assets/hero-photo.jpg",
-    "subhead": "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once.",
+    "subhead": "I help organizations become unmissable by making sense of change across technology, consumer behavior, and customer expectations.",
     "ctas": [
       {
         "label": "Work With Me",
@@ -21,8 +21,7 @@
   },
   "positioning": {
     "paragraphs": [
-      "My work sits at the intersection of product strategy, experience-led growth, emerging technology, and organizational change. I'm usually brought in when something is shifting, whether that's customer expectations, technology, behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.",
-      "Over the past fifteen years, I've built products, customer experiences, new offerings, and GTM strategies, and built teams and functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.",
+      "My work sits at the intersection of product strategy, experience-led growth, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.\nOver the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations to support those initiatives.\nMore recently, my work has focused on AI-enabled products and experiences, and organizational AI adoption.",
       "More recently, my work has included AI products, AI-enabled experiences, and organizational AI adoption."
     ]
   },
