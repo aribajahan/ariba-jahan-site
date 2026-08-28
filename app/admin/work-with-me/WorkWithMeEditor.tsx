@@ -4,8 +4,8 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
-import StringListEditor from "../_shared/StringListEditor";
 import TitleDescListEditor from "../_shared/TitleDescListEditor";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Cta = { label: string; href: string };
 type TitleDesc = { title: string; description: string };
@@ -18,12 +18,29 @@ type WwmContent = {
     ctas: Cta[];
   };
   cxSprint: {
+    eyebrow: string;
+    heading: string;
+    photoSrc: string;
+    intro: string;
+    body: string[];
     fitPoints: string[];
+    outcome: string;
+    deliverablesNote: string;
     deliverables: TitleDesc[];
     weeks: TitleDesc[];
+    ctaLabel: string;
+    ctaHref: string;
   };
   strategySessions: {
+    eyebrow: string;
+    heading: string;
+    photoSrc: string;
+    intro: string;
+    body: string[];
     bestFor: string[];
+    whatYouGet: string;
+    ctaLabel: string;
+    ctaHref: string;
   };
   wwmTrustedBy: { eyebrow: string };
   problemFraming: { eyebrow: string; heading: string; body: string; cards: ProblemCard[] };
@@ -150,23 +167,103 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="CX Ambition Sprint" defaultExpanded={false}>
-        <label className="block text-[13px] font-semibold mb-2">Is This You? (fit points)</label>
+        <Field label="Eyebrow">
+          <input value={content.cxSprint.eyebrow} onChange={(e) => updateCxSprint({ eyebrow: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Heading">
+          <input value={content.cxSprint.heading} onChange={(e) => updateCxSprint({ heading: e.target.value })} className={inputCls} />
+        </Field>
+        <label className="block text-[13px] font-semibold mb-2">Photo</label>
         <div className="mb-4">
-          <StringListEditor items={content.cxSprint.fitPoints} onChange={(fitPoints) => updateCxSprint({ fitPoints })} />
+          <MediaPicker value={content.cxSprint.photoSrc} onChange={(photoSrc) => updateCxSprint({ photoSrc })} />
         </div>
+        <Field label="Intro Line (bold summary)">
+          <textarea rows={2} value={content.cxSprint.intro} onChange={(e) => updateCxSprint({ intro: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <Field label="Body (blank line between paragraphs)">
+          <textarea
+            rows={6}
+            value={content.cxSprint.body.join("\n\n")}
+            onChange={(e) => updateCxSprint({ body: e.target.value.split(/\n\s*\n/).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
+        <Field label="Is This You? (one per line)">
+          <textarea
+            rows={6}
+            value={content.cxSprint.fitPoints.join("\n")}
+            onChange={(e) => updateCxSprint({ fitPoints: e.target.value.split("\n").map((s) => s.trim()).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
+        <Field label="What Comes Out Of It">
+          <textarea rows={3} value={content.cxSprint.outcome} onChange={(e) => updateCxSprint({ outcome: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
 
         <label className="block text-[13px] font-semibold mb-2">Deliverables</label>
+        <Field label="Deliverables Note (italic intro line)">
+          <input value={content.cxSprint.deliverablesNote} onChange={(e) => updateCxSprint({ deliverablesNote: e.target.value })} className={inputCls} />
+        </Field>
         <div className="mb-4">
           <TitleDescListEditor items={content.cxSprint.deliverables} onChange={(deliverables) => updateCxSprint({ deliverables })} />
         </div>
 
         <label className="block text-[13px] font-semibold mb-2">Weeks</label>
-        <TitleDescListEditor items={content.cxSprint.weeks} onChange={(weeks) => updateCxSprint({ weeks })} />
+        <div className="mb-4">
+          <TitleDescListEditor items={content.cxSprint.weeks} onChange={(weeks) => updateCxSprint({ weeks })} />
+        </div>
+
+        <div className="flex gap-3">
+          <Field label="CTA Label">
+            <input value={content.cxSprint.ctaLabel} onChange={(e) => updateCxSprint({ ctaLabel: e.target.value })} className={inputCls} />
+          </Field>
+          <Field label="CTA Link">
+            <input value={content.cxSprint.ctaHref} onChange={(e) => updateCxSprint({ ctaHref: e.target.value })} className={inputCls} />
+          </Field>
+        </div>
       </SectionCard>
 
       <SectionCard title="1:1 CX Strategy Sessions" defaultExpanded={false}>
-        <label className="block text-[13px] font-semibold mb-2">Best For</label>
-        <StringListEditor items={content.strategySessions.bestFor} onChange={(bestFor) => updateStrategySessions({ bestFor })} />
+        <Field label="Eyebrow">
+          <input value={content.strategySessions.eyebrow} onChange={(e) => updateStrategySessions({ eyebrow: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Heading">
+          <input value={content.strategySessions.heading} onChange={(e) => updateStrategySessions({ heading: e.target.value })} className={inputCls} />
+        </Field>
+        <label className="block text-[13px] font-semibold mb-2">Photo</label>
+        <div className="mb-4">
+          <MediaPicker value={content.strategySessions.photoSrc} onChange={(photoSrc) => updateStrategySessions({ photoSrc })} />
+        </div>
+        <Field label="Intro Line (bold summary)">
+          <textarea rows={2} value={content.strategySessions.intro} onChange={(e) => updateStrategySessions({ intro: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <Field label="Body (blank line between paragraphs)">
+          <textarea
+            rows={6}
+            value={content.strategySessions.body.join("\n\n")}
+            onChange={(e) => updateStrategySessions({ body: e.target.value.split(/\n\s*\n/).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
+        <Field label="Best For (one per line)">
+          <textarea
+            rows={5}
+            value={content.strategySessions.bestFor.join("\n")}
+            onChange={(e) => updateStrategySessions({ bestFor: e.target.value.split("\n").map((s) => s.trim()).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
+        <Field label="What You Get">
+          <textarea rows={3} value={content.strategySessions.whatYouGet} onChange={(e) => updateStrategySessions({ whatYouGet: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <div className="flex gap-3">
+          <Field label="CTA Label">
+            <input value={content.strategySessions.ctaLabel} onChange={(e) => updateStrategySessions({ ctaLabel: e.target.value })} className={inputCls} />
+          </Field>
+          <Field label="CTA Link">
+            <input value={content.strategySessions.ctaHref} onChange={(e) => updateStrategySessions({ ctaHref: e.target.value })} className={inputCls} />
+          </Field>
+        </div>
       </SectionCard>
 
       <SectionCard title="Trusted By" defaultExpanded={false}>

@@ -27,7 +27,11 @@ export type SprintWeek = { title: string; description: string };
 
 export const cxSprintWeeks: SprintWeek[] = wwmContentForOffers.cxSprint.weeks;
 
+export const cxSprintContent = wwmContentForOffers.cxSprint;
+
 export const strategySessionBestFor: string[] = wwmContentForOffers.strategySessions.bestFor;
+
+export const strategySessionsContent = wwmContentForOffers.strategySessions;
 
 export { type Testimonial as WwmTestimonial } from "./testimonials";
 import { testimonialsFor } from "./testimonials";

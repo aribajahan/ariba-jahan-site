@@ -15,6 +15,14 @@
     ]
   },
   "cxSprint": {
+    "eyebrow": "01 · I Work With Teams & Organizations",
+    "heading": "CX Ambition Sprint",
+    "photoSrc": "/uploads/vox1-copy-opt.jpg",
+    "intro": "A 6-week sprint for teams that need a sharper point of view on how their product, service, or experience should evolve.",
+    "body": [
+      "This is for organizations at an inflection point: when customer expectations are changing, engagement has flattened, the market is shifting, or new technology is creating pressure to respond. The issue usually isn't a lack of ideas. It's that the real opportunity is still blurry, or the current experience no longer matches the value the organization wants to create.",
+      "The sprint helps you step back, see the experience more clearly, and make better decisions about where growth, relevance, and differentiation can come from next. Together, we look at customer behavior, business priorities, category movement, and the role technology should or shouldn't play."
+    ],
     "fitPoints": [
       "Engagement, retention, or repeat usage has plateaued",
       "Customer expectations in your category are shifting",
@@ -23,6 +31,8 @@
       "There's pressure to evolve, but not enough clarity on where the real opportunity is",
       "You need a stronger read on what customers will value next"
     ],
+    "outcome": "A clearer opportunity space, a stronger strategic direction, and a concrete set of concepts, priorities, or prototypes to help your team move forward.",
+    "deliverablesNote": "Tailored based on your product maturity and project scope",
     "deliverables": [
       {
         "title": "Ecosystem Audit & Touchpoint Journey Maps.",
@@ -58,16 +68,30 @@
         "title": "Week 6: Roadmap.",
         "description": "Experience-led growth strategy & prioritized roadmap readout."
       }
-    ]
+    ],
+    "ctaLabel": "Book an intro call →",
+    "ctaHref": "mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry"
   },
   "strategySessions": {
+    "eyebrow": "02 · I Work With Individual Leaders",
+    "heading": "1:1 CX Strategy Sessions",
+    "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
+    "intro": "A focused session for leaders working through a product, customer experience, growth, or AI-related decision.",
+    "body": [
+      "Sometimes you don't need a full sprint. You need a clear outside perspective, a thoughtful working session, and enough room to think through a problem without rushing to the wrong answer.",
+      "These sessions are for leaders who want to pressure-test a direction, work through friction in an existing experience, evaluate a product or GTM shift, or make sense of how changing technology and customer behavior should shape their next move.",
+      "In 60 minutes, we'll get to the heart of the issue, identify what matters most, and map out a practical next step."
+    ],
     "bestFor": [
       "pressure-testing a roadmap, product shift, or GTM direction",
       "diagnosing friction in a current customer experience",
       "thinking through adoption, retention, or value questions",
       "getting unstuck on an AI, CX, or growth decision",
       "sharpening your strategic point of view before making a move"
-    ]
+    ],
+    "whatYouGet": "A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.",
+    "ctaLabel": "Book a Session →",
+    "ctaHref": "mailto:ariba@aribajahan.com?subject=1:1%20Strategy%20Session%20Inquiry"
   },
   "wwmTrustedBy": {
     "eyebrow": "Trusted By"
