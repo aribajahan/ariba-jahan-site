@@ -125,11 +125,11 @@ export default function ContactForm() {
               <div className="flex gap-4 flex-wrap">
                 <div className="flex-1 min-w-[200px]">
                   <label className={labelClasses}>{fieldLabel("organization", "Organization")}</label>
-                  <input type="text" name="organization" placeholder="Where you work (optional)" className={fieldClasses(false)} />
+                  <input type="text" name="organization" required placeholder="Where you work" className={fieldClasses(false)} />
                 </div>
                 <div className="flex-1 min-w-[200px]">
                   <label className={labelClasses}>{fieldLabel("role", "Role / Title")}</label>
-                  <input type="text" name="role" placeholder="Your title (optional)" className={fieldClasses(false)} />
+                  <input type="text" name="role" required placeholder="Your title" className={fieldClasses(false)} />
                 </div>
               </div>
 

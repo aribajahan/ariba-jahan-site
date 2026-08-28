@@ -21,13 +21,13 @@
         "id": "organization",
         "label": "Organization",
         "type": "text",
-        "required": false
+        "required": true
       },
       {
         "id": "role",
         "label": "Role / Title",
         "type": "text",
-        "required": false
+        "required": true
       },
       {
         "id": "reason",

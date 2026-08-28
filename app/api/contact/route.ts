@@ -14,19 +14,27 @@ function escapeHtml(value: string) {
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { name, email, message, company_website: honeypot, ...rest } = body;
+  const { name, email, message, organization, role, company_website: honeypot, ...rest } = body;
 
   if (honeypot) {
     return NextResponse.json({ ok: true });
   }
 
-  if (typeof name !== "string" || !name.trim() || typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || typeof message !== "string" || message.trim().length < 20) {
+  if (
+    typeof name !== "string" || !name.trim() ||
+    typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+    typeof organization !== "string" || !organization.trim() ||
+    typeof role !== "string" || !role.trim() ||
+    typeof message !== "string" || message.trim().length < 20
+  ) {
     return NextResponse.json({ ok: false, error: "Invalid submission." }, { status: 400 });
   }
 
   const detailRows = [
     ["Name", name],
     ["Email", email],
+    ["Organization", organization],
+    ["Role / Title", role],
     ...Object.entries(rest).filter(([, value]) => typeof value === "string" && value.trim()),
   ]
     .map(([key, value]) => `<tr><td style="padding:4px 12px 4px 0;color:#666;">${escapeHtml(key)}</td><td>${escapeHtml(String(value))}</td></tr>`)
