@@ -1,4 +1,10 @@
 {
+  "unmissablesStat": {
+    "label": "From the research",
+    "before": "MIT study: participants using AI showed",
+    "highlight": "55% lower cognitive engagement",
+    "after": "and depended on AI for subsequent tasks."
+  },
   "hero": {
     "photoSrc": "/assets/hero-photo.jpg",
     "subhead": "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once.",
