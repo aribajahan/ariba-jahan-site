@@ -17,7 +17,7 @@ export type CommitSummary = {
 export type CommitActivity = {
   total: number;
   bySource: Record<CommitSource, number>;
-  recent: CommitSummary[];
+  commits: CommitSummary[];
   contributionsToday: number | null;
 };
 
@@ -95,7 +95,7 @@ export async function getCommitActivity(limit = 200): Promise<CommitActivity> {
   return {
     total: commits.length,
     bySource,
-    recent: commits.slice(0, 30),
+    commits,
     contributionsToday,
   };
 }

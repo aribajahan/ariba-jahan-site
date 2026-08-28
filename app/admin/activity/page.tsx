@@ -1,4 +1,4 @@
-import { getCommitActivity, type CommitSource } from "../../../lib/githubActivity";
+import { getCommitActivity, type CommitSource, type CommitSummary } from "../../../lib/githubActivity";
 
 export const dynamic = "force-dynamic";
 
@@ -8,20 +8,31 @@ const SOURCE_LABEL: Record<CommitSource, string> = {
   manual: "Manual",
 };
 
-const SOURCE_STYLE: Record<CommitSource, string> = {
-  studio: "bg-[#E8F5FF] text-[#1a5c8a] border border-[#c5e2f5]",
-  "claude-code": "bg-[#F3EEFF] text-[#5a3fa0] border border-[#ddd0f7]",
-  manual: "bg-[#F0F0F0] text-[#555] border border-[#ddd]",
-};
+function formatDayHeading(dayKey: string) {
+  const [year, month, day] = dayKey.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const diffDays = Math.round((today.getTime() - date.getTime()) / 86400000);
+  const label = date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  if (diffDays === 0) return `${label} (today)`;
+  if (diffDays === 1) return `${label} (yesterday)`;
+  return label;
+}
 
-function formatDate(iso: string) {
+function formatTime(iso: string) {
   if (!iso) return "";
-  return new Date(iso).toLocaleString("en-US", {
-    month: "short",
-    day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-  });
+  return new Date(iso).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+}
+
+function groupByDay(commits: CommitSummary[]) {
+  const groups = new Map<string, CommitSummary[]>();
+  for (const c of commits) {
+    const dayKey = c.date ? c.date.slice(0, 10) : "unknown";
+    if (!groups.has(dayKey)) groups.set(dayKey, []);
+    groups.get(dayKey)!.push(c);
+  }
+  return [...groups.entries()];
 }
 
 export default async function AdminActivity() {
@@ -32,6 +43,8 @@ export default async function AdminActivity() {
   } catch (e) {
     error = e instanceof Error ? e.message : "Failed to load commit activity.";
   }
+
+  const days = activity ? groupByDay(activity.commits) : [];
 
   return (
     <div className="max-w-[820px] p-10">
@@ -50,22 +63,22 @@ export default async function AdminActivity() {
 
       {activity && (
         <>
-          <div className="grid grid-cols-4 gap-3 mb-6">
-            <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-4">
-              <div className="text-2xl font-semibold">{activity.total}</div>
-              <div className="text-xs text-[#888] mt-1">Commits tracked</div>
+          <div className="flex gap-6 mb-6 text-sm">
+            <div>
+              <span className="font-semibold">{activity.total}</span>
+              <span className="text-[#999] ml-1">commits tracked</span>
             </div>
-            <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-4">
-              <div className="text-2xl font-semibold">{activity.bySource.studio}</div>
-              <div className="text-xs text-[#888] mt-1">Via Studio</div>
+            <div>
+              <span className="font-semibold">{activity.bySource.studio}</span>
+              <span className="text-[#999] ml-1">via Studio</span>
             </div>
-            <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-4">
-              <div className="text-2xl font-semibold">{activity.bySource["claude-code"]}</div>
-              <div className="text-xs text-[#888] mt-1">Via Claude Code</div>
+            <div>
+              <span className="font-semibold">{activity.bySource["claude-code"]}</span>
+              <span className="text-[#999] ml-1">via Claude Code</span>
             </div>
-            <div className="bg-white border border-[#e2e0dc] rounded-[10px] p-4">
-              <div className="text-2xl font-semibold">{activity.bySource.manual}</div>
-              <div className="text-xs text-[#888] mt-1">Manual</div>
+            <div>
+              <span className="font-semibold">{activity.bySource.manual}</span>
+              <span className="text-[#999] ml-1">manual</span>
             </div>
           </div>
 
@@ -77,24 +90,39 @@ export default async function AdminActivity() {
             </div>
           )}
 
-          <h2 className="text-sm font-semibold mb-3">Recent commits</h2>
-          <div className="flex flex-col gap-2 mb-5">
-            {activity.recent.map((c) => (
-              <a
-                key={c.sha}
-                href={c.url}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-white border border-[#e2e0dc] rounded-[10px] px-4 py-3 flex items-center gap-3 hover:border-[#bbb]"
-              >
-                <span className={`text-[10px] font-bold tracking-[0.04em] uppercase px-2 py-[3px] rounded shrink-0 ${SOURCE_STYLE[c.source]}`}>
-                  {SOURCE_LABEL[c.source]}
-                </span>
-                <span className="flex-1 text-sm truncate">{c.message}</span>
-                <span className="text-xs text-[#999] shrink-0">{formatDate(c.date)}</span>
-              </a>
+          <h2 className="text-sm font-semibold mb-3">Commits by day</h2>
+          <div className="flex flex-col gap-2 mb-2">
+            {days.map(([dayKey, dayCommits]) => (
+              <details key={dayKey} className="bg-white border border-[#e2e0dc] rounded-[10px] overflow-hidden">
+                <summary className="px-4 py-3 text-sm cursor-pointer select-none flex items-center justify-between">
+                  <span>{formatDayHeading(dayKey)}</span>
+                  <span className="text-[#999]">{dayCommits.length} commit{dayCommits.length === 1 ? "" : "s"}</span>
+                </summary>
+                <div className="border-t border-[#f0efec]">
+                  {dayCommits.map((c) => (
+                    <a
+                      key={c.sha}
+                      href={c.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-3 px-4 py-[10px] text-sm border-b border-[#f5f4f1] last:border-b-0 hover:bg-[#fafaf8]"
+                    >
+                      <span className="text-[10px] font-semibold tracking-[0.04em] uppercase text-[#999] w-[90px] shrink-0">
+                        {SOURCE_LABEL[c.source]}
+                      </span>
+                      <span className="flex-1 truncate">{c.message}</span>
+                      <span className="text-xs text-[#bbb] shrink-0">{formatTime(c.date)}</span>
+                    </a>
+                  ))}
+                </div>
+              </details>
             ))}
           </div>
+
+          <p className="text-xs text-[#999] mt-4">
+            Click a commit to open it on GitHub and see the full diff. To undo something, either use GitHub&rsquo;s
+            Revert option on that commit, or tell me which one and I&rsquo;ll revert it for you.
+          </p>
         </>
       )}
     </div>
