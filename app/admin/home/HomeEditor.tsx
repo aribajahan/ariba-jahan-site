@@ -15,6 +15,7 @@ type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
 
 type HomeContent = {
+  unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
   positioning: { paragraphs: string[] };
   workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[] };
@@ -105,6 +106,22 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       <div className="text-xs font-semibold text-[#888] mb-[2px]">Page</div>
       <h1 className="text-2xl mb-1">Home</h1>
       <p className="text-[13px] text-[#999] mb-6">Click a section to expand and edit its fields.</p>
+
+      <SectionCard title="Unmissables Stat" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The highlighted research stat next to the Cognitive Endurance tile on Unmissables.</p>
+        <Field label="Label">
+          <input value={content.unmissablesStat.label} onChange={(e) => set("unmissablesStat", { label: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Before (text before the highlight)">
+          <input value={content.unmissablesStat.before} onChange={(e) => set("unmissablesStat", { before: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Highlight (the emphasized phrase)">
+          <input value={content.unmissablesStat.highlight} onChange={(e) => set("unmissablesStat", { highlight: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="After (text after the highlight)">
+          <input value={content.unmissablesStat.after} onChange={(e) => set("unmissablesStat", { after: e.target.value })} className={inputCls} />
+        </Field>
+      </SectionCard>
 
       <SectionCard title="Hero">
         <Field label="Hero Photo">

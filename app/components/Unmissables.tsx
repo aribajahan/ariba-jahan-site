@@ -5,6 +5,7 @@ import Image from "next/image";
 import SubstackEmbed from "./SubstackEmbed";
 import SocialIcon from "./SocialIcon";
 import tiles from "../../content/collections/unmissables.json";
+import homeContent from "../../content/pages/home.json";
 
 const links = [
   {
@@ -132,14 +133,14 @@ export default function Unmissables() {
 
           <div className="flex-[1.6_1_420px] bg-charcoal p-9 flex flex-col justify-center min-h-[160px]">
             <div className="text-[9px] font-extrabold tracking-[0.18em] uppercase text-cream/[0.22] mb-[10px]">
-              From the research
+              {homeContent.unmissablesStat.label}
             </div>
             <div className="font-display text-[clamp(16px,1.8vw,22px)] font-bold text-cream leading-[1.3] tracking-[-0.01em]">
-              MIT study: participants using AI showed{" "}
+              {homeContent.unmissablesStat.before}{" "}
               <span className="bg-tennis text-charcoal px-1 [box-decoration-break:clone]">
-                55% lower cognitive engagement
+                {homeContent.unmissablesStat.highlight}
               </span>{" "}
-              and depended on AI for subsequent tasks.
+              {homeContent.unmissablesStat.after}
             </div>
           </div>
         </div>
