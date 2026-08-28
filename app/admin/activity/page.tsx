@@ -1,4 +1,5 @@
 import { getCommitActivity, type CommitSource, type CommitSummary } from "../../../lib/githubActivity";
+import CommitRow from "./CommitRow";
 
 export const dynamic = "force-dynamic";
 
@@ -100,19 +101,14 @@ export default async function AdminActivity() {
                 </summary>
                 <div className="border-t border-[#f0efec]">
                   {dayCommits.map((c) => (
-                    <a
+                    <CommitRow
                       key={c.sha}
-                      href={c.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-3 px-4 py-[10px] text-sm border-b border-[#f5f4f1] last:border-b-0 hover:bg-[#fafaf8]"
-                    >
-                      <span className="text-[10px] font-semibold tracking-[0.04em] uppercase text-[#999] w-[90px] shrink-0">
-                        {SOURCE_LABEL[c.source]}
-                      </span>
-                      <span className="flex-1 truncate">{c.message}</span>
-                      <span className="text-xs text-[#bbb] shrink-0">{formatTime(c.date)}</span>
-                    </a>
+                      sha={c.sha}
+                      message={c.message}
+                      sourceLabel={SOURCE_LABEL[c.source]}
+                      time={formatTime(c.date)}
+                      url={c.url}
+                    />
                   ))}
                 </div>
               </details>
@@ -120,8 +116,8 @@ export default async function AdminActivity() {
           </div>
 
           <p className="text-xs text-[#999] mt-4">
-            Click a commit to open it on GitHub and see the full diff. To undo something, either use GitHub&rsquo;s
-            Revert option on that commit, or tell me which one and I&rsquo;ll revert it for you.
+            Click a commit to see what changed. To undo something, either use GitHub&rsquo;s Revert option on
+            that commit (link inside), or tell me which one and I&rsquo;ll revert it for you.
           </p>
         </>
       )}

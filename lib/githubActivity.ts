@@ -21,6 +21,20 @@ export type CommitActivity = {
   contributionsToday: number | null;
 };
 
+export type CommitFileDiff = {
+  filename: string;
+  status: string;
+  additions: number;
+  deletions: number;
+  patch: string | null;
+};
+
+export type CommitDiff = {
+  sha: string;
+  message: string;
+  files: CommitFileDiff[];
+};
+
 function classify(fullMessage: string): CommitSource {
   const subject = fullMessage.split("\n")[0];
   if (/ via Studio$/.test(subject)) return "studio";
@@ -97,5 +111,26 @@ export async function getCommitActivity(limit = 200): Promise<CommitActivity> {
     bySource,
     commits,
     contributionsToday,
+  };
+}
+
+/**
+ * Fetches the per-file diff for a single commit, so its content can be
+ * reviewed inline in the Studio instead of clicking through to GitHub.
+ */
+export async function getCommitDiff(sha: string): Promise<CommitDiff> {
+  const octokit = getClient();
+  const { data } = await octokit.repos.getCommit({ owner: OWNER, repo: REPO, ref: sha });
+
+  return {
+    sha: data.sha.slice(0, 7),
+    message: data.commit.message,
+    files: (data.files ?? []).map((f) => ({
+      filename: f.filename,
+      status: f.status,
+      additions: f.additions,
+      deletions: f.deletions,
+      patch: f.patch ?? null,
+    })),
   };
 }
