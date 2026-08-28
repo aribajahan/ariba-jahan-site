@@ -30,6 +30,7 @@ const MEDIA = [
 ];
 
 const SITE = [
+  { label: "Commit Activity", href: "/admin/activity" },
   { label: "Site-wide SEO", href: "/admin/seo" },
   { label: "Domains", href: "/admin/domains" },
   { label: "Marketing Tools", href: "/admin/marketing" },
