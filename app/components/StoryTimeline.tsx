@@ -98,9 +98,6 @@ function ChapterText({ chapter, align }: { chapter: StoryChapter; align: "left" 
           : "justify-self-start ml-6 max-[700px]:justify-self-stretch"
       }`}
     >
-      <div className="text-xs font-bold tracking-[0.1em] uppercase text-charcoal/40 mb-[14px]">
-        {chapter.headline}
-      </div>
       <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/[0.68]">{chapter.body}</p>
     </div>
   );

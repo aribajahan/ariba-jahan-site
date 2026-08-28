@@ -4,7 +4,6 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
-import StringListEditor from "../_shared/StringListEditor";
 
 type RecognitionItem = { label: string; year?: string; href?: string };
 
@@ -189,19 +188,29 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
         <Field label="Right Now Copy">
           <textarea rows={4} value={content.storyTimeline.rightNowCopy} onChange={(e) => updateStoryTimeline({ rightNowCopy: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
-        <p className="text-xs text-[#999]">Story chapters and their photos are managed in code.</p>
+        <p className="text-xs text-[#999]">Story chapters and their photos are managed under Collections → Story Timeline.</p>
       </SectionCard>
 
       <SectionCard title="Bio" defaultExpanded={false}>
         <Field label="Eyebrow">
           <input value={content.bio.eyebrow} onChange={(e) => updateBio({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
-        <label className="block text-[13px] font-semibold mb-2">Intro Paragraphs</label>
-        <div className="mb-4">
-          <StringListEditor items={content.bio.intro} onChange={(intro) => updateBio({ intro })} />
-        </div>
-        <label className="block text-[13px] font-semibold mb-2">Expanded Paragraphs (Read More)</label>
-        <StringListEditor items={content.bio.expanded} onChange={(expanded) => updateBio({ expanded })} />
+        <Field label="Short Bio (blank line between paragraphs)">
+          <textarea
+            rows={8}
+            value={content.bio.intro.join("\n\n")}
+            onChange={(e) => updateBio({ intro: e.target.value.split(/\n\s*\n/).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
+        <Field label="Long Bio, Read More (blank line between paragraphs)">
+          <textarea
+            rows={12}
+            value={content.bio.expanded.join("\n\n")}
+            onChange={(e) => updateBio({ expanded: e.target.value.split(/\n\s*\n/).filter(Boolean) })}
+            className={`${inputCls} resize-y`}
+          />
+        </Field>
       </SectionCard>
 
       <SectionCard title="Career Advisory" defaultExpanded={false}>
