@@ -3,8 +3,9 @@
 import { useState } from "react";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
-type PageSeo = { title: string; description: string };
+type PageSeo = { title: string; description: string; ogImage?: string; useHomeOgImage?: boolean };
 type Seo = Record<string, PageSeo>;
 
 const PAGES = [
@@ -20,6 +21,8 @@ export default function SeoEditor({ initialSeo }: { initialSeo: Seo }) {
   const { publish, publishing, result } = usePublish();
 
   const current = seo[activePage];
+  const isHome = activePage === "home";
+  const usingHomeImage = !isHome && current.useHomeOgImage;
 
   const update = (patch: Partial<PageSeo>) => {
     setSeo((s) => ({ ...s, [activePage]: { ...s[activePage], ...patch } }));
@@ -60,8 +63,33 @@ export default function SeoEditor({ initialSeo }: { initialSeo: Seo }) {
           rows={3}
           value={current.description}
           onChange={(e) => update({ description: e.target.value })}
-          className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm resize-y"
+          className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm resize-y mb-4"
         />
+
+        <label className="block text-[13px] font-semibold mb-2">Social Share Image (Open Graph)</label>
+        <p className="text-xs text-[#999] mb-3">
+          Shown when this page is shared on LinkedIn, X, Slack, etc. Leave empty to use the site&rsquo;s
+          default image.
+        </p>
+
+        {!isHome && (
+          <label className="flex items-center gap-[6px] text-[13px] mb-3">
+            <input
+              type="checkbox"
+              checked={!!current.useHomeOgImage}
+              onChange={(e) => update({ useHomeOgImage: e.target.checked })}
+            />
+            Use the same image as Home
+          </label>
+        )}
+
+        {usingHomeImage ? (
+          <div className="text-xs text-[#999] bg-[#fafaf8] border border-dashed border-[#d5d2cc] rounded-md p-3">
+            Using Home&rsquo;s social share image. Uncheck above to set one just for this page.
+          </div>
+        ) : (
+          <MediaPicker value={current.ogImage ?? ""} onChange={(ogImage) => update({ ogImage })} />
+        )}
       </div>
 
       <PublishBar onPublish={handlePublish} publishing={publishing} result={result} />

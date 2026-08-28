@@ -10,14 +10,11 @@ import CareerAdvisory from "../components/CareerAdvisory";
 import RecognitionFeatures from "../components/RecognitionFeatures";
 import AboutClosingCTA from "../components/AboutClosingCTA";
 import Footer from "../components/Footer";
-import seo from "../../content/seo.json";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
+import { buildPageMetadata } from "../../lib/seoMeta";
 
-export const metadata: Metadata = {
-  title: seo.about.title,
-  description: seo.about.description,
-};
+export const metadata: Metadata = buildPageMetadata("about");
 
 export default async function About() {
   const guard = await guardPage("about");

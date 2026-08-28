@@ -18,12 +18,9 @@ import Testimonials from "./components/Testimonials";
 import Community from "./components/Community";
 import ClosingCTA from "./components/ClosingCTA";
 import Footer from "./components/Footer";
-import seo from "../content/seo.json";
+import { buildPageMetadata } from "../lib/seoMeta";
 
-export const metadata: Metadata = {
-  title: { absolute: seo.home.title },
-  description: seo.home.description,
-};
+export const metadata: Metadata = buildPageMetadata("home", { absoluteTitle: true });
 
 export default async function Home() {
   const guard = await guardPage("home");

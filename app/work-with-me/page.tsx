@@ -11,14 +11,11 @@ import WwmTestimonials from "../components/WwmTestimonials";
 import CaseStudies from "../components/CaseStudies";
 import WorkWithMeClosingCTA from "../components/WorkWithMeClosingCTA";
 import Footer from "../components/Footer";
-import seo from "../../content/seo.json";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
+import { buildPageMetadata } from "../../lib/seoMeta";
 
-export const metadata: Metadata = {
-  title: seo["work-with-me"].title,
-  description: seo["work-with-me"].description,
-};
+export const metadata: Metadata = buildPageMetadata("work-with-me");
 
 export default async function WorkWithMe() {
   const guard = await guardPage("work-with-me");

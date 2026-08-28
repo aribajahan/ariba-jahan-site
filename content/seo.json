@@ -1,18 +1,25 @@
 {
   "home": {
     "title": "Ariba Jahan",
-    "description": "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once."
+    "description": "I help organizations figure out how to be unmissable and what to build when technology, customer behavior, and expectations are all changing at once.",
+    "ogImage": ""
   },
   "speaking": {
     "title": "Speaking",
-    "description": "200+ talks, keynotes, and workshops on technology, human behavior, and what to build next. Bring Ariba Jahan to your event."
+    "description": "200+ talks, keynotes, and workshops on technology, human behavior, and what to build next. Bring Ariba Jahan to your event.",
+    "ogImage": "",
+    "useHomeOgImage": true
   },
   "work-with-me": {
     "title": "Work With Me",
-    "description": "CX Ambition Sprints and 1:1 Strategy Sessions for leaders navigating product, growth, and AI decisions."
+    "description": "CX Ambition Sprints and 1:1 Strategy Sessions for leaders navigating product, growth, and AI decisions.",
+    "ogImage": "",
+    "useHomeOgImage": true
   },
   "about": {
     "title": "About",
-    "description": "Product and AI strategist, consultant, speaker, and writer. The story behind the work — and what I'm focused on right now."
+    "description": "Product and AI strategist, consultant, speaker, and writer. The story behind the work — and what I'm focused on right now.",
+    "ogImage": "",
+    "useHomeOgImage": true
   }
 }

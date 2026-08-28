@@ -8,14 +8,11 @@ import SpeakingTestimonials from "../components/SpeakingTestimonials";
 import SpeakingEngagements from "../components/SpeakingEngagements";
 import SpeakingClosingCTA from "../components/SpeakingClosingCTA";
 import Footer from "../components/Footer";
-import seo from "../../content/seo.json";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
+import { buildPageMetadata } from "../../lib/seoMeta";
 
-export const metadata: Metadata = {
-  title: seo.speaking.title,
-  description: seo.speaking.description,
-};
+export const metadata: Metadata = buildPageMetadata("speaking");
 
 export default async function Speaking() {
   const guard = await guardPage("speaking");
