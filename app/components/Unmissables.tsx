@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import SubstackEmbed from "./SubstackEmbed";
 import SocialIcon from "./SocialIcon";
+import tiles from "../../content/collections/unmissables.json";
 
 const links = [
   {
@@ -23,29 +24,7 @@ const links = [
   },
 ];
 
-type Tile = {
-  id: string;
-  photoSrc: string;
-  bg: string;
-  kind: "Essay" | "Podcast";
-  title: string;
-  href: string;
-  overlay: "dark" | "light";
-  hidden?: boolean; // titles visually revealed only on hover/focus in source (visually-hidden pattern)
-};
-
-const tiles: Tile[] = [
-  { id: "unmissables-1", photoSrc: "/assets/unmissables-1.jpg", bg: "#2D2D2D", kind: "Essay", title: "Reclaiming Our Agency in the Age of AI", href: "https://www.unmissables.xyz/p/cognitive-endurance-2", overlay: "dark" },
-  { id: "unmissables-2", photoSrc: "/assets/unmissables-2.jpg", bg: "#E73131", kind: "Podcast", title: "Ep. 15: Hard Problems, with Daniel Burka", href: "https://www.unmissables.xyz/p/ep-15-hard-problems", overlay: "dark", hidden: true },
-  { id: "unmissables-3", photoSrc: "/assets/unmissables-3.jpg", bg: "#F5A8D5", kind: "Essay", title: "Behavior Design in AI #2: When Agreement Is the Product", href: "https://www.unmissables.xyz/p/behavior-design-in-ai-agreement", overlay: "light" },
-  { id: "unmissables-6", photoSrc: "/assets/unmissables-6.jpg", bg: "#F5A8D5", kind: "Podcast", title: "Beyond Dystopia: Designing Futures You Can Live In, with Keely Adler & Caitlin Keeley, RADAR", href: "https://www.unmissables.xyz/p/designing-futures-multiplayer-mode", overlay: "dark", hidden: true },
-  { id: "unmissables-4", photoSrc: "/assets/unmissables-4.jpg", bg: "#2D2D2D", kind: "Essay", title: "Behavior Design in AI #1: When the Interface Is the Response", href: "https://www.unmissables.xyz/p/behavior-design-in-ai-1-when-the", overlay: "dark" },
-  { id: "unmissables-7", photoSrc: "/assets/unmissables-7.jpg", bg: "#2D2D2D", kind: "Podcast", title: "Designing Health Tech When Trust Is the Product, with Ambreen Molitor, Zocdoc", href: "https://www.unmissables.xyz/p/designing-health-tech-when-trust", overlay: "dark", hidden: true },
-  { id: "unmissables-5", photoSrc: "/assets/unmissables-5.jpg", bg: "#E73131", kind: "Essay", title: "ChatGPT Has Ads Now. Here's What They're Doing to You", href: "https://www.unmissables.xyz/p/chatgpt-has-ads-now-heres-what-theyre", overlay: "dark" },
-  { id: "unmissables-9", photoSrc: "/assets/unmissables-9.jpg", bg: "#E73131", kind: "Podcast", title: "Making the Invisible Interactive: Immersive Storytelling, with Aditi Rajagopal, Atlantic Studios", href: "https://www.unmissables.xyz/p/making-the-invisible-interactive", overlay: "dark", hidden: true },
-  { id: "unmissables-8", photoSrc: "/assets/unmissables-8.jpg", bg: "#F5A8D5", kind: "Essay", title: "The Data Pipeline You Never Consented To", href: "https://www.unmissables.xyz/p/the-data-pipeline-you-never-consented", overlay: "light" },
-  { id: "unmissables-10", photoSrc: "/assets/unmissables-10.jpg", bg: "#2D2D2D", kind: "Podcast", title: "The Behaviors You Reward Are Your Real Culture, with Kit Krugman, Foursquare", href: "https://www.unmissables.xyz/p/the-behaviors-you-reward-are-your", overlay: "dark", hidden: true },
-];
+const KIND_LABEL = { essay: "Essay", podcast: "Podcast" } as const;
 
 export default function Unmissables() {
   const [showAll, setShowAll] = useState(false);
@@ -166,54 +145,57 @@ export default function Unmissables() {
         </div>
 
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] min-[701px]:max-[1024px]:grid-cols-3 [grid-auto-rows:240px] gap-1">
-          {tiles.map((tile, i) => (
-            <a
-              key={tile.id}
-              href={tile.href}
-              target={tile.href !== "#" ? "_blank" : undefined}
-              rel={tile.href !== "#" ? "noopener" : undefined}
-              className={`relative overflow-hidden block min-w-0 min-h-0 ${
-                i >= previewCount && !showAll ? "max-[700px]:hidden" : ""
-              } ${i === tiles.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""}`}
-              style={{ background: tile.bg }}
-            >
-              <Image quality={90}
-                src={tile.photoSrc}
-                alt={tile.hidden ? "" : tile.title}
-                fill
-                sizes="(max-width: 700px) 50vw, 220px"
-                style={{ objectFit: "cover" }}
-              />
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    tile.overlay === "dark"
-                      ? "linear-gradient(to top, rgba(20,12,12,0.88), rgba(20,12,12,0.1) 60%)"
-                      : "linear-gradient(to top, rgba(20,12,12,0.6), rgba(20,12,12,0.05) 60%)",
-                }}
-              />
-              {tile.hidden ? (
-                <div className="absolute inset-0 flex flex-col justify-between p-4 pointer-events-none">
-                  <span className="relative z-[1] bg-tennis text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit">
-                    {tile.kind}
-                  </span>
-                  <span className="sr-only">{tile.title}</span>
-                </div>
-              ) : (
-                <>
-                  <span className="absolute top-4 left-4 z-[1] bg-tennis text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit">
-                    {tile.kind}
-                  </span>
-                  <div className="absolute inset-0 flex items-end p-4 pointer-events-none">
-                    <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] relative z-[1]">
-                      {tile.title}
+          {tiles.map((tile, i) => {
+            const hidden = tile.type === "podcast";
+            return (
+              <a
+                key={tile.id}
+                href={tile.href}
+                target={tile.href !== "#" ? "_blank" : undefined}
+                rel={tile.href !== "#" ? "noopener" : undefined}
+                className={`relative overflow-hidden block min-w-0 min-h-0 ${
+                  i >= previewCount && !showAll ? "max-[700px]:hidden" : ""
+                } ${i === tiles.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""}`}
+                style={{ background: tile.bg }}
+              >
+                <Image quality={90}
+                  src={tile.photoSrc}
+                  alt={hidden ? "" : tile.headline}
+                  fill
+                  sizes="(max-width: 700px) 50vw, 220px"
+                  style={{ objectFit: "cover" }}
+                />
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background:
+                      tile.overlay === "dark"
+                        ? "linear-gradient(to top, rgba(20,12,12,0.88), rgba(20,12,12,0.1) 60%)"
+                        : "linear-gradient(to top, rgba(20,12,12,0.6), rgba(20,12,12,0.05) 60%)",
+                  }}
+                />
+                {hidden ? (
+                  <div className="absolute inset-0 flex flex-col justify-between p-4 pointer-events-none">
+                    <span className="relative z-[1] bg-tennis text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit">
+                      {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
                     </span>
+                    <span className="sr-only">{tile.headline}</span>
                   </div>
-                </>
-              )}
-            </a>
-          ))}
+                ) : (
+                  <>
+                    <span className="absolute top-4 left-4 z-[1] bg-tennis text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit">
+                      {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
+                    </span>
+                    <div className="absolute inset-0 flex items-end p-4 pointer-events-none">
+                      <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] relative z-[1]">
+                        {tile.headline}
+                      </span>
+                    </div>
+                  </>
+                )}
+              </a>
+            );
+          })}
         </div>
 
         <div className="hidden max-[700px]:flex justify-center mt-5">

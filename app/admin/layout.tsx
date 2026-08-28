@@ -15,6 +15,7 @@ const COLLECTIONS = [
   { label: "Articles", href: "/admin/articles" },
   { label: "Case Studies & Quests", href: "/admin/case-studies" },
   { label: "Testimonials", href: "/admin/testimonials" },
+  { label: "Unmissables", href: "/admin/unmissables" },
   { label: "Forms", href: "/admin/forms" },
 ];
 
