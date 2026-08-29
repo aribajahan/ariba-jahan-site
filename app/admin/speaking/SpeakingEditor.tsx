@@ -8,7 +8,7 @@ import TagListEditor from "../_shared/TagListEditor";
 
 type Theme = { photoSrc: string; title: string; question: string; description: string };
 type SpeakingContent = {
-  hero: { photoSrc: string; headline: string; ctaLabel: string; ctaHref: string };
+  hero: { eyebrow: string; photoSrc: string; headline: string; ctaLabel: string; ctaHref: string };
   themes: { eyebrow: string; heading: string; lead: string; body: string; items: Theme[] };
   testimonialsSection: { eyebrow: string; heading: string };
   engagements: { eyebrow: string; heading: string; intro: string; formats: string[] };
@@ -48,12 +48,14 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
       <p className="text-[13px] text-[#999] mb-6">Click a section to expand and edit its fields.</p>
 
       <SectionCard title="Hero">
+        <Field label="Eyebrow"><input value={content.hero.eyebrow} onChange={(e) => set("hero", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Hero Photo"><input value={content.hero.photoSrc} onChange={(e) => set("hero", { photoSrc: e.target.value })} className={inputCls} /></Field>
         <Field label="Headline">
           <textarea rows={3} value={content.hero.headline} onChange={(e) => set("hero", { headline: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
         <Field label="CTA Label"><input value={content.hero.ctaLabel} onChange={(e) => set("hero", { ctaLabel: e.target.value })} className={inputCls} /></Field>
         <Field label="CTA Link"><input value={content.hero.ctaHref} onChange={(e) => set("hero", { ctaHref: e.target.value })} className={`${inputCls} text-[#888]`} /></Field>
+        <p className="text-xs text-[#999]">This CTA also appears again at the bottom of the Engagements section.</p>
       </SectionCard>
 
       <SectionCard title="Speaking Themes" defaultExpanded={false}>

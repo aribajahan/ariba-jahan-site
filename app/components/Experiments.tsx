@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { experiments } from "../data/home";
+import homeContent from "../../content/pages/home.json";
 
 const CARD_WIDTH = 391;
 const CARD_ROTATIONS = [-1.2, 1, -0.8, 1.2, -1, 0.9];
@@ -18,10 +19,10 @@ export default function Experiments() {
     <section id="experiments" className="bg-cream border-t border-charcoal/[0.08]">
       <div className="max-w-[1400px] mx-auto pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] px-[clamp(24px,5vw,80px)] pb-20 max-[1024px]:pb-16 max-[700px]:pb-14">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          Select Work
+          {homeContent.experiments.eyebrow}
         </div>
         <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-charcoal mb-8">
-          Projects &amp; Quests
+          {homeContent.experiments.heading}
         </div>
 
         <div

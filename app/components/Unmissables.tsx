@@ -40,10 +40,10 @@ export default function Unmissables() {
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-3">
           <div>
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              Writing and Thinking
+              {homeContent.unmissables.eyebrow}
             </div>
             <div className="font-display text-[clamp(32px,5vw,64px)] font-black uppercase tracking-[-0.02em] leading-none text-charcoal">
-              Unmissables
+              {homeContent.unmissables.heading}
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Unmissables() {
           className={`grid gap-x-10 gap-y-4 mb-9 [grid-template-columns:1fr_auto] [grid-template-areas:'para_embed'_'links_links'] max-[1024px]:grid-cols-1 max-[1024px]:[grid-template-areas:'para'_'links'_'embed']`}
         >
           <p className="[grid-area:para] text-[19px] leading-[1.62] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[720px]">
-            Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
+            {homeContent.unmissables.intro}
           </p>
 
           {/* Icon links: mobile + tablet, where the embed sits full-width below */}

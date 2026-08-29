@@ -15,13 +15,16 @@ type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
 
 type HomeContent = {
+  unmissables: { eyebrow: string; heading: string; intro: string };
   unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
   positioning: { paragraphs: string[] };
   workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[] };
+  experiments: { eyebrow: string; heading: string };
   credentials: { stats: Stat[] };
   speakingTeaser: { eyebrow: string; heading: string; paragraphs: string[]; ctaLabel: string; ctaHref: string; photos: string[] };
   nameMarquee: { rows: MarqueeRow[] };
+  testimonialsSection: { eyebrow: string; heading: string };
   recognition: { eyebrow: string; heading: string; photoSrc: string; items: string[]; ctaLabel: string; ctaHref: string };
   press: { eyebrow: string; heading: string; items: PressItem[] };
   community: { heading: string; intro: string; photos: CommunityPhoto[] };
@@ -107,6 +110,15 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       <h1 className="text-2xl mb-1">Home</h1>
       <p className="text-[13px] text-[#999] mb-6">Click a section to expand and edit its fields.</p>
 
+      <SectionCard title="Unmissables" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.unmissables.heading} onChange={(e) => set("unmissables", { heading: e.target.value })} className={inputCls} /></Field>
+        <Field label="Intro">
+          <textarea rows={4} value={content.unmissables.intro} onChange={(e) => set("unmissables", { intro: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <p className="text-xs text-[#999]">Essay/podcast tiles are managed in the Unmissables collection.</p>
+      </SectionCard>
+
       <SectionCard title="Unmissables Stat" defaultExpanded={false}>
         <p className="text-xs text-[#999] mb-3">The highlighted research stat next to the Cognitive Endurance tile on Unmissables.</p>
         <Field label="Label">
@@ -180,6 +192,12 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         </div>
       </SectionCard>
 
+      <SectionCard title="Projects & Quests" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.experiments.eyebrow} onChange={(e) => set("experiments", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.experiments.heading} onChange={(e) => set("experiments", { heading: e.target.value })} className={inputCls} /></Field>
+        <p className="text-xs text-[#999]">The project cards themselves are managed in the Case Studies & Quests collection.</p>
+      </SectionCard>
+
       <SectionCard title="Credentials (stats strip)" defaultExpanded={false}>
         <div className="flex flex-col gap-2">
           {content.credentials.stats.map((s, i) => (
@@ -237,6 +255,12 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
             </div>
           ))}
         </div>
+      </SectionCard>
+
+      <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.testimonialsSection.heading} onChange={(e) => set("testimonialsSection", { heading: e.target.value })} className={inputCls} /></Field>
+        <p className="text-xs text-[#999]">Testimonials themselves are managed in the shared Testimonials collection.</p>
       </SectionCard>
 
       <SectionCard title="Recognition" defaultExpanded={false}>

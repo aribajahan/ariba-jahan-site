@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { testimonials } from "../data/home";
+import homeContent from "../../content/pages/home.json";
 
 const CARD_WIDTH = 540;
 const GAP = 24;
@@ -43,10 +44,10 @@ export default function Testimonials() {
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-4">
           <div>
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              Client Voices
+              {homeContent.testimonialsSection.eyebrow}
             </div>
             <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em]">
-              What People Say
+              {homeContent.testimonialsSection.heading}
             </div>
           </div>
         </div>

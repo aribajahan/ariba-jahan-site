@@ -76,30 +76,4 @@ export type AboutClosingLink = {
   external?: boolean;
 };
 
-export const aboutClosingLinks: AboutClosingLink[] = [
-  {
-    index: "01",
-    title: "Speaking",
-    cta: "Speaker inquiry →",
-    href: "mailto:ariba@aribajahan.com?subject=Speaker%20Request",
-  },
-  {
-    index: "02",
-    title: "Work With Me",
-    cta: "Sprints & strategy sessions →",
-    href: "mailto:ariba@aribajahan.com?subject=Work%20With%20Me%20Inquiry",
-  },
-  {
-    index: "03",
-    title: "Unmissables",
-    cta: "Read & subscribe →",
-    href: "https://www.unmissables.xyz/",
-    external: true,
-  },
-  {
-    index: "04",
-    title: "Everything Else",
-    cta: "Get in touch →",
-    href: "mailto:ariba@aribajahan.com?subject=General%20Inquiry",
-  },
-];
+export const aboutClosingLinks: AboutClosingLink[] = aboutContent.closingCTA.links;
