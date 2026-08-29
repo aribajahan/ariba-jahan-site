@@ -39,19 +39,10 @@ export default function AboutBio() {
           type="button"
           onClick={() => setExpanded((v) => !v)}
           aria-expanded={expanded}
-          className="bg-transparent border-none cursor-pointer text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[2px] mb-6 font-body min-h-11 inline-flex items-center"
+          className="bg-transparent border-none cursor-pointer text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[2px] font-body min-h-11 inline-flex items-center"
         >
           {expanded ? "Show less ←" : "Read full bio →"}
         </button>
-        <br />
-        <a
-          href="https://www.unmissables.xyz"
-          target="_blank"
-          rel="noopener"
-          className="text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[2px] min-h-11 inline-flex items-center"
-        >
-          Subscribe to Unmissables →
-        </a>
       </div>
     </section>
   );

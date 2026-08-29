@@ -7,10 +7,12 @@ import SpeakingThemes from "../components/SpeakingThemes";
 import SpeakingTestimonials from "../components/SpeakingTestimonials";
 import SpeakingEngagements from "../components/SpeakingEngagements";
 import SpeakingClosingCTA from "../components/SpeakingClosingCTA";
+import UnmissablesBanner from "../components/UnmissablesBanner";
 import Footer from "../components/Footer";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
 import { buildPageMetadata } from "../../lib/seoMeta";
+import speakingContent from "../../content/pages/speaking.json";
 
 export const metadata: Metadata = buildPageMetadata("speaking");
 
@@ -26,6 +28,11 @@ export default async function Speaking() {
       <Nav />
       <SpeakingHero />
       <SpeakingThemes />
+      <UnmissablesBanner
+        text={speakingContent.unmissablesBanner.text}
+        ctaLabel={speakingContent.unmissablesBanner.ctaLabel}
+        href={speakingContent.unmissablesBanner.href}
+      />
       <SpeakingTestimonials />
       <SpeakingEngagements />
       <SpeakingClosingCTA />

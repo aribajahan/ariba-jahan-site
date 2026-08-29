@@ -10,6 +10,7 @@ type Theme = { photoSrc: string; title: string; question: string; description: s
 type SpeakingContent = {
   hero: { eyebrow: string; photoSrc: string; headline: string; ctaLabel: string; ctaHref: string };
   themes: { eyebrow: string; heading: string; lead: string; body: string; items: Theme[] };
+  unmissablesBanner: { text: string; ctaLabel: string; href: string };
   testimonialsSection: { eyebrow: string; heading: string };
   engagements: { eyebrow: string; heading: string; intro: string; formats: string[] };
   closingCTA: { heading: string; subhead: string };
@@ -78,6 +79,15 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
             </div>
           ))}
         </div>
+      </SectionCard>
+
+      <SectionCard title="Unmissables Banner" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The subscribe callout shown between Speaking Themes and Testimonials.</p>
+        <Field label="Text">
+          <textarea rows={2} value={content.unmissablesBanner.text} onChange={(e) => set("unmissablesBanner", { text: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <Field label="CTA Label"><input value={content.unmissablesBanner.ctaLabel} onChange={(e) => set("unmissablesBanner", { ctaLabel: e.target.value })} className={inputCls} /></Field>
+        <Field label="CTA Link"><input value={content.unmissablesBanner.href} onChange={(e) => set("unmissablesBanner", { href: e.target.value })} className={`${inputCls} text-[#888]`} /></Field>
       </SectionCard>
 
       <SectionCard title="Testimonials Section Header" defaultExpanded={false}>

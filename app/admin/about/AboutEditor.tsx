@@ -27,6 +27,7 @@ type AboutContent = {
     intro: string[];
     expanded: string[];
   };
+  unmissablesBanner: { text: string; ctaLabel: string; href: string };
   careerAdvisory: {
     eyebrow: string;
     headline: string;
@@ -117,6 +118,10 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
 
   const updateCareerAdvisory = (patch: Partial<AboutContent["careerAdvisory"]>) => {
     setContent((c) => ({ ...c, careerAdvisory: { ...c.careerAdvisory, ...patch } }));
+  };
+
+  const updateUnmissablesBanner = (patch: Partial<AboutContent["unmissablesBanner"]>) => {
+    setContent((c) => ({ ...c, unmissablesBanner: { ...c.unmissablesBanner, ...patch } }));
   };
 
   const updateRecognitionFeatures = (patch: Partial<AboutContent["recognitionFeatures"]>) => {
@@ -215,6 +220,19 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
             onChange={(e) => updateBio({ expanded: e.target.value.split(/\n\s*\n/).filter(Boolean) })}
             className={`${inputCls} resize-y`}
           />
+        </Field>
+      </SectionCard>
+
+      <SectionCard title="Unmissables Banner" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The subscribe callout shown right after the Bio section.</p>
+        <Field label="Text">
+          <textarea rows={2} value={content.unmissablesBanner.text} onChange={(e) => updateUnmissablesBanner({ text: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <Field label="CTA Label">
+          <input value={content.unmissablesBanner.ctaLabel} onChange={(e) => updateUnmissablesBanner({ ctaLabel: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="CTA Link">
+          <input value={content.unmissablesBanner.href} onChange={(e) => updateUnmissablesBanner({ href: e.target.value })} className={`${inputCls} text-[#888]`} />
         </Field>
       </SectionCard>
 
