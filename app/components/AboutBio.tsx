@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { bioIntro, bioExpanded, bioEyebrow } from "../data/about";
+import { bioIntro, bioExpanded, bioEyebrow, unmissablesBanner } from "../data/about";
 
 export default function AboutBio() {
   const [expanded, setExpanded] = useState(false);
@@ -43,6 +43,16 @@ export default function AboutBio() {
         >
           {expanded ? "Show less ←" : "Read full bio →"}
         </button>
+
+        <p className="text-base leading-[1.6] text-cream/60 mt-8 mb-3">{unmissablesBanner.text}</p>
+        <a
+          href={unmissablesBanner.href}
+          target="_blank"
+          rel="noopener"
+          className="text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b border-cherish pb-[2px] min-h-11 inline-flex items-center"
+        >
+          {unmissablesBanner.ctaLabel} →
+        </a>
       </div>
     </section>
   );

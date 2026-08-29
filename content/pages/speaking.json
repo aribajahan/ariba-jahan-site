@@ -44,11 +44,6 @@
       }
     ]
   },
-  "unmissablesBanner": {
-    "text": "Weekly writing on AI, behavior, culture, and what I'm paying attention to.",
-    "ctaLabel": "Subscribe to Unmissables",
-    "href": "https://www.unmissables.xyz/"
-  },
   "testimonialsSection": {
     "eyebrow": "From the Stage",
     "heading": "What Audiences Say"

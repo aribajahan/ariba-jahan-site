@@ -221,10 +221,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
             className={`${inputCls} resize-y`}
           />
         </Field>
-      </SectionCard>
-
-      <SectionCard title="Unmissables Banner" defaultExpanded={false}>
-        <p className="text-xs text-[#999] mb-3">The subscribe callout shown right after the Bio section.</p>
+        <p className="text-[13px] font-semibold mb-2">Unmissables Nudge (shown under Read Full Bio)</p>
         <Field label="Text">
           <textarea rows={2} value={content.unmissablesBanner.text} onChange={(e) => updateUnmissablesBanner({ text: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>

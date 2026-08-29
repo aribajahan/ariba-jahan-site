@@ -9,12 +9,10 @@ import AboutBio from "../components/AboutBio";
 import CareerAdvisory from "../components/CareerAdvisory";
 import RecognitionFeatures from "../components/RecognitionFeatures";
 import AboutClosingCTA from "../components/AboutClosingCTA";
-import UnmissablesBanner from "../components/UnmissablesBanner";
 import Footer from "../components/Footer";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
 import { buildPageMetadata } from "../../lib/seoMeta";
-import aboutContent from "../../content/pages/about.json";
 
 export const metadata: Metadata = buildPageMetadata("about");
 
@@ -32,11 +30,6 @@ export default async function About() {
       <AboutIntro />
       <StoryTimeline />
       <AboutBio />
-      <UnmissablesBanner
-        text={aboutContent.unmissablesBanner.text}
-        ctaLabel={aboutContent.unmissablesBanner.ctaLabel}
-        href={aboutContent.unmissablesBanner.href}
-      />
       <CareerAdvisory />
       <RecognitionFeatures />
       <AboutClosingCTA />
