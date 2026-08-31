@@ -191,30 +191,4 @@ export type WwmClosingLink = {
   sub?: string;
 };
 
-export const wwmClosingLinks: WwmClosingLink[] = [
-  {
-    index: "01",
-    title: "Speaking",
-    cta: "Speaker inquiry →",
-    href: "mailto:ariba@aribajahan.com?subject=Speaker%20Request",
-  },
-  {
-    index: "02",
-    title: "CX Ambition Sprint",
-    cta: "Sprint inquiry →",
-    href: "mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry",
-  },
-  {
-    index: "03",
-    title: "1:1 Strategy Session",
-    cta: "Session inquiry →",
-    href: "mailto:ariba@aribajahan.com?subject=1:1%20Strategy%20Session%20Inquiry",
-  },
-  {
-    index: "04",
-    title: "Everything Else",
-    cta: "Get in touch →",
-    href: "mailto:ariba@aribajahan.com?subject=General%20Inquiry",
-    sub: "Press, career advisory, quotes, and everything else.",
-  },
-];
+export const wwmClosingLinks: WwmClosingLink[] = wwmContentForOffers.closingCTA.links;
