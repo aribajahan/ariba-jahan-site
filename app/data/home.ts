@@ -71,14 +71,4 @@ export const communityPhotos: CommunityPhoto[] = [
   ...communityPhotosBase,
 ];
 
-export type ClosingLink = {
-  index: string;
-  title: string;
-  cta: string;
-  href: string;
-  external?: boolean;
-};
-
-export const closingLinks: ClosingLink[] = homeContent.closingCTA.links;
-
 export const footerSocials = heroSocials;

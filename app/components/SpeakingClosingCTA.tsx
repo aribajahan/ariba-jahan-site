@@ -1,8 +1,8 @@
-import { closingLinks } from "../data/home";
 import speakingContent from "../../content/pages/speaking.json";
 
 export default function SpeakingClosingCTA() {
   const { closingCTA } = speakingContent;
+  const closingLinks = closingCTA.links;
 
   return (
     <section

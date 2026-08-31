@@ -64,6 +64,33 @@
   },
   "closingCTA": {
     "heading": "Bring Me to Your Event",
-    "subhead": "If you're planning an event and think this would resonate with your audience, let's talk."
+    "subhead": "If you're planning an event and think this would resonate with your audience, let's talk.",
+    "links": [
+      {
+        "index": "01",
+        "title": "Speaking",
+        "cta": "Speaker inquiry →",
+        "href": "mailto:ariba@aribajahan.com?subject=Speaker%20Request"
+      },
+      {
+        "index": "02",
+        "title": "Work With Me",
+        "cta": "Sprints & strategy sessions →",
+        "href": "/work-with-me"
+      },
+      {
+        "index": "03",
+        "title": "Unmissables",
+        "cta": "Read & subscribe →",
+        "href": "https://www.unmissables.xyz/",
+        "external": true
+      },
+      {
+        "index": "04",
+        "title": "Everything Else",
+        "cta": "Get in touch →",
+        "href": "mailto:ariba@aribajahan.com?subject=General%20Inquiry"
+      }
+    ]
   }
 }
