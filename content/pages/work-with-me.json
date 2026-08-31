@@ -143,7 +143,7 @@
         "index": "01",
         "title": "Speaking",
         "cta": "Speaker inquiry →",
-        "href": "mailto:ariba@aribajahan.com?subject=Speaker%20Request"
+        "href": "/contact"
       },
       {
         "index": "02",
@@ -154,7 +154,7 @@
       {
         "index": "03",
         "title": "1:1 Strategy Session",
-        "cta": "Session inquiry →",
+        "cta": "Session Booking →",
         "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
         "external": true
       },
@@ -162,7 +162,7 @@
         "index": "04",
         "title": "Everything Else",
         "cta": "Get in touch →",
-        "href": "mailto:ariba@aribajahan.com?subject=General%20Inquiry",
+        "href": "/contact",
         "sub": "Press, career advisory, quotes, and everything else."
       }
     ]
