@@ -23,6 +23,8 @@ export default function WorkWithMeClosingCTA() {
             <a
               key={link.index}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener" : undefined}
               className={`relative z-0 bg-charcoal border-t-[3px] border-cherish px-5 pt-9 pb-8 flex flex-col gap-[10px] transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-[6px] hover:shadow-[0_16px_26px_-10px_rgba(0,0,0,0.5)] hover:z-[1] active:-translate-y-[2px] active:shadow-[0_8px_14px_-8px_rgba(0,0,0,0.5)] active:z-[1] max-[700px]:border-t-0 max-[700px]:px-0 max-[700px]:py-5 max-[700px]:hover:translate-y-0 max-[700px]:hover:shadow-none max-[700px]:active:translate-y-0 max-[700px]:active:shadow-none ${
                 i === wwmClosingLinks.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""
               }`}

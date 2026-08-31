@@ -91,7 +91,7 @@
     ],
     "whatYouGet": "A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.",
     "ctaLabel": "Book a Session →",
-    "ctaHref": "mailto:ariba@aribajahan.com?subject=1:1%20Strategy%20Session%20Inquiry"
+    "ctaHref": "https://calendar.app.google/JYrzGFdfazcSf1S48"
   },
   "wwmTrustedBy": {
     "eyebrow": "Trusted By"
@@ -155,7 +155,8 @@
         "index": "03",
         "title": "1:1 Strategy Session",
         "cta": "Session inquiry →",
-        "href": "mailto:ariba@aribajahan.com?subject=1:1%20Strategy%20Session%20Inquiry"
+        "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
+        "external": true
       },
       {
         "index": "04",

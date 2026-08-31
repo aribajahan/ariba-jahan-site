@@ -221,6 +221,8 @@ export default function WorkWithMeOffers() {
 
                 <a
                   href={strategySessionsContent.ctaHref}
+                  target="_blank"
+                  rel="noopener"
                   className="inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
                 >
                   {strategySessionsContent.ctaLabel}

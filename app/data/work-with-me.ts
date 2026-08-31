@@ -189,6 +189,7 @@ export type WwmClosingLink = {
   cta: string;
   href: string;
   sub?: string;
+  external?: boolean;
 };
 
 export const wwmClosingLinks: WwmClosingLink[] = wwmContentForOffers.closingCTA.links;
