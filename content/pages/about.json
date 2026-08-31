@@ -115,7 +115,7 @@
         "index": "01",
         "title": "Speaking",
         "cta": "Speaker inquiry →",
-        "href": "mailto:ariba@aribajahan.com?subject=Speaker%20Request"
+        "href": "/contact"
       },
       {
         "index": "02",
@@ -134,7 +134,7 @@
         "index": "04",
         "title": "Everything Else",
         "cta": "Get in touch →",
-        "href": "mailto:ariba@aribajahan.com?subject=General%20Inquiry"
+        "href": "/contact"
       }
     ]
   }
