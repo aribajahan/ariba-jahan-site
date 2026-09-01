@@ -24,7 +24,7 @@ Give the user this as a chat summary first — it's the part they'll actually re
 
 ## Updating PROJECT_STATUS.md
 
-The file lives at the repo root: `/Users/aribajahan/1. ACTIVE/Ariba site 2026/ariba-jahan-site/PROJECT_STATUS.md`.
+The file lives at the repo root: `/Users/aribajahan/ARIBA-WORKSPACE/1-active/Ariba site 2026/ariba-jahan-site/PROJECT_STATUS.md`.
 
 - If it doesn't exist, create it using the structure below.
 - If it exists, **update it in place** — merge this session's developments into the existing sections rather than appending a new dated block. "What's built" should always reflect current reality (move finished items out of "Outstanding," add newly-built things), "Outstanding work" should reflect the current priority list (remove what's done, add what's new, re-order if priorities shifted), "Key decisions" should accumulate (don't drop old ones unless they've been explicitly superseded — note the supersession if so), and "Process notes" should stay a short, current list, not a historical log.
@@ -59,7 +59,7 @@ Don't let this file become a changelog — it's a snapshot of current state and 
 After writing the file:
 
 ```bash
-cd "/Users/aribajahan/1. ACTIVE/Ariba site 2026/ariba-jahan-site"
+cd "/Users/aribajahan/ARIBA-WORKSPACE/1-active/Ariba site 2026/ariba-jahan-site"
 git add PROJECT_STATUS.md
 git commit -m "Update PROJECT_STATUS.md: <short summary of what changed>"
 git push origin main
