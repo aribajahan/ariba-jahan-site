@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { publishFiles } from "../../../../lib/github";
+import { publishFiles, fetchContentJson } from "../../../../lib/github";
+import { buildCopyMarkdown } from "../../../../lib/copyExport.mjs";
 
 const ALLOWED_PREFIXES = ["content/", "public/uploads/"];
 const isAllowedPath = (path: string) => ALLOWED_PREFIXES.some((prefix) => path.startsWith(prefix));
@@ -27,9 +28,33 @@ export async function POST(request: Request) {
     }
   }
 
+  // Regenerate COPY.md — the readable snapshot of all site copy — so it lands in
+  // the same commit as the content it describes. Best-effort: a failure here must
+  // never block Ariba from publishing, so we log and ship the content regardless.
+  const touchesCopy =
+    fileList.some((file: { path: string }) => file.path.startsWith("content/") && file.path.endsWith(".json")) ||
+    deletionList.some((path: string) => path.startsWith("content/") && path.endsWith(".json"));
+
+  const outgoing = [...fileList];
+
+  if (touchesCopy) {
+    try {
+      const current = await fetchContentJson();
+      for (const path of deletionList) delete current[path];
+      for (const file of fileList) {
+        if (file.path.startsWith("content/") && file.path.endsWith(".json")) {
+          current[file.path] = file.content;
+        }
+      }
+      outgoing.push({ path: "COPY.md", content: buildCopyMarkdown(current) });
+    } catch (error) {
+      console.error("COPY.md regeneration failed; publishing content without it", error);
+    }
+  }
+
   try {
     const result = await publishFiles(
-      fileList,
+      outgoing,
       typeof message === "string" && message.trim() ? message : "Update site content via Studio",
       deletionList
     );

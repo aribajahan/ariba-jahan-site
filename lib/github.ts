@@ -13,6 +13,46 @@ function getClient() {
 }
 
 /**
+ * Reads every content JSON file currently on the branch, keyed by repo path.
+ *
+ * Reads from GitHub rather than the local filesystem on purpose: the deployed
+ * bundle can lag a publish by a minute or two, and generating COPY.md from a
+ * stale bundle would silently revert an unrelated section.
+ */
+export async function fetchContentJson(): Promise<Record<string, string>> {
+  const octokit = getClient();
+
+  const { data: tree } = await octokit.git.getTree({
+    owner: OWNER,
+    repo: REPO,
+    tree_sha: BRANCH,
+    recursive: "1",
+  });
+
+  const targets = tree.tree.filter(
+    (node) =>
+      node.type === "blob" &&
+      typeof node.path === "string" &&
+      node.path.startsWith("content/") &&
+      node.path.endsWith(".json") &&
+      typeof node.sha === "string"
+  );
+
+  const entries = await Promise.all(
+    targets.map(async (node) => {
+      const { data: blob } = await octokit.git.getBlob({
+        owner: OWNER,
+        repo: REPO,
+        file_sha: node.sha as string,
+      });
+      return [node.path as string, Buffer.from(blob.content, "base64").toString("utf8")] as const;
+    })
+  );
+
+  return Object.fromEntries(entries);
+}
+
+/**
  * Commits one or more file changes (and optionally deletions) to the repo as
  * a single atomic commit, so a Publish that touches several content files
  * (e.g. a page's JSON plus a newly-uploaded image) never lands as multiple
