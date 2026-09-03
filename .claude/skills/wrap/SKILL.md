@@ -24,7 +24,7 @@ Give the user this as a chat summary first — it's the part they'll actually re
 
 ## Updating PROJECT_STATUS.md
 
-The file lives at the repo root: `/Users/aribajahan/ARIBA-WORKSPACE/1-active/Ariba site 2026/ariba-jahan-site/PROJECT_STATUS.md`.
+The file lives at the repo root: `~/ARIBA-WORKSPACE/1-active/ariba-site-2026/ariba-jahan-site/PROJECT_STATUS.md`.
 
 - If it doesn't exist, create it using the structure below.
 - If it exists, **update it in place** — merge this session's developments into the existing sections rather than appending a new dated block. "What's built" should always reflect current reality (move finished items out of "Outstanding," add newly-built things), "Outstanding work" should reflect the current priority list (remove what's done, add what's new, re-order if priorities shifted), "Key decisions" should accumulate (don't drop old ones unless they've been explicitly superseded — note the supersession if so), and "Process notes" should stay a short, current list, not a historical log.
@@ -56,15 +56,35 @@ Don't let this file become a changelog — it's a snapshot of current state and 
 
 ## Committing
 
-After writing the file:
+**Don't commit `PROJECT_STATUS.md`.** It's gitignored deliberately, and the reason matters: this repo
+is **public**, and the status doc is written for Ariba, not for an audience. It carries positioning
+language, what's unfinished, what she decided against, and operational notes about how the site's
+protections work — one entry documents where page passwords are stored and how that could break.
+That's a useful note to self and a bad thing to publish.
 
-```bash
-cd "/Users/aribajahan/ARIBA-WORKSPACE/1-active/Ariba site 2026/ariba-jahan-site"
-git add PROJECT_STATUS.md
-git commit -m "Update PROJECT_STATUS.md: <short summary of what changed>"
-git push origin main
-```
+Git history is also permanent. A file committed today and deleted next week stays readable in the
+old commit forever. So the rule is not to commit it in the first place.
 
-The repo's git author is already configured correctly at the repo level (a GitHub-issued noreply address so commits count on the user's contribution graph) — don't override it or use `git config --global`.
+`PROJECT_STATUS.md` stays a local file. Write it and stop there.
 
-If there are OTHER uncommitted changes in the working tree at wrap time, don't sweep them into this commit — ask the user whether those should be committed too, or left as-is. This commit should be about the status doc.
+### Before pushing anything, report on what's private
+
+Two checks, both reported to Ariba in plain language:
+
+1. **What you're deliberately not committing, and why.** Name the files and give the one-line reason
+   ("PROJECT_STATUS.md — gitignored, internal notes, repo is public"). She should never have to
+   wonder whether something was skipped on purpose or dropped by accident.
+
+2. **Anything that looks sensitive but ISN'T protected yet.** This is the check that actually
+   prevents a leak — a gitignored file is already handled, but a *new* file nobody has classified is
+   how things slip out. Scan what's staged or untracked for: credentials, tokens, API keys, `.env`
+   files, passwords in any form, client names or client work, private contact details, anything
+   under a path holding strategy or personal notes. Flag it and stop. Don't decide on her behalf.
+
+If there are other uncommitted code or content changes at wrap time, ask whether to commit them —
+don't sweep them up unasked, and don't leave real work sitting unpushed without saying so.
+
+When you do commit here: the git author is already configured at the repo level (a GitHub-issued
+noreply address so commits count on her contribution graph) — don't override it or use
+`git config --global`. Keep commit messages descriptive of the change, not the motive; they're
+public too.

@@ -35,6 +35,11 @@ export default function PageSettingsEditor({
   const settings = pageSettings[pageKey];
   const pageSeo = seo[pageKey] ?? { title: "", description: "" };
 
+  // A saved password comes back as its HMAC digest (64 hex chars) — the publish
+  // route scrambles it and the plaintext is never stored. Show the field empty
+  // in that case rather than putting a meaningless hash in front of Ariba.
+  const passwordIsStored = /^[0-9a-f]{64}$/.test(settings.password);
+
   const updateSettings = (patch: Partial<PageSettings>) => {
     setPageSettings((s) => ({ ...s, [pageKey]: { ...s[pageKey], ...patch } }));
   };
@@ -111,10 +116,16 @@ export default function PageSettingsEditor({
               <>
                 <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mt-4 mb-[6px]">Password</label>
                 <input
-                  value={settings.password}
+                  type="text"
+                  value={passwordIsStored ? "" : settings.password}
+                  placeholder={passwordIsStored ? "Password set — type a new one to change it" : "Choose a password"}
                   onChange={(e) => updateSettings({ password: e.target.value })}
                   className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm"
                 />
+                <div className="text-xs text-[#999] mt-2">
+                  Scrambled on publish, so it&rsquo;s never readable in the site&rsquo;s code. That also means it
+                  can&rsquo;t be shown back to you here — if you forget it, set a new one.
+                </div>
               </>
             )}
             <div className="text-xs text-[#999] mt-3">
