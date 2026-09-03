@@ -10,24 +10,6 @@ _Last generated: 2026-09-03_
 
 ## Home
 
-### Unmissables
-
-**Eyebrow** — Writing and Thinking
-
-**Heading** — Unmissables
-
-**Intro** — Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
-
-### Unmissables Stat
-
-**Label** — From the research
-
-**Before** — MIT study: participants using AI showed
-
-**Highlight** — 55% lower cognitive engagement
-
-**After** — and depended on AI for subsequent tasks.
-
 ### Hero
 
 **Subhead** — I help organizations become unmissable by making sense of what AI is changing across consumer behavior, expectations, trust, and the experiences people choose.
@@ -41,118 +23,6 @@ _Last generated: 2026-09-03_
 ##### Ctas 2
 
 **Label** — Read Unmissables
-
-### Positioning
-
-**Paragraphs**
-
-My work sits at the intersection of product strategy, experience-led growth, AI, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.
-
-Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.
-
-More recently, my work has focused on AI-enabled products and experiences, and on what has to change inside an organization for AI adoption to be useful, trusted, and built to last.
-
-### Work With Me Teaser
-
-**Eyebrow** — Engagements
-
-**Heading** — Let's Work Together
-
-**Body** — Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they're identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.
-
-Let's build something unmissable.
-
-#### Offers
-
-##### Offers 1
-
-**Index** — 01
-
-**Title** — CX Ambition Sprint
-
-**Lead** — Reimagine how your organization creates value for customers.
-
-**Body** — A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.
-
-**Cta** — See the Sprint →
-
-##### Offers 2
-
-**Index** — 02
-
-**Title** — 1:1 CX Strategy Sessions
-
-**Lead** — Dedicated thinking time for leaders navigating important decisions.
-
-**Body** — Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.
-
-**Cta** — See the Sessions →
-
-### Experiments
-
-**Eyebrow** — Select Work
-
-**Heading** — Projects & Quests
-
-### Credentials
-
-#### Stats
-
-##### Stats 1
-
-**Value** — 215+
-
-**Label Line1** — Talks &
-
-**Label Line2** — Panels
-
-##### Stats 2
-
-**Value** — 6
-
-**Label Line1** — Industry
-
-**Label Line2** — Awards
-
-##### Stats 3
-
-**Value** — 2
-
-**Label Line1** — Books
-
-**Label Line2** — Contributed to
-
-##### Stats 4
-
-**Value** — 15+
-
-**Label Line1** — Years across
-
-**Label Line2** — Sectors
-
-##### Stats 5
-
-**Value** — 20+
-
-**Label Line1** — Essays & podcasts
-
-**Label Line2** — Published
-
-### Speaking Teaser
-
-**Eyebrow** — Speaking & Writing
-
-**Heading** — People + Technology
-
-**Paragraphs**
-
-I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.
-I explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.
-I’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London.
-
-**Cta Label** — Bring Me to Your Event
-
-#### Photos
 
 ### Name Marquee
 
@@ -300,11 +170,135 @@ SUNY Upstate Medical University
 
 W.M. Keck Center for Bioelectronics
 
-### Testimonials Section
+### Positioning
 
-**Eyebrow** — Client Voices
+**Paragraphs**
 
-**Heading** — What People Say
+My work sits at the intersection of product strategy, experience-led growth, AI, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.
+
+Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.
+
+More recently, my work has focused on AI-enabled products and experiences, and on what has to change inside an organization for AI adoption to be useful, trusted, and built to last.
+
+### Work With Me Teaser
+
+**Eyebrow** — Engagements
+
+**Heading** — Let's Work Together
+
+**Body** — Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they're identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.
+
+Let's build something unmissable.
+
+#### Offers
+
+##### Offers 1
+
+**Index** — 01
+
+**Title** — CX Ambition Sprint
+
+**Lead** — Reimagine how your organization creates value for customers.
+
+**Body** — A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.
+
+**Cta** — See the Sprint →
+
+##### Offers 2
+
+**Index** — 02
+
+**Title** — 1:1 CX Strategy Sessions
+
+**Lead** — Dedicated thinking time for leaders navigating important decisions.
+
+**Body** — Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.
+
+**Cta** — See the Sessions →
+
+### Unmissables
+
+**Eyebrow** — Writing and Thinking
+
+**Heading** — Unmissables
+
+**Intro** — Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work.
+
+### Unmissables Stat
+
+**Label** — From the research
+
+**Before** — MIT study: participants using AI showed
+
+**Highlight** — 55% lower cognitive engagement
+
+**After** — and depended on AI for subsequent tasks.
+
+### Credentials
+
+#### Stats
+
+##### Stats 1
+
+**Value** — 215+
+
+**Label Line1** — Talks &
+
+**Label Line2** — Panels
+
+##### Stats 2
+
+**Value** — 6
+
+**Label Line1** — Industry
+
+**Label Line2** — Awards
+
+##### Stats 3
+
+**Value** — 2
+
+**Label Line1** — Books
+
+**Label Line2** — Contributed to
+
+##### Stats 4
+
+**Value** — 15+
+
+**Label Line1** — Years across
+
+**Label Line2** — Sectors
+
+##### Stats 5
+
+**Value** — 20+
+
+**Label Line1** — Essays & podcasts
+
+**Label Line2** — Published
+
+### Speaking Teaser
+
+**Eyebrow** — Speaking & Writing
+
+**Heading** — People + Technology
+
+**Paragraphs**
+
+I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.
+I explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.
+I’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London.
+
+**Cta Label** — Bring Me to Your Event
+
+#### Photos
+
+### Experiments
+
+**Eyebrow** — Select Work
+
+**Heading** — Projects & Quests
 
 ### Recognition
 
@@ -387,6 +381,12 @@ Global Top 100 Women of the Future in Emerging Tech
 **Outlet** — AdWeek
 
 **Title** — Anomaly Appoints Ariba Jahan as Head of Transformation, NA
+
+### Testimonials Section
+
+**Eyebrow** — Client Voices
+
+**Heading** — What People Say
 
 ### Community
 
@@ -788,6 +788,48 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Label** — Book a Strategy Session
 
+### Wwm Trusted By
+
+**Eyebrow** — Trusted By
+
+### Problem Framing
+
+**Eyebrow** — Why Experience-Led Growth Is Needed Now More Than Ever
+
+**Heading** — From Share Of Attention To Share Of Life
+
+**Body** — I think more organizations need to shift from chasing attention to earning a real place in people's lives. That's what I mean by Experience-Led Growth: creating business value by becoming more useful, more relevant, and more worth returning to over time.
+
+#### Cards
+
+##### Cards 1
+
+**Title** — Trust Is Distributed
+
+**Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.
+
+##### Cards 2
+
+**Title** — Attention Isn't Relationship
+
+**Description** — Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.
+
+##### Cards 3
+
+**Title** — Expectations Became Liquid
+
+**Description** — What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.
+
+##### Cards 4
+
+**Title** — Utility Has To Justify The Ask
+
+**Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
+
+### Two Ways Divider
+
+**Heading** — Two Ways To Work Together
+
 ### Cx Sprint
 
 **Eyebrow** — 01 · I Work With Teams & Organizations
@@ -907,48 +949,6 @@ sharpening your strategic point of view before making a move
 **What You Get** — A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.
 
 **Cta Label** — Book a Session →
-
-### Wwm Trusted By
-
-**Eyebrow** — Trusted By
-
-### Problem Framing
-
-**Eyebrow** — Why Experience-Led Growth Is Needed Now More Than Ever
-
-**Heading** — From Share Of Attention To Share Of Life
-
-**Body** — I think more organizations need to shift from chasing attention to earning a real place in people's lives. That's what I mean by Experience-Led Growth: creating business value by becoming more useful, more relevant, and more worth returning to over time.
-
-#### Cards
-
-##### Cards 1
-
-**Title** — Trust Is Distributed
-
-**Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.
-
-##### Cards 2
-
-**Title** — Attention Isn't Relationship
-
-**Description** — Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.
-
-##### Cards 3
-
-**Title** — Expectations Became Liquid
-
-**Description** — What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.
-
-##### Cards 4
-
-**Title** — Utility Has To Justify The Ask
-
-**Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
-
-### Two Ways Divider
-
-**Heading** — Two Ways To Work Together
 
 ### Testimonials Section
 
