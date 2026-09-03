@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aribajahan.com
 
-## Getting Started
+My site, and the CMS I built to run it.
 
-First, run the development server:
+Live at [aribajahan.com](https://aribajahan.com).
+
+## How it works
+
+Content is JSON in this repo. Every page and collection is edited through an admin panel at `/admin`, which writes back to those files. There's no external CMS and no database.
+
+**Pages** (Home, About, Speaking, Work With Me) each hold their own copy, section by section. SEO metadata is stored separately from page content so it can be edited without touching the copy.
+
+**Collections** are repeatable and reorderable: articles, case studies and quests, testimonials, speaking logos, the speaking gallery, the reading room, the story timeline, and forms.
+
+**Articles** render through one shared template. Publishing a new piece is filling in a form, never adding a coded page. This is the native blog and it's separate from Unmissables, which lives at [unmissables.xyz](https://unmissables.xyz).
+
+**The media library** holds every uploaded image regardless of which page uses it. Alt text is drafted by a vision model on upload and always reviewed before saving. Each image tracks which page and section it appears on, so anything unused gets flagged as safe to delete.
+
+**Forms** share one template. Each form defines its own fields, accent color, and submit behavior. The contact form has category-conditional follow-up questions, inline validation, and a honeypot field. Submissions email a notification rather than waiting to be found.
+
+## Running it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000). The admin panel is at `/admin`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js and TypeScript. Deployed on Vercel.
