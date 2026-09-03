@@ -30,7 +30,7 @@ _Last generated: 2026-09-03_
 
 ### Hero
 
-**Subhead** — I help organizations become unmissable by making sense of change across technology, consumer behavior, and customer expectations.
+**Subhead** — I help organizations become unmissable by making sense of what AI is changing across consumer behavior, expectations, trust, and the experiences people choose.
 
 #### Ctas
 
