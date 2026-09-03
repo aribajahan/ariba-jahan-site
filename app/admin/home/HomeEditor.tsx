@@ -110,31 +110,6 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       <h1 className="text-2xl mb-1">Home</h1>
       <p className="text-[13px] text-[#999] mb-6">Click a section to expand and edit its fields.</p>
 
-      <SectionCard title="Unmissables" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
-        <Field label="Heading"><input value={content.unmissables.heading} onChange={(e) => set("unmissables", { heading: e.target.value })} className={inputCls} /></Field>
-        <Field label="Intro">
-          <textarea rows={4} value={content.unmissables.intro} onChange={(e) => set("unmissables", { intro: e.target.value })} className={`${inputCls} resize-y`} />
-        </Field>
-        <p className="text-xs text-[#999]">Essay/podcast tiles are managed in the Unmissables collection.</p>
-      </SectionCard>
-
-      <SectionCard title="Unmissables Stat" defaultExpanded={false}>
-        <p className="text-xs text-[#999] mb-3">The highlighted research stat next to the Cognitive Endurance tile on Unmissables.</p>
-        <Field label="Label">
-          <input value={content.unmissablesStat.label} onChange={(e) => set("unmissablesStat", { label: e.target.value })} className={inputCls} />
-        </Field>
-        <Field label="Before (text before the highlight)">
-          <input value={content.unmissablesStat.before} onChange={(e) => set("unmissablesStat", { before: e.target.value })} className={inputCls} />
-        </Field>
-        <Field label="Highlight (the emphasized phrase)">
-          <input value={content.unmissablesStat.highlight} onChange={(e) => set("unmissablesStat", { highlight: e.target.value })} className={inputCls} />
-        </Field>
-        <Field label="After (text after the highlight)">
-          <input value={content.unmissablesStat.after} onChange={(e) => set("unmissablesStat", { after: e.target.value })} className={inputCls} />
-        </Field>
-      </SectionCard>
-
       <SectionCard title="Hero">
         <Field label="Hero Photo">
           <input value={content.hero.photoSrc} onChange={(e) => set("hero", { photoSrc: e.target.value })} className={inputCls} />
@@ -157,6 +132,30 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
           ))}
         </div>
         <button type="button" onClick={addCta} className="text-xs text-[#888] border border-dashed border-[#ccc] rounded-md px-3 py-[6px]">+ Add CTA</button>
+      </SectionCard>
+
+      <SectionCard title="Name Marquee" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The scrolling strips of company/institution names. Text only, not logo images.</p>
+        <div className="flex flex-col gap-4">
+          {content.nameMarquee.rows.map((row, i) => (
+            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md">
+              <div className="flex gap-2 mb-2">
+                <input value={row.label} onChange={(e) => updateMarqueeRow(i, { label: e.target.value })} className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
+                <input
+                  type="number"
+                  value={row.durationSec}
+                  onChange={(e) => updateMarqueeRow(i, { durationSec: Number(e.target.value) })}
+                  className="w-24 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]"
+                />
+                <label className="flex items-center gap-1 text-[11px] text-[#888] whitespace-nowrap">
+                  <input type="checkbox" checked={!!row.reverse} onChange={(e) => updateMarqueeRow(i, { reverse: e.target.checked })} />
+                  reverse
+                </label>
+              </div>
+              <TagListEditor items={row.items} onChange={(items) => updateMarqueeRow(i, { items })} placeholder="Add a name…" />
+            </div>
+          ))}
+        </div>
       </SectionCard>
 
       <SectionCard title="Positioning" defaultExpanded={false}>
@@ -192,10 +191,29 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         </div>
       </SectionCard>
 
-      <SectionCard title="Projects & Quests" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.experiments.eyebrow} onChange={(e) => set("experiments", { eyebrow: e.target.value })} className={inputCls} /></Field>
-        <Field label="Heading"><input value={content.experiments.heading} onChange={(e) => set("experiments", { heading: e.target.value })} className={inputCls} /></Field>
-        <p className="text-xs text-[#999]">The project cards themselves are managed in the Case Studies & Quests collection.</p>
+      <SectionCard title="Unmissables" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.unmissables.heading} onChange={(e) => set("unmissables", { heading: e.target.value })} className={inputCls} /></Field>
+        <Field label="Intro">
+          <textarea rows={4} value={content.unmissables.intro} onChange={(e) => set("unmissables", { intro: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <p className="text-xs text-[#999]">Essay/podcast tiles are managed in the Unmissables collection.</p>
+      </SectionCard>
+
+      <SectionCard title="Unmissables Stat" defaultExpanded={false}>
+        <p className="text-xs text-[#999] mb-3">The highlighted research stat next to the Cognitive Endurance tile on Unmissables.</p>
+        <Field label="Label">
+          <input value={content.unmissablesStat.label} onChange={(e) => set("unmissablesStat", { label: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Before (text before the highlight)">
+          <input value={content.unmissablesStat.before} onChange={(e) => set("unmissablesStat", { before: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Highlight (the emphasized phrase)">
+          <input value={content.unmissablesStat.highlight} onChange={(e) => set("unmissablesStat", { highlight: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="After (text after the highlight)">
+          <input value={content.unmissablesStat.after} onChange={(e) => set("unmissablesStat", { after: e.target.value })} className={inputCls} />
+        </Field>
       </SectionCard>
 
       <SectionCard title="Credentials (stats strip)" defaultExpanded={false}>
@@ -233,34 +251,10 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         </div>
       </SectionCard>
 
-      <SectionCard title="Name Marquee" defaultExpanded={false}>
-        <p className="text-xs text-[#999] mb-3">The scrolling strips of company/institution names. Text only, not logo images.</p>
-        <div className="flex flex-col gap-4">
-          {content.nameMarquee.rows.map((row, i) => (
-            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md">
-              <div className="flex gap-2 mb-2">
-                <input value={row.label} onChange={(e) => updateMarqueeRow(i, { label: e.target.value })} className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
-                <input
-                  type="number"
-                  value={row.durationSec}
-                  onChange={(e) => updateMarqueeRow(i, { durationSec: Number(e.target.value) })}
-                  className="w-24 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]"
-                />
-                <label className="flex items-center gap-1 text-[11px] text-[#888] whitespace-nowrap">
-                  <input type="checkbox" checked={!!row.reverse} onChange={(e) => updateMarqueeRow(i, { reverse: e.target.checked })} />
-                  reverse
-                </label>
-              </div>
-              <TagListEditor items={row.items} onChange={(items) => updateMarqueeRow(i, { items })} placeholder="Add a name…" />
-            </div>
-          ))}
-        </div>
-      </SectionCard>
-
-      <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
-        <Field label="Heading"><input value={content.testimonialsSection.heading} onChange={(e) => set("testimonialsSection", { heading: e.target.value })} className={inputCls} /></Field>
-        <p className="text-xs text-[#999]">Testimonials themselves are managed in the shared Testimonials collection.</p>
+      <SectionCard title="Projects & Quests" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.experiments.eyebrow} onChange={(e) => set("experiments", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.experiments.heading} onChange={(e) => set("experiments", { heading: e.target.value })} className={inputCls} /></Field>
+        <p className="text-xs text-[#999]">The project cards themselves are managed in the Case Studies & Quests collection.</p>
       </SectionCard>
 
       <SectionCard title="Recognition" defaultExpanded={false}>
@@ -298,6 +292,12 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
           ))}
         </div>
         <button type="button" onClick={addPressItem} className="text-xs text-[#888] border border-dashed border-[#ccc] rounded-md px-3 py-[6px]">+ Add Press Item</button>
+      </SectionCard>
+
+      <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
+        <Field label="Eyebrow"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Heading"><input value={content.testimonialsSection.heading} onChange={(e) => set("testimonialsSection", { heading: e.target.value })} className={inputCls} /></Field>
+        <p className="text-xs text-[#999]">Testimonials themselves are managed in the shared Testimonials collection.</p>
       </SectionCard>
 
       <SectionCard title="Community" defaultExpanded={false}>

@@ -1,15 +1,4 @@
 {
-  "unmissables": {
-    "eyebrow": "Writing and Thinking",
-    "heading": "Unmissables",
-    "intro": "Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work."
-  },
-  "unmissablesStat": {
-    "label": "From the research",
-    "before": "MIT study: participants using AI showed",
-    "highlight": "55% lower cognitive engagement",
-    "after": "and depended on AI for subsequent tasks."
-  },
   "hero": {
     "photoSrc": "/assets/hero-photo.jpg",
     "subhead": "I help organizations become unmissable by making sense of what AI is changing across consumer behavior, expectations, trust, and the experiences people choose.",
@@ -22,85 +11,6 @@
         "label": "Read Unmissables",
         "href": "#unmissables"
       }
-    ]
-  },
-  "positioning": {
-    "paragraphs": [
-      "My work sits at the intersection of product strategy, experience-led growth, AI, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.",
-      "Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.",
-      "More recently, my work has focused on AI-enabled products and experiences, and on what has to change inside an organization for AI adoption to be useful, trusted, and built to last."
-    ]
-  },
-  "workWithMeTeaser": {
-    "eyebrow": "Engagements",
-    "heading": "Let's Work Together",
-    "body": "Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they're identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.\n\nLet's build something unmissable.",
-    "offers": [
-      {
-        "index": "01",
-        "title": "CX Ambition Sprint",
-        "lead": "Reimagine how your organization creates value for customers.",
-        "body": "A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.",
-        "cta": "See the Sprint →",
-        "href": "/work-with-me#cx-sprint"
-      },
-      {
-        "index": "02",
-        "title": "1:1 CX Strategy Sessions",
-        "lead": "Dedicated thinking time for leaders navigating important decisions.",
-        "body": "Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.",
-        "cta": "See the Sessions →",
-        "href": "/work-with-me#strategy-sessions"
-      }
-    ]
-  },
-  "experiments": {
-    "eyebrow": "Select Work",
-    "heading": "Projects & Quests"
-  },
-  "credentials": {
-    "stats": [
-      {
-        "value": "215+",
-        "labelLine1": "Talks &",
-        "labelLine2": "Panels"
-      },
-      {
-        "value": "6",
-        "labelLine1": "Industry",
-        "labelLine2": "Awards"
-      },
-      {
-        "value": "2",
-        "labelLine1": "Books",
-        "labelLine2": "Contributed to"
-      },
-      {
-        "value": "15+",
-        "labelLine1": "Years across",
-        "labelLine2": "Sectors"
-      },
-      {
-        "value": "20+",
-        "labelLine1": "Essays & podcasts",
-        "labelLine2": "Published"
-      }
-    ]
-  },
-  "speakingTeaser": {
-    "eyebrow": "Speaking & Writing",
-    "heading": "People + Technology",
-    "paragraphs": [
-      "I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
-    ],
-    "ctaLabel": "Bring Me to Your Event",
-    "ctaHref": "/speaking",
-    "photos": [
-      "/assets/speaking-photo-1.jpg",
-      "/assets/speaking-photo-2.jpg",
-      "/assets/speaking-photo-3.jpg",
-      "/assets/speaking-photo-4.jpg",
-      "/assets/speaking-photo-5.jpg"
     ]
   },
   "nameMarquee": {
@@ -188,9 +98,95 @@
       }
     ]
   },
-  "testimonialsSection": {
-    "eyebrow": "Client Voices",
-    "heading": "What People Say"
+  "positioning": {
+    "paragraphs": [
+      "My work sits at the intersection of product strategy, experience-led growth, AI, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.",
+      "Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.",
+      "More recently, my work has focused on AI-enabled products and experiences, and on what has to change inside an organization for AI adoption to be useful, trusted, and built to last."
+    ]
+  },
+  "workWithMeTeaser": {
+    "eyebrow": "Engagements",
+    "heading": "Let's Work Together",
+    "body": "Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they're identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.\n\nLet's build something unmissable.",
+    "offers": [
+      {
+        "index": "01",
+        "title": "CX Ambition Sprint",
+        "lead": "Reimagine how your organization creates value for customers.",
+        "body": "A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.",
+        "cta": "See the Sprint →",
+        "href": "/work-with-me#cx-sprint"
+      },
+      {
+        "index": "02",
+        "title": "1:1 CX Strategy Sessions",
+        "lead": "Dedicated thinking time for leaders navigating important decisions.",
+        "body": "Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.",
+        "cta": "See the Sessions →",
+        "href": "/work-with-me#strategy-sessions"
+      }
+    ]
+  },
+  "unmissables": {
+    "eyebrow": "Writing and Thinking",
+    "heading": "Unmissables",
+    "intro": "Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work."
+  },
+  "unmissablesStat": {
+    "label": "From the research",
+    "before": "MIT study: participants using AI showed",
+    "highlight": "55% lower cognitive engagement",
+    "after": "and depended on AI for subsequent tasks."
+  },
+  "credentials": {
+    "stats": [
+      {
+        "value": "215+",
+        "labelLine1": "Talks &",
+        "labelLine2": "Panels"
+      },
+      {
+        "value": "6",
+        "labelLine1": "Industry",
+        "labelLine2": "Awards"
+      },
+      {
+        "value": "2",
+        "labelLine1": "Books",
+        "labelLine2": "Contributed to"
+      },
+      {
+        "value": "15+",
+        "labelLine1": "Years across",
+        "labelLine2": "Sectors"
+      },
+      {
+        "value": "20+",
+        "labelLine1": "Essays & podcasts",
+        "labelLine2": "Published"
+      }
+    ]
+  },
+  "speakingTeaser": {
+    "eyebrow": "Speaking & Writing",
+    "heading": "People + Technology",
+    "paragraphs": [
+      "I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
+    ],
+    "ctaLabel": "Bring Me to Your Event",
+    "ctaHref": "/speaking",
+    "photos": [
+      "/assets/speaking-photo-1.jpg",
+      "/assets/speaking-photo-2.jpg",
+      "/assets/speaking-photo-3.jpg",
+      "/assets/speaking-photo-4.jpg",
+      "/assets/speaking-photo-5.jpg"
+    ]
+  },
+  "experiments": {
+    "eyebrow": "Select Work",
+    "heading": "Projects & Quests"
   },
   "recognition": {
     "eyebrow": "Credentials",
@@ -274,6 +270,10 @@
         "bg": "#2D2D2D"
       }
     ]
+  },
+  "testimonialsSection": {
+    "eyebrow": "Client Voices",
+    "heading": "What People Say"
   },
   "community": {
     "heading": "Community",

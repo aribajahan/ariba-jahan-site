@@ -171,6 +171,41 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
         </div>
       </SectionCard>
 
+      <SectionCard title="Trusted By" defaultExpanded={false}>
+        <Field label="Eyebrow">
+          <input value={content.wwmTrustedBy.eyebrow} onChange={(e) => updateWwmTrustedBy({ eyebrow: e.target.value })} className={inputCls} />
+        </Field>
+        <p className="text-xs text-[#999]">Logos are managed in code, not here.</p>
+      </SectionCard>
+
+      <SectionCard title="Problem Framing" defaultExpanded={false}>
+        <Field label="Eyebrow">
+          <input value={content.problemFraming.eyebrow} onChange={(e) => updateProblemFraming({ eyebrow: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Heading">
+          <input value={content.problemFraming.heading} onChange={(e) => updateProblemFraming({ heading: e.target.value })} className={inputCls} />
+        </Field>
+        <Field label="Body">
+          <textarea rows={4} value={content.problemFraming.body} onChange={(e) => updateProblemFraming({ body: e.target.value })} className={`${inputCls} resize-y`} />
+        </Field>
+        <label className="block text-[13px] font-semibold mb-[10px]">Problem Cards</label>
+        <div className="flex flex-col gap-3">
+          {content.problemFraming.cards.map((card, i) => (
+            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
+              <input value={card.title} onChange={(e) => updateProblemCard(i, { title: e.target.value })} placeholder="Title" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
+              <input value={card.photoSrc} onChange={(e) => updateProblemCard(i, { photoSrc: e.target.value })} placeholder="Photo path" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+              <textarea value={card.description} onChange={(e) => updateProblemCard(i, { description: e.target.value })} placeholder="Description" rows={3} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
+            </div>
+          ))}
+        </div>
+      </SectionCard>
+
+      <SectionCard title="Two Ways Divider" defaultExpanded={false}>
+        <Field label="Heading">
+          <input value={content.twoWaysDivider.heading} onChange={(e) => updateTwoWaysDivider({ heading: e.target.value })} className={inputCls} />
+        </Field>
+      </SectionCard>
+
       <SectionCard title="CX Ambition Sprint" defaultExpanded={false}>
         <Field label="Eyebrow">
           <input value={content.cxSprint.eyebrow} onChange={(e) => updateCxSprint({ eyebrow: e.target.value })} className={inputCls} />
@@ -269,41 +304,6 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
             <input value={content.strategySessions.ctaHref} onChange={(e) => updateStrategySessions({ ctaHref: e.target.value })} className={inputCls} />
           </Field>
         </div>
-      </SectionCard>
-
-      <SectionCard title="Trusted By" defaultExpanded={false}>
-        <Field label="Eyebrow">
-          <input value={content.wwmTrustedBy.eyebrow} onChange={(e) => updateWwmTrustedBy({ eyebrow: e.target.value })} className={inputCls} />
-        </Field>
-        <p className="text-xs text-[#999]">Logos are managed in code, not here.</p>
-      </SectionCard>
-
-      <SectionCard title="Problem Framing" defaultExpanded={false}>
-        <Field label="Eyebrow">
-          <input value={content.problemFraming.eyebrow} onChange={(e) => updateProblemFraming({ eyebrow: e.target.value })} className={inputCls} />
-        </Field>
-        <Field label="Heading">
-          <input value={content.problemFraming.heading} onChange={(e) => updateProblemFraming({ heading: e.target.value })} className={inputCls} />
-        </Field>
-        <Field label="Body">
-          <textarea rows={4} value={content.problemFraming.body} onChange={(e) => updateProblemFraming({ body: e.target.value })} className={`${inputCls} resize-y`} />
-        </Field>
-        <label className="block text-[13px] font-semibold mb-[10px]">Problem Cards</label>
-        <div className="flex flex-col gap-3">
-          {content.problemFraming.cards.map((card, i) => (
-            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
-              <input value={card.title} onChange={(e) => updateProblemCard(i, { title: e.target.value })} placeholder="Title" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
-              <input value={card.photoSrc} onChange={(e) => updateProblemCard(i, { photoSrc: e.target.value })} placeholder="Photo path" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
-              <textarea value={card.description} onChange={(e) => updateProblemCard(i, { description: e.target.value })} placeholder="Description" rows={3} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
-            </div>
-          ))}
-        </div>
-      </SectionCard>
-
-      <SectionCard title="Two Ways Divider" defaultExpanded={false}>
-        <Field label="Heading">
-          <input value={content.twoWaysDivider.heading} onChange={(e) => updateTwoWaysDivider({ heading: e.target.value })} className={inputCls} />
-        </Field>
       </SectionCard>
 
       <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
