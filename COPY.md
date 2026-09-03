@@ -46,11 +46,11 @@ _Last generated: 2026-09-03_
 
 **Paragraphs**
 
-My work sits at the intersection of product strategy, experience-led growth, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.
+My work sits at the intersection of product strategy, experience-led growth, AI, emerging technology, and organizational change. I’m usually brought in when something is shifting, whether that’s customer expectations, technology, consumer behavior, or the market, and a team needs to figure out what that means for customer adoption, growth, and the products or experiences they need to evolve next.
 
-Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations to support those initiatives.
+Over the past fifteen years, I’ve built products, customer experiences, new offerings, and GTM strategies. I’ve also built teams and departmental functions from the ground up across startups, nonprofits, agencies, and Fortune 500 organizations.
 
-More recently, my work has focused on AI-enabled products and experiences, and organizational AI adoption.
+More recently, my work has focused on AI-enabled products and experiences, and on what has to change inside an organization for AI adoption to be useful, trusted, and built to last.
 
 ### Work With Me Teaser
 
