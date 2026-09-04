@@ -14,7 +14,7 @@ Content is JSON in this repo. Every page and collection is edited through an adm
 
 **Articles** render through one shared template. Publishing a new piece is filling in a form, never adding a coded page. This is the native blog and it's separate from Unmissables, which lives at [unmissables.xyz](https://unmissables.xyz).
 
-**The media library** holds every uploaded image regardless of which page uses it. Alt text is drafted by a vision model on upload and always reviewed before saving. Each image tracks which page and section it appears on, so anything unused gets flagged as safe to delete.
+**The media library** holds every uploaded image regardless of which page uses it. Alt text is written when an image is uploaded. Each image tracks which page and section it appears on, so anything unused gets flagged as safe to delete.
 
 **Forms** share one template. Each form defines its own fields, accent color, and submit behavior. The contact form has category-conditional follow-up questions, inline validation, and a honeypot field. Submissions email a notification rather than waiting to be found.
 
