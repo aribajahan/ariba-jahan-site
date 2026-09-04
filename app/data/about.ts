@@ -54,7 +54,7 @@ export const bioIntro: string[] = aboutContent.bio.intro;
 export const bioExpanded: string[] = aboutContent.bio.expanded;
 export const bioEyebrow = aboutContent.bio.eyebrow;
 
-export const unmissablesBanner = aboutContent.unmissablesBanner;
+export const unmissablesNudge = aboutContent.unmissablesNudge;
 
 export const careerAdvisory = aboutContent.careerAdvisory;
 

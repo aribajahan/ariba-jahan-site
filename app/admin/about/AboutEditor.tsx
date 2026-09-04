@@ -27,7 +27,7 @@ type AboutContent = {
     intro: string[];
     expanded: string[];
   };
-  unmissablesBanner: { text: string; ctaLabel: string; href: string };
+  unmissablesNudge: { text: string; ctaLabel: string; href: string };
   careerAdvisory: {
     eyebrow: string;
     headline: string;
@@ -120,8 +120,8 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
     setContent((c) => ({ ...c, careerAdvisory: { ...c.careerAdvisory, ...patch } }));
   };
 
-  const updateUnmissablesBanner = (patch: Partial<AboutContent["unmissablesBanner"]>) => {
-    setContent((c) => ({ ...c, unmissablesBanner: { ...c.unmissablesBanner, ...patch } }));
+  const updateUnmissablesNudge = (patch: Partial<AboutContent["unmissablesNudge"]>) => {
+    setContent((c) => ({ ...c, unmissablesNudge: { ...c.unmissablesNudge, ...patch } }));
   };
 
   const updateRecognitionFeatures = (patch: Partial<AboutContent["recognitionFeatures"]>) => {
@@ -223,13 +223,13 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
         </Field>
         <p className="text-[13px] font-semibold mb-2">Unmissables Nudge (shown under Read Full Bio)</p>
         <Field label="Text">
-          <textarea rows={2} value={content.unmissablesBanner.text} onChange={(e) => updateUnmissablesBanner({ text: e.target.value })} className={`${inputCls} resize-y`} />
+          <textarea rows={2} value={content.unmissablesNudge.text} onChange={(e) => updateUnmissablesNudge({ text: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
         <Field label="CTA Label">
-          <input value={content.unmissablesBanner.ctaLabel} onChange={(e) => updateUnmissablesBanner({ ctaLabel: e.target.value })} className={inputCls} />
+          <input value={content.unmissablesNudge.ctaLabel} onChange={(e) => updateUnmissablesNudge({ ctaLabel: e.target.value })} className={inputCls} />
         </Field>
         <Field label="CTA Link">
-          <input value={content.unmissablesBanner.href} onChange={(e) => updateUnmissablesBanner({ href: e.target.value })} className={`${inputCls} text-[#888]`} />
+          <input value={content.unmissablesNudge.href} onChange={(e) => updateUnmissablesNudge({ href: e.target.value })} className={`${inputCls} text-[#888]`} />
         </Field>
       </SectionCard>
 
