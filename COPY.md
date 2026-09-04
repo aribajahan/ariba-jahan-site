@@ -12,7 +12,7 @@ _Last generated: 2026-09-04_
 
 ### Hero
 
-**Subhead** — I help organizations build unmissable products and experiences for an AI-shaped world, grounded in changing consumer behavior, expectations, and trust.
+**Subhead** — I help organizations build unmissable products and experiences as AI reshapes consumer behavior, expectations, and trust.
 
 #### Ctas
 
