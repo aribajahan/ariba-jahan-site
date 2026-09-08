@@ -69,7 +69,7 @@ export const caseStudies: CaseStudy[] = [
       "The work reframed the problem from “how do we make badges better?” to “what would make people want to come back in the first place?” From there, the team developed an engagement strategy built around real financial behaviors, meaningful progress, and a stronger role for Ally in customers' everyday financial lives.",
     impact:
       "The result was a clearer strategic direction, a set of experience concepts, and an MVP path the product team could use to align leadership and build toward a more engaging, higher-value customer relationship.",
-    roleContext: "Head of CX Transformation at Anomaly | Led cross-disciplinary teams across CX strategy & design",
+    roleContext: "Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design",
     testimonial: {
       quote:
         "Ariba was an incredible partner as our teams collaborated and co-created on a strategy for deepening customer relationships within the Ally app. She helped us think in terms of how to bring real customer value in a space that is often purely transactional, delivering exciting concepts my team could pick up and run with.",
@@ -91,7 +91,7 @@ export const caseStudies: CaseStudy[] = [
       "The work reframed the experience around a broader idea of progress, with concepts for adaptive onboarding, more personalized pacing, and a product experience that could respond better to different life stages, goals, and rhythms. It also included a deep look at the competitive landscape and the kinds of experiences shaping expectations across the category.",
     impact:
       "The result was a deep 150+ page competitive ecosystem audit, a clearer Experience-Led Growth opportunity, and a CX strategy framework and 10+ ownable concepts WeightWatchers could use across onboarding, dashboard, curriculum, and the wider product experience.",
-    roleContext: "Head of CX Transformation at Anomaly | Led cross-disciplinary teams across CX strategy & design",
+    roleContext: "Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design",
     testimonial: {
       quote:
         "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.",
@@ -113,7 +113,7 @@ export const caseStudies: CaseStudy[] = [
       "The work started with qualitative research with enterprise prospects to understand workflow needs, friction points, and what would make the platform genuinely useful. From there, the product strategy, value proposition, and competitive moat were developed in close partnership with a product manager, designer, data engineers, and other cross-functional collaborators, alongside a high-fidelity prototype and funding narrative.",
     impact:
       "The work helped secure funding, sharpened the platform's enterprise positioning, and gave the team a stronger foundation for building an AI-native research product with a clear point of view on where it could win.",
-    roleContext: "Head of CX Transformation at Anomaly | Led cross-disciplinary teams across CX strategy & design",
+    roleContext: "Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design",
     testimonial: {
       quote:
         "I worked with Ariba on an enterprise AI SaaS platform for researchers and creatives, from research through product strategy, user testing, and go-to-market. She could sit with potential customers, pull out what they actually needed, and turn it into a product direction. Customers, engineers, and executives all trusted her judgment.",
@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
       "The work shaped an end-to-end experience strategy that combined creator-led inspiration, conversational AI, virtual try-on, and seamless checkout into a more connected discovery journey. The goal was to make AI feel additive to the shopping experience rather than bolted onto it.",
     impact:
       "The result was a flagship AI-native retail concept and strategic narrative that helped secure executive buy-in and internal funding for a new kind of shopping experience.",
-    roleContext: "Head of CX Transformation at Anomaly | Led cross-disciplinary teams across CX strategy & design",
+    roleContext: "Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design",
   },
   {
     tagRotationDeg: -3,
