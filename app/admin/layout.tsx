@@ -13,7 +13,8 @@ const PAGES = [
 
 const COLLECTIONS = [
   { label: "Articles", href: "/admin/articles" },
-  { label: "Case Studies & Quests", href: "/admin/case-studies" },
+  { label: "Case Studies (Work With Me)", href: "/admin/wwm-case-studies" },
+  { label: "Select Work (Home)", href: "/admin/case-studies" },
   { label: "Story Timeline", href: "/admin/story-timeline" },
   { label: "Testimonials", href: "/admin/testimonials" },
   { label: "Unmissables", href: "/admin/unmissables" },
