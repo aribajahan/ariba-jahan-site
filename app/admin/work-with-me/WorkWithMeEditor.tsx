@@ -206,7 +206,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
         </Field>
       </SectionCard>
 
-      <SectionCard title="CX Ambition Sprint" defaultExpanded={false}>
+      <SectionCard title="Strategic Ambition Sprint" defaultExpanded={false}>
         <Field label="Eyebrow">
           <input value={content.cxSprint.eyebrow} onChange={(e) => updateCxSprint({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
@@ -263,7 +263,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
         </div>
       </SectionCard>
 
-      <SectionCard title="1:1 CX Strategy Sessions" defaultExpanded={false}>
+      <SectionCard title="1:1 Strategy Sessions" defaultExpanded={false}>
         <Field label="Eyebrow">
           <input value={content.strategySessions.eyebrow} onChange={(e) => updateStrategySessions({ eyebrow: e.target.value })} className={inputCls} />
         </Field>

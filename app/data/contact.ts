@@ -6,7 +6,7 @@ export const contactPhotoSrc = "/uploads/personal-red-wall-shoes.jpg";
 
 export const reasonOptions: { value: ContactReason; label: string }[] = [
   { value: "speaking", label: "Speaking inquiry" },
-  { value: "advisory", label: "CX Sprint / advisory" },
+  { value: "advisory", label: "Ambition Sprint / advisory" },
   { value: "career", label: "Career Advisory" },
   { value: "press", label: "Press or media" },
   { value: "other", label: "Something else" },

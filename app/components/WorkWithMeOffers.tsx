@@ -21,9 +21,9 @@ export default function WorkWithMeOffers() {
 
   return (
     <>
-      {/* CX Ambition Sprint */}
+      {/* Strategic Ambition Sprint */}
       <section
-        id="cx-sprint"
+        id="ambition-sprint"
         className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9 px-[clamp(24px,5vw,80px)]"
       >
         <div className="max-w-[1400px] mx-auto">
@@ -38,7 +38,7 @@ export default function WorkWithMeOffers() {
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
               <Image quality={90}
                 src={cxSprintContent.photoSrc}
-                alt="CX Ambition Sprint"
+                alt="Strategic Ambition Sprint"
                 fill
                 sizes="(max-width: 1024px) 100vw, 440px"
                 style={{ objectFit: "cover" }}
@@ -155,7 +155,7 @@ export default function WorkWithMeOffers() {
         </div>
       </section>
 
-      {/* 1:1 CX Strategy Sessions */}
+      {/* 1:1 Strategy Sessions */}
       <section
         id="strategy-sessions"
         className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"

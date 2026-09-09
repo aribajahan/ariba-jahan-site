@@ -123,7 +123,7 @@ Let's build something unmissable.
 
 #### Offers
 
-##### 1. CX Ambition Sprint
+##### 1. Strategic Ambition Sprint
 
 **Index** — 01
 
@@ -133,7 +133,7 @@ Let's build something unmissable.
 
 **CTA** — See the Sprint →
 
-##### 2. 1:1 CX Strategy Sessions
+##### 2. 1:1 Strategy Sessions
 
 **Index** — 02
 
@@ -643,7 +643,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Eyebrow** — 01 · I Work With Teams & Organizations
 
-**Heading** — CX Ambition Sprint
+**Heading** — Strategic Ambition Sprint
 
 **Intro** — A 6-week sprint for teams that need a sharper point of view on how their product, service, or experience should evolve.
 
@@ -710,7 +710,7 @@ This sprint helps you step back, see the experience more clearly, and make bette
 
 **Eyebrow** — 02 · I Work With Individual Leaders
 
-**Heading** — 1:1 CX Strategy Sessions
+**Heading** — 1:1 Strategy Sessions
 
 **Intro** — A focused session for leaders working through a product, customer experience, growth, or AI-related decision.
 
@@ -762,7 +762,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **CTA** — Speaker inquiry →
 
-##### 2. CX Ambition Sprint
+##### 2. Strategic Ambition Sprint
 
 **Index** — 02
 

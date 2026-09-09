@@ -6,7 +6,7 @@
     "ctas": [
       {
         "label": "Explore Sprints",
-        "href": "#cx-sprint"
+        "href": "#ambition-sprint"
       },
       {
         "label": "Book a Strategy Session",
@@ -49,7 +49,7 @@
   },
   "cxSprint": {
     "eyebrow": "01 · I Work With Teams & Organizations",
-    "heading": "CX Ambition Sprint",
+    "heading": "Strategic Ambition Sprint",
     "photoSrc": "/uploads/vox1-copy-opt.jpg",
     "intro": "A 6-week sprint for teams that need a sharper point of view on how their product, service, or experience should evolve.",
     "body": [
@@ -107,7 +107,7 @@
   },
   "strategySessions": {
     "eyebrow": "02 · I Work With Individual Leaders",
-    "heading": "1:1 CX Strategy Sessions",
+    "heading": "1:1 Strategy Sessions",
     "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
     "intro": "A focused session for leaders working through a product, customer experience, growth, or AI-related decision.",
     "body": [
@@ -147,7 +147,7 @@
       },
       {
         "index": "02",
-        "title": "CX Ambition Sprint",
+        "title": "Strategic Ambition Sprint",
         "cta": "Sprint inquiry →",
         "href": "mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry"
       },
