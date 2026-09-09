@@ -1,0 +1,117 @@
+# Site dictionary — every proper noun the site uses, in its one correct form.
+#
+# Checks A17 (spelling) and A18 (one spelling per name) read this file. A name
+# here is correct by definition, so a second form of it fails the check.
+#
+# Lines starting with # are ignored. Add a word when it's genuinely a name the
+# site should use; don't add one to silence a real typo.
+#
+# DRAFT — seeded from the current site copy on Sept 9 2026. Everything below the
+# DECIDE block was taken as-is from what's published, which means it inherits
+# whatever is already wrong. Correct it before this file is trusted.
+
+# ---------------------------------------------------------------- DECIDE
+# Both forms are live on the site right now. Pick one per line, delete the
+# other, and move it into the list below. Until then A18 can't run.
+#
+# Decided Sept 9 2026 and applied to the site copy: ADCOLOR, Topgolf,
+# DesignOps Summit, NFTNYC, Women in Innovation, WeightWatchers.
+#
+# DECIDE: Adweek  /  AdWeek
+# DECIDE: US Forest Service  /  U.S. Forest Service
+#
+# Not a conflict, left alone: Paramount and Paramount+ are different things, and
+# SPEAKING / BUILD / CHIEF appear in caps as styling rather than as spellings.
+
+# ---------------------------------------------------------------- people
+Ariba
+Jahan
+Aditi Rajagopal
+Amanda Nguyen
+Amanda Ramos
+Ambreen Molitor
+Anastasia Goodstein
+Ashley Rudolph
+Caitlin Keeley
+Carrie Ingoglia
+Daniel Burka
+Danielle Barnes
+David Dylan Thomas
+Greg Kelly
+Jen Cotton
+Kathleen Kayse
+Keely Adler
+Kit Krugman
+Kyle Hagge
+Lauren Lavalle
+Mansoor Basha
+Michelle Green
+Mira Myllylä
+Nabiha Syed
+Rebecca Groves
+Rich Barrett
+Simon Nobili
+
+# -------------------------------------------------- organizations & clients
+AARP
+Ad Council
+AIGA
+ADCOLOR
+Ally
+Ally Bank
+Anomaly
+Asha
+Atlantic Studios
+Etsy
+Foursquare
+Google
+HubSpot
+Huntsman Mental Health Institute
+Mozilla Foundation
+Paramount
+Paramount+
+Reaktor
+Stagwell
+Stagwell Marketing Cloud
+The Harris Poll
+TIAA
+TikTok
+Topgolf
+US Forest Service
+Vox
+Vox Media
+WeightWatchers
+Women in Innovation
+Zocdoc
+
+# ------------------------------------------------- events & publications
+Advertising Week
+AIGA NY
+Campaign US
+Cosmopolitan ME
+CXSphere
+DesignOps Summit
+LBB Online
+Leading Design
+Marketing Brew
+Morning Brew
+NFTNYC
+Obama Foundation
+Women Talk Design
+
+# --------------------------------------------------------- Ariba's own terms
+Unmissables
+Cognitive Endurance
+Experience-Led Growth
+The Human Loop
+WIN Forge
+
+# --------------------------------------------------------- technical terms
+AI
+AI-native
+AI-driven
+CX
+GTM
+SaaS
+UI
+UX

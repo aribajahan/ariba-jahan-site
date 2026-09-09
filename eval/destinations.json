@@ -1,0 +1,54 @@
+{
+  "_comment": [
+    "Where the links that carry weight are supposed to point. Check A16 fails when",
+    "one of these changes, because nothing can infer that 'Read Unmissables' belongs",
+    "on Substack rather than anywhere else.",
+    "",
+    "Only anchors go here — the destinations that would cost something if they broke.",
+    "Press and article links are not pinned; they change as coverage accumulates and",
+    "are covered by A15, which just checks they still return 200.",
+    "",
+    "DRAFT, Sept 9 2026. Seeded from the current site. Confirm each one is right.",
+    "'label' is the text or context the link appears under; 'url' is what it must be."
+  ],
+
+  "anchors": [
+    {
+      "name": "Unmissables — Substack",
+      "label": "Read Unmissables",
+      "url": "https://www.unmissables.xyz/",
+      "note": "Also the source for the embed and every /p/ article link."
+    },
+    {
+      "name": "Unmissables — Apple Podcasts",
+      "label": "Listen on Apple",
+      "url": "https://podcasts.apple.com/ph/podcast/unmissables-with-ariba-jahan/id1707384312",
+      "note": "CONFIRM — this is a Philippines (/ph/) store URL. A US (/us/) link is the usual choice."
+    },
+    {
+      "name": "Unmissables — Spotify",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD",
+      "note": "The live link carries a ?si= share token. Pinning the bare show URL; confirm you want the token dropped."
+    },
+    {
+      "name": "Booking — 1:1 strategy session",
+      "label": "Book a Session",
+      "url": "https://calendar.app.google/JYrzGFdfazcSf1S48",
+      "note": "The only link on the site that takes money-adjacent action. Worth checking most often."
+    },
+    {
+      "name": "Site canonical",
+      "label": "(metadata)",
+      "url": "https://aribajahan.com",
+      "note": "Used in sitemap and metadata. A mismatch here quietly breaks SEO."
+    }
+  ],
+
+  "missing": [
+    {
+      "name": "LinkedIn profile",
+      "note": "The site links a LinkedIn feed post but never her profile. Add the profile URL here if it should be pinned — or decide the site deliberately doesn't link out to it."
+    }
+  ]
+}

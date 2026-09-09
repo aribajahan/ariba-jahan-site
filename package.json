@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "copy": "node scripts/export-copy.mjs"
+    "copy": "node scripts/export-copy.mjs",
+    "check": "node eval/check.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.2",
