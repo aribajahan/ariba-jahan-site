@@ -205,7 +205,7 @@ Let's build something unmissable.
 
 I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.
 I explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.
-I’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London.
+I’ve delivered 215+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London.
 
 **CTA Label** — Bring Me to Your Event
 
@@ -844,7 +844,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Eyebrow** — Selected Speaking Engagements
 
-**Heading** — Spoken At 200+ Gatherings
+**Heading** — Spoken At 215+ Gatherings
 
 **Intro** — I've had the privilege of speaking at more than 200 conferences, leadership events, executive offsites, universities, and workshops, including the United Nations General Assembly, Google, TikTok, Paramount, and Vox Media.
 
