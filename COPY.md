@@ -1838,7 +1838,7 @@ Podcast Interviews
 
 **Title** — Turning everyday banking into a reason to come back
 
-**Summary** — Rethinking how a banking app could create more value towards customers financial goals between transactions, without relying on dark patterns.
+**Summary** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
 
 **Pills**
 
