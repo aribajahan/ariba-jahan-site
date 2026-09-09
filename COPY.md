@@ -48,7 +48,7 @@ _Last generated: 2026-09-09_
 - Google
 - The Female Quotient
 - Marketing Brew
-- Design Ops Summit
+- DesignOps Summit
 - Confab
 - ADCOLOR
 - NFTNYC
@@ -68,7 +68,7 @@ _Last generated: 2026-09-09_
 - LITTLE BLACK BOOK
 - Campaign US
 - Morning Brew
-- Women In Innovation
+- Women in Innovation
 - Women of the Future Vol. 2
 - Asians in Advertising
 - Power in Ten Podcast
@@ -86,7 +86,7 @@ _Last generated: 2026-09-09_
 - TIAA
 - Ally
 - WeightWatchers
-- TopGolf
+- Topgolf
 - US Forest Service
 - Within
 - AIGA
@@ -309,7 +309,7 @@ I’ve delivered 200+ talks, panels, and workshops at organizations such as the 
 
 ##### Photos 7
 
-**Caption** — Cohosted Women In Innovation Awards segment with Sabrina Romviel.
+**Caption** — Cohosted Women in Innovation Awards segment with Sabrina Romviel.
 
 ##### Photos 8
 
@@ -357,7 +357,7 @@ I’ve delivered 200+ talks, panels, and workshops at organizations such as the 
 
 **Caption** — Celebrated the holidays with my fellow On Discourse community members.
 
-##### 21. Spoke on AI & Creativity at the AdColor Conference.
+##### 21. Spoke on AI & Creativity at the ADCOLOR Conference.
 
 ##### Photos 22
 
@@ -409,7 +409,7 @@ I’ve delivered 200+ talks, panels, and workshops at organizations such as the 
 
 **Caption** — Attended the Women Breaking Barriers event at the United Nations, hosted by Amanda Nguyen.
 
-##### 37. Attended the AdColor conference with a fantastic crew.
+##### 37. Attended the ADCOLOR conference with a fantastic crew.
 
 ### Closing C T A
 
@@ -916,7 +916,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
 
-### 4. Women In Innovation
+### 4. Women in Innovation
 
 **Tag** — Quest
 
@@ -1224,7 +1224,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Quote** — Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council. With her genius guidance, that group helped us understand how to conquer the biggest challenges of our time.
 
-**Role** — CEO, Women In Innovation
+**Role** — CEO, Women in Innovation
 
 ### 8. Mira Myllylä
 
@@ -1392,7 +1392,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Quote** — Few people know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council.
 
-**Role** — CEO, Women In Innovation
+**Role** — CEO, Women in Innovation
 
 ### 29. Jen Cotton
 
