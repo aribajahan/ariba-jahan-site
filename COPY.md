@@ -14,161 +14,92 @@ _Last generated: 2026-09-09_
 
 **Subhead** — I help organizations build unmissable products and experiences as AI reshapes consumer behavior, expectations, and trust.
 
-#### Ctas
+#### CTAs
 
-##### Ctas 1
+##### 1. Work With Me
 
-**Label** — Work With Me
-
-##### Ctas 2
-
-**Label** — Read Unmissables
+##### 2. Read Unmissables
 
 ### Name Marquee
 
 #### Rows
 
-##### Rows 1
-
-**Label** — Spoken at
+##### 1. Spoken at
 
 **Items**
 
-Google
+- Google
+- TikTok
+- Etsy
+- HubSpot
+- Columbia University
+- UN General Assembly
+- Vox Media
+- AIGA
+- Advertising Week
+- Paramount
+- CHIEF
+- Leading Design London
+- The New School
+- Ogilvy
+- Anomaly
+- US Chambers of Commerce
+- CES
+- Google
+- The Female Quotient
+- Marketing Brew
+- Design Ops Summit
+- Confab
+- ADCOLOR
+- NFTNYC
+- CXSphere
+- McCann
+- Onbe
+- AIGA
+- Board of Innovation
+- All Tech Is Human
 
-TikTok
-
-Etsy
-
-HubSpot
-
-Columbia University
-
-UN General Assembly
-
-Vox Media
-
-AIGA
-
-Advertising Week
-
-Paramount
-
-CHIEF
-
-Leading Design London
-
-The New School
-
-Ogilvy
-
-Anomaly
-
-US Chambers of Commerce
-
-CES
-
-Google
-
-The Female Quotient
-
-Marketing Brew
-
-Design Ops Summit
-
-Confab
-
-ADCOLOR
-
-NFTNYC
-
-CXSphere
-
-McCann
-
-Onbe
-
-AIGA
-
-Board of Innovation
-
-All Tech Is Human
-
-##### Rows 2
-
-**Label** — Featured in
+##### 2. Featured in
 
 **Items**
 
-Cosmopolitan
+- Cosmopolitan
+- Adweek
+- LITTLE BLACK BOOK
+- Campaign US
+- Morning Brew
+- Women In Innovation
+- Women of the Future Vol. 2
+- Asians in Advertising
+- Power in Ten Podcast
+- Innovation Crush Podcast
 
-Adweek
-
-LITTLE BLACK BOOK
-
-Campaign US
-
-Morning Brew
-
-Women In Innovation
-
-Women of the Future Vol. 2
-
-Asians in Advertising
-
-Power in Ten Podcast
-
-Innovation Crush Podcast
-
-##### Rows 3
-
-**Label** — Worked with
+##### 3. Worked with
 
 **Items**
 
-AARP
-
-Anomaly
-
-Ad Council
-
-DEPARTMENT OF HEALTH & HUMAN SERVICES
-
-UNCF
-
-TIAA
-
-Ally
-
-WeightWatchers
-
-TopGolf
-
-US Forest Service
-
-Within
-
-AIGA
-
-Huntsman Foundation
-
-Google
-
-Lean Startup Machine
-
-Women in Innovation
-
-Huntsman Foundation
-
-Foundation for Social Connection
-
-Roswell Park Cancer Institute
-
-University of Chicago
-
-SUNY Upstate Medical University
-
-W.M. Keck Center for Bioelectronics
+- AARP
+- Anomaly
+- Ad Council
+- DEPARTMENT OF HEALTH & HUMAN SERVICES
+- UNCF
+- TIAA
+- Ally
+- WeightWatchers
+- TopGolf
+- US Forest Service
+- Within
+- AIGA
+- Huntsman Foundation
+- Google
+- Lean Startup Machine
+- Women in Innovation
+- Huntsman Foundation
+- Foundation for Social Connection
+- Roswell Park Cancer Institute
+- University of Chicago
+- SUNY Upstate Medical University
+- W.M. Keck Center for Bioelectronics
 
 ### Positioning
 
@@ -192,29 +123,25 @@ Let's build something unmissable.
 
 #### Offers
 
-##### Offers 1
+##### 1. CX Ambition Sprint
 
 **Index** — 01
-
-**Title** — CX Ambition Sprint
 
 **Lead** — Reimagine how your organization creates value for customers.
 
 **Body** — A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.
 
-**Cta** — See the Sprint →
+**CTA** — See the Sprint →
 
-##### Offers 2
+##### 2. 1:1 CX Strategy Sessions
 
 **Index** — 02
-
-**Title** — 1:1 CX Strategy Sessions
 
 **Lead** — Dedicated thinking time for leaders navigating important decisions.
 
 **Body** — Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.
 
-**Cta** — See the Sessions →
+**CTA** — See the Sessions →
 
 ### Unmissables
 
@@ -238,41 +165,31 @@ Let's build something unmissable.
 
 #### Stats
 
-##### Stats 1
-
-**Value** — 215+
+##### 1. 215+
 
 **Label Line1** — Talks &
 
 **Label Line2** — Panels
 
-##### Stats 2
-
-**Value** — 6
+##### 2. 6
 
 **Label Line1** — Industry
 
 **Label Line2** — Awards
 
-##### Stats 3
-
-**Value** — 2
+##### 3. 2
 
 **Label Line1** — Books
 
 **Label Line2** — Contributed to
 
-##### Stats 4
-
-**Value** — 15+
+##### 4. 15+
 
 **Label Line1** — Years across
 
 **Label Line2** — Sectors
 
-##### Stats 5
-
-**Value** — 20+
+##### 5. 20+
 
 **Label Line1** — Essays & podcasts
 
@@ -290,7 +207,7 @@ I’m interested in the changing relationship between people, technology, and so
 I explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.
 I’ve delivered 200+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London.
 
-**Cta Label** — Bring Me to Your Event
+**CTA Label** — Bring Me to Your Event
 
 #### Photos
 
@@ -308,17 +225,13 @@ I’ve delivered 200+ talks, panels, and workshops at organizations such as the 
 
 **Items**
 
-Obama Foundation Leader USA
+- Obama Foundation Leader USA
+- Campaign US Inspiring Women Transforming Tech Award
+- Presidential Lifetime Achievement Award
+- Advertising Week NY Future is Female Award
+- Global Top 100 Women of the Future in Emerging Tech
 
-Campaign US Inspiring Women Transforming Tech Award
-
-Presidential Lifetime Achievement Award
-
-Advertising Week NY Future is Female Award
-
-Global Top 100 Women of the Future in Emerging Tech
-
-**Cta Label** — More About Me
+**CTA Label** — More About Me
 
 ### Press
 
@@ -328,57 +241,39 @@ Global Top 100 Women of the Future in Emerging Tech
 
 #### Items
 
-##### Items 1
-
-**Outlet** — Marketing Brew
+##### 1. Marketing Brew
 
 **Title** — All Things AI With Ariba Jahan
 
-##### Items 2
-
-**Outlet** — LBB Online
+##### 2. LBB Online
 
 **Title** — The AI Gender Gap in Advertising
 
-##### Items 3
-
-**Outlet** — Cosmopolitan ME
+##### 3. Cosmopolitan ME
 
 **Title** — Staying Sharp in the Age of AI
 
-##### Items 4
-
-**Outlet** — Obama Foundation
+##### 4. Obama Foundation
 
 **Title** — Obama Foundation Leader, USA 2025–2026
 
-##### Items 5
-
-**Outlet** — Cosmopolitan ME
+##### 5. Cosmopolitan ME
 
 **Title** — Digital Safety 101
 
-##### Items 6
-
-**Outlet** — WIN/WIN Podcast
+##### 6. WIN/WIN Podcast
 
 **Title** — Head of Transformation, North America
 
-##### Items 7
-
-**Outlet** — LBB Online
+##### 7. LBB Online
 
 **Title** — Career Chameleons: Strategy & Transformation
 
-##### Items 8
-
-**Outlet** — Campaign US
+##### 8. Campaign US
 
 **Title** — Campaign US Reveals 2025 Inspiring Women
 
-##### Items 9
-
-**Outlet** — AdWeek
+##### 9. AdWeek
 
 **Title** — Anomaly Appoints Ariba Jahan as Head of Transformation, NA
 
@@ -404,21 +299,13 @@ Global Top 100 Women of the Future in Emerging Tech
 
 **Caption** — Spoke at SXSW on the power of government and non-profit innovation with GovCity.
 
-##### Photos 3
+##### 3. Spoke at the Women of Web3 event at NFTNYC.
 
-**Caption** — Spoke at the Women of Web3 event at NFTNYC.
+##### 4. Joined my team at the Ad Council Annual Gala.
 
-##### Photos 4
+##### 5. Judged and presented at the Shorty Awards.
 
-**Caption** — Joined my team at the Ad Council Annual Gala.
-
-##### Photos 5
-
-**Caption** — Judged and presented at the Shorty Awards.
-
-##### Photos 6
-
-**Caption** — Received the Advertising Week Future Is Female Award.
+##### 6. Received the Advertising Week Future Is Female Award.
 
 ##### Photos 7
 
@@ -452,21 +339,15 @@ Global Top 100 Women of the Future in Emerging Tech
 
 **Caption** — Spoke at CXSphere on the future of emerging tech's impact on consumer experience.
 
-##### Photos 15
-
-**Caption** — Received the AdClub Rockstars & Innovators Award.
+##### 15. Received the AdClub Rockstars & Innovators Award.
 
 ##### Photos 16
 
 **Caption** — Judged and chatted at the Products By Women x Lovable Hackathon during NY Tech Week.
 
-##### Photos 17
+##### 17. Spoke at Snap with amazing co-panelists.
 
-**Caption** — Spoke at Snap with amazing co-panelists.
-
-##### Photos 18
-
-**Caption** — Vibing at the Pantone Color of the Year event.
+##### 18. Vibing at the Pantone Color of the Year event.
 
 ##### Photos 19
 
@@ -476,29 +357,19 @@ Global Top 100 Women of the Future in Emerging Tech
 
 **Caption** — Celebrated the holidays with my fellow On Discourse community members.
 
-##### Photos 21
-
-**Caption** — Spoke on AI & Creativity at the AdColor Conference.
+##### 21. Spoke on AI & Creativity at the AdColor Conference.
 
 ##### Photos 22
 
 **Caption** — Attended the fireside chat with Nabiha Syed of Mozilla Foundation, hosted by Pirth.org and Veronica Beard.
 
-##### Photos 23
+##### 23. Mingled with other founders at the Dreamers & Doers event.
 
-**Caption** — Mingled with other founders at the Dreamers & Doers event.
+##### 24. Delivered a keynote on CX Transformation at Anomaly Toronto.
 
-##### Photos 24
+##### 25. Attended the Artist & the Machine conference in NY.
 
-**Caption** — Delivered a keynote on CX Transformation at Anomaly Toronto.
-
-##### Photos 25
-
-**Caption** — Attended the Artist & the Machine conference in NY.
-
-##### Photos 26
-
-**Caption** — Judged the Products By Women x Lovable Hackathon.
+##### 26. Judged the Products By Women x Lovable Hackathon.
 
 ##### Photos 27
 
@@ -512,9 +383,7 @@ Global Top 100 Women of the Future in Emerging Tech
 
 **Caption** — Spoke on a panel with my fellow panelists at Leading Design London.
 
-##### Photos 30
-
-**Caption** — Joined the Female Quotient and walked the floors at CES.
+##### 30. Joined the Female Quotient and walked the floors at CES.
 
 ##### Photos 31
 
@@ -540,9 +409,7 @@ Global Top 100 Women of the Future in Emerging Tech
 
 **Caption** — Attended the Women Breaking Barriers event at the United Nations, hosted by Amanda Nguyen.
 
-##### Photos 37
-
-**Caption** — Attended the AdColor conference with a fantastic crew.
+##### 37. Attended the AdColor conference with a fantastic crew.
 
 ### Closing C T A
 
@@ -552,37 +419,29 @@ Global Top 100 Women of the Future in Emerging Tech
 
 #### Links
 
-##### Links 1
+##### 1. Speaking
 
 **Index** — 01
 
-**Title** — Speaking
+**CTA** — Speaker inquiry →
 
-**Cta** — Speaker inquiry →
-
-##### Links 2
+##### 2. Work With Me
 
 **Index** — 02
 
-**Title** — Work With Me
+**CTA** — Sprints & strategy sessions →
 
-**Cta** — Sprints & strategy sessions →
-
-##### Links 3
+##### 3. Unmissables
 
 **Index** — 03
 
-**Title** — Unmissables
+**CTA** — Read & subscribe →
 
-**Cta** — Read & subscribe →
-
-##### Links 4
+##### 4. Everything Else
 
 **Index** — 04
 
-**Title** — Everything Else
-
-**Cta** — Get in touch →
+**CTA** — Get in touch →
 
 ## About
 
@@ -630,7 +489,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Text** — Weekly writing on AI, behavior, culture, and what I'm paying attention to.
 
-**Cta Label** — Subscribe to Unmissables
+**CTA Label** — Subscribe to Unmissables
 
 ### Career Advisory
 
@@ -642,7 +501,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Body** — A focused session for people working through big career pivots, establishing their public voice, or creating change in their organization and industry.  
 
-**Cta** — Book a Session →
+**CTA** — Book a Session →
 
 ### Recognition Features
 
@@ -652,83 +511,53 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 #### Recognition Items
 
-##### Recognition Items 1
-
-**Label** — Obama Foundation Leader USA
+##### 1. Obama Foundation Leader USA
 
 **Year** — 2025
 
-##### Recognition Items 2
-
-**Label** — Campaign US Inspiring Women Transforming Technology
+##### 2. Campaign US Inspiring Women Transforming Technology
 
 **Year** — 2025
 
-##### Recognition Items 3
-
-**Label** — Presidential Lifetime Achievement Award
+##### 3. Presidential Lifetime Achievement Award
 
 **Year** — 2024
 
-##### Recognition Items 4
-
-**Label** — Advertising Week NY Future is Female Award
+##### 4. Advertising Week NY Future is Female Award
 
 **Year** — 2024
 
-##### Recognition Items 5
-
-**Label** — Ad Club NY's Rockstar, Icon & Innovator Award
+##### 5. Ad Club NY's Rockstar, Icon & Innovator Award
 
 **Year** — 2024
 
-##### Recognition Items 6
-
-**Label** — Bill Imada's Top 50 Unsung Heroes
+##### 6. Bill Imada's Top 50 Unsung Heroes
 
 **Year** — 2024
 
-##### Recognition Items 7
-
-**Label** — Global Top 100 Women of the Future in Emerging Tech
+##### 7. Global Top 100 Women of the Future in Emerging Tech
 
 **Year** — 2023
 
-##### Recognition Items 8
-
-**Label** — Women in Innovation Movers & Makers
+##### 8. Women in Innovation Movers & Makers
 
 **Year** — 2024
 
 #### Featured Items
 
-##### Featured Items 1
+##### 1. Cosmopolitan - Your Overdue Digital Safety Intervention
 
-**Label** — Cosmopolitan - Your Overdue Digital Safety Intervention
+##### 2. Marketing Brew - All Things AI
 
-##### Featured Items 2
+##### 3. LBB - Meet the Career Chameleons
 
-**Label** — Marketing Brew - All Things AI
+##### 4. LBB - "Women Don't Need Rescuing"
 
-##### Featured Items 3
+##### 5. Recess Playbook - Contributing Creative
 
-**Label** — LBB - Meet the Career Chameleons
+##### 6. Present Yourself - Contributing Author
 
-##### Featured Items 4
-
-**Label** — LBB - "Women Don't Need Rescuing"
-
-##### Featured Items 5
-
-**Label** — Recess Playbook - Contributing Creative
-
-##### Featured Items 6
-
-**Label** — Present Yourself - Contributing Author
-
-##### Featured Items 7
-
-**Label** — Women of the Future Book Vol. 2
+##### 7. Women of the Future Book Vol. 2
 
 ### Closing C T A
 
@@ -738,39 +567,31 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 #### Links
 
-##### Links 1
+##### 1. Speaking
 
 **Index** — 01
 
-**Title** — Speaking
+**CTA** — Speaker inquiry →
 
-**Cta** — Speaker inquiry →
-
-##### Links 2
+##### 2. Work With Me
 
 **Index** — 02
 
-**Title** — Work With Me
+**CTA** — Sprints & strategy sessions →
 
-**Cta** — Sprints & strategy sessions →
-
-##### Links 3
+##### 3. Unmissables
 
 **Index** — 03
 
-**Title** — Unmissables
+**CTA** — Read & subscribe →
 
-**Cta** — Read & subscribe →
-
-##### Links 4
+##### 4. Everything Else
 
 **Index** — 04
 
-**Title** — Everything Else
+**CTA** — Get in touch →
 
-**Cta** — Get in touch →
-
-## Work with me
+## Work With Me
 
 ### Hero
 
@@ -778,17 +599,13 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Subhead** — I work with product, growth, and marketing leaders who need a clearer point of view on customer value, experience, and how their products or services should evolve.
 
-#### Ctas
+#### CTAs
 
-##### Ctas 1
+##### 1. Explore Sprints
 
-**Label** — Explore Sprints
+##### 2. Book a Strategy Session
 
-##### Ctas 2
-
-**Label** — Book a Strategy Session
-
-### Wwm Trusted By
+### WWM Trusted By
 
 **Eyebrow** — Trusted By
 
@@ -802,27 +619,19 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 #### Cards
 
-##### Cards 1
-
-**Title** — Trust Is Distributed
+##### 1. Trust Is Distributed
 
 **Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.
 
-##### Cards 2
-
-**Title** — Attention Isn't Relationship
+##### 2. Attention Isn't Relationship
 
 **Description** — Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.
 
-##### Cards 3
-
-**Title** — Expectations Became Liquid
+##### 3. Expectations Became Liquid
 
 **Description** — What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.
 
-##### Cards 4
-
-**Title** — Utility Has To Justify The Ask
+##### 4. Utility Has To Justify The Ask
 
 **Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
 
@@ -830,7 +639,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Heading** — Two Ways To Work Together
 
-### Cx Sprint
+### CX Sprint
 
 **Eyebrow** — 01 · I Work With Teams & Organizations
 
@@ -846,17 +655,12 @@ This sprint helps you step back, see the experience more clearly, and make bette
 
 **Fit Points**
 
-Engagement, retention, or repeat usage has plateaued
-
-Customer expectations in your category are shifting
-
-Your product or experience works, but no longer feels distinctive
-
-Your brand promise is stronger than what the experience currently delivers
-
-There's pressure to evolve, but not enough clarity on where the real opportunity is
-
-You need a stronger read on what customers will value next
+- Engagement, retention, or repeat usage has plateaued
+- Customer expectations in your category are shifting
+- Your product or experience works, but no longer feels distinctive
+- Your brand promise is stronger than what the experience currently delivers
+- There's pressure to evolve, but not enough clarity on where the real opportunity is
+- You need a stronger read on what customers will value next
 
 **Outcome** — A clearer opportunity space, a stronger strategic direction, and a concrete set of concepts, priorities, or prototypes to help your team move forward.
 
@@ -864,59 +668,43 @@ You need a stronger read on what customers will value next
 
 #### Deliverables
 
-##### Deliverables 1
-
-**Title** — Ecosystem Audit & Touchpoint Journey Maps.
+##### 1. Ecosystem Audit & Touchpoint Journey Maps.
 
 **Description** — Mapping the full experience and opportunity across Customer, Company, Category, and Context to pinpoint where value is breaking or falling short.
 
-##### Deliverables 2
-
-**Title** — Consumer Mindset & Stakeholder Discovery.
+##### 2. Consumer Mindset & Stakeholder Discovery.
 
 **Description** — Targeted interviews and synthesis that surface what your users actually need, care about, and expect.
 
-##### Deliverables 3
-
-**Title** — Directional Concepts & Interactive Prototypes.
+##### 3. Directional Concepts & Interactive Prototypes.
 
 **Description** — Visual concepts, swipes, and prototypes that bring fresh experience ideas and digital utility to life.
 
-##### Deliverables 4
-
-**Title** — Experience-Led Growth Strategy & Prioritized Roadmap.
+##### 4. Experience-Led Growth Strategy & Prioritized Roadmap.
 
 **Description** — A clear North Star vision and actionable strategic framework aligning product, growth, and leadership teams on what to build and test next.
 
 #### Weeks
 
-##### Weeks 1
-
-**Title** — Weeks 1 to 2: Discovery.
+##### 1. Weeks 1 to 2: Discovery.
 
 **Description** — Stakeholder & consumer discovery, 4Cs ecosystem audit & journey mapping.
 
-##### Weeks 2
-
-**Title** — Weeks 3 to 4: Analysis.
+##### 2. Weeks 3 to 4: Analysis.
 
 **Description** — CX gap analysis & white space identification.
 
-##### Weeks 3
-
-**Title** — Week 5: Concepting.
+##### 3. Week 5: Concepting.
 
 **Description** — Directional prototyping & visual concepting.
 
-##### Weeks 4
-
-**Title** — Week 6: Roadmap.
+##### 4. Week 6: Roadmap.
 
 **Description** — Experience-led growth strategy & prioritized roadmap readout.
 
-**Cta Label** — Book an intro call →
+**CTA Label** — Book an intro call →
 
-**Cta Href** — mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry
+**CTA Href** — mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry
 
 ### Strategy Sessions
 
@@ -936,19 +724,15 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Best For**
 
-pressure-testing a roadmap, product shift, or GTM direction
-
-diagnosing friction in a current customer experience
-
-thinking through adoption, retention, or value questions
-
-getting unstuck on an AI, CX, or growth decision
-
-sharpening your strategic point of view before making a move
+- pressure-testing a roadmap, product shift, or GTM direction
+- diagnosing friction in a current customer experience
+- thinking through adoption, retention, or value questions
+- getting unstuck on an AI, CX, or growth decision
+- sharpening your strategic point of view before making a move
 
 **What You Get** — A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.
 
-**Cta Label** — Book a Session →
+**CTA Label** — Book a Session →
 
 ### Testimonials Section
 
@@ -972,37 +756,29 @@ sharpening your strategic point of view before making a move
 
 #### Links
 
-##### Links 1
+##### 1. Speaking
 
 **Index** — 01
 
-**Title** — Speaking
+**CTA** — Speaker inquiry →
 
-**Cta** — Speaker inquiry →
-
-##### Links 2
+##### 2. CX Ambition Sprint
 
 **Index** — 02
 
-**Title** — CX Ambition Sprint
+**CTA** — Sprint inquiry →
 
-**Cta** — Sprint inquiry →
-
-##### Links 3
+##### 3. 1:1 Strategy Session
 
 **Index** — 03
 
-**Title** — 1:1 Strategy Session
+**CTA** — Session Booking →
 
-**Cta** — Session Booking →
-
-##### Links 4
+##### 4. Everything Else
 
 **Index** — 04
 
-**Title** — Everything Else
-
-**Cta** — Get in touch →
+**CTA** — Get in touch →
 
 **Sub** — Press, career advisory, quotes, and everything else.
 
@@ -1014,7 +790,7 @@ sharpening your strategic point of view before making a move
 
 **Headline** — The future isn't inevitable. It reflects what we question, what we build, what we choose to protect, and what we’re willing to take responsibility for.
 
-**Cta Label** — Bring Me to Your Event
+**CTA Label** — Bring Me to Your Event
 
 ### Themes
 
@@ -1028,41 +804,31 @@ sharpening your strategic point of view before making a move
 
 #### Items
 
-##### Items 1
-
-**Title** — Cognitive Endurance
+##### 1. Cognitive Endurance
 
 **Question** — How do we preserve human judgment in the age of AI?
 
 **Description** — As AI becomes more capable of generating ideas, summarizing information, and making recommendations, the role of human thinking doesn’t disappear, but it does change. This talk explores Cognitive Endurance, my framework for strengthening discernment, creativity, critical thinking, and independent judgment in a world where more and more cognitive work can be outsourced.
 
-##### Items 2
-
-**Title** — Leading with Momentum Through Uncertainty
+##### 2. Leading with Momentum Through Uncertainty
 
 **Question** — How do leaders create momentum when the path isn’t clear?
 
 **Description** — When technology is moving fast, and the answer isn’t obvious yet, teams need more than urgency. They need shared language, room to experiment, and a way to move forward without pretending to have certainty they don’t. This talk explores how to create that kind of environment while working with AI in ways that build trust instead of eroding it.
 
-##### Items 3
-
-**Title** — Brand Utility as a Moat
+##### 3. Brand Utility as a Moat
 
 **Question** — What earns an organization a lasting place in people’s lives?
 
 **Description** — The strongest brands are no longer defined solely by awareness or affinity. They're defined by the value they create. This talk explores why usefulness has become one of the most defensible competitive advantages and how organizations can rethink customer relationships, products, services, and experiences through that lens.
 
-##### Items 4
-
-**Title** — Experience Design at the Edge of Expectation
+##### 4. Experience Design at the Edge of Expectation
 
 **Question** — How is AI reshaping what people expect from products and experiences?
 
 **Description** — AI is changing more than what products can do. It’s changing what an experience even is. As interfaces become more generative, personalized, and adaptive, expectations around usefulness, trust, and quality are shifting too — especially in a world where infinite content and AI slop make good experience design matter even more. This talk explores what that means for the people building now.
 
-##### Items 5
-
-**Title** — Ethical & Responsible AI
+##### 5. Ethical & Responsible AI
 
 **Question** — Who is accountable when AI gets it wrong?
 
@@ -1084,19 +850,13 @@ sharpening your strategic point of view before making a move
 
 **Formats**
 
-Keynotes
-
-Workshops
-
-Panel Discussions
-
-Executive Offsites
-
-Fireside Conversations
-
-Executive Briefings
-
-Podcast Interviews
+- Keynotes
+- Workshops
+- Panel Discussions
+- Executive Offsites
+- Fireside Conversations
+- Executive Briefings
+- Podcast Interviews
 
 ### Closing C T A
 
@@ -1106,61 +866,49 @@ Podcast Interviews
 
 #### Links
 
-##### Links 1
+##### 1. Speaking
 
 **Index** — 01
 
-**Title** — Speaking
+**CTA** — Speaker inquiry →
 
-**Cta** — Speaker inquiry →
-
-##### Links 2
+##### 2. Work With Me
 
 **Index** — 02
 
-**Title** — Work With Me
+**CTA** — Sprints & strategy sessions →
 
-**Cta** — Sprints & strategy sessions →
-
-##### Links 3
+##### 3. Unmissables
 
 **Index** — 03
 
-**Title** — Unmissables
+**CTA** — Read & subscribe →
 
-**Cta** — Read & subscribe →
-
-##### Links 4
+##### 4. Everything Else
 
 **Index** — 04
 
-**Title** — Everything Else
-
-**Cta** — Get in touch →
+**CTA** — Get in touch →
 
 ---
 
 # Collections
 
-## Case studies quests
+## Select Work (Home)
 
-### Case studies quests 1
+### 1. Ally — Turning everyday banking into a reason to come back
 
 **Tag** — Case Study
 
-**Headline** — Ally — Turning everyday banking into a reason to come back
-
 **Description** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
 
-### Case studies quests 2
+### 2. Asha
 
 **Tag** — Quest
 
-**Headline** — Asha
-
 **Description** — Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.
 
-### Case studies quests 3
+### Select Work (Home) 3
 
 **Tag** — Case Study
 
@@ -1168,15 +916,13 @@ Podcast Interviews
 
 **Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
 
-### Case studies quests 4
+### 4. Women In Innovation
 
 **Tag** — Quest
 
-**Headline** — Women In Innovation
-
 **Description** — Shaping a new platform for the women building what comes next in AI and innovation.
 
-### Case studies quests 5
+### Select Work (Home) 5
 
 **Tag** — Case Study
 
@@ -1184,11 +930,9 @@ Podcast Interviews
 
 **Description** — Working from enterprise user research through product strategy, positioning, GTM and prototype development for a new AI-native research platform.
 
-### Case studies quests 6
+### 6. Daboodle
 
 **Tag** — Quest
-
-**Headline** — Daboodle
 
 **Description** — Building a digital creative toolkit on Replit: the brand, content, and SEO tools solopreneurs reach for every day, all in one digital caboodle.
 
@@ -1202,123 +946,109 @@ Podcast Interviews
 
 #### Fields
 
-##### Fields 1
-
-**Label** — Name
+##### 1. Name
 
 **Type** — text
 
-##### Fields 2
-
-**Label** — Email
+##### 2. Email
 
 **Type** — email
 
-##### Fields 3
-
-**Label** — Organization
+##### 3. Organization
 
 **Type** — text
 
-##### Fields 4
-
-**Label** — Role / Title
+##### 4. Role / Title
 
 **Type** — text
 
-##### Fields 5
-
-**Label** — How can I help?
+##### 5. How can I help?
 
 **Type** — dropdown
 
-##### Fields 6
-
-**Label** — Message
+##### 6. Message
 
 **Type** — textarea
 
-## Speaking gallery photos
+## Speaking Gallery Photos
 
-## Speaking logos
+## Speaking Logos
 
-### Speaking logos 1
+### Speaking Logos 1
 
-### Speaking logos 2
+### Speaking Logos 2
 
-### Speaking logos 3
+### Speaking Logos 3
 
-### Speaking logos 4
+### Speaking Logos 4
 
-### Speaking logos 5
+### Speaking Logos 5
 
-### Speaking logos 6
+### Speaking Logos 6
 
-### Speaking logos 7
+### Speaking Logos 7
 
-### Speaking logos 8
+### Speaking Logos 8
 
-### Speaking logos 9
+### Speaking Logos 9
 
-### Speaking logos 10
+### Speaking Logos 10
 
-### Speaking logos 11
+### Speaking Logos 11
 
-### Speaking logos 12
+### Speaking Logos 12
 
-### Speaking logos 13
+### Speaking Logos 13
 
-### Speaking logos 14
+### Speaking Logos 14
 
-### Speaking logos 15
+### Speaking Logos 15
 
-### Speaking logos 16
+### Speaking Logos 16
 
-### Speaking logos 17
+### Speaking Logos 17
 
-### Speaking logos 18
+### Speaking Logos 18
 
-### Speaking logos 19
+### Speaking Logos 19
 
-### Speaking logos 20
+### Speaking Logos 20
 
-### Speaking logos 21
+### Speaking Logos 21
 
-### Speaking logos 22
+### Speaking Logos 22
 
-### Speaking logos 23
+### Speaking Logos 23
 
-### Speaking logos 24
+### Speaking Logos 24
 
-### Speaking logos 25
+### Speaking Logos 25
 
-### Speaking logos 26
+### Speaking Logos 26
 
-### Speaking logos 27
+### Speaking Logos 27
 
-### Speaking logos 28
+### Speaking Logos 28
 
-### Speaking logos 29
+### Speaking Logos 29
 
-### Speaking logos 30
+### Speaking Logos 30
 
-### Speaking logos 31
+### Speaking Logos 31
 
-### Speaking logos 32
+### Speaking Logos 32
 
-### Speaking logos 33
+### Speaking Logos 33
 
-### Speaking logos 34
+### Speaking Logos 34
 
-### Speaking logos 35
+### Speaking Logos 35
 
-### Speaking logos 36
+### Speaking Logos 36
 
-## Story timeline
+## Story Timeline
 
-### Story timeline 1
-
-**Headline** — Immigrating from Bangladesh
+### 1. Immigrating from Bangladesh
 
 **Body** — I moved to the US from Bangladesh with my family when I was eight. My first years in NYC were filled with a lot of firsts: eating pizza, touching snow, watching Home Alone 2, and rollerskating in the summer. I was pretty shy in a foreign country, so I joined storytelling contests and ran in class elections to get better at public speaking.
 
@@ -1330,9 +1060,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 2
-
-**Headline** — Growing up in Queens, NYC
+### 2. Growing up in Queens, NYC
 
 **Body** — My mother raised two daughters on her own in NYC. Around the same time, I was diagnosed with deafness in my right ear. A lot of my childhood involved navigating doctors, insurance, translation, and trying to make sense of systems that weren’t built with us in mind. I also started working under the table at 12 to help support my family.
 
@@ -1344,9 +1072,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 3
-
-**Headline** — Falling for science
+### 3. Falling for science
 
 **Body** — I studied biomedicine at Brooklyn Tech High School. I was lucky to have teachers who really supported my interest in science and engineering. My favorite unexpected classes were wood shop and an after-school class where we read scientific journal articles to make sense of applied research.
 
@@ -1358,9 +1084,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 4
-
-**Headline** — College years & studying abroad
+### 4. College years & studying abroad
 
 **Body** — I studied Biomechanical Engineering at Syracuse University and spent a year abroad at City University of London. I was President of the National Society of Black Engineers and a leader in our school mentorship program supporting women of color. Working as a barista in London, traveling all over Europe and Egypt, working in bioinstrumentation labs, and getting my first tattoo were peak college years.
 
@@ -1372,9 +1096,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 5
-
-**Headline** — Lab research
+### 5. Lab research
 
 **Body** — I worked in research labs through college and med school across bioengineering, pharmacology, orthopedic surgery, thoracic surgery, and cancer research, including NSF programs, SUNY Upstate, and Roswell Park Cancer Institute. Science and engineering trained me to ask better questions, be comfortable with unknowns, look for evidence, and keep testing my assumptions.
 
@@ -1386,9 +1108,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 6
-
-**Headline** — Pivoting & reinventing
+### 6. Pivoting & reinventing
 
 **Body** — I left my medical career path and moved into startups. It was a lean-budget, zero-certainty phase of life: a mattress on my mom’s basement floor, startup operations, SaaS product strategy, and a lot of figuring things out in real time. My work also took me to London, Tokyo, and São Paulo to facilitate workshops for entrepreneurs, and I took a ton of courses on data science, product management, UX design, while building a new foundation for myself.
 
@@ -1400,9 +1120,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 7
-
-**Headline** — Public interest and innovation
+### 7. Public interest and innovation
 
 **Body** — I joined the Ad Council to work on products and stayed for nine years, where I started and led the Innovation Practice. My work expanded across audience research, growth and adoption strategy, executive advisory councils, emerging technology, and helping teams adopt new ways of working. I worked on efforts like the Emmy Award-winning Love Has No Labels campaign and a $52M COVID vaccine education initiative, where product, trust, behavior, and public impact were all deeply connected.
 
@@ -1414,9 +1132,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 8
-
-**Headline** — Leading transformation at Anomaly
+### 8. Leading transformation at Anomaly
 
 **Body** — At Anomaly, my work moved further into customer experience, commercial strategy, AI adoption, and product direction. I led CX and GTM transformation for clients, helping teams make sense of customer behavior, emerging technology, and what was actually worth building. It was a chapter where strategy, customer value, and commercial value had to work much more closely together.
 
@@ -1428,9 +1144,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 9
-
-**Headline** — Using my public voice to invite conversations
+### 9. Using my public voice to invite conversations
 
 **Body** — Over the years, I’ve given more than 200 talks, panels, workshops, and executive sessions, including at the United Nations, Google, TikTok, and Columbia University. Public speaking has become one of the ways I think in public: testing ideas, challenging assumptions, and making sense of how technology, business, media, and human behavior are changing at the same time.
 
@@ -1442,9 +1156,7 @@ Podcast Interviews
 
 **Side** — right
 
-### Story timeline 10
-
-**Headline** — Building Unmissables
+### 10. Building Unmissables
 
 **Body** — I started Unmissables, a podcast and newsletter, because I wanted better conversations about technology, business, human behavior, and trust than the ones I was finding. It’s also where I’ve been developing ideas like Cognitive Endurance, my framework for thinking about judgment, agency, and what it means to keep your thinking your own in an AI-shaped world.
 
@@ -1458,317 +1170,253 @@ Podcast Interviews
 
 ## Testimonials
 
-### Testimonials 1
+### 1. Lauren Lavalle
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.
 
-**Name** — Lauren Lavalle
-
 **Role** — Chief Client Officer, Anomaly
 
-### Testimonials 2
+### 2. Michelle Green
 
 **Category** — SPEAKING
 
 **Quote** — Ariba's insights into AI were truly enlightening. She eloquently addressed the misconception that AI is an overly complex field. Her ability to humanize AI experiences made the topic accessible and relatable. Her message was clear: we cannot afford to sit on the sidelines while innovation unfolds.
 
-**Name** — Michelle Green
-
 **Role** — VP of Insights & Intelligence, Paramount+
 
-### Testimonials 3
+### 3. Mansoor Basha
 
 **Category** — CLIENT
 
 **Quote** — I worked with Ariba on an enterprise AI SaaS platform for researchers and creatives, from research through product strategy, user testing, and go-to-market. She could sit with potential customers, pull out what they actually needed, and turn it into a product direction, reimagining the user journey and shaping the features that set us apart. Customers, engineers, and executives all trusted her judgment and valued working alongside her.
 
-**Name** — Mansoor Basha
-
 **Role** — CTO, Stagwell Marketing Cloud
 
-### Testimonials 4
+### 4. Jen Cotton
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba is a multi-faceted, Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She's a warm and engaging storyteller as a speaker, compelling in rooms big and small; a high-level thinker, designing entirely new systems and perspectives where others might have slapped bandaids on problems, and every bit as detailed an artisan as the most junior person on her team, able to see and act in the weeds as well as from the treetops.
 
-**Name** — Jen Cotton
-
 **Role** — Comms Strategist, Anomaly
 
-### Testimonials 5
+### 5. Rebecca Groves
 
 **Category** — SPEAKING
 
 **Quote** — In 2025 we held a Leading Design AI Summit in New York to bring global design leaders together for a conversation on the future of design in a rapidly changing, AI-driven world. Ariba played a vital role. She facilitated big conversations, moderated opposing opinions, and held space for the emotions of these transformational times. She did such a fantastic job we invited her back to our London conference.
 
-**Name** — Rebecca Groves
-
 **Role** — Curator, Leading Design
 
-### Testimonials 6
+### 6. Rich Barrett
 
 **Category** — CLIENT
 
 **Quote** — Ariba was an incredible partner for me to work with as our teams collaborated and co-created on a strategy for deepening customer relationships within the Ally app. She helped us think in terms of how to bring real customer value in a space that is often purely transactional. She and her team brought so many valuable insights and delivered so many exciting concepts in a very short period of time which my team was able to pick up and run with very easily.
 
-**Name** — Rich Barrett
-
 **Role** — Director of UX Design, Ally Bank
 
-### Testimonials 7
+### 7. Amanda Ramos
 
 **Category** — LEADERSHIP
 
 **Quote** — Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council. With her genius guidance, that group helped us understand how to conquer the biggest challenges of our time.
 
-**Name** — Amanda Ramos
-
 **Role** — CEO, Women In Innovation
 
-### Testimonials 8
+### 8. Mira Myllylä
 
 **Category** — SPEAKING
 
 **Quote** — Ariba was a standout speaker, combining warmth, clarity, and confidence. Her delivery made complex topics easier to understand, while her engaging style held the audience's attention. Her presence at our event was a great choice. She shared valuable insights and created a dynamic, interactive atmosphere.
 
-**Name** — Mira Myllylä
-
 **Role** — Director of UX Design, Reaktor and CXSphere
 
-### Testimonials 9
+### 9. Kathleen Kayse
 
 **Category** — CLIENT
 
 **Quote** — When tasked with leading transformation of our donated media model at the Ad Council, I turned to Ariba, then leading business design and innovation, to co-create and reimagine the possibilities of such an ambitious exploration. Her curiosity, strategic thinking, and ability to start with a blank canvas led to an amazing experience. Her calm resolve and sheer determination helped pave new paths of opportunity across the organization, up through the C-suite.
 
-**Name** — Kathleen Kayse
-
 **Role** — Senior Sales & Marketing Executive
 
-### Testimonials 10
+### 10. Anastasia Goodstein
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba is passionate about solving problems and pain points by co-creating with people who are the most impacted. She is expert at applying design thinking and lean startup practices as well as best practices in UX to a variety of projects and challenges. She was often asked by senior team leaders to consult on larger projects, including our strategic plan, and is an empathetic listener able to distill insights and present to senior leadership with confidence.
 
-**Name** — Anastasia Goodstein
-
 **Role** — SVP, Ad Council
 
-### Testimonials 11
+### 11. Kyle Hagge
 
 **Category** — SPEAKING
 
 **Quote** — Ariba brought both pragmatic advice on action steps businesses could take today AND a philosophical lens on how to think about AI and other transformative technologies in the long run. She was quick-witted, sharp, and insightful without losing a warm, welcoming presence and tone. I'd recommend her for any speaking engagement.
 
-**Name** — Kyle Hagge
-
 **Role** — Chief of Staff, Morning Brew
 
-### Testimonials 12
+### 12. Greg Kelly
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth. Senior leaders relied on her to lead sensitive meetings, and her creations like Splashbox brought the organization into a new era of thinking.
 
-**Name** — Greg Kelly
-
 **Role** — Media Director
 
-### Testimonials 13
+### 13. Danielle Barnes
 
 **Category** — SPEAKING
 
 **Quote** — She's brilliant, curious, thoughtful, and honest: the traits of an engaging, impactful speaker. Ariba truly cares about understanding her audience and asks the right questions to deliver exactly what they need. She doesn't shy away from tough topics, and brings herself and her story into every message, which makes her presentations so resonant.
 
-**Name** — Danielle Barnes
-
 **Role** — CEO, Women Talk Design
 
-### Testimonials 14
+### 14. Rebecca Groves
 
 **Category** — SPEAKING
 
 **Quote** — In 2025 we held a Leading Design AI Summit in New York to bring global design leaders together for a conversation on the future of design in a rapidly changing, AI-driven world. Ariba played a vital role - she facilitated big conversations, moderated opposing opinions, and held space for the emotions of these transformational times. She did such a fantastic job we invited her back to our London conference.
 
-**Name** — Rebecca Groves
-
 **Role** — Curator, Leading Design
 
-### Testimonials 15
+### 15. Mira Myllylä
 
 **Category** — SPEAKING
 
 **Quote** — Ariba was a standout speaker, combining warmth, clarity, and confidence. Her delivery made complex topics easier to understand, while her engaging style held the audience's attention. Her presence at our event was a great choice - she shared valuable insights and created a dynamic, interactive atmosphere.
 
-**Name** — Mira Myllylä
-
 **Role** — Director of UX Design, Reaktor and CXSphere
 
-### Testimonials 16
+### 16. David Dylan Thomas
 
 **Category** — SPEAKING
 
 **Quote** — Ariba is doing some of the most vital work in design today, and excels at talking about it in an accessible, inspiring way.
 
-**Name** — David Dylan Thomas
-
 **Role** — Author, “Design for Cognitive Bias”
 
-### Testimonials 17
+### 17. Kyle Hagge
 
 **Category** — SPEAKING
 
 **Quote** — Ariba brought both pragmatic advice on action steps businesses could take today AND a philosophical lens on how to think about AI and other transformative technologies in the long run. She was quick-witted, sharp, and insightful without losing a warm, welcoming presence and tone. I'd recommend her for any speaking engagement.
 
-**Name** — Kyle Hagge
-
 **Role** — Chief of Staff, Morning Brew
 
-### Testimonials 18
+### 18. Danielle Barnes
 
 **Category** — SPEAKING
 
 **Quote** — She's brilliant, curious, thoughtful, and honest: the traits of an engaging, impactful speaker. Ariba truly cares about understanding her audience and asks the right questions to deliver exactly what they need. She doesn't shy away from tough topics, and brings herself and her story into every message, which makes her presentations so resonant.
 
-**Name** — Danielle Barnes
-
 **Role** — CEO, Women Talk Design
 
-### Testimonials 19
+### 19. Michelle Green
 
 **Category** — SPEAKING
 
 **Quote** — Ariba's insights into AI were truly enlightening. She eloquently addressed the misconception that AI is an overly complex field - her ability to humanize AI experiences made the topic accessible and relatable. Her message was clear: we cannot afford to sit on the sidelines while innovation unfolds.
 
-**Name** — Michelle Green
-
 **Role** — VP of Insights & Intelligence, Paramount+
 
-### Testimonials 20
+### 20. Nikhila N
 
 **Category** — SPEAKING
 
 **Quote** — First of all, I was completely floored by Ariba's talk; so powerful, and so on point. Ariba's talk was enlightening, powerful, and much needed - I deeply appreciate her posing thought-provoking questions and providing CTAs for us to become better, inclusive designers.
 
-**Name** — Nikhila N
-
 **Role** — Product Designer, HubSpot
 
-### Testimonials 21
+### 21. Aska M
 
 **Category** — SPEAKING
 
 **Quote** — I really appreciated the way you shared your ideas and methods with us, but also encouraged us to share as well. It really made this feel like the talk was a safe space and helped me learn what I should specifically be looking for in the next team that I work with.
 
-**Name** — Aska M
-
 **Role** — Brand Designer
 
-### Testimonials 22
+### 22. Carrie Ingoglia
 
 **Category** — SPEAKING
 
 **Quote** — Ariba Jahan is already a celebrated speaker, and it was a privilege to share the stage with her during our panel on Motherhood & Creativity through AIGA NY. She brought a combination of honesty and professionalism that made the conversation come alive. Ariba's perspective on achievement - shaped by her experiences as a creative person, a daughter of immigrants, and a mother - was so important to hear. Anyone who has the chance to hear her speak or work alongside her is in for a treat.
 
-**Name** — Carrie Ingoglia
-
 **Role** — Creative Director
 
-### Testimonials 23
+### 23. Mansoor Basha
 
 **Category** — CLIENT
 
 **Quote** — I worked with Ariba on an enterprise AI SaaS platform for researchers and creatives, from research through product strategy, user testing, and go-to-market. She could sit with potential customers, pull out what they actually needed, and turn it into a product direction. Customers, engineers, and executives all trusted her judgment.
 
-**Name** — Mansoor Basha
-
 **Role** — CTO, Stagwell Marketing Cloud
 
-### Testimonials 24
+### 24. Rich Barrett
 
 **Category** — CLIENT
 
 **Quote** — Ariba was an incredible partner as our teams collaborated and co-created on a strategy for deepening customer relationships within the Ally app. She helped us think in terms of how to bring real customer value in a space that is often purely transactional, delivering exciting concepts my team could pick up and run with.
 
-**Name** — Rich Barrett
-
 **Role** — Director of UX Design, Ally Bank
 
-### Testimonials 25
+### 25. Kathleen Kayse
 
 **Category** — CLIENT
 
 **Quote** — When tasked with leading transformation of our donated media model at the Ad Council, I turned to Ariba to co-create and reimagine the possibilities of such an ambitious exploration. Her curiosity, strategic thinking, and ability to start with a blank canvas paved new paths of opportunity across the organization, up through the C-suite.
 
-**Name** — Kathleen Kayse
-
 **Role** — Senior Sales & Marketing Executive
 
-### Testimonials 26
+### 26. Lauren Lavalle
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.
 
-**Name** — Lauren Lavalle
-
 **Role** — Chief Client Officer, Anomaly
 
-### Testimonials 27
+### 27. Anastasia Goodstein
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba is passionate about solving problems and pain points by co-creating with people who are the most impacted. She is expert at applying design thinking and lean startup practices to a variety of projects and challenges, and is an empathetic listener able to distill insights and present to senior leadership with confidence.
 
-**Name** — Anastasia Goodstein
-
 **Role** — SVP, Ad Council
 
-### Testimonials 28
+### 28. Amanda Ramos
 
 **Category** — LEADERSHIP
 
 **Quote** — Few people know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery. As CEO of WIN: Women in Innovation, I entrusted Ariba to chair our Advisory Council.
 
-**Name** — Amanda Ramos
-
 **Role** — CEO, Women In Innovation
 
-### Testimonials 29
+### 29. Jen Cotton
 
 **Category** — LEADERSHIP
 
 **Quote** — Ariba is a multi-faceted, Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She's a high-level thinker, designing entirely new systems and perspectives where others might have slapped bandaids on problems, and every bit as detailed an artisan as the most junior person on her team.
 
-**Name** — Jen Cotton
-
 **Role** — Comms Strategist, Anomaly
 
 ## Unmissables
 
-### Unmissables 1
-
-**Headline** — Reclaiming Our Agency in the Age of AI
+### 1. Reclaiming Our Agency in the Age of AI
 
 **Type** — essay
 
 **Overlay** — dark
 
-### Unmissables 2
-
-**Headline** — Ep. 15: Hard Problems, with Daniel Burka
+### 2. Ep. 15: Hard Problems, with Daniel Burka
 
 **Type** — podcast
 
 **Overlay** — dark
 
-### Unmissables 3
-
-**Headline** — Behavior Design in AI #2: When Agreement Is the Product
+### 3. Behavior Design in AI #2: When Agreement Is the Product
 
 **Type** — essay
 
@@ -1782,9 +1430,7 @@ Podcast Interviews
 
 **Overlay** — dark
 
-### Unmissables 5
-
-**Headline** — Behavior Design in AI #1: When the Interface Is the Response
+### 5. Behavior Design in AI #1: When the Interface Is the Response
 
 **Type** — essay
 
@@ -1798,9 +1444,7 @@ Podcast Interviews
 
 **Overlay** — dark
 
-### Unmissables 7
-
-**Headline** — ChatGPT Has Ads Now. Here's What They're Doing to You
+### 7. ChatGPT Has Ads Now. Here's What They're Doing to You
 
 **Type** — essay
 
@@ -1814,9 +1458,7 @@ Podcast Interviews
 
 **Overlay** — dark
 
-### Unmissables 9
-
-**Headline** — The Data Pipeline You Never Consented To
+### 9. The Data Pipeline You Never Consented To
 
 **Type** — essay
 
@@ -1830,11 +1472,9 @@ Podcast Interviews
 
 **Overlay** — dark
 
-## Wwm case studies
+## Case Studies (Work With Me)
 
-### Wwm case studies 1
-
-**Client** — Ally
+### 1. Ally
 
 **Title** — Turning everyday banking into a reason to come back
 
@@ -1842,13 +1482,10 @@ Podcast Interviews
 
 **Pills**
 
-Behavioral Design
-
-App Utility
-
-Retention Strategy
-
-Gamification Design
+- Behavioral Design
+- App Utility
+- Retention Strategy
+- Gamification Design
 
 **Challenge** — In a highly competitive digital banking market, Ally wanted to deepen customer engagement inside the app without relying on superficial tactics or competing on rates alone. The original ask centered on badging, but the bigger question was how to create more value between transactions in a way that could build real loyalty over time.
 
@@ -1866,9 +1503,7 @@ Gamification Design
 
 **Role** — Director of UX Design, Ally Bank
 
-### Wwm case studies 2
-
-**Client** — WeightWatchers
+### 2. WeightWatchers
 
 **Title** — Reimagining WeightWatchers for a more adaptive, everyday relationship
 
@@ -1876,13 +1511,10 @@ Gamification Design
 
 **Pills**
 
-User Journey Development
-
-Category Intelligence
-
-Product Design Concepts
-
-Growth Framework
+- User Journey Development
+- Category Intelligence
+- Product Design Concepts
+- Growth Framework
 
 **Challenge** — In an overcrowded wellness market full of fragmented promises and short-term fixes, WeightWatchers needed a stronger answer to a harder question: how could the product evolve beyond legacy expectations and become more useful, adaptive, and relevant in people's everyday lives?
 
@@ -1900,9 +1532,7 @@ Growth Framework
 
 **Role** — Chief Client Officer, Anomaly
 
-### Wwm case studies 3
-
-**Client** — Stagwell Marketing Cloud & The Harris Poll
+### 3. Stagwell Marketing Cloud & The Harris Poll
 
 **Title** — Shaping an enterprise AI research product from strategy to prototype
 
@@ -1910,13 +1540,10 @@ Growth Framework
 
 **Pills**
 
-AI Product Strategy & Positioning
-
-Concept Prototyping
-
-Enterprise User Research
-
-Production-Ready UI/UX
+- AI Product Strategy & Positioning
+- Concept Prototyping
+- Enterprise User Research
+- Production-Ready UI/UX
 
 **Challenge** — In a fast-moving market, the team needed to validate enterprise demand, define a clearer competitive edge, and make the case for why this platform would matter to researchers and creatives in practice.
 
@@ -1934,9 +1561,7 @@ Production-Ready UI/UX
 
 **Role** — CTO, Stagwell Marketing Cloud
 
-### Wwm case studies 4
-
-**Client** — Global Tech & E-Commerce Leader
+### 4. Global Tech & E-Commerce Leader
 
 **Title** — Designing a more human ecommerce experience with AI built in
 
@@ -1944,13 +1569,10 @@ Production-Ready UI/UX
 
 **Pills**
 
-AI Experience Design
-
-Product Strategy
-
-Retail Innovation
-
-Online Stream Experience Design
+- AI Experience Design
+- Product Strategy
+- Retail Innovation
+- Online Stream Experience Design
 
 **Challenge** — The opportunity wasn't just to add AI to the shopping journey, but to make it improve discovery in a way that still felt intuitive, trustworthy, and native to how people already shop. The challenge was finding a role for generative AI that added real value without making the experience feel forced, overly technical, or disconnected from consumer behavior.
 
@@ -1960,9 +1582,7 @@ Online Stream Experience Design
 
 **Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
 
-### Wwm case studies 5
-
-**Client** — Ad Council & Huntsman Mental Health Institute
+### 5. Ad Council & Huntsman Mental Health Institute
 
 **Title** — Co-designing a more inclusive digital foundation for mental health
 
@@ -1970,13 +1590,10 @@ Online Stream Experience Design
 
 **Pills**
 
-Participatory Co-Design
-
-Inclusive UX
-
-Behavioral Research
-
-Experience Architecture
+- Participatory Co-Design
+- Inclusive UX
+- Behavioral Research
+- Experience Architecture
 
 **Challenge** — Traditional public health experiences often rely on language, assumptions, and entry points that don't reflect how people actually talk about their lives or seek support. For this work, the challenge was building something that could resonate more deeply with Black and Hispanic men who are often underserved by digital mental health resources.
 
@@ -1994,9 +1611,7 @@ Experience Architecture
 
 **Role** — SVP, Ad Council
 
-### Wwm case studies 6
-
-**Client** — Ad Council
+### 6. Ad Council
 
 **Title** — Building A Responsible Path Into Emerging Technology And AI
 
@@ -2004,11 +1619,9 @@ Experience Architecture
 
 **Pills**
 
-Emerging Tech Strategy
-
-AI Governance
-
-Strategic Partnership
+- Emerging Tech Strategy
+- AI Governance
+- Strategic Partnership
 
 **Challenge** — As emerging technology moved quickly from metaverse experimentation to generative AI and spatial computing, the organization needed a way to explore what was relevant without chasing hype, overspending, or eroding public trust.
 
@@ -2026,32 +1639,32 @@ Strategic Partnership
 
 **Role** — Senior Sales & Marketing Executive
 
-## Wwm trusted by
+## Trusted By Logos (Work With Me)
 
-### Wwm trusted by 1
+### Trusted By Logos (Work With Me) 1
 
-### Wwm trusted by 2
+### Trusted By Logos (Work With Me) 2
 
-### Wwm trusted by 3
+### Trusted By Logos (Work With Me) 3
 
-### Wwm trusted by 4
+### Trusted By Logos (Work With Me) 4
 
-### Wwm trusted by 5
+### Trusted By Logos (Work With Me) 5
 
-### Wwm trusted by 6
+### Trusted By Logos (Work With Me) 6
 
-### Wwm trusted by 7
+### Trusted By Logos (Work With Me) 7
 
-### Wwm trusted by 8
+### Trusted By Logos (Work With Me) 8
 
-### Wwm trusted by 9
+### Trusted By Logos (Work With Me) 9
 
-### Wwm trusted by 10
+### Trusted By Logos (Work With Me) 10
 
-### Wwm trusted by 11
+### Trusted By Logos (Work With Me) 11
 
-### Wwm trusted by 12
+### Trusted By Logos (Work With Me) 12
 
-### Wwm trusted by 13
+### Trusted By Logos (Work With Me) 13
 
-### Wwm trusted by 14
+### Trusted By Logos (Work With Me) 14
