@@ -255,7 +255,7 @@ I’ve delivered 200+ talks, panels, and workshops at organizations such as the 
 
 ##### 4. Obama Foundation
 
-**Title** — Obama Foundation Leader, USA 2025–2026
+**Title** — Obama Foundation Leader, USA 2025
 
 ##### 5. Cosmopolitan ME
 
