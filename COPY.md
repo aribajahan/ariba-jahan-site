@@ -123,7 +123,7 @@ Let's build something unmissable.
 
 #### Offers
 
-##### 1. Strategic Ambition Sprint
+##### 1. Ambition Sprint
 
 **Index** — 01
 
