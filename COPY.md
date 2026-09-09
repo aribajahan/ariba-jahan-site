@@ -1890,7 +1890,7 @@ Growth Framework
 
 **Impact** — The result was a deep 150+ page competitive ecosystem audit, a clearer Experience-Led Growth opportunity, and a CX strategy framework and 10+ ownable concepts WeightWatchers could use across onboarding, dashboard, curriculum, and the wider product experience.
 
-**Role Context** — Head of Transformation, North America at Anomaly | Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
+**Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
 
 #### Testimonial
 
