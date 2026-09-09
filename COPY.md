@@ -1924,7 +1924,7 @@ Production-Ready UI/UX
 
 **Impact** — The work helped secure funding, sharpened the platform's enterprise positioning, and gave the team a stronger foundation for building an AI-native research product with a clear point of view on where it could win.
 
-**Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design
+**Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
 
 #### Testimonial
 
@@ -1958,7 +1958,7 @@ Online Stream Experience Design
 
 **Impact** — The result was a flagship AI-native retail concept and strategic narrative that helped secure executive buy-in and internal funding for a new kind of shopping experience.
 
-**Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across CX strategy & design
+**Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
 
 ### Wwm case studies 5
 
