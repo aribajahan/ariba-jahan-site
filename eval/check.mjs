@@ -127,8 +127,9 @@ function checkContent(files, routes) {
     for (const [key, value] of strings(data)) {
       const field = key.split('.').pop().replace(/\[\d+\]$/, '')
 
-      // A9 — empty copy
-      if (value.trim() === '') add('A9', 'error', path, `empty field: ${key}`)
+      // A9 — empty copy. Asset fields are exempt: an absent photo is a
+      // deliberate state the components render around, not a gap in the copy.
+      if (value.trim() === '' && !ASSET_KEYS.has(field)) add('A9', 'error', path, `empty field: ${key}`)
 
       // A8 — referenced assets exist
       if (ASSET_KEYS.has(field) && value.startsWith('/') && !publicFileExists(value))

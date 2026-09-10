@@ -44,7 +44,12 @@ type WwmContent = {
     ctaHref: string;
   };
   wwmTrustedBy: { eyebrow: string };
-  problemFraming: { eyebrow: string; heading: string; body: string; cards: ProblemCard[] };
+  problemFraming: {
+    eyebrow: string;
+    heading: string;
+    intro: string;
+    views: { label: string; intro: string; cards: ProblemCard[] }[];
+  };
   twoWaysDivider: { heading: string };
   testimonialsSection: { eyebrow: string; heading: string };
   caseStudiesSection: { eyebrow: string; heading: string; intro: string };
@@ -91,9 +96,34 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
     setContent((c) => ({ ...c, problemFraming: { ...c.problemFraming, ...patch } }));
   };
 
-  const updateProblemCard = (index: number, patch: Partial<ProblemCard>) => {
-    const cards = content.problemFraming.cards.map((card, i) => (i === index ? { ...card, ...patch } : card));
-    updateProblemFraming({ cards });
+  const updateProblemView = (viewIndex: number, patch: Partial<WwmContent["problemFraming"]["views"][number]>) => {
+    const views = content.problemFraming.views.map((v, i) => (i === viewIndex ? { ...v, ...patch } : v));
+    updateProblemFraming({ views });
+  };
+
+  const updateProblemCard = (viewIndex: number, index: number, patch: Partial<ProblemCard>) => {
+    const cards = content.problemFraming.views[viewIndex].cards.map((card, i) =>
+      i === index ? { ...card, ...patch } : card
+    );
+    updateProblemView(viewIndex, { cards });
+  };
+
+  const addProblemCard = (viewIndex: number) => {
+    const cards = [...content.problemFraming.views[viewIndex].cards, { title: "", photoSrc: "", description: "" }];
+    updateProblemView(viewIndex, { cards });
+  };
+
+  const removeProblemCard = (viewIndex: number, index: number) => {
+    const cards = content.problemFraming.views[viewIndex].cards.filter((_, i) => i !== index);
+    updateProblemView(viewIndex, { cards });
+  };
+
+  const moveProblemCard = (viewIndex: number, index: number, direction: -1 | 1) => {
+    const target = index + direction;
+    const cards = [...content.problemFraming.views[viewIndex].cards];
+    if (target < 0 || target >= cards.length) return;
+    [cards[index], cards[target]] = [cards[target], cards[index]];
+    updateProblemView(viewIndex, { cards });
   };
 
   const updateTwoWaysDivider = (patch: Partial<WwmContent["twoWaysDivider"]>) => {
@@ -185,19 +215,46 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
         <Field label="Heading">
           <input value={content.problemFraming.heading} onChange={(e) => updateProblemFraming({ heading: e.target.value })} className={inputCls} />
         </Field>
-        <Field label="Body">
-          <textarea rows={4} value={content.problemFraming.body} onChange={(e) => updateProblemFraming({ body: e.target.value })} className={`${inputCls} resize-y`} />
+        <Field label="Intro (above the toggle)">
+          <textarea rows={4} value={content.problemFraming.intro} onChange={(e) => updateProblemFraming({ intro: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
-        <label className="block text-[13px] font-semibold mb-[10px]">Problem Cards</label>
-        <div className="flex flex-col gap-3">
-          {content.problemFraming.cards.map((card, i) => (
-            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
-              <input value={card.title} onChange={(e) => updateProblemCard(i, { title: e.target.value })} placeholder="Title" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
-              <input value={card.photoSrc} onChange={(e) => updateProblemCard(i, { photoSrc: e.target.value })} placeholder="Photo path" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
-              <textarea value={card.description} onChange={(e) => updateProblemCard(i, { description: e.target.value })} placeholder="Description" rows={3} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
+
+        <p className="text-[12px] text-[#777] mb-4 leading-[1.5]">
+          Two views, switched by a toggle on the page. Both are rendered into the page HTML, so
+          nothing is hidden from search. The first view is what visitors see first.
+        </p>
+
+        {content.problemFraming.views.map((view, vi) => (
+          <div key={vi} className="mb-6 p-4 bg-[#f7f6f4] rounded-lg">
+            <Field label={`View ${vi + 1} — toggle label`}>
+              <input value={view.label} onChange={(e) => updateProblemView(vi, { label: e.target.value })} className={inputCls} />
+            </Field>
+            <Field label="View intro">
+              <textarea rows={3} value={view.intro} onChange={(e) => updateProblemView(vi, { intro: e.target.value })} className={`${inputCls} resize-y`} />
+            </Field>
+
+            <div className="flex items-center justify-between mb-[10px]">
+              <label className="block text-[13px] font-semibold">Cards</label>
+              <button type="button" onClick={() => addProblemCard(vi)} className="text-[12px] font-semibold text-[#181818] underline">
+                + Add card
+              </button>
             </div>
-          ))}
-        </div>
+            <div className="flex flex-col gap-3">
+              {view.cards.map((card, i) => (
+                <div key={i} className="p-3 bg-white border border-[#e2e0dc] rounded-md flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <input value={card.title} onChange={(e) => updateProblemCard(vi, i, { title: e.target.value })} placeholder="Title" className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
+                    <button type="button" onClick={() => moveProblemCard(vi, i, -1)} disabled={i === 0} className="text-[10px] text-[#888] disabled:opacity-30 px-1">▲</button>
+                    <button type="button" onClick={() => moveProblemCard(vi, i, 1)} disabled={i === view.cards.length - 1} className="text-[10px] text-[#888] disabled:opacity-30 px-1">▼</button>
+                    <button type="button" onClick={() => removeProblemCard(vi, i)} className="text-[11px] text-[#b33] font-semibold px-1">Delete</button>
+                  </div>
+                  <input value={card.photoSrc} onChange={(e) => updateProblemCard(vi, i, { photoSrc: e.target.value })} placeholder="Photo path — leave empty for no image" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+                  <textarea value={card.description} onChange={(e) => updateProblemCard(vi, i, { description: e.target.value })} placeholder="Description" rows={3} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </SectionCard>
 
       <SectionCard title="Two Ways Divider" defaultExpanded={false}>

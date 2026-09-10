@@ -71,7 +71,9 @@ Every `photoSrc`, `logoSrc`, and `src` in `content/` resolves to a real file in
 
 **A9 · No empty copy fields** — error
 No string field in `content/` is empty or whitespace. An empty field renders as a
-gap on the page.
+gap on the page. Asset fields are exempt — a card with no photo is a state the
+components render around deliberately, which the toggled problem framing section
+relies on.
 
 **A10 · Testimonial routing is valid** — error
 Every `showOn` value names a real page. A typo here silently hides a testimonial.

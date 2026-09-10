@@ -617,25 +617,53 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Heading** — From Share Of Attention To Share Of Life
 
-**Body** — Experience-led growth is about creating enough value that people choose to make room for you. That depends on what customers experience—and on whether the organization behind it can make good on the promise. Whether you are asking someone to make room for a product in their life or a new tool in their work, adoption is never just a launch. People need to understand what it does for them, why it is worth their attention, and how it fits into what they already do.
+**Intro** — Experience-led growth is about creating enough value that people choose to make room for you. That depends on what customers experience—and on whether the organization behind it can make good on the promise. Whether you are asking someone to make room for a product in their life or a new tool in their work, adoption is never just a launch. People need to understand what it does for them, why it is worth their attention, and how it fits into what they already do.
 
-#### Cards
+#### Views
 
-##### 1. Trust Is Distributed
+##### 1. What customers experience
+
+**Intro** — The work is building products, services, and experiences that earn a real place in people’s lives.
+
+###### Cards
+
+###### 1. Trust Is Distributed
 
 **Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.
 
-##### 2. Attention Isn't Relationship
+###### 2. Attention Isn't Relationship
 
 **Description** — Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.
 
-##### 3. Expectations Became Liquid
+###### 3. Expectations Became Liquid
 
 **Description** — What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.
 
-##### 4. Utility Has To Justify The Ask
+###### 4. Utility Has To Justify The Ask
 
 **Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
+
+##### 2. What organizations need
+
+**Intro** — The work is moving beyond a technology rollout to co-creating the practices, judgment, and ways of working that help an organization learn from change, act on it, and keep evolving.
+
+###### Cards
+
+###### 1. Knowledge Is Distributed
+
+**Description** — The expertise behind good decisions sits across people, teams, tools, and institutional memory. AI has multiplied it: more documents, more experiments, more tools in more places. Experimentation is a good signal. Without a way to bring what works into the core, it stays sprawl.
+
+###### 2. Deployment Isn’t Adoption
+
+**Description** — Buying a tool or rolling it out doesn’t change the work. People need a reason, the context to use it well, and enough confidence to change what they already do.
+
+###### 3. Easier Was The Promise
+
+**Description** — People bring the standards of the software they use outside work to the tools they’re handed at work. AI arrived promising that work would get easier. When it is mandated and the work gets harder, people route around it — and the broken promise costs more than the tool.
+
+###### 4. Change Isn’t A Destination
+
+**Description** — Most organizations treat new technology as a program with an end date. The ones that get value build the habit instead: try things, learn from them, and embed what works into how the place runs.
 
 ### Two Ways Divider
 
