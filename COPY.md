@@ -617,7 +617,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Heading** — From Share Of Attention To Share Of Life
 
-**Body** — I think more organizations need to shift from chasing attention to earning a real place in people's lives. That's what I mean by Experience-Led Growth: creating business value by becoming more useful, more relevant, and more worth returning to over time.
+**Body** — Experience-led growth is about creating enough value that people choose to make room for you. That depends on what customers experience—and on whether the organization behind it can make good on the promise. Whether you are asking someone to make room for a product in their life or a new tool in their work, adoption is never just a launch. People need to understand what it does for them, why it is worth their attention, and how it fits into what they already do.
 
 #### Cards
 
