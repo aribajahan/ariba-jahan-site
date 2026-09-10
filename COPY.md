@@ -645,7 +645,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ##### 2. What organizations need
 
-**Intro** — The work is moving beyond a technology rollout to co-creating the practices, judgment, and ways of working that help an organization learn from change, act on it, and keep evolving.
+**Intro** — AI ambition is outrunning the operating model. The work is moving beyond a technology rollout to co-creating the practices, judgment, and shared knowledge that help an organization learn from change, act on it, and embed what works.
 
 ###### Cards
 
