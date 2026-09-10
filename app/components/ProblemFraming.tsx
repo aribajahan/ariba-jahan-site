@@ -27,12 +27,17 @@ export default function ProblemFraming() {
         <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
           {problemFraming.eyebrow}
         </div>
-        <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-5 max-[700px]:whitespace-normal whitespace-nowrap">
-          {problemFraming.heading}
-        </h2>
-        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[640px] mb-8">
-          {problemFraming.intro}
-        </p>
+        {/* Heading and intro sit side by side so the top of the section has the
+            same left-right shape as the switch row below it, instead of a tall
+            narrow column with an empty half beside it. */}
+        <div className="flex gap-12 max-[1024px]:gap-8 max-[900px]:flex-col max-[900px]:gap-5 mb-9">
+          <h2 className="flex-[1.25] uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal [text-wrap:balance] m-0">
+            {problemFraming.heading}
+          </h2>
+          <p className="flex-1 max-w-[540px] text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0 pt-[6px] max-[900px]:pt-0">
+            {problemFraming.intro}
+          </p>
+        </div>
 
         {/* The switch and the sentence it controls share a row, so the
             relationship reads without explanation and the band beside the
