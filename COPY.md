@@ -597,9 +597,9 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ### Hero
 
-**Headline** — Build unmissable products, services, and experiences that earn a place in people's lives.
+**Headline** — Build the products, practices, and capabilities that keep your company unmissable.
 
-**Subhead** — I work with product, growth, and marketing leaders who need a clearer point of view on customer value, experience, and how their products or services should evolve.
+**Subhead** — I work with leaders building products, experiences, AI-enabled ways of working, and new capabilities that have to earn a place in customers' lives and in their teams' daily work.
 
 #### CTAs
 
