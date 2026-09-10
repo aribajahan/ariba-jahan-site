@@ -613,7 +613,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ### Problem Framing
 
-**Eyebrow** — Why Experience-Led Growth Is Needed Now More Than Ever
+**Eyebrow** — What's Changed
 
 **Heading** — From Share Of Attention To Share Of Life
 
