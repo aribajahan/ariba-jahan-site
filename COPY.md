@@ -109,7 +109,7 @@ I work where a shift in technology, customer behavior, or the market creates a q
 
 Over the past fifteen years, I’ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.
 
-More recently, my work has focused on AI: designing products and experiences that are genuinely useful, and helping organizations put AI to work in ways that strengthen their expertise and change how teams operate, so it becomes part of how the organization works instead of a pilot that ends.
+AI ambition is outrunning the operating model. My recent work has focused on designing products and experiences that are genuinely useful, and helping organizations put AI to work in ways that strengthen their expertise, change how teams operate, and become part of the way the organization works beyond a pilot.
 
 ### Work With Me Teaser
 
