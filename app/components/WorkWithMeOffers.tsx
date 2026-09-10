@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import {
   cxSprintContent,
@@ -15,6 +15,12 @@ export default function WorkWithMeOffers() {
   const [openOffer, setOpenOffer] = useState<"cx" | "strategy" | null>(null);
   const [deliverablesOpen, setDeliverablesOpen] = useState(false);
   const [weeksOpen, setWeeksOpen] = useState(false);
+
+  // Measured rather than capped at a fixed height, so adding a deliverable or a
+  // week in the Studio never clips the list.
+  const deliverablesRef = useRef<HTMLDivElement>(null);
+  const weeksRef = useRef<HTMLDivElement>(null);
+  const openHeight = (ref: React.RefObject<HTMLDivElement | null>) => ref.current?.scrollHeight ?? 2000;
 
   const cxOpen = openOffer === "cx";
   const strategyOpen = openOffer === "strategy";
@@ -101,8 +107,9 @@ export default function WorkWithMeOffers() {
                     </span>
                   </button>
                   <div
+                    ref={deliverablesRef}
                     className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                    style={{ maxHeight: deliverablesOpen ? 640 : 0 }}
+                    style={{ maxHeight: deliverablesOpen ? openHeight(deliverablesRef) : 0 }}
                   >
                     <div className="pt-4 flex flex-col gap-[14px] max-w-[460px]">
                       <p className="text-[13px] leading-[1.5] text-cream/75 italic">
@@ -131,7 +138,8 @@ export default function WorkWithMeOffers() {
                   </button>
                   <div
                     className="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-                    style={{ maxHeight: weeksOpen ? 400 : 0 }}
+                    ref={weeksRef}
+                    style={{ maxHeight: weeksOpen ? openHeight(weeksRef) : 0 }}
                   >
                     <div className="pt-4 flex flex-col gap-[10px] max-w-[460px]">
                       {cxSprintWeeks.map((w) => (
