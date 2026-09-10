@@ -623,7 +623,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ##### 1. What customers experience
 
-**Intro** — The work is building products, services, and experiences that earn a real place in people’s lives.
+**Intro** — Customer expectations are outrunning the experiences most organizations offer. The work is moving beyond capturing attention to building products, services, and experiences that earn a real place in people’s lives.
 
 ###### Cards
 
