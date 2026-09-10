@@ -643,17 +643,23 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ### CX Sprint
 
-**Eyebrow** — 01 · I Work With Teams & Organizations
+**Eyebrow** — 01 · Work With Teams & Organizations
 
-**Heading** — Strategic Ambition Sprint
+**Heading** — Ambition Sprint
 
-**Intro** — A 6-week sprint for teams that need a sharper point of view on how their product, service, or experience should evolve.
+**Intro** — Turn a market, customer, or technology shift into a defined opportunity your team can act on.
 
 **Body**
 
-This is for organizations at an inflection point: when customer expectations are changing, engagement has flattened, the market is shifting, or new technology is creating pressure to respond. The issue usually isn't a lack of ideas. It's that the real opportunity is still blurry, or the current experience no longer matches the value the organization wants to create.
+A focused six-week engagement for leaders evolving what they offer customers, putting AI to work in ways that strengthen their expertise, or building a new capability.
 
-This sprint helps you step back, see the experience more clearly, and make better decisions about where growth, relevance, and differentiation can come from next. Together, we look at customer behavior, business priorities, category movement, and the role technology should or shouldn't play.
+Customer expectations, markets, and technologies move faster than most organizations can absorb. The work is understanding what a shift means for your customers, your team, and the value you are positioned to create.
+
+AI adoption is behavior, not deployment. Tools become valuable when they fit real work, draw on the expertise already inside the organization, and give people a clear reason to change how they operate.
+
+We start by getting close to the problem: what people need, where the current experience or workflow is falling short, and what the organization already knows how to do well. Then we frame the opportunity, make possible directions tangible, test what is worth pursuing, and identify the practices needed to embed the work in everyday decisions.
+
+You leave with a defined opportunity, a shared point of view, concepts or prototypes to react to, practical frameworks, and a prioritized path forward.
 
 **Fit Points**
 
