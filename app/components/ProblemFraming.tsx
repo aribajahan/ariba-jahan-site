@@ -99,10 +99,11 @@ export default function ProblemFraming() {
                       className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
                       style={{ maxHeight: open ? 400 : 0 }}
                     >
-                      {/* A card without a photo keeps its spacing and reads as
-                          deliberate rather than broken. */}
-                      {card.photoSrc ? (
-                        <div className="relative h-40 mt-4 max-[700px]:mt-3 mb-[14px] max-[700px]:mb-2">
+                      {/* A card with no photo yet holds the same space as one
+                          with an image, so the grid doesn't shift when a photo
+                          is added in the Studio. */}
+                      <div className="relative h-40 mt-4 max-[700px]:mt-3 mb-[14px] max-[700px]:mb-2 bg-charcoal/[0.06]">
+                        {card.photoSrc ? (
                           <Image
                             quality={90}
                             src={card.photoSrc}
@@ -111,10 +112,12 @@ export default function ProblemFraming() {
                             sizes="(max-width: 700px) 92vw, (max-width: 1024px) 45vw, 22vw"
                             style={{ objectFit: "cover" }}
                           />
-                        </div>
-                      ) : (
-                        <div className="mt-4 max-[700px]:mt-3 mb-[14px] max-[700px]:mb-2 border-t-2 border-cherish w-10" />
-                      )}
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-charcoal/35 text-[10px] font-semibold uppercase tracking-[0.14em]">
+                            Image
+                          </div>
+                        )}
+                      </div>
                       <p className="text-[12.5px] leading-[1.55] text-charcoal/60">{card.description}</p>
                     </div>
                   </div>
