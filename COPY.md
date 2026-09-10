@@ -139,9 +139,9 @@ Let's build something unmissable.
 
 **Index** — 02
 
-**Lead** — Dedicated thinking time for leaders navigating important decisions.
+**Lead** — Think through an important decision with an experienced outside partner.
 
-**Body** — Focused sessions for leaders who want an experienced strategic partner to pressure-test ideas, work through complex challenges, and think more clearly about what comes next.
+**Body** — Focused working sessions for leaders pressure-testing a direction, working through a complex problem, or turning a half-formed idea into a clear next move.
 
 **CTA** — See the Sessions →
 
