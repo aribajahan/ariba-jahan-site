@@ -629,13 +629,13 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ###### 1. Trust Is Distributed
 
-**Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t agree. You have less control over how people form opinions and decide what’s worth choosing.
+**Description** — People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t always agree with each other. You have less control over how people form opinions and decide what’s worth choosing.
 
 ###### 2. Attention Isn't Relationship
 
-**Description** — Reach can get you seen. It doesn’t guarantee relevance. Experience-Led Growth is about building enough value that people return because they want to.
+**Description** — Reach can get you seen, but it doesn’t guarantee relevance over time. Experience-Led Growth is about providing enough value that people return because they want to.
 
-###### 3. Expectations Became Liquid
+###### 3. Expectations Are Liquid
 
 **Description** — What people want from a product or service now moves across categories faster than most organizations are built to respond to. What feels novel quickly becomes baseline.
 
@@ -671,7 +671,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ### CX Sprint
 
-**Eyebrow** — 01 · Work With Teams & Organizations
+**Eyebrow** — 01 · For Teams & Organizations
 
 **Heading** — Ambition Sprint
 
@@ -679,7 +679,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Body**
 
-A focused six-week engagement for leaders evolving what they offer customers, putting AI to work in ways that strengthen their expertise, or building a new capability.
+A focused 6-8 week engagement for leaders evolving what they offer customers, putting AI to work in ways that strengthen their expertise, or building a new capability.
 
 Customer expectations, markets, and technologies move faster than most organizations can absorb. The work is understanding what a shift means for your customers, your team, and the value you are positioned to create.
 
@@ -691,12 +691,12 @@ You leave with a defined opportunity, a shared point of view, concepts or protot
 
 **Fit Points**
 
-- Engagement, retention, or repeat usage has plateaued
-- Customer expectations in your category are shifting
-- Your product or experience works, but no longer feels distinctive
-- Your brand promise is stronger than what the experience currently delivers
-- There's pressure to evolve, but not enough clarity on where the real opportunity is
-- You need a stronger read on what customers will value next
+- Product engagement, retention, or repeat usage has plateaued.
+- Customer expectations, behavior, or trust are shifting in your category.
+- Your product, service, membership, or experience works, but no longer feels distinctive or fully delivers on the brand promise.
+- You are deciding where AI can genuinely improve the product, customer experience, or business.
+- AI tools are spreading across teams, but the knowledge, workflows, and judgment that make them useful are still disconnected.
+- You are building a new offer, practice, or capability and need to define how it will work in practice.
 
 **Outcome** — A clearer opportunity space, a stronger strategic direction, and a concrete set of concepts, priorities, or prototypes to help your team move forward.
 
@@ -744,7 +744,7 @@ You leave with a defined opportunity, a shared point of view, concepts or protot
 
 ### Strategy Sessions
 
-**Eyebrow** — 02 · I Work With Individual Leaders
+**Eyebrow** — 02 · For Individual Leaders
 
 **Heading** — 1:1 Strategy Sessions
 
@@ -754,17 +754,17 @@ You leave with a defined opportunity, a shared point of view, concepts or protot
 
 Sometimes you don't need a full sprint. You need a clear outside perspective, a thoughtful working session, and enough room to think through a problem without rushing to the wrong answer.
 
-These sessions are for leaders who want to pressure-test a direction, work through friction in an existing experience, evaluate a product or GTM shift, or make sense of how changing technology and customer behavior should shape their next move.
+These sessions are for leaders pressure-testing a direction, working through friction in an existing experience, evaluating a product or go-to-market shift, or making sense of what a technology or customer-behavior shift requires. In sixty minutes, we get to the heart of the issue and identify a practical next step.
 
 In 60 minutes, we'll get to the heart of the issue, identify what matters most, and map out a practical next step.
 
 **Best For**
 
-- pressure-testing a roadmap, product shift, or GTM direction
-- diagnosing friction in a current customer experience
-- thinking through adoption, retention, or value questions
-- getting unstuck on an AI, CX, or growth decision
-- sharpening your strategic point of view before making a move
+- Pressure-testing a roadmap, product shift, or go-to-market direction
+- Working through friction in a current customer experience
+- Thinking through adoption, retention, or value questions
+- Getting unstuck on an AI, experience, or growth decision
+- Sharpening your point of view before making a move
 
 **What You Get** — A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.
 
