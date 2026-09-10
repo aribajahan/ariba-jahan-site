@@ -661,7 +661,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Description** — People bring the standards of the software they use outside work to the tools they’re handed at work. AI arrived promising that work would get easier. When it is mandated and the work gets harder, people route around it — and the broken promise costs more than the tool.
 
-###### 4. Change Isn’t A Destination
+###### 4. Change Is Continuous
 
 **Description** — Most organizations treat new technology as a program with an end date. The ones that get value build the habit instead: try things, learn from them, and embed what works into how the place runs.
 
