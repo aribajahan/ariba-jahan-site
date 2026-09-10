@@ -26,43 +26,59 @@ export default function ProblemFraming() {
         <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-5 max-[700px]:whitespace-normal whitespace-nowrap">
           {problemFraming.heading}
         </h2>
-        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[640px] mb-9">
+        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[640px] mb-8">
           {problemFraming.intro}
         </p>
 
-        {/* Tabs. Roving focus is unnecessary here — two buttons, both always
-            reachable — but arrow keys still move between them, which is what a
-            keyboard user expects from a tablist. */}
-        <div
-          role="tablist"
-          aria-label="Who this applies to"
-          className="inline-flex gap-1 p-1 bg-charcoal/[0.06] rounded-full mb-8 max-[700px]:flex max-[700px]:w-full"
-          onKeyDown={(e) => {
-            if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-            e.preventDefault();
-            setActiveView((v) => (e.key === "ArrowRight" ? (v + 1) % views.length : (v - 1 + views.length) % views.length));
-          }}
-        >
-          {views.map((view, i) => {
-            const active = activeView === i;
-            return (
-              <button
-                key={view.label}
-                type="button"
-                role="tab"
-                id={`framing-tab-${i}`}
-                aria-selected={active}
-                aria-controls={`framing-panel-${i}`}
-                tabIndex={active ? 0 : -1}
-                onClick={() => setActiveView(i)}
-                className={`px-5 py-[10px] max-[700px]:px-3 max-[700px]:flex-1 rounded-full text-[13px] max-[700px]:text-[12px] font-bold tracking-[0.02em] transition-colors duration-150 min-h-11 ${
-                  active ? "bg-charcoal text-cream" : "text-charcoal/60 hover:text-charcoal"
-                }`}
-              >
-                {view.label}
-              </button>
-            );
-          })}
+        {/* The switch and the sentence it controls share a row, so the
+            relationship reads without explanation and the band beside the
+            switch isn't left empty. Square edges to match the cards, images and
+            buttons on the rest of the page. */}
+        <div className="flex items-center gap-7 max-[900px]:items-start max-[700px]:flex-col max-[700px]:gap-4 flex-wrap pb-[26px] border-b border-charcoal/[0.14] mb-[30px]">
+          <div
+            role="tablist"
+            aria-label="Who this applies to"
+            className="inline-flex flex-none border-[1.5px] border-charcoal max-[700px]:w-full"
+            onKeyDown={(e) => {
+              if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+              e.preventDefault();
+              setActiveView((v) =>
+                e.key === "ArrowRight" ? (v + 1) % views.length : (v - 1 + views.length) % views.length
+              );
+            }}
+          >
+            {views.map((view, i) => {
+              const active = activeView === i;
+              return (
+                <button
+                  key={view.label}
+                  type="button"
+                  role="tab"
+                  id={`framing-tab-${i}`}
+                  aria-selected={active}
+                  aria-controls={`framing-panel-${i}`}
+                  tabIndex={active ? 0 : -1}
+                  onClick={() => setActiveView(i)}
+                  className={`px-5 py-3 max-[700px]:flex-1 max-[700px]:px-2 border-r-[1.5px] border-charcoal last:border-r-0 text-[13px] max-[700px]:text-[12px] font-bold tracking-[0.02em] transition-colors duration-150 min-h-11 whitespace-nowrap ${
+                    active ? "bg-charcoal text-cream" : "text-charcoal/60 hover:text-charcoal"
+                  }`}
+                >
+                  {view.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {views.map((view, i) => (
+            <p
+              key={view.label}
+              id={`framing-intro-${i}`}
+              hidden={activeView !== i}
+              className="flex-1 min-w-[320px] max-w-[620px] max-[700px]:min-w-0 text-[17px] leading-[1.5] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0"
+            >
+              {view.intro}
+            </p>
+          ))}
         </div>
 
         {views.map((view, viewIndex) => (
@@ -71,11 +87,9 @@ export default function ProblemFraming() {
             role="tabpanel"
             id={`framing-panel-${viewIndex}`}
             aria-labelledby={`framing-tab-${viewIndex}`}
+            aria-describedby={`framing-intro-${viewIndex}`}
             hidden={activeView !== viewIndex}
           >
-            <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[640px] mb-11">
-              {view.intro}
-            </p>
             <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[1024px]:!grid-cols-2 max-[700px]:!grid-cols-1 gap-8 max-[700px]:gap-1">
               {view.cards.map((card, i) => {
                 const key = `${viewIndex}-${i}`;
@@ -92,7 +106,7 @@ export default function ProblemFraming() {
                         {card.title}
                       </span>
                       <span className="hidden max-[700px]:inline-block flex-none text-xl text-cherish font-light">
-                        {open ? "−" : "+"}
+                        {open ? "\u2212" : "+"}
                       </span>
                     </button>
                     <div
