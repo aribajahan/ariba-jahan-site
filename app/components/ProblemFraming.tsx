@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import wwmContent from "../../content/pages/work-with-me.json";
 
@@ -16,6 +16,10 @@ export default function ProblemFraming() {
   const [openCards, setOpenCards] = useState<Record<string, boolean>>({});
 
   const toggleCard = (key: string) => setOpenCards((prev) => ({ ...prev, [key]: !prev[key] }));
+
+  // Measured rather than capped, so a longer card description never clips on
+  // mobile. Above 700px the cap is overridden in CSS and every card is open.
+  const bodyRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   return (
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
@@ -110,8 +114,11 @@ export default function ProblemFraming() {
                       </span>
                     </button>
                     <div
+                      ref={(el) => {
+                        bodyRefs.current[key] = el;
+                      }}
                       className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
-                      style={{ maxHeight: open ? 400 : 0 }}
+                      style={{ maxHeight: open ? bodyRefs.current[key]?.scrollHeight ?? 600 : 0 }}
                     >
                       {/* A card with no photo yet holds the same space as one
                           with an image, so the grid doesn't shift when a photo
@@ -132,7 +139,7 @@ export default function ProblemFraming() {
                           </div>
                         )}
                       </div>
-                      <p className="text-[12.5px] leading-[1.55] text-charcoal/60">{card.description}</p>
+                      <p className="text-[14px] leading-[1.6] text-charcoal/70">{card.description}</p>
                     </div>
                   </div>
                 );
