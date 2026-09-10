@@ -685,7 +685,7 @@ Customer expectations, markets, and technologies move faster than most organizat
 
 AI adoption is behavior, not deployment. Tools become valuable when they fit real work, draw on the expertise already inside the organization, and give people a clear reason to change how they operate.
 
-We start by getting close to the problem: what customers and teams need, what the market is signaling, what the organization already knows, where that knowledge lives, and where the current experience or workflow is falling short. Then we frame the opportunity, make possible directions tangible, test what is worth pursuing, and identify what needs to become shared
+We start by getting close to the problem: what customers and teams need, what the market is signaling, what the organization already knows, where that knowledge lives, and where the current experience or workflow falls short. Then we frame the opportunity, make possible directions tangible, test what is worth pursuing, and identify what needs to become shared practice.
 
 You leave with a defined opportunity, a shared point of view, concepts or prototypes to react to, practical frameworks, and a prioritized path forward.
 
