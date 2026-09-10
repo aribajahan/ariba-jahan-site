@@ -651,7 +651,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ###### 1. Knowledge Is Distributed
 
-**Description** — The expertise behind good decisions sits across people, teams, tools, and institutional memory. AI has multiplied it: more documents, more experiments, more tools in more places. Experimentation is a good signal. Without a way to bring what works into the core, it stays sprawl.
+**Description** — The expertise behind good decisions sits across people, teams, customer signals, data, tools, and institutional memory. AI has multiplied it: more documents, experiments, and tools in more places. Experimentation is a good signal—but when useful knowledge stays scattered, teams repeat work, decisions lose context, and AI has little to build from.
 
 ###### 2. Deployment Isn’t Adoption
 
