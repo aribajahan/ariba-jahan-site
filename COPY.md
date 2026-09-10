@@ -129,9 +129,9 @@ Let's build something unmissable.
 
 **Index** — 01
 
-**Lead** — Reimagine how your organization creates value for customers.
+**Lead** — Turn a market, customer, or technology shift into a defined opportunity your team can act on.
 
-**Body** — A strategic sprint for organizations exploring new opportunities, evolving existing products and experiences, or responding to changing customer expectations, emerging technologies, and shifting markets.
+**Body** — A focused sprint engagement for organizations exploring a new opportunity, evolving a product, service, or experience, making AI useful across the business, or building a capability that does not yet exist.
 
 **CTA** — See the Sprint →
 
