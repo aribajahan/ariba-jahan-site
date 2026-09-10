@@ -117,7 +117,9 @@ More recently, my work has focused on AI: designing products and experiences tha
 
 **Heading** — Let's Work Together
 
-**Body** — Customer expectations keep changing, and so do the technologies shaping how people discover, choose, and stay loyal to products and brands. I work with leaders and teams at different points in that process, whether they're identifying new opportunities or sharpening a product, service, membership, or experience into something people value, use, and come back to.
+**Body** — Customer expectations and behavior keep changing. So do the technologies shaping how people discover, choose, trust, and return — and how organizations create, learn, operate, and evolve.
+
+I work with leaders at inflection points: evolving the products, services, and experiences they offer customers; putting AI investment to work in ways that strengthen the expertise and judgment already inside the organization; and building the practices and capabilities to test new ideas, learn from them, and embed what works.
 
 Let's build something unmissable.
 
