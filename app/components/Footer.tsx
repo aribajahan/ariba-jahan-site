@@ -35,8 +35,24 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="text-[11px] text-cream/[0.32] w-full mt-1">
-          © {siteSettings.footer.copyrightYear} Ariba Jahan. All rights reserved.
+        <div className="w-full mt-1 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex gap-5">
+            <a
+              href="https://design.aribajahan.com"
+              className="text-[11px] font-medium text-cream/50 hover:text-cream transition-colors duration-150"
+            >
+              Design system
+            </a>
+            <a
+              href="https://design.aribajahan.com/legal"
+              className="text-[11px] font-medium text-cream/50 hover:text-cream transition-colors duration-150"
+            >
+              Legal
+            </a>
+          </div>
+          <div className="text-[11px] text-cream/[0.32]">
+            © {siteSettings.footer.copyrightYear} Ariba Jahan. All rights reserved.
+          </div>
         </div>
       </div>
     </footer>
