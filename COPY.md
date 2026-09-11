@@ -617,17 +617,17 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Heading** — From Share Of Attention To Share Of Life
 
-**Intro** — Whether you're asking a customer to make room for a product in their life or a team to make room for a new technology in their work, adoption is never just a launch. Expectations are outrunning what most organizations offer, and closing that distance comes down to two things:
+**Intro** — Whether you're asking a customer to make room for a product in their life or a team to make room for a new technology in their work, adoption is never just a launch. It runs on trust, on changed behavior, and on a value exchange that feels fair both ways. AI keeps moving what people expect, and those expectations are outrunning what most organizations offer. Closing that distance comes down to two things.
 
 #### Points
 
 ##### 1. The experience
 
-**Text** — the value your product or service provides, what it asks of people in return, and whether it stays essential as expectations move.
+**Text** — the value your product or service provides that makes it indispensable, and what it asks of people in return.
 
 ##### 2. The operating model
 
-**Text** — the priorities, decisions, and capability that set the ceiling on what that experience can be.
+**Text** — whether the organization is architected and run to close the gap between its ambitions and its ability to deliver on them.
 
 #### Views
 

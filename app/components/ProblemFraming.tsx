@@ -34,30 +34,31 @@ export default function ProblemFraming() {
         <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-6 max-[700px]:whitespace-normal whitespace-nowrap">
           {problemFraming.heading}
         </h2>
-        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[760px] mb-6">
+        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[760px] mb-[30px]">
           {problemFraming.intro}
         </p>
 
-        {/* The two things the intro promises. A rule on the left marks them as
-            the section's claim rather than more prose. */}
-        <div className="grid gap-[14px] max-w-[900px] mb-9">
+        {/* The two things the intro promises. No rule, no bold — the nouns lead
+            and the colons carry them, so the band spends no more emphasis than
+            the cards below it. */}
+        <div className="grid gap-[14px] max-w-[760px] mb-11">
           {problemFraming.points.map((point) => (
             <p
               key={point.label}
-              className="pl-[18px] border-l-2 border-cherish text-[17px] leading-[1.55] max-[700px]:text-[16px] text-charcoal m-0"
+              className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0"
             >
-              <b className="font-bold">{point.label}</b> — {point.text}
+              {point.label}: {point.text}
             </p>
           ))}
         </div>
 
-        {/* Full-width switch, square-edged to match the cards, images and
-            buttons elsewhere on the page. It offers the two things just named,
-            in the same order. */}
+        {/* Text-only tabs sitting on a hairline. The active one takes a cherish
+            underline; nothing is filled or boxed, so the switch reads as a
+            control without becoming a banner. */}
         <div
           role="tablist"
           aria-label="Who this applies to"
-          className="flex w-full border-[1.5px] border-charcoal mb-9 max-[620px]:flex-col"
+          className="flex gap-[34px] max-[620px]:gap-[22px] border-b border-charcoal/[0.14] mb-[34px]"
           onKeyDown={(e) => {
             if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
             e.preventDefault();
@@ -78,13 +79,12 @@ export default function ProblemFraming() {
                 aria-controls={`framing-panel-${i}`}
                 tabIndex={active ? 0 : -1}
                 onClick={() => setActiveView(i)}
-                className={`flex-1 flex items-center justify-center gap-[10px] px-5 py-4 min-h-[58px] border-r-[1.5px] last:border-r-0 border-charcoal max-[620px]:border-r-0 max-[620px]:border-b-[1.5px] max-[620px]:last:border-b-0 text-[15px] max-[700px]:text-[13px] font-bold tracking-[0.02em] transition-colors duration-150 ${
-                  active ? "bg-charcoal text-cream" : "text-charcoal/60 hover:text-charcoal"
+                className={`flex items-center pb-[14px] -mb-px min-h-11 text-[15px] max-[620px]:text-[13px] font-bold tracking-[0.01em] border-b-2 transition-colors duration-150 ${
+                  active
+                    ? "text-charcoal border-cherish"
+                    : "text-charcoal/40 border-transparent hover:text-charcoal"
                 }`}
               >
-                <span className="font-display font-extrabold text-[13px] opacity-50">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
                 {view.label}
               </button>
             );
