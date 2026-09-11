@@ -69,6 +69,11 @@ export default function Experiments() {
                     </div>
                   )}
                 </div>
+                {entry.client && (
+                  <div className="text-[11px] font-extrabold tracking-[0.16em] uppercase text-cherish mb-1.5">
+                    {entry.client}
+                  </div>
+                )}
                 <div className="font-display text-[22px] max-[700px]:text-[21px] font-black uppercase text-charcoal leading-[1.05] mb-[9px]">
                   {entry.headline}
                 </div>

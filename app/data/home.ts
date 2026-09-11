@@ -33,6 +33,7 @@ import experimentsData from "../../content/collections/case-studies-quests.json"
 export type Experiment = {
   tag: "Case Study" | "Quest";
   tagIndex: number;
+  client?: string;
   headline: string;
   description: string;
   photoSrc: string | null;

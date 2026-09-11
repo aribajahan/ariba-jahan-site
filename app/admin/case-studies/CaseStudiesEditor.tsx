@@ -5,7 +5,7 @@ import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
 
 type Tag = "Case Study" | "Quest";
-type Entry = { tag: Tag; tagIndex: number; headline: string; description: string; photoSrc: string | null; showOnHome?: boolean };
+type Entry = { tag: Tag; tagIndex: number; client?: string; headline: string; description: string; photoSrc: string | null; showOnHome?: boolean };
 
 const BADGE_STYLE: Record<Tag, string> = {
   "Case Study": "bg-[#F5A8D5] text-[#2D2D2D]",
@@ -112,6 +112,13 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
                     <option value="Case Study">Case Study</option>
                     <option value="Quest">Quest</option>
                   </select>
+
+                  <label className="block text-[13px] font-semibold mb-2">Client <span className="font-normal text-[#999]">(optional — shows as an eyebrow above the headline)</span></label>
+                  <input
+                    value={entry.client ?? ""}
+                    onChange={(e) => update(i, { client: e.target.value })}
+                    className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm mb-3"
+                  />
 
                   <label className="block text-[13px] font-semibold mb-2">Headline</label>
                   <input

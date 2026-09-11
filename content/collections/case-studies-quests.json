@@ -2,10 +2,11 @@
   {
     "tag": "Case Study",
     "tagIndex": 1,
-    "headline": "Ally — Turning everyday banking into a reason to come back",
+    "headline": "Turning everyday banking into a reason to come back",
     "description": "Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.",
     "photoSrc": "/assets/wwm-case-1.jpg",
-    "showOnHome": true
+    "showOnHome": true,
+    "client": "Ally"
   },
   {
     "tag": "Quest",
@@ -18,34 +19,37 @@
   {
     "tag": "Case Study",
     "tagIndex": 3,
-    "headline": "Stagwell — Shaping an enterprise AI research product from strategy to prototype",
-    "description": "Working from enterprise user research through product strategy, positioning, GTM and prototype development for a new AI-native research platform.",
+    "headline": "Shaping an enterprise AI research product from strategy to prototype",
+    "description": "Taking a new AI-native research platform from enterprise research to a funded prototype.",
     "photoSrc": "/assets/wwm-case-study-3.jpg",
-    "showOnHome": true
+    "showOnHome": true,
+    "client": "Stagwell"
   },
   {
     "tag": "Case Study",
     "tagIndex": 4,
-    "headline": "WeightWatchers — Reimagining WW for a more adaptive, everyday relationship",
+    "headline": "Reimagining WW for a more adaptive, everyday relationship",
     "description": "Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.",
     "photoSrc": "/assets/wwm-case-2.jpg",
-    "showOnHome": true
+    "showOnHome": true,
+    "client": "WeightWatchers"
   },
   {
     "tag": "Quest",
     "tagIndex": 5,
     "headline": "Asha",
-    "description": "Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.",
+    "description": "An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.",
     "photoSrc": "/assets/quest-asha-v1.png",
     "showOnHome": true
   },
   {
     "tag": "Case Study",
     "tagIndex": 6,
-    "headline": "Ad Council & Anomaly — Turning emerging technology and AI into meaningful opportunity",
+    "headline": "Turning emerging technology and AI into meaningful opportunity",
     "description": "Building the conditions for organizations to explore, adopt, and create with new technology without losing judgment, trust, or strategic focus.",
     "photoSrc": "/assets/wwm-case-7.jpg",
-    "showOnHome": true
+    "showOnHome": true,
+    "client": "Ad Council & Anomaly"
   },
   {
     "tag": "Quest",
