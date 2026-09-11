@@ -651,7 +651,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
 
-##### 2. What organizations need
+##### 2. What organizations face
 
 ###### Cards
 
@@ -944,7 +944,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
 
-### 2. ARIBA OS
+### 2. Ariba Jahan OS
 
 **Tag** — Quest
 
