@@ -1,9 +1,31 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import sharp from "sharp";
 import { publishFiles } from "../../../../lib/github";
 
-const MAX_BYTES = 8 * 1024 * 1024; // 8MB
+const MAX_BYTES = 25 * 1024 * 1024; // 25MB input cap; images are compressed below before saving
+const MAX_DIMENSION = 2000; // longest edge in px after compression
+const QUALITY = 82;
+
+// Resize oversized uploads and re-encode at a sane quality so full-size phone
+// photos don't get committed to the repo (which fills Vercel deployment storage).
+// Format is preserved, so PNG transparency survives; SVG and animated GIF pass through.
+async function compressImage(format: string, input: Buffer): Promise<Buffer> {
+  if (format === "svg+xml" || format === "gif") return input;
+  try {
+    let pipeline = sharp(input, { failOn: "none" }).rotate(); // honor EXIF orientation
+    const meta = await pipeline.metadata();
+    if ((meta.width ?? 0) > MAX_DIMENSION || (meta.height ?? 0) > MAX_DIMENSION) {
+      pipeline = pipeline.resize(MAX_DIMENSION, MAX_DIMENSION, { fit: "inside", withoutEnlargement: true });
+    }
+    if (format === "png") return await pipeline.png({ compressionLevel: 9 }).toBuffer();
+    if (format === "webp") return await pipeline.webp({ quality: QUALITY }).toBuffer();
+    return await pipeline.jpeg({ quality: QUALITY, mozjpeg: true }).toBuffer();
+  } catch {
+    return input; // never fail an upload because compression hiccuped
+  }
+}
 
 function sanitizeFilename(name: string): string {
   const ext = path.extname(name).toLowerCase();
@@ -42,8 +64,11 @@ export async function POST(request: Request) {
   }
   const base64 = match[2];
   if (Buffer.byteLength(base64, "base64") > MAX_BYTES) {
-    return NextResponse.json({ ok: false, error: "Image is too large (max 8MB)." }, { status: 400 });
+    return NextResponse.json({ ok: false, error: "Image is too large (max 25MB)." }, { status: 400 });
   }
+
+  const compressed = await compressImage(match[1], Buffer.from(base64, "base64"));
+  const outBase64 = compressed.toString("base64");
 
   const safeName = sanitizeFilename(filename);
   const publicPath = uniqueUploadPath(safeName);
@@ -60,7 +85,7 @@ export async function POST(request: Request) {
   try {
     await publishFiles(
       [
-        { path: repoPath, content: `__base64__:${base64}` },
+        { path: repoPath, content: `__base64__:${outBase64}` },
         { path: "content/media-library.json", content: JSON.stringify(meta, null, 2) + "\n" },
       ],
       `Upload ${publicPath} via Studio`
