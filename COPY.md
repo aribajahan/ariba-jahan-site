@@ -1676,9 +1676,34 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Role** — Senior Sales & Marketing Executive
 
-### 7. Ad Counc
+### 7. Ad Council & Anomaly
 
-#### Pills
+**Title** — Turning emerging technology and AI into meaningful opportunity
+
+**Summary** — Building the conditions for organizations to explore, adopt, and create with new technology without losing judgment, trust, or strategic focus.
+
+**Pills**
+
+- Emerging Technology Strategy
+- AI Adoption
+- Strategic Partnerships
+- Responsible Innovation
+
+**Challenge** — As new technology reshaped media, products, and customer expectations, both organizations needed a clear way to decide what was worth pursuing, how to turn it into meaningful work and embed it into how we operate.
+
+**Solution** — At the Ad Council, I built an emerging-tech practice connecting C-suite leaders, partners, and cross-functional teams around web3, immersive media, AI, and spatial computing. At Anomaly, I partnered with the Chief AI Officer on adoption strategy while integrating AI into my department’s processes and workflows, building custom AI environments, internal tools, and executive debriefs for clients. 
+
+**Impact** — At the Ad Council, I built relationships with 60+ emerging-technology leaders, reduced immersive-technology costs by 80% through strategic partnerships, and helped create pilots across new media and interaction formats. At Anomaly, the AI tools and workflows I built spread across strategy, design, and creative teams, prompting demo requests from colleagues and executives across multiple offices.
+
+**Role Context** — VP of Product Experience & Innovation, The Ad Council; Head of Transformation, North America, Anomaly
+
+#### Testimonial
+
+**Quote** — "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes."
+
+**Name** — Lauren Lavalle
+
+**Role** — Chief Client Officer, Anomaly
 
 ## Trusted By Logos (Work With Me)
 
