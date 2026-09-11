@@ -62,7 +62,7 @@
         "cards": [
           {
             "title": "Expertise Is Distributed",
-            "photoSrc": "/uploads/problem-org-1-opt.jpg",
+            "photoSrc": "/uploads/problem-org-expertise-opt.jpg",
             "description": "An organization's real advantage sits in what its people know: judgment built over years, context that never got written down. AI can only work with what has been captured, and most of it hasn't been."
           },
           {
@@ -72,7 +72,7 @@
           },
           {
             "title": "Orchestration Is The Cost",
-            "photoSrc": "/uploads/problem-org-3-opt.jpg",
+            "photoSrc": "/uploads/problem-org-1-opt.jpg",
             "description": "AI tools are built for one person at a time, but real work happens between people. Connecting the tools, data, and teams costs more than the tools themselves, and that cost grows with the stack."
           },
           {
