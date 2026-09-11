@@ -107,22 +107,35 @@
   {
     "tagRotationDeg": 2,
     "photoSrc": "/assets/wwm-case-study-6.jpg",
-    "client": "Ad Council",
-    "title": "Building A Responsible Path Into Emerging Technology And AI",
-    "summary": "Creating the internal strategy, partnerships, and governance needed to explore new technologies without losing sight of trust, cost, or usefulness.",
+    "client": "Ad Council & Anomaly",
+    "title": "Building innovation and transformation capability into how organizations work",
+    "summary": "Building innovation and transformation functions that turn changing customer needs, new technology, and market opportunity into products, offerings, and work organizations can sustain.",
     "pills": [
-      "Emerging Tech Strategy",
-      "AI Governance",
-      "Strategic Partnership"
+      "Business Function Building",
+      "Organizational Adoption",
+      "New Venture Building",
+      "Commercial Innovation"
     ],
-    "challenge": "As emerging technology moved quickly from metaverse experimentation to generative AI and spatial computing, the organization needed a way to explore what was relevant without chasing hype, overspending, or eroding public trust.",
-    "solution": "The work focused on building an internal structure for exploration, bringing together executive leaders, external partners, and cross-functional teams to evaluate opportunities, run pilots, establish workflows, and create a more responsible process for deciding what was worth testing or adopting.",
-    "impact": "The result was a stronger internal foundation for responsible AI and emerging tech adoption, significant cost savings through strategic partnerships, and a series of emerging media and storytelling pilots that helped the organization explore new formats more thoughtfully.",
-    "roleContext": "VP of Product Experience & Innovation at The Ad Council. Led cross-disciplinary strategy, design & partner teams",
+    "challenge": "At the Ad Council, changing media and technology created new opportunities to reach people and build new products. At Anomaly, Transformation needed to become a more commercially relevant, client-facing practice. In both cases, the work was building the capability to turn opportunity into sustained value.",
+    "solution": "Ariba built functions that helped leaders turn change into action: from training and embedding new practices of experimentation, technology use, and emerging-media exploration to creating internal consultancy and client-facing offers. Across both organizations, she built the delivery models and commercial infrastructure around live demand and became a trusted partner to C-suite leaders shaping what came next.",
+    "impact": "The work created new revenue-generating offerings and a culture of experimentation around emerging media and technology. At the Ad Council, the methods shaped major public-health and product initiatives, including a $52M vaccine education effort; at Anomaly, the practice opened a new business line and created a stronger platform for client growth.",
+    "roleContext": "VP of Product Experience & Innovation at The Ad Council \\\\ Head of Transformation, North America, Anomaly",
     "testimonial": {
       "quote": "When tasked with leading transformation of our donated media model at the Ad Council, I turned to Ariba to co-create and reimagine the possibilities of such an ambitious exploration. Her curiosity, strategic thinking, and ability to start with a blank canvas paved new paths of opportunity across the organization, up through the C-suite.",
       "name": "Kathleen Kayse",
       "role": "Senior Sales & Marketing Executive"
     }
+  },
+  {
+    "tagRotationDeg": 0,
+    "photoSrc": "",
+    "client": "Ad Counc",
+    "title": "",
+    "summary": "",
+    "pills": [],
+    "challenge": "",
+    "solution": "",
+    "impact": "",
+    "roleContext": ""
   }
 ]
