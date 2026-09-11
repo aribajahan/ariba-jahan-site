@@ -655,21 +655,21 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ###### Cards
 
-###### 1. Knowledge Is Distributed
+###### 1. Expertise Is Distributed
 
-**Description** — The expertise behind good decisions sits across people, teams, customer signals, data, tools, and institutional memory. AI has multiplied it: more documents, experiments, and tools in more places. Experimentation is a good signal—but when useful knowledge stays scattered, teams repeat work, decisions lose context, and AI has little to build from.
+**Description** — An organization's real advantage sits in what its people know: judgment built over years, context that never got written down. AI can only work with what has been captured, and most of it hasn't been.
 
-###### 2. Deployment Isn’t Adoption
+###### 2. Deployment Isn't Adoption
 
-**Description** — Buying a tool or rolling it out doesn’t change the work. People need a reason, the context to use it well, and enough confidence to change what they already do.
+**Description** — Buying a tool or rolling it out doesn't change how great work happens. People need a reason and context to use it well, and clear evidence that it improves the work.
 
-###### 3. Easier Was The Promise
+###### 3. Orchestration Is The Cost
 
-**Description** — People bring the standards of the software they use outside work to the tools they’re handed at work. AI arrived promising that work would get easier. When it is mandated and the work gets harder, people route around it — and the broken promise costs more than the tool.
+**Description** — AI tools are built for one person at a time, but real work happens between people. Connecting the tools, data, and teams costs more than the tools themselves, and that cost grows with the stack.
 
 ###### 4. Change Is Continuous
 
-**Description** — Most organizations treat new technology as a program with an end date. The ones that get value build the habit instead: try things, learn from them, and embed what works into how the place runs.
+**Description** — Technology requires organizations to build a continuous practice of experimentation, learning, and evolution, so they can make deliberate choices about what to try, test, and embed.
 
 ### Two Ways Divider
 
