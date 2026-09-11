@@ -5,7 +5,7 @@ import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
 
 type Tag = "Case Study" | "Quest";
-type Entry = { tag: Tag; tagIndex: number; headline: string; description: string; photoSrc: string | null };
+type Entry = { tag: Tag; tagIndex: number; headline: string; description: string; photoSrc: string | null; showOnHome?: boolean };
 
 const BADGE_STYLE: Record<Tag, string> = {
   "Case Study": "bg-[#F5A8D5] text-[#2D2D2D]",
@@ -22,7 +22,17 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
     setItems((list) => list.map((e, i) => (i === index ? { ...e, ...patch } : e)));
   };
 
-  const renumber = (list: Entry[]) => list.map((e, i) => ({ ...e, tagIndex: i + 1 }));
+  // Numbering counts only what's showing, matching the strip.
+  const renumber = (list: Entry[]) => {
+    let shown = 0;
+    return list.map((e) => (e.showOnHome === false ? e : { ...e, tagIndex: ++shown }));
+  };
+
+  const toggleShow = (index: number) => {
+    setItems((list) =>
+      renumber(list.map((e, i) => (i === index ? { ...e, showOnHome: e.showOnHome === false } : e)))
+    );
+  };
 
   const move = (index: number, direction: -1 | 1) => {
     const target = index + direction;
@@ -39,7 +49,7 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
   };
 
   const addNew = () => {
-    setItems((list) => renumber([...list, { tag: "Case Study", tagIndex: 0, headline: "", description: "", photoSrc: "" }]));
+    setItems((list) => renumber([...list, { tag: "Case Study", tagIndex: 0, headline: "", description: "", photoSrc: "", showOnHome: true }]));
     setOpenIndex(items.length);
   };
 
@@ -53,7 +63,12 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
     <div className="max-w-[820px] p-10">
       <div className="text-xs font-semibold text-[#888] mb-[6px]">Collection · used on Home&rsquo;s Select Work strip</div>
       <div className="flex justify-between items-center mb-7">
-        <h1 className="text-2xl">Case Studies &amp; Quests</h1>
+        <div>
+          <h1 className="text-2xl">Select Work</h1>
+          <p className="text-[12px] text-[#777] mt-1">
+            {items.filter((e) => e.showOnHome !== false).length} of {items.length} showing on the homepage
+          </p>
+        </div>
         <button type="button" onClick={addNew} className="bg-[#181818] text-white rounded-md px-4 py-[9px] text-[13px] font-semibold">
           + New Entry
         </button>
@@ -63,8 +78,16 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
         {items.map((entry, i) => {
           const open = openIndex === i;
           return (
-            <div key={i} className="bg-white border border-[#e2e0dc] rounded-[10px] overflow-hidden">
+            <div key={i} className={`bg-white border border-[#e2e0dc] rounded-[10px] overflow-hidden ${entry.showOnHome === false ? "opacity-55" : ""}`}>
               <div className="flex items-center gap-[14px] px-[18px] py-4">
+                <label className="flex items-center gap-[6px] text-[11px] font-semibold text-[#555] cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    checked={entry.showOnHome !== false}
+                    onChange={() => toggleShow(i)}
+                  />
+                  Show
+                </label>
                 <div className="flex flex-col gap-[2px]">
                   <button type="button" onClick={() => move(i, -1)} disabled={i === 0} className="text-[10px] text-[#888] disabled:opacity-30">▲</button>
                   <button type="button" onClick={() => move(i, 1)} disabled={i === items.length - 1} className="text-[10px] text-[#888] disabled:opacity-30">▼</button>

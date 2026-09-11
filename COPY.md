@@ -938,27 +938,13 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
 
-### 2. Asha
+### 2. ARIBA OS
 
 **Tag** — Quest
 
-**Description** — Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.
+**Description** — Building an operating system for my own work: the canon, skills, and scheduled research that let me test on myself what I ask organizations to do with AI.
 
 ### Select Work (Home) 3
-
-**Tag** — Case Study
-
-**Headline** — WeightWatchers — Reimagining WW for a more adaptive, everyday relationship
-
-**Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
-
-### 4. Women in Innovation
-
-**Tag** — Quest
-
-**Description** — Shaping a new platform for the women building what comes next in AI and innovation.
-
-### Select Work (Home) 5
 
 **Tag** — Case Study
 
@@ -966,11 +952,39 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Working from enterprise user research through product strategy, positioning, GTM and prototype development for a new AI-native research platform.
 
-### 6. Daboodle
+### Select Work (Home) 4
+
+**Tag** — Case Study
+
+**Headline** — WeightWatchers — Reimagining WW for a more adaptive, everyday relationship
+
+**Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
+
+### 5. Asha
+
+**Tag** — Quest
+
+**Description** — Leveraging AI technology to solve for the care economy, and one of the most foundational collaborations that exist: families.
+
+### Select Work (Home) 6
+
+**Tag** — Case Study
+
+**Headline** — Ad Council & Anomaly — Turning emerging technology and AI into meaningful opportunity
+
+**Description** — Building the conditions for organizations to explore, adopt, and create with new technology without losing judgment, trust, or strategic focus.
+
+### 7. Daboodle
 
 **Tag** — Quest
 
 **Description** — Building a digital creative toolkit on Replit: the brand, content, and SEO tools solopreneurs reach for every day, all in one digital caboodle.
+
+### 8. Women in Innovation
+
+**Tag** — Quest
+
+**Description** — Shaping a new platform for the women building what comes next in AI and innovation.
 
 ## Forms
 

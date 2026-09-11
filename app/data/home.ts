@@ -24,10 +24,10 @@ export const stats = homeContent.credentials.stats;
 
 export const speakingPhotos = homeContent.speakingTeaser.photos;
 
-// "Projects & Quests" scroll-snap carousel — the first 3 are real Case Studies
-// pulled from Work With Me (Ally, WeightWatchers, Stagwell). The final 3 are
-// "Quest" (personal project) entries. Content lives in
+// "Projects & Quests" scroll-snap carousel. Content lives in
 // content/collections/case-studies-quests.json so it's editable via the Studio.
+// The collection holds more entries than the strip shows — each carries
+// showOnHome, so cards can be parked without losing their copy.
 import experimentsData from "../../content/collections/case-studies-quests.json";
 
 export type Experiment = {
@@ -36,9 +36,14 @@ export type Experiment = {
   headline: string;
   description: string;
   photoSrc: string | null;
+  showOnHome?: boolean;
 };
 
-export const experiments: Experiment[] = experimentsData as Experiment[];
+// Parked entries stay in the collection and out of the strip. The badge number
+// is counted off what's actually shown, so parking a card never leaves a gap.
+export const experiments: Experiment[] = (experimentsData as Experiment[])
+  .filter((e) => e.showOnHome !== false)
+  .map((e, i) => ({ ...e, tagIndex: i + 1 }));
 
 export const recognitionItems = homeContent.recognition.items;
 
