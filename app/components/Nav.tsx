@@ -25,6 +25,28 @@ function isNavLinkVisible(href: string): boolean {
 // currently disabled in site-settings; if it's ever wanted back it needs a
 // separate treatment (e.g. a solid strip above the hero).
 
+// Splits a label into per-letter cells for the "ink pour" hover (see globals.css).
+// The link carries an aria-label, so these decorative spans aren't read out.
+function InkLabel({ text }: { text: string }) {
+  let i = 0;
+  return (
+    <>
+      {[...text].map((chr, idx) => {
+        if (chr === " ") return <span key={idx} className="sp" />;
+        const cur = i++;
+        return (
+          <span key={idx} className="ch" style={{ "--i": cur } as CSSProperties}>
+            <span className="t">{chr}</span>
+            <span className="b" aria-hidden="true">
+              {chr}
+            </span>
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
 export default function Nav({ contactHref = "/contact" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false); // slid up out of view
@@ -160,18 +182,20 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener" : undefined}
-              className={`font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap transition-colors duration-300 hover:text-cherish ${textColor}`}
+              aria-label={link.label}
+              className={`ink-link font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap ${textColor}`}
               style={linkStyle}
             >
-              {link.label}
+              <InkLabel text={link.label} />
             </a>
           ))}
           <a
             href={contactHref}
-            className={`font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap transition-colors duration-300 hover:text-cherish ${textColor}`}
+            aria-label="Contact"
+            className={`ink-link font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap ${textColor}`}
             style={linkStyle}
           >
-            Contact
+            <InkLabel text="Contact" />
           </a>
         </div>
 
