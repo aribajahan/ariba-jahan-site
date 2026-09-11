@@ -617,13 +617,21 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 **Heading** — From Share Of Attention To Share Of Life
 
-**Intro** — Experience-led growth is about creating enough value that people choose to make room for you. That depends on what customers experience—and on whether the organization behind it can make good on the promise. Whether you are asking someone to make room for a product in their life or a new tool in their work, adoption is never just a launch.
+**Intro** — Whether you're asking a customer to make room for a product in their life or a team to make room for a new technology in their work, adoption is never just a launch. Expectations are outrunning what most organizations offer, and closing that distance comes down to two things:
+
+#### Points
+
+##### 1. The experience
+
+**Text** — the value your product or service provides, what it asks of people in return, and whether it stays essential as expectations move.
+
+##### 2. The operating model
+
+**Text** — the priorities, decisions, and capability that set the ceiling on what that experience can be.
 
 #### Views
 
 ##### 1. What customers experience
-
-**Intro** — Customer expectations are outrunning the experiences most organizations offer. The work is moving beyond capturing attention to building products, services, and experiences that earn a real place in people’s lives.
 
 ###### Cards
 
@@ -644,8 +652,6 @@ If you're building something new, navigating AI, rethinking customer relationshi
 **Description** — People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself.
 
 ##### 2. What organizations need
-
-**Intro** — AI ambition is outrunning the operating model. The work is moving beyond a technology rollout to co-creating the practices, judgment, and shared knowledge that help an organization learn from change, act on it, and embed what works.
 
 ###### Cards
 

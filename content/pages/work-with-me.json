@@ -20,11 +20,20 @@
   "problemFraming": {
     "eyebrow": "What's Changed",
     "heading": "From Share Of Attention To Share Of Life",
-    "intro": "Experience-led growth is about creating enough value that people choose to make room for you. That depends on what customers experience—and on whether the organization behind it can make good on the promise. Whether you are asking someone to make room for a product in their life or a new tool in their work, adoption is never just a launch.",
+    "intro": "Whether you're asking a customer to make room for a product in their life or a team to make room for a new technology in their work, adoption is never just a launch. Expectations are outrunning what most organizations offer, and closing that distance comes down to two things:",
+    "points": [
+      {
+        "label": "The experience",
+        "text": "the value your product or service provides, what it asks of people in return, and whether it stays essential as expectations move."
+      },
+      {
+        "label": "The operating model",
+        "text": "the priorities, decisions, and capability that set the ceiling on what that experience can be."
+      }
+    ],
     "views": [
       {
         "label": "What customers experience",
-        "intro": "Customer expectations are outrunning the experiences most organizations offer. The work is moving beyond capturing attention to building products, services, and experiences that earn a real place in people’s lives.",
         "cards": [
           {
             "photoSrc": "/uploads/problem-1-opt.jpg",
@@ -50,7 +59,6 @@
       },
       {
         "label": "What organizations need",
-        "intro": "AI ambition is outrunning the operating model. The work is moving beyond a technology rollout to co-creating the practices, judgment, and shared knowledge that help an organization learn from change, act on it, and embed what works.",
         "cards": [
           {
             "title": "Knowledge Is Distributed",

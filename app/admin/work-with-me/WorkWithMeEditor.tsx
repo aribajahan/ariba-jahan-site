@@ -48,7 +48,8 @@ type WwmContent = {
     eyebrow: string;
     heading: string;
     intro: string;
-    views: { label: string; intro: string; cards: ProblemCard[] }[];
+    points: { label: string; text: string }[];
+    views: { label: string; cards: ProblemCard[] }[];
   };
   twoWaysDivider: { heading: string };
   testimonialsSection: { eyebrow: string; heading: string };
@@ -94,6 +95,11 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
 
   const updateProblemFraming = (patch: Partial<WwmContent["problemFraming"]>) => {
     setContent((c) => ({ ...c, problemFraming: { ...c.problemFraming, ...patch } }));
+  };
+
+  const updateProblemPoint = (index: number, patch: Partial<WwmContent["problemFraming"]["points"][number]>) => {
+    const points = content.problemFraming.points.map((pt, i) => (i === index ? { ...pt, ...patch } : pt));
+    updateProblemFraming({ points });
   };
 
   const updateProblemView = (viewIndex: number, patch: Partial<WwmContent["problemFraming"]["views"][number]>) => {
@@ -219,6 +225,31 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
           <textarea rows={4} value={content.problemFraming.intro} onChange={(e) => updateProblemFraming({ intro: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
 
+        <label className="block text-[13px] font-semibold mb-[10px]">The two things</label>
+        <p className="text-[12px] text-[#777] mb-3 leading-[1.5]">
+          Shown between the intro and the toggle, each with a red rule down its left edge. They name
+          the two things the toggle then offers, in the same order.
+        </p>
+        <div className="flex flex-col gap-3 mb-6">
+          {content.problemFraming.points.map((point, i) => (
+            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
+              <input
+                value={point.label}
+                onChange={(e) => updateProblemPoint(i, { label: e.target.value })}
+                placeholder="Label — e.g. The experience"
+                className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold"
+              />
+              <textarea
+                value={point.text}
+                onChange={(e) => updateProblemPoint(i, { text: e.target.value })}
+                placeholder="The rest of the line, after the dash"
+                rows={2}
+                className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y"
+              />
+            </div>
+          ))}
+        </div>
+
         <p className="text-[12px] text-[#777] mb-4 leading-[1.5]">
           Two views, switched by a toggle on the page. Both are rendered into the page HTML, so
           nothing is hidden from search. The first view is what visitors see first.
@@ -229,10 +260,6 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
             <Field label={`View ${vi + 1} — toggle label`}>
               <input value={view.label} onChange={(e) => updateProblemView(vi, { label: e.target.value })} className={inputCls} />
             </Field>
-            <Field label="View intro">
-              <textarea rows={3} value={view.intro} onChange={(e) => updateProblemView(vi, { intro: e.target.value })} className={`${inputCls} resize-y`} />
-            </Field>
-
             <div className="flex items-center justify-between mb-[10px]">
               <label className="block text-[13px] font-semibold">Cards</label>
               <button type="button" onClick={() => addProblemCard(vi)} className="text-[12px] font-semibold text-[#181818] underline">

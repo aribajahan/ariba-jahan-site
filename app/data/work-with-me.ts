@@ -15,7 +15,7 @@ export type ProblemCard = {
 
 import wwmContentForOffers from "../../content/pages/work-with-me.json";
 
-export type ProblemFramingView = { label: string; intro: string; cards: ProblemCard[] };
+export type ProblemFramingView = { label: string; cards: ProblemCard[] };
 
 // Problem framing is two views — what customers experience, what organizations
 // need — switched by a toggle in the component.

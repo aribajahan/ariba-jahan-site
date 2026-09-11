@@ -8,6 +8,10 @@ import wwmContent from "../../content/pages/work-with-me.json";
 // organization. Both views are rendered into the HTML and switched with CSS
 // rather than mounted on click, so search engines and anyone linking to the
 // page get the whole argument, not just the default view.
+//
+// Reading order is deliberate: the intro names the two things that close the
+// distance, the switch offers exactly those two in the same order, and the
+// cards evidence whichever one is selected.
 export default function ProblemFraming() {
   const { problemFraming } = wwmContent;
   const views = problemFraming.views;
@@ -27,67 +31,64 @@ export default function ProblemFraming() {
         <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
           {problemFraming.eyebrow}
         </div>
-        {/* Heading and intro sit side by side so the top of the section has the
-            same left-right shape as the switch row below it, instead of a tall
-            narrow column with an empty half beside it. */}
-        <div className="flex gap-12 max-[1024px]:gap-8 max-[900px]:flex-col max-[900px]:gap-5 mb-9">
-          <h2 className="flex-[1.25] uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal [text-wrap:balance] m-0">
-            {problemFraming.heading}
-          </h2>
-          <p className="flex-1 max-w-[540px] text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0 pt-[6px] max-[900px]:pt-0">
-            {problemFraming.intro}
-          </p>
-        </div>
+        <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-6 max-[700px]:whitespace-normal whitespace-nowrap">
+          {problemFraming.heading}
+        </h2>
+        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[760px] mb-6">
+          {problemFraming.intro}
+        </p>
 
-        {/* The switch and the sentence it controls share a row, so the
-            relationship reads without explanation and the band beside the
-            switch isn't left empty. Square edges to match the cards, images and
-            buttons on the rest of the page. */}
-        <div className="flex items-center gap-7 max-[900px]:items-start max-[700px]:flex-col max-[700px]:gap-4 flex-wrap pb-[26px] border-b border-charcoal/[0.14] mb-[30px]">
-          <div
-            role="tablist"
-            aria-label="Who this applies to"
-            className="inline-flex flex-none border-[1.5px] border-charcoal max-[700px]:w-full"
-            onKeyDown={(e) => {
-              if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-              e.preventDefault();
-              setActiveView((v) =>
-                e.key === "ArrowRight" ? (v + 1) % views.length : (v - 1 + views.length) % views.length
-              );
-            }}
-          >
-            {views.map((view, i) => {
-              const active = activeView === i;
-              return (
-                <button
-                  key={view.label}
-                  type="button"
-                  role="tab"
-                  id={`framing-tab-${i}`}
-                  aria-selected={active}
-                  aria-controls={`framing-panel-${i}`}
-                  tabIndex={active ? 0 : -1}
-                  onClick={() => setActiveView(i)}
-                  className={`px-5 py-3 max-[700px]:flex-1 max-[700px]:px-2 border-r-[1.5px] border-charcoal last:border-r-0 text-[13px] max-[700px]:text-[12px] font-bold tracking-[0.02em] transition-colors duration-150 min-h-11 whitespace-nowrap ${
-                    active ? "bg-charcoal text-cream" : "text-charcoal/60 hover:text-charcoal"
-                  }`}
-                >
-                  {view.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {views.map((view, i) => (
+        {/* The two things the intro promises. A rule on the left marks them as
+            the section's claim rather than more prose. */}
+        <div className="grid gap-[14px] max-w-[900px] mb-9">
+          {problemFraming.points.map((point) => (
             <p
-              key={view.label}
-              id={`framing-intro-${i}`}
-              hidden={activeView !== i}
-              className="flex-1 min-w-[320px] max-w-[620px] max-[700px]:min-w-0 text-[17px] leading-[1.5] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0"
+              key={point.label}
+              className="pl-[18px] border-l-2 border-cherish text-[17px] leading-[1.55] max-[700px]:text-[16px] text-charcoal m-0"
             >
-              {view.intro}
+              <b className="font-bold">{point.label}</b> — {point.text}
             </p>
           ))}
+        </div>
+
+        {/* Full-width switch, square-edged to match the cards, images and
+            buttons elsewhere on the page. It offers the two things just named,
+            in the same order. */}
+        <div
+          role="tablist"
+          aria-label="Who this applies to"
+          className="flex w-full border-[1.5px] border-charcoal mb-9 max-[620px]:flex-col"
+          onKeyDown={(e) => {
+            if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+            e.preventDefault();
+            setActiveView((v) =>
+              e.key === "ArrowRight" ? (v + 1) % views.length : (v - 1 + views.length) % views.length
+            );
+          }}
+        >
+          {views.map((view, i) => {
+            const active = activeView === i;
+            return (
+              <button
+                key={view.label}
+                type="button"
+                role="tab"
+                id={`framing-tab-${i}`}
+                aria-selected={active}
+                aria-controls={`framing-panel-${i}`}
+                tabIndex={active ? 0 : -1}
+                onClick={() => setActiveView(i)}
+                className={`flex-1 flex items-center justify-center gap-[10px] px-5 py-4 min-h-[58px] border-r-[1.5px] last:border-r-0 border-charcoal max-[620px]:border-r-0 max-[620px]:border-b-[1.5px] max-[620px]:last:border-b-0 text-[15px] max-[700px]:text-[13px] font-bold tracking-[0.02em] transition-colors duration-150 ${
+                  active ? "bg-charcoal text-cream" : "text-charcoal/60 hover:text-charcoal"
+                }`}
+              >
+                <span className="font-display font-extrabold text-[13px] opacity-50">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {view.label}
+              </button>
+            );
+          })}
         </div>
 
         {views.map((view, viewIndex) => (
@@ -96,7 +97,6 @@ export default function ProblemFraming() {
             role="tabpanel"
             id={`framing-panel-${viewIndex}`}
             aria-labelledby={`framing-tab-${viewIndex}`}
-            aria-describedby={`framing-intro-${viewIndex}`}
             hidden={activeView !== viewIndex}
           >
             <div className="grid [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))] max-[1024px]:!grid-cols-2 max-[700px]:!grid-cols-1 gap-8 max-[700px]:gap-1">
@@ -115,7 +115,7 @@ export default function ProblemFraming() {
                         {card.title}
                       </span>
                       <span className="hidden max-[700px]:inline-block flex-none text-xl text-cherish font-light">
-                        {open ? "\u2212" : "+"}
+                        {open ? "−" : "+"}
                       </span>
                     </button>
                     <div
