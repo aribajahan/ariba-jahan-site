@@ -44,12 +44,12 @@ export default function Experiments() {
                 }}
               >
                 <span
-                  className="absolute z-[2] left-1/2 whitespace-nowrap text-[12px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-5 py-[7px]"
+                  className="mark-tape absolute z-[2] left-1/2 whitespace-nowrap text-[12px] font-extrabold tracking-[0.1em] uppercase text-charcoal px-5 py-[4px]"
                   style={{
-                    background: tagBg,
+                    ["--tape-color" as string]: tagBg,
                     top: "-11px",
                     transform: "translateX(-50%) rotate(-3deg)",
-                    boxShadow: "0 3px 8px rgba(0,0,0,0.25)",
+                    filter: "drop-shadow(0 3px 6px rgba(0,0,0,0.22))",
                   }}
                 >
                   {entry.tag} · {entry.tagIndex}
