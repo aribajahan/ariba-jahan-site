@@ -120,7 +120,8 @@ export default function PressKit() {
           </div>
           <div className="relative w-[240px] justify-self-start min-[701px]:justify-self-end">
             <span
-              className="absolute -top-4 -left-4 z-[2] inline-block -rotate-[3deg] bg-femme-pink text-charcoal text-[11px] font-extrabold tracking-[0.08em] uppercase px-[14px] py-[7px] shadow-[0_4px_10px_rgba(0,0,0,0.25)]"
+              className="mark-tape absolute -top-4 -left-4 z-[2] inline-block -rotate-[3deg] text-charcoal text-[11px] font-extrabold tracking-[0.08em] uppercase px-[14px] py-[7px]"
+              style={{ ["--tape-color" as string]: "var(--femme-pink)", filter: "drop-shadow(0 4px 7px rgba(0,0,0,0.22))" }}
             >
               Press Kit
             </span>
@@ -291,7 +292,10 @@ export default function PressKit() {
       <section className="bg-charcoal pt-16 pb-16 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto">
           <div className="flex items-center gap-3 mb-4">
-            <span className="inline-block -rotate-[2deg] bg-femme-pink text-charcoal text-[10px] font-extrabold tracking-[0.08em] uppercase px-[10px] py-[5px]">
+            <span
+              className="mark-tape relative inline-block -rotate-[2deg] text-charcoal text-[10px] font-extrabold tracking-[0.08em] uppercase px-[10px] py-[5px]"
+              style={{ ["--tape-color" as string]: "var(--femme-pink)" }}
+            >
               Book Me
             </span>
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/60">For Bookings &amp; Inquiries</div>

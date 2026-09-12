@@ -44,7 +44,10 @@ export default function WorkWithMe() {
                 {offer.index}
               </div>
               <div className="font-display text-[clamp(26px,2.8vw,36px)] font-black uppercase tracking-[-0.01em] leading-none mb-5 max-[700px]:mb-4 text-charcoal">
-                <span className="inline-block -rotate-[1.5deg] bg-femme-pink px-[10px] py-[3px]">
+                <span
+                  className="mark-tape relative inline-block -rotate-[1.5deg] px-[10px] py-[3px]"
+                  style={{ ["--tape-color" as string]: "var(--femme-pink)" }}
+                >
                   {offer.title}
                 </span>
               </div>

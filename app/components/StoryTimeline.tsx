@@ -78,10 +78,13 @@ function PhotoPair({
         </div>
       ))}
       <span
-        className={`absolute left-1/2 inline-block bg-highlighter px-[18px] py-[5px] text-[13px] font-extrabold tracking-[0.04em] uppercase text-charcoal whitespace-nowrap z-[3] ${
-          chapter.tapeShadow ? "shadow-[3px_3px_0_rgba(45,45,45,0.3)]" : ""
-        }`}
-        style={{ top: chapter.tapeTop, transform: `translateX(-50%) rotate(${chapter.tapeRotate}deg)` }}
+        className="mark-tape absolute left-1/2 inline-block px-[18px] py-[5px] text-[13px] font-extrabold tracking-[0.04em] uppercase text-charcoal whitespace-nowrap z-[3]"
+        style={{
+          top: chapter.tapeTop,
+          transform: `translateX(-50%) rotate(${chapter.tapeRotate}deg)`,
+          ["--tape-color" as string]: "var(--highlighter)",
+          filter: chapter.tapeShadow ? "drop-shadow(3px 3px 0 rgba(45,45,45,0.3))" : undefined,
+        }}
       >
         {chapter.headline}
       </span>
