@@ -9,6 +9,19 @@
   --tangerine: #FF6D24;
   --highlighter: #F3FF00;
   --outerspace: #0F0FF4;
+
+  /* Marks pattern — rough/hand-cut edges (self-contained data-URI SVG masks).
+     Exact values locked in the mark-lab canvas.
+     --rough: highlighter edge (displacement scale 9).
+     --rough-soft: tape edge (scale 4, gentler — hand-cut, not wavy). */
+  --rough: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='46' preserveAspectRatio='none'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02 0.09' numOctaves='2' seed='4' result='t'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='t' scale='9' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='7' y='6' width='206' height='34' rx='6' fill='white' filter='url(%23r)'/%3E%3C/svg%3E");
+  /* Torn tape ENDS — straight top/bottom, gently uneven vertical rip only.
+     The rect overhangs top/bottom (y=-10,h=66 in a 44 box) so displacement
+     can't touch the long edges; low baseFrequency keeps the rip soft, not
+     toothy. Used as fixed-size end-caps with a solid rect stretched between,
+     so tape of any width tears identically. */
+  --tear-l: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='44' preserveAspectRatio='none'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.03 0.06' numOctaves='2' seed='2' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='9' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='9' y='-10' width='24' height='66' fill='white' filter='url(%23t)'/%3E%3C/svg%3E");
+  --tear-r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='44' preserveAspectRatio='none'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.03 0.06' numOctaves='2' seed='8' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='9' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='-13' y='-10' width='24' height='66' fill='white' filter='url(%23t)'/%3E%3C/svg%3E");
 }
 
 @theme inline {
@@ -110,4 +123,61 @@ body {
   .ink-link .ch .b {
     transition-duration: 0.001ms;
   }
+}
+
+/* ===== Marks pattern =====
+   .mark-tape  — torn-edge tape behind a tag/label. Put it on the span that
+                 currently carries a bg-* color; drop that bg-* class and pass
+                 the color via --tape-color. Text sits crisp above the mask.
+   .mark-hl    — grainy highlighter swipe under an owned word. Printed (always
+                 on). Text becomes charcoal so it reads over the yellow. */
+/* Note: does NOT set `position` — that would clobber an `absolute` badge and
+   break its centering. Elements that are otherwise static must add their own
+   `relative`. isolation keeps the tape above neighbors; ::before rides behind
+   the text within the element's own (already-positioned) box. */
+.mark-tape {
+  background: transparent !important;
+  isolation: isolate;
+}
+.mark-tape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tape-color, var(--femme-pink));
+  /* torn left end + torn right end + solid middle stretched between */
+  -webkit-mask-image: var(--tear-l), var(--tear-r), linear-gradient(#000, #000);
+  mask-image: var(--tear-l), var(--tear-r), linear-gradient(#000, #000);
+  -webkit-mask-position: left center, right center, center;
+  mask-position: left center, right center, center;
+  -webkit-mask-size: 20px 100%, 20px 100%, calc(100% - 36px) 100%;
+  mask-size: 20px 100%, 20px 100%, calc(100% - 36px) 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.mark-hl {
+  position: relative;
+  white-space: nowrap;
+  z-index: 0;
+  color: var(--charcoal);
+}
+.mark-hl::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -6%;
+  bottom: -8%;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(94deg, rgba(243, 255, 0, 0.98) 0 2px, rgba(243, 255, 0, 0.68) 2px 4px),
+    repeating-linear-gradient(6deg, rgba(243, 255, 0, 0.92) 0 2px, rgba(243, 255, 0, 0.72) 2px 5px);
+  -webkit-mask-image: var(--rough);
+  mask-image: var(--rough);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: rotate(-0.7deg);
 }
