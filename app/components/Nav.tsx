@@ -155,13 +155,20 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
   // frosted box on the links group, only once past the hero. Opaque enough that
   // headings behind never bleed through; tone recedes into the ground (deep-red
   // on the red band, not black), so the nav stays legible everywhere.
-  const FROST: Record<typeof ground, { background: string; borderColor: string }> = {
-    light: { background: "rgba(255,251,243,0.86)", borderColor: "rgba(45,45,45,0.10)" },
-    dark: { background: "rgba(20,12,12,0.62)", borderColor: "rgba(255,251,243,0.14)" },
-    red: { background: "rgba(110,18,18,0.5)", borderColor: "rgba(255,251,243,0.20)" },
+  // a faint fill defines the box (not a border) — a hair darker on light grounds,
+  // a hair lighter on dark, a touch deeper on red. Border stays transparent.
+  const FROST: Record<typeof ground, string> = {
+    light: "rgba(45,45,45,0.06)",
+    dark: "rgba(255,251,243,0.10)",
+    red: "rgba(20,12,12,0.16)",
   };
   const groupStyle: CSSProperties = scrolled
-    ? { ...FROST[ground], backdropFilter: "blur(9px)", WebkitBackdropFilter: "blur(9px)" }
+    ? {
+        background: FROST[ground],
+        borderColor: "transparent",
+        backdropFilter: "blur(9px)",
+        WebkitBackdropFilter: "blur(9px)",
+      }
     : { background: "transparent", borderColor: "transparent" };
 
   const barShadow = light ? "none" : "0 1px 6px rgba(0,0,0,0.3)";
