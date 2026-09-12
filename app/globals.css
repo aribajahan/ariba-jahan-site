@@ -127,6 +127,23 @@ body {
   }
 }
 
+/* ===== Reveal on arrival =====
+   Section blocks marked .reveal lift in once as they enter the viewport. Visible
+   by default; the hidden start-state only applies once JS adds .reveal-ready to
+   <html> (so no-JS and reduced-motion users see everything, nothing stuck hidden). */
+.reveal {
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal-ready .reveal:not(.reveal-in) {
+  opacity: 0;
+  transform: translateY(18px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+  }
+}
+
 /* ===== Marks pattern =====
    .mark-tape  — torn-edge tape behind a tag/label. Put it on the span that
                  currently carries a bg-* color; drop that bg-* class and pass
