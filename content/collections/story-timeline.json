@@ -115,7 +115,7 @@
     "tapeRotate": -3,
     "photoA": {
       "src": "/assets/story-photo-5a.jpg",
-      "top": 6,
+      "top": 24,
       "widthPct": 54,
       "rotate": -6,
       "z": 1,
@@ -167,9 +167,9 @@
     "tapeRotate": -2,
     "photoA": {
       "src": "/assets/story-photo-7a.jpg",
-      "top": 0,
+      "top": 28,
       "widthPct": 57,
-      "rotate": -4,
+      "rotate": -5,
       "z": 1,
       "side": "left"
     },
@@ -219,9 +219,9 @@
     "tapeRotate": -4,
     "photoA": {
       "src": "/assets/story-photo-9a.jpg",
-      "top": 8,
+      "top": 30,
       "widthPct": 48,
-      "rotate": -2,
+      "rotate": -4,
       "z": 1,
       "side": "left"
     },
