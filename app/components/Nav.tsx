@@ -50,8 +50,9 @@ function InkLabel({ text }: { text: string }) {
 export default function Nav({ contactHref = "/contact" }: { contactHref?: string }) {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false); // slid up out of view
-  const [scrolled, setScrolled] = useState(false); // past the hero → whisper bg
-  const [light, setLight] = useState(false); // true = light ground → charcoal text
+  const [scrolled, setScrolled] = useState(false); // past the hero → frosted box
+  const [ground, setGround] = useState<"light" | "dark" | "red">("dark"); // ground behind the nav
+  const light = ground === "light"; // light ground → charcoal text
 
   const visibleNavLinks = navLinks.filter((link) => isNavLinkVisible(link.href));
   const navRef = useRef<HTMLElement | null>(null);
@@ -75,9 +76,9 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
     let ticking = false;
     let stopTimer: number | undefined;
 
-    // Is the ground behind the nav light? Walk up from the point under the
-    // nav to the first element with a real background color and read its luminance.
-    const detectLight = (): boolean => {
+    // What's the ground behind the nav? Walk up from the point under the nav to
+    // the first element with a real background color; classify red / light / dark.
+    const detectGround = (): "light" | "dark" | "red" => {
       const el = document.elementFromPoint(Math.round(window.innerWidth / 2), 26);
       let node: Element | null = el;
       while (node && node !== document.body) {
@@ -88,13 +89,14 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
             const alpha = m.length >= 4 ? Number(m[3]) : 1;
             if (alpha > 0.4) {
               const [r, g, b] = m.map(Number);
-              return 0.299 * r + 0.587 * g + 0.114 * b > 140;
+              if (r > 170 && g < 95 && b < 95) return "red";
+              return 0.299 * r + 0.587 * g + 0.114 * b > 140 ? "light" : "dark";
             }
           }
         }
         node = node.parentElement;
       }
-      return true; // default to light (cream page)
+      return "light"; // default to light (cream page)
     };
 
     const update = () => {
@@ -102,7 +104,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
       const y = window.scrollY;
       const dy = y - lastY.current;
 
-      if (!open) setLight(detectLight());
+      if (!open) setGround(detectGround());
       setScrolled(y > heroH.current - 60);
 
       // pause-to-reveal: bring it back whenever scrolling stops
@@ -144,13 +146,22 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
 
   const textColor = light ? "text-charcoal" : "text-cream";
   const textShadow = light ? "none" : "0 1px 10px rgba(0,0,0,0.28)";
-  const linkStyle: CSSProperties = { textShadow };
+  // on red, the ink-pour rolls to charcoal instead of cherish (cherish ≈ the red ground)
+  const linkStyle: CSSProperties = {
+    textShadow,
+    ...(ground === "red" ? { ["--ink-fill" as string]: "var(--charcoal)" } : {}),
+  };
 
-  // whisper background on the links group, only once past the hero, tint flips with the ground
+  // frosted box on the links group, only once past the hero. Opaque enough that
+  // headings behind never bleed through; tone recedes into the ground (deep-red
+  // on the red band, not black), so the nav stays legible everywhere.
+  const FROST: Record<typeof ground, { background: string; borderColor: string }> = {
+    light: { background: "rgba(255,251,243,0.86)", borderColor: "rgba(45,45,45,0.10)" },
+    dark: { background: "rgba(20,12,12,0.62)", borderColor: "rgba(255,251,243,0.14)" },
+    red: { background: "rgba(110,18,18,0.5)", borderColor: "rgba(255,251,243,0.20)" },
+  };
   const groupStyle: CSSProperties = scrolled
-    ? light
-      ? { background: "rgba(45,45,45,0.05)", borderColor: "rgba(45,45,45,0.1)" }
-      : { background: "rgba(255,251,243,0.08)", borderColor: "rgba(255,251,243,0.12)" }
+    ? { ...FROST[ground], backdropFilter: "blur(9px)", WebkitBackdropFilter: "blur(9px)" }
     : { background: "transparent", borderColor: "transparent" };
 
   const barShadow = light ? "none" : "0 1px 6px rgba(0,0,0,0.3)";
