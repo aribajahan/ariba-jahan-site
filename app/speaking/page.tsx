@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Nav from "../components/Nav";
+import RevealInit from "../components/RevealInit";
 import PageGate from "../components/PageGate";
 import SpeakingHero from "../components/SpeakingHero";
 import SpeakingThemes from "../components/SpeakingThemes";
@@ -24,6 +25,7 @@ export default async function Speaking() {
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
+      <RevealInit />
       <SpeakingHero />
       <SpeakingThemes />
       <SpeakingTestimonials />

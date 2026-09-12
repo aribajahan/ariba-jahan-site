@@ -4,7 +4,7 @@ import { careerAdvisory } from "../data/about";
 export default function CareerAdvisory() {
   return (
     <section id="career-advisory" className="bg-cherish flex flex-wrap items-stretch">
-      <div className="flex-[1_1_440px] max-[1024px]:flex-[1_1_360px] min-w-[320px] px-[clamp(24px,5vw,80px)] py-[120px] max-[700px]:py-20 max-[1024px]:py-24 flex flex-col justify-center">
+      <div className="reveal flex-[1_1_440px] max-[1024px]:flex-[1_1_360px] min-w-[320px] px-[clamp(24px,5vw,80px)] py-[120px] max-[700px]:py-20 max-[1024px]:py-24 flex flex-col justify-center">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-5">
           {careerAdvisory.eyebrow}
         </div>

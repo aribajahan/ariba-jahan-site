@@ -39,7 +39,7 @@ export default function WwmTestimonials() {
 
   return (
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-8 border-t border-charcoal/[0.08] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
+      <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
           {wwmContent.testimonialsSection.eyebrow}
         </div>
