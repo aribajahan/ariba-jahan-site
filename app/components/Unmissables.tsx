@@ -178,7 +178,7 @@ export default function Unmissables() {
                 {hidden ? (
                   <div className="absolute inset-0 flex flex-col justify-between p-4 pointer-events-none">
                     <span
-                      className="mark-tape relative z-[1] text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit"
+                      className="mark-tape relative z-[1] text-charcoal text-[10px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-[2px] w-fit"
                       style={{ ["--tape-color" as string]: "var(--tennis)" }}
                     >
                       {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
@@ -188,7 +188,7 @@ export default function Unmissables() {
                 ) : (
                   <>
                     <span
-                      className="mark-tape absolute top-4 left-4 z-[1] text-charcoal text-[9px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-1 w-fit"
+                      className="mark-tape absolute top-4 left-4 z-[1] text-charcoal text-[10px] font-extrabold tracking-[0.1em] uppercase px-[9px] py-[2px] w-fit"
                       style={{ ["--tape-color" as string]: "var(--tennis)" }}
                     >
                       {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
