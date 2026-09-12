@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Nav from "../components/Nav";
+import RevealInit from "../components/RevealInit";
 import PageGate from "../components/PageGate";
 import AboutHero from "../components/AboutHero";
 import AboutIntro from "../components/AboutIntro";
@@ -26,6 +27,7 @@ export default async function About() {
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
+      <RevealInit />
       <AboutHero />
       <AboutIntro />
       <StoryTimeline />

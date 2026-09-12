@@ -45,6 +45,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Lenis smooth scroll — when active it manages scrolling, so native smooth
+   behavior must yield to it. (Classes are added to <html> by Lenis.) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 body {
   background: var(--color-cream);
   color: var(--color-charcoal);

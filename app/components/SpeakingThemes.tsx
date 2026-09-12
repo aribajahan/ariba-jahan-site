@@ -9,7 +9,7 @@ export default function SpeakingThemes() {
       id="themes"
       className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 px-[clamp(24px,5vw,80px)]"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="reveal max-w-[1400px] mx-auto">
         <div className="max-w-[720px] mb-16 max-[700px]:mb-10">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
             {themes.eyebrow}
