@@ -4,6 +4,21 @@ export default function WorkWithMe() {
   const { workWithMeTeaser } = homeContent;
   const bodyParagraphs = workWithMeTeaser.body.split("\n\n");
 
+  // Highlight the owned word "unmissable" once (Marks pattern).
+  const renderWithMark = (text: string) => {
+    const i = text.toLowerCase().indexOf("unmissable");
+    if (i === -1) return text;
+    return (
+      <>
+        {text.slice(0, i)}
+        <mark className="mark-hl bg-transparent" style={{ ["--hl-fill" as string]: "rgba(243,255,0,0.55)" }}>
+          {text.slice(i, i + "unmissable".length)}
+        </mark>
+        {text.slice(i + "unmissable".length)}
+      </>
+    );
+  };
+
   return (
     <section
       id="work-with-me"
@@ -27,7 +42,7 @@ export default function WorkWithMe() {
                       <br />
                     </>
                   )}
-                  {p}
+                  {renderWithMark(p)}
                 </span>
               ))}
             </p>
