@@ -14,7 +14,7 @@
      Exact values locked in the mark-lab canvas.
      --rough: highlighter edge (displacement scale 9).
      --rough-soft: tape edge (scale 4, gentler — hand-cut, not wavy). */
-  --rough: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='46' preserveAspectRatio='none'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.02 0.09' numOctaves='2' seed='4' result='t'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='t' scale='9' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='7' y='6' width='206' height='34' rx='6' fill='white' filter='url(%23r)'/%3E%3C/svg%3E");
+  --rough: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='46' preserveAspectRatio='none'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.03' numOctaves='2' seed='4' result='t'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='t' scale='2.5' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='4' y='4' width='212' height='38' rx='2' fill='white' filter='url(%23r)'/%3E%3C/svg%3E");
   /* Torn tape ENDS — straight top/bottom, gently uneven vertical rip only.
      The rect overhangs top/bottom (y=-10,h=66 in a 44 box) so displacement
      can't touch the long edges; low baseFrequency keeps the rip soft, not
@@ -107,7 +107,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--cherish);
+  /* cherish by default; red sections set --ink-fill to charcoal so the roll
+     doesn't vanish into the same-colored red ground */
+  color: var(--ink-fill, var(--cherish));
   clip-path: polygon(0% 0%, 100% 0%, 100% -12%, 66% 0%, 33% -12%, 0% 0%);
   transition: clip-path 0.55s ease;
   transition-delay: calc(var(--i) * 22ms);
@@ -170,9 +172,9 @@ body {
   top: -6%;
   bottom: -8%;
   z-index: -1;
-  background:
-    repeating-linear-gradient(94deg, rgba(243, 255, 0, 0.98) 0 2px, rgba(243, 255, 0, 0.68) 2px 4px),
-    repeating-linear-gradient(6deg, rgba(243, 255, 0, 0.92) 0 2px, rgba(243, 255, 0, 0.72) 2px 5px);
+  /* Fill defaults to the softer warm yellow (reads best on cream);
+     red/dark contexts set --hl-fill to the translucent version. */
+  background: var(--hl-fill, #f4e93f);
   -webkit-mask-image: var(--rough);
   mask-image: var(--rough);
   -webkit-mask-size: 100% 100%;
