@@ -9,7 +9,13 @@ export default function WorkWithMe() {
   const renderWithMark = (text: string) => {
     if (!/build something unmissable/i.test(text)) return text;
     return (
-      <mark className="mark-hl bg-transparent" style={{ ["--hl-fill" as string]: "rgba(243,255,0,0.55)" }}>
+      <mark
+        className="mark-hl mark-hl-line bg-transparent"
+        style={{
+          ["--hl-fill" as string]:
+            "linear-gradient(rgba(244,233,63,0.85), rgba(244,233,63,0.85)), #FFFBF3",
+        }}
+      >
         {text}
       </mark>
     );
