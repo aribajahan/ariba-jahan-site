@@ -5,7 +5,7 @@ export default function Positioning() {
 
   return (
     <section id="positioning" className="bg-cream pt-14 px-[clamp(24px,5vw,80px)] pb-14">
-      <div className="max-w-[1100px] mx-auto flex flex-col gap-6">
+      <div className="reveal max-w-[1100px] mx-auto flex flex-col gap-6">
         {positioning.paragraphs.map((p, i) => (
           <p
             key={i}

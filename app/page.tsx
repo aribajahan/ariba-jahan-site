@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Nav from "./components/Nav";
+import RevealInit from "./components/RevealInit";
 import PageGate from "./components/PageGate";
 import { guardPage } from "../lib/guardPage";
 import { getPageSettings } from "../lib/pageSettings";
@@ -32,6 +33,7 @@ export default async function Home() {
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
+      <RevealInit />
       <Hero />
       <NameMarquee />
       <Positioning />
