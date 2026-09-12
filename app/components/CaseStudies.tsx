@@ -75,7 +75,7 @@ export default function CaseStudies() {
                     style={{ transform: flipped ? "rotateY(180deg)" : "none", transitionDelay: flipped ? "50ms" : "0ms" }}
                   >
                     {/* FRONT */}
-                    <div className="absolute inset-0 [backface-visibility:hidden] bg-cream border border-charcoal/[0.08] shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] p-[30px_30px_34px] max-[700px]:p-5">
+                    <div className="absolute inset-0 [backface-visibility:hidden] bg-cream border border-charcoal/[0.16] shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] p-[30px_30px_34px] max-[700px]:p-5">
                       <span
                         className="mark-tape absolute -top-[18px] left-1/2 px-6 py-[5px] max-[700px]:px-4 max-[700px]:py-[4px] font-display text-[13px] max-[700px]:text-[11px] font-extrabold tracking-[0.06em] uppercase text-charcoal whitespace-nowrap z-[5] pointer-events-none"
                         style={{ transform: `translateX(-50%) rotate(${c.tagRotationDeg}deg)`, ["--tape-color" as string]: "var(--femme-pink)", filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.18))" }}
@@ -123,7 +123,7 @@ export default function CaseStudies() {
 
                     {/* BACK */}
                     <div
-                      className="absolute inset-0 [backface-visibility:hidden] bg-cream border border-charcoal/[0.08] shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] flex flex-col justify-center gap-[18px] max-[700px]:gap-[10px] p-10 max-[700px]:p-5"
+                      className="absolute inset-0 [backface-visibility:hidden] bg-cream border border-charcoal/[0.16] shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] flex flex-col justify-center gap-[18px] max-[700px]:gap-[10px] p-10 max-[700px]:p-5"
                       style={{ transform: "rotateY(180deg)" }}
                     >
                       <span
