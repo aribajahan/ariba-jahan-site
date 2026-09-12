@@ -39,12 +39,16 @@ export default function Footer() {
           <div className="flex gap-5">
             <a
               href="https://design.aribajahan.com"
+              target="_blank"
+              rel="noopener"
               className="text-[11px] font-medium text-cream/50 hover:text-cream transition-colors duration-150"
             >
               Design system
             </a>
             <a
               href="https://design.aribajahan.com/legal"
+              target="_blank"
+              rel="noopener"
               className="text-[11px] font-medium text-cream/50 hover:text-cream transition-colors duration-150"
             >
               Legal
