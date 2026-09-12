@@ -4,18 +4,14 @@ export default function WorkWithMe() {
   const { workWithMeTeaser } = homeContent;
   const bodyParagraphs = workWithMeTeaser.body.split("\n\n");
 
-  // Highlight the owned word "unmissable" once (Marks pattern).
+  // Highlight the whole closing line (Marks pattern) — a full-line mark reads as
+  // deliberate emphasis, so it can stand alone; a lone single-word mark can't.
   const renderWithMark = (text: string) => {
-    const i = text.toLowerCase().indexOf("unmissable");
-    if (i === -1) return text;
+    if (!/build something unmissable/i.test(text)) return text;
     return (
-      <>
-        {text.slice(0, i)}
-        <mark className="mark-hl bg-transparent" style={{ ["--hl-fill" as string]: "rgba(243,255,0,0.55)" }}>
-          {text.slice(i, i + "unmissable".length)}
-        </mark>
-        {text.slice(i + "unmissable".length)}
-      </>
+      <mark className="mark-hl bg-transparent" style={{ ["--hl-fill" as string]: "rgba(243,255,0,0.55)" }}>
+        {text}
+      </mark>
     );
   };
 
