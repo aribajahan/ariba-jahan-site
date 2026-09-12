@@ -82,7 +82,7 @@ function PhotoPair({
         style={{
           top: chapter.tapeTop,
           transform: `translateX(-50%) rotate(${chapter.tapeRotate}deg)`,
-          ["--tape-color" as string]: "var(--highlighter)",
+          ["--tape-color" as string]: "var(--tangerine)",
           filter: chapter.tapeShadow ? "drop-shadow(3px 3px 0 rgba(45,45,45,0.3))" : undefined,
         }}
       >
@@ -233,7 +233,7 @@ export default function StoryTimeline() {
           ))}
           <span
             className="mark-tape absolute -top-[46px] left-1/2 -translate-x-1/2 -rotate-2 inline-block px-[18px] py-[3px] text-[13px] font-extrabold tracking-[0.04em] uppercase text-charcoal whitespace-nowrap z-[3]"
-            style={{ ["--tape-color" as string]: "var(--highlighter)", filter: "drop-shadow(3px 3px 0 rgba(45,45,45,0.3))" }}
+            style={{ ["--tape-color" as string]: "var(--tangerine)", filter: "drop-shadow(3px 3px 0 rgba(45,45,45,0.3))" }}
           >
             Now
           </span>
