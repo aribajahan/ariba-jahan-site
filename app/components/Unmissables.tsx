@@ -136,11 +136,16 @@ export default function Unmissables() {
               {homeContent.unmissablesStat.label}
             </div>
             <div className="font-display text-[clamp(16px,1.8vw,22px)] font-bold text-cream leading-[1.3] tracking-[-0.01em]">
-              {homeContent.unmissablesStat.before}{" "}
-              <span className="bg-tennis text-charcoal px-1 [box-decoration-break:clone]">
-                {homeContent.unmissablesStat.highlight}
-              </span>{" "}
-              {homeContent.unmissablesStat.after}
+              {homeContent.unmissablesStat.before}
+              {homeContent.unmissablesStat.highlight && (
+                <>
+                  {" "}
+                  <span className="bg-tennis text-charcoal px-1 [box-decoration-break:clone]">
+                    {homeContent.unmissablesStat.highlight}
+                  </span>
+                </>
+              )}
+              {homeContent.unmissablesStat.after && <>{" "}{homeContent.unmissablesStat.after}</>}
             </div>
           </div>
         </div>
