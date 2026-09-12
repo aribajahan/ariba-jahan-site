@@ -11,7 +11,7 @@ const cards = [
   {
     eyebrow: "Looking to book a talk?",
     title: "See Where I Speak",
-    sub: "200+ talks, keynotes, and workshops →",
+    sub: "215+ talks, keynotes, and workshops →",
     href: "/speaking",
   },
   {

@@ -290,7 +290,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
         </Field>
       </SectionCard>
 
-      <SectionCard title="Strategic Ambition Sprint" defaultExpanded={false}>
+      <SectionCard title="Ambition Sprint" defaultExpanded={false}>
         <Field label="Eyebrow">
           <input value={content.cxSprint.eyebrow} onChange={(e) => updateCxSprint({ eyebrow: e.target.value })} className={inputCls} />
         </Field>

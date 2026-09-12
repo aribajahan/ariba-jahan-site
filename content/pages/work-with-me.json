@@ -146,7 +146,7 @@
       }
     ],
     "ctaLabel": "Book an intro call →",
-    "ctaHref": "mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry"
+    "ctaHref": "mailto:ariba@aribajahan.com?subject=Ambition%20Sprint%20Inquiry"
   },
   "strategySessions": {
     "eyebrow": "02 · For Individual Leaders",
@@ -190,9 +190,9 @@
       },
       {
         "index": "02",
-        "title": "Strategic Ambition Sprint",
+        "title": "Ambition Sprint",
         "cta": "Sprint inquiry →",
-        "href": "mailto:ariba@aribajahan.com?subject=CX%20Ambition%20Sprint%20Inquiry"
+        "href": "mailto:ariba@aribajahan.com?subject=Ambition%20Sprint%20Inquiry"
       },
       {
         "index": "03",

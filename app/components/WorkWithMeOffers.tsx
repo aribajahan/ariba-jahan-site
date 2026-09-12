@@ -27,7 +27,7 @@ export default function WorkWithMeOffers() {
 
   return (
     <>
-      {/* Strategic Ambition Sprint */}
+      {/* Ambition Sprint */}
       <section
         id="ambition-sprint"
         className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9 px-[clamp(24px,5vw,80px)]"
@@ -44,7 +44,7 @@ export default function WorkWithMeOffers() {
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
               <Image quality={90}
                 src={cxSprintContent.photoSrc}
-                alt="Strategic Ambition Sprint"
+                alt="Ambition Sprint"
                 fill
                 sizes="(max-width: 1024px) 100vw, 440px"
                 style={{ objectFit: "cover" }}
