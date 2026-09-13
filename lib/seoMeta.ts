@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import seo from "../content/seo.json";
 
+export const siteUrl = "https://aribajahan.com";
+
 type PageKey = keyof typeof seo;
 
 function resolveOgImage(pageKey: PageKey): string | null {

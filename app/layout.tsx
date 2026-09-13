@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Big_Shoulders, Barlow } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import SmoothScroll from "./components/SmoothScroll";
+import JsonLd from "./components/JsonLd";
+import { siteSchema } from "../lib/structuredData";
+import { siteUrl } from "../lib/seoMeta";
 import "./globals.css";
 
 // NOTE: next/font/google in this Next.js version no longer exports
@@ -23,7 +26,7 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aribajahan.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     template: "%s | Ariba Jahan",
     default: "Ariba Jahan",
@@ -42,6 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${bigShoulders.variable} ${barlow.variable} antialiased`}
     >
       <body>
+        <JsonLd data={siteSchema} />
         <SmoothScroll />
         {children}
       </body>
