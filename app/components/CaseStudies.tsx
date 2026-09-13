@@ -68,11 +68,13 @@ export default function CaseStudies() {
                 <div
                   key={c.client + c.title}
                   data-flipcard
-                  className="relative flex-none w-[560px] h-[800px] max-[1024px]:w-[440px] max-[1024px]:h-[720px] max-[700px]:w-[92vw] max-[700px]:h-[580px] [perspective:2000px]"
+                  className="group relative flex-none w-[560px] h-[800px] max-[1024px]:w-[440px] max-[1024px]:h-[720px] max-[700px]:w-[92vw] max-[700px]:h-[580px] [perspective:2000px]"
                 >
                   <div
-                    className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-[450ms] ease-[cubic-bezier(0.65,0,0.35,1)]"
-                    style={{ transform: flipped ? "rotateY(180deg)" : "none", transitionDelay: flipped ? "50ms" : "0ms" }}
+                    className={`relative w-full h-full [transform-style:preserve-3d] transition-transform duration-[450ms] ease-[cubic-bezier(0.65,0,0.35,1)] [transform:rotateY(var(--flip,0deg))_rotateY(var(--peek,0deg))] ${
+                      !flipped ? "group-hover:[--peek:-7deg] motion-reduce:group-hover:[--peek:0deg]" : ""
+                    }`}
+                    style={{ ["--flip" as string]: flipped ? "180deg" : "0deg", transitionDelay: flipped ? "50ms" : "0ms" }}
                   >
                     {/* FRONT */}
                     <div className="absolute inset-0 [backface-visibility:hidden] bg-cream border border-charcoal/[0.09] shadow-[0_14px_28px_-12px_rgba(0,0,0,0.15)] p-[30px_30px_34px] max-[700px]:p-5">
@@ -115,7 +117,7 @@ export default function CaseStudies() {
                         onClick={() => toggleFlip(i)}
                         aria-label="See case study details"
                         title="See details"
-                        className="absolute bottom-[18px] right-[18px] max-[700px]:bottom-3 max-[700px]:right-3 w-9 h-9 max-[1024px]:w-11 max-[1024px]:h-11 rounded-full bg-charcoal text-cream flex items-center justify-center cursor-pointer shadow-[0_8px_18px_-6px_rgba(0,0,0,0.35)] transition-transform duration-[180ms] hover:scale-[1.08] active:scale-95 text-[15px]"
+                        className="absolute bottom-[18px] right-[18px] max-[700px]:bottom-3 max-[700px]:right-3 w-9 h-9 max-[1024px]:w-11 max-[1024px]:h-11 rounded-full bg-charcoal text-cream flex items-center justify-center cursor-pointer shadow-[0_8px_18px_-6px_rgba(0,0,0,0.35)] transition-transform duration-[180ms] group-hover:scale-[1.1] hover:scale-[1.08] active:scale-95 text-[15px] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                       >
                         ⇄
                       </button>

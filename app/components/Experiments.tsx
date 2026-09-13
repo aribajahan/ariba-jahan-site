@@ -34,10 +34,17 @@ export default function Experiments() {
             return (
               <div
                 key={entry.headline}
-                className="relative flex-[0_0_391px] max-[700px]:flex-[0_0_82vw]"
+                className="flex flex-col flex-[0_0_391px] max-[700px]:flex-[0_0_82vw]"
+                style={{ scrollSnapAlign: "start" }}
+              >
+                {/* Rotation lives on this inner wrapper, not the flex item, so the
+                    snap-aligned box never changes shape on hover — otherwise
+                    straightening the first card makes scroll-snap re-snap and nudge
+                    the whole row. */}
+                <div
+                className="grow relative [transform:rotate(var(--rot))] hover:[transform:rotate(0deg)] transition-transform duration-[380ms] ease-[cubic-bezier(0.23,1,0.32,1)] motion-reduce:transition-none motion-reduce:hover:[transform:rotate(var(--rot))]"
                 style={{
-                  scrollSnapAlign: "start",
-                  transform: `rotate(${CARD_ROTATIONS[i % CARD_ROTATIONS.length]}deg)`,
+                  ["--rot" as string]: `${CARD_ROTATIONS[i % CARD_ROTATIONS.length]}deg`,
                   boxShadow: "0 16px 32px -12px rgba(0,0,0,0.28)",
                   background: "var(--color-cream)",
                   padding: "16px 16px 20px",
@@ -80,6 +87,7 @@ export default function Experiments() {
                 <p className="text-[15px] leading-[1.5] text-charcoal/60">
                   {entry.description}
                 </p>
+                </div>
               </div>
             );
           })}

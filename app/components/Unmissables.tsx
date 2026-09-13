@@ -159,7 +159,7 @@ export default function Unmissables() {
                 href={tile.href}
                 target={tile.href !== "#" ? "_blank" : undefined}
                 rel={tile.href !== "#" ? "noopener" : undefined}
-                className={`relative overflow-hidden block min-w-0 min-h-0 ${
+                className={`group relative overflow-hidden block min-w-0 min-h-0 ${
                   i >= previewCount && !showAll ? "max-[700px]:hidden" : ""
                 } ${i === tiles.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""}`}
                 style={{ background: tile.bg }}
@@ -170,6 +170,7 @@ export default function Unmissables() {
                   fill
                   sizes="(max-width: 700px) 50vw, 220px"
                   style={{ objectFit: "cover" }}
+                  className="transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.07] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 />
                 <div
                   className="absolute inset-0 pointer-events-none"
@@ -199,8 +200,14 @@ export default function Unmissables() {
                       {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
                     </span>
                     <div className="absolute inset-0 flex items-end p-4 pointer-events-none">
-                      <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] relative z-[1]">
-                        {tile.headline}
+                      <span className="relative z-[1] flex flex-col gap-[7px]">
+                        <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] transition-transform duration-[300ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:-translate-y-[6px] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0">
+                          {tile.headline}
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          className="h-[3px] w-9 bg-tennis origin-left scale-x-0 transition-transform duration-[350ms] ease-[cubic-bezier(0.22,1,0.32,1)] group-hover:scale-x-100 motion-reduce:transition-none motion-reduce:group-hover:scale-x-0"
+                        />
                       </span>
                     </div>
                   </>
