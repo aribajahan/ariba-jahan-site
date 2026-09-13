@@ -5,7 +5,7 @@ export default function SpeakingHero() {
   const { hero } = speakingContent;
 
   return (
-    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[92vh]">
+    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
       <div className="absolute inset-0 z-0">
         <Image quality={90}
           src={hero.photoSrc}
@@ -13,7 +13,7 @@ export default function SpeakingHero() {
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "54% 40%" }}
         />
       </div>
       <div
@@ -27,7 +27,7 @@ export default function SpeakingHero() {
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/60 mb-[18px]">
           {hero.eyebrow}
         </div>
-        <div className="font-display text-[clamp(34px,4.6vw,68px)] font-black text-cream leading-[0.95] tracking-[-0.02em] max-w-[800px] mb-9">
+        <div className="font-display text-[clamp(38px,4vw,60px)] font-black text-cream leading-none tracking-[-0.02em] max-w-[1040px] mb-9">
           {hero.headline}
         </div>
         <a
