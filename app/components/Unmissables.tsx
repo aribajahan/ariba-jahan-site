@@ -92,13 +92,20 @@ export default function Unmissables() {
         </div>
 
         <div className="flex flex-wrap gap-1 items-stretch mb-1">
-          <div className="relative flex-[1_1_340px] bg-cherish p-9 flex flex-col justify-end overflow-hidden min-h-[340px]">
+          <a
+            href="https://www.unmissables.xyz/p/cognitive-endurance"
+            target="_blank"
+            rel="noopener"
+            aria-label="Cognitive Endurance — read the framework"
+            className="group relative flex-[1_1_340px] bg-cherish p-9 flex flex-col justify-end overflow-hidden min-h-[340px] no-underline"
+          >
             <Image quality={90}
               src="/assets/unmissables-ce.jpg"
               alt="Cognitive Endurance framework"
               fill
               sizes="(max-width: 700px) 100vw, 400px"
               style={{ objectFit: "cover" }}
+              className="transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
             />
             <div
               className="absolute inset-0 pointer-events-none"
@@ -121,15 +128,10 @@ export default function Unmissables() {
             <p className="relative z-[1] text-sm leading-[1.5] text-cream/[0.78] italic mb-5">
               &ldquo;It&rsquo;s to stay the kind of person who still decides what belongs in your mind palace, what belongs in the machine, and what deserves to be created by both.&rdquo;
             </p>
-            <a
-              href="https://www.unmissables.xyz/p/cognitive-endurance"
-              target="_blank"
-              rel="noopener"
-              className="relative z-[1] text-[15px] font-extrabold tracking-[0.12em] uppercase text-cream border-b border-cream/45 pb-[2px] w-fit"
-            >
+            <span className="relative z-[1] text-[15px] font-extrabold tracking-[0.12em] uppercase text-cream border-b border-cream/45 pb-[2px] w-fit">
               Read the framework →
-            </a>
-          </div>
+            </span>
+          </a>
 
           <div className="flex-[1.6_1_420px] bg-charcoal p-9 flex flex-col justify-center min-h-[160px]">
             <div className="text-[9px] font-extrabold tracking-[0.18em] uppercase text-cream/[0.22] mb-[10px]">
@@ -170,7 +172,7 @@ export default function Unmissables() {
                   fill
                   sizes="(max-width: 700px) 50vw, 220px"
                   style={{ objectFit: "cover" }}
-                  className="transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.07] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+                  className="transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 />
                 <div
                   className="absolute inset-0 pointer-events-none"
@@ -200,14 +202,8 @@ export default function Unmissables() {
                       {KIND_LABEL[tile.type as keyof typeof KIND_LABEL]}
                     </span>
                     <div className="absolute inset-0 flex items-end p-4 pointer-events-none">
-                      <span className="relative z-[1] flex flex-col gap-[7px]">
-                        <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] transition-transform duration-[300ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:-translate-y-[6px] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0">
-                          {tile.headline}
-                        </span>
-                        <span
-                          aria-hidden="true"
-                          className="h-[3px] w-9 bg-tennis origin-left scale-x-0 transition-transform duration-[350ms] ease-[cubic-bezier(0.22,1,0.32,1)] group-hover:scale-x-100 motion-reduce:transition-none motion-reduce:group-hover:scale-x-0"
-                        />
+                      <span className="font-display text-xl font-extrabold uppercase tracking-[-0.01em] text-cream leading-[1.12] relative z-[1]">
+                        {tile.headline}
                       </span>
                     </div>
                   </>
