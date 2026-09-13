@@ -32,6 +32,19 @@ export default function RevealInit() {
     );
     els.forEach((el) => io.observe(el));
 
+    // Reveal anything already visible on load — e.g. a section peeking under an
+    // 85vh hero. The observer's -12% bottom margin means it won't fire for an
+    // element sitting in the bottom sliver of the viewport, so without this it
+    // stays hidden until the user scrolls. Check true viewport visibility.
+    const vh = window.innerHeight;
+    for (const el of els) {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0) {
+        el.classList.add("reveal-in");
+        io.unobserve(el);
+      }
+    }
+
     return () => io.disconnect();
   }, []);
 
