@@ -3,7 +3,10 @@ import seo from "../content/seo.json";
 import siteSettings from "../content/site-settings.json";
 import { siteUrl } from "./seoMeta";
 
-const [personName] = seo.home.title.split(" — ", 2);
+// Stored explicitly, not parsed out of the SEO title — so changing the title's
+// format (e.g. dropping the " — ") can't silently mislabel the Person schema.
+// Kept in code rather than a Studio-editable JSON so a future publish can't drop it.
+const personName = "Ariba Jahan";
 
 const personJobTitle = "Product, Experience & AI Strategist";
 
