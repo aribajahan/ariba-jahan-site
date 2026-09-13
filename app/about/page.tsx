@@ -11,9 +11,11 @@ import CareerAdvisory from "../components/CareerAdvisory";
 import RecognitionFeatures from "../components/RecognitionFeatures";
 import AboutClosingCTA from "../components/AboutClosingCTA";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
 import { buildPageMetadata } from "../../lib/seoMeta";
+import { aboutProfilePageSchema } from "../../lib/structuredData";
 
 export const metadata: Metadata = buildPageMetadata("about");
 
@@ -26,6 +28,7 @@ export default async function About() {
 
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
+      <JsonLd data={aboutProfilePageSchema} />
       <Nav />
       <RevealInit />
       <AboutHero />
