@@ -13,7 +13,7 @@ export default function SpeakingHero() {
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "54% 40%" }}
         />
       </div>
       <div
