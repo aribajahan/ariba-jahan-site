@@ -37,7 +37,7 @@ function PhotoPair({
   return (
     <div
       ref={setRef}
-      className={`relative w-full max-w-[420px] max-[1024px]:max-w-[340px] max-[700px]:max-w-none will-change-transform max-[700px]:order-1 ${
+      className={`group relative w-full max-w-[420px] max-[1024px]:max-w-[340px] max-[700px]:max-w-none will-change-transform max-[700px]:order-1 ${
         chapter.align === "photo-left"
           ? "justify-self-end mr-6"
           : "justify-self-start ml-6"
@@ -47,24 +47,16 @@ function PhotoPair({
       {[chapter.photoA, chapter.photoB].map((photo, i) => (
         <div
           key={i}
-          className="absolute bg-cream p-[9px] pb-[30px] shadow-[0_14px_26px_-10px_rgba(20,12,12,0.35)]"
-          style={
-            photo.side === "left"
-              ? {
-                  left: 0,
-                  top: photo.top,
-                  width: `${photo.widthPct}%`,
-                  transform: `rotate(${photo.rotate}deg)`,
-                  zIndex: photo.z,
-                }
-              : {
-                  right: 0,
-                  top: photo.top,
-                  width: `${photo.widthPct}%`,
-                  transform: `rotate(${photo.rotate}deg)`,
-                  zIndex: photo.z,
-                }
-          }
+          // Rotation lives on a CSS var so group-hover can straighten the print to 0
+          // without a JS conflict — the scroll-drift only controls the cluster wrapper.
+          className="absolute bg-cream p-[9px] pb-[30px] shadow-[0_14px_26px_-10px_rgba(20,12,12,0.35)] [transform:rotate(var(--photo-rot))] group-hover:[transform:rotate(0deg)] transition-transform duration-[400ms] ease-[cubic-bezier(0.23,1,0.32,1)] motion-reduce:transition-none motion-reduce:group-hover:[transform:rotate(var(--photo-rot))]"
+          style={{
+            [photo.side === "left" ? "left" : "right"]: 0,
+            top: photo.top,
+            width: `${photo.widthPct}%`,
+            ["--photo-rot" as string]: `${photo.rotate}deg`,
+            zIndex: photo.z,
+          }}
         >
           <div className="relative w-full h-40">
             <Image quality={90}
@@ -209,14 +201,15 @@ export default function StoryTimeline() {
           ref={(el) => {
             refs.current[11] = el;
           }}
-          className="relative flex justify-center items-end w-full flex-wrap will-change-transform max-[700px]:gap-3"
+          className="group relative flex justify-center items-end w-full flex-wrap will-change-transform max-[700px]:gap-3"
         >
           {rightNowPhotos.map((photo) => (
             <div
               key={photo.src}
-              className="w-[220px] max-w-[23%] max-[700px]:max-w-[46%] min-w-[150px] max-[700px]:min-w-0 mr-[-36px] max-[700px]:mr-0 bg-cream p-[9px] pb-[26px] shadow-[0_14px_26px_-10px_rgba(20,12,12,0.35)]"
+              className="w-[220px] max-w-[23%] max-[700px]:max-w-[46%] min-w-[150px] max-[700px]:min-w-0 mr-[-36px] max-[700px]:mr-0 bg-cream p-[9px] pb-[26px] shadow-[0_14px_26px_-10px_rgba(20,12,12,0.35)] [transform:rotate(var(--pr))_translateY(var(--pty))] group-hover:[transform:rotate(0deg)_translateY(var(--pty))] transition-transform duration-[400ms] ease-[cubic-bezier(0.23,1,0.32,1)] motion-reduce:transition-none motion-reduce:group-hover:[transform:rotate(var(--pr))_translateY(var(--pty))]"
               style={{
-                transform: `rotate(${photo.rotate}deg) translateY(${photo.translateY}px)`,
+                ["--pr" as string]: `${photo.rotate}deg`,
+                ["--pty" as string]: `${photo.translateY}px`,
                 zIndex: photo.z,
               }}
             >
