@@ -46,7 +46,7 @@ export default function Press() {
               href={item.href}
               target="_blank"
               rel="noopener"
-              className="relative aspect-square overflow-hidden block"
+              className="group relative aspect-square overflow-hidden block"
               style={{ background: item.bg }}
             >
               <Image quality={90}
@@ -55,6 +55,7 @@ export default function Press() {
                 fill
                 sizes="(max-width: 1024px) 33vw, 20vw"
                 style={{ objectFit: "cover" }}
+                className="transition-transform duration-[550ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.06] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
               />
               <div
                 className="absolute inset-0 pointer-events-none"
