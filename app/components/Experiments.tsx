@@ -34,10 +34,10 @@ export default function Experiments() {
             return (
               <div
                 key={entry.headline}
-                className="relative flex-[0_0_391px] max-[700px]:flex-[0_0_82vw]"
+                className="group relative flex-[0_0_391px] max-[700px]:flex-[0_0_82vw] [transform:rotate(var(--rot))] hover:[transform:rotate(0deg)] transition-transform duration-[380ms] ease-[cubic-bezier(0.23,1,0.32,1)] motion-reduce:transition-none motion-reduce:hover:[transform:rotate(var(--rot))]"
                 style={{
                   scrollSnapAlign: "start",
-                  transform: `rotate(${CARD_ROTATIONS[i % CARD_ROTATIONS.length]}deg)`,
+                  ["--rot" as string]: `${CARD_ROTATIONS[i % CARD_ROTATIONS.length]}deg`,
                   boxShadow: "0 16px 32px -12px rgba(0,0,0,0.28)",
                   background: "var(--color-cream)",
                   padding: "16px 16px 20px",
@@ -62,6 +62,7 @@ export default function Experiments() {
                       fill
                       sizes="391px"
                       style={{ objectFit: "cover" }}
+                      className="transition-transform duration-[500ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:scale-[1.05] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-charcoal/40 text-xs font-semibold uppercase tracking-[0.1em]">
