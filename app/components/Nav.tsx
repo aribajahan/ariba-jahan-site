@@ -76,11 +76,15 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
     let ticking = false;
     let stopTimer: number | undefined;
 
-    // What's the ground behind the nav? Walk up from the point under the nav to
-    // the first element with a real background color; classify red / light / dark.
+    // What's the ground behind the nav? Look at the stack of elements under the
+    // point, skip the nav's own subtree (otherwise we'd read the nav or the cream
+    // page wrapper it sits in — never the hero, which is the nav's SIBLING, not an
+    // ancestor), then walk up from the first element behind it to the first real
+    // background color; classify red / light / dark.
     const detectGround = (): "light" | "dark" | "red" => {
-      const el = document.elementFromPoint(Math.round(window.innerWidth / 2), 26);
-      let node: Element | null = el;
+      const stack = document.elementsFromPoint(Math.round(window.innerWidth / 2), 26);
+      const behind = stack.find((n) => !nav.contains(n));
+      let node: Element | null = behind ?? null;
       while (node && node !== document.body) {
         const bg = getComputedStyle(node).backgroundColor;
         if (bg && bg !== "transparent" && !bg.startsWith("rgba(0, 0, 0, 0")) {
