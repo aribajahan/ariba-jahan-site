@@ -5,7 +5,7 @@ export default function SpeakingHero() {
   const { hero } = speakingContent;
 
   return (
-    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[100vh] max-[700px]:min-h-[92vh]">
+    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
       <div className="absolute inset-0 z-0">
         <Image quality={90}
           src={hero.photoSrc}
