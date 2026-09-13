@@ -228,3 +228,47 @@ body {
 .mark-hl-line::before {
   left: -6px;
 }
+
+/* ===== Offer-card lift =====
+   A faint resting shadow that GROWS on hover as the card rises, so nothing
+   pops. Written as plain CSS on purpose: Tailwind v4's arbitrary box-shadow
+   utility wasn't rendering the resting shadow on this element, which made the
+   shadow appear from nothing on hover and read as stiff. */
+.offer-lift {
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 6px 16px -10px rgba(20, 12, 12, 0.18);
+  transition: transform 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+/* The deeper "lifted" shadow rides a pseudo-element and fades via opacity —
+   opacity is GPU-composited, so the shadow stays smooth on the heavy homepage,
+   where animating box-shadow directly stutters on the main thread. */
+.offer-lift::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: 0 18px 30px -12px rgba(20, 12, 12, 0.32);
+  opacity: 0;
+  transition: opacity 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.offer-lift:hover {
+  transform: translateY(-6px);
+}
+.offer-lift:hover::after {
+  opacity: 1;
+}
+.offer-lift:active {
+  transform: translateY(-2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .offer-lift,
+  .offer-lift::after {
+    transition: none;
+  }
+  .offer-lift:hover {
+    transform: none;
+  }
+}

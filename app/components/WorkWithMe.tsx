@@ -63,7 +63,7 @@ export default function WorkWithMe() {
               key={offer.index}
               href={offer.href}
               aria-label={`${offer.title} — ${ctaLabel}`}
-              className="group block bg-cream pt-14 px-12 pb-[60px] max-[700px]:pt-8 max-[700px]:px-7 max-[700px]:pb-9 border-t-[3px] border-cherish transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-[5px] hover:shadow-[0_14px_24px_-10px_rgba(20,12,12,0.4)] active:-translate-y-[2px] active:shadow-[0_8px_14px_-8px_rgba(20,12,12,0.4)] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-cherish"
+              className="offer-lift group block bg-cream pt-14 px-12 pb-[60px] max-[700px]:pt-8 max-[700px]:px-7 max-[700px]:pb-9 border-t-[3px] border-cherish focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[3px] focus-visible:outline-cherish"
             >
               <div className="text-[11px] font-extrabold tracking-[0.2em] text-cherish mb-4 max-[700px]:mb-3">
                 {offer.index}
@@ -85,7 +85,7 @@ export default function WorkWithMe() {
               <span className="text-[15px] font-extrabold tracking-[0.12em] uppercase text-cherish border-b-2 border-cherish pb-[3px] w-fit inline-flex items-center gap-[6px] max-[700px]:text-[12px] max-[700px]:tracking-[0.08em]">
                 {ctaLabel}
                 {hasArrow && (
-                  <span className="inline-block transition-transform duration-[220ms] ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-x-[5px] motion-reduce:transition-none motion-reduce:group-hover:translate-x-0">
+                  <span className="inline-block transition-transform duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:translate-x-[5px] motion-reduce:transition-none motion-reduce:group-hover:translate-x-0">
                     →
                   </span>
                 )}
