@@ -3,7 +3,9 @@ import seo from "../content/seo.json";
 import siteSettings from "../content/site-settings.json";
 import { siteUrl } from "./seoMeta";
 
-const [personName, jobTitle] = seo.home.title.split(" — ", 2);
+const [personName] = seo.home.title.split(" — ", 2);
+
+const personJobTitle = "Product, Experience & AI Strategist";
 
 export const personId = `${siteUrl}/#ariba-jahan`;
 
@@ -13,7 +15,7 @@ export const personSchema = {
   "@id": personId,
   name: personName,
   url: siteUrl,
-  jobTitle,
+  jobTitle: personJobTitle,
   description: seo.home.description,
   image: new URL(about.hero.photoSrc, siteUrl).toString(),
   sameAs: siteSettings.socialLinks.map(({ href }) => href),
