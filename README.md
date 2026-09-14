@@ -1,22 +1,33 @@
 # aribajahan.com
 
-My site, and the CMS I built to run it.
+The source code for [aribajahan.com](https://aribajahan.com), my personal site, writing archive, and content studio.
 
-Live at [aribajahan.com](https://aribajahan.com).
+I built it as a public platform for my work in product, experience, and AI strategy: case studies, writing, speaking, and ways to work with me. The site is designed to be edited without needing to open the codebase.
 
-## How it works
+## What's included
 
-Content is JSON in this repo. Every page and collection is edited through an admin panel at `/admin`, which writes back to those files. There's no external CMS and no database.
+- A public site for my work, writing, speaking, and consulting
+- A built-in Studio for editing page copy, case studies, articles, testimonials, forms, SEO, and site settings
+- JSON-based content stored in the repository
+- A media library with alt text and usage tracking
+- A native article system, separate from [Unmissables](https://unmissables.xyz), my newsletter and podcast
+- Built-in search metadata, sitemap, robots.txt, and JSON-LD structured data
 
-**Pages** (Home, About, Speaking, Work With Me) each hold their own copy, section by section. SEO metadata is stored separately from page content so it can be edited without touching the copy.
+## How content works
 
-**Collections** are repeatable and reorderable: articles, case studies and quests, testimonials, speaking logos, the speaking gallery, the reading room, the story timeline, and forms.
+Content lives in `content/` as structured JSON.
 
-**Articles** render through one shared template. Publishing a new piece is filling in a form, never adding a coded page. This is the native blog and it's separate from Unmissables, which lives at [unmissables.xyz](https://unmissables.xyz).
+Each main page has its own content file. Repeatable material such as articles, case studies, testimonials, speaking engagements, and reading-room entries live in collections. The Studio provides an interface for editing and publishing that content.
 
-**The media library** holds every uploaded image regardless of which page uses it. Alt text is written when an image is uploaded. Each image tracks which page and section it appears on, so anything unused gets flagged as safe to delete.
+The result is a site I can keep current without treating every update as a development project.
 
-**Forms** share one template. Each form defines its own fields, accent color, and submit behavior. The contact form has category-conditional follow-up questions, inline validation, and a honeypot field. Submissions email a notification rather than waiting to be found.
+## Technical build
+
+- Next.js App Router
+- TypeScript
+- React
+- Tailwind CSS
+- Vercel
 
 ## Running it locally
 
@@ -27,4 +38,11 @@ npm run dev
 
 Then open [http://localhost:3000](http://localhost:3000). The admin panel is at `/admin`.
 
-Built with Next.js and TypeScript. Deployed on Vercel.
+## Repository structure
+
+```text
+app/             Pages, components, routes, and Studio
+content/         Editable page content and collections
+lib/             Content, SEO, media, and site helpers
+public/          Images and static assets
+```
