@@ -461,7 +461,7 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Right Now Label** — Right Now
 
-**Right Now Copy** — Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI, from this site to the systems I run my own work on.
+**Right Now Copy** — Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI in my own work, from this site and its design system to ARIBA OS, the system I use for research, decision support, recurring workflows, and rapid prototyping. Through Unmissables, I write about what I’m seeing in that work: how AI changes behavior, judgment, and the ways people make decisions.
 
 Away from work, I’m happiest as a mom to my son and a partner to my husband. Lately I’ve been building things that highlight women in AI, and making art with my son.
 
