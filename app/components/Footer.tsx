@@ -43,7 +43,7 @@ export default function Footer() {
               rel="noopener"
               className="text-[11px] font-medium text-cream/50 hover:text-cream transition-colors duration-150"
             >
-              Design system
+              Brand Book
             </a>
             <a
               href="https://design.aribajahan.com/legal"
