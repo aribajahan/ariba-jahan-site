@@ -131,7 +131,7 @@
   "unmissables": {
     "eyebrow": "Writing and Thinking",
     "heading": "Unmissables",
-    "intro": "Unmissables explores the unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation is built around something worth noticing, questioning, or bringing into your own work."
+    "intro": "Unmissables explores unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation centers something worth noticing, questioning, or bringing into your own work."
   },
   "unmissablesStat": {
     "label": "From the essay",
@@ -172,7 +172,7 @@
     "eyebrow": "Speaking & Writing",
     "heading": "People + Technology",
     "paragraphs": [
-      "I’m interested in the changing relationship between people, technology, and society, and what that means for the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI’ve delivered 215+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
+      "I’m interested in the changing relationship between people and technology, and what that means for society and the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI’ve delivered 215+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
     ],
     "ctaLabel": "Bring Me to Your Event",
     "ctaHref": "/speaking",
@@ -277,7 +277,7 @@
   },
   "community": {
     "heading": "Community",
-    "intro": "The best conversations happen off the stage too: meetups, community gatherings, dinners, and cities along the way.",
+    "intro": "The best conversations happen off the stage: meetups, community gatherings, dinners, and cities along the way.",
     "photos": [
       {
         "number": 1,

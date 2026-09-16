@@ -6,13 +6,13 @@
     "headline": "I think it's worth holding on to hope, pluralism, and a relentless creativity to build good in this world."
   },
   "intro": {
-    "paragraph": "My career hasn’t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and why those questions matter so much to me."
+    "paragraph": "My career hasn’t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and the questions that matter most to me."
   },
   "storyTimeline": {
     "eyebrow": "My Story",
     "heading": "CHAPTERS THAT SHAPED HOW I THINK, BUILD, AND QUESTION.",
     "rightNowLabel": "Right Now",
-    "rightNowCopy": "Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI, from this site to the systems I run my own work on. \n\nAway from work, I’m happiest as a mom to my son and a partner to my husband. Lately I’ve been building things that highlight women in AI, and making art with my son."
+    "rightNowCopy": "Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI, from this site to the systems I run my own work on.\n\nAway from work, I’m happiest as a mom to my son and a partner to my husband. Lately I’ve been building things that highlight women in AI, and making art with my son."
   },
   "bio": {
     "eyebrow": "Bio",
@@ -25,7 +25,7 @@
     ]
   },
   "unmissablesNudge": {
-    "text": "Weekly writing on AI, behavior, culture, and what I'm paying attention to.",
+    "text": "Monthly writing on AI, behavior, culture, and what we can’t afford to miss.",
     "ctaLabel": "Subscribe to Unmissables",
     "href": "https://www.unmissables.xyz/"
   },
@@ -33,7 +33,7 @@
     "eyebrow": "For the Career-Ambitious",
     "headline": "Career Advisory 1:1",
     "lead": "For people building a multidimensional career across design, strategy, and technology.",
-    "body": "A focused session for people working through big career pivots, establishing their public voice, or creating change in their organization and industry.  ",
+    "body": "A focused session to work through big career pivots, public voice-building priorities, or strategies for getting buy-in for your vision and ideas.",
     "cta": "Book a Session →",
     "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
     "photoSrc": "/assets/personal-red-wall-sm.jpg"
