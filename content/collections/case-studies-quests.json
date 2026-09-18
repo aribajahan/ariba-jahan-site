@@ -12,7 +12,7 @@
     "tag": "Quest",
     "tagIndex": 2,
     "headline": "Ariba Jahan OS",
-    "description": "Building an AI operating system for my own work: the canons, contexts, skills, and scheduled tasks to run my world and work.",
+    "description": "Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.",
     "photoSrc": "/assets/quest-ariba-jahan-os-v1.jpg",
     "showOnHome": true
   },
@@ -50,21 +50,5 @@
     "photoSrc": "/assets/wwm-case-7.jpg",
     "showOnHome": true,
     "client": "Ad Council & Anomaly"
-  },
-  {
-    "tag": "Quest",
-    "tagIndex": 6,
-    "headline": "Daboodle",
-    "description": "Building a digital creative toolkit on Replit: the brand, content, and SEO tools solopreneurs reach for every day, all in one digital caboodle.",
-    "photoSrc": "/assets/quest-daboodle-v1.jpg",
-    "showOnHome": false
-  },
-  {
-    "tag": "Quest",
-    "tagIndex": 4,
-    "headline": "Women in Innovation",
-    "description": "Shaping a new platform for the women building what comes next in AI and innovation.",
-    "photoSrc": "/assets/quest-women-in-innovation-v1.png",
-    "showOnHome": false
   }
 ]
