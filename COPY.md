@@ -1562,7 +1562,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Solution** — The work reframed the experience around a broader idea of progress, with concepts for adaptive onboarding, more personalized pacing, and a product experience that could respond better to different life stages, goals, and rhythms. It also included a deep look at the competitive landscape and the kinds of experiences shaping expectations across the category.
 
-**Impact** — The result was a deep 150+ page competitive ecosystem audit, a clearer Experience-Led Growth opportunity, and a CX strategy framework and 10+ ownable concepts WeightWatchers could use across onboarding, dashboard, curriculum, and the wider product experience.
+**Impact** — The work produced a 150+ page competitive ecosystem audit, a clearer Experience-Led Growth opportunity, a CX strategy framework, and 10+ concepts across onboarding, dashboard, curriculum, and the wider product experience. The strategy and concepts informed subsequent build and launch decisions.
 
 **Role Context** — Head of Transformation, North America at Anomaly | Led cross-disciplinary teams across product, strategy & design
 
