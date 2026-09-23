@@ -29,7 +29,7 @@
     "tag": "Quest",
     "tagIndex": 4,
     "headline": "Ariba Jahan OS",
-    "description": "Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.",
+    "description": "ARIBA OS is the multi-LLM system I use to run my work across research, decisions, recurring operations, and product development. It carries context across projects, routes work to different models, and turns repeated work into workflows I can inspect and improve.",
     "photoSrc": "/assets/quest-ariba-jahan-os-v1.jpg",
     "showOnHome": true
   },

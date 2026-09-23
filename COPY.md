@@ -960,7 +960,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Tag** — Quest
 
-**Description** — Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.
+**Description** — ARIBA OS is the multi-LLM system I use to run my work across research, decisions, recurring operations, and product development. It carries context across projects, routes work to different models, and turns repeated work into workflows I can inspect and improve.
 
 ### 5. WeightWatchers
 
