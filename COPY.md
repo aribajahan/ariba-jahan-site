@@ -952,9 +952,9 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Tag** — Case Study
 
-**Headline** — Shaping an enterprise AI research product from strategy to prototype
+**Headline** — Shaping an enterprise AI research product from strategy to funded product
 
-**Description** — Taking a new AI-native research platform from enterprise research to a funded prototype.
+**Description** — I led product strategy for an enterprise AI research platform designed to turn audience and purchase data into useful outputs for brands and agencies. The work connected customer needs with data science and LLM capabilities, then translated both into product direction, positioning, and a prototype.
 
 ### 4. Ariba Jahan OS
 
