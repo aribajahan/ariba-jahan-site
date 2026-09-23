@@ -942,11 +942,11 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
 
-### 2. Ariba Jahan OS
+### 2. Exploring the relationship between AI and our Cognition
 
 **Tag** — Quest
 
-**Description** — Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.
+**Description** — AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.
 
 ### 3. Stagwell
 
@@ -956,19 +956,19 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Taking a new AI-native research platform from enterprise research to a funded prototype.
 
-### 4. WeightWatchers
+### 4. Ariba Jahan OS
+
+**Tag** — Quest
+
+**Description** — Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.
+
+### 5. WeightWatchers
 
 **Tag** — Case Study
 
 **Headline** — Reimagining WW for a more adaptive, everyday relationship
 
 **Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
-
-### 5. Asha
-
-**Tag** — Quest
-
-**Description** — An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.
 
 ### 6. Ad Council & Anomaly
 
@@ -978,11 +978,11 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Building the conditions for organizations to explore, adopt, and create with new technology without losing judgment, trust, or strategic focus.
 
-### 7. Exploring the relationship between AI and our Cognition
+### 7. Asha
 
 **Tag** — Quest
 
-**Description** — AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.
+**Description** — An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.
 
 ## Forms
 

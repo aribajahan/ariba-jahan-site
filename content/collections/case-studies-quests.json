@@ -11,9 +11,9 @@
   {
     "tag": "Quest",
     "tagIndex": 2,
-    "headline": "Ariba Jahan OS",
-    "description": "Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.",
-    "photoSrc": "/assets/quest-ariba-jahan-os-v1.jpg",
+    "headline": "Exploring the relationship between AI and our Cognition",
+    "description": "AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.",
+    "photoSrc": "assets/quest-ai-cognition.png",
     "showOnHome": true
   },
   {
@@ -26,21 +26,21 @@
     "client": "Stagwell"
   },
   {
-    "tag": "Case Study",
+    "tag": "Quest",
     "tagIndex": 4,
+    "headline": "Ariba Jahan OS",
+    "description": "Designing my own AI-native operating system: a context-rich network of canons, skills, tools, MCP connections and workflows that creates momentum across ideas, projects, and decisions.",
+    "photoSrc": "/assets/quest-ariba-jahan-os-v1.jpg",
+    "showOnHome": true
+  },
+  {
+    "tag": "Case Study",
+    "tagIndex": 5,
     "headline": "Reimagining WW for a more adaptive, everyday relationship",
     "description": "Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.",
     "photoSrc": "/assets/wwm-case-2.jpg",
     "showOnHome": true,
     "client": "WeightWatchers"
-  },
-  {
-    "tag": "Quest",
-    "tagIndex": 5,
-    "headline": "Asha",
-    "description": "An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.",
-    "photoSrc": "/assets/quest-asha-v1.png",
-    "showOnHome": true
   },
   {
     "tag": "Case Study",
@@ -54,9 +54,9 @@
   {
     "tag": "Quest",
     "tagIndex": 7,
-    "headline": "Exploring the relationship between AI and our Cognition",
-    "description": "AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.",
-    "photoSrc": "assets/quest-ai-cognition.png",
+    "headline": "Asha",
+    "description": "An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.",
+    "photoSrc": "/assets/quest-asha-v1.png",
     "showOnHome": true
   }
 ]
