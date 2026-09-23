@@ -13,7 +13,7 @@
     "tagIndex": 2,
     "headline": "Exploring the relationship between AI and our Cognition",
     "description": "AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.",
-    "photoSrc": "assets/quest-ai-cognition.png",
+    "photoSrc": "/assets/quest-ai-cognition.png",
     "showOnHome": true
   },
   {
