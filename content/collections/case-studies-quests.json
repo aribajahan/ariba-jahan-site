@@ -14,7 +14,8 @@
     "headline": "Exploring the relationship between AI and our Cognition",
     "description": "A public, ongoing evidence review of how AI use affects adult memory, learning, judgment, and skill. Built with Claude Science and Perplexity, it includes 110 source records, an interactive question map, the underlying data, and notes on what the research tools got right and missed.",
     "photoSrc": "/assets/quest-ai-cognition.png",
-    "showOnHome": true
+    "showOnHome": true,
+    "client": "UNMISSABLES"
   },
   {
     "tag": "Case Study",

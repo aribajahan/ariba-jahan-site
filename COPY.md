@@ -942,9 +942,11 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.
 
-### 2. Exploring the relationship between AI and our Cognition
+### 2. UNMISSABLES
 
 **Tag** — Quest
+
+**Headline** — Exploring the relationship between AI and our Cognition
 
 **Description** — A public, ongoing evidence review of how AI use affects adult memory, learning, judgment, and skill. Built with Claude Science and Perplexity, it includes 110 source records, an interactive question map, the underlying data, and notes on what the research tools got right and missed.
 
