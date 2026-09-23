@@ -4,6 +4,8 @@ The source code for [aribajahan.com](https://aribajahan.com), my personal site, 
 
 I built it as a public platform for my work in product, experience, and AI strategy: case studies, writing, speaking, and ways to work with me. The site is designed to be edited without needing to open the codebase.
 
+![aribajahan.com homepage](docs/homepage.jpg)
+
 ## What's included
 
 - A public site for my work, writing, speaking, and consulting
