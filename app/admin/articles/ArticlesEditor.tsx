@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Article = {
   slug: string;
@@ -131,11 +132,10 @@ export default function ArticlesEditor({ initialItems }: { initialItems: Article
                   />
 
                   <label className="block text-[13px] font-semibold">Cover Image</label>
-                  <input
+                  <MediaPicker
                     value={article.coverImage}
-                    onChange={(e) => update(article._id, { coverImage: e.target.value })}
+                    onChange={(src) => update(article._id, { coverImage: src })}
                     placeholder="/uploads/photo.jpg"
-                    className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm"
                   />
 
                   <label className="block text-[13px] font-semibold">Excerpt</label>

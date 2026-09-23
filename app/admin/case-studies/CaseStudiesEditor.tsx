@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Tag = "Case Study" | "Quest";
 type Entry = { tag: Tag; tagIndex: number; client?: string; headline: string; description: string; photoSrc: string | null; showOnHome?: boolean };
@@ -136,11 +137,12 @@ export default function CaseStudiesEditor({ initialItems }: { initialItems: Entr
                   />
 
                   <label className="block text-[13px] font-semibold mb-2">Photo</label>
-                  <input
-                    value={entry.photoSrc ?? ""}
-                    onChange={(e) => update(i, { photoSrc: e.target.value })}
-                    className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm mb-4"
-                  />
+                  <div className="mb-4">
+                    <MediaPicker
+                      value={entry.photoSrc ?? ""}
+                      onChange={(photoSrc) => update(i, { photoSrc })}
+                    />
+                  </div>
 
                   {confirmingDelete === i ? (
                     <div className="flex items-center gap-2">

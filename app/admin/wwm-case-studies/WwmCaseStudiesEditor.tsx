@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 import type { CaseStudy } from "../../data/work-with-me";
 
 const inputCls = "w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm mb-3";
@@ -183,11 +184,9 @@ export default function WwmCaseStudiesEditor({ initialItems }: { initialItems: C
                   </p>
 
                   <label className={labelCls}>Photo</label>
-                  <input
-                    value={cs.photoSrc}
-                    onChange={(e) => update(i, { photoSrc: e.target.value })}
-                    className={inputCls}
-                  />
+                  <div className="mb-3">
+                    <MediaPicker value={cs.photoSrc} onChange={(src) => update(i, { photoSrc: src })} />
+                  </div>
 
                   <label className={labelCls}>Tag tilt (degrees)</label>
                   <input

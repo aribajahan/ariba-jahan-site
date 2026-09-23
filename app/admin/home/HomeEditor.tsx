@@ -5,6 +5,7 @@ import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
 import TagListEditor from "../_shared/TagListEditor";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Cta = { label: string; href: string };
 type Offer = { index: string; title: string; lead: string; body: string; cta: string; href: string };
@@ -112,7 +113,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
 
       <SectionCard title="Hero">
         <Field label="Hero Photo">
-          <input value={content.hero.photoSrc} onChange={(e) => set("hero", { photoSrc: e.target.value })} className={inputCls} />
+          <MediaPicker value={content.hero.photoSrc} onChange={(src) => set("hero", { photoSrc: src })} />
         </Field>
         <Field label="Subhead">
           <textarea rows={3} value={content.hero.subhead} onChange={(e) => set("hero", { subhead: e.target.value })} className={`${inputCls} resize-y`} />
@@ -260,7 +261,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       <SectionCard title="Recognition" defaultExpanded={false}>
         <Field label="Eyebrow"><input value={content.recognition.eyebrow} onChange={(e) => set("recognition", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.recognition.heading} onChange={(e) => set("recognition", { heading: e.target.value })} className={inputCls} /></Field>
-        <Field label="Photo"><input value={content.recognition.photoSrc} onChange={(e) => set("recognition", { photoSrc: e.target.value })} className={inputCls} /></Field>
+        <Field label="Photo"><MediaPicker value={content.recognition.photoSrc} onChange={(src) => set("recognition", { photoSrc: src })} /></Field>
         <label className="block text-[13px] font-semibold mb-2">Recognition Items</label>
         <div className="mb-4">
           <TagListEditor items={content.recognition.items} onChange={(items) => set("recognition", { items })} placeholder="Add an item…" />
@@ -284,7 +285,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
               </div>
               <input value={item.href} onChange={(e) => updatePressItem(i, { href: e.target.value })} placeholder="URL" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] text-[#888]" />
               <div className="flex gap-2 items-center">
-                <input value={item.photoSrc} onChange={(e) => updatePressItem(i, { photoSrc: e.target.value })} placeholder="Photo path" className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+                <div className="flex-1"><MediaPicker value={item.photoSrc} onChange={(src) => updatePressItem(i, { photoSrc: src })} placeholder="Photo path" /></div>
                 <input type="color" value={item.bg} onChange={(e) => updatePressItem(i, { bg: e.target.value })} className="w-9 h-8 border border-[#ddd] rounded-[5px]" />
                 <span onClick={() => removePressItem(i)} className="text-[#c44] cursor-pointer text-[13px]">✕</span>
               </div>
@@ -315,7 +316,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
                 onChange={(e) => updateCommunityPhoto(i, { number: Number(e.target.value) })}
                 className="w-14 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]"
               />
-              <input value={photo.photoSrc} onChange={(e) => updateCommunityPhoto(i, { photoSrc: e.target.value })} placeholder="Photo path" className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+              <div className="flex-1"><MediaPicker value={photo.photoSrc} onChange={(src) => updateCommunityPhoto(i, { photoSrc: src })} placeholder="Photo path" /></div>
               <input value={photo.caption} onChange={(e) => updateCommunityPhoto(i, { caption: e.target.value })} placeholder="Caption" className="flex-[2] border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
               <span onClick={() => removeCommunityPhoto(i)} className="text-[#c44] cursor-pointer text-[13px]">✕</span>
             </div>

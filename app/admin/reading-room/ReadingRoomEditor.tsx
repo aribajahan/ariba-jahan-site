@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Book = { title: string; author: string; coverSrc: string; note: string; link: string };
 
@@ -75,7 +76,7 @@ export default function ReadingRoomEditor({ initialItems }: { initialItems: Book
                     <div className="px-[18px] pb-5 border-t border-[#f0efec] pt-4 flex flex-col gap-3">
                       <input value={book.title} onChange={(e) => update(i, { title: e.target.value })} placeholder="Title" className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm" />
                       <input value={book.author} onChange={(e) => update(i, { author: e.target.value })} placeholder="Author" className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm" />
-                      <input value={book.coverSrc} onChange={(e) => update(i, { coverSrc: e.target.value })} placeholder="Cover image path" className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm" />
+                      <MediaPicker value={book.coverSrc} onChange={(src) => update(i, { coverSrc: src })} placeholder="Cover image path" />
                       <textarea value={book.note} onChange={(e) => update(i, { note: e.target.value })} placeholder="Why it's worth reading" rows={2} className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm resize-y" />
                       <input value={book.link} onChange={(e) => update(i, { link: e.target.value })} placeholder="Link (optional)" className="border border-[#ddd] rounded-md px-3 py-[8px] text-sm text-[#888]" />
                       <button type="button" onClick={() => remove(i)} className="self-start bg-[#fdeaea] text-[#b33] border border-[#f0c0c0] rounded-[5px] px-[10px] py-[5px] text-[11px] font-semibold">

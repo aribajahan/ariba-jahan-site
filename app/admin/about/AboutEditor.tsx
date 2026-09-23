@@ -4,6 +4,7 @@ import { useState } from "react";
 import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
+import MediaPicker from "../_shared/MediaPicker";
 
 type RecognitionItem = { label: string; year?: string; href?: string };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
@@ -150,18 +151,14 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
 
       <SectionCard title="Hero">
         <label className="block text-[13px] font-semibold mb-2">Hero Photo (desktop/tablet)</label>
-        <input
-          value={content.hero.photoSrc}
-          onChange={(e) => updateHero({ photoSrc: e.target.value })}
-          className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm mb-4"
-        />
+        <div className="mb-4">
+          <MediaPicker value={content.hero.photoSrc} onChange={(src) => updateHero({ photoSrc: src })} />
+        </div>
 
         <label className="block text-[13px] font-semibold mb-2">Hero Photo (mobile)</label>
-        <input
-          value={content.hero.photoSrcMobile}
-          onChange={(e) => updateHero({ photoSrcMobile: e.target.value })}
-          className="w-full px-3 py-[10px] border border-[#ddd] rounded-md text-sm mb-4"
-        />
+        <div className="mb-4">
+          <MediaPicker value={content.hero.photoSrcMobile} onChange={(src) => updateHero({ photoSrcMobile: src })} />
+        </div>
 
         <label className="block text-[13px] font-semibold mb-2">Eyebrow</label>
         <input
@@ -253,7 +250,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
           <input value={content.careerAdvisory.href} onChange={(e) => updateCareerAdvisory({ href: e.target.value })} className={`${inputCls} text-[#888]`} />
         </Field>
         <Field label="Photo">
-          <input value={content.careerAdvisory.photoSrc} onChange={(e) => updateCareerAdvisory({ photoSrc: e.target.value })} className={inputCls} />
+          <MediaPicker value={content.careerAdvisory.photoSrc} onChange={(src) => updateCareerAdvisory({ photoSrc: src })} />
         </Field>
       </SectionCard>
 

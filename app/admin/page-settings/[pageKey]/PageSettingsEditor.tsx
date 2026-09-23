@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { usePublish } from "../../_shared/usePublish";
+import MediaPicker from "../../_shared/MediaPicker";
 
 type Availability = "public" | "unlisted" | "password" | "draft";
 type PageSettings = {
@@ -192,11 +193,10 @@ export default function PageSettingsEditor({
               Not wired to the live pages yet. Every page currently shares one site-wide preview image when shared on
               LinkedIn, Twitter, etc. This field saves, but a per-page override isn&rsquo;t shown until this gets connected.
             </p>
-            <input
+            <MediaPicker
               value={settings.socialImage}
-              onChange={(e) => updateSettings({ socialImage: e.target.value })}
+              onChange={(src) => updateSettings({ socialImage: src })}
               placeholder="/uploads/photo.jpg"
-              className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm"
             />
           </div>
         )}

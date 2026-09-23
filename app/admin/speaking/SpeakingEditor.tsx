@@ -5,6 +5,7 @@ import SectionCard from "../_shared/SectionCard";
 import PublishBar from "../_shared/PublishBar";
 import { usePublish } from "../_shared/usePublish";
 import TagListEditor from "../_shared/TagListEditor";
+import MediaPicker from "../_shared/MediaPicker";
 
 type Theme = { photoSrc: string; title: string; question: string; description: string };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
@@ -54,7 +55,7 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
 
       <SectionCard title="Hero">
         <Field label="Eyebrow"><input value={content.hero.eyebrow} onChange={(e) => set("hero", { eyebrow: e.target.value })} className={inputCls} /></Field>
-        <Field label="Hero Photo"><input value={content.hero.photoSrc} onChange={(e) => set("hero", { photoSrc: e.target.value })} className={inputCls} /></Field>
+        <Field label="Hero Photo"><MediaPicker value={content.hero.photoSrc} onChange={(src) => set("hero", { photoSrc: src })} /></Field>
         <Field label="Headline">
           <textarea rows={3} value={content.hero.headline} onChange={(e) => set("hero", { headline: e.target.value })} className={`${inputCls} resize-y`} />
         </Field>
@@ -77,7 +78,7 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
           {content.themes.items.map((theme, i) => (
             <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
               <input value={theme.title} onChange={(e) => updateTheme(i, { title: e.target.value })} placeholder="Title" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
-              <input value={theme.photoSrc} onChange={(e) => updateTheme(i, { photoSrc: e.target.value })} placeholder="Photo path" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+              <MediaPicker value={theme.photoSrc} onChange={(src) => updateTheme(i, { photoSrc: src })} placeholder="Photo path" />
               <input value={theme.question} onChange={(e) => updateTheme(i, { question: e.target.value })} placeholder="Question" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] italic" />
               <textarea value={theme.description} onChange={(e) => updateTheme(i, { description: e.target.value })} placeholder="Description" rows={3} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
             </div>
