@@ -2,11 +2,11 @@
   {
     "tag": "Case Study",
     "tagIndex": 1,
-    "headline": "Turning everyday banking into a reason to come back",
-    "description": "Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.",
-    "photoSrc": "/assets/wwm-case-1.jpg",
+    "headline": "Shaping an enterprise AI research product from strategy to funded product",
+    "description": "I led product strategy for an enterprise AI research platform designed to turn audience and purchase data into useful outputs for brands and agencies. The work connected customer needs with data science and LLM capabilities, then translated both into product direction, positioning, and a prototype.",
+    "photoSrc": "/assets/wwm-case-study-3.jpg",
     "showOnHome": true,
-    "client": "Ally"
+    "client": "Stagwell"
   },
   {
     "tag": "Quest",
@@ -20,11 +20,11 @@
   {
     "tag": "Case Study",
     "tagIndex": 3,
-    "headline": "Shaping an enterprise AI research product from strategy to funded product",
-    "description": "I led product strategy for an enterprise AI research platform designed to turn audience and purchase data into useful outputs for brands and agencies. The work connected customer needs with data science and LLM capabilities, then translated both into product direction, positioning, and a prototype.",
-    "photoSrc": "/assets/wwm-case-study-3.jpg",
+    "headline": "Turning everyday banking into a reason to come back",
+    "description": "Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.",
+    "photoSrc": "/assets/wwm-case-1.jpg",
     "showOnHome": true,
-    "client": "Stagwell"
+    "client": "Ally"
   },
   {
     "tag": "Quest",
@@ -37,15 +37,6 @@
   {
     "tag": "Case Study",
     "tagIndex": 5,
-    "headline": "Reimagining WW for a more adaptive, everyday relationship",
-    "description": "Building on WeightWatchers’ trusted brand, I led the app and web strategy for a more adaptive experience that could support people as their goals and needs changed over time, from onboarding and progress to content and community.",
-    "photoSrc": "/assets/wwm-case-2.jpg",
-    "showOnHome": true,
-    "client": "WeightWatchers"
-  },
-  {
-    "tag": "Case Study",
-    "tagIndex": 6,
     "headline": "Helping organizations put emerging technology and AI to work",
     "description": "At the Ad Council, I built the innovation practice that helped teams explore emerging media and technology through partnerships and pilots. At Anomaly, I built AI tools and workflows around the work teams already needed to do. Worked with leaders to create the conditions for AI adoption: governance for deciding what to use and how, workflows grounded in real work, and hands-on support as new practices took hold.",
     "photoSrc": "/assets/wwm-case-7.jpg",
@@ -54,10 +45,19 @@
   },
   {
     "tag": "Quest",
-    "tagIndex": 7,
+    "tagIndex": 6,
     "headline": "Asha",
     "description": "Asha is an early-stage AI product for expecting parents preparing for birth and postpartum together. It begins with a shared plan and partner briefing that help families make decisions, divide responsibilities, and prepare for the support they may need before the baby arrives.",
     "photoSrc": "/assets/quest-asha-v1.png",
     "showOnHome": true
+  },
+  {
+    "tag": "Case Study",
+    "tagIndex": 7,
+    "headline": "Reimagining WW for a more adaptive, everyday relationship",
+    "description": "Building on WeightWatchers’ trusted brand, I led the app and web strategy for a more adaptive experience that could support people as their goals and needs changed over time, from onboarding and progress to content and community.",
+    "photoSrc": "/assets/wwm-case-2.jpg",
+    "showOnHome": true,
+    "client": "WeightWatchers"
   }
 ]

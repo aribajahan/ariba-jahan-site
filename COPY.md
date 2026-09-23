@@ -934,13 +934,13 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 ## Select Work (Home)
 
-### 1. Ally
+### 1. Stagwell
 
 **Tag** — Case Study
 
-**Headline** — Turning everyday banking into a reason to come back
+**Headline** — Shaping an enterprise AI research product from strategy to funded product
 
-**Description** — Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.
+**Description** — I led product strategy for an enterprise AI research platform designed to turn audience and purchase data into useful outputs for brands and agencies. The work connected customer needs with data science and LLM capabilities, then translated both into product direction, positioning, and a prototype.
 
 ### 2. UNMISSABLES
 
@@ -950,13 +950,13 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — A public, ongoing evidence review of how AI use affects adult memory, learning, judgment, and skill. Built with Claude Science and Perplexity, it includes 110 source records, an interactive question map, the underlying data, and notes on what the research tools got right and missed.
 
-### 3. Stagwell
+### 3. Ally
 
 **Tag** — Case Study
 
-**Headline** — Shaping an enterprise AI research product from strategy to funded product
+**Headline** — Turning everyday banking into a reason to come back
 
-**Description** — I led product strategy for an enterprise AI research platform designed to turn audience and purchase data into useful outputs for brands and agencies. The work connected customer needs with data science and LLM capabilities, then translated both into product direction, positioning, and a prototype.
+**Description** — Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.
 
 ### 4. Ariba Jahan OS
 
@@ -964,15 +964,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — ARIBA OS is the multi-LLM system I use to run my work across research, decisions, recurring operations, and product development. It carries context across projects, routes work to different models, and turns repeated work into workflows I can inspect and improve.
 
-### 5. WeightWatchers
-
-**Tag** — Case Study
-
-**Headline** — Reimagining WW for a more adaptive, everyday relationship
-
-**Description** — Building on WeightWatchers’ trusted brand, I led the app and web strategy for a more adaptive experience that could support people as their goals and needs changed over time, from onboarding and progress to content and community.
-
-### 6. Ad Council & Anomaly
+### 5. Ad Council & Anomaly
 
 **Tag** — Case Study
 
@@ -980,11 +972,19 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Description** — At the Ad Council, I built the innovation practice that helped teams explore emerging media and technology through partnerships and pilots. At Anomaly, I built AI tools and workflows around the work teams already needed to do. Worked with leaders to create the conditions for AI adoption: governance for deciding what to use and how, workflows grounded in real work, and hands-on support as new practices took hold.
 
-### 7. Asha
+### 6. Asha
 
 **Tag** — Quest
 
 **Description** — Asha is an early-stage AI product for expecting parents preparing for birth and postpartum together. It begins with a shared plan and partner briefing that help families make decisions, divide responsibilities, and prepare for the support they may need before the baby arrives.
+
+### 7. WeightWatchers
+
+**Tag** — Case Study
+
+**Headline** — Reimagining WW for a more adaptive, everyday relationship
+
+**Description** — Building on WeightWatchers’ trusted brand, I led the app and web strategy for a more adaptive experience that could support people as their goals and needs changed over time, from onboarding and progress to content and community.
 
 ## Forms
 
