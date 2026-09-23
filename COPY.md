@@ -982,7 +982,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Tag** — Quest
 
-**Description** — An AI product for the care economy, built around the most foundational team there is: family. Selected for the Realist Lab Accelerator.
+**Description** — Asha is an early-stage AI product for expecting parents preparing for birth and postpartum together. It begins with a shared plan and partner briefing that help families make decisions, divide responsibilities, and prepare for the support they may need before the baby arrives.
 
 ## Forms
 
