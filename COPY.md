@@ -976,7 +976,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Headline** — Helping organizations put emerging technology and AI to work
 
-**Description** — At the Ad Council, I built the innovation practice that helped teams explore emerging media and technology through partnerships and pilots. At Anomaly, I built AI tools and workflows around the work teams already needed to do. Also worked with leaders to
+**Description** — At the Ad Council, I built the innovation practice that helped teams explore emerging media and technology through partnerships and pilots. At Anomaly, I built AI tools and workflows around the work teams already needed to do. Worked with leaders to create the conditions for AI adoption: governance for deciding what to use and how, workflows grounded in real work, and hands-on support as new practices took hold.
 
 ### 7. Asha
 
