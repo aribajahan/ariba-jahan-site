@@ -946,7 +946,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Tag** — Quest
 
-**Description** — AI and Cognition is a structured review of 110 sources examining what current research has measured about AI’s effects on memory, learning and skill, judgment, attention, and self-assessment. I used Claude Science and Perplexity to build and compare the evidence base, then organized it into an interactive question map showing what each study found, how cognition was measured, and which questions remain open.
+**Description** — A public, ongoing evidence review of how AI use affects adult memory, learning, judgment, and skill. Built with Claude Science and Perplexity, it includes 110 source records, an interactive question map, the underlying data, and notes on what the research tools got right and missed.
 
 ### 3. Stagwell
 
@@ -974,9 +974,9 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Tag** — Case Study
 
-**Headline** — Turning emerging technology and AI into meaningful opportunity
+**Headline** — Helping organizations put emerging technology and AI to work
 
-**Description** — Building the conditions for organizations to explore, adopt, and create with new technology without losing judgment, trust, or strategic focus.
+**Description** — At the Ad Council, I built the innovation practice that helped teams explore emerging media and technology through partnerships and pilots. At Anomaly, I built AI tools and workflows around the work teams already needed to do. Also worked with leaders to
 
 ### 7. Asha
 
