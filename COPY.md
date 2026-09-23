@@ -940,7 +940,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Headline** — Turning everyday banking into a reason to come back
 
-**Description** — Rethinking how a banking app could create more value toward customers' financial goals between transactions, without relying on dark patterns.
+**Description** — Ally wanted to create more value for customers between the moments they checked a balance or completed a transaction. I led the product engagement and retention strategy, reframing the app around financial progress and a relationship customers would have a reason to return to.
 
 ### 2. Exploring the relationship between AI and our Cognition
 
