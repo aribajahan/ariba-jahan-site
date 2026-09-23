@@ -968,7 +968,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **Headline** — Reimagining WW for a more adaptive, everyday relationship
 
-**Description** — Exploring how an iconic brand could evolve beyond legacy expectations into a more adaptive, everyday digital experience.
+**Description** — Building on WeightWatchers’ trusted brand, I led the app and web strategy for a more adaptive experience that could support people as their goals and needs changed over time, from onboarding and progress to content and community.
 
 ### 6. Ad Council & Anomaly
 
