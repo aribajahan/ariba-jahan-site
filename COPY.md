@@ -946,7 +946,7 @@ Feel confident sending someone your link. We’ll build a website that makes you
 
 See the workshop ↗
 
-For solopreneurs, service providers, and people with work to show.
+For solopreneurs and independent professionals who want a website that reflects their expertise, showcases their work, and opens doors to their next opportunity.
 
 December 2026 kickoff · Prework in November
 
@@ -1020,63 +1020,7 @@ Your Google Analytics: connect your account and check that visits are being reco
 
 Change content in your CMS. Ask an LLM to change the design or add a feature.
 
-Try the example editor ↓
-
 ARIBA’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
-
-TRY A SMALL EXAMPLE
-
-Try the CMS
-
-Change the headline, add a project, or replace an image in this example. You can see how a CMS lets you update content without editing the page’s code.
-
-AContent studioEXAMPLE
-
-Copy & images
-
-Projects
-
-Testimonials
-
-Homepage headline
-
-Brand and website design for independent businesses.Short introduction
-
-I work with independent businesses on their visual identity and website, from the first brief through launch.Choose a project image↑
-
-Your image stays in this browser.
-
-Apply to preview ↗
-
-Project or case study title
-
-What did you do?
-
-Add to preview +
-
-Add up to three examples. Refresh to reset.
-
-Testimonial
-
-Attribution
-
-Update preview ↗
-
-Interactive example. Changes are temporary.
-
-LIVE EXAMPLE PREVIEW ↗
-
-YOUR NAMEIndependent designer
-
-Brand and website design for independent businesses.
-
-I work with independent businesses on their visual identity and website, from the first brief through launch.
-
-SELECTED WORK / 01Brand identity
-
-& website design.
-
-Illustrative browser demo. Your website will have its own authenticated editor and publishing setup.
 
 FROM FIRST BRIEF TO LIVE SITE
 
@@ -1196,7 +1140,7 @@ BEFORE YOU JOIN
 
 Who is this for?+
 
-Solopreneurs and service providers who need a professional or portfolio website: a place to explain their work, show projects, and help prospective clients get in touch. The workshop series focuses on service and portfolio sites.
+For solopreneurs and independent professionals who want a website that reflects their expertise, showcases their work, and opens doors to their next opportunity.
 
 How is this different from other courses?+
 
