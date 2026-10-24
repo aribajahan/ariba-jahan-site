@@ -958,7 +958,7 @@ TYPE / COLOR / COMPONENTS / MOTION
 
 YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
-Built by Ariba. The process is what you’ll learn.
+Built by Ariba Jahan. The process is what you’ll learn.
 
 A presence that matches your ambitions
 
@@ -966,7 +966,7 @@ Make the value of your work clear to the people you want to reach, with room for
 
 Executive experience, direct feedback
 
-Learn with Ariba, whose work spans product, design, and digital experiences for major brands. Get her feedback on the decisions behind your own site.
+Learn with Ariba Jahan, whose work spans product, design, and digital experiences for major brands. Get her feedback on the decisions behind your own site.
 
 A finished website you own
 
@@ -1026,7 +1026,7 @@ Your Google Analytics: connect your account and check that visits are being reco
 
 Change content in your CMS. Ask an LLM to change the design or add a feature.
 
-ARIBA’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
+ARIBA JAHAN’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
 
 FROM FIRST BRIEF TO LIVE SITE
 
@@ -1066,7 +1066,7 @@ You leave with: a live site and a way to keep it current.
 
 06Office hours & site reviewsHELP WITH YOUR NEXT STEP+
 
-Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba.
+Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
@@ -1128,13 +1128,13 @@ Join the founding series
 
 This first series is being offered privately, with an intentionally small group. Prework arrives in November so you can gather your content and get your tools ready before we build together.
 
-05 working sessions01 group office hours session30 minutes one-on-one with Ariba
+05 working sessions01 group office hours session30 minutes one-on-one with Ariba Jahan
 
 FOUNDING FEE
 
 $1,250USD / participant
 
-Five working sessions, group office hours, and a bookable 30-minute individual session with Ariba.
+Five working sessions, group office hours, and a bookable 30-minute individual session with Ariba Jahan.
 
 BRING A BUDDY
 
@@ -1172,7 +1172,7 @@ Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
 
-BUILD WITH ARIBA
+BUILD WITH ARIBA JAHAN
 
 Build a presence you own and feel proud to share.
 
@@ -1180,7 +1180,7 @@ Own your code and content. Keep developing your site as your work evolves.
 
 December kickoff · November prework.
 
-If you have any other questions, email Ariba.
+If you have any other questions, email Ariba Jahan.
 
 ARIBA JAHANA live workshop series for solopreneurs building their digital presence.Back to top ↑
 
