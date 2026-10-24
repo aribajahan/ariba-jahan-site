@@ -1214,7 +1214,7 @@ BRING A BUDDY
 
 $1,000USD / for you
 
-Bring someone you’d like to build alongside and save $250 on your place.
+You pay $1,000. Your buddy pays the $1,250 founding fee. You save $250 on your place.
 
 Get workshop details ↗Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
@@ -1234,7 +1234,7 @@ Use your CMS to edit copy, replace images, add projects or case studies, and man
 
 When does it run, and what does it cost?+
 
-The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy. Exact dates, session length, and enrollment details are being finalized. Email Ariba for workshop details. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy who pays $1,250. Exact dates, session length, and enrollment details are being finalized. Email Ariba for workshop details. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 Will I own my website?+
 
