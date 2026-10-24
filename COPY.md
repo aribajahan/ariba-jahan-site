@@ -1032,15 +1032,7 @@ Change content in your CMS. Ask an LLM to change the design or add a feature.
 
 Try the example editor ↓
 
-YOUR CONTENT STUDIOHomepage copyEdit ↗
-
-ImagesReplace ↗
-
-Projects & case studiesAdd ↗
-
-TestimonialsManage ↗
-
-A focused editor, shaped around your site.
+ARIBA’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
 
 TRY A SMALL EXAMPLE
 
@@ -1108,13 +1100,13 @@ Short demonstrations, time to build your own site, and feedback on what you’re
 
 01Set the foundationWORKSPACE + SITE PLAN+
 
-Set up your local workspace and learn how an LLM works with your files. Decide who the site serves, how many pages you need, and the job of each page.
+Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, how many pages you need, and the job of each page.
 
 You leave with: a working project folder, site brief, page map, and content outline.
 
 02Find your design directionDESIGN + BRAND BOOK+
 
-Explore references and distinct directions in Claude Design using your own copy. Make deliberate choices about type, color, imagery, and layout, then document them in a brand book.
+Explore references and distinct directions in Claude Design using your own copy. Make deliberate choices about type, color, imagery, and layout, then document them in a brand book. Turn recurring design instructions into a reusable skill.
 
 You leave with: your chosen design direction and a reusable visual reference.
 
@@ -1132,7 +1124,7 @@ You leave with: an editor configured for your site and a tested content update.
 
 05Put it into the worldLIVE ON YOUR DOMAIN+
 
-Check mobile layouts, links, contact routes, accessibility basics, and search and sharing details. Connect your domain, publish, and practice making another change and restoring an earlier version.
+Check mobile layouts, links, contact routes, accessibility basics, and search and sharing details. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
 
 You leave with: a live site and a way to keep it current.
 
@@ -1182,6 +1174,24 @@ Keep a history of changes and publish on your own domain.
 
 About publishing ↗
 
+DESIGN YOUR AI WORKSPACE
+
+Give the AI a way to work with you.
+
+Project context
+
+Organize your files and write instructions so the AI can refer to your brief, voice, and design choices as you build.
+
+Reusable skills
+
+Package instructions for work you do repeatedly, such as writing a project page in your voice or following your brand book.
+
+Slash commands
+
+Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
+
+About skills and commands ↗
+
 Also in the build: TypeScript and Tailwind CSS, used with your coding agent. Account requirements and costs will be confirmed before enrollment.
 
 YOUR TEACHER / ARIBA JAHAN
@@ -1223,6 +1233,10 @@ BEFORE YOU JOIN
 Who is this for?+
 
 Solopreneurs and service providers who need a professional or portfolio website: a place to explain their work, show projects, and help prospective clients get in touch. The workshop series focuses on service and portfolio sites.
+
+How is this different from other courses?+
+
+You build your own professional website around your services and work, with Ariba’s feedback on the structure, copy, and design. You also build a brand book, a CMS, and an AI workspace with reusable skills and commands. The series draws on the documented build of aribajahan.com, including the design options and decisions behind the finished site. You practice a workflow you can use again when you add a project, build a new page, or start another piece of work.
 
 Do I need to have used these tools before?+
 
