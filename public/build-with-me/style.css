@@ -84,3 +84,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Hero enrollment action */
 .hero-copy>.enrollment-button{background:var(--red);color:var(--paper)}.hero-copy>.enrollment-button:hover{background:var(--ink)}
+
+/* Rectangular actions with softly rounded corners. */
+.button{border-radius:8px}
