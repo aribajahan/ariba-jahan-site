@@ -948,6 +948,8 @@ December 2026 kickoff · Prework in November
 
 Founding fee: $1,250 · Bring a buddy: save $250 after their paid enrollment
 
+Join the founding series
+
 ● ● ●aribajahan.com
 
 YOUR BRAND BOOKMAKE IT
@@ -1134,7 +1136,7 @@ Custom site feature planning
 
 Additional to the 30-minute individual session included in the series.
 
-Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
+Join the founding seriesExact dates coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
@@ -1164,7 +1166,7 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates, session length, and enrollment details are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates and session length are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How does the buddy offer work?+
 
