@@ -940,9 +940,9 @@ A LIVE, HANDS-ON WORKSHOP SERIES
 
 A digital presence that reflects your ambition.
 
-Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right clients see why to work with you. You’ll use AI throughout and learn how to keep developing it yourself.
+Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right people see the value you bring. You’ll use AI throughout and learn how to keep developing it yourself.
 
-For solopreneurs and independent professionals who want a website that reflects their expertise, showcases their work, and opens doors to their next opportunity.
+For solopreneurs and professionals who want a digital presence that reflects their expertise and ambition—whether you’re growing a business, exploring your next role, or making room for what comes next.
 
 December 2026 kickoff · Prework in November
 
@@ -982,7 +982,7 @@ When someone arrives from a referral, LinkedIn, or a talk, your site should help
 
 03 Your custom CMS
 
-Who needs to understand what you do? What should they see first? We’ll work out what belongs on each page, then design and build it around your services and the work you want to show.
+Who needs to understand what you do? What should they see first? We’ll work out what belongs on each page, then design and build it around your expertise and the work you want to show.
 
 Design for desktop and mobile. Learn how navigation, images, content order, and interactions need to adapt to the screen someone is using.
 
@@ -1098,7 +1098,7 @@ Ariba Jahan
 
 I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. My work spans product strategy, experience design, and helping people put emerging technology into practice. When I rebuilt aribajahan.com with AI, I kept a record of the brief, the design options, and the decisions I changed as I built.
 
-I’m bringing that practice into this workshop series. We’ll work on how a prospective client understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
+I’m bringing that practice into this workshop series. We’ll work on how someone discovering your work understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
 
 Join the founding series
 
@@ -1140,13 +1140,13 @@ Before you join
 
 Who is this for?+
 
-For solopreneurs and independent professionals who want a website that reflects their expertise, showcases their work, and opens doors to their next opportunity.
+For solopreneurs and professionals who want a digital presence that reflects their expertise and ambition—whether you’re growing a business, exploring your next role, or making room for what comes next.
 
 How is this different from other courses?+
 
-This series brings positioning, design, and AI building together around your own work. We start with the value you provide, the people you want to reach, and what they need to understand before working with you. You’ll set up a local AI workspace, build a site that reflects those decisions, and create a CMS you can keep updating as your business develops.
+This series brings positioning, design, and AI building together around your own work. We start with the value you provide, the people you want to reach, and what they need to understand before working with you. You’ll set up a local AI workspace, build a site that reflects those decisions, and create a CMS you can keep updating as your work evolves.
 
-I bring my background in customer experience, product, and design into the room. The group is intentionally small so you can ask me questions directly. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it supports your business.
+I bring my background in customer experience, product, and design into the room. The group is intentionally small so you can ask me questions directly. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it helps people decide to work with you.
 
 Do I need to have used these tools before?+
 
@@ -1178,7 +1178,7 @@ December kickoff · November prework.
 
 If you have any other questions, email Ariba Jahan.
 
-ARIBA JAHANA live workshop series for solopreneurs and independent professionals.
+ARIBA JAHANA live workshop series for solopreneurs and professionals.
 
 LinkedInSubstackGitHubSpotifyYouTubeInstagram
 
