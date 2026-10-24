@@ -101,3 +101,11 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 @media(max-width:720px){.hero-art .hero-cms{top:auto;bottom:32px}.hero-art .brand-swatch{top:auto;bottom:45px}}
 
 @media(max-width:720px){.hero-art .brand-swatch{width:30%}.hero-art .brand-swatch .swatch-title{font-size:20px;margin:9px 0}}@media(max-width:360px){.hero-art .brand-swatch .swatch-title{font-size:18px}}
+
+/* Keep the instructor portrait compact beside the biography. */
+.teacher{grid-template-columns:minmax(0,320px) minmax(0,680px);justify-content:center;gap:64px;padding:64px 48px;align-items:center}
+.teacher-photo{width:100%;max-width:320px;border-radius:8px;align-self:center}
+.teacher-photo img{width:100%;height:auto;min-height:0;aspect-ratio:1;object-fit:cover;object-position:center}
+.teacher-copy{padding:0}
+@media(max-width:1000px){.teacher{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:40px;padding:48px 32px}}
+@media(max-width:720px){.teacher{grid-template-columns:1fr;gap:28px;padding:40px 24px}.teacher-photo{max-width:240px}.teacher-photo img{height:auto;min-height:0;aspect-ratio:1}.teacher-copy{padding:0}}
