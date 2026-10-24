@@ -936,9 +936,9 @@ AARIBA JAHANBUILD WITH ME
 
 What you buildThe sessionsThe tools
 
-Get course details ↗
+Get workshop details ↗
 
-A LIVE, HANDS-ON COURSE
+A LIVE, HANDS-ON WORKSHOP SERIES
 
 A WEBSITE
 
@@ -948,9 +948,13 @@ LIKE YOU.
 
 Design, build, and launch a website for your work with AI. Leave with your own brand book, a custom CMS, and the skills to keep improving it.
 
-Get course details ↗
+Get workshop details ↗
 
 For solopreneurs, service providers, and people with work to show.
+
+December 2026 kickoff · Prework in November
+
+Founding fee: $1,250 · Bring a buddy: $1,000 for you
 
 ● ● ●aribajahan.com↗
 
@@ -996,7 +1000,7 @@ You own the code and content, with the ability to move hosts.
 
 Explore Ariba’s site ↗
 
-THE ACTUAL BUILD BEHIND THE COURSE
+THE ACTUAL BUILD BEHIND THE WORKSHOP SERIES
 
 A REFERENCE FOR EVERY NEXT PAGE
 
@@ -1092,7 +1096,7 @@ SELECTED WORK / 01Something
 
 worth making.
 
-Illustrative browser demo. Your course site will have its own authenticated editor and publishing setup.
+Illustrative browser demo. Your website will have its own authenticated editor and publishing setup.
 
 FROM FIRST BRIEF TO LIVE SITE
 
@@ -1188,15 +1192,37 @@ Let’s build yours.
 
 I’m a product and experience strategist, builder, and writer. When I rebuilt aribajahan.com with AI, I documented the process: the brief, the design options, the build, and the decisions I changed along the way.
 
-That record is the basis for this course. We’ll use my site, brand book, and CMS to work through the choices behind yours, and spend our time building.
+That record is the basis for this workshop series. We’ll use my site, brand book, and CMS to work through the choices behind yours, and spend our time building.
 
 More about Ariba ↗
+
+THE FOUNDING WORKSHOP SERIES
+
+Start in December.
+
+Get ready in November.
+
+Prework arrives in November so you can gather your content and get your tools ready before we build together.
+
+FOUNDING FEE
+
+$1,250USD / participant
+
+Five working sessions, group office hours, and a bookable 30-minute individual session with Ariba.
+
+BRING A BUDDY
+
+$1,000USD / for you
+
+Bring someone you’d like to build alongside and save $250 on your place.
+
+Get workshop details ↗Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
 BEFORE YOU JOIN
 
 Who is this for?+
 
-Solopreneurs and service providers who need a professional or portfolio website: a place to explain their work, show projects, and help prospective clients get in touch. The course focuses on service and portfolio sites.
+Solopreneurs and service providers who need a professional or portfolio website: a place to explain their work, show projects, and help prospective clients get in touch. The workshop series focuses on service and portfolio sites.
 
 Do I need to have used these tools before?+
 
@@ -1208,7 +1234,7 @@ Use your CMS to edit copy, replace images, add projects or case studies, and man
 
 When does it run, and what does it cost?+
 
-Dates, session length, and tuition are being finalized. Email Ariba for course details. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy. Exact dates, session length, and enrollment details are being finalized. Email Ariba for workshop details. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 Will I own my website?+
 
@@ -1220,9 +1246,9 @@ Make the website
 
 you want to send.
 
-Get course details ↗Dates and tuition coming soon. This opens an email to Ariba.
+Get workshop details ↗December kickoff · November prework. This opens an email to Ariba.
 
-ARIBA JAHAN ↗A live website-building course for solopreneurs.Back to top ↑
+ARIBA JAHAN ↗A live website-building workshop series for solopreneurs.Back to top ↑
 
 ---
 
