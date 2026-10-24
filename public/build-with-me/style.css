@@ -29,3 +29,14 @@ h1,h2,h3,h4{text-transform:uppercase}.section-heading h2{font-size:64px;letter-s
 @media(max-width:1000px){.section-heading h2{font-size:56px}.teacher-copy h2{font-size:60px}.responsive-showcase{gap:12px;grid-template-columns:minmax(0,1fr) minmax(85px,.32fr)}}
 @media(max-width:720px){.section-heading h2{font-size:46px;letter-spacing:-.6px}.value-grid h3{font-size:27px}.responsive-showcase{grid-template-columns:minmax(0,1fr) minmax(88px,.33fr);gap:14px;padding:0;min-height:0}.responsive-caption{font-size:7px}.desktop-example{padding:0}.mobile-example{width:100%;max-width:none}.device-label,.mobile-example .device-label{font-size:8px}.workspace-section{padding:30px 0 0}.workspace-section>h3{font-size:31px}.teacher-copy h2{font-size:54px}.closing h2{font-size:46px}.faq>h2{font-size:42px}.cms-photo img{max-height:480px}}
 @media(max-width:720px){.output-tabs button{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}.output-tabs button>span:first-child{margin-bottom:0}}
+
+/* Keep separators for interactive rows; use spacing elsewhere. */
+.site-header,.format-bar,.output-tabs,.session-list,.tools-section,
+.tool-grid,.workspace-section,.sessions,.pricing,.faq,.faq-list,.price-grid{border:0}
+.tool-grid>div,.tool-grid>div:last-child,.price-block.buddy,.cms-features li{border:0}
+.value-grid h3:before{display:none}
+.workspace-section{padding-top:24px;margin-top:48px}
+.cms-features li{padding:7px 0}
+.price-grid{column-gap:64px}
+.price-block{padding:24px 0}
+@media(max-width:720px){.price-grid{gap:12px}.price-block,.price-block.buddy{padding:20px 0;border:0}.tool-grid>div,.tool-grid>div:last-child{border:0}.workspace-section{margin-top:32px;padding-top:16px}}
