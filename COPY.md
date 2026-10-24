@@ -936,15 +936,11 @@ AARIBA JAHANBUILD WITH ME
 
 What you buildThe sessionsThe tools
 
-See the workshop ↗
-
 A LIVE, HANDS-ON WORKSHOP SERIES
 
 A digital presence that reflects your value.
 
 Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right clients see why to work with you. You’ll use AI throughout and learn how to keep developing it yourself.
-
-See the workshop ↗
 
 For solopreneurs and independent professionals who want a website that reflects their expertise, showcases their work, and opens doors to their next opportunity.
 
@@ -1168,7 +1164,7 @@ BUILD WITH ARIBA
 
 Build a presence you own and feel proud to share.
 
-See the workshop ↗Own your code and content. Keep developing your site as your work evolves.
+Own your code and content. Keep developing your site as your work evolves.
 
 December kickoff · November prework.
 
