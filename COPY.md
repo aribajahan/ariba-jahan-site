@@ -936,7 +936,7 @@ AARIBA JAHANBUILD WITH ME
 
 What you buildThe sessionsThe tools
 
-Get workshop details ↗
+See the workshop ↗
 
 A LIVE, HANDS-ON WORKSHOP SERIES
 
@@ -944,7 +944,7 @@ A digital presence that reflects your value.
 
 Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right clients see why to work with you. You’ll use AI throughout and learn how to keep developing it yourself.
 
-Get workshop details ↗
+See the workshop ↗
 
 For solopreneurs, service providers, and people with work to show.
 
@@ -1190,7 +1190,7 @@ $1,000USD / for you
 
 You pay $1,000. Your buddy pays the $1,250 founding fee. You save $250 on your place.
 
-Get workshop details ↗Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
+Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
 BEFORE YOU JOIN
 
@@ -1214,7 +1214,7 @@ Use your CMS to edit copy, replace images, add projects or case studies, manage 
 
 When does it run, and what does it cost?+
 
-The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy who pays $1,250. Exact dates, session length, and enrollment details are being finalized. Email Ariba for workshop details. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy who pays $1,250. Exact dates, session length, and enrollment details are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 Will I own my website?+
 
@@ -1224,7 +1224,9 @@ BUILD WITH ARIBA
 
 Build a presence you’re proud to share.
 
-Get workshop details ↗December kickoff · November prework. This opens an email to Ariba.
+See the workshop ↗December kickoff · November prework.
+
+If you have any other questions, email Ariba.
 
 ARIBA JAHANA live workshop series for solopreneurs building their digital presence.Back to top ↑
 
