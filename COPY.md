@@ -964,9 +964,7 @@ YOUR OWN.
 
 TYPE / COLOR / COMPONENTS / MOTION
 
-↳YES, YOU CAN
-
-UPDATE IT YOURSELF.
+YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba. The process is what you’ll learn.
 
@@ -984,7 +982,7 @@ A website you’re proud to send to a prospective client. A design guide you can
 
 02 Your brand book ↗
 
-03 Your CMS ↗
+03 Your custom CMS ↗
 
 DESIGNED AROUND YOUR WORK
 
@@ -996,11 +994,17 @@ Your domain.
 
 Decide what each page needs to do. Shape your copy, choose a design direction, and build a site that gives people a reason to work with you.
 
+Design for desktop and mobile. Learn how navigation, images, content order, and interactions need to adapt to the screen someone is using.
+
 You own the code and content, with the ability to move hosts.
 
 Explore Ariba’s site ↗
 
-THE ACTUAL BUILD BEHIND THE WORKSHOP SERIES
+DESKTOP
+
+MOBILE
+
+ONE WEBSITE, DESIGNED FOR BOTH.
 
 A REFERENCE FOR EVERY NEXT PAGE
 
@@ -1026,7 +1030,15 @@ New photo?
 
 Put it up.
 
-Build a content management system for your copy, images, projects, and testimonials. Learn how an edit moves from the editor to your live site.
+Build a CMS around the features you need most. Choose the fields and controls for your copy, images, projects, and testimonials, then learn how an edit reaches your live site.
+
+Your content: copy, images, case studies, and testimonials.
+
+Your SEO settings: page titles, descriptions, URLs, and image alt text.
+
+Your share previews: the title, description, and image supplied when a link is shared.
+
+Your Google Analytics: connect your account and check that visits are being recorded.
 
 Change content in your CMS. Ask an LLM to change the design or add a feature.
 
@@ -1112,19 +1124,19 @@ You leave with: your chosen design direction and a reusable visual reference.
 
 03Build your homepageWORKING WEBSITE+
 
-Move the design into Claude Code or Codex. Build the homepage, review it on desktop and mobile, and practice giving the AI specific feedback. Extend those patterns to your remaining pages between sessions.
+Move the design into Claude Code or Codex. Build the homepage and design its desktop and mobile layouts. Adapt navigation, image crops, section order, and interactions for each screen; test on your phone and practice giving the AI specific feedback. Extend those patterns to your remaining pages between sessions.
 
 You leave with: a working homepage and a repeatable way to build the rest.
 
 04Make it yours to updateCUSTOM CONTENT STUDIO+
 
-Build on a prepared CMS foundation. Connect the editor to your copy, images, projects, and testimonials. Practice adding a case study and checking the result before publishing.
+Build on a prepared CMS foundation. Choose the content fields and controls you need. Connect the editor to your copy, images, projects, testimonials, and page-level SEO settings. Practice adding a case study and checking the result before publishing.
 
 You leave with: an editor configured for your site and a tested content update.
 
 05Put it into the worldLIVE ON YOUR DOMAIN+
 
-Check mobile layouts, links, contact routes, accessibility basics, and search and sharing details. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
+Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
 
 You leave with: a live site and a way to keep it current.
 
@@ -1174,9 +1186,9 @@ Keep a history of changes and publish on your own domain.
 
 About publishing ↗
 
-DESIGN YOUR AI WORKSPACE
+SKILLS YOU CAN KEEP USING
 
-Give the AI a way to work with you.
+Designing your AI workspace
 
 Project context
 
@@ -1244,7 +1256,7 @@ The foundation session introduces the local workspace and working with an AI cod
 
 What can I update afterward?+
 
-Use your CMS to edit copy, replace images, add projects or case studies, and manage testimonials. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
+Use your CMS to edit copy, replace images, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
 
 When does it run, and what does it cost?+
 
