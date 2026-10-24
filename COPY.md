@@ -972,8 +972,6 @@ A finished website you own
 
 Build with your real work and content, publish on your domain, and learn how to keep developing the site yourself.
 
-THE THINGS YOU LEAVE WITH
-
 What you’ll build
 
 When someone arrives from a referral, LinkedIn, or a talk, your site should help them understand your work, see why it matters, and take the next step.
@@ -983,10 +981,6 @@ When someone arrives from a referral, LinkedIn, or a talk, your site should help
 02 Your brand book
 
 03 Your custom CMS
-
-DESIGNED AROUND YOUR WORK
-
-A website built around your work
 
 Who needs to understand what you do? What should they see first? We’ll work out what belongs on each page, then design and build it around your services and the work you want to show.
 
@@ -1000,19 +994,9 @@ MOBILE
 
 ONE WEBSITE, DESIGNED FOR BOTH.
 
-A REFERENCE FOR EVERY NEXT PAGE
-
-Your brand book
-
 Choose your typography, colors, imagery, and layouts, then record how they work together. Your brand book gives you and the AI a reference when you add a page or try something new.
 
 Use the same visual language across your site and future materials.
-
-A WORKING DESIGN REFERENCE
-
-BUILT FOR THE THINGS YOU CHANGE
-
-Your custom CMS
 
 Decide what you want to update yourself and build the controls for it. We’ll start with the content you use most and test how an edit moves from your CMS to the live site.
 
@@ -1026,9 +1010,7 @@ Your Google Analytics: connect your account and check that visits are being reco
 
 Change content in your CMS. Ask an LLM to change the design or add a feature.
 
-ARIBA JAHAN’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
-
-FROM FIRST BRIEF TO LIVE SITE
+Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
 The workshop series
 
@@ -1072,8 +1054,6 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 ↳You’ll work on your own site between sessions. Bring your existing copy, work samples, and images; we’ll shape them as we build.
 
-THE TOOLS, AND WHAT YOU DO WITH THEM
-
 The tools
 
 These are the tools I used to build my site. We’ll work through what each one does and how to use them together, from exploring a design to publishing a change.
@@ -1096,8 +1076,6 @@ Build the pages and components that make up your site.
 
 Keep a history of changes and publish on your own domain.
 
-SKILLS YOU CAN KEEP USING
-
 Designing your AI workspace
 
 Project context
@@ -1114,15 +1092,13 @@ Create shortcuts for repeatable workflows, such as reviewing a page before publi
 
 Also in the build: TypeScript and Tailwind CSS, used with your coding agent. You’ll need a paid Claude account. Your domain and hosting are separate from the workshop fee.
 
-YOUR TEACHER / ARIBA JAHAN
-
 Build with me.
 
-My work spans product strategy, experience design, and helping people put emerging technology into practice. When I rebuilt aribajahan.com with AI, I kept a record of the brief, the design options, and the decisions I changed as I built.
+Ariba Jahan
+
+I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. My work spans product strategy, experience design, and helping people put emerging technology into practice. When I rebuilt aribajahan.com with AI, I kept a record of the brief, the design options, and the decisions I changed as I built.
 
 I’m bringing that practice into this workshop series. We’ll work on how a prospective client understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
-
-THE FOUNDING WORKSHOP SERIES
 
 Join the founding series
 
@@ -1144,7 +1120,7 @@ You pay $1,000. Your buddy pays the $1,250 founding fee. You save $250 on your p
 
 Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
-BEFORE YOU JOIN
+Before you join
 
 Who is this for?+
 
@@ -1171,8 +1147,6 @@ The series kicks off in December 2026, with prework sent in November. The foundi
 Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
-
-BUILD WITH ARIBA JAHAN
 
 Build a presence you own and feel proud to share.
 
