@@ -1222,9 +1222,11 @@ Yes. You own the code and content, and your domain and hosting accounts are your
 
 BUILD WITH ARIBA
 
-Build a presence you’re proud to share.
+Build a presence you own and feel proud to share.
 
-See the workshop ↗December kickoff · November prework.
+See the workshop ↗Own your code and content. Keep developing your site as your work evolves.
+
+December kickoff · November prework.
 
 If you have any other questions, email Ariba.
 
