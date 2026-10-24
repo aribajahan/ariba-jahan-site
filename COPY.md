@@ -960,7 +960,17 @@ YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba. The process is what you’ll learn.
 
-05 working sessions01 group office hours session30 minutes one-on-one with Ariba
+A presence that matches your ambitions
+
+Make the value of your work clear to the people you want to reach, with room for where you want to go next.
+
+Executive experience, direct feedback
+
+Learn with Ariba, whose work spans product, design, and digital experiences for major brands. Get her feedback on the decisions behind your own site.
+
+A finished website you own
+
+Build with your real work and content, publish on your domain, and learn how to keep developing the site yourself.
 
 THE THINGS YOU LEAVE WITH
 
@@ -1117,6 +1127,8 @@ THE FOUNDING WORKSHOP SERIES
 Join the founding series
 
 Prework arrives in November so you can gather your content and get your tools ready before we build together.
+
+05 working sessions01 group office hours session30 minutes one-on-one with Ariba
 
 FOUNDING FEE
 
