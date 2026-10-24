@@ -67,3 +67,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Match the value strip to the pale-pink VIP treatment. */
 .value-strip{background:color-mix(in srgb,var(--pink) 18%,var(--paper));color:var(--ink)}.value-grid h3{color:var(--ink)}.value-grid p{color:var(--ink)}
+
+/* Enrollment checkout */
+.enrollment-button{background:var(--ink);color:var(--paper);gap:0}.enrollment-button:hover{background:var(--red)}.hero-copy>.enrollment-button{margin-top:22px}.enrollment-button:focus-visible{outline:3px solid var(--red);outline-offset:4px}
