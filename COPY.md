@@ -1054,7 +1054,7 @@ Bring questions from finishing and using your site. Get direct help, see what ot
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
-↳You’ll work on your own site between sessions. Bring your existing copy, work samples, and images; we’ll shape them as we build.
+Homework after every working session. Apply what we covered to your own site, then bring that work into the next session for feedback and the next build step. Bring your existing copy, work samples, and images to the series; we’ll shape them as we build.
 
 The tools
 
