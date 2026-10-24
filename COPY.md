@@ -948,7 +948,7 @@ December 2026 kickoff · Prework in November
 
 Founding fee: $1,250 · Bring a buddy: $1,000 for you
 
-● ● ●aribajahan.com↗
+● ● ●aribajahan.com
 
 YOUR BRAND BOOKMAKE IT
 
@@ -960,7 +960,17 @@ YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba. The process is what you’ll learn.
 
-05 working sessions01 group office hours session30 minutes one-on-one with Ariba
+A presence that matches your ambitions
+
+Make the value of your work clear to the people you want to reach, with room for where you want to go next.
+
+Executive experience, direct feedback
+
+Learn with Ariba, whose work spans product, design, and digital experiences for major brands. Get her feedback on the decisions behind your own site.
+
+A finished website you own
+
+Build with your real work and content, publish on your domain, and learn how to keep developing the site yourself.
 
 THE THINGS YOU LEAVE WITH
 
@@ -968,11 +978,11 @@ What you’ll build
 
 When someone arrives from a referral, LinkedIn, or a talk, your site should help them understand your work, see why it matters, and take the next step.
 
-01 Your website ↗
+01 Your website
 
-02 Your brand book ↗
+02 Your brand book
 
-03 Your custom CMS ↗
+03 Your custom CMS
 
 DESIGNED AROUND YOUR WORK
 
@@ -1022,7 +1032,7 @@ FROM FIRST BRIEF TO LIVE SITE
 
 The workshop series
 
-I’ll demonstrate each step, then we’ll spend time on your site. You’ll get feedback as you work and have a chance to ask questions when something doesn’t look or behave the way you intended.
+I’m keeping this group intentionally small so you can ask me questions directly and get feedback on your own site. I’ll demonstrate each step, then we’ll spend time building and working through your decisions together.
 
 01Set the foundationWORKSPACE + SITE PLAN+
 
@@ -1116,7 +1126,9 @@ THE FOUNDING WORKSHOP SERIES
 
 Join the founding series
 
-Prework arrives in November so you can gather your content and get your tools ready before we build together.
+This first series is being offered privately, with an intentionally small group. Prework arrives in November so you can gather your content and get your tools ready before we build together.
+
+05 working sessions01 group office hours session30 minutes one-on-one with Ariba
 
 FOUNDING FEE
 
@@ -1142,7 +1154,7 @@ How is this different from other courses?+
 
 This series brings positioning, design, and AI building together around your own work. We start with the value you provide, the people you want to reach, and what they need to understand before working with you. You’ll set up a local AI workspace, build a site that reflects those decisions, and create a CMS you can keep updating as your business develops.
 
-I bring my background in customer experience, product, and design into the room. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it supports your business.
+I bring my background in customer experience, product, and design into the room. The group is intentionally small so you can ask me questions directly. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it supports your business.
 
 Do I need to have used these tools before?+
 
