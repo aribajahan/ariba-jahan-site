@@ -1112,6 +1112,8 @@ $1,250USD / participant
 
 Five working sessions, group office hours, and a bookable 30-minute individual session with Ariba Jahan.
 
+Optional VIP review · +$350
+
 BRING A BUDDY
 
 $1,000USD / for you
