@@ -5,6 +5,7 @@ import SmoothScroll from "./components/SmoothScroll";
 import JsonLd from "./components/JsonLd";
 import { siteSchema } from "../lib/structuredData";
 import { siteUrl } from "../lib/seoMeta";
+import { googleAnalyticsId } from "../lib/analytics";
 import "./globals.css";
 
 // NOTE: next/font/google in this Next.js version no longer exports
@@ -49,7 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SmoothScroll />
         {children}
       </body>
-      <GoogleAnalytics gaId="G-RN3XCK2GV4" />
+      <GoogleAnalytics gaId={googleAnalyticsId} />
     </html>
   );
 }
