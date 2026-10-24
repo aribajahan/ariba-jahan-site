@@ -986,7 +986,7 @@ December 2026 kickoff · Prework in November
 
 Founding fee: $1,250 · Bring a buddy: save $250 after their paid enrollment
 
-Build with me
+I’m ready to build
 
 ● ● ●aribajahan.com
 
