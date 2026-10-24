@@ -1088,7 +1088,7 @@ Check mobile layouts, links, contact routes, and accessibility basics. Set page 
 
 You leave with: a live site and a way to keep it current.
 
-06Office hours & site reviewsHELP WITH YOUR NEXT STEP+
+06Q&A and site reviewsHELP WITH YOUR NEXT STEP+
 
 Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
 
@@ -1144,13 +1144,13 @@ Join the founding series
 
 This first series is being offered privately, with an intentionally small group. Prework arrives in November so you can gather your content and get your tools ready before we build together.
 
-05 working sessions01 group office hours session30 minutes one-on-one with Ariba Jahan
+05 working sessions01 group Q&A and site reviews session30 minutes one-on-one with Ariba Jahan
 
 FOUNDING FEE
 
 $1,250USD / participant
 
-Five working sessions, group office hours, and a bookable 30-minute individual session with Ariba Jahan.
+Five working sessions, group Q&A and site reviews, and a bookable 30-minute individual session with Ariba Jahan.
 
 Optional VIP review · +$350
 
@@ -1174,7 +1174,7 @@ Custom site feature planning
 
 Additional to the 30-minute individual session included in the series.
 
-Join the founding seriesExact dates coming soon. Tool subscriptions, domain, and hosting costs are separate.
+Join the founding seriesSchedule planned with the founding group; sessions roughly every two to three weeks. Tool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
@@ -1205,6 +1205,12 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 When does it run, and what does it cost?+
 
 The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates and session length are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+
+How will the schedule work?+
+
+Before we begin, I’ll collect the founding group’s availability and choose a time that works for most participants. Plan for sessions roughly every two to three weeks, with adjustments around holidays and time between sessions to work on your site.
+
+Prework arrives in November, and we’ll begin in December 2026. Exact dates and session length are still being finalized. If your availability is limited, email me before enrolling so we can discuss whether the series will work for you.
 
 How does the buddy offer work?+
 
