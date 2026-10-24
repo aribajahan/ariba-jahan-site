@@ -1200,9 +1200,9 @@ Solopreneurs and service providers who need a professional or portfolio website:
 
 How is this different from other courses?+
 
-We work on how you want to be understood and what a prospective client needs before they’ll act. That shapes the copy, proof, page structure, and design. I bring my product strategy and customer experience practice into those decisions, and give you feedback as you build.
+This series brings positioning, design, and AI building together around your own work. We start with the value you provide, the people you want to reach, and what they need to understand before working with you. You’ll set up a local AI workspace, build a site that reflects those decisions, and create a CMS you can keep updating as your business develops.
 
-You’ll practice evaluating what AI produces, explaining what needs to change, and testing whether the revision works. I want you to finish feeling confident sharing your site and capable of developing it as your business evolves.
+I bring my background in customer experience, product, and design into the room. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it supports your business.
 
 Do I need to have used these tools before?+
 
