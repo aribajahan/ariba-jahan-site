@@ -980,6 +980,8 @@ A digital presence that reflects your ambition.
 
 Build a website that makes your expertise clear and helps the right people see your value. Learn to use AI to build it, update it, and keep making it your own.
 
+One of the compliments I keep getting about my website: it doesn’t look AI-generated. In this workshop, I’ll teach you how to make those design decisions for your own site.
+
 I’m ready to build$1,250 founding fee
 
 Live, weekly sessionsDecember kickoffNovember prework
