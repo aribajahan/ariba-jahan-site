@@ -928,6 +928,44 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 **CTA** — Get in touch →
 
+## Build With Me Confirmation
+
+AARIBA JAHANBUILD WITH ME
+
+BUILD WITH ME · FOUNDING SERIES
+
+I’m glad you’re building with me.
+
+We’ll build a digital presence that reflects your expertise and ambition, with the skills to keep making it your own.
+
+Stripe will email your receipt once your payment succeeds. Keep it for your records; if your payment is still processing, wait for that confirmation.
+
+Before we build
+
+November prework
+
+I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
+
+December kickoff
+
+Exact session dates are being finalized. I’ll share the schedule and joining details by email.
+
+Your individual time
+
+Your place includes a bookable 30-minute session with me. If you added VIP, you’ll also have a separate 60-minute review. I’ll follow up with booking details.
+
+What are you hoping to build?
+
+Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series or share a buddy referral.
+
+Email Ariba JahanFor payment questions, include the email address you used at checkout.
+
+ARIBA JAHANA live workshop series for solopreneurs and professionals.
+
+LinkedInSubstackGitHubSpotifyYouTubeInstagram
+
+Legal© 2026 Ariba Jahan. All rights reserved.
+
 ## Build With Me
 
 Skip to content

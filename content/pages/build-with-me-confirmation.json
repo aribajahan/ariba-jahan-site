@@ -1,0 +1,26 @@
+{
+  "format": "html-document",
+  "document": [
+    "<!doctype html>",
+    "<html lang=\"en\">",
+    "<head>",
+    "  <meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+    "  <title>Welcome to Build with Me | Ariba Jahan</title>",
+    "  <meta name=\"theme-color\" content=\"#f7f3ea\">",
+    "  <link rel=\"icon\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%23e73329'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-size='28' font-family='Arial' font-weight='bold' fill='white'%3EA%3C/text%3E%3C/svg%3E\">",
+    "  <link rel=\"preload\" href=\"/build-with-me/assets/display.woff2\" as=\"font\" type=\"font/woff2\" crossorigin>",
+    "  <link rel=\"stylesheet\" href=\"/build-with-me/style.css\"><script src=\"/build-with-me/app.js\" defer></script>",
+    "<meta name=\"robots\" content=\"noindex, nofollow\">",
+    "</head>",
+    "<body>",
+    "<header class=\"site-header wrap\"><a class=\"wordmark\" href=\"/build-with-me\" aria-label=\"Build with Me by Ariba Jahan\"><span class=\"seal\">A</span><span>ARIBA JAHAN<small>BUILD WITH ME</small></span></a></header>",
+    "<main class=\"confirmation wrap\" id=\"main\">",
+    "<section class=\"confirmation-intro\"><div><p class=\"eyebrow\">BUILD WITH ME · FOUNDING SERIES</p><h1>I’m glad you’re building with me.</h1><p class=\"intro\">We’ll build a digital presence that reflects your expertise and ambition, with the skills to keep making it your own.</p><p>Stripe will email your receipt once your payment succeeds. Keep it for your records; if your payment is still processing, wait for that confirmation.</p></div><img class=\"confirmation-image\" src=\"/build-with-me/social.png\" width=\"1200\" height=\"630\" alt=\"Ariba Jahan’s website on desktop and mobile, stacked with her custom CMS and brand book.\"></section>",
+    "<section class=\"confirmation-next\" aria-labelledby=\"next-heading\"><h2 id=\"next-heading\">Before we build</h2><div class=\"confirmation-steps\"><div><h3>November prework</h3><p>I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.</p></div><div><h3>December kickoff</h3><p>Exact session dates are being finalized. I’ll share the schedule and joining details by email.</p></div><div><h3>Your individual time</h3><p>Your place includes a bookable 30-minute session with me. If you added VIP, you’ll also have a separate 60-minute review. I’ll follow up with booking details.</p></div></div></section>",
+    "<section class=\"confirmation-contact\"><h2>What are you hoping to build?</h2><p>Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series or share a buddy referral.</p><a class=\"button enrollment-button\" href=\"mailto:ariba@aribajahan.com?subject=Build%20with%20Me%20%E2%80%94%20my%20website\">Email Ariba Jahan</a><p class=\"confirmation-note\">For payment questions, include the email address you used at checkout.</p></section>",
+    "</main>",
+    "<footer class=\"workshop-footer\"><div class=\"wrap\"><div class=\"workshop-footer-top\"><div><a class=\"wordmark\" href=\"/\">ARIBA JAHAN</a><p>A live workshop series for solopreneurs and professionals.</p></div><nav aria-label=\"Ariba Jahan social links\"><a href=\"https://www.linkedin.com/in/aribajahan/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a><a href=\"https://www.unmissables.xyz/\" target=\"_blank\" rel=\"noopener noreferrer\">Substack</a><a href=\"https://github.com/aribajahan\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a><a href=\"https://open.spotify.com/show/3ufd57tWYngjUI9LlQGXkD?si=8cc7f819c9384315\" target=\"_blank\" rel=\"noopener noreferrer\">Spotify</a><a href=\"https://www.youtube.com/@unmissableswithariba\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a><a href=\"https://www.instagram.com/ariba.jahan/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a></nav></div><div class=\"workshop-footer-bottom\"><a href=\"https://design.aribajahan.com/legal\" target=\"_blank\" rel=\"noopener noreferrer\">Legal</a><span>© 2026 Ariba Jahan. All rights reserved.</span></div></div></footer>",
+    "</body>",
+    "</html>"
+  ]
+}
