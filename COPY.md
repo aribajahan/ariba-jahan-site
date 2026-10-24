@@ -1118,6 +1118,20 @@ $1,000USD / for you
 
 You pay $1,000. Your buddy pays the $1,250 founding fee. You save $250 on your place.
 
+Optional VIP review
+
++$350 USD
+
+Add a 60-minute session with Ariba Jahan for bespoke feedback and recommendations. Choose one focus for your session:
+
+Website feedback
+
+Offer productization and strategy
+
+Custom site feature planning
+
+Additional to the 30-minute individual session included in the series.
+
 Exact dates and enrollment details coming soon. Tool subscriptions, domain, and hosting costs are separate.
 
 Before you join
