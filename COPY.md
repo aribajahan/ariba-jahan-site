@@ -1140,7 +1140,7 @@ I’ve led product, innovation, and digital experience work at the Ad Council an
 
 I’m bringing that practice into this workshop series. We’ll work on how someone discovering your work understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
 
-Join the founding series
+Join the founding cohort
 
 This first series is being offered privately, with an intentionally small group. Prework arrives in November so you can gather your content and get your tools ready before we build together.
 
@@ -1174,7 +1174,7 @@ Custom site feature planning
 
 Additional to the 30-minute individual session included in the series.
 
-Join the founding seriesSchedule planned with the founding group; sessions roughly every two to three weeks. Tool subscriptions, domain, and hosting costs are separate.
+Join the founding cohortSchedule planned with the founding group; weekly sessions, with breaks around holidays. Tool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
@@ -1208,7 +1208,7 @@ The series kicks off in December 2026, with prework sent in November. The foundi
 
 How will the schedule work?+
 
-Before we begin, I’ll collect the founding group’s availability and choose a time that works for most participants. Plan for sessions roughly every two to three weeks, with adjustments around holidays and time between sessions to work on your site.
+Before we begin, I’ll collect the founding group’s availability and choose a time that works for most participants. We’ll meet weekly, with a week off when a holiday falls in between. Plan for about six weeks of sessions, plus any holiday breaks, with homework between sessions to keep your site moving forward.
 
 Prework arrives in November, and we’ll begin in December 2026. Exact dates and session length are still being finalized. If your availability is limited, email me before enrolling so we can discuss whether the series will work for you.
 

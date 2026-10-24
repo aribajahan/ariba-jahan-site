@@ -87,3 +87,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Rectangular actions with softly rounded corners. */
 .button{border-radius:8px}
+
+/* Preview: a compact lower-right group with the CMS in front. */
+.hero-art .hero-cms{grid-column:1/-1;width:280px;max-width:none;justify-self:end;margin-left:0;margin-right:188px;z-index:2}.hero-art .brand-swatch{grid-column:1/-1;width:190px;max-width:none;height:205px;justify-self:end;margin-top:-82px;margin-right:10px;z-index:1}.hero-art .brand-swatch .swatch-title{font-size:32px}@media(max-width:720px){.hero-art .hero-cms{width:58%;height:175px;margin-top:-30px;margin-right:calc(42% - 6px);padding:12px}.hero-art .brand-swatch{width:42%;height:175px;margin-top:-52px;margin-right:4px;padding:12px}.hero-art .hero-cms img{height:112px}.hero-art .brand-swatch .swatch-title{font-size:28px}}@media(max-width:360px){.hero-art .brand-swatch .swatch-title{font-size:25px}.hero-art .hero-cms img{height:105px}}
