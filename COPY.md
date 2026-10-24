@@ -938,7 +938,7 @@ What you buildThe sessionsThe tools
 
 A LIVE, HANDS-ON WORKSHOP SERIES
 
-A digital presence that reflects your value.
+A digital presence that reflects your ambition.
 
 Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right clients see why to work with you. You’ll use AI throughout and learn how to keep developing it yourself.
 
@@ -994,21 +994,23 @@ MOBILE
 
 ONE WEBSITE, DESIGNED FOR BOTH.
 
-Choose your typography, colors, imagery, and layouts, then record how they work together. Your brand book gives you and the AI a reference when you add a page or try something new.
+Create a visual language you love, then build the system that keeps it consistent. Bring your typography, colors, imagery, and layouts into a brand book you and your AI can use as you build.
 
-Use the same visual language across your site and future materials.
+Keep it consistent across your site and future materials, and evolve the system as your work grows.
 
-Decide what you want to update yourself and build the controls for it. We’ll start with the content you use most and test how an edit moves from your CMS to the live site.
+Build the controls for the parts of your site you want to update yourself. Start with your everyday content, then learn how to make more of your site editable as your needs change.
 
-Your content: copy, images, case studies, and testimonials.
+Your content: copy, projects, case studies, and testimonials.
+
+Your media library: upload, organize, and reuse images across your site.
 
 Your SEO settings: page titles, descriptions, URLs, and image alt text.
 
 Your share previews: the title, description, and image supplied when a link is shared.
 
-Your Google Analytics: connect your account and check that visits are being recorded.
+Your site controls: choose which links, calls to action, and page sections you want to manage.
 
-Change content in your CMS. Ask an LLM to change the design or add a feature.
+Use your CMS for everyday updates. Work with your AI coding agent to add a feature or make another part of the site editable.
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
@@ -1090,8 +1092,6 @@ Slash commands
 
 Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
 
-Also in the build: TypeScript and Tailwind CSS, used with your coding agent. You’ll need a paid Claude account. Your domain and hosting are separate from the workshop fee.
-
 Build with me.
 
 Ariba Jahan
@@ -1136,9 +1136,15 @@ Do I need to have used these tools before?+
 
 No. You’ll need a computer and a paid Claude account. We’ll set up your workspace together. Allow time between sessions to work on your site.
 
+What do I need, and will you help me set it up?+
+
+I’ll send you prework covering the accounts, downloads, and files to gather. You’ll need a computer and a paid Claude account. We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain as we build.
+
+I’ll explain what each tool does and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent. Tool subscriptions, your domain, and hosting are separate from the workshop fee; I’ll make those requirements and costs clear before enrollment.
+
 What can I update afterward?+
 
-Use your CMS to edit copy, replace images, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
+Use your CMS to edit copy, manage your media library, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
 
 When does it run, and what does it cost?+
 
