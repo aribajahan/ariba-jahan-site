@@ -974,19 +974,15 @@ AARIBA JAHANBUILD WITH ME
 
 What you buildThe sessionsThe tools
 
-A LIVE, HANDS-ON WORKSHOP SERIES
+FOR SOLOPRENEURS AND PROFESSIONALS
 
 A digital presence that reflects your ambition.
 
-Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right people see the value you bring. You’ll use AI throughout and learn how to keep developing it yourself.
+Build a website that makes your expertise clear and helps the right people see your value. Learn to use AI to build it, update it, and keep making it your own.
 
-For solopreneurs and professionals who want a digital presence that reflects their expertise and ambition—whether you’re growing a business, exploring your next role, or making room for what comes next.
+I’m ready to build$1,250 founding fee
 
-December 2026 kickoff · Prework in November
-
-Founding fee: $1,250 · Bring a buddy: save $250 after their paid enrollment
-
-I’m ready to build
+Live, weekly sessionsDecember kickoffNovember prework
 
 ● ● ●aribajahan.com
 
