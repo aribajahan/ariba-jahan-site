@@ -940,13 +940,9 @@ Get workshop details ↗
 
 A LIVE, HANDS-ON WORKSHOP SERIES
 
-A WEBSITE
+A digital presence that reflects your value.
 
-THAT FEELS
-
-LIKE YOU.
-
-Build a website that represents your work, with a brand book and custom CMS to keep it current. I’ll guide you through the decisions and the build, so you understand what you’re making and can keep changing it.
+Feel confident sending someone your link. We’ll build a website that makes your expertise clear and helps the right clients see why to work with you. You’ll use AI throughout and learn how to keep developing it yourself.
 
 Get workshop details ↗
 
@@ -972,11 +968,9 @@ Built by Ariba. The process is what you’ll learn.
 
 THE THINGS YOU LEAVE WITH
 
-What you’ll
+What you’ll build
 
-build.
-
-We’ll work on how you present your expertise, what a prospective client needs to see, and how to make the site feel like yours.
+When someone arrives from a referral, LinkedIn, or a talk, your site should help them understand your work, see why it matters, and take the next step.
 
 01 Your website ↗
 
@@ -986,9 +980,7 @@ We’ll work on how you present your expertise, what a prospective client needs 
 
 DESIGNED AROUND YOUR WORK
 
-A website built
-
-around your work.
+A website built around your work
 
 Who needs to understand what you do? What should they see first? We’ll work out what belongs on each page, then design and build it around your services and the work you want to show.
 
@@ -1004,9 +996,7 @@ ONE WEBSITE, DESIGNED FOR BOTH.
 
 A REFERENCE FOR EVERY NEXT PAGE
 
-A brand book
-
-you can build from.
+Your brand book
 
 Choose your typography, colors, imagery, and layouts, then record how they work together. Your brand book gives you and the AI a reference when you add a page or try something new.
 
@@ -1016,9 +1006,7 @@ A WORKING DESIGN REFERENCE
 
 BUILT FOR THE THINGS YOU CHANGE
 
-An editor built
-
-for your site.
+Your custom CMS
 
 Decide what you want to update yourself and build the controls for it. We’ll start with the content you use most and test how an edit moves from your CMS to the live site.
 
@@ -1038,9 +1026,7 @@ ARIBA’S ACTUAL CMS · YOU’LL BUILD A SIMPLER VERSION
 
 TRY A SMALL EXAMPLE
 
-Try editing
-
-a page.
+Try the CMS
 
 Change the headline, add a project, or replace an image in this example. You can see how a CMS lets you update content without editing the page’s code.
 
@@ -1094,21 +1080,19 @@ Illustrative browser demo. Your website will have its own authenticated editor a
 
 FROM FIRST BRIEF TO LIVE SITE
 
-Build your site
-
-with me.
+The workshop series
 
 I’ll demonstrate each step, then we’ll spend time on your site. You’ll get feedback as you work and have a chance to ask questions when something doesn’t look or behave the way you intended.
 
 01Set the foundationWORKSPACE + SITE PLAN+
 
-Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, how many pages you need, and the job of each page.
+Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
 You leave with: a working project folder, site brief, page map, and content outline.
 
 02Find your design directionDESIGN + BRAND BOOK+
 
-Explore references and distinct directions in Claude Design using your own copy. Make deliberate choices about type, color, imagery, and layout, then document them in a brand book. Turn recurring design instructions into a reusable skill.
+Explore references and distinct directions in Claude Design using your own copy. Choose how to express your expertise and personality while keeping the visitor’s next step clear. Make deliberate choices about type, color, imagery, and layout, then document them in a brand book. Turn recurring design instructions into a reusable skill.
 
 You leave with: your chosen design direction and a reusable visual reference.
 
@@ -1140,9 +1124,7 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 THE TOOLS, AND WHAT YOU DO WITH THEM
 
-The tools you’ll
-
-learn to use.
+The tools
 
 These are the tools I used to build my site. We’ll work through what each one does and how to use them together, from exploring a design to publishing a change.
 
@@ -1150,23 +1132,17 @@ These are the tools I used to build my site. We’ll work through what each one 
 
 Explore visual directions and develop your brand book.
 
-02 / BUILDClaude Code
-
-or Codex
+02 / BUILDClaude Code or Codex
 
 Work with an AI coding agent on files on your computer.
 
 Practice giving instructions and reviewing the result.
 
-03 / WEBSITENext.js
-
-+ React
+03 / WEBSITENext.js + React
 
 Build the pages and components that make up your site.
 
-04 / VERSION + PUBLISHGitHub
-
-+ Vercel
+04 / VERSION + PUBLISHGitHub + Vercel
 
 Keep a history of changes and publish on your own domain.
 
@@ -1194,13 +1170,11 @@ Build with me.
 
 My work spans product strategy, experience design, and helping people put emerging technology into practice. When I rebuilt aribajahan.com with AI, I kept a record of the brief, the design options, and the decisions I changed as I built.
 
-I’m bringing that process into this workshop series. We’ll look at the choices behind my site, brand book, and CMS, then work through yours together. I’ll help you judge what the AI gives you and get specific about what you want to change.
+I’m bringing that practice into this workshop series. We’ll work on how a prospective client understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
 
 THE FOUNDING WORKSHOP SERIES
 
-Start in December.
-
-Get ready in November.
+Join the founding series
 
 Prework arrives in November so you can gather your content and get your tools ready before we build together.
 
@@ -1226,7 +1200,9 @@ Solopreneurs and service providers who need a professional or portfolio website:
 
 How is this different from other courses?+
 
-You build your own professional website around your services and work, with Ariba’s feedback on the structure, copy, and design. You also build a brand book, a CMS, and an AI workspace with reusable skills and commands. The series draws on the documented build of aribajahan.com, including the design options and decisions behind the finished site. You practice a workflow you can use again when you add a project, build a new page, or start another piece of work.
+We work on how you want to be understood and what a prospective client needs before they’ll act. That shapes the copy, proof, page structure, and design. I bring my product strategy and customer experience practice into those decisions, and give you feedback as you build.
+
+You’ll practice evaluating what AI produces, explaining what needs to change, and testing whether the revision works. I want you to finish feeling confident sharing your site and capable of developing it as your business evolves.
 
 Do I need to have used these tools before?+
 
@@ -1246,13 +1222,11 @@ Yes. You own the code and content, and your domain and hosting accounts are your
 
 BUILD WITH ARIBA
 
-Let’s build
-
-your website.
+Build a presence you’re proud to share.
 
 Get workshop details ↗December kickoff · November prework. This opens an email to Ariba.
 
-ARIBA JAHANA live website-building workshop series for solopreneurs.Back to top ↑
+ARIBA JAHANA live workshop series for solopreneurs building their digital presence.Back to top ↑
 
 ---
 
