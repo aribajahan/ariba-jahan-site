@@ -946,7 +946,7 @@ For solopreneurs and professionals who want a digital presence that reflects the
 
 December 2026 kickoff · Prework in November
 
-Founding fee: $1,250 · Bring a buddy: $1,000 for you
+Founding fee: $1,250 · Bring a buddy: save $250 after their paid enrollment
 
 ● ● ●aribajahan.com
 
@@ -1118,7 +1118,7 @@ BRING A BUDDY
 
 $1,000USD / for you
 
-You pay $1,000. Your buddy pays the $1,250 founding fee. You save $250 on your place.
+Once your buddy’s paid enrollment at $1,250 is confirmed, you’ll receive a $250 discount code for your place. Already enrolled? You’ll receive a $250 refund instead. Your workshop fee comes to $1,000.
 
 Optional VIP review
 
@@ -1164,7 +1164,11 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, or $1,000 for you when you bring a buddy who pays $1,250. Exact dates, session length, and enrollment details are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates, session length, and enrollment details are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+
+How does the buddy offer work?+
+
+Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribajahan.com with both of your names and enrollment email addresses so I can confirm their paid enrollment. I’ll then send you a single-use $250 discount code. If you’ve already enrolled, I’ll refund $250 to your original payment method. The discount applies to your workshop fee; the optional VIP review remains $350.
 
 Will I own my website?+
 
