@@ -948,7 +948,7 @@ December 2026 kickoff · Prework in November
 
 Founding fee: $1,250 · Bring a buddy: $1,000 for you
 
-● ● ●aribajahan.com↗
+● ● ●aribajahan.com
 
 YOUR BRAND BOOKMAKE IT
 
@@ -978,11 +978,11 @@ What you’ll build
 
 When someone arrives from a referral, LinkedIn, or a talk, your site should help them understand your work, see why it matters, and take the next step.
 
-01 Your website ↗
+01 Your website
 
-02 Your brand book ↗
+02 Your brand book
 
-03 Your custom CMS ↗
+03 Your custom CMS
 
 DESIGNED AROUND YOUR WORK
 
