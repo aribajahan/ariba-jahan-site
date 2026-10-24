@@ -1178,7 +1178,11 @@ December kickoff · November prework.
 
 If you have any other questions, email Ariba Jahan.
 
-ARIBA JAHANA live workshop series for solopreneurs building their digital presence.Back to top ↑
+ARIBA JAHANA live workshop series for solopreneurs and independent professionals.
+
+LinkedInSubstackGitHubSpotifyYouTubeInstagram
+
+Legal© 2026 Ariba Jahan. All rights reserved.
 
 ---
 
