@@ -946,9 +946,9 @@ Prework before we begin
 
 Ahead of our first session, I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
 
-December or January kickoff
+Thursdays at 1 p.m. ET
 
-We’ll choose the timing based on the group’s availability. Exact session dates are being finalized, and I’ll share the schedule and joining details by email.
+We start December 3, 2026. Our six sessions run 60–90 minutes each: December 3, 10, and 17; January 7, 14, and 21, 2027. We’ll take a holiday break on December 24 and 31. That’s 10 a.m. PT / 6 p.m. UK. I’ll email the joining details before we begin.
 
 Your individual time
 
