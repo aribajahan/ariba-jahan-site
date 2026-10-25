@@ -55,7 +55,7 @@
       "audience": "One-to-one with executives",
       "title": "Executive AI advisory",
       "situation": "You want to understand what AI makes possible for your role and use it with greater confidence.",
-      "description": "I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. We choose one priority and work through it using your questions and examples.",
+      "description": "I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. Bring one priority. We work through it together using your questions and examples.",
       "format": "60-minute working session + written recap",
       "cta": "Book an advisory session",
       "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
@@ -64,14 +64,14 @@
       "menuTitle": "Executive AI advisory",
       "menuDescription": "Practical one-to-one working sessions",
       "topics": [
-        "Understand what AI can do beyond chat and identify a useful place to start.",
-        "Use AI for research, decision preparation, and challenging assumptions.",
-        "Design a personal briefing or follow-up workflow around the tools you already use.",
-        "Give AI context about your priorities and projects so you can build on previous work.",
-        "Evaluate AI output, check evidence, and recognize where your judgment is needed.",
-        "Assess an AI proposal or a first use case for your team."
+        "Put your AI meeting notes to work for decision preparation, follow-ups, and spotting patterns across conversations.",
+        "Use connectors to bring relevant documents, calendar context, and meeting notes into your AI workflow.",
+        "Build a research workflow that tracks industry shifts, competitors, and emerging technology, with sources you can check.",
+        "Explore plugins and create reusable skills for briefings, strategy reviews, and recurring work.",
+        "Make a dashboard, decision tool, or early prototype around a real business question.",
+        "Pressure-test a decision, prepare for a consequential conversation, or choose a first AI experiment for your team."
       ],
-      "outcome": "A workflow you've practiced or a decision you've worked through, plus a short written recap of the approach and next steps. Further sessions or a larger engagement can be scoped together.",
+      "outcome": "A workflow you've practiced, a first version you've made, or a decision you've worked through, plus a short written recap and next steps. Further sessions or a larger engagement can be scoped together.",
       "proofQuote": "",
       "proofName": "",
       "proofRole": ""
@@ -99,6 +99,21 @@
         "label": "Executive AI advisory",
         "href": "#strategy-sessions"
       }
+    ]
+  },
+  "advisoryExample": {
+    "label": "One possible starting point",
+    "title": "Your next leadership meeting",
+    "inputs": [
+      "AI meeting notes",
+      "Industry research",
+      "Business priorities"
+    ],
+    "outputLabel": "A briefing you can use",
+    "outputs": [
+      "Decisions to make",
+      "Evidence to check",
+      "Questions to bring"
     ]
   }
 }
