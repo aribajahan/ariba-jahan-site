@@ -8,13 +8,14 @@ export default function WorkWithMeOverview() {
   return (
     <main>
       <WorkWithMeHero hero={content.hero} />
-      <section id="engagements" aria-label="Choose an engagement" className="scroll-mt-20 bg-cream py-10 max-[700px]:py-7">
+      <section id="engagements" aria-label="Choose an engagement" className="scroll-mt-20 bg-cream py-16 max-[700px]:py-10">
         <div className={wrap}>
-          <p className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-charcoal/60 mb-5">Three ways to work together</p>
+          <h2 className="font-display text-[34px] max-[700px]:text-[28px] uppercase leading-tight mb-7">Three ways to work together</h2>
           <div className="grid grid-cols-3 max-[700px]:grid-cols-1 gap-4">
             {content.offers.map((offer, i) => (
-              <a key={offer.id} href={`#${offer.id}`} className="group border border-charcoal/25 px-5 py-5 flex items-center justify-between gap-4 hover:border-cherish hover:bg-cherish/5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4">
+              <a key={offer.id} href={`#${offer.id}`} className="group border border-charcoal/20 border-t-[3px] border-t-cherish px-6 py-6 min-h-[164px] max-[700px]:min-h-0 flex items-end justify-between gap-4 hover:border-cherish hover:bg-cherish/5 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4">
                 <div>
+                  <span className="block text-[12px] font-extrabold text-cherish mb-5 max-[700px]:mb-3">{String(i + 1).padStart(2, "0")}</span>
                   <span className="block font-display uppercase text-[25px] max-[1024px]:text-[22px] leading-[1.1] mb-2">{offer.menuTitle}</span>
                   <span className="block text-[13px] text-charcoal/65 leading-[1.45]">{offer.menuDescription}</span>
                 </div>

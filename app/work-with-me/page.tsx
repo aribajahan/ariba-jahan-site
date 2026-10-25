@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import Nav from "../components/Nav";
 import PageGate from "../components/PageGate";
 import WorkWithMeOverview from "../components/WorkWithMeOverview";
+import WorkWithMeClosingCTA from "../components/WorkWithMeClosingCTA";
+import RevealInit from "../components/RevealInit";
+import content from "../../content/pages/work-with-me-overview.json";
 import Footer from "../components/Footer";
 import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
@@ -20,7 +23,9 @@ export default async function WorkWithMe() {
   return (
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
+      <RevealInit />
       <WorkWithMeOverview />
+      <WorkWithMeClosingCTA closingCTA={content.closingCTA} />
       {showFooter && <Footer />}
     </div>
   );

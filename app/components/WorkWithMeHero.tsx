@@ -37,13 +37,13 @@ export default function WorkWithMeHero({ hero = wwmContent.hero }: { hero?: type
         <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 max-w-[640px] mt-[22px]">
           {hero.subhead}
         </p>
-        <div className="flex flex-wrap gap-4 mt-8 pointer-events-auto">
+        {hero.ctas.length > 0 && <div className="flex flex-wrap gap-4 mt-8 pointer-events-auto">
           {hero.ctas.map((cta, i) => (
             <a key={cta.label} href={cta.href} className={CTA_STYLES[i] ?? CTA_STYLES[1]}>
               {cta.label}
             </a>
           ))}
-        </div>
+        </div>}
       </div>
     </section>
   );

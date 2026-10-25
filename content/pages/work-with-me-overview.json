@@ -90,16 +90,7 @@
     "photoSrc": "/uploads/IMG_9539-opt.jpg",
     "headline": "Build the products, practices, and capabilities that keep your company unmissable.",
     "subhead": "I work with leaders on the products and experiences they offer customers, how their teams adopt AI, and the judgment they bring to both.",
-    "ctas": [
-      {
-        "label": "Explore engagements",
-        "href": "#engagements"
-      },
-      {
-        "label": "Executive AI advisory",
-        "href": "#strategy-sessions"
-      }
-    ]
+    "ctas": []
   },
   "advisoryExample": {
     "label": "One possible starting point",
@@ -114,6 +105,38 @@
       "Decisions to make",
       "Evidence to check",
       "Questions to bring"
+    ]
+  },
+  "closingCTA": {
+    "heading": "Ready To Build Something Unmissable?",
+    "subhead": "If you're thinking through a product, CX, AI, or growth question, let's chat",
+    "links": [
+      {
+        "index": "01",
+        "title": "Speaking",
+        "cta": "Speaker inquiry →",
+        "href": "/contact"
+      },
+      {
+        "index": "02",
+        "title": "Experience-Led Growth",
+        "cta": "Sprint inquiry →",
+        "href": "mailto:ariba@aribajahan.com?subject=Experience-Led%20Growth%20Inquiry"
+      },
+      {
+        "index": "03",
+        "title": "Executive AI advisory",
+        "cta": "Book a session →",
+        "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
+        "external": true
+      },
+      {
+        "index": "04",
+        "title": "Everything Else",
+        "cta": "Get in touch →",
+        "href": "/contact",
+        "sub": "Press, career advisory, quotes, and everything else."
+      }
     ]
   }
 }
