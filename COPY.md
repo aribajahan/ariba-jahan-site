@@ -1220,9 +1220,9 @@ The series will kick off in December 2026 or January 2027, based on the group’
 
 How will the schedule work?+
 
-Before we begin, I’ll collect the founding group’s availability and choose a time that works for most participants. We’ll meet weekly, with a week off when a holiday falls in between. Plan for about six weeks of sessions, plus any holiday breaks, with homework between sessions to keep your site moving forward.
+We’ll choose a December or January start date together. Sessions run weekly for about six weeks, with breaks for holidays. I’ll send prep before we begin.
 
-We’ll kick off in December 2026 or January 2027, based on the group’s availability, with prework ahead of our first session. Exact dates and session length are still being finalized. If your availability is limited, email me before enrolling so we can discuss whether the series will work for you.
+Have a scheduling concern? Email me before signing up.
 
 How does the buddy offer work?+
 
