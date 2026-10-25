@@ -39,29 +39,30 @@ export default async function PhotoPreview() {
       </section>
       {content.offers.map((o, i) => {
         const p = preview.offers.find(p => p.id === o.id)!;
-        return <section key={o.id} id={o.id} className="scroll-mt-20">
-          <div className={`${wrap} py-12 max-[700px]:py-9`}>
-            <div className="border-t border-charcoal/25 pt-10 grid grid-cols-2 gap-12 items-center max-[850px]:grid-cols-1 max-[850px]:gap-6">
-              <div className={i === 1 ? "order-2 max-[850px]:order-1" : "order-1"}>
-                <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-cherish mb-4">0{i + 1} · {o.audience}</p>
+        const dark = i === 1;
+        return <section key={o.id} id={o.id} className={`scroll-mt-20 ${dark ? "bg-charcoal text-cream" : i === 0 ? "bg-white text-charcoal" : "bg-cream text-charcoal"}`}>
+          <div className={`${wrap} py-16 max-[700px]:py-10`}>
+            <div className="grid grid-cols-2 gap-12 items-center max-[850px]:grid-cols-1 max-[850px]:gap-6">
+              <div>
+                <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] mb-4">0{i + 1} · {o.audience}</p>
                 <h2 className="font-display uppercase text-[clamp(36px,4vw,52px)] leading-[1.02] mb-5">{o.title}</h2>
-                <p className="text-[18px] leading-[1.6] mb-4 text-charcoal/85">{p.intro}</p>
-                <p className="text-[13px] font-bold text-charcoal/65">{o.format}</p>
+                <p className="text-[19px] leading-[1.6] mb-5">{p.intro}</p>
+                <p className="text-[15px] font-bold">{o.format}</p>
               </div>
-              <div className={`relative h-[330px] max-[850px]:h-[290px] overflow-hidden ${i === 1 ? "order-1 max-[850px]:order-2" : "order-2"}`}>
+              <div className="relative h-[330px] max-[850px]:h-[290px] overflow-hidden">
                 <Image src={p.photoSrc} alt={p.photoAlt} fill sizes="(max-width: 850px) 100vw, 550px" className="object-cover" />
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-7 mt-8 max-[700px]:grid-cols-1 max-[700px]:gap-5">
-              {p.examples.map(e => <div key={e.title} className="border-t border-charcoal/20 pt-4">
-                <h3 className="text-[16px] font-extrabold mb-1">{e.title}</h3>
-                <p className="text-[15px] leading-[1.5] text-charcoal/75">{e.text}</p>
+            <div className="grid grid-cols-3 gap-9 mt-10 max-[700px]:grid-cols-1 max-[700px]:gap-5">
+              {p.examples.map(e => <div key={e.title} className="">
+                <h3 className="text-[18px] font-extrabold mb-2">{e.title}</h3>
+                <p className="text-[17px] leading-[1.6]">{e.text}</p>
               </div>)}
             </div>
             <div className="mt-7 flex justify-between items-end gap-8 max-[700px]:flex-col max-[700px]:items-start">
-              <p className="text-[14px] text-charcoal/70 max-w-[550px]">{o.proofQuote ? <>“{o.proofQuote}”<span className="block mt-2 text-[12px] font-bold">{o.proofName} · {o.proofRole}</span></> : o.proof}</p>
+              <p className="text-[16px] max-w-[550px]">{o.proofQuote ? <>“{o.proofQuote}”<span className="block mt-3 text-[14px] font-bold">{o.proofName} · {o.proofRole}</span></> : o.proof}</p>
               <div className="flex flex-col items-start gap-3 shrink-0">
-                <a href={o.href} target={i === 0 ? "_blank" : undefined} rel={i === 0 ? "noopener" : undefined} className={button}>{o.cta} ↗</a>
+                <a href={o.href} target={i === 0 ? "_blank" : undefined} rel={i === 0 ? "noopener" : undefined} className={`${button} ${dark ? "hover:bg-cream hover:text-charcoal" : ""}`}>{o.cta} ↗</a>
                 <a className="text-[14px] underline underline-offset-4 font-bold" href={`/work-with-me-photo-preview/${o.id}`}>{p.detailLabel} →</a>
               </div>
             </div>
@@ -69,7 +70,7 @@ export default async function PhotoPreview() {
         </section>;
       })}
       <section className={`${wrap} pt-4 pb-14`}>
-        <div className="border-t border-charcoal/25 pt-8 flex justify-between items-center gap-8 max-[700px]:flex-col max-[700px]:items-start">
+        <div className="pt-4 flex justify-between items-center gap-8 max-[700px]:flex-col max-[700px]:items-start">
           <div className="max-w-[680px]"><h2 className="font-display uppercase text-[34px] leading-tight mb-3">{content.contactHeading}</h2><p className="text-[16px] text-charcoal/75">{content.contactBody}</p></div>
           <a href={content.contactHref} className={`${button} shrink-0`}>{content.contactCta} ↗</a>
         </div>
