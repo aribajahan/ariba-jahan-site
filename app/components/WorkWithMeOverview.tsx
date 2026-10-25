@@ -57,7 +57,7 @@ export default function WorkWithMeOverview() {
                 <div className={`mt-5 ${readingWidth}`}>
                   <h3 className={`${body} font-semibold mb-2`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
                   <ul className={`list-disc pl-5 space-y-1.5 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
-                    {isAdvisory
+                    {isAdvisory || offer.id === "ambition-sprint"
                       ? offer.topics.map(topic => <li key={topic}>{topic}</li>)
                       : card.examples.map(example => <li key={example.title}><strong className="font-semibold">{example.title}.</strong> {example.text}</li>)}
                   </ul>
@@ -72,9 +72,12 @@ export default function WorkWithMeOverview() {
                         items: originalContent.cxSprint.deliverables,
                       },
                       {
-                        heading: "Week-by-week breakdown",
-                        note: "Example six-week plan. Timing is tailored to the agreed scope.",
-                        items: originalContent.cxSprint.weeks,
+                        heading: "How the engagement works",
+                        note: "Scope, depth, and timing are agreed around your project.",
+                        items: originalContent.cxSprint.weeks.map(step => ({
+                          title: step.title.replace(/^.*?:\s*/, ""),
+                          description: step.description,
+                        })),
                       },
                     ].map(detail => (
                       <details key={detail.heading} className="group border-t border-cream/25">
