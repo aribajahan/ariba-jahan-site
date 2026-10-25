@@ -980,7 +980,7 @@ A digital presence that reflects your ambition.
 
 Build a website that makes your expertise clear and helps the right people see your value. Learn to use AI to build it, update it, and keep making it your own.
 
-One of the compliments I keep getting about my website: it doesn’t look AI-generated. In this workshop, I’ll teach you how to make those design decisions for your own site.
+One of the main compliments I get about my website: it doesn’t look AI-generated. I’ll teach you the strategy and design judgment behind it.
 
 I’m ready to build$1,250 founding fee
 
@@ -1182,9 +1182,9 @@ For solopreneurs and professionals who want a digital presence that reflects the
 
 How is this different from other courses?+
 
-This series brings positioning, design, and AI building together around your own work. We start with the value you provide, the people you want to reach, and what they need to understand before working with you. You’ll set up a local AI workspace, build a site that reflects those decisions, and create a CMS you can keep updating as your work evolves.
+We’re not just vibing. We’re using strategy and design judgment. We’ll build with AI while making deliberate choices about your brand, how your site communicates your value, and the experience people have using it. I’ll help you evaluate what’s working and guide what needs to change.
 
-You’ll develop the design judgment to recognize what works, explain what needs to change, and guide AI toward a site that feels like you. I bring my background in customer experience, product, and design into the room. The group is intentionally small so you can ask me questions directly. I’ll review what you’re making across the sessions, help you work through decisions, and give you direct feedback as you make revisions. We’ll work on how your digital presence represents your value and how it helps people decide to work with you.
+You’ll set up a local AI workspace and create a CMS you can keep updating as your work evolves. The group is intentionally small so you can ask me questions directly and get feedback on your own work throughout.
 
 Do I need to have used these tools before?+
 
