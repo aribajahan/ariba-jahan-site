@@ -170,6 +170,18 @@ export default function WwmCaseStudiesEditor({ initialItems }: { initialItems: C
                     className={`${inputCls} resize-y`}
                   />
 
+                  <fieldset className="mb-5">
+                    <legend className={labelCls}>Relevant engagements</legend>
+                    {[
+                      ["strategy-sessions", "Executive AI advisory"],
+                      ["ambition-sprint", "Experience-Led Growth"],
+                      ["ai-adoption", "AI adoption"],
+                    ].map(([id, name]) => <label key={id} className="flex items-center gap-2 text-[14px] py-1">
+                      <input type="checkbox" checked={cs.engagements?.includes(id) ?? false} onChange={e => update(i, { engagements: e.target.checked ? [...(cs.engagements ?? []), id] : (cs.engagements ?? []).filter(value => value !== id) })} />
+                      {name}
+                    </label>)}
+                  </fieldset>
+
                   <label className={labelCls}>Tags — one per line</label>
                   <textarea
                     rows={4}
