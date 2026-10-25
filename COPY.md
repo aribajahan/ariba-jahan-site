@@ -1144,9 +1144,9 @@ Build with me.
 
 Ariba Jahan
 
-I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. My work spans product strategy, experience design, and helping people put emerging technology into practice. When I rebuilt aribajahan.com with AI, I kept a record of the brief, the design options, and the decisions I changed as I built.
+I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. I built my own site with AI and documented the decisions behind it.
 
-I’m bringing that practice into this workshop series. We’ll work on how someone discovering your work understands your value, what helps them trust you, and how your digital presence supports their decision. I’ll help you make those choices, direct the AI, and judge what it builds.
+Now we’ll apply that experience to yours. I’ll work with you on how your site communicates your value, give you direct design feedback, and guide you through directing the AI.
 
 Join the founding cohort
 
