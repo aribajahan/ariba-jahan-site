@@ -1228,7 +1228,7 @@ Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
 
-I’d love to build this with you.
+Let’s build something you’re proud to put your name on.
 
 You’ve put a lot into your work. Let’s give it a home you’re proud to share.
 
