@@ -92,21 +92,6 @@
     "subhead": "I work with leaders on the products and experiences they offer customers, how their teams adopt AI, and the judgment they bring to both.",
     "ctas": []
   },
-  "advisoryExample": {
-    "label": "One possible starting point",
-    "title": "Your next leadership meeting",
-    "inputs": [
-      "AI meeting notes",
-      "Industry research",
-      "Business priorities"
-    ],
-    "outputLabel": "A briefing you can use",
-    "outputs": [
-      "Decisions to make",
-      "Evidence to check",
-      "Questions to bring"
-    ]
-  },
   "closingCTA": {
     "heading": "Ready To Build Something Unmissable?",
     "subhead": "If you're thinking through a product, CX, AI, or growth question, let's chat",
