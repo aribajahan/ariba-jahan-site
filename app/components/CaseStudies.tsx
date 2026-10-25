@@ -85,7 +85,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
         </div>
 
         {filterable && <div className="mb-5">
-          <nav aria-label="Case studies by engagement" className="flex flex-wrap gap-x-7 gap-y-3 text-[15px]">
+          <nav aria-label="Case studies by engagement" className="flex flex-wrap gap-x-7 gap-y-3 text-[13px] font-extrabold uppercase tracking-[0.06em]">
             {workFilters.map(f => <a key={f.id} href={`#${f.hash}`} aria-current={filter === f.id ? "true" : undefined} className={`py-2 underline-offset-8 ${filter === f.id ? "font-extrabold underline text-charcoal" : "text-charcoal/70 hover:underline"}`}>{f.label}</a>)}
           </nav>
           <p aria-live="polite" className="text-[13px] text-charcoal/70 mt-3">{caseStudies.length} {caseStudies.length === 1 ? "project" : "projects"}</p>
