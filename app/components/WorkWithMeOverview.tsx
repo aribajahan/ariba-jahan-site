@@ -1,6 +1,7 @@
 import Image from "next/image";
 import content from "../../content/pages/work-with-me-overview.json";
 import cards from "../../content/pages/work-with-me-photo-preview.json";
+import originalContent from "../../content/pages/work-with-me.json";
 import WorkWithMeHero from "./WorkWithMeHero";
 import WwmTrustedBy from "./WwmTrustedBy";
 import CaseStudies from "./CaseStudies";
@@ -42,8 +43,8 @@ export default function WorkWithMeOverview() {
             <section key={offer.id} id={offer.id} className="scroll-mt-[115px] pt-6 mb-9 max-[700px]:pt-8">
               <div className={`ml-[18px] px-[42px] pt-[30px] pb-7 max-[700px]:ml-3 max-[700px]:p-[26px] ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-[#eee8dc] text-charcoal"}`}>
                 <div className="grid grid-cols-[180px_1fr] gap-7 items-center max-[700px]:grid-cols-1 max-[700px]:gap-4">
-                  <div className="relative w-[200px] h-[185px] -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[135px] max-[700px]:h-[135px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]">
-                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 135px, 200px" className="object-cover object-[50%_40%]" />
+                  <div className={`relative ${isAdvisory ? "w-[220px] h-[200px]" : "w-[200px] h-[185px]"} -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[135px] max-[700px]:h-[135px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]`}>
+                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes={`(max-width: 700px) 135px, ${isAdvisory ? "220px" : "200px"}`} className="object-cover object-[50%_40%]" />
                   </div>
                   <div>
                     <p className={`text-[15px] leading-[1.5] mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
@@ -62,13 +63,42 @@ export default function WorkWithMeOverview() {
                   </ul>
                 </div>
                 <p className={`mt-4 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcome}</p>
+                {offer.id === "ambition-sprint" && (
+                  <div className="mt-5">
+                    {[
+                      {
+                        heading: "Typical deliverables & artifacts",
+                        note: originalContent.cxSprint.deliverablesNote,
+                        items: originalContent.cxSprint.deliverables,
+                      },
+                      {
+                        heading: "Week-by-week breakdown",
+                        note: "Example six-week plan. Timing is tailored to the agreed scope.",
+                        items: originalContent.cxSprint.weeks,
+                      },
+                    ].map(detail => (
+                      <details key={detail.heading} className="group border-t border-cream/25">
+                        <summary className="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 min-h-11 py-3 cursor-pointer text-left focus-visible:outline-2 focus-visible:outline-offset-4">
+                          <span className="text-[13px] font-extrabold tracking-[0.06em] uppercase">{detail.heading}</span>
+                          <span aria-hidden="true" className="text-lg font-light"><span className="group-open:hidden">+</span><span className="hidden group-open:inline">−</span></span>
+                        </summary>
+                        <div className="pt-1 pb-5">
+                          <p className="text-[15px] leading-[1.5] text-cream/75 mb-3">{detail.note}</p>
+                          <ul className={`space-y-3 ${body}`}>
+                            {detail.items.map(item => <li key={item.title}><strong className="font-semibold">{item.title}</strong> {item.description}</li>)}
+                          </ul>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                )}
                 <div className="mt-4 flex gap-6 items-center flex-wrap">
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
                   <a href={`#case-studies-${offer.id}`} className="text-[15px] font-semibold underline underline-offset-4">See relevant work</a>
                 </div>
-                <div className={`mt-4 ${readingWidth} text-[15px] leading-[1.5] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
+                {(offer.proofQuote || offer.proof) && <div className={`mt-4 ${readingWidth} text-[15px] leading-[1.5] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
                   {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}”</p><cite className="not-italic block mt-2">{offer.proofName} · {offer.proofRole}</cite></blockquote> : <p>{offer.proof}</p>}
-                </div>
+                </div>}
               </div>
             </section>
           );
