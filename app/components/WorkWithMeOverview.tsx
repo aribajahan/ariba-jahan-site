@@ -50,8 +50,7 @@ export default function WorkWithMeOverview() {
                       {offer.audience}<span aria-hidden="true" className="mx-2">·</span><span className="inline-block">{offer.format}</span>
                     </p>
                     <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.1] mb-2">{offer.title}</h2>
-                    <p className={`${body} font-semibold mb-2`}>{offer.situation}</p>
-                    <p className={`${body} ${readingWidth}`}>{offer.description}</p>
+                    <p className={`${body} ${readingWidth}`}>{offer.situation} {offer.description}</p>
                   </div>
                 </div>
                 <div className={`mt-5 ${readingWidth}`}>
