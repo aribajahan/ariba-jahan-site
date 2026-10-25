@@ -942,13 +942,13 @@ Stripe will email your receipt once your payment succeeds. Keep it for your reco
 
 Before we build
 
-November prework
+Prework before we begin
 
-I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
+Ahead of our first session, I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
 
-December kickoff
+December or January kickoff
 
-Exact session dates are being finalized. I’ll share the schedule and joining details by email.
+We’ll choose the timing based on the group’s availability. Exact session dates are being finalized, and I’ll share the schedule and joining details by email.
 
 Your individual time
 
@@ -984,7 +984,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
-Live, weekly sessionsDecember kickoffNovember prework
+Live, weekly sessionsDecember or January kickoffPrework before session one
 
 ● ● ●aribajahan.com
 
@@ -1154,7 +1154,7 @@ I’m bringing that practice into this workshop series. We’ll work on how some
 
 Join the founding cohort
 
-This first series is being offered privately, with an intentionally small group. Prework arrives in November so you can gather your content and get your tools ready before we build together.
+This first series is being offered privately, with an intentionally small group. We’ll kick off in December or January, based on the group’s availability. Prework arrives ahead of our first session so you can gather your content and get your tools ready.
 
 05 working sessions01 group Q&A and site reviews session30 minutes one-on-one with Ariba Jahan
 
@@ -1186,7 +1186,7 @@ Custom site feature planning
 
 Additional to the 30-minute individual session included in the series.
 
-Join the founding cohortSchedule planned with the founding group; weekly sessions, with breaks around holidays. Tool subscriptions, domain, and hosting costs are separate.
+Join the founding cohortDecember or January kickoff, based on the group’s availability; weekly sessions, with breaks around holidays. Tool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
@@ -1216,13 +1216,13 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series kicks off in December 2026, with prework sent in November. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates and session length are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series will kick off in December 2026 or January 2027, based on the group’s availability. Prework will be sent ahead of the first session. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates and session length are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
 Before we begin, I’ll collect the founding group’s availability and choose a time that works for most participants. We’ll meet weekly, with a week off when a holiday falls in between. Plan for about six weeks of sessions, plus any holiday breaks, with homework between sessions to keep your site moving forward.
 
-Prework arrives in November, and we’ll begin in December 2026. Exact dates and session length are still being finalized. If your availability is limited, email me before enrolling so we can discuss whether the series will work for you.
+We’ll kick off in December 2026 or January 2027, based on the group’s availability, with prework ahead of our first session. Exact dates and session length are still being finalized. If your availability is limited, email me before enrolling so we can discuss whether the series will work for you.
 
 How does the buddy offer work?+
 
@@ -1236,7 +1236,7 @@ Build a presence you own and feel proud to share.
 
 Own your code and content. Keep developing your site as your work evolves.
 
-December kickoff · November prework.
+December or January kickoff, based on the group’s availability. Prework ahead of the first session.
 
 If you have any other questions, email Ariba Jahan.
 
