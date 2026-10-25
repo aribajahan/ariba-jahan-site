@@ -1020,9 +1020,15 @@ When someone arrives from a referral, LinkedIn, or a talk, your site should help
 
 03 Your custom CMS
 
-Who needs to understand what you do? What should they see first? We’ll work out what belongs on each page, then design and build it around your expertise and the work you want to show.
+Work out what belongs on each page, then design and build it around your expertise and the work you want to show.
 
-Design for desktop and mobile. Learn how navigation, images, content order, and interactions need to adapt to the screen someone is using.
+Your pages: communicate your expertise, showcase your work, and give visitors a clear next step.
+
+Desktop and mobile: adapt layouts, navigation, images, and content to each screen.
+
+Your analytics: connect Google Analytics to see how people find your site and which pages they visit.
+
+Your launch: connect your own domain and add your favicon, the small icon in browser tabs and bookmarks.
 
 You own the code and content, with the ability to move hosts.
 
@@ -1032,9 +1038,17 @@ MOBILE
 
 ONE WEBSITE, DESIGNED FOR BOTH.
 
-Create a visual language you love, then build the system that keeps it consistent. Bring your typography, colors, imagery, and layouts into a brand book you and your AI can use as you build.
+Create a visual language you love, then build the system that keeps it consistent.
 
-Keep it consistent across your site and future materials, and evolve the system as your work grows.
+Your visual identity: a logo or wordmark treatment, typography, color palette, and imagery direction.
+
+Your components: consistent styles for buttons, links, and recurring page layouts.
+
+Your AI reference: a brand book you can give your AI so future changes follow your design direction.
+
+Room to evolve: learn how to update the system as your work and preferences grow.
+
+Use your visual language across your site and future materials.
 
 Build the controls for the parts of your site you want to update yourself. Start with your everyday content, then learn how to make more of your site editable as your needs change.
 
@@ -1044,11 +1058,11 @@ Your media library: upload, organize, and reuse images across your site.
 
 Your SEO settings: page titles, descriptions, URLs, and image alt text.
 
-Your share previews: the title, description, and image supplied when a link is shared.
+Your share previews: choose the image, title, and description supplied when someone shares your site on LinkedIn or in a message.
 
 Your site controls: choose which links, calls to action, and page sections you want to manage.
 
-Use your CMS for everyday updates. Work with your AI coding agent to add a feature or make another part of the site editable.
+Add a case study, replace a photo, update your services, or publish a testimonial through your own content editor. Work with your AI coding agent to add features or make more of the site editable.
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
