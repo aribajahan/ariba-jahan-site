@@ -163,7 +163,7 @@ export default function WorkWithMeOffers() {
         </div>
       </section>
 
-      {/* 1:1 Strategy Sessions */}
+      {/* Executive AI advisory */}
       <section
         id="strategy-sessions"
         className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
@@ -180,7 +180,7 @@ export default function WorkWithMeOffers() {
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
               <Image quality={90}
                 src={strategySessionsContent.photoSrc}
-                alt="1:1 Strategy Sessions"
+                alt="Ariba Jahan"
                 fill
                 sizes="(max-width: 1024px) 100vw, 440px"
                 style={{ objectFit: "cover" }}
@@ -215,7 +215,7 @@ export default function WorkWithMeOffers() {
                 </div>
 
                 <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 mb-[14px]">
-                  <b className="text-cream">Best for:</b>
+                  <b className="text-cream">We could work on:</b>
                   <ul className="list-disc pl-5 mt-2 flex flex-col gap-1">
                     {strategySessionBestFor.map((item) => (
                       <li key={item}>{item}</li>
