@@ -1158,7 +1158,7 @@ FOUNDING FEE
 
 $1,250USD / participant
 
-This founding fee is for our first group. Future cohorts will be priced higher.
+This founding fee is a special rate for our first group.
 
 Optional VIP review · +$350
 
