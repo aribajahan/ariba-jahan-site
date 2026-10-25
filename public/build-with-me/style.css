@@ -111,3 +111,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 .teacher-copy{padding:0}
 @media(max-width:1000px){.teacher{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:40px;padding:48px 32px}}
 @media(max-width:720px){.teacher{grid-template-columns:1fr;gap:28px;padding:40px 24px}.teacher-photo{max-width:240px}.teacher-photo img{height:auto;min-height:0;aspect-ratio:1}.teacher-copy{padding:0}}
+
+/* Finished website examples beneath the desktop/mobile screenshots. */
+.responsive-caption.build-examples{font-size:14px;line-height:1.6;letter-spacing:0;color:var(--ink)}.build-examples strong{font-weight:600}.build-examples a{text-decoration:underline;text-underline-offset:3px}.build-examples a:hover{color:var(--red)}

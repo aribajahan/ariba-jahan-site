@@ -1036,7 +1036,7 @@ DESKTOP
 
 MOBILE
 
-ONE WEBSITE, DESIGNED FOR BOTH.
+Explore two sites I’ve built: My website · The Reading Room
 
 Create a visual language you love, then build the system that keeps it consistent.
 
