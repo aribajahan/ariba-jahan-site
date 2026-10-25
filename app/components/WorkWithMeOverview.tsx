@@ -11,7 +11,7 @@ const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px
 export default function WorkWithMeOverview() {
   return (
     <main>
-      <WorkWithMeHero hero={content.hero} />
+      <WorkWithMeHero hero={content.hero} engagementLinks={content.offers.map(offer => ({ label: offer.menuTitle, href: `#${offer.id}` }))} />
       <WwmTrustedBy />
       <section id="engagements" aria-label="Choose an engagement" className="scroll-mt-20 bg-cream pt-12 pb-14 max-[700px]:py-9">
         <div className={wrap}>
