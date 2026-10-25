@@ -7,7 +7,7 @@ import CaseStudies from "./CaseStudies";
 
 const wrap = "max-w-[1200px] mx-auto px-[clamp(24px,5vw,80px)]";
 const body = "text-[18px] max-[700px]:text-[17px] leading-[1.65]";
-const readingWidth = "max-w-[80ch]";
+const readingWidth = "max-w-none";
 const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-5 max-[700px]:py-3 text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] focus-visible:outline-2 focus-visible:outline-offset-4";
 
 export default function WorkWithMeOverview() {
@@ -33,38 +33,38 @@ export default function WorkWithMeOverview() {
         </div>
       </section>
 
-      <div className="max-w-[1380px] mx-auto px-[4%] pb-4">
+      <div className={`${wrap} pb-4`}>
         {content.offers.map((offer, index) => {
           const card = cards.offers.find(card => card.id === offer.id)!;
           const isAdvisory = offer.id === "strategy-sessions";
           const dark = index === 1;
           return (
-            <section key={offer.id} id={offer.id} className="scroll-mt-[115px] pt-6 mb-11 max-[700px]:pt-8">
-              <div className={`ml-[18px] px-[42px] pt-[30px] pb-7 shadow-[0_10px_30px_rgba(45,45,45,0.03)] max-[700px]:ml-3 max-[700px]:p-[26px] ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-[#eee8dc] text-charcoal"}`}>
-                <div className="grid grid-cols-[180px_1fr] gap-7 items-center max-[700px]:grid-cols-1 max-[700px]:gap-4">
-                  <div className="relative w-[200px] h-[185px] -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[135px] max-[700px]:h-[135px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]">
-                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 135px, 200px" className="object-cover object-[50%_40%]" />
+            <section key={offer.id} id={offer.id} className="scroll-mt-[115px] mb-7">
+              <div className={`px-8 py-7 flow-root max-[700px]:px-5 max-[700px]:py-6 ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-[#eee8dc] text-charcoal"}`}>
+                <div className="flow-root">
+                  <div className="relative float-right w-[160px] h-[150px] ml-7 mb-3 max-[700px]:w-[96px] max-[700px]:h-[104px] max-[700px]:ml-4">
+                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 96px, 160px" className="object-cover object-[50%_40%]" />
                   </div>
                   <div>
                     <p className={`text-[15px] leading-[1.6] mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>{offer.audience}</p>
-                    <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.1] mb-4">{offer.title}</h2>
+                    <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.1] mb-3">{offer.title}</h2>
                     {card.lead && <p className={`${body} font-semibold mb-3`}>{card.lead}</p>}
-                    <p className={`${body} mb-4 ${readingWidth}`}>{card.intro}</p>
+                    <p className={`${body} mb-3 ${readingWidth}`}>{card.intro}</p>
                     <p className={`text-[15px] leading-[1.6] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>{offer.format}</p>
                   </div>
                 </div>
-                <div className={`mt-8 ${readingWidth}`}>
-                  <h3 className={`${body} font-semibold mb-3`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
-                  <ul className={`list-disc pl-5 space-y-3 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
+                <div className={`mt-5 ${readingWidth}`}>
+                  <h3 className={`${body} font-semibold mb-2`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
+                  <ul className={`list-disc pl-5 space-y-2 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
                     {card.examples.map(example => <li key={example.title}><strong className="font-semibold">{example.title}.</strong> {example.text}</li>)}
                   </ul>
                 </div>
-                <p className={`mt-7 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcome}</p>
-                <div className="mt-7 flex gap-6 items-center flex-wrap">
+                <p className={`mt-5 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcome}</p>
+                <div className="mt-5 flex gap-6 items-center flex-wrap">
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
                   <a href={`#case-studies-${offer.id}`} className="text-[15px] font-semibold underline underline-offset-4">See relevant work</a>
                 </div>
-                <div className={`mt-7 ${readingWidth} text-[15px] leading-[1.65] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
+                <div className={`mt-5 ${readingWidth} text-[15px] leading-[1.65] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
                   {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}”</p><cite className="not-italic block mt-2">{offer.proofName} · {offer.proofRole}</cite></blockquote> : <p>{offer.proof}</p>}
                 </div>
               </div>
