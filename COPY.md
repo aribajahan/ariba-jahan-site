@@ -601,7 +601,7 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 ##### 1. Explore Sprints
 
-##### 2. Explore AI Advisory
+##### 2. Book a Strategy Session
 
 ### WWM Trusted By
 
@@ -746,30 +746,31 @@ You leave with a defined opportunity, a shared point of view, concepts or protot
 
 ### Strategy Sessions
 
-**Eyebrow** — 02 · One-to-one with executives
+**Eyebrow** — 02 · For Individual Leaders
 
-**Heading** — AI advisory for executives
+**Heading** — 1:1 Strategy Sessions
 
-**Intro** — Become a more AI-native leader, starting with the work in front of you.
+**Intro** — A focused session for leaders working through a product, customer experience, growth, or AI-related decision.
 
 **Body**
 
-I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. Bring a leadership meeting to prepare for, a recurring task you want to improve, or an AI proposal you need to assess.
+Sometimes you don't need a full sprint. You need a clear outside perspective, a thoughtful working session, and enough room to think through a problem without rushing to the wrong answer.
 
-I've led emerging-technology adoption at the Ad Council and Anomaly, and built the AI operating system I use for research, planning, and running my own practice. We work with your questions and examples, choosing one priority for our session.
+These sessions are for leaders pressure-testing a direction, working through friction in an existing experience, evaluating a product or go-to-market shift, or making sense of what a technology or customer-behavior shift requires. In sixty minutes, we get to the heart of the issue and identify a practical next step.
+
+In 60 minutes, we'll get to the heart of the issue, identify what matters most, and map out a practical next step.
 
 **Best For**
 
-- Understand what AI can do beyond chat, and identify where it could be useful in your role.
-- Use AI to prepare for a decision: research a topic, compare options, and challenge your assumptions.
-- Design a personal briefing or follow-up workflow around the information you need and the tools you already use.
-- Give AI useful context about your priorities, projects, and expertise so you can build on previous work.
-- Evaluate AI output: check evidence, recognize gaps, and decide where your own judgment needs to lead.
-- Assess a team use case or AI proposal, including what to test, who needs to be involved, and how to judge the result.
+- Pressure-testing a roadmap, product shift, or go-to-market direction
+- Working through friction in a current customer experience
+- Thinking through adoption, retention, or value questions
+- Getting unstuck on an AI, experience, or growth decision
+- Sharpening your point of view before making a move
 
-**What You Get** — A 60-minute working session focused on one priority. Leave with a workflow you've practiced or a decision you've worked through, plus a short written recap of the approach and next steps. Further sessions or a larger engagement can be scoped around what you need next.
+**What You Get** — A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.
 
-**CTA Label** — Book an AI advisory session →
+**CTA Label** — Book a Session →
 
 ### Testimonials Section
 
@@ -805,11 +806,11 @@ I've led emerging-technology adoption at the Ad Council and Anomaly, and built t
 
 **CTA** — Sprint inquiry →
 
-##### 3. Executive AI Advisory
+##### 3. 1:1 Strategy Session
 
 **Index** — 03
 
-**CTA** — Book a session →
+**CTA** — Session Booking →
 
 ##### 4. Everything Else
 
