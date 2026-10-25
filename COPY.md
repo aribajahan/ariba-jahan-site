@@ -1196,15 +1196,13 @@ We’re not just vibing. We’re using strategy and design judgment. We’ll bui
 
 You’ll set up a local AI workspace and create a CMS you can keep updating as your work evolves. The group is intentionally small so you can ask me questions directly and get feedback on your own work throughout.
 
-Do I need to have used these tools before?+
+What do I need to get started?+
 
-No. You’ll need a computer and a paid Claude account. We’ll set up your workspace together. Allow time between sessions to work on your site.
+No prior experience with these tools is needed. Bring a computer and a paid Claude account, and allow time between sessions to work on your site. I’ll send prework covering the accounts, downloads, and files to gather.
 
-What do I need, and will you help me set it up?+
+We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.
 
-I’ll send you prework covering the accounts, downloads, and files to gather. You’ll need a computer and a paid Claude account. We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain as we build.
-
-I’ll explain what each tool does and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent. Tool subscriptions, your domain, and hosting are separate from the workshop fee; I’ll make those requirements and costs clear before enrollment.
+Tool subscriptions, your domain, and hosting are separate from the workshop fee; I’ll make those requirements and costs clear before enrollment.
 
 What can I update afterward?+
 
@@ -1219,6 +1217,8 @@ How will the schedule work?+
 We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Each session runs 60–90 minutes.
 
 Session dates: December 3, 10, and 17, 2026; January 7, 14, and 21, 2027. We’ll skip December 24 and 31 for the holidays. I’ll send prework before our first session.
+
+If you miss a session, I’ll share a recording of the teaching portion and the session instructions so you can catch up.
 
 If the timing is your only hesitation, email me. With a small group, there may be room to adjust the schedule together.
 
