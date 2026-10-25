@@ -980,7 +980,7 @@ A digital presence that reflects your ambition.
 
 Build a website that makes your expertise clear and helps the right people see your value. Learn to use AI to build it, update it, and keep making it your own.
 
-One of the main compliments I get about my website: it doesn’t look AI-generated. I’ll teach you the strategy and design judgment behind it.
+Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
@@ -998,17 +998,17 @@ YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba Jahan. The process is what you’ll learn.
 
-A presence that matches your ambitions
+A presence that matches your ambition
 
-Make the value of your work clear to the people you want to reach, with room for where you want to go next.
+We’ll make your expertise, personality, and the value you bring clear to the people you want to reach.
 
-Executive experience, direct feedback
+I’m in this with you
 
-Learn with Ariba Jahan, whose work spans product, design, and digital experiences for major brands. Get her feedback on the decisions behind your own site.
+I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A finished website you own
+A finished website, ready to go
 
-Build with your real work and content, publish on your domain, and learn how to keep developing the site yourself.
+Launch a site you’re proud to send people to, with simple controls to update your content whenever your work moves forward.
 
 What you’ll build
 
