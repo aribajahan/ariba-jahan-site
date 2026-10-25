@@ -1,0 +1,40 @@
+{
+  "offers": [
+    {
+      "id": "strategy-sessions",
+      "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
+      "photoAlt": "Ariba Jahan sitting at a table with a coffee mug",
+      "intro": "I work one-to-one with executives to put AI to work on a real priority. We can connect your tools, build something useful, or work through a decision together.",
+      "examples": [
+        {"title": "Put your context to work", "text": "Connect meeting notes and documents. Explore plugins and reusable skills."},
+        {"title": "Stay informed", "text": "Build a research workflow around your industry, competitors, and emerging technology."},
+        {"title": "Make something useful", "text": "Create a first dashboard, decision tool, or prototype around a business question."}
+      ],
+      "detailLabel": "Explore executive advisory"
+    },
+    {
+      "id": "ambition-sprint",
+      "photoSrc": "/uploads/vox1-copy-opt.jpg",
+      "photoAlt": "Ariba Jahan working with a group around a table and a wall of workshop notes",
+      "intro": "I work with product and business leaders to identify where growth, relevance, and differentiation can come from next, then make the strongest opportunities tangible.",
+      "examples": [
+        {"title": "Understand what is changing", "text": "Examine customer needs and where the current experience falls short."},
+        {"title": "Find the opportunity", "text": "Define where your product, service, or customer experience can become more valuable."},
+        {"title": "Make it tangible", "text": "Develop concepts and prototypes your team can evaluate and test."}
+      ],
+      "detailLabel": "Explore the sprint"
+    },
+    {
+      "id": "ai-adoption",
+      "photoSrc": "/uploads/now-1-opt.jpg",
+      "photoAlt": "Ariba Jahan speaking on a panel at the Marketing Brew Summit",
+      "intro": "I work with leaders and teams to choose where AI belongs in their work, test an approach with the people doing it, and build the practices to keep it useful.",
+      "examples": [
+        {"title": "Choose where to start", "text": "Identify a workflow where AI can improve the work and draw on existing expertise."},
+        {"title": "Test it together", "text": "Work through handoffs, responsibilities, and decisions that need human judgment."},
+        {"title": "Build shared capability", "text": "Define the practices your team needs and what successful adoption looks like."}
+      ],
+      "detailLabel": "Explore AI adoption"
+    }
+  ]
+}
