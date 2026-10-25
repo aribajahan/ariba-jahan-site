@@ -28,17 +28,17 @@ export default function WorkWithMeOverview() {
 
       {content.offers.map((offer, index) => {
         const onRed = index === 0;
-        const onDark = index === 2;
+        const onDark = index === 1;
         const lightText = onRed || onDark;
         return (
-          <section key={offer.id} id={offer.id} className={`scroll-mt-16 py-[72px] max-[700px]:py-11 ${onRed ? "bg-cherish text-cream" : onDark ? "bg-charcoal text-cream" : "bg-cream text-charcoal border-t border-charcoal/15"}`}>
+          <section key={offer.id} id={offer.id} className={`scroll-mt-16 pt-[72px] max-[700px]:pt-11 ${index === 2 ? "pb-10" : "pb-[72px] max-[700px]:pb-11"} ${onRed ? "bg-cherish text-cream" : onDark ? "bg-charcoal text-cream" : "bg-cream text-charcoal"}`}>
             <div className={`${wrap} grid grid-cols-[0.8fr_1.4fr] gap-x-16 gap-y-7 max-[850px]:grid-cols-1 max-[1024px]:gap-x-10`}>
               <div>
                 <p className={`text-[11px] font-extrabold tracking-[0.17em] uppercase mb-4 ${lightText ? "text-cream/70" : "text-charcoal/60"}`}>{String(index + 1).padStart(2, "0")} · {offer.audience}</p>
                 <h2 className="font-display uppercase text-[clamp(32px,4vw,48px)] leading-[1.02] tracking-[-0.01em] max-w-[340px] mb-5">{offer.title}</h2>
                 <p className={`text-[14px] leading-[1.6] ${lightText ? "text-cream/80" : "text-charcoal/65"}`}>{offer.format}</p>
-                {onDark && (
-                  <figure className="mt-9 max-w-[340px] border border-cream/25 p-5 bg-cream/[0.04]">
+                {index === 2 && (
+                  <figure className="mt-9 max-w-[340px] border border-charcoal/20 p-5 bg-charcoal text-cream">
                     <figcaption className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-cream/65 mb-4">{content.advisoryExample.label}</figcaption>
                     <p className="text-[20px] font-semibold leading-tight mb-5">{content.advisoryExample.title}</p>
                     <div className="flex flex-wrap gap-2">
@@ -74,9 +74,9 @@ export default function WorkWithMeOverview() {
         );
       })}
 
-      <section className="bg-cream py-12">
+      <section className="bg-cream pb-16 max-[700px]:pb-11">
         <div className={`${wrap} flex justify-between gap-8 items-center max-[700px]:flex-col max-[700px]:items-start`}>
-          <div className="max-w-[700px]">
+          <div className="max-w-[700px] border-t border-charcoal/20 pt-7">
             <h2 className="font-display uppercase text-[36px] leading-[1.1] mb-3">{content.contactHeading}</h2>
             <p className="text-[17px] leading-[1.6] text-charcoal/75">{content.contactBody}</p>
           </div>
