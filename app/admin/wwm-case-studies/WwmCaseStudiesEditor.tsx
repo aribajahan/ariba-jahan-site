@@ -175,7 +175,7 @@ export default function WwmCaseStudiesEditor({ initialItems }: { initialItems: C
                     {[
                       ["strategy-sessions", "Executive AI advisory"],
                       ["ambition-sprint", "Experience-Led Growth"],
-                      ["ai-adoption", "AI adoption"],
+                      ["ai-adoption", "AI adoption and enablement"],
                     ].map(([id, name]) => <label key={id} className="flex items-center gap-2 text-[14px] py-1">
                       <input type="checkbox" checked={cs.engagements?.includes(id) ?? false} onChange={e => update(i, { engagements: e.target.checked ? [...(cs.engagements ?? []), id] : (cs.engagements ?? []).filter(value => value !== id) })} />
                       {name}

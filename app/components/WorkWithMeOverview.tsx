@@ -11,7 +11,7 @@ const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px
 export default function WorkWithMeOverview() {
   return (
     <main>
-      <WorkWithMeHero hero={content.hero} engagementLinks={content.offers.map(offer => ({ label: offer.menuTitle, href: `#${offer.id}` }))} />
+      <WorkWithMeHero hero={content.hero} />
       <WwmTrustedBy />
       <section id="engagements" aria-label="Choose an engagement" className="scroll-mt-20 bg-cream pt-12 pb-14 max-[700px]:py-9">
         <div className={wrap}>
@@ -46,6 +46,7 @@ export default function WorkWithMeOverview() {
                   <div>
                     <p className={`text-[12px] max-[700px]:text-[11px] font-extrabold tracking-[0.12em] uppercase mb-2 ${dark ? "text-[#ffb4ac]" : "text-[#ad2424]"}`}>{String(index + 1).padStart(2, "0")} · {offer.audience}</p>
                     <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.02] mb-3">{offer.title}</h2>
+                    {card.lead && <p className="text-[21px] max-[700px]:text-[19px] font-bold leading-[1.4] mb-3">{card.lead}</p>}
                     <p className="text-[19px] max-[700px]:text-[17px] leading-[1.55] mb-3 max-w-[850px]">{card.intro}</p>
                     <p className="text-[13px] font-bold">{offer.format}</p>
                   </div>

@@ -56,20 +56,21 @@
     {
       "id": "ai-adoption",
       "audience": "For teams and organizations",
-      "title": "AI adoption",
-      "situation": "People are experimenting with AI. You want that learning to improve how the team works together.",
-      "description": "I work with leaders and teams to understand how work happens today and where AI can improve it. We choose a useful place to start, test it with the people doing the work, and establish what needs to become shared practice.",
+      "title": "AI adoption and enablement",
+      "situation": "Build the capabilities to match your AI ambitions.",
+      "description": "I work with leaders and teams to understand what their AI ambitions require in practice, drawing on behavior design. We build and test workflows, develop people’s expertise, and design how people and AI coordinate work across a team. That includes ownership, handoffs, working rhythms, and incentives.",
       "format": "Scoped to your team and work",
       "cta": "Discuss AI adoption",
       "href": "mailto:ariba@aribajahan.com?subject=AI%20Adoption%20Inquiry",
       "proofLabel": "Ad Council & Anomaly",
       "proof": "Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.",
-      "menuTitle": "AI adoption",
+      "menuTitle": "AI adoption and enablement",
       "menuDescription": "Shared workflows & team capability",
       "topics": [
-        "Identify workflows where AI can improve the work and draw on existing expertise.",
-        "Work through handoffs, responsibilities, and the decisions that need human judgment.",
-        "Test an approach with your team and define what successful adoption looks like."
+        "Understand the work. Identify where expertise lives, how decisions get made, and what helps or prevents people from adopting new practices.",
+        "Build capability through practice. Develop and test AI-enabled workflows with the people using them, strengthening their ability to create, question outputs, and evaluate quality.",
+        "Move from individual use to team collaboration. Design how people and AI share context, coordinate tasks, and hand work over, with clear ownership and points for human judgment.",
+        "Make adoption sustainable. Establish working rhythms, incentives, and shared standards that support continued learning and accountability."
       ],
       "outcome": "A defined use case, a tested approach, and clear recommendations for the practices and capabilities your team needs next.",
       "proofQuote": "",
@@ -88,8 +89,8 @@
   "contactHref": "mailto:ariba@aribajahan.com?subject=Working%20Together",
   "hero": {
     "photoSrc": "/uploads/IMG_9539-opt.jpg",
-    "headline": "Build the products, practices, and capabilities that keep your company unmissable.",
-    "subhead": "I work with leaders on the products and experiences they offer customers, how their teams adopt AI, and the judgment they bring to both.",
+    "headline": "Build what makes your company unmissable.",
+    "subhead": "Drawing on behavior design, I work with leaders to create products and AI-enabled experiences people value, and build ways of working that strengthen human judgment and the expertise that sets their organizations apart.",
     "ctas": []
   },
   "closingCTA": {

@@ -6,11 +6,21 @@
       "photoAlt": "Ariba Jahan sitting at a table with a coffee mug",
       "intro": "I work one-to-one with executives to put AI to work on a real priority. We can connect your tools, build something useful, or work through a decision together.",
       "examples": [
-        {"title": "Put your context to work", "text": "Connect meeting notes and documents. Explore plugins and reusable skills."},
-        {"title": "Stay informed", "text": "Build a research workflow around your industry, competitors, and emerging technology."},
-        {"title": "Make something useful", "text": "Create a first dashboard, decision tool, or prototype around a business question."}
+        {
+          "title": "Put your context to work",
+          "text": "Connect meeting notes and documents. Explore plugins and reusable skills."
+        },
+        {
+          "title": "Stay informed",
+          "text": "Build a research workflow around your industry, competitors, and emerging technology."
+        },
+        {
+          "title": "Make something useful",
+          "text": "Create a first dashboard, decision tool, or prototype around a business question."
+        }
       ],
-      "detailLabel": "Explore executive advisory"
+      "detailLabel": "Explore executive advisory",
+      "lead": ""
     },
     {
       "id": "ambition-sprint",
@@ -18,23 +28,47 @@
       "photoAlt": "Ariba Jahan working with a group around a table and a wall of workshop notes",
       "intro": "I work with product and business leaders to identify where growth, relevance, and differentiation can come from next, then make the strongest opportunities tangible.",
       "examples": [
-        {"title": "Understand what is changing", "text": "Examine customer needs and where the current experience falls short."},
-        {"title": "Find the opportunity", "text": "Define where your product, service, or customer experience can become more valuable."},
-        {"title": "Make it tangible", "text": "Develop concepts and prototypes your team can evaluate and test."}
+        {
+          "title": "Understand what is changing",
+          "text": "Examine customer needs and where the current experience falls short."
+        },
+        {
+          "title": "Find the opportunity",
+          "text": "Define where your product, service, or customer experience can become more valuable."
+        },
+        {
+          "title": "Make it tangible",
+          "text": "Develop concepts and prototypes your team can evaluate and test."
+        }
       ],
-      "detailLabel": "Explore the sprint"
+      "detailLabel": "Explore the sprint",
+      "lead": ""
     },
     {
       "id": "ai-adoption",
       "photoSrc": "/uploads/now-1-opt.jpg",
       "photoAlt": "Ariba Jahan speaking on a panel at the Marketing Brew Summit",
-      "intro": "I work with leaders and teams to choose where AI belongs in their work, test an approach with the people doing it, and build the practices to keep it useful.",
+      "intro": "I work with leaders and teams to understand what their AI ambitions require in practice, drawing on behavior design. We build and test workflows, develop people’s expertise, and design how people and AI coordinate work across a team. That includes ownership, handoffs, working rhythms, and incentives.",
       "examples": [
-        {"title": "Choose where to start", "text": "Identify a workflow where AI can improve the work and draw on existing expertise."},
-        {"title": "Test it together", "text": "Work through handoffs, responsibilities, and decisions that need human judgment."},
-        {"title": "Build shared capability", "text": "Define the practices your team needs and what successful adoption looks like."}
+        {
+          "title": "Understand the work",
+          "text": "Identify where expertise lives, how decisions get made, and what helps or prevents people from adopting new practices."
+        },
+        {
+          "title": "Build capability through practice",
+          "text": "Develop and test AI-enabled workflows with the people using them, strengthening their ability to create, question outputs, and evaluate quality."
+        },
+        {
+          "title": "Move from individual use to team collaboration",
+          "text": "Design how people and AI share context, coordinate tasks, and hand work over, with clear ownership and points for human judgment."
+        },
+        {
+          "title": "Make adoption sustainable",
+          "text": "Establish working rhythms, incentives, and shared standards that support continued learning and accountability."
+        }
       ],
-      "detailLabel": "Explore AI adoption"
+      "detailLabel": "Explore AI adoption",
+      "lead": "Build the capabilities to match your AI ambitions."
     }
   ]
 }
