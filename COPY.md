@@ -1241,6 +1241,80 @@ LinkedInSubstackGitHubSpotifyYouTubeInstagram
 
 Legal© 2026 Ariba Jahan. All rights reserved.
 
+## Work With Me Overview
+
+**Eyebrow** — Work with me
+
+**Heading** — Let's work together.
+
+**Intro** — I work with leaders on what to build for customers and how to put AI to work inside their organizations. Bring me in for a focused project or work with me one-to-one.
+
+### Offers
+
+#### 1. Experience-Led Growth
+
+**Audience** — For product and business leaders
+
+**Situation** — Your product works. You want people to get more value from it and have more reasons to return.
+
+**Description** — We identify the opportunity, shape the product and experience strategy, and develop concepts your team can test.
+
+**Format** — Project-based sprint
+
+**CTA** — Discuss a project
+
+**Proof Label** — Ally
+
+**Proof** — Reframed an app badging brief into an engagement strategy around customers' financial progress.
+
+#### 2. AI adoption
+
+**Audience** — For teams and organizations
+
+**Situation** — People are experimenting with AI. You want that learning to improve how the team works together.
+
+**Description** — We find where AI can be useful, test it in shared workflows, and build the practices and responsibilities that support adoption.
+
+**Format** — Scoped to your team and work
+
+**CTA** — Discuss AI adoption
+
+**Proof Label** — Ad Council & Anomaly
+
+**Proof** — Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.
+
+#### 3. Executive AI advisory
+
+**Audience** — One-to-one with executives
+
+**Situation** — You want to understand what AI makes possible for your role and use it with greater confidence.
+
+**Description** — Bring a decision, a workflow, or a question about your team's use of AI. We choose one priority and work through it together.
+
+**Format** — 60-minute working session + written recap
+
+**CTA** — Book an advisory session
+
+**Proof Label** — My current practice
+
+**Proof** — I build and use AI systems for research, planning, recurring operations, and product development in my own work.
+
+### Testimonial
+
+**Quote** — Customers, engineers, and executives all trusted her judgment.
+
+**Name** — Mansoor Basha
+
+**Role** — CTO, Stagwell Marketing Cloud
+
+**Contact Heading** — Have something else in mind?
+
+**Contact Body** — If your project crosses a few of these areas, tell me what you're working on. We can figure out the right engagement together.
+
+**Contact CTA** — Get in touch
+
+**Contact Href** — mailto:ariba@aribajahan.com?subject=Working%20Together
+
 ---
 
 # Collections
