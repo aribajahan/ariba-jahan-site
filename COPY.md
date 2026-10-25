@@ -1252,15 +1252,15 @@ Legal© 2026 Ariba Jahan. All rights reserved.
 
 ### Offers
 
-#### 1. Experience-Led Growth
+#### 1. Experience-Led Growth Sprint
 
 **Audience** — For product and business leaders
 
-**Situation** — Your product works. You want people to get more value from it and have more reasons to return.
+**Situation** — Customer expectations are shifting. Your product or experience needs a clearer direction for what comes next.
 
-**Description** — We identify the opportunity, shape the product and experience strategy, and develop concepts your team can test.
+**Description** — I work with leaders to identify where growth, relevance, and differentiation can come from next. We look at customer behavior, business priorities, and the role technology should play, then make the strongest opportunities tangible.
 
-**Format** — Project-based sprint
+**Format** — Focused 6–8 week engagement
 
 **CTA** — Discuss a project
 
@@ -1268,13 +1268,31 @@ Legal© 2026 Ariba Jahan. All rights reserved.
 
 **Proof** — Reframed an app badging brief into an engagement strategy around customers' financial progress.
 
+**Menu Title** — Experience-Led Growth
+
+**Menu Description** — Product & customer experience strategy
+
+**Topics**
+
+- Understand changing customer needs and where the current experience falls short.
+- Define opportunities across your product, service, membership, or wider customer experience.
+- Develop concepts or prototypes and prioritize what to test next.
+
+**Outcome** — A shared strategic direction, concepts your team can evaluate, and a prioritized path forward.
+
+**Proof Quote** — She helped us think in terms of how to bring real customer value in a space that is often purely transactional.
+
+**Proof Name** — Rich Barrett
+
+**Proof Role** — Director of UX Design, Ally Bank
+
 #### 2. AI adoption
 
 **Audience** — For teams and organizations
 
 **Situation** — People are experimenting with AI. You want that learning to improve how the team works together.
 
-**Description** — We find where AI can be useful, test it in shared workflows, and build the practices and responsibilities that support adoption.
+**Description** — I work with leaders and teams to understand how work happens today and where AI can improve it. We choose a useful place to start, test it with the people doing the work, and establish what needs to become shared practice.
 
 **Format** — Scoped to your team and work
 
@@ -1284,13 +1302,25 @@ Legal© 2026 Ariba Jahan. All rights reserved.
 
 **Proof** — Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.
 
+**Menu Title** — AI adoption
+
+**Menu Description** — Shared workflows & team capability
+
+**Topics**
+
+- Identify workflows where AI can improve the work and draw on existing expertise.
+- Work through handoffs, responsibilities, and the decisions that need human judgment.
+- Test an approach with your team and define what successful adoption looks like.
+
+**Outcome** — A defined use case, a tested approach, and clear recommendations for the practices and capabilities your team needs next.
+
 #### 3. Executive AI advisory
 
 **Audience** — One-to-one with executives
 
 **Situation** — You want to understand what AI makes possible for your role and use it with greater confidence.
 
-**Description** — Bring a decision, a workflow, or a question about your team's use of AI. We choose one priority and work through it together.
+**Description** — I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. We choose one priority and work through it using your questions and examples.
 
 **Format** — 60-minute working session + written recap
 
@@ -1299,6 +1329,21 @@ Legal© 2026 Ariba Jahan. All rights reserved.
 **Proof Label** — My current practice
 
 **Proof** — I build and use AI systems for research, planning, recurring operations, and product development in my own work.
+
+**Menu Title** — Executive AI advisory
+
+**Menu Description** — Practical one-to-one working sessions
+
+**Topics**
+
+- Understand what AI can do beyond chat and identify a useful place to start.
+- Use AI for research, decision preparation, and challenging assumptions.
+- Design a personal briefing or follow-up workflow around the tools you already use.
+- Give AI context about your priorities and projects so you can build on previous work.
+- Evaluate AI output, check evidence, and recognize where your judgment is needed.
+- Assess an AI proposal or a first use case for your team.
+
+**Outcome** — A workflow you've practiced or a decision you've worked through, plus a short written recap of the approach and next steps. Further sessions or a larger engagement can be scoped together.
 
 ### Testimonial
 
@@ -1315,6 +1360,18 @@ Legal© 2026 Ariba Jahan. All rights reserved.
 **Contact CTA** — Get in touch
 
 **Contact Href** — mailto:ariba@aribajahan.com?subject=Working%20Together
+
+### Hero
+
+**Headline** — Build the products, practices, and capabilities that keep your company unmissable.
+
+**Subhead** — I work with leaders on the products and experiences they offer customers, how their teams adopt AI, and the judgment they bring to both.
+
+#### CTAs
+
+##### 1. Explore engagements
+
+##### 2. Executive AI advisory
 
 ---
 
