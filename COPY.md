@@ -946,9 +946,9 @@ Prework before we begin
 
 Ahead of our first session, I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
 
-December or January kickoff
+Thursdays at 1 p.m. ET
 
-We’ll choose the timing based on the group’s availability. Exact session dates are being finalized, and I’ll share the schedule and joining details by email.
+We start December 3, 2026. Our six sessions run 60–90 minutes each: December 3, 10, and 17; January 7, 14, and 21, 2027. We’ll take a holiday break on December 24 and 31. That’s 10 a.m. PT / 6 p.m. UK. I’ll email the joining details before we begin.
 
 Your individual time
 
@@ -984,7 +984,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
-Live, weekly sessionsDecember/January kickoffPrework before session one
+Thursdays · 1 p.m. ETStarts December 360–90 minute sessions
 
 ● ● ●aribajahan.com
 
@@ -1150,7 +1150,7 @@ Now we’ll apply that experience to yours. I’ll work with you on how your sit
 
 Join the founding cohort
 
-This first series is being offered privately, with an intentionally small group. We’ll kick off in December or January, based on the group’s availability. Prework arrives ahead of our first session so you can gather your content and get your tools ready.
+This first series is being offered privately, with an intentionally small group. We’ll meet Thursdays at 1 p.m. ET, starting December 3. Each session runs 60–90 minutes, with a break over the holidays. Prework arrives before our first session so you can gather your content and get your tools ready.
 
 05 working sessions01 group Q&A and site reviews session30 minutes one-on-one with Ariba Jahan
 
@@ -1212,13 +1212,15 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series will kick off in December 2026 or January 2027, based on the group’s availability. Prework will be sent ahead of the first session. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Exact dates and session length are being finalized. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The series starts Thursday, December 3, 2026 at 1 p.m. ET. Each of the six sessions runs 60–90 minutes. Prework will be sent ahead of the first session. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
-We’ll choose a December or January start date together. Sessions run weekly for about six weeks, with breaks for holidays. I’ll send prep before we begin.
+We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Each session runs 60–90 minutes.
 
-Have a scheduling concern? Email me before signing up.
+Session dates: December 3, 10, and 17, 2026; January 7, 14, and 21, 2027. We’ll skip December 24 and 31 for the holidays. I’ll send prework before our first session.
+
+If the timing is your only hesitation, email me. With a small group, there may be room to adjust the schedule together.
 
 How does the buddy offer work?+
 
