@@ -36,6 +36,22 @@ export default function WorkWithMeOverview() {
                 <p className={`text-[11px] font-extrabold tracking-[0.17em] uppercase mb-4 ${lightText ? "text-cream/70" : "text-charcoal/60"}`}>{String(index + 1).padStart(2, "0")} · {offer.audience}</p>
                 <h2 className="font-display uppercase text-[clamp(32px,4vw,48px)] leading-[1.02] tracking-[-0.01em] max-w-[340px] mb-5">{offer.title}</h2>
                 <p className={`text-[14px] leading-[1.6] ${lightText ? "text-cream/80" : "text-charcoal/65"}`}>{offer.format}</p>
+                {onDark && (
+                  <figure className="mt-9 max-w-[340px] border border-cream/25 p-5 bg-cream/[0.04]">
+                    <figcaption className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-cream/65 mb-4">{content.advisoryExample.label}</figcaption>
+                    <p className="text-[20px] font-semibold leading-tight mb-5">{content.advisoryExample.title}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {content.advisoryExample.inputs.map(input => <span key={input} className="border border-cream/25 px-2 py-1 text-[11px] text-cream/80">{input}</span>)}
+                    </div>
+                    <div aria-hidden="true" className="text-cherish text-[28px] py-2">↓</div>
+                    <div className="bg-cream text-charcoal p-4 shadow-[5px_5px_0_0_var(--color-cherish)]">
+                      <p className="font-extrabold text-[13px] mb-3">{content.advisoryExample.outputLabel}</p>
+                      <ul className="space-y-2 text-[12px]">
+                        {content.advisoryExample.outputs.map((output, i) => <li key={output} className="flex gap-3"><span className="text-cherish font-extrabold">0{i + 1}</span>{output}</li>)}
+                      </ul>
+                    </div>
+                  </figure>
+                )}
               </div>
               <div>
                 <p className="text-[20px] max-[700px]:text-[18px] leading-[1.5] font-semibold mb-4">{offer.situation}</p>
