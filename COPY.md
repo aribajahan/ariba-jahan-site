@@ -1068,37 +1068,37 @@ The workshop series
 
 I’m keeping this group intentionally small so you can ask me questions directly and get feedback on your own site. I’ll demonstrate each step, then we’ll spend time building and working through your decisions together.
 
-01Set the foundationWORKSPACE + SITE PLAN+
+01Set the foundation+
 
 Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
 You leave with: a working project folder, site brief, page map, and content outline.
 
-02Find your design directionDESIGN + BRAND BOOK+
+02Find your design direction+
 
 Explore references and distinct directions in Claude Design using your own copy. Choose how to express your expertise and personality while keeping the visitor’s next step clear. You’ll learn how to judge and improve what AI builds: typography, spacing, layout, navigation, and how content adapts from desktop to mobile. We’ll work through what helps someone understand your value and know what to do next. Document your design choices in a brand book. Turn recurring design instructions into a reusable skill.
 
 You leave with: your chosen design direction and a reusable visual reference.
 
-03Build your homepageWORKING WEBSITE+
+03Build your homepage+
 
 Move the design into Claude Code or Codex. Build the homepage and design its desktop and mobile layouts. Adapt navigation, image crops, section order, and interactions for each screen; test on your phone and practice giving the AI specific feedback. Extend those patterns to your remaining pages between sessions.
 
 You leave with: a working homepage and a repeatable way to build the rest.
 
-04Make it yours to updateCUSTOM CONTENT STUDIO+
+04Make it yours to update+
 
 Build on a prepared CMS foundation. Choose the content fields and controls you need. Connect the editor to your copy, images, projects, testimonials, and page-level SEO settings. Practice adding a case study and checking the result before publishing.
 
 You leave with: an editor configured for your site and a tested content update.
 
-05Put it into the worldLIVE ON YOUR DOMAIN+
+05Put it into the world+
 
 Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
 
 You leave with: a live site and a way to keep it current.
 
-06Q&A and site reviewsHELP WITH YOUR NEXT STEP+
+06Q&A and site reviews+
 
 Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
 
@@ -1110,21 +1110,19 @@ The tools
 
 These are the tools I used to build my site. We’ll work through what each one does and how to use them together, from exploring a design to publishing a change.
 
-01 / DESIGNClaude Design
+DesignClaude Design
 
 Explore visual directions and develop your brand book.
 
-02 / BUILDClaude Code or Codex
+BuildClaude Code or Codex
 
 Work with an AI coding agent on files on your computer.
 
-Practice giving instructions and reviewing the result.
-
-03 / WEBSITENext.js + React
+WebsiteNext.js + React
 
 Build the pages and components that make up your site.
 
-04 / VERSION + PUBLISHGitHub + Vercel
+PublishGitHub + Vercel
 
 Keep a history of changes and publish on your own domain.
 

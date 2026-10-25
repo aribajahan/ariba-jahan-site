@@ -114,3 +114,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Finished website examples beneath the desktop/mobile screenshots. */
 .responsive-caption.build-examples{font-size:14px;line-height:1.6;letter-spacing:0;color:var(--ink)}.build-examples strong{font-weight:600}.build-examples a{text-decoration:underline;text-underline-offset:3px}.build-examples a:hover{color:var(--red)}
+
+/* Preview: simpler supporting labels beneath the main headings. */
+.session-list summary{grid-template-columns:65px minmax(0,1fr) 24px}.tool-grid .tool-step{display:block;font:600 14px/1.5 var(--body);letter-spacing:0;text-transform:none;color:var(--ink)}.workspace-grid h4{text-transform:none;letter-spacing:0}@media(max-width:1000px){.session-list summary{grid-template-columns:50px minmax(0,1fr) 20px}}@media(max-width:720px){.session-list summary{grid-template-columns:33px minmax(0,1fr) 17px}}
