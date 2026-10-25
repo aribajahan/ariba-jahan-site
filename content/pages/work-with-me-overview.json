@@ -5,6 +5,32 @@
   "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
   "offers": [
     {
+      "id": "strategy-sessions",
+      "audience": "One-to-one with executives",
+      "title": "Executive AI advisory",
+      "situation": "You want to understand what AI makes possible for your role and use it with greater confidence.",
+      "description": "I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. Bring one priority. We work through it together using your questions and examples.",
+      "format": "60-minute working session + written recap",
+      "cta": "Book an advisory session",
+      "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
+      "proofLabel": "My current practice",
+      "proof": "I build and use AI systems for research, planning, recurring operations, and product development in my own work.",
+      "menuTitle": "Executive AI advisory",
+      "menuDescription": "Practical one-to-one working sessions",
+      "topics": [
+        "Put your AI meeting notes to work for decision preparation, follow-ups, and spotting patterns across conversations.",
+        "Use connectors to bring relevant documents, calendar context, and meeting notes into your AI workflow.",
+        "Build a research workflow that tracks industry shifts, competitors, and emerging technology, with sources you can check.",
+        "Explore plugins and create reusable skills for briefings, strategy reviews, and recurring work.",
+        "Make a dashboard, decision tool, or early prototype around a real business question.",
+        "Pressure-test a decision, prepare for a consequential conversation, or choose a first AI experiment for your team."
+      ],
+      "outcome": "A workflow you've practiced, a first version you've made, or a decision you've worked through, plus a short written recap and next steps. Further sessions or a larger engagement can be scoped together.",
+      "proofQuote": "",
+      "proofName": "",
+      "proofRole": ""
+    },
+    {
       "id": "ambition-sprint",
       "audience": "For product and business leaders",
       "title": "Experience-Led Growth Sprint",
@@ -46,32 +72,6 @@
         "Test an approach with your team and define what successful adoption looks like."
       ],
       "outcome": "A defined use case, a tested approach, and clear recommendations for the practices and capabilities your team needs next.",
-      "proofQuote": "",
-      "proofName": "",
-      "proofRole": ""
-    },
-    {
-      "id": "strategy-sessions",
-      "audience": "One-to-one with executives",
-      "title": "Executive AI advisory",
-      "situation": "You want to understand what AI makes possible for your role and use it with greater confidence.",
-      "description": "I work one-to-one with executives who want to use AI more effectively in their own work and make informed decisions about its role in their organization. Bring one priority. We work through it together using your questions and examples.",
-      "format": "60-minute working session + written recap",
-      "cta": "Book an advisory session",
-      "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
-      "proofLabel": "My current practice",
-      "proof": "I build and use AI systems for research, planning, recurring operations, and product development in my own work.",
-      "menuTitle": "Executive AI advisory",
-      "menuDescription": "Practical one-to-one working sessions",
-      "topics": [
-        "Put your AI meeting notes to work for decision preparation, follow-ups, and spotting patterns across conversations.",
-        "Use connectors to bring relevant documents, calendar context, and meeting notes into your AI workflow.",
-        "Build a research workflow that tracks industry shifts, competitors, and emerging technology, with sources you can check.",
-        "Explore plugins and create reusable skills for briefings, strategy reviews, and recurring work.",
-        "Make a dashboard, decision tool, or early prototype around a real business question.",
-        "Pressure-test a decision, prepare for a consequential conversation, or choose a first AI experiment for your team."
-      ],
-      "outcome": "A workflow you've practiced, a first version you've made, or a decision you've worked through, plus a short written recap and next steps. Further sessions or a larger engagement can be scoped together.",
       "proofQuote": "",
       "proofName": "",
       "proofRole": ""

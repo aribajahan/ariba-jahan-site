@@ -27,6 +27,7 @@ export default function WorkWithMeOverview() {
       </section>
 
       {content.offers.map((offer, index) => {
+        const isAdvisory = offer.id === "strategy-sessions";
         const onRed = index === 0;
         const onDark = index === 1;
         const lightText = onRed || onDark;
@@ -37,7 +38,7 @@ export default function WorkWithMeOverview() {
                 <p className={`text-[11px] font-extrabold tracking-[0.17em] uppercase mb-4 ${lightText ? "text-cream/70" : "text-charcoal/60"}`}>{String(index + 1).padStart(2, "0")} · {offer.audience}</p>
                 <h2 className="font-display uppercase text-[clamp(32px,4vw,48px)] leading-[1.02] tracking-[-0.01em] max-w-[340px] mb-5">{offer.title}</h2>
                 <p className={`text-[14px] leading-[1.6] ${lightText ? "text-cream/80" : "text-charcoal/65"}`}>{offer.format}</p>
-                {index === 2 && (
+                {isAdvisory && (
                   <figure className="mt-9 max-w-[340px] border border-charcoal/20 p-5 bg-charcoal text-cream">
                     <figcaption className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-cream/65 mb-4">{content.advisoryExample.label}</figcaption>
                     <p className="text-[20px] font-semibold leading-tight mb-5">{content.advisoryExample.title}</p>
@@ -57,12 +58,12 @@ export default function WorkWithMeOverview() {
               <div>
                 <p className="text-[20px] max-[700px]:text-[18px] leading-[1.5] font-semibold mb-4">{offer.situation}</p>
                 <p className={`text-[17px] max-[700px]:text-[16px] leading-[1.65] mb-6 ${lightText ? "text-cream/85" : "text-charcoal/75"}`}>{offer.description}</p>
-                <p className="text-[13px] font-extrabold mb-3">{index === 2 ? "Possible starting points" : "What we work on"}</p>
+                <p className="text-[13px] font-extrabold mb-3">{isAdvisory ? "Possible starting points" : "What we work on"}</p>
                 <ul className={`list-disc pl-5 space-y-2 text-[16px] leading-[1.55] mb-6 ${lightText ? "text-cream/85" : "text-charcoal/75"}`}>
                   {offer.topics.map(topic => <li key={topic}>{topic}</li>)}
                 </ul>
                 <p className={`text-[16px] leading-[1.6] mb-6 ${lightText ? "text-cream/85" : "text-charcoal/75"}`}><b className={lightText ? "text-cream" : "text-charcoal"}>What you leave with: </b>{offer.outcome}</p>
-                <a href={offer.href} target={index === 2 ? "_blank" : undefined} rel={index === 2 ? "noopener" : undefined} className={`${button} ${onDark ? "bg-cherish text-cream" : "bg-charcoal text-cream"}`}>{offer.cta}<span aria-hidden="true">↗</span></a>
+                <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={`${button} ${onDark ? "bg-cherish text-cream" : "bg-charcoal text-cream"}`}>{offer.cta}<span aria-hidden="true">↗</span></a>
                 <div className={`mt-8 pt-5 border-t ${lightText ? "border-cream/25" : "border-charcoal/20"}`}>
                   <p className={`text-[11px] uppercase tracking-[0.1em] font-extrabold mb-2 ${onDark ? "text-cream/75" : lightText ? "text-cream" : "text-charcoal"}`}>{offer.proofLabel}</p>
                   <p className={`text-[14px] leading-[1.6] ${lightText ? "text-cream/80" : "text-charcoal/65"}`}>{offer.proof}</p>
