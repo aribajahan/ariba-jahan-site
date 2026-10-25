@@ -1220,7 +1220,7 @@ We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Each session runs 60–
 
 Session dates: December 3, 10, and 17, 2026; January 7, 14, and 21, 2027. We’ll skip December 24 and 31 for the holidays. I’ll send prework before our first session.
 
-Have a scheduling concern? Email me before signing up.
+If the timing is your only hesitation, email me. With a small group, there may be room to adjust the schedule together.
 
 How does the buddy offer work?+
 
