@@ -6,8 +6,7 @@ const CTA_STYLES = [
   "inline-block bg-transparent text-cream px-7 py-[15px] max-[700px]:px-[20px] max-[700px]:py-[12px] text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] max-[700px]:tracking-[0.08em] uppercase whitespace-nowrap border-[1.5px] border-cream/50 transition-[border-color,background] duration-150 hover:border-cream hover:bg-cream/[0.08] active:border-cream active:bg-cream/[0.08]",
 ];
 
-export default function WorkWithMeHero() {
-  const { hero } = wwmContent;
+export default function WorkWithMeHero({ hero = wwmContent.hero }: { hero?: typeof wwmContent.hero }) {
 
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
@@ -32,9 +31,9 @@ export default function WorkWithMeHero() {
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/60 mb-[18px]">
           Work With Me
         </div>
-        <div className="font-display text-[clamp(38px,4vw,60px)] font-black text-cream leading-none tracking-[-0.02em] max-w-[1040px]">
+        <h1 className="font-display text-[clamp(38px,4vw,60px)] font-black text-cream leading-none tracking-[-0.02em] max-w-[1040px]">
           {hero.headline}
-        </div>
+        </h1>
         <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 max-w-[640px] mt-[22px]">
           {hero.subhead}
         </p>
