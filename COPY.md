@@ -1158,7 +1158,7 @@ FOUNDING FEE
 
 $1,250USD / participant
 
-Five working sessions, group Q&A and site reviews, and a bookable 30-minute individual session with Ariba Jahan.
+This founding fee is a special rate for our first group.
 
 Optional VIP review · +$350
 
@@ -1166,7 +1166,7 @@ BRING A BUDDY
 
 $1,000USD / for you
 
-Once your buddy’s paid enrollment at $1,250 is confirmed, you’ll receive a $250 discount code for your place. Already enrolled? You’ll receive a $250 refund instead. Your workshop fee comes to $1,000.
+Once your buddy’s paid enrollment at $1,250 is confirmed, you’ll receive a $250 discount code for your place. Already enrolled? You’ll receive a $250 refund instead.
 
 Optional VIP review
 
@@ -1182,7 +1182,7 @@ Custom site feature planning
 
 Additional to the 30-minute individual session included in the series.
 
-Join the founding cohortDecember or January kickoff, based on the group’s availability; weekly sessions, with breaks around holidays. Tool subscriptions, domain, and hosting costs are separate.
+Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
@@ -1228,13 +1228,11 @@ Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
 
-Build a presence you own and feel proud to share.
+Let’s build something you’re proud to put your name on.
 
-Own your code and content. Keep developing your site as your work evolves.
+You’ve put a lot into your work. Let’s give it a home you’re proud to share.
 
-December or January kickoff, based on the group’s availability. Prework ahead of the first session.
-
-If you have any other questions, email Ariba Jahan.
+Wondering whether this is right for you? Email me and tell me what you have in mind.
 
 ARIBA JAHANA live workshop series for solopreneurs and professionals.
 
