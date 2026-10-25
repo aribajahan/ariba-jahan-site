@@ -984,7 +984,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
-Live, weekly sessionsDecember or January kickoffPrework before session one
+Live, weekly sessionsDecember/January kickoffPrework before session one
 
 ● ● ●aribajahan.com
 
@@ -1006,9 +1006,9 @@ I’m in this with you
 
 I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A finished website, ready to go
+A launch-ready website
 
-Launch a site you’re proud to send people to, with simple controls to update your content whenever your work moves forward.
+When someone asks to see your work, you’ll have a site you’re proud to send them. Finished, ready to launch, and easy to update as your work grows.
 
 What you’ll build
 
