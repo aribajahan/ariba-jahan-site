@@ -1012,8 +1012,6 @@ When someone asks to see your work, you’ll have a site you’re proud to send 
 
 What you’ll build
 
-When someone arrives from a referral, LinkedIn, or a talk, your site should help them understand your work, see why it matters, and take the next step.
-
 01 Your website
 
 02 Your brand book
