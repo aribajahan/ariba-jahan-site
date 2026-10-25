@@ -6,6 +6,8 @@ import WwmTrustedBy from "./WwmTrustedBy";
 import CaseStudies from "./CaseStudies";
 
 const wrap = "max-w-[1200px] mx-auto px-[clamp(24px,5vw,80px)]";
+const body = "text-[18px] max-[700px]:text-[17px] leading-[1.65]";
+const readingWidth = "max-w-[80ch]";
 const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-5 max-[700px]:py-3 text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] focus-visible:outline-2 focus-visible:outline-offset-4";
 
 export default function WorkWithMeOverview() {
@@ -22,7 +24,7 @@ export default function WorkWithMeOverview() {
                 <div>
                   <span className="block text-[12px] font-extrabold text-cherish mb-4">{String(i + 1).padStart(2, "0")}</span>
                   <span className="block font-display uppercase text-[25px] max-[1024px]:text-[22px] leading-[1.1] mb-2">{offer.menuTitle}</span>
-                  <span className="block text-[13px] text-charcoal/75 leading-[1.45]">{offer.menuDescription}</span>
+                  <span className="block text-[15px] text-charcoal/75 leading-[1.6]">{offer.menuDescription}</span>
                 </div>
                 <span aria-hidden="true" className="text-cherish text-2xl group-hover:translate-y-1 transition-transform">↓</span>
               </a>
@@ -44,26 +46,26 @@ export default function WorkWithMeOverview() {
                     <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 135px, 200px" className="object-cover object-[50%_40%]" />
                   </div>
                   <div>
-                    <p className={`text-[12px] max-[700px]:text-[11px] font-extrabold tracking-[0.12em] uppercase mb-2 ${dark ? "text-[#ffb4ac]" : "text-[#ad2424]"}`}>{String(index + 1).padStart(2, "0")} · {offer.audience}</p>
-                    <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.02] mb-3">{offer.title}</h2>
-                    {card.lead && <p className="text-[21px] max-[700px]:text-[19px] font-bold leading-[1.4] mb-3">{card.lead}</p>}
-                    <p className="text-[19px] max-[700px]:text-[17px] leading-[1.55] mb-3 max-w-[850px]">{card.intro}</p>
-                    <p className="text-[13px] font-bold">{offer.format}</p>
+                    <p className={`text-[15px] leading-[1.6] mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>{offer.audience}</p>
+                    <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.1] mb-4">{offer.title}</h2>
+                    {card.lead && <p className={`${body} font-semibold mb-3`}>{card.lead}</p>}
+                    <p className={`${body} mb-4 ${readingWidth}`}>{card.intro}</p>
+                    <p className={`text-[15px] leading-[1.6] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>{offer.format}</p>
                   </div>
                 </div>
-                <div className="mt-7 max-w-[1060px]">
-                  <h3 className={`text-[13px] max-[700px]:text-[12px] uppercase font-extrabold tracking-[0.06em] mb-3 ${dark ? "text-[#ffb4ac]" : "text-[#a32a26]"}`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
-                  <ul className={`list-disc pl-5 space-y-3 text-[18px] max-[700px]:text-[17px] leading-[1.55] ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
-                    {card.examples.map(example => <li key={example.title}><strong>{example.title}.</strong> {example.text}</li>)}
+                <div className={`mt-8 ${readingWidth}`}>
+                  <h3 className={`${body} font-semibold mb-3`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
+                  <ul className={`list-disc pl-5 space-y-3 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
+                    {card.examples.map(example => <li key={example.title}><strong className="font-semibold">{example.title}.</strong> {example.text}</li>)}
                   </ul>
                 </div>
-                <p className="mt-6 max-w-[1000px] text-[18px] max-[700px]:text-[17px] leading-[1.55]"><strong>What you leave with: </strong>{offer.outcome}</p>
+                <p className={`mt-7 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcome}</p>
                 <div className="mt-7 flex gap-6 items-center flex-wrap">
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
-                  <a href={`#case-studies-${offer.id}`} className="text-[15px] font-bold underline underline-offset-4">See relevant work</a>
+                  <a href={`#case-studies-${offer.id}`} className="text-[15px] font-semibold underline underline-offset-4">See relevant work</a>
                 </div>
-                <div className={`mt-[22px] text-[15px] leading-[1.5] ${dark ? "text-[#eee8dc]" : "text-[#505050]"}`}>
-                  {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}” <cite className="not-italic font-bold text-[13px] inline-block ml-2 max-[700px]:block max-[700px]:ml-0 max-[700px]:mt-2">{offer.proofName} · {offer.proofRole}</cite></p></blockquote> : <p>{offer.proof}</p>}
+                <div className={`mt-7 ${readingWidth} text-[15px] leading-[1.65] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
+                  {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}”</p><cite className="not-italic block mt-2">{offer.proofName} · {offer.proofRole}</cite></blockquote> : <p>{offer.proof}</p>}
                 </div>
               </div>
             </section>
