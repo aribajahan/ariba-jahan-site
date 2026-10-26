@@ -30,7 +30,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true }: { 
           <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-cream max-w-[790px] mt-5">{content.body}</p>
         </div>
         </header>
-        <div className={`grid grid-cols-3 ${layout === "shared" ? "max-[1100px]:grid-cols-1" : "max-[900px]:grid-cols-1"} gap-5 items-stretch`} data-layout={layout}>
+        <div className={`grid grid-cols-3 ${layout === "shared" ? "max-[1150px]:grid-cols-1" : "max-[900px]:grid-cols-1"} gap-5 items-stretch`} data-layout={layout}>
           {content.offers.map((offer, index) => {
             const photo = photos.offers[index];
             const title = offer.title;
@@ -40,7 +40,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true }: { 
               </div>}
               <div className="flex flex-col flex-1 p-7 max-[700px]:p-6">
                 {layout === "numbered" ? <div className="flex items-end justify-between gap-4 mb-5"><span className="font-display text-[64px] leading-none text-cherish" aria-hidden="true">{offer.index}</span><span className="text-[13px] font-semibold text-charcoal/70 pb-1">{["One-to-one", "Focused engagement", "Team capability"][index]}</span></div> : <p className="text-[11px] font-extrabold tracking-[0.2em] text-cherish mb-3">{offer.index}</p>}
-                <h3 className={`font-display uppercase leading-[1.05] mb-4 ${layout === "shared" ? "text-[clamp(26px,2.3vw,32px)] min-[701px]:whitespace-nowrap" : `text-[34px] max-[700px]:text-[30px] ${layout === "numbered" ? "min-h-[76px] max-[900px]:min-h-0" : "min-h-[72px] max-[900px]:min-h-0"}`}`}>
+                <h3 className={`font-display uppercase leading-[1.05] mb-4 ${layout === "shared" ? "text-[clamp(22px,1.95vw,28px)] min-[701px]:whitespace-nowrap" : `text-[34px] max-[700px]:text-[30px] ${layout === "numbered" ? "min-h-[76px] max-[900px]:min-h-0" : "min-h-[72px] max-[900px]:min-h-0"}`}`}>
                   {layout === "shared" ? <span className="mark-tape relative inline-block -rotate-[1deg] px-2 py-1" style={{ ["--tape-color" as string]: "var(--femme-pink)" }}>{title}</span> : title}
                 </h3>
                 <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-charcoal/85 mb-7">{offer.lead} {offer.body}</p>
