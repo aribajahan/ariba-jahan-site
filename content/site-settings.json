@@ -1,13 +1,13 @@
 {
   "navLinks": [
     {
-      "label": "Speaking",
-      "href": "/speaking",
+      "label": "Work With Me",
+      "href": "/work-with-me",
       "external": false
     },
     {
-      "label": "Work With Me",
-      "href": "/work-with-me",
+      "label": "Speaking",
+      "href": "/speaking",
       "external": false
     },
     {
