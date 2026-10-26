@@ -151,6 +151,44 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **CTA** — Put AI to work across your team
 
+#### Proof Quotes
+
+##### 1. Mansoor Basha
+
+**Role** — CTO, Stagwell Marketing Cloud
+
+**Excerpt** — Customers, engineers, and executives all trusted her judgment and valued working alongside her.
+
+##### 2. Rich Barrett
+
+**Role** — Director of UX Design, Ally Bank
+
+**Excerpt** — Ariba was an incredible partner as we co-created a strategy for deepening customer relationships within the Ally app. She helped us think in terms of real customer value in a space that is often purely transactional.
+
+##### 3. Amanda Ramos
+
+**Role** — CEO, Women in Innovation
+
+**Excerpt** — Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery.
+
+##### 4. Lauren Lavalle
+
+**Role** — Chief Client Officer, Anomaly
+
+**Excerpt** — Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.
+
+##### 5. Jen Cotton
+
+**Role** — Comms Strategist, Anomaly
+
+**Excerpt** — Ariba is a Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She designs entirely new systems and perspectives, and can see and act in the weeds as well as from the treetops.
+
+##### 6. Greg Kelly
+
+**Role** — Media Director, Ad Council
+
+**Excerpt** — Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth.
+
 ### Unmissables
 
 **Eyebrow** — Writing and Thinking
