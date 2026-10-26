@@ -109,7 +109,7 @@ I work where a shift in technology, customer behavior, or the market creates a q
 
 Over the past fifteen years, I’ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.
 
-My AI work focuses on what people and organizations can become better able to do: build products and AI-enabled experiences, strengthen human judgment, and orchestrate work around the expertise that makes them distinctive.
+I build AI-enabled products, experiences, and systems, and work with organizations to develop their own capabilities. That includes connecting tools and information, building workflows, and orchestrating work across people and AI. I’m especially interested in where AI can extend an organization’s expertise and creativity, and the choices that requires about human judgment, ownership, working rhythms, and incentives.
 
 ### Work With Me Teaser
 
