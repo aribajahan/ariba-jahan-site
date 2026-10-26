@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = "ariba@aribajahan.com";
 
 function escapeHtml(value: string) {
@@ -13,7 +12,15 @@ function escapeHtml(value: string) {
 }
 
 export async function POST(request: Request) {
-  const body = await request.json();
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ ok: false, error: "Invalid submission." }, { status: 400 });
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return NextResponse.json({ ok: false, error: "Invalid submission." }, { status: 400 });
+  }
   const { name, email, message, organization, role, company_website: honeypot, ...rest } = body;
 
   if (honeypot) {
@@ -40,8 +47,15 @@ export async function POST(request: Request) {
     .map(([key, value]) => `<tr><td style="padding:4px 12px 4px 0;color:#666;">${escapeHtml(key)}</td><td>${escapeHtml(String(value))}</td></tr>`)
     .join("");
 
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("Contact form email service is not configured");
+    return NextResponse.json({ ok: false, error: "Failed to send." }, { status: 503 });
+  }
+
   try {
-    await resend.emails.send({
+    const resend = new Resend(apiKey);
+    const { data, error } = await resend.emails.send({
       from: "Ariba Jahan Site <onboarding@resend.dev>",
       to: TO_EMAIL,
       replyTo: email,
@@ -51,9 +65,13 @@ export async function POST(request: Request) {
         <p style="white-space:pre-wrap;margin-top:16px;">${escapeHtml(message)}</p>
       `,
     });
+    if (error || !data?.id) {
+      console.error("Contact form email was not accepted", { name: error?.name ?? "missing_message_id" });
+      return NextResponse.json({ ok: false, error: "Failed to send." }, { status: 502 });
+    }
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Failed to send contact form email", error);
+    console.error("Failed to send contact form email", { name: error instanceof Error ? error.name : "unknown_error" });
     return NextResponse.json({ ok: false, error: "Failed to send." }, { status: 500 });
   }
 }
