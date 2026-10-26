@@ -141,13 +141,13 @@ My AI work focuses on what people and organizations can become better able to do
 
 **CTA** — Explore the engagement
 
-##### 3. AI adoption
+##### 3. AI adoption & orchestration
 
 **Index** — 03
 
 **Lead** — Build the capabilities to match your AI ambitions.
 
-**Body** — I work with your team to test AI-enabled workflows that extend its expertise, creativity, and judgment. We establish shared context, clear ownership, and working practices that support adoption.
+**Body** — Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.
 
 **CTA** — Explore AI adoption
 
