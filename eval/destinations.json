@@ -11,7 +11,6 @@
     "DRAFT, Sept 9 2026. Seeded from the current site. Confirm each one is right.",
     "'label' is the text or context the link appears under; 'url' is what it must be."
   ],
-
   "anchors": [
     {
       "name": "Unmissables — Substack",
@@ -42,9 +41,20 @@
       "label": "(metadata)",
       "url": "https://aribajahan.com",
       "note": "Used in sitemap and metadata. A mismatch here quietly breaks SEO."
+    },
+    {
+      "name": "Booking — Executive AI advisory",
+      "label": "Book an advisory session",
+      "url": "https://calendar.app.google/oL2ztoBae7DJEQfp9",
+      "note": "Current paid advisory booking, verified October 25, 2026."
+    },
+    {
+      "name": "Booking — Discovery call",
+      "label": "Book a discovery call",
+      "url": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
+      "note": "Complimentary project discovery booking, verified October 25, 2026."
     }
   ],
-
   "missing": [
     {
       "name": "LinkedIn profile",
