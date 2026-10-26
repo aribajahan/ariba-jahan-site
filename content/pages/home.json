@@ -134,6 +134,38 @@
         "cta": "Put AI to work across your team",
         "href": "/work-with-me#ai-adoption"
       }
+    ],
+    "proofQuotes": [
+      {
+        "name": "Mansoor Basha",
+        "role": "CTO, Stagwell Marketing Cloud",
+        "excerpt": "Customers, engineers, and executives all trusted her judgment and valued working alongside her."
+      },
+      {
+        "name": "Rich Barrett",
+        "role": "Director of UX Design, Ally Bank",
+        "excerpt": "Ariba was an incredible partner as we co-created a strategy for deepening customer relationships within the Ally app. She helped us think in terms of real customer value in a space that is often purely transactional."
+      },
+      {
+        "name": "Amanda Ramos",
+        "role": "CEO, Women in Innovation",
+        "excerpt": "Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery."
+      },
+      {
+        "name": "Lauren Lavalle",
+        "role": "Chief Client Officer, Anomaly",
+        "excerpt": "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes."
+      },
+      {
+        "name": "Jen Cotton",
+        "role": "Comms Strategist, Anomaly",
+        "excerpt": "Ariba is a Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She designs entirely new systems and perspectives, and can see and act in the weeds as well as from the treetops."
+      },
+      {
+        "name": "Greg Kelly",
+        "role": "Media Director, Ad Council",
+        "excerpt": "Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth."
+      }
     ]
   },
   "unmissables": {

@@ -1,3 +1,4 @@
+import HomeProofSequence from "./HomeProofSequence";
 import Image from "next/image";
 import Link from "next/link";
 import home from "../../content/pages/home.json";
@@ -50,6 +51,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
             </a>;
           })}
         </div>
+        <HomeProofSequence quotes={content.proofQuotes ?? []} />
       </div>
     </div>
   </section>;
