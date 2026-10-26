@@ -49,7 +49,7 @@ Heading levels descend without skipping — no `<h4>` directly under an `<h2>`.
 
 **A7 · Internal links resolve** — error
 Every internal `href` points at a route that exists or a file present in
-`public/`. Catches a link to a page that was renamed or never built.
+`public/`, including concrete dynamic routes recorded by the production build. Catches a link to a page that was renamed or never built.
 
 **A15 · External links still work** — warn · needs network
 Every off-site link returns 200. Redirects are reported, not failed, so a site
@@ -73,7 +73,7 @@ Every `photoSrc`, `logoSrc`, and `src` in `content/` resolves to a real file in
 No string field in `content/` is empty or whitespace. An empty field renders as a
 gap on the page. Asset fields are exempt — a card with no photo is a state the
 components render around deliberately, which the toggled problem framing section
-relies on.
+relies on. Explicit optional slots are also exempt: Home’s conditional quote highlight/after, overview offers’ conditional proof fields, and unused photo-preview lead fields. Required headlines, descriptions, outcomes, and booking links remain checked.
 
 **A10 · Testimonial routing is valid** — error
 Every `showOn` value names a real page. A typo here silently hides a testimonial.

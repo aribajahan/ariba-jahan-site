@@ -1,17 +1,44 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { caseStudies } from "../data/work-with-me";
+import { caseStudies as allCaseStudies } from "../data/work-with-me";
 import wwmContent from "../../content/pages/work-with-me.json";
 
 const CARD_GAP = 32;
 
-export default function CaseStudies() {
+const workFilters = [
+  { id: "all", label: "All work", hash: "case-studies" },
+  { id: "strategy-sessions", label: "Executive AI advisory", hash: "case-studies-strategy-sessions" },
+  { id: "ambition-sprint", label: "Experience-Led Growth", hash: "case-studies-ambition-sprint" },
+  { id: "ai-adoption", label: "AI adoption and enablement", hash: "case-studies-ai-adoption" },
+];
+
+export default function CaseStudies({ filterable = false }: { filterable?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
   const [testiOpen, setTestiOpen] = useState<Record<number, boolean>>({});
   const [active, setActive] = useState(0);
+  const [filter, setFilter] = useState("all");
+  const caseStudies = filterable && filter !== "all"
+    ? allCaseStudies.filter(c => c.engagements?.includes(filter))
+    : allCaseStudies;
+
+  useEffect(() => {
+    if (!filterable) return;
+    const syncFilter = () => {
+      const match = workFilters.find(f => `#${f.hash}` === window.location.hash);
+      if (!match) return;
+      setFilter(match.id);
+      setActive(0);
+      setFlippedIndex(null);
+      setTestiOpen({});
+      scrollRef.current?.scrollTo({ left: 0, behavior: "instant" });
+    };
+    syncFilter();
+    window.addEventListener("hashchange", syncFilter);
+    return () => window.removeEventListener("hashchange", syncFilter);
+  }, [filterable]);
 
   const cardStep = () => {
     const el = scrollRef.current;
@@ -41,8 +68,9 @@ export default function CaseStudies() {
   return (
     <section
       id="case-studies"
-      className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden"
+      className={`relative scroll-mt-16 bg-cream ${filterable ? "pt-16 max-[700px]:pt-12" : "pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24"} pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden`}
     >
+      {filterable && workFilters.filter(f => f.id !== "all").map(f => <span key={f.id} id={f.hash} aria-hidden="true" className="absolute top-0 scroll-mt-16" />)}
       <div className="max-w-[1600px] mx-auto">
         <div className="mb-14">
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
@@ -55,6 +83,13 @@ export default function CaseStudies() {
             {wwmContent.caseStudiesSection.intro}
           </p>
         </div>
+
+        {filterable && <div className="mb-5">
+          <nav aria-label="Case studies by engagement" className="flex flex-wrap gap-x-7 gap-y-3 text-[13px] font-extrabold uppercase tracking-[0.06em]">
+            {workFilters.map(f => <a key={f.id} href={`#${f.hash}`} aria-current={filter === f.id ? "true" : undefined} className={`py-2 underline-offset-8 ${filter === f.id ? "font-extrabold underline text-charcoal" : "text-charcoal/70 hover:underline"}`}>{f.label}</a>)}
+          </nav>
+          <p aria-live="polite" className="text-[13px] text-charcoal/70 mt-3">{caseStudies.length} {caseStudies.length === 1 ? "project" : "projects"}</p>
+        </div>}
 
         <div
           ref={scrollRef}

@@ -45,6 +45,7 @@ export const wwmTestimonials = testimonialsFor("work-with-me");
 export type CaseStudyTestimonial = { quote: string; name: string; role: string };
 
 export type CaseStudy = {
+  engagements?: string[];
   tagRotationDeg: number;
   photoSrc: string;
   client: string;
