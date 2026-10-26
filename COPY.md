@@ -141,7 +141,7 @@ My AI work focuses on what people and organizations can become better able to do
 
 **CTA** — Explore the engagement
 
-##### 3. AI adoption and enablement
+##### 3. AI adoption
 
 **Index** — 03
 
