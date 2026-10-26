@@ -950,11 +950,11 @@ Before we build
 
 Prework before we begin
 
-Ahead of our first session, I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
+I’ll email your preparation guide and walk through it with you at our December 10 working kickoff. You’ll get a thorough checklist, inspiration, and guidance on the accounts, copy, images, and work samples to pull together. We’ll use December to prepare for the build.
 
 Thursdays at 1 p.m. ET
 
-We start December 3, 2026. Our six sessions run 60–90 minutes each: December 3, 10, and 17; January 7, 14, and 21, 2027. We’ll take a holiday break on December 24 and 31. That’s 10 a.m. PT / 6 p.m. UK. I’ll email the joining details before we begin.
+Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027, on Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Working sessions last 60–90 minutes. I’ll share the remaining dates before kickoff and confirm flexible office-hour times with the group.
 
 Your individual time
 
