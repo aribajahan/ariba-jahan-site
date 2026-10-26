@@ -117,7 +117,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Heading** — Let's Work Together
 
-**Body** — Work with me one-to-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.
+**Body** — Work with me one-on-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.
 
 #### Offers
 
@@ -127,9 +127,9 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Lead** — Build AI fluency around your own work and the tools you have.
 
-**Body** — One-to-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.
+**Body** — One-on-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.
 
-**CTA** — Explore advisory
+**CTA** — Work one-on-one with me
 
 ##### 2. Experience-Led Growth
 
@@ -139,7 +139,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Body** — A focused engagement to identify opportunities for adoption, repeat usage, and loyalty, then develop concepts and prototypes your team can evaluate and test.
 
-**CTA** — Explore the engagement
+**CTA** — Find your next growth opportunity
 
 ##### 3. AI adoption & orchestration
 
@@ -149,7 +149,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Body** — Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.
 
-**CTA** — Explore AI adoption
+**CTA** — Put AI to work across your team
 
 ### Unmissables
 
@@ -419,7 +419,7 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Heading** — Let's Work Together
 
-**Subhead** — Book a one-to-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.
+**Subhead** — Book a one-on-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.
 
 #### Links
 
@@ -449,13 +449,13 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 ### Reading Room
 
-**Eyebrow** — Unmissables presents · Live online
+**Eyebrow** — A facilitated reading & discussion series about AI
 
 **Heading** — The Reading Room
 
-**Description** — A facilitated reading & discussion series about AI.
+**Description** — An after-work club for strategists, builders, designers and operators committed to thinking for themselves.
 
-**Body** — An after-work club for strategists, builders, designers and operators committed to thinking for themselves. Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.
+**Body** — Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.
 
 **Host** — Hosted by Ariba Jahan
 
@@ -475,7 +475,7 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Ends At** — 2026-11-18T18:30:00-05:00
 
-**CTA Label** — Meet us at the Reading Room
+**CTA Label** — Meet us in the Reading Room
 
 ## About
 
