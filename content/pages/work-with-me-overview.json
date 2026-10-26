@@ -28,7 +28,14 @@
       "outcome": "You leave with a clearer understanding of where AI fits into your work and a next step you can take on your own. Depending on our focus, that could include a workflow you’ve practiced, a first version you can develop further, or a decision with clearer reasoning. I send a short written recap of what we explored, what needs checking, and what to do next. We agree on a manageable focus together; additional sessions or a larger engagement are scoped separately.",
       "proofQuote": "",
       "proofName": "",
-      "proofRole": ""
+      "proofRole": "",
+      "highlights": [
+        "Find useful starting points in the AI tools and technology you already have.",
+        "Connect meeting notes, documents, and industry research to your day-to-day work.",
+        "Build and practice a workflow, dashboard, or first prototype together."
+      ],
+      "outcomeSummary": "A clear starting point for using AI in your work, practical progress you can continue, and a written recap with next steps.",
+      "detailsLabel": "Explore starting points & session details"
     },
     {
       "id": "ambition-sprint",
@@ -53,14 +60,21 @@
       "outcome": "Your team can choose where to invest, explain the reasoning, and begin testing a direction. You leave with a defined opportunity, the research and strategic reasoning behind it, concepts or prototypes, and a prioritized roadmap for what to build and test next. Deliverables are tailored to your product’s maturity and the agreed scope.",
       "proofQuote": "She helped us think in terms of how to bring real customer value in a space that is often purely transactional.",
       "proofName": "Rich Barrett",
-      "proofRole": "Director of UX Design, Ally Bank"
+      "proofRole": "Director of UX Design, Ally Bank",
+      "highlights": [
+        "Identify what could increase adoption, repeat usage, and loyalty.",
+        "Define opportunities that strengthen your competitive position.",
+        "Develop concepts and prototypes to decide what to build and test next."
+      ],
+      "outcomeSummary": "A defined opportunity, a shared strategic direction, and concepts or prototypes with a prioritized path forward.",
+      "detailsLabel": "Explore the work"
     },
     {
       "id": "ai-adoption",
       "audience": "For teams and organizations",
       "title": "AI adoption and enablement",
-      "situation": "Build the capabilities to match your AI ambitions.",
-      "description": "I work with leaders and teams to understand what their AI ambitions require in practice, drawing on behavior design. We build and test workflows, develop people’s expertise, and design how people and AI coordinate work across a team. That includes ownership, handoffs, working rhythms, and incentives.",
+      "situation": "I work with leaders to make AI a force multiplier for the expertise, creativity, and judgment that make their organization distinctive.",
+      "description": "Starting with how people work, we identify where AI can add value and orchestrate collaboration across people and AI, with shared context, clear ownership, and practices that strengthen human capability.",
       "format": "Scoped to your team and work",
       "cta": "Discuss AI adoption",
       "href": "mailto:ariba@aribajahan.com?subject=AI%20Adoption%20Inquiry",
@@ -69,15 +83,23 @@
       "menuTitle": "AI adoption and enablement",
       "menuDescription": "Shared workflows & team capability",
       "topics": [
-        "Understand the work. Identify where expertise lives, how decisions get made, and what helps or prevents people from adopting new practices.",
-        "Build capability through practice. Develop and test AI-enabled workflows with the people using them, strengthening their ability to create, question outputs, and evaluate quality.",
-        "Move from individual use to team collaboration. Design how people and AI share context, coordinate tasks, and hand work over, with clear ownership and points for human judgment.",
-        "Make adoption sustainable. Establish working rhythms, incentives, and shared standards that support continued learning and accountability."
+        "Understand the work and choose where to start. Identify where expertise lives, how decisions get made, and what helps or prevents people from adopting new practices. Examine business priorities and existing tools, choose a use case, and define what successful adoption would look like.",
+        "Extend the expertise that makes your organization distinctive. Identify where AI can amplify people’s creativity, judgment, and domain knowledge, and what context and human contribution the work requires.",
+        "Build AI fluency through practice. Develop and test AI-enabled workflows with the people using them, strengthening their ability to create, question outputs, and evaluate quality. Build on the expertise already in your organization.",
+        "Orchestrate work across people and AI. Move from individual use to team collaboration: sharing context, coordinating tasks, and handing work over, with clear ownership and points for human judgment.",
+        "Make adoption sustainable. Establish working rhythms, incentives, and shared standards that support continued learning and accountability. Define how quality will be reviewed and how workflows will improve as your team learns."
       ],
-      "outcome": "A defined use case, a tested approach, and clear recommendations for the practices and capabilities your team needs next.",
+      "outcome": "You leave with a tested approach to a defined use case, clear ownership and quality checks, and recommendations for the capabilities and working practices to develop next. Your team can explain how people and AI will coordinate the work, where human judgment is required, and what needs to change before extending the approach.",
       "proofQuote": "",
       "proofName": "",
-      "proofRole": ""
+      "proofRole": "",
+      "highlights": [
+        "Identify where AI can amplify your team’s expertise and creativity.",
+        "Orchestrate shared context, tasks, and decisions across people and AI.",
+        "Build AI fluency, clear ownership, and sustainable working practices."
+      ],
+      "outcomeSummary": "A tested use case, clear ownership and quality checks, and a practical plan for developing the capabilities your team needs next.",
+      "detailsLabel": "Explore the work & approach"
     }
   ],
   "testimonial": {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import content from "../../content/pages/work-with-me-overview.json";
 import cards from "../../content/pages/work-with-me-photo-preview.json";
 import originalContent from "../../content/pages/work-with-me.json";
@@ -10,6 +11,18 @@ const wrap = "max-w-[1200px] mx-auto px-[clamp(24px,5vw,80px)]";
 const body = "text-[18px] max-[700px]:text-[17px] leading-[1.5]";
 const readingWidth = "max-w-none";
 const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-5 max-[700px]:py-3 text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] focus-visible:outline-2 focus-visible:outline-offset-4";
+
+function OfferDisclosure({ title, dark, children }: { title: string; dark: boolean; children: ReactNode }) {
+  return (
+    <details className={`group border-t ${dark ? "border-cream/25" : "border-charcoal/20"}`}>
+      <summary className="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 min-h-11 py-3 cursor-pointer text-left focus-visible:outline-2 focus-visible:outline-offset-4">
+        <span className="text-[13px] font-extrabold tracking-[0.06em] uppercase">{title}</span>
+        <span aria-hidden="true" className="text-lg font-light"><span className="group-open:hidden">+</span><span className="hidden group-open:inline">−</span></span>
+      </summary>
+      <div className="pt-1 pb-5">{children}</div>
+    </details>
+  );
+}
 
 export default function WorkWithMeOverview() {
   return (
@@ -57,14 +70,19 @@ export default function WorkWithMeOverview() {
                 <div className={`mt-5 ${readingWidth}`}>
                   <h3 className={`${body} font-semibold mb-2`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
                   <ul className={`list-disc pl-5 space-y-1.5 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
-                    {isAdvisory || offer.id === "ambition-sprint"
-                      ? offer.topics.map(topic => <li key={topic}>{topic}</li>)
-                      : card.examples.map(example => <li key={example.title}><strong className="font-semibold">{example.title}.</strong> {example.text}</li>)}
+                    {offer.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
                   </ul>
                 </div>
-                <p className={`mt-4 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcome}</p>
+                <p className={`mt-4 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcomeSummary}</p>
+                <div className="mt-5">
+                  <OfferDisclosure title={offer.detailsLabel} dark={dark}>
+                    <ul className={`list-disc pl-5 space-y-3 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
+                      {offer.topics.map(topic => <li key={topic}>{topic}</li>)}
+                    </ul>
+                    <p className={`mt-4 ${body}`}><strong className="font-semibold">{isAdvisory ? "Your session and next steps: " : "Outcomes and scope: "}</strong>{offer.outcome}</p>
+                  </OfferDisclosure>
                 {offer.id === "ambition-sprint" && (
-                  <div className="mt-5">
+                  <>
                     {[
                       {
                         heading: "Typical deliverables & artifacts",
@@ -80,21 +98,16 @@ export default function WorkWithMeOverview() {
                         })),
                       },
                     ].map(detail => (
-                      <details key={detail.heading} className="group border-t border-cream/25">
-                        <summary className="list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-4 min-h-11 py-3 cursor-pointer text-left focus-visible:outline-2 focus-visible:outline-offset-4">
-                          <span className="text-[13px] font-extrabold tracking-[0.06em] uppercase">{detail.heading}</span>
-                          <span aria-hidden="true" className="text-lg font-light"><span className="group-open:hidden">+</span><span className="hidden group-open:inline">−</span></span>
-                        </summary>
-                        <div className="pt-1 pb-5">
+                      <OfferDisclosure key={detail.heading} title={detail.heading} dark={dark}>
                           <p className="text-[15px] leading-[1.5] text-cream/75 mb-3">{detail.note}</p>
                           <ul className={`space-y-3 ${body}`}>
                             {detail.items.map(item => <li key={item.title}><strong className="font-semibold">{item.title}</strong> {item.description}</li>)}
                           </ul>
-                        </div>
-                      </details>
+                      </OfferDisclosure>
                     ))}
-                  </div>
+                  </>
                 )}
+                </div>
                 <div className="mt-4 flex gap-6 items-center flex-wrap">
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
                   <a href={`#case-studies-${offer.id}`} className="text-[15px] font-semibold underline underline-offset-4">See relevant work</a>
