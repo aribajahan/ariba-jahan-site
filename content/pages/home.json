@@ -102,29 +102,37 @@
     "paragraphs": [
       "I work where a shift in technology, customer behavior, or the market creates a question an organization needs to answer: what does this mean for the people we serve, what should we build or change, and how do we make it work in practice? The answer is rarely only about the product. It depends on what leadership has prioritized, how the organization actually operates, and what its people already know how to do.",
       "Over the past fifteen years, I’ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.",
-      "AI ambition is outrunning the operating model. My recent work has focused on designing products and experiences that are genuinely useful, and helping organizations put AI to work in ways that strengthen their expertise, change how teams operate, and become part of the way the organization works beyond a pilot."
+      "My AI work focuses on what people and organizations can become better able to do: build products and AI-enabled experiences, strengthen human judgment, and orchestrate work around the expertise that makes them distinctive."
     ]
   },
   "workWithMeTeaser": {
     "eyebrow": "Engagements",
     "heading": "Let's Work Together",
-    "body": "Customer expectations and behavior keep changing. So do the technologies shaping how people discover, choose, trust, and return — and how organizations create, learn, operate, and evolve.\n\nI work with leaders at inflection points: evolving the products, services, and experiences they offer customers; putting AI investment to work in ways that strengthen the expertise and judgment already inside the organization; and building the practices and capabilities to test new ideas, learn from them, and embed what works.\n\nLet's build something unmissable.",
+    "body": "Work with me one-to-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.",
     "offers": [
       {
         "index": "01",
-        "title": "Ambition Sprint",
-        "lead": "Turn a market, customer, or technology shift into a defined opportunity your team can act on.",
-        "body": "A focused sprint engagement for organizations exploring a new opportunity, evolving a product, service, or experience, making AI useful across the business, or building a capability that does not yet exist.",
-        "cta": "See the Sprint →",
-        "href": "/work-with-me#ambition-sprint"
+        "title": "Executive AI advisory",
+        "lead": "Build AI fluency around your own work and the tools you have.",
+        "body": "One-to-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.",
+        "cta": "Explore advisory",
+        "href": "/work-with-me#strategy-sessions"
       },
       {
         "index": "02",
-        "title": "1:1 Strategy Sessions",
-        "lead": "Think through an important decision with an experienced outside partner.",
-        "body": "Focused working sessions for leaders pressure-testing a direction, working through a complex problem, or turning a half-formed idea into a clear next move.",
-        "cta": "See the Sessions →",
-        "href": "/work-with-me#strategy-sessions"
+        "title": "Experience-Led Growth",
+        "lead": "Find what will make your product or customer experience more valuable to people.",
+        "body": "A focused engagement to identify opportunities for adoption, repeat usage, and loyalty, then develop concepts and prototypes your team can evaluate and test.",
+        "cta": "Explore the engagement",
+        "href": "/work-with-me#ambition-sprint"
+      },
+      {
+        "index": "03",
+        "title": "AI adoption & orchestration",
+        "lead": "Build the capabilities to match your AI ambitions.",
+        "body": "Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.",
+        "cta": "Explore AI adoption",
+        "href": "/work-with-me#ai-adoption"
       }
     ]
   },
@@ -468,26 +476,27 @@
   },
   "closingCTA": {
     "heading": "Let's Work Together",
-    "subhead": "I'm open to full-time roles, speaking engagements, consulting, advisory work, and the occasional very good conversation.",
+    "subhead": "Book a one-to-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.",
     "links": [
       {
         "index": "01",
-        "title": "Speaking",
-        "cta": "Speaker inquiry →",
-        "href": "/contact"
+        "title": "Executive AI advisory",
+        "cta": "Book a session →",
+        "href": "https://calendar.app.google/oL2ztoBae7DJEQfp9",
+        "external": true
       },
       {
         "index": "02",
-        "title": "Work With Me",
-        "cta": "Sprints & strategy sessions →",
-        "href": "/work-with-me"
+        "title": "Project discovery",
+        "cta": "Book a discovery call →",
+        "href": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
+        "external": true
       },
       {
         "index": "03",
-        "title": "Unmissables",
-        "cta": "Read & subscribe →",
-        "href": "https://www.unmissables.xyz/",
-        "external": true
+        "title": "Speaking & press",
+        "cta": "Make an inquiry →",
+        "href": "/contact"
       },
       {
         "index": "04",
