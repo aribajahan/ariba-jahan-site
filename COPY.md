@@ -990,7 +990,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
-Thursdays · 1 p.m. ETStarts December 360–90 minute sessions
+Thursdays · 1 p.m. ETDecember 10 working kickoffJanuary 7 build start60–90 minute sessions
 
 ● ● ●aribajahan.com
 
@@ -1104,9 +1104,9 @@ Check mobile layouts, links, contact routes, and accessibility basics. Set page 
 
 You leave with: a live site and a way to keep it current.
 
-06Q&A and site reviews+
+06Flexible office hours and site feedback+
 
-Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
+Bring questions from your preparation, build, or launch. I may split the group office hours into shorter sessions at different points so you can get help when it is most useful. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
@@ -1156,9 +1156,9 @@ Now we’ll apply that experience to yours. I’ll work with you on how your sit
 
 Join the founding cohort
 
-This first series is being offered privately, with an intentionally small group. We’ll meet Thursdays at 1 p.m. ET, starting December 3. Each session runs 60–90 minutes, with a break over the holidays. Prework arrives before our first session so you can gather your content and get your tools ready.
+This first series is being offered privately, with an intentionally small group. We start December 10 with a working kickoff, followed by guided preparation over December. Weekly building sessions begin January 7, on Thursdays at 1 p.m. ET. Working sessions run 60–90 minutes, with flexible office hours for questions and site feedback.
 
-05 working sessions01 group Q&A and site reviews session30 minutes one-on-one with Ariba Jahan
+05 build sessions01 December working kickoff30 minutes one-on-one with Ariba Jahan
 
 FOUNDING FEE
 
@@ -1216,13 +1216,13 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series starts Thursday, December 3, 2026 at 1 p.m. ET. Each of the six sessions runs 60–90 minutes. Prework will be sent ahead of the first session. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
-We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Each session runs 60–90 minutes.
+Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027. We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK), for 60–90 minutes. I’ll share the remaining session dates before the kickoff.
 
-Session dates: December 3, 10, and 17, 2026; January 7, 14, and 21, 2027. We’ll skip December 24 and 31 for the holidays. I’ll send prework before our first session.
+Office hours provide time for questions and site feedback. I may split them into shorter sessions before and during the build, placing the support where the group needs it most. I’ll confirm those times with you.
 
 If you miss a session, I’ll share a recording of the teaching portion and the session instructions so you can catch up.
 
