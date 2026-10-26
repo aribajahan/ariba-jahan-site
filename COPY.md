@@ -1018,11 +1018,11 @@ Before we build
 
 Prework before we begin
 
-Ahead of our first session, I’ll email the preparation guide covering your accounts, files, and content. You can start gathering work samples, images, and websites you love.
+I’ll email your preparation guide and walk through it with you at our December 10 working kickoff. You’ll get a thorough checklist, inspiration, and guidance on the accounts, copy, images, and work samples to pull together. We’ll use December to prepare for the build.
 
 Thursdays at 1 p.m. ET
 
-We start December 3, 2026. Our six sessions run 60–90 minutes each: December 3, 10, and 17; January 7, 14, and 21, 2027. We’ll take a holiday break on December 24 and 31. That’s 10 a.m. PT / 6 p.m. UK. I’ll email the joining details before we begin.
+Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027, on Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Working sessions last 60–90 minutes. I’ll share the remaining dates before kickoff and confirm flexible office-hour times with the group.
 
 Your individual time
 
@@ -1058,7 +1058,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
-Thursdays · 1 p.m. ETStarts December 360–90 minute sessions
+Thursdays · 1 p.m. ETDecember 10 working kickoffJanuary 7 build start60–90 minute sessions
 
 ● ● ●aribajahan.com
 
@@ -1080,9 +1080,9 @@ I’m in this with you
 
 I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A launch-ready website
+A website you’re proud to put into the world
 
-When someone asks to see your work, you’ll have a site you’re proud to send them. Finished, ready to launch, and easy to update as your work grows.
+We’ll work toward a site that reflects your expertise and is ready to share. You’ll build it with my guidance, develop it between sessions, and learn how to keep it current as your work grows.
 
 What you’ll build
 
@@ -1140,45 +1140,47 @@ Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
 The workshop series
 
-I’m keeping this group intentionally small so you can ask me questions directly and get feedback on your own site. I’ll demonstrate each step, then we’ll spend time building and working through your decisions together.
+Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
+
+December 10: our working kickoff. We’ll begin shaping your site and walk through the preparation together. I’ll give you a thorough checklist, inspiration, and guidance on the copy, images, and work samples to pull together. You’ll know what to prepare and how it supports the build.
 
 01Set the foundation+
 
 Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
-You leave with: a working project folder, site brief, page map, and content outline.
+You’ll work on: a working project folder, site brief, page map, and content outline.
 
 02Find your design direction+
 
 Explore references and distinct directions in Claude Design using your own copy. Choose how to express your expertise and personality while keeping the visitor’s next step clear. You’ll learn how to judge and improve what AI builds: typography, spacing, layout, navigation, and how content adapts from desktop to mobile. We’ll work through what helps someone understand your value and know what to do next. Document your design choices in a brand book. Turn recurring design instructions into a reusable skill.
 
-You leave with: your chosen design direction and a reusable visual reference.
+You’ll work on: your chosen design direction and a reusable visual reference.
 
 03Build your homepage+
 
 Move the design into Claude Code or Codex. Build the homepage and design its desktop and mobile layouts. Adapt navigation, image crops, section order, and interactions for each screen; test on your phone and practice giving the AI specific feedback. Extend those patterns to your remaining pages between sessions.
 
-You leave with: a working homepage and a repeatable way to build the rest.
+You’ll work on: a working homepage and a repeatable way to build the rest.
 
 04Make it yours to update+
 
 Build on a prepared CMS foundation. Choose the content fields and controls you need. Connect the editor to your copy, images, projects, testimonials, and page-level SEO settings. Practice adding a case study and checking the result before publishing.
 
-You leave with: an editor configured for your site and a tested content update.
+You’ll work on: an editor configured for your site and a tested content update.
 
-05Put it into the world+
+05Get ready to launch+
 
-Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
+Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Work through connecting your domain and publishing, then practice making a change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
 
-You leave with: a live site and a way to keep it current.
+You’ll work toward: a published site, with a clear list of anything still needed before launch.
 
-06Q&A and site reviews+
+06Flexible office hours and site feedback+
 
-Bring questions from finishing and using your site. Get direct help, see what others built, and work through remaining issues. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
+Bring questions from your preparation, build, or launch. I may split the group office hours into shorter sessions at different points so you can get help when it is most useful. Each participant also gets a bookable 30-minute individual session with Ariba Jahan.
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
-Homework after every working session. Apply what we covered to your own site, then bring that work into the next session for feedback and the next build step. Bring your existing copy, work samples, and images to the series; we’ll shape them as we build.
+Make time to build between sessions. I’ll guide your preparation with a checklist, examples, and inspiration. You’ll use December to gather content and develop your direction, then work on your site between the January sessions. Bring your progress and questions back so we can keep moving it forward together.
 
 The tools
 
@@ -1224,9 +1226,9 @@ Now we’ll apply that experience to yours. I’ll work with you on how your sit
 
 Join the founding cohort
 
-This first series is being offered privately, with an intentionally small group. We’ll meet Thursdays at 1 p.m. ET, starting December 3. Each session runs 60–90 minutes, with a break over the holidays. Prework arrives before our first session so you can gather your content and get your tools ready.
+This first series is being offered privately, with an intentionally small group. We start December 10 with a working kickoff, followed by guided preparation over December. Weekly building sessions begin January 7, on Thursdays at 1 p.m. ET. Working sessions run 60–90 minutes, with flexible office hours for questions and site feedback.
 
-05 working sessions01 group Q&A and site reviews session30 minutes one-on-one with Ariba Jahan
+05 build sessions01 December working kickoff30 minutes one-on-one with Ariba Jahan
 
 FOUNDING FEE
 
@@ -1272,7 +1274,9 @@ You’ll set up a local AI workspace and create a CMS you can keep updating as y
 
 What do I need to get started?+
 
-No prior experience with these tools is needed. Bring a computer and a paid Claude account, and allow time between sessions to work on your site. I’ll send prework covering the accounts, downloads, and files to gather.
+No prior experience with these tools is needed. Bring a computer and a paid Claude account, and set aside time between sessions to work on your site. I’ll guide what you need to pull together with a thorough checklist, examples, and inspiration, including the accounts, copy, images, and work samples we’ll use. We’ll walk through the preparation at our December kickoff.
+
+Our goal is to get your website live. Your progress will depend on the content you bring, the work you do between sessions, and the scope of your site. I’ll help you focus on the pages and features you need most and identify anything that needs more time.
 
 We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.
 
@@ -1284,13 +1288,13 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-The series starts Thursday, December 3, 2026 at 1 p.m. ET. Each of the six sessions runs 60–90 minutes. Prework will be sent ahead of the first session. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
-We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Each session runs 60–90 minutes.
+Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027. We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK), for 60–90 minutes. I’ll share the remaining session dates before the kickoff.
 
-Session dates: December 3, 10, and 17, 2026; January 7, 14, and 21, 2027. We’ll skip December 24 and 31 for the holidays. I’ll send prework before our first session.
+Office hours provide time for questions and site feedback. I may split them into shorter sessions before and during the build, placing the support where the group needs it most. I’ll confirm those times with you.
 
 If you miss a session, I’ll share a recording of the teaching portion and the session instructions so you can catch up.
 
