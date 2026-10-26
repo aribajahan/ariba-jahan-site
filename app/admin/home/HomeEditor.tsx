@@ -15,7 +15,16 @@ type PressItem = { outlet: string; title: string; href: string; photoSrc: string
 type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
 
+type ReadingRoomContent = {
+  enabled: boolean;
+  eyebrow: string; heading: string; description: string; body: string; host: string;
+  sessionLabel: string; cardLabel: string; sessionTitle: string; sessionSubtitle: string;
+  dateLabel: string; formatLabel: string; startsAt: string; endsAt: string;
+  ctaLabel: string; ctaHref: string; backgroundSrc: string; redInkPercent: number;
+};
+
 type HomeContent = {
+  readingRoom: ReadingRoomContent;
   unmissables: { eyebrow: string; heading: string; intro: string };
   unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
@@ -215,6 +224,19 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         <Field label="After (text after the highlight)">
           <input value={content.unmissablesStat.after} onChange={(e) => set("unmissablesStat", { after: e.target.value })} className={inputCls} />
         </Field>
+      </SectionCard>
+
+      <SectionCard title="Reading Room — live session" defaultExpanded={false}>
+        <label className="flex gap-2 items-center text-sm mb-4"><input type="checkbox" checked={content.readingRoom.enabled} onChange={(e) => set("readingRoom", { enabled: e.target.checked })} />Show Reading Room on the homepage</label>
+        <p className="text-xs text-[#777] mb-4">Appears below Unmissables and above the credibility numbers. Hides after the event end time. Update both the displayed date and the start/end timestamps for the next session.</p>
+        {([
+          ["eyebrow", "Eyebrow"], ["heading", "Heading"], ["description", "Series description"], ["body", "Series details"], ["host", "Host"],
+          ["sessionLabel", "Session label"], ["cardLabel", "Card label"], ["sessionTitle", "Session question"], ["sessionSubtitle", "Session subtitle"],
+          ["dateLabel", "Displayed date and time"], ["formatLabel", "Duration, location and price"], ["startsAt", "Start timestamp (include time zone)"], ["endsAt", "End timestamp / hide after (include time zone)"],
+          ["ctaLabel", "Button wording"], ["ctaHref", "Booking URL"]
+        ] as const).map(([key, label]) => <Field key={key} label={label}><textarea rows={key === "body" ? 3 : 2} value={content.readingRoom[key]} onChange={(e) => set("readingRoom", { [key]: e.target.value })} className={`${inputCls} resize-y`} /></Field>)}
+        <Field label="Stamped background image"><MediaPicker value={content.readingRoom.backgroundSrc} onChange={(src) => set("readingRoom", { backgroundSrc: src })} /></Field>
+        <Field label="Red ink intensity (%)"><input type="number" min={0} max={20} step={1} value={content.readingRoom.redInkPercent} onChange={(e) => set("readingRoom", { redInkPercent: Math.max(0, Math.min(20, Number(e.target.value))) })} className={inputCls} /></Field>
       </SectionCard>
 
       <SectionCard title="Credentials (stats strip)" defaultExpanded={false}>
