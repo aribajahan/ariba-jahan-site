@@ -109,7 +109,7 @@ I work where a shift in technology, customer behavior, or the market creates a q
 
 Over the past fifteen years, I’ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.
 
-AI ambition is outrunning the operating model. My recent work has focused on designing products and experiences that are genuinely useful, and helping organizations put AI to work in ways that strengthen their expertise, change how teams operate, and become part of the way the organization works beyond a pilot.
+My AI work focuses on what people and organizations can become better able to do: build products and AI-enabled experiences, strengthen human judgment, and orchestrate work around the expertise that makes them distinctive.
 
 ### Work With Me Teaser
 
@@ -117,33 +117,39 @@ AI ambition is outrunning the operating model. My recent work has focused on des
 
 **Heading** — Let's Work Together
 
-**Body** — Customer expectations and behavior keep changing. So do the technologies shaping how people discover, choose, trust, and return — and how organizations create, learn, operate, and evolve.
-
-I work with leaders at inflection points: evolving the products, services, and experiences they offer customers; putting AI investment to work in ways that strengthen the expertise and judgment already inside the organization; and building the practices and capabilities to test new ideas, learn from them, and embed what works.
-
-Let's build something unmissable.
+**Body** — Work with me one-to-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.
 
 #### Offers
 
-##### 1. Ambition Sprint
+##### 1. Executive AI advisory
 
 **Index** — 01
 
-**Lead** — Turn a market, customer, or technology shift into a defined opportunity your team can act on.
+**Lead** — Build AI fluency around your own work and the tools you have.
 
-**Body** — A focused sprint engagement for organizations exploring a new opportunity, evolving a product, service, or experience, making AI useful across the business, or building a capability that does not yet exist.
+**Body** — One-to-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.
 
-**CTA** — See the Sprint →
+**CTA** — Explore advisory
 
-##### 2. 1:1 Strategy Sessions
+##### 2. Experience-Led Growth
 
 **Index** — 02
 
-**Lead** — Think through an important decision with an experienced outside partner.
+**Lead** — Find what will make your product or customer experience more valuable to people.
 
-**Body** — Focused working sessions for leaders pressure-testing a direction, working through a complex problem, or turning a half-formed idea into a clear next move.
+**Body** — A focused engagement to identify opportunities for adoption, repeat usage, and loyalty, then develop concepts and prototypes your team can evaluate and test.
 
-**CTA** — See the Sessions →
+**CTA** — Explore the engagement
+
+##### 3. AI adoption and enablement
+
+**Index** — 03
+
+**Lead** — Build the capabilities to match your AI ambitions.
+
+**Body** — I work with your team to test AI-enabled workflows that extend its expertise, creativity, and judgment. We establish shared context, clear ownership, and working practices that support adoption.
+
+**CTA** — Explore AI adoption
 
 ### Unmissables
 
@@ -413,27 +419,27 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Heading** — Let's Work Together
 
-**Subhead** — I'm open to full-time roles, speaking engagements, consulting, advisory work, and the occasional very good conversation.
+**Subhead** — Book a one-to-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.
 
 #### Links
 
-##### 1. Speaking
+##### 1. Executive AI advisory
 
 **Index** — 01
 
-**CTA** — Speaker inquiry →
+**CTA** — Book a session →
 
-##### 2. Work With Me
+##### 2. Project discovery
 
 **Index** — 02
 
-**CTA** — Sprints & strategy sessions →
+**CTA** — Book a discovery call →
 
-##### 3. Unmissables
+##### 3. Speaking & press
 
 **Index** — 03
 
-**CTA** — Read & subscribe →
+**CTA** — Make an inquiry →
 
 ##### 4. Everything Else
 
