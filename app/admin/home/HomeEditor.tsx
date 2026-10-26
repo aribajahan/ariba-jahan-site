@@ -8,6 +8,7 @@ import TagListEditor from "../_shared/TagListEditor";
 import MediaPicker from "../_shared/MediaPicker";
 
 type Cta = { label: string; href: string };
+type ProofQuote = { name: string; role: string; excerpt: string };
 type Offer = { index: string; title: string; lead: string; body: string; cta: string; href: string };
 type Stat = { value: string; labelLine1: string; labelLine2: string };
 type MarqueeRow = { label: string; items: string[]; durationSec: number; reverse?: boolean };
@@ -29,7 +30,7 @@ type HomeContent = {
   unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
   positioning: { paragraphs: string[] };
-  workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[] };
+  workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[]; proofQuotes?: ProofQuote[] };
   experiments: { eyebrow: string; heading: string };
   credentials: { stats: Stat[] };
   speakingTeaser: { eyebrow: string; heading: string; paragraphs: string[]; ctaLabel: string; ctaHref: string; photos: string[] };
@@ -199,6 +200,18 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
             </div>
           ))}
         </div>
+      </SectionCard>
+
+      <SectionCard title="Homepage offer testimonials" defaultExpanded={false}>
+        <p className="text-xs text-[#777] mb-4">One quote at a time beneath the three offers. Quotes appear in the order below.</p>
+        {(content.workWithMeTeaser.proofQuotes ?? []).map((quote, i) => {
+          const updateQuote = (patch: Partial<ProofQuote>) => set("workWithMeTeaser", { proofQuotes: (content.workWithMeTeaser.proofQuotes ?? []).map((item, index) => index === i ? { ...item, ...patch } : item) });
+          return <div key={i} className="mb-5 p-3 bg-[#f7f6f4] rounded-md">
+            <Field label={`Quote ${i + 1}`}><textarea rows={4} value={quote.excerpt} onChange={e => updateQuote({ excerpt: e.target.value })} className={inputCls} /></Field>
+            <Field label="Name"><input value={quote.name} onChange={e => updateQuote({ name: e.target.value })} className={inputCls} /></Field>
+            <Field label="Title and organization"><input value={quote.role} onChange={e => updateQuote({ role: e.target.value })} className={inputCls} /></Field>
+          </div>;
+        })}
       </SectionCard>
 
       <SectionCard title="Unmissables" defaultExpanded={false}>
