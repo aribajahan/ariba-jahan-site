@@ -1505,13 +1505,11 @@ Make adoption sustainable. Establish working rhythms, incentives, and shared sta
 
 **CTA** — Speaking & press inquiry →
 
-##### 4. Everything Else
+##### 4. Unmissables
 
 **Index** — 04
 
-**CTA** — Get in touch →
-
-**Sub** — Career advisory and other inquiries.
+**CTA** — Read & subscribe →
 
 ## Work With Me Photo Preview
 

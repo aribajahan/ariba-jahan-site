@@ -143,10 +143,10 @@
       },
       {
         "index": "04",
-        "title": "Everything Else",
-        "cta": "Get in touch →",
-        "href": "/contact",
-        "sub": "Career advisory and other inquiries."
+        "title": "Unmissables",
+        "cta": "Read & subscribe →",
+        "href": "https://www.unmissables.xyz/",
+        "external": true
       }
     ]
   }
