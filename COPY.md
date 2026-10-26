@@ -1012,9 +1012,9 @@ I’m in this with you
 
 I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A launch-ready website
+A website you’re proud to put into the world
 
-When someone asks to see your work, you’ll have a site you’re proud to send them. Finished, ready to launch, and easy to update as your work grows.
+We’ll work toward a site that reflects your expertise and is ready to share. You’ll build it with my guidance, develop it between sessions, and learn how to keep it current as your work grows.
 
 What you’ll build
 
@@ -1080,31 +1080,31 @@ December 10: our working kickoff. We’ll begin shaping your site and walk throu
 
 Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
-You leave with: a working project folder, site brief, page map, and content outline.
+You’ll work on: a working project folder, site brief, page map, and content outline.
 
 02Find your design direction+
 
 Explore references and distinct directions in Claude Design using your own copy. Choose how to express your expertise and personality while keeping the visitor’s next step clear. You’ll learn how to judge and improve what AI builds: typography, spacing, layout, navigation, and how content adapts from desktop to mobile. We’ll work through what helps someone understand your value and know what to do next. Document your design choices in a brand book. Turn recurring design instructions into a reusable skill.
 
-You leave with: your chosen design direction and a reusable visual reference.
+You’ll work on: your chosen design direction and a reusable visual reference.
 
 03Build your homepage+
 
 Move the design into Claude Code or Codex. Build the homepage and design its desktop and mobile layouts. Adapt navigation, image crops, section order, and interactions for each screen; test on your phone and practice giving the AI specific feedback. Extend those patterns to your remaining pages between sessions.
 
-You leave with: a working homepage and a repeatable way to build the rest.
+You’ll work on: a working homepage and a repeatable way to build the rest.
 
 04Make it yours to update+
 
 Build on a prepared CMS foundation. Choose the content fields and controls you need. Connect the editor to your copy, images, projects, testimonials, and page-level SEO settings. Practice adding a case study and checking the result before publishing.
 
-You leave with: an editor configured for your site and a tested content update.
+You’ll work on: an editor configured for your site and a tested content update.
 
-05Put it into the world+
+05Get ready to launch+
 
-Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Connect your domain, publish, and practice making another change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
+Check mobile layouts, links, contact routes, and accessibility basics. Set page titles, descriptions, and social-sharing images. Connect your own Google Analytics account and verify a visit. Work through connecting your domain and publishing, then practice making a change and restoring an earlier version. Create a slash command for a repeatable task, such as checking a page before publishing.
 
-You leave with: a live site and a way to keep it current.
+You’ll work toward: a published site, with a clear list of anything still needed before launch.
 
 06Flexible office hours and site feedback+
 
@@ -1207,6 +1207,8 @@ You’ll set up a local AI workspace and create a CMS you can keep updating as y
 What do I need to get started?+
 
 No prior experience with these tools is needed. Bring a computer and a paid Claude account, and set aside time between sessions to work on your site. I’ll guide what you need to pull together with a thorough checklist, examples, and inspiration, including the accounts, copy, images, and work samples we’ll use. We’ll walk through the preparation at our December kickoff.
+
+Our goal is to get your website live. Your progress will depend on the content you bring, the work you do between sessions, and the scope of your site. I’ll help you focus on the pages and features you need most and identify anything that needs more time.
 
 We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.
 
