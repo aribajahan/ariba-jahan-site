@@ -10,6 +10,7 @@ import NameMarquee from "./components/NameMarquee";
 import Positioning from "./components/Positioning";
 import WorkWithMe from "./components/WorkWithMe";
 import Unmissables from "./components/Unmissables";
+import ReadingRoom from "./components/ReadingRoom";
 import Credentials from "./components/Credentials";
 import Speaking from "./components/Speaking";
 import Experiments from "./components/Experiments";
@@ -39,6 +40,7 @@ export default async function Home() {
       <Positioning />
       <WorkWithMe />
       <Unmissables />
+      <ReadingRoom />
       <Credentials />
       <Speaking />
       <Experiments />

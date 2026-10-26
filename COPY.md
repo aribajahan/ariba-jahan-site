@@ -447,6 +447,36 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **CTA** — Get in touch →
 
+### Reading Room
+
+**Eyebrow** — Unmissables presents · Live online
+
+**Heading** — The Reading Room
+
+**Description** — A facilitated reading & discussion series about AI.
+
+**Body** — An after-work club for strategists, builders, designers and operators committed to thinking for themselves. Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.
+
+**Host** — Hosted by Ariba Jahan
+
+**Session Label** — COG 001 · Next live session
+
+**Card Label** — Reading Room
+
+**Session Title** — What is expertise when AI does more of the work?
+
+**Session Subtitle** — Judgment, taste, and how we develop them when AI does more of the producing.
+
+**Date Label** — November 18 · 5–6:30 PM ET
+
+**Format Label** — 90 minutes · Virtual · $50
+
+**Starts At** — 2026-11-18T17:00:00-05:00
+
+**Ends At** — 2026-11-18T18:30:00-05:00
+
+**CTA Label** — Meet us at the Reading Room
+
 ## About
 
 ### Hero
