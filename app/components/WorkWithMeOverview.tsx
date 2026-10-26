@@ -55,9 +55,9 @@ export default function WorkWithMeOverview() {
           return (
             <section key={offer.id} id={offer.id} className="scroll-mt-[115px] pt-6 mb-9 max-[700px]:pt-8">
               <div className={`ml-[18px] px-[42px] pt-[30px] pb-7 max-[700px]:ml-3 max-[700px]:p-[26px] ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-[#eee8dc] text-charcoal"}`}>
-                <div className="grid grid-cols-[180px_1fr] gap-7 items-center max-[700px]:grid-cols-1 max-[700px]:gap-4">
-                  <div className={`relative ${isAdvisory ? "w-[220px] h-[200px]" : "w-[200px] h-[185px]"} -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[135px] max-[700px]:h-[135px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]`}>
-                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes={`(max-width: 700px) 135px, ${isAdvisory ? "220px" : "200px"}`} className="object-cover object-[50%_40%]" />
+                <div className="grid grid-cols-[220px_1fr] gap-7 items-start max-[700px]:grid-cols-1 max-[700px]:gap-4">
+                  <div className="relative w-[240px] h-[220px] -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[150px] max-[700px]:h-[140px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]">
+                    <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 150px, 240px" className="object-cover object-[50%_40%]" />
                   </div>
                   <div>
                     <p className={`text-[15px] leading-[1.5] mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
@@ -110,7 +110,7 @@ export default function WorkWithMeOverview() {
                 </div>
                 <div className="mt-4 flex gap-6 items-center flex-wrap">
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
-                  <a href={`#case-studies-${offer.id}`} className="text-[15px] font-semibold underline underline-offset-4">See relevant work</a>
+                  <a href={`#case-studies-${offer.id}`} className="inline-flex min-h-11 items-center text-[13px] font-extrabold uppercase tracking-[0.06em] transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4">See relevant work</a>
                 </div>
                 {(offer.proofQuote || offer.proof) && <div className={`mt-4 ${readingWidth} text-[15px] leading-[1.5] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
                   {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}”</p><cite className="not-italic block mt-2">{offer.proofName} · {offer.proofRole}</cite></blockquote> : <p>{offer.proof}</p>}

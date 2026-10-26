@@ -68,7 +68,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
   return (
     <section
       id="case-studies"
-      className="relative scroll-mt-16 bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden"
+      className={`relative scroll-mt-16 bg-cream ${filterable ? "pt-16 max-[700px]:pt-12" : "pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24"} pb-20 max-[700px]:pb-14 px-[clamp(24px,5vw,80px)] overflow-hidden`}
     >
       {filterable && workFilters.filter(f => f.id !== "all").map(f => <span key={f.id} id={f.hash} aria-hidden="true" className="absolute top-0 scroll-mt-16" />)}
       <div className="max-w-[1600px] mx-auto">
