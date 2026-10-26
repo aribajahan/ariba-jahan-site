@@ -6,7 +6,7 @@ import homeContent from "../../content/pages/home.json";
 
 export type NavLink = { label: string; href: string; external?: boolean };
 
-// Reading Room is intentionally left out here — hidden from nav until the page is built.
+// Shared navigation order and external destinations are editable in Studio settings.
 export const navLinks: NavLink[] = siteSettings.navLinks;
 
 export const heroSocials = siteSettings.socialLinks;
