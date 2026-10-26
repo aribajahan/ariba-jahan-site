@@ -1413,7 +1413,7 @@ Establish what to pursue first. Align product, growth, and leadership around the
 
 **Details Label** — Explore the work
 
-#### 3. AI adoption and enablement
+#### 3. AI adoption & orchestration
 
 **Audience** — For teams and organizations
 
@@ -1429,7 +1429,7 @@ Establish what to pursue first. Align product, growth, and leadership around the
 
 **Proof** — Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.
 
-**Menu Title** — AI adoption and enablement
+**Menu Title** — AI adoption & orchestration
 
 **Menu Description** — Shared workflows & team capability
 

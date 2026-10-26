@@ -58,7 +58,8 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error("Request failed");
+      const result = await res.json();
+      if (!res.ok || result.ok !== true) throw new Error("Request failed");
       setSubmitted(true);
     } catch {
       setSubmitError(true);
