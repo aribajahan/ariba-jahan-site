@@ -117,7 +117,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Heading** — Let's Work Together
 
-**Body** — Work with me one-to-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.
+**Body** — Work with me one-on-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.
 
 #### Offers
 
@@ -127,9 +127,9 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Lead** — Build AI fluency around your own work and the tools you have.
 
-**Body** — One-to-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.
+**Body** — One-on-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.
 
-**CTA** — Explore advisory
+**CTA** — Work one-on-one with me
 
 ##### 2. Experience-Led Growth
 
@@ -139,7 +139,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Body** — A focused engagement to identify opportunities for adoption, repeat usage, and loyalty, then develop concepts and prototypes your team can evaluate and test.
 
-**CTA** — Explore the engagement
+**CTA** — Find your next growth opportunity
 
 ##### 3. AI adoption & orchestration
 
@@ -149,7 +149,45 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 **Body** — Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.
 
-**CTA** — Explore AI adoption
+**CTA** — Put AI to work across your team
+
+#### Proof Quotes
+
+##### 1. Mansoor Basha
+
+**Role** — CTO, Stagwell Marketing Cloud
+
+**Excerpt** — Customers, engineers, and executives all trusted her judgment and valued working alongside her.
+
+##### 2. Rich Barrett
+
+**Role** — Director of UX Design, Ally Bank
+
+**Excerpt** — Ariba was an incredible partner as we co-created a strategy for deepening customer relationships within the Ally app. She helped us think in terms of real customer value in a space that is often purely transactional.
+
+##### 3. Amanda Ramos
+
+**Role** — CEO, Women in Innovation
+
+**Excerpt** — Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery.
+
+##### 4. Lauren Lavalle
+
+**Role** — Chief Client Officer, Anomaly
+
+**Excerpt** — Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.
+
+##### 5. Jen Cotton
+
+**Role** — Comms Strategist, Anomaly
+
+**Excerpt** — Ariba is a Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She designs entirely new systems and perspectives, and can see and act in the weeds as well as from the treetops.
+
+##### 6. Greg Kelly
+
+**Role** — Media Director, Ad Council
+
+**Excerpt** — Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth.
 
 ### Unmissables
 
@@ -419,7 +457,7 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Heading** — Let's Work Together
 
-**Subhead** — Book a one-to-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.
+**Subhead** — Book a one-on-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.
 
 #### Links
 
@@ -446,6 +484,36 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 **Index** — 04
 
 **CTA** — Get in touch →
+
+### Reading Room
+
+**Eyebrow** — A facilitated reading & discussion series about AI
+
+**Heading** — The Reading Room
+
+**Description** — An after-work club for strategists, builders, designers and operators committed to thinking for themselves.
+
+**Body** — Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.
+
+**Host** — Hosted by Ariba Jahan
+
+**Session Label** — COG 001 · Next live session
+
+**Card Label** — Reading Room
+
+**Session Title** — What is expertise when AI does more of the work?
+
+**Session Subtitle** — Judgment, taste, and how we develop them when AI does more of the producing.
+
+**Date Label** — November 18 · 5–6:30 PM ET
+
+**Format Label** — 90 minutes · Virtual · $50
+
+**Starts At** — 2026-11-18T17:00:00-05:00
+
+**Ends At** — 2026-11-18T18:30:00-05:00
+
+**CTA Label** — Meet us in the Reading Room
 
 ## About
 
@@ -1349,7 +1417,7 @@ Establish what to pursue first. Align product, growth, and leadership around the
 
 **Details Label** — Explore the work
 
-#### 3. AI adoption and enablement
+#### 3. AI adoption & orchestration
 
 **Audience** — For teams and organizations
 
@@ -1365,7 +1433,7 @@ Establish what to pursue first. Align product, growth, and leadership around the
 
 **Proof** — Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.
 
-**Menu Title** — AI adoption and enablement
+**Menu Title** — AI adoption & orchestration
 
 **Menu Description** — Shared workflows & team capability
 
@@ -1441,13 +1509,11 @@ Make adoption sustainable. Establish working rhythms, incentives, and shared sta
 
 **CTA** — Speaking & press inquiry →
 
-##### 4. Everything Else
+##### 4. Unmissables
 
 **Index** — 04
 
-**CTA** — Get in touch →
-
-**Sub** — Career advisory and other inquiries.
+**CTA** — Read & subscribe →
 
 ## Work With Me Photo Preview
 

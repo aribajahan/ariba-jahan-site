@@ -11,7 +11,7 @@ const workFilters = [
   { id: "all", label: "All work", hash: "case-studies" },
   { id: "strategy-sessions", label: "Executive AI advisory", hash: "case-studies-strategy-sessions" },
   { id: "ambition-sprint", label: "Experience-Led Growth", hash: "case-studies-ambition-sprint" },
-  { id: "ai-adoption", label: "AI adoption and enablement", hash: "case-studies-ai-adoption" },
+  { id: "ai-adoption", label: "AI adoption & orchestration", hash: "case-studies-ai-adoption" },
 ];
 
 export default function CaseStudies({ filterable = false }: { filterable?: boolean }) {

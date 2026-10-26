@@ -195,7 +195,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
 
         {/* desktop links — whisper background appears past the hero */}
         <div
-          className="hidden min-[701px]:flex items-center gap-7 rounded-[3px] border border-solid px-[18px] py-[8px] pointer-events-auto transition-[background-color,border-color] duration-300"
+          className="hidden min-[1051px]:flex items-center gap-7 rounded-[3px] border border-solid px-[18px] py-[8px] pointer-events-auto transition-[background-color,border-color] duration-300"
           style={groupStyle}
         >
           {visibleNavLinks.map((link) => (
@@ -227,7 +227,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="flex min-[701px]:hidden flex-col justify-center gap-[7px] w-11 h-11 pointer-events-auto"
+          className="flex min-[1051px]:hidden flex-col justify-center gap-[7px] w-11 h-11 pointer-events-auto"
         >
           <span
             className={`block w-7 h-[2.5px] rounded transition-colors duration-300 ${light ? "bg-charcoal" : "bg-cream"}`}
@@ -242,7 +242,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
 
       {/* mobile full-screen menu */}
       <div
-        className="fixed inset-0 z-[300] bg-charcoal text-cream flex flex-col px-[clamp(20px,6vw,44px)] pt-[22px] pb-11 min-[701px]:hidden transition-transform duration-[450ms] ease-[cubic-bezier(.4,.01,.2,1)]"
+        className="fixed inset-0 z-[300] bg-charcoal text-cream flex flex-col px-[clamp(20px,6vw,44px)] pt-[22px] pb-11 min-[1051px]:hidden transition-transform duration-[450ms] ease-[cubic-bezier(.4,.01,.2,1)]"
         style={{ transform: open ? "translateY(0)" : "translateY(-100%)" }}
         aria-hidden={!open}
       >

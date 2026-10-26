@@ -8,6 +8,7 @@ import TagListEditor from "../_shared/TagListEditor";
 import MediaPicker from "../_shared/MediaPicker";
 
 type Cta = { label: string; href: string };
+type ProofQuote = { name: string; role: string; excerpt: string };
 type Offer = { index: string; title: string; lead: string; body: string; cta: string; href: string };
 type Stat = { value: string; labelLine1: string; labelLine2: string };
 type MarqueeRow = { label: string; items: string[]; durationSec: number; reverse?: boolean };
@@ -15,12 +16,21 @@ type PressItem = { outlet: string; title: string; href: string; photoSrc: string
 type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
 
+type ReadingRoomContent = {
+  enabled: boolean;
+  eyebrow: string; heading: string; description: string; body: string; host: string;
+  sessionLabel: string; cardLabel: string; sessionTitle: string; sessionSubtitle: string;
+  dateLabel: string; formatLabel: string; startsAt: string; endsAt: string;
+  ctaLabel: string; ctaHref: string; backgroundSrc: string; redInkPercent: number;
+};
+
 type HomeContent = {
+  readingRoom: ReadingRoomContent;
   unmissables: { eyebrow: string; heading: string; intro: string };
   unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
   positioning: { paragraphs: string[] };
-  workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[] };
+  workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[]; proofQuotes?: ProofQuote[] };
   experiments: { eyebrow: string; heading: string };
   credentials: { stats: Stat[] };
   speakingTeaser: { eyebrow: string; heading: string; paragraphs: string[]; ctaLabel: string; ctaHref: string; photos: string[] };
@@ -192,6 +202,18 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         </div>
       </SectionCard>
 
+      <SectionCard title="Homepage offer testimonials" defaultExpanded={false}>
+        <p className="text-xs text-[#777] mb-4">One quote at a time beneath the three offers. Quotes appear in the order below.</p>
+        {(content.workWithMeTeaser.proofQuotes ?? []).map((quote, i) => {
+          const updateQuote = (patch: Partial<ProofQuote>) => set("workWithMeTeaser", { proofQuotes: (content.workWithMeTeaser.proofQuotes ?? []).map((item, index) => index === i ? { ...item, ...patch } : item) });
+          return <div key={i} className="mb-5 p-3 bg-[#f7f6f4] rounded-md">
+            <Field label={`Quote ${i + 1}`}><textarea rows={4} value={quote.excerpt} onChange={e => updateQuote({ excerpt: e.target.value })} className={inputCls} /></Field>
+            <Field label="Name"><input value={quote.name} onChange={e => updateQuote({ name: e.target.value })} className={inputCls} /></Field>
+            <Field label="Title and organization"><input value={quote.role} onChange={e => updateQuote({ role: e.target.value })} className={inputCls} /></Field>
+          </div>;
+        })}
+      </SectionCard>
+
       <SectionCard title="Unmissables" defaultExpanded={false}>
         <Field label="Eyebrow"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.unmissables.heading} onChange={(e) => set("unmissables", { heading: e.target.value })} className={inputCls} /></Field>
@@ -215,6 +237,19 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         <Field label="After (text after the highlight)">
           <input value={content.unmissablesStat.after} onChange={(e) => set("unmissablesStat", { after: e.target.value })} className={inputCls} />
         </Field>
+      </SectionCard>
+
+      <SectionCard title="Reading Room — live session" defaultExpanded={false}>
+        <label className="flex gap-2 items-center text-sm mb-4"><input type="checkbox" checked={content.readingRoom.enabled} onChange={(e) => set("readingRoom", { enabled: e.target.checked })} />Show Reading Room on the homepage</label>
+        <p className="text-xs text-[#777] mb-4">Appears below Unmissables and above the credibility numbers. Hides after the event end time. Update both the displayed date and the start/end timestamps for the next session.</p>
+        {([
+          ["eyebrow", "Eyebrow"], ["heading", "Heading"], ["description", "Series description"], ["body", "Series details"], ["host", "Host"],
+          ["sessionLabel", "Session label"], ["cardLabel", "Card label"], ["sessionTitle", "Session question"], ["sessionSubtitle", "Session subtitle"],
+          ["dateLabel", "Displayed date and time"], ["formatLabel", "Duration, location and price"], ["startsAt", "Start timestamp (include time zone)"], ["endsAt", "End timestamp / hide after (include time zone)"],
+          ["ctaLabel", "Button wording"], ["ctaHref", "Booking URL"]
+        ] as const).map(([key, label]) => <Field key={key} label={label}><textarea rows={key === "body" ? 3 : 2} value={content.readingRoom[key]} onChange={(e) => set("readingRoom", { [key]: e.target.value })} className={`${inputCls} resize-y`} /></Field>)}
+        <Field label="Stamped background image"><MediaPicker value={content.readingRoom.backgroundSrc} onChange={(src) => set("readingRoom", { backgroundSrc: src })} /></Field>
+        <Field label="Red ink intensity (%)"><input type="number" min={0} max={20} step={1} value={content.readingRoom.redInkPercent} onChange={(e) => set("readingRoom", { redInkPercent: Math.max(0, Math.min(20, Number(e.target.value))) })} className={inputCls} /></Field>
       </SectionCard>
 
       <SectionCard title="Credentials (stats strip)" defaultExpanded={false}>

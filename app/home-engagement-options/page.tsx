@@ -10,6 +10,7 @@ import NameMarquee from "../components/NameMarquee";
 import Positioning from "../components/Positioning";
 import HomeEngagementOptions, { type EngagementLayout } from "../components/HomeEngagementOptions";
 import Unmissables from "../components/Unmissables";
+import ReadingRoom from "../components/ReadingRoom";
 import Credentials from "../components/Credentials";
 import Speaking from "../components/Speaking";
 import Experiments from "../components/Experiments";
@@ -23,7 +24,7 @@ import { buildPageMetadata } from "../../lib/seoMeta";
 
 export const metadata: Metadata = { ...buildPageMetadata("home", { absoluteTitle: true }), title: { absolute: "Homepage engagement options — preview" }, robots: { index: false, follow: false } };
 
-export default async function HomeOptions({ searchParams }: { searchParams: Promise<{ layout?: string }> }) {
+export default async function HomeOptions({ searchParams }: { searchParams: Promise<{ layout?: string; copy?: string }> }) {
   const query = await searchParams;
   const layout: EngagementLayout = query.layout === "numbered" || query.layout === "shared" ? query.layout : "photos";
   const guard = await guardPage("home");
@@ -39,8 +40,9 @@ export default async function HomeOptions({ searchParams }: { searchParams: Prom
       <Hero />
       <NameMarquee />
       <Positioning />
-      <HomeEngagementOptions layout={layout} />
+      <HomeEngagementOptions layout={layout} draftCtas={query.copy === "draft"} />
       <Unmissables />
+      <ReadingRoom />
       <Credentials />
       <Speaking />
       <Experiments />

@@ -108,14 +108,14 @@
   "workWithMeTeaser": {
     "eyebrow": "Engagements",
     "heading": "Let's Work Together",
-    "body": "Work with me one-to-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.",
+    "body": "Work with me one-on-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.",
     "offers": [
       {
         "index": "01",
         "title": "Executive AI advisory",
         "lead": "Build AI fluency around your own work and the tools you have.",
-        "body": "One-to-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.",
-        "cta": "Explore advisory",
+        "body": "One-on-one working sessions to find a starting point, connect your information, or build and practice a workflow, decision tool, or first prototype.",
+        "cta": "Work one-on-one with me",
         "href": "/work-with-me#strategy-sessions"
       },
       {
@@ -123,7 +123,7 @@
         "title": "Experience-Led Growth",
         "lead": "Find what will make your product or customer experience more valuable to people.",
         "body": "A focused engagement to identify opportunities for adoption, repeat usage, and loyalty, then develop concepts and prototypes your team can evaluate and test.",
-        "cta": "Explore the engagement",
+        "cta": "Find your next growth opportunity",
         "href": "/work-with-me#ambition-sprint"
       },
       {
@@ -131,8 +131,40 @@
         "title": "AI adoption & orchestration",
         "lead": "Build the capabilities to match your AI ambitions.",
         "body": "Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.",
-        "cta": "Explore AI adoption",
+        "cta": "Put AI to work across your team",
         "href": "/work-with-me#ai-adoption"
+      }
+    ],
+    "proofQuotes": [
+      {
+        "name": "Mansoor Basha",
+        "role": "CTO, Stagwell Marketing Cloud",
+        "excerpt": "Customers, engineers, and executives all trusted her judgment and valued working alongside her."
+      },
+      {
+        "name": "Rich Barrett",
+        "role": "Director of UX Design, Ally Bank",
+        "excerpt": "Ariba was an incredible partner as we co-created a strategy for deepening customer relationships within the Ally app. She helped us think in terms of real customer value in a space that is often purely transactional."
+      },
+      {
+        "name": "Amanda Ramos",
+        "role": "CEO, Women in Innovation",
+        "excerpt": "Few people on this earth know how to shape a brilliant conversation, provide a complex picture of the context, challenge the status quo, AND then collaborate on how to transform it with humanity, grace, optimism, and bravery."
+      },
+      {
+        "name": "Lauren Lavalle",
+        "role": "Chief Client Officer, Anomaly",
+        "excerpt": "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes."
+      },
+      {
+        "name": "Jen Cotton",
+        "role": "Comms Strategist, Anomaly",
+        "excerpt": "Ariba is a Swiss-army-knife dream of a specialist and generalist all wrapped up in one. She designs entirely new systems and perspectives, and can see and act in the weeds as well as from the treetops."
+      },
+      {
+        "name": "Greg Kelly",
+        "role": "Media Director, Ad Council",
+        "excerpt": "Ariba is a rare talent who has touched nearly every corner of our work at the Ad Council. Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth."
       }
     ]
   },
@@ -476,7 +508,7 @@
   },
   "closingCTA": {
     "heading": "Let's Work Together",
-    "subhead": "Book a one-to-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.",
+    "subhead": "Book a one-on-one AI working session, or start with a complimentary 25-minute discovery call about a project or collaboration.",
     "links": [
       {
         "index": "01",
@@ -505,5 +537,25 @@
         "href": "/contact"
       }
     ]
+  },
+  "readingRoom": {
+    "enabled": true,
+    "eyebrow": "A facilitated reading & discussion series about AI",
+    "heading": "The Reading Room",
+    "description": "An after-work club for strategists, builders, designers and operators committed to thinking for themselves.",
+    "body": "Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.",
+    "host": "Hosted by Ariba Jahan",
+    "sessionLabel": "COG 001 · Next live session",
+    "cardLabel": "Reading Room",
+    "sessionTitle": "What is expertise when AI does more of the work?",
+    "sessionSubtitle": "Judgment, taste, and how we develop them when AI does more of the producing.",
+    "dateLabel": "November 18 · 5–6:30 PM ET",
+    "formatLabel": "90 minutes · Virtual · $50",
+    "startsAt": "2026-11-18T17:00:00-05:00",
+    "endsAt": "2026-11-18T18:30:00-05:00",
+    "ctaLabel": "Meet us in the Reading Room",
+    "ctaHref": "https://luma.com/4uffj034",
+    "backgroundSrc": "/assets/reading-room-stamped-date-due.webp",
+    "redInkPercent": 11
   }
 }

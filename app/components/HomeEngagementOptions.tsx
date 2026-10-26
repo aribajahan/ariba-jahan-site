@@ -1,3 +1,4 @@
+import HomeProofSequence from "./HomeProofSequence";
 import Image from "next/image";
 import Link from "next/link";
 import home from "../../content/pages/home.json";
@@ -10,7 +11,7 @@ const options: { id: EngagementLayout; label: string }[] = [
   { id: "shared", label: "C · Tape cards" },
 ];
 
-export default function HomeEngagementOptions({ layout, showOptions = true }: { layout: EngagementLayout; showOptions?: boolean }) {
+export default function HomeEngagementOptions({ layout, showOptions = true, draftCtas = false }: { layout: EngagementLayout; showOptions?: boolean; draftCtas?: boolean }) {
   const { workWithMeTeaser: content } = home;
   return <section id="work-with-me" className="scroll-mt-16">
     {showOptions && <div className="sticky top-16 z-40 bg-cream px-[clamp(24px,5vw,80px)] py-5 border-y border-charcoal/15">
@@ -34,21 +35,23 @@ export default function HomeEngagementOptions({ layout, showOptions = true }: { 
           {content.offers.map((offer, index) => {
             const photo = photos.offers[index];
             const title = offer.title;
-            return <a key={offer.index} href={offer.href} aria-label={`${title} — ${offer.cta}`} className={`offer-lift group bg-cream text-charcoal flex flex-col focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream ${layout === "numbered" ? "border-t-4 border-charcoal" : ""}`} data-offer-card>
+            const cta = draftCtas ? ["Work one-on-one with me", "Find your next growth opportunity", "Put AI to work across your team"][index] ?? offer.cta : offer.cta;
+            return <a key={offer.index} href={offer.href} aria-label={`${title} — ${cta}`} className={`offer-lift group bg-cream text-charcoal flex flex-col focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream ${layout === "numbered" ? "border-t-4 border-charcoal" : ""}`} data-offer-card>
               {layout === "photos" && <div className="relative h-[165px] max-[900px]:h-[190px] overflow-hidden">
                 <Image src={photo.photoSrc} alt={photo.photoAlt} fill sizes="(max-width: 900px) 92vw, 400px" className={`object-cover ${index === 0 ? "object-[50%_37%]" : "object-[50%_40%]"}`} />
               </div>}
               <div className="flex flex-col flex-1 p-7 max-[700px]:p-6">
-                {layout === "numbered" ? <div className="flex items-end justify-between gap-4 mb-5"><span className="font-display text-[64px] leading-none text-cherish" aria-hidden="true">{offer.index}</span><span className="text-[13px] font-semibold text-charcoal/70 pb-1">{["One-to-one", "Focused engagement", "Team capability"][index]}</span></div> : <p className="text-[11px] font-extrabold tracking-[0.2em] text-cherish mb-3">{offer.index}</p>}
-                <h3 className={`font-display uppercase leading-[1.05] mb-4 ${layout === "shared" ? "text-[clamp(22px,1.95vw,28px)] break-words" : `text-[34px] max-[700px]:text-[30px] ${layout === "numbered" ? "min-h-[76px] max-[900px]:min-h-0" : "min-h-[72px] max-[900px]:min-h-0"}`}`}>
+                {layout === "numbered" ? <div className="flex items-end justify-between gap-4 mb-5"><span className="font-display text-[64px] leading-none text-cherish" aria-hidden="true">{offer.index}</span><span className="text-[13px] font-semibold text-charcoal/70 pb-1">{["One-on-one", "Focused engagement", "Team capability"][index]}</span></div> : <p className={`text-[11px] font-extrabold tracking-[0.2em] text-cherish mb-3 ${layout === "shared" ? "text-center" : ""}`}>{offer.index}</p>}
+                <h3 className={`font-display uppercase leading-[1.05] mb-4 ${layout === "shared" ? "text-center" : ""} ${layout === "shared" ? "text-[clamp(22px,1.95vw,28px)] break-words" : `text-[34px] max-[700px]:text-[30px] ${layout === "numbered" ? "min-h-[76px] max-[900px]:min-h-0" : "min-h-[72px] max-[900px]:min-h-0"}`}`}>
                   {layout === "shared" ? <span className="mark-tape relative inline-block max-w-full -rotate-[1deg] px-2 py-1" style={{ ["--tape-color" as string]: "var(--femme-pink)" }}>{title}</span> : title}
                 </h3>
                 <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-charcoal/85 mb-7">{offer.lead} {offer.body}</p>
-                <span className="mt-auto pt-2"><span className="inline-block text-[13px] font-extrabold tracking-[0.08em] uppercase text-cherish border-b-2 border-cherish pb-[3px]">{offer.cta}</span></span>
+                <span className={`mt-auto pt-2 ${layout === "shared" ? "self-center text-center" : ""}`}><span className="inline-block text-[13px] font-extrabold tracking-[0.08em] uppercase text-cherish border-b-2 border-cherish pb-[3px]">{cta}</span></span>
               </div>
             </a>;
           })}
         </div>
+        <HomeProofSequence quotes={content.proofQuotes ?? []} />
       </div>
     </div>
   </section>;
