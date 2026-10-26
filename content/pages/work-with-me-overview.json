@@ -12,7 +12,7 @@
       "description": "Bring a specific question, or come knowing you could be using AI more effectively. We look at the tools you have, how you work, and where AI could help. Together, we choose a starting point, build or practice an approach, and work through how to evaluate the results.",
       "format": "60-minute working session + written recap",
       "cta": "Book an advisory session",
-      "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
+      "href": "https://calendar.app.google/oL2ztoBae7DJEQfp9",
       "proofLabel": "",
       "proof": "",
       "menuTitle": "Executive AI advisory",
@@ -123,9 +123,10 @@
     "links": [
       {
         "index": "01",
-        "title": "Speaking",
-        "cta": "Speaker inquiry →",
-        "href": "/contact"
+        "title": "Executive AI advisory",
+        "cta": "Book a session →",
+        "href": "https://calendar.app.google/oL2ztoBae7DJEQfp9",
+        "external": true
       },
       {
         "index": "02",
@@ -136,17 +137,16 @@
       },
       {
         "index": "03",
-        "title": "Executive AI advisory",
-        "cta": "Book a session →",
-        "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
-        "external": true
+        "title": "Speaking & press",
+        "cta": "Speaking & press inquiry →",
+        "href": "/contact"
       },
       {
         "index": "04",
         "title": "Everything Else",
         "cta": "Get in touch →",
         "href": "/contact",
-        "sub": "Press, career advisory, quotes, and everything else."
+        "sub": "Career advisory and other inquiries."
       }
     ]
   }
