@@ -16,6 +16,11 @@
       "external": true
     },
     {
+      "label": "Reading Room",
+      "href": "https://thereadingroom.ai/",
+      "external": true
+    },
+    {
       "label": "About",
       "href": "/about",
       "external": false
