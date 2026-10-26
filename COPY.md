@@ -1072,7 +1072,9 @@ Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
 The workshop series
 
-I’m keeping this group intentionally small so you can ask me questions directly and get feedback on your own site. I’ll demonstrate each step, then we’ll spend time building and working through your decisions together.
+Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
+
+December 10: our working kickoff. We’ll begin shaping your site and walk through the preparation together. I’ll give you a thorough checklist, inspiration, and guidance on the copy, images, and work samples to pull together. You’ll know what to prepare and how it supports the build.
 
 01Set the foundation+
 
@@ -1110,7 +1112,7 @@ Bring questions from your preparation, build, or launch. I may split the group o
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
-Homework after every working session. Apply what we covered to your own site, then bring that work into the next session for feedback and the next build step. Bring your existing copy, work samples, and images to the series; we’ll shape them as we build.
+Make time to build between sessions. I’ll guide your preparation with a checklist, examples, and inspiration. You’ll use December to gather content and develop your direction, then work on your site between the January sessions. Bring your progress and questions back so we can keep moving it forward together.
 
 The tools
 
@@ -1204,7 +1206,7 @@ You’ll set up a local AI workspace and create a CMS you can keep updating as y
 
 What do I need to get started?+
 
-No prior experience with these tools is needed. Bring a computer and a paid Claude account, and allow time between sessions to work on your site. I’ll send prework covering the accounts, downloads, and files to gather.
+No prior experience with these tools is needed. Bring a computer and a paid Claude account, and set aside time between sessions to work on your site. I’ll guide what you need to pull together with a thorough checklist, examples, and inspiration, including the accounts, copy, images, and work samples we’ll use. We’ll walk through the preparation at our December kickoff.
 
 We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.
 
