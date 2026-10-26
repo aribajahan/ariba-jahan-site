@@ -38,10 +38,10 @@ export default async function Home() {
       <NameMarquee />
       <Positioning />
       <WorkWithMe />
+      <Experiments />
       <Unmissables />
       <Credentials />
       <Speaking />
-      <Experiments />
       <Recognition />
       <Press />
       <Testimonials />
