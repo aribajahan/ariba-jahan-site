@@ -45,7 +45,7 @@
       "description": "Together, we identify how your product, service, or customer experience can become more valuable to people, build loyalty, and make usage stick. We develop those opportunities into concepts and prototypes your team can evaluate and test.",
       "format": "Focused engagement",
       "cta": "Discuss a project",
-      "href": "mailto:ariba@aribajahan.com?subject=Experience-Led%20Growth%20Inquiry",
+      "href": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
       "proofLabel": "Ally",
       "proof": "Reframed an app badging brief into an engagement strategy around customers' financial progress.",
       "menuTitle": "Experience-Led Growth",
@@ -77,7 +77,7 @@
       "description": "Starting with how people work, we identify where AI can add value and orchestrate collaboration across people and AI, with shared context, clear ownership, and practices that strengthen human capability.",
       "format": "Scoped to your team and work",
       "cta": "Discuss AI adoption",
-      "href": "mailto:ariba@aribajahan.com?subject=AI%20Adoption%20Inquiry",
+      "href": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
       "proofLabel": "Ad Council & Anomaly",
       "proof": "Built emerging-technology practices and AI workflows, working with leaders and teams as new ways of working took hold.",
       "menuTitle": "AI adoption and enablement",
@@ -109,8 +109,8 @@
   },
   "contactHeading": "Have something else in mind?",
   "contactBody": "If your project crosses a few of these areas, tell me what you're working on. We can figure out the right engagement together.",
-  "contactCta": "Get in touch",
-  "contactHref": "mailto:ariba@aribajahan.com?subject=Working%20Together",
+  "contactCta": "Book a discovery call",
+  "contactHref": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
   "hero": {
     "photoSrc": "/uploads/IMG_9539-opt.jpg",
     "headline": "Build what makes your company unmissable.",
@@ -130,8 +130,9 @@
       {
         "index": "02",
         "title": "Experience-Led Growth",
-        "cta": "Sprint inquiry →",
-        "href": "mailto:ariba@aribajahan.com?subject=Experience-Led%20Growth%20Inquiry"
+        "cta": "Book a discovery call →",
+        "href": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
+        "external": true
       },
       {
         "index": "03",
