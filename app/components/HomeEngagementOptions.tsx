@@ -33,7 +33,7 @@ export default function HomeEngagementOptions({ layout }: { layout: EngagementLa
         <div className={`grid grid-cols-3 ${layout === "shared" ? "max-[1100px]:grid-cols-1" : "max-[900px]:grid-cols-1"} gap-5 items-stretch`} data-layout={layout}>
           {content.offers.map((offer, index) => {
             const photo = photos.offers[index];
-            const title = layout === "shared" && index === 2 ? "AI adoption" : offer.title;
+            const title = layout !== "numbered" && index === 2 ? "AI adoption & Human OS" : offer.title;
             return <a key={offer.index} href={offer.href} aria-label={`${title} — ${offer.cta}`} className={`offer-lift group bg-cream text-charcoal flex flex-col focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream ${layout === "numbered" ? "border-t-4 border-charcoal" : ""}`} data-offer-card>
               {layout === "photos" && <div className="relative h-[165px] max-[900px]:h-[190px] overflow-hidden">
                 <Image src={photo.photoSrc} alt={photo.photoAlt} fill sizes="(max-width: 900px) 92vw, 400px" className={`object-cover ${index === 0 ? "object-[50%_37%]" : "object-[50%_40%]"}`} />
