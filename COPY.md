@@ -1260,14 +1260,6 @@ Additional to the 30-minute individual session included in the series.
 
 Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
 
-Want to build with the next group?
-
-If this round doesn’t fit your calendar, send me a note. I’ll keep you posted when the next cohort opens.
-
-Keep me postedThis opens a pre-drafted email directly to my inbox. Tell me a little about yourself. I’d love to get to know you.
-
-ariba@aribajahan.com
-
 Before you join
 
 Who is this for?+
@@ -1315,6 +1307,14 @@ Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribaj
 Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
+
+Want to build with the next group?
+
+If this round doesn’t fit your calendar, send me a note. I’ll keep you posted when the next cohort opens.
+
+Keep me postedThis opens a pre-drafted email directly to my inbox. Tell me a little about yourself. I’d love to get to know you.
+
+ariba@aribajahan.com
 
 Let’s build something you’re proud to put your name on.
 
