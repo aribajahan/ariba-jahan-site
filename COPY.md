@@ -1300,6 +1300,12 @@ If you miss a session, I’ll share a recording of the teaching portion and the 
 
 If the timing is your only hesitation, email me. With a small group, there may be room to adjust the schedule together.
 
+Can’t make this round?+
+
+Send me a note and I’ll keep you posted when the next cohort opens. It goes straight to my inbox. I’d love to hear what you’re hoping to build.
+
+Keep me posted
+
 How does the buddy offer work?+
 
 Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribajahan.com with both of your names and enrollment email addresses so I can confirm their paid enrollment. I’ll then send you a single-use $250 discount code. If you’ve already enrolled, I’ll refund $250 to your original payment method. The discount applies to your workshop fee; the optional VIP review remains $350.
@@ -1307,14 +1313,6 @@ Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribaj
 Will I own my website?+
 
 Yes. You own the code and content, and your domain and hosting accounts are yours. Once your new site is live and your domain is connected, you can finally cancel that Squarespace website subscription. You’ll still need a domain and hosting for your new site.
-
-Want to build with the next group?
-
-If this round doesn’t fit your calendar, send me a note. I’ll keep you posted when the next cohort opens.
-
-Keep me postedThis opens a pre-drafted email directly to my inbox. Tell me a little about yourself. I’d love to get to know you.
-
-ariba@aribajahan.com
 
 Let’s build something you’re proud to put your name on.
 
