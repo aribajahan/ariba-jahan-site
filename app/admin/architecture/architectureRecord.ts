@@ -77,8 +77,8 @@ export const PAGE_RECORDS: PageRecord[] = [
     ],
   },
   {
-    page: "Work With Me",
-    href: "/work-with-me",
+    page: "Work With Me (preview build)",
+    href: "/work-with-me-2",
     editorHref: "/admin/work-with-me",
     contentFile: "work-with-me.json",
     sections: [
@@ -86,7 +86,7 @@ export const PAGE_RECORDS: PageRecord[] = [
         section: "Trusted By",
         path: "wwmTrustedBy",
         eyebrow: { kind: "repurposed", was: "Trusted By", rendersAs: "the section heading" },
-        note: "The only label on the logo wall, so it became a heading rather than being cut.",
+        note: "The only label on the logo wall, so it became a heading rather than being cut. This is the one section in this file that also renders on the live /work-with-me, through WorkWithMeOverview.",
       },
       { section: "Problem framing", path: "problemFraming", headingKey: "heading", eyebrow: { kind: "retired", was: "What's Changed" } },
       {
@@ -109,7 +109,7 @@ export const PAGE_RECORDS: PageRecord[] = [
     ],
   },
   {
-    page: "Work With Me overview",
+    page: "Work With Me (live)",
     href: "/work-with-me",
     contentFile: "work-with-me-overview.json",
     sections: [
