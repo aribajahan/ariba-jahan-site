@@ -31,6 +31,7 @@ const MEDIA = [
 ];
 
 const SITE = [
+  { label: "Site Architecture", href: "/admin/architecture" },
   { label: "Commit Activity", href: "/admin/activity" },
   { label: "Site-wide SEO", href: "/admin/seo" },
   { label: "Domains", href: "/admin/domains" },
