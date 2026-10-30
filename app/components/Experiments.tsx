@@ -32,7 +32,7 @@ export default function Experiments() {
           className="no-scrollbar flex gap-9 overflow-x-auto [scroll-snap-type:x_mandatory] py-5 px-1 pb-8 cursor-grab active:cursor-grabbing"
         >
           {experiments.map((entry, i) => {
-            const tagBg = entry.tag === "Case Study" ? "#F5A8D5" : "#FF6D24";
+            const tagBg = entry.tag === "Case Study" ? "var(--femme-pink)" : "var(--tangerine)";
             return (
               <div
                 key={entry.headline}

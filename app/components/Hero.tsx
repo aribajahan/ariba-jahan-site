@@ -5,7 +5,7 @@ export default function Hero() {
   const { hero } = homeContent;
 
   return (
-    <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
+    <section className="relative flex flex-col justify-end overflow-hidden bg-ink min-h-[85vh] max-[700px]:min-h-[85vh]">
       <div className="absolute inset-0 z-0">
         <Image
           src={hero.photoSrc}

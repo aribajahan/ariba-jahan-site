@@ -11,9 +11,9 @@ const GAP = 24;
 const MOBILE_TRUNCATE_AT = 260;
 
 const categoryStyles: Record<string, { bg: string; text: string; sub: string; border?: string }> = {
-  LEADERSHIP: { bg: "var(--color-cream)", text: "#2D2D2D", sub: "rgba(45,45,45,0.5)", border: "2px solid #2D2D2D" },
-  SPEAKING: { bg: "#2D2D2D", text: "#FFFBF3", sub: "rgba(255,251,243,0.5)" },
-  CLIENT: { bg: "#E73131", text: "#FFFBF3", sub: "rgba(255,251,243,0.75)" },
+  LEADERSHIP: { bg: "var(--color-cream)", text: "var(--charcoal)", sub: "rgba(45,45,45,0.5)", border: "2px solid var(--charcoal)" },
+  SPEAKING: { bg: "var(--charcoal)", text: "var(--cream)", sub: "rgba(255,251,243,0.5)" },
+  CLIENT: { bg: "var(--cherish)", text: "var(--cream)", sub: "rgba(255,251,243,0.75)" },
 };
 
 const ghostOpacity: Record<string, string> = {
@@ -140,7 +140,7 @@ export default function Testimonials() {
           <span
             key={i}
             className="w-[6px] h-[6px] rounded-full transition-colors duration-150"
-            style={{ background: i === active ? "#2D2D2D" : "rgba(45,45,45,0.2)" }}
+            style={{ background: i === active ? "var(--charcoal)" : "rgba(45,45,45,0.2)" }}
           />
         ))}
       </div>

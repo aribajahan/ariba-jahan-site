@@ -257,7 +257,7 @@ export default function PressKit() {
 
       {/* Download kit for organizers */}
       <section className="pb-16 px-[clamp(24px,5vw,80px)]">
-        <div className="max-w-[1200px] mx-auto bg-[#f2efe6] p-10 max-[700px]:p-6">
+        <div className="max-w-[1200px] mx-auto bg-paper p-10 max-[700px]:p-6">
           <h2 className="font-display text-3xl font-black uppercase tracking-[-0.01em] text-charcoal mb-2">Download Kit</h2>
           <p className="text-[17px] font-bold text-cherish mb-8">For media and event organizers</p>
 

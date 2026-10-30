@@ -13,10 +13,10 @@ export default function NameMarquee() {
             i < rows.length - 1 ? "border-b border-cream/[0.15]" : ""
           }`}
         >
-          <div className="flex-shrink-0 w-[170px] max-[700px]:w-[110px] pl-[clamp(24px,5vw,80px)] max-[700px]:pl-5 text-xs max-[700px]:text-[10px] font-extrabold tracking-[0.14em] uppercase text-cream border-r border-cream/[0.15] z-[2] bg-[#B3261E] relative flex items-center">
+          <div className="flex-shrink-0 w-[170px] max-[700px]:w-[110px] pl-[clamp(24px,5vw,80px)] max-[700px]:pl-5 text-xs max-[700px]:text-[10px] font-extrabold tracking-[0.14em] uppercase text-cream border-r border-cream/[0.15] z-[2] bg-cherish-deep relative flex items-center">
             {row.label}
           </div>
-          <div className="absolute top-0 bottom-0 left-[170px] max-[700px]:left-[110px] w-14 z-[1] pointer-events-none bg-[linear-gradient(to_right,#B3261E,rgba(179,38,30,0))]" />
+          <div className="absolute top-0 bottom-0 left-[170px] max-[700px]:left-[110px] w-14 z-[1] pointer-events-none bg-[linear-gradient(to_right,var(--cherish-deep),rgba(179,38,30,0))]" />
           <div
             className="flex gap-14 items-center py-4 px-12 whitespace-nowrap [animation-play-state:running] hover:[animation-play-state:paused]"
             style={{

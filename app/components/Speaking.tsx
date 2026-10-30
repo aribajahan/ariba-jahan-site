@@ -1,5 +1,6 @@
 import Image from "next/image";
 import homeContent from "../../content/pages/home.json";
+import { BTN_PRIMARY } from "./buttonStyles";
 
 export default function Speaking() {
   const { speakingTeaser } = homeContent;
@@ -42,7 +43,7 @@ export default function Speaking() {
           ))}
           <a
             href={speakingTeaser.ctaHref}
-            className="inline-block bg-cherish text-cream px-[30px] py-[14px] max-[700px]:px-[22px] text-xs font-extrabold tracking-[0.1em] uppercase w-fit transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_12px_-6px_rgba(231,49,49,0.6)]"
+            className={BTN_PRIMARY}
           >
             {speakingTeaser.ctaLabel} →
           </a>

@@ -7,6 +7,7 @@ import { guardPage } from "../../lib/guardPage";
 import { getPageSettings } from "../../lib/pageSettings";
 import content from "../../content/pages/work-with-me-overview.json";
 import preview from "../../content/pages/work-with-me-photo-preview.json";
+import { BTN_PRIMARY } from "./buttonStyles";
 
 export default async function WorkWithMeOfferDetail({ offer, overviewPath }: { offer: string; overviewPath: string }) {
   const o = content.offers.find(o => o.id === offer);
@@ -32,7 +33,7 @@ export default async function WorkWithMeOfferDetail({ offer, overviewPath }: { o
         <h2 className="font-display uppercase text-[30px] mb-4">What you leave with</h2>
         <p className="text-[18px] mb-8">{o.outcome}</p>
         <div className="border-t border-charcoal/25 pt-7 mb-8"><p className="text-[12px] uppercase tracking-wider font-bold mb-3">{o.proofLabel}</p><p className="text-[16px]">{o.proof}</p>{o.proofQuote && <blockquote className="mt-5 text-[19px]"><p>“{o.proofQuote}”</p><footer className="mt-3 text-[13px]">{o.proofName} · {o.proofRole}</footer></blockquote>}</div>
-        <a href={o.href} className="inline-flex bg-cherish text-cream px-7 py-4 font-bold uppercase text-[14px] tracking-wider">{o.cta}</a>
+        <a href={o.href} className={BTN_PRIMARY}>{o.cta}</a>
       </div>
     </main>
     {showFooter && <Footer />}

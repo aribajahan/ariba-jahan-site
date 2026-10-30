@@ -54,7 +54,7 @@ export default function WorkWithMeOverview() {
           const dark = index === 1;
           return (
             <section key={offer.id} id={offer.id} className="scroll-mt-[115px] pt-6 mb-9 max-[700px]:pt-8">
-              <div className={`ml-[18px] px-[42px] pt-[30px] pb-7 max-[700px]:ml-3 max-[700px]:p-[26px] ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-[#eee8dc] text-charcoal"}`}>
+              <div className={`ml-[18px] px-[42px] pt-[30px] pb-7 max-[700px]:ml-3 max-[700px]:p-[26px] ${dark ? "bg-charcoal text-cream" : index === 0 ? "bg-white text-charcoal" : "bg-paper-deep text-charcoal"}`}>
                 <div className="grid grid-cols-[220px_1fr] gap-7 items-start max-[700px]:grid-cols-1 max-[700px]:gap-4">
                   <div className="relative w-[240px] h-[220px] -ml-[60px] -mt-12 shadow-[7px_7px_0_var(--color-cherish)] max-[700px]:w-[150px] max-[700px]:h-[140px] max-[700px]:-ml-[38px] max-[700px]:-mt-[46px]">
                     <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 150px, 240px" className="object-cover object-[50%_40%]" />
@@ -69,14 +69,14 @@ export default function WorkWithMeOverview() {
                 </div>
                 <div className={`mt-5 ${readingWidth}`}>
                   <h3 className={`${body} font-semibold mb-2`}>{isAdvisory ? "Possible starting points" : "What we work on"}</h3>
-                  <ul className={`list-disc pl-5 space-y-1.5 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
+                  <ul className={`list-disc pl-5 space-y-1.5 ${body} ${dark ? "marker:text-cherish-pale" : "marker:text-cherish-deep"}`}>
                     {offer.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
                   </ul>
                 </div>
                 <p className={`mt-4 ${readingWidth} ${body}`}><strong className="font-semibold">What you leave with: </strong>{offer.outcomeSummary}</p>
                 <div className="mt-5">
                   <OfferDisclosure title={offer.detailsLabel} dark={dark}>
-                    <ul className={`list-disc pl-5 space-y-3 ${body} ${dark ? "marker:text-[#ffb4ac]" : "marker:text-[#c52d27]"}`}>
+                    <ul className={`list-disc pl-5 space-y-3 ${body} ${dark ? "marker:text-cherish-pale" : "marker:text-cherish-deep"}`}>
                       {offer.topics.map(topic => <li key={topic}>{topic}</li>)}
                     </ul>
                     <p className={`mt-4 ${body}`}><strong className="font-semibold">{isAdvisory ? "Your session and next steps: " : "Outcomes and scope: "}</strong>{offer.outcome}</p>

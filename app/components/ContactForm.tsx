@@ -12,6 +12,7 @@ import {
   type ContactReason,
 } from "../data/contact";
 import forms from "../../content/collections/forms.json";
+import { BTN_PRIMARY } from "./buttonStyles";
 
 const fieldLabel = (id: string, fallback: string) =>
   forms.contactForm.fields.find((f) => f.id === id)?.label ?? fallback;
@@ -28,7 +29,7 @@ const labelClasses =
 
 const errorClasses = "text-xs text-cherish mt-[6px]";
 
-const detailBoxClasses = "bg-[#f2efe6] p-6 flex flex-col gap-5";
+const detailBoxClasses = "bg-paper p-6 flex flex-col gap-5";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -256,7 +257,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="self-start bg-cherish text-cream px-[34px] py-4 text-[15px] font-extrabold tracking-[0.08em] uppercase transition-transform duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                  className={`self-start ${BTN_PRIMARY}`}
                 >
                   {submitting ? "Sending…" : "Send Message →"}
                 </button>

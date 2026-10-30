@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { engagementFormats, galleryPhotos, speakingLogos } from "../data/speaking";
 import speakingContent from "../../content/pages/speaking.json";
+import { BTN_PRIMARY } from "./buttonStyles";
 
 const INITIAL_LOGO_COUNT = 12; // 3 rows at 4-per-row on mobile/tablet
 
@@ -131,7 +132,7 @@ export default function SpeakingEngagements() {
         <div className="flex justify-center">
           <a
             href={speakingContent.hero.ctaHref}
-            className="inline-block bg-cherish text-cream px-[30px] py-4 max-[700px]:px-[22px] max-[700px]:py-[14px] text-xs font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] active:-translate-y-[2px] active:shadow-[0_6px_10px_-6px_rgba(231,49,49,0.6)]"
+            className={BTN_PRIMARY}
           >
             {speakingContent.hero.ctaLabel} →
           </a>

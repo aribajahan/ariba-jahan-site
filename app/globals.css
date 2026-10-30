@@ -10,6 +10,19 @@
   --highlighter: #F3FF00;
   --outerspace: #0F0FF4;
 
+  /* Shades of the palette, named so they stop being retyped by hand.
+     --cherish-deep  a darker red for marks that sit ON cherish, where the
+                     main red would disappear into its own ground
+     --cherish-pale  the same mark on a dark ground
+     --ink           the near-black behind the hero photographs
+     --paper         a cream panel one step deeper than the page
+     --paper-deep    the same panel against a cream card */
+  --cherish-deep: #B3261E;
+  --cherish-pale: #FFB4AC;
+  --ink: #1C1212;
+  --paper: #F2EFE6;
+  --paper-deep: #EEE8DC;
+
   /* Marks pattern — rough/hand-cut edges (self-contained data-URI SVG masks).
      Exact values locked in the mark-lab canvas.
      --rough: highlighter edge (displacement scale 9).
@@ -33,8 +46,14 @@
   --color-tangerine: var(--tangerine);
   --color-highlighter: var(--highlighter);
   --color-outerspace: var(--outerspace);
+  --color-cherish-deep: var(--cherish-deep);
+  --color-cherish-pale: var(--cherish-pale);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
   --font-display: var(--font-big-shoulders), sans-serif;
   --font-body: var(--font-barlow), sans-serif;
+  --font-typewriter: ReadingRoomTypewriter, "Courier New", monospace;
 
   /* Body type. Three sizes, one per job — before this the same running prose
      appeared at 15, 16, 17 and 18px across the site with five different line
@@ -57,6 +76,16 @@
   --text-body-sm--line-height: 1.45;
   --text-card-sm: 14px;
   --text-card-sm--line-height: 1.45;
+}
+
+/* The Reading Room card's typewriter face. Lives here next to the
+   --font-typewriter token rather than in the component's CSS module, so the
+   face and the name that reaches it are in one place. */
+@font-face {
+  font-family: ReadingRoomTypewriter;
+  src: url("/assets/fonts/reading-room-special-elite.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
 }
 
 * {

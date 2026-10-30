@@ -273,7 +273,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
             <span
               key={i}
               className="h-[2px] transition-[width] duration-200"
-              style={{ width: i === active ? 24 : 10, background: i === active ? "#2D2D2D" : "rgba(45,45,45,0.2)" }}
+              style={{ width: i === active ? 24 : 10, background: i === active ? "var(--charcoal)" : "rgba(45,45,45,0.2)" }}
             />
           ))}
         </div>

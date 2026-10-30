@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { BTN_PRIMARY } from "./buttonStyles";
 
 export default function PageGate({ pageKey }: { pageKey: string }) {
   const router = useRouter();
@@ -48,7 +49,7 @@ export default function PageGate({ pageKey }: { pageKey: string }) {
         <button
           type="submit"
           disabled={submitting}
-          className="bg-cherish text-cream px-7 py-3 text-[14px] font-extrabold tracking-[0.08em] uppercase disabled:opacity-60"
+          className={BTN_PRIMARY}
         >
           {submitting ? "Checking…" : "Enter"}
         </button>
