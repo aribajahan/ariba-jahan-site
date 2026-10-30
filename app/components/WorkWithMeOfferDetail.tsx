@@ -20,8 +20,8 @@ export default async function WorkWithMeOfferDetail({ offer, overviewPath }: { o
     <Nav />
     <main className="max-w-[950px] mx-auto px-6 pt-32 pb-20">
       <a href={`${overviewPath}#${o.id}`} className="text-[14px] underline underline-offset-4">← All ways to work together</a>
-      <p className="text-cherish uppercase text-[11px] tracking-[0.16em] font-extrabold mt-9 mb-3">{o.audience}</p>
-      <h1 className="font-display uppercase text-[clamp(40px,5vw,64px)] leading-none mb-5">{o.title}</h1>
+      <h1 className="font-display uppercase text-[clamp(40px,5vw,64px)] leading-none mt-9 mb-3">{o.title}</h1>
+      <p className="text-[17px] font-bold text-cherish mb-2">{o.audience}</p>
       <p className="text-[14px] mb-7">{o.format}</p>
       <div className="relative h-[360px] max-[700px]:h-[260px] mb-10"><Image src={p.photoSrc} alt={p.photoAlt} fill priority sizes="900px" className="object-cover" /></div>
       <div className="max-w-[700px] mx-auto">

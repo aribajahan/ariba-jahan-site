@@ -17,7 +17,6 @@ export default function ArticlesIndex() {
     <div className="bg-cream font-body text-lg leading-[1.6]">
       <Nav />
       <section className="px-[clamp(24px,5vw,80px)] pt-[150px] pb-20 max-w-[900px] mx-auto">
-        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">Writing</div>
         <h1 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-12">
           Articles
         </h1>

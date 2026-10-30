@@ -40,9 +40,11 @@ export default function WwmTestimonials() {
   return (
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-8 border-t border-charcoal/[0.08] overflow-hidden">
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
-        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          {wwmContent.testimonialsSection.eyebrow}
-        </div>
+        {wwmContent.testimonialsSection.eyebrow && (
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+            {wwmContent.testimonialsSection.eyebrow}
+          </div>
+        )}
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] mb-9">
           {wwmContent.testimonialsSection.heading}
         </h2>

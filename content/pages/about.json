@@ -2,17 +2,17 @@
   "hero": {
     "photoSrc": "/assets/about-hero-photo.png",
     "photoSrcMobile": "/assets/about-hero-photo-mobile-v4.jpg",
-    "eyebrow": "About",
+    "eyebrow": "",
     "headline": "I think it's worth holding on to hope, pluralism, and a relentless creativity to build good in this world."
   },
   "intro": {
-    "paragraph": "My career hasn’t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and the questions that matter most to me."
+    "paragraph": "My career hasn\u2019t followed a straight line, but the through-line has always been the same: curiosity, systems thinking, and a desire to build things that are genuinely useful to people. These are some of the chapters that shaped how I think, what I build, and the questions that matter most to me."
   },
   "storyTimeline": {
-    "eyebrow": "My Story",
+    "eyebrow": "",
     "heading": "CHAPTERS THAT SHAPED HOW I THINK, BUILD, AND QUESTION.",
     "rightNowLabel": "Right Now",
-    "rightNowCopy": "Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI in my own work, from this site and its Brand Book to ARIBA OS, the system I use for research, decision support, recurring workflows, and rapid prototyping. Through Unmissables, I write about what I’m seeing in that work: how AI changes behavior, judgment, and the ways people make decisions.\n\nAway from work, I’m happiest as a mom to my son and a partner to my husband. Lately I’ve been building things that highlight women in AI, and making art with my son. We’ve made two full-size collages from the art he’s created over the last three years; one hangs in my office."
+    "rightNowCopy": "Right now, most of my work is AI strategy and adoption: helping companies figure out what AI actually means for how they operate, what they build, and how they grow. That runs through advisory work, Experience-Led Growth sprints, and the writing and speaking I do, including Unmissables, my Substack and podcast. I build with AI in my own work, from this site and its Brand Book to ARIBA OS, the system I use for research, decision support, recurring workflows, and rapid prototyping. Through Unmissables, I write about what I\u2019m seeing in that work: how AI changes behavior, judgment, and the ways people make decisions.\n\nAway from work, I\u2019m happiest as a mom to my son and a partner to my husband. Lately I\u2019ve been building things that highlight women in AI, and making art with my son. We\u2019ve made two full-size collages from the art he\u2019s created over the last three years; one hangs in my office."
   },
   "bio": {
     "eyebrow": "Bio",
@@ -25,7 +25,7 @@
     ]
   },
   "unmissablesNudge": {
-    "text": "Monthly writing on AI, behavior, culture, and what we can’t afford to miss.",
+    "text": "Monthly writing on AI, behavior, culture, and what we can\u2019t afford to miss.",
     "ctaLabel": "Subscribe to Unmissables",
     "href": "https://www.unmissables.xyz/"
   },
@@ -34,12 +34,12 @@
     "headline": "Career Advisory 1:1",
     "lead": "For people building a multidimensional career across design, strategy, and technology.",
     "body": "A focused session to work through big career pivots, public voice-building priorities, or strategies for getting buy-in for your vision and ideas.",
-    "cta": "Book a Session →",
+    "cta": "Book a Session \u2192",
     "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
     "photoSrc": "/assets/personal-red-wall-sm.jpg"
   },
   "recognitionFeatures": {
-    "eyebrow": "Recognition & Features",
+    "eyebrow": "",
     "heading": "Honors and Press",
     "recognitionItems": [
       {
@@ -114,26 +114,26 @@
       {
         "index": "01",
         "title": "Speaking",
-        "cta": "Speaker inquiry →",
+        "cta": "Speaker inquiry \u2192",
         "href": "/contact"
       },
       {
         "index": "02",
         "title": "Work With Me",
-        "cta": "Sprints & strategy sessions →",
+        "cta": "Sprints & strategy sessions \u2192",
         "href": "/work-with-me"
       },
       {
         "index": "03",
         "title": "Unmissables",
-        "cta": "Read & subscribe →",
+        "cta": "Read & subscribe \u2192",
         "href": "https://www.unmissables.xyz/",
         "external": true
       },
       {
         "index": "04",
         "title": "Everything Else",
-        "cta": "Get in touch →",
+        "cta": "Get in touch \u2192",
         "href": "/contact"
       }
     ]

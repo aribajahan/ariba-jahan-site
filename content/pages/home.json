@@ -101,12 +101,12 @@
   "positioning": {
     "paragraphs": [
       "I work where a shift in technology, customer behavior, or the market creates a question an organization needs to answer: what does this mean for the people we serve, what should we build or change, and how do we make it work in practice? The answer is rarely only about the product. It depends on what leadership has prioritized, how the organization actually operates, and what its people already know how to do.",
-      "Over the past fifteen years, I’ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.",
-      "I build AI-enabled products, experiences, and systems, and work with organizations to develop their own capabilities. That includes connecting tools and information, building workflows, and orchestrating work across people and AI. I’m especially interested in where AI can extend an organization’s expertise and creativity, and the choices that requires about human judgment, ownership, working rhythms, and incentives."
+      "Over the past fifteen years, I\u2019ve built products, customer experiences, new service offerings, go-to-market strategies, teams, and innovation practices across startups, nonprofits, and agencies, and in partnership with Fortune 500 companies.",
+      "I build AI-enabled products, experiences, and systems, and work with organizations to develop their own capabilities. That includes connecting tools and information, building workflows, and orchestrating work across people and AI. I\u2019m especially interested in where AI can extend an organization\u2019s expertise and creativity, and the choices that requires about human judgment, ownership, working rhythms, and incentives."
     ]
   },
   "workWithMeTeaser": {
-    "eyebrow": "Engagements",
+    "eyebrow": "",
     "heading": "Let's Work Together",
     "body": "Work with me one-on-one to build your AI fluency, bring me into a product or customer-experience challenge, or develop the capabilities your team needs to put AI to work.",
     "offers": [
@@ -130,7 +130,7 @@
         "index": "03",
         "title": "AI adoption & orchestration",
         "lead": "Build the capabilities to match your AI ambitions.",
-        "body": "Together, we shape your organization’s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team’s expertise, creativity, and judgment.",
+        "body": "Together, we shape your organization\u2019s human OS through work design: shared context, clear ownership, working rhythms, and incentives. We test how people and AI work together to strengthen your team\u2019s expertise, creativity, and judgment.",
         "cta": "Put AI to work across your team",
         "href": "/work-with-me#ai-adoption"
       }
@@ -169,7 +169,7 @@
     ]
   },
   "unmissables": {
-    "eyebrow": "Writing and Thinking",
+    "eyebrow": "",
     "heading": "Unmissables",
     "intro": "Unmissables explores unexpected connections between technology, business, creativity, science, and human behavior, and the ideas those intersections reveal about how we think, build, and create value. Each essay and conversation centers something worth noticing, questioning, or bringing into your own work."
   },
@@ -209,10 +209,10 @@
     ]
   },
   "speakingTeaser": {
-    "eyebrow": "Speaking & Writing",
+    "eyebrow": "",
     "heading": "People + Technology",
     "paragraphs": [
-      "I’m interested in the changing relationship between people and technology, and what that means for society and the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI’ve delivered 215+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
+      "I\u2019m interested in the changing relationship between people and technology, and what that means for society and the things we build. My writing and speaking explore how AI reshapes products, experiences, behavior, expectations, and the way we work, think, and make decisions.\nI explore these shifts from both sides: what new forms of utility, experience, and value become possible, and what needs to be deliberately preserved as technology takes on more of what people once did themselves.\nI\u2019ve delivered 215+ talks, panels, and workshops at organizations such as the United Nations General Assembly, Google, TikTok, Etsy, Paramount, Vox Media, Interaction Design Conference, Marketing Brew Summit, and Leading Design London."
     ],
     "ctaLabel": "Bring Me to Your Event",
     "ctaHref": "/speaking",
@@ -225,11 +225,11 @@
     ]
   },
   "experiments": {
-    "eyebrow": "Select Work",
+    "eyebrow": "",
     "heading": "Projects & Quests"
   },
   "recognition": {
-    "eyebrow": "Credentials",
+    "eyebrow": "",
     "heading": "Recognition",
     "photoSrc": "/uploads/603A5509-opt.jpg",
     "items": [
@@ -243,7 +243,7 @@
     "ctaHref": "/about"
   },
   "press": {
-    "eyebrow": "In The Press",
+    "eyebrow": "",
     "heading": "Press & Bylines",
     "items": [
       {
@@ -312,7 +312,7 @@
     ]
   },
   "testimonialsSection": {
-    "eyebrow": "Client Voices",
+    "eyebrow": "",
     "heading": "What People Say"
   },
   "community": {
@@ -513,44 +513,44 @@
       {
         "index": "01",
         "title": "Executive AI advisory",
-        "cta": "Book a session →",
+        "cta": "Book a session \u2192",
         "href": "https://calendar.app.google/oL2ztoBae7DJEQfp9",
         "external": true
       },
       {
         "index": "02",
         "title": "Project discovery",
-        "cta": "Book a discovery call →",
+        "cta": "Book a discovery call \u2192",
         "href": "https://calendar.app.google/P7maYQVmQUpvwCcY8",
         "external": true
       },
       {
         "index": "03",
         "title": "Speaking & press",
-        "cta": "Make an inquiry →",
+        "cta": "Make an inquiry \u2192",
         "href": "/contact"
       },
       {
         "index": "04",
         "title": "Everything Else",
-        "cta": "Get in touch →",
+        "cta": "Get in touch \u2192",
         "href": "/contact"
       }
     ]
   },
   "readingRoom": {
     "enabled": true,
-    "eyebrow": "A facilitated reading & discussion series about AI",
+    "eyebrow": "",
     "heading": "The Reading Room",
-    "description": "An after-work club for strategists, builders, designers and operators committed to thinking for themselves.",
+    "description": "A facilitated reading and discussion series about AI, for strategists, builders, designers and operators committed to thinking for themselves.",
     "body": "Curated pre-reading, a briefing from me, and a live conversation to work through the questions together.",
     "host": "Hosted by Ariba Jahan",
-    "sessionLabel": "COG 001 · Next live session",
+    "sessionLabel": "COG 001 \u00b7 Next live session",
     "cardLabel": "Reading Room",
     "sessionTitle": "What is expertise when AI does more of the work?",
     "sessionSubtitle": "Judgment, taste, and how we develop them when AI does more of the producing.",
-    "dateLabel": "November 18 · 5–6:30 PM ET",
-    "formatLabel": "90 minutes · Virtual · $50",
+    "dateLabel": "November 18 \u00b7 5\u20136:30 PM ET",
+    "formatLabel": "90 minutes \u00b7 Virtual \u00b7 $50",
     "startsAt": "2026-11-18T17:00:00-05:00",
     "endsAt": "2026-11-18T18:30:00-05:00",
     "ctaLabel": "Meet us in the Reading Room",

@@ -8,9 +8,11 @@ export default function Press() {
   return (
     <section className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-16 max-[700px]:pb-14 border-t border-charcoal/[0.08]">
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
-        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          {press.eyebrow}
-        </div>
+        {press.eyebrow && (
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+            {press.eyebrow}
+          </div>
+        )}
         <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-9">
           {press.heading}
         </div>

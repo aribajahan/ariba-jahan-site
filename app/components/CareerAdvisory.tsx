@@ -5,12 +5,14 @@ export default function CareerAdvisory() {
   return (
     <section id="career-advisory" className="bg-cherish flex flex-wrap items-stretch">
       <div className="reveal flex-[1_1_440px] max-[1024px]:flex-[1_1_360px] min-w-[320px] px-[clamp(24px,5vw,80px)] py-[120px] max-[700px]:py-20 max-[1024px]:py-24 flex flex-col justify-center">
-        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-5">
-          {careerAdvisory.eyebrow}
-        </div>
-        <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-6">
+        <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-3">
           {careerAdvisory.headline}
         </h2>
+        {careerAdvisory.eyebrow && (
+          <p className="text-[17px] font-bold text-charcoal mb-6">
+            {careerAdvisory.eyebrow}
+          </p>
+        )}
         <p className="text-[17px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-5">
           <b className="text-cream">{careerAdvisory.lead}</b>
         </p>

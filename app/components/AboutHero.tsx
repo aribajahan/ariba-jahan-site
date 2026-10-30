@@ -16,9 +16,11 @@ export default function AboutHero() {
           className="absolute inset-0 object-[center_top] max-[1024px]:object-[65%_top]"
         />
         <div className="relative z-[2] max-w-[1300px] mx-auto h-full px-[clamp(24px,5vw,80px)] pt-[170px] pb-20 flex flex-col justify-center pointer-events-none">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
-            {aboutHero.eyebrow}
-          </div>
+          {aboutHero.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
+              {aboutHero.eyebrow}
+            </div>
+          )}
           <div className="font-display text-[clamp(38px,4vw,58px)] font-black text-charcoal leading-[0.98] tracking-[-0.02em] max-w-[520px]">
             {aboutHero.headline}
           </div>
@@ -43,9 +45,11 @@ export default function AboutHero() {
           className="absolute inset-0"
         />
         <div className="relative z-[2] px-6">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[12px]">
-            {aboutHero.eyebrow}
-          </div>
+          {aboutHero.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[12px]">
+              {aboutHero.eyebrow}
+            </div>
+          )}
           <div className="font-display text-[26px] font-black text-charcoal leading-[1.05] tracking-[-0.02em] max-w-[220px]">
             {aboutHero.headline}
           </div>

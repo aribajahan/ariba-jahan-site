@@ -27,9 +27,11 @@ export default function SpeakingTestimonials() {
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-9">
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              {speakingContent.testimonialsSection.eyebrow}
-            </div>
+            {speakingContent.testimonialsSection.eyebrow && (
+              <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+                {speakingContent.testimonialsSection.eyebrow}
+              </div>
+            )}
             <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal">
               {speakingContent.testimonialsSection.heading}
             </h2>

@@ -26,7 +26,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
     <div className="bg-cherish py-16 max-[700px]:py-12 px-[clamp(24px,5vw,80px)]">
       <div className="max-w-[1260px] mx-auto">
         <header className="mb-9"><div>
-          <p className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/80 mb-4">{content.eyebrow}</p>
+          {content.eyebrow && <p className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/80 mb-4">{content.eyebrow}</p>}
           <h2 className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase leading-none text-cream">{content.heading}</h2>
           <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-cream max-w-[790px] mt-5">{content.body}</p>
         </div>

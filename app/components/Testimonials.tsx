@@ -43,9 +43,11 @@ export default function Testimonials() {
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-4">
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              {homeContent.testimonialsSection.eyebrow}
-            </div>
+            {homeContent.testimonialsSection.eyebrow && (
+              <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+                {homeContent.testimonialsSection.eyebrow}
+              </div>
+            )}
             <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em]">
               {homeContent.testimonialsSection.heading}
             </div>

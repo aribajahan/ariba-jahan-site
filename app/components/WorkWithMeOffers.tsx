@@ -33,12 +33,14 @@ export default function WorkWithMeOffers() {
         className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9 px-[clamp(24px,5vw,80px)]"
       >
         <div className="reveal max-w-[1400px] mx-auto">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-charcoal mb-3">
-            {cxSprintContent.eyebrow}
-          </div>
-          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
+          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-3">
             {cxSprintContent.heading}
           </h2>
+          {cxSprintContent.eyebrow && (
+            <p className="text-[17px] font-bold text-charcoal mb-9">
+              {cxSprintContent.eyebrow}
+            </p>
+          )}
 
           <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
@@ -169,12 +171,14 @@ export default function WorkWithMeOffers() {
         className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
       >
         <div className="max-w-[1400px] mx-auto">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
-            {strategySessionsContent.eyebrow}
-          </div>
-          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-9">
+          <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-3">
             {strategySessionsContent.heading}
           </h2>
+          {strategySessionsContent.eyebrow && (
+            <p className="text-[17px] font-bold text-cherish mb-9">
+              {strategySessionsContent.eyebrow}
+            </p>
+          )}
 
           <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">

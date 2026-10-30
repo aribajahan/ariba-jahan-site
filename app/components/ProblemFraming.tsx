@@ -28,9 +28,11 @@ export default function ProblemFraming() {
   return (
     <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
       <div className="reveal max-w-[1400px] mx-auto">
-        <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
-          {problemFraming.eyebrow}
-        </div>
+        {problemFraming.eyebrow && (
+          <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
+            {problemFraming.eyebrow}
+          </div>
+        )}
         <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-6 max-[700px]:whitespace-normal whitespace-nowrap">
           {problemFraming.heading}
         </h2>

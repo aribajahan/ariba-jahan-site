@@ -18,7 +18,7 @@
     "eyebrow": "Trusted By"
   },
   "problemFraming": {
-    "eyebrow": "What's Changed",
+    "eyebrow": "",
     "heading": "From Share Of Attention To Share Of Life",
     "intro": "Whether you're asking a customer to make room for a product in their life or a team to make room for a new technology in their work, adoption is never just a launch. It runs on trust, on changed behavior, and on a value exchange that feels fair both ways. AI keeps moving what people expect, and those expectations are outrunning what most organizations offer. Closing that distance comes down to two things.",
     "points": [
@@ -38,12 +38,12 @@
           {
             "photoSrc": "/uploads/problem-1-opt.jpg",
             "title": "Trust Is Distributed",
-            "description": "People don’t make decisions based on brand messaging alone. They’re checking Reddit, group chats, reviews, creators, and LLMs that don’t always agree with each other. You have less control over how people form opinions and decide what’s worth choosing."
+            "description": "People don\u2019t make decisions based on brand messaging alone. They\u2019re checking Reddit, group chats, reviews, creators, and LLMs that don\u2019t always agree with each other. You have less control over how people form opinions and decide what\u2019s worth choosing."
           },
           {
             "photoSrc": "/uploads/problem-2-opt.jpg",
             "title": "Attention Isn't Relationship",
-            "description": "Reach can get you seen, but it doesn’t guarantee relevance over time. Experience-Led Growth is about providing enough value that people return because they want to."
+            "description": "Reach can get you seen, but it doesn\u2019t guarantee relevance over time. Experience-Led Growth is about providing enough value that people return because they want to."
           },
           {
             "photoSrc": "/uploads/problem-3-opt.jpg",
@@ -53,7 +53,7 @@
           {
             "photoSrc": "/uploads/problem-4-opt.jpg",
             "title": "Utility Has To Justify The Ask",
-            "description": "People are more aware of what they’re giving up now: their data, time, attention, and trust. If you’re asking for any of those things, the value in return has to be obvious in the experience itself."
+            "description": "People are more aware of what they\u2019re giving up now: their data, time, attention, and trust. If you\u2019re asking for any of those things, the value in return has to be obvious in the experience itself."
           }
         ]
       },
@@ -88,7 +88,7 @@
     "heading": "Two Ways To Work Together"
   },
   "cxSprint": {
-    "eyebrow": "01 · For Teams & Organizations",
+    "eyebrow": "01 \u00b7 For Teams & Organizations",
     "heading": "Ambition Sprint",
     "photoSrc": "/uploads/vox1-copy-opt.jpg",
     "intro": "Turn a market, customer, or technology shift into a defined opportunity your team can act on.",
@@ -145,11 +145,11 @@
         "description": "Experience-led growth strategy & prioritized roadmap readout."
       }
     ],
-    "ctaLabel": "Book an intro call →",
+    "ctaLabel": "Book an intro call \u2192",
     "ctaHref": "mailto:ariba@aribajahan.com?subject=Ambition%20Sprint%20Inquiry"
   },
   "strategySessions": {
-    "eyebrow": "02 · For Individual Leaders",
+    "eyebrow": "02 \u00b7 For Individual Leaders",
     "heading": "1:1 Strategy Sessions",
     "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
     "intro": "A focused session for leaders working through a product, customer experience, growth, or AI-related decision.",
@@ -166,15 +166,15 @@
       "Sharpening your point of view before making a move"
     ],
     "whatYouGet": "A 60-minute live working session and a concise recommendation memo with key observations, priorities, and next steps.",
-    "ctaLabel": "Book a Session →",
+    "ctaLabel": "Book a Session \u2192",
     "ctaHref": "https://calendar.app.google/JYrzGFdfazcSf1S48"
   },
   "testimonialsSection": {
-    "eyebrow": "Client Voices",
+    "eyebrow": "",
     "heading": "What Clients Say"
   },
   "caseStudiesSection": {
-    "eyebrow": "Some Of My Work",
+    "eyebrow": "",
     "heading": "Case Studies",
     "intro": "A few examples of what this looks like in practice, from rethinking customer value to shaping products, experiences, and AI-enabled services."
   },
@@ -185,26 +185,26 @@
       {
         "index": "01",
         "title": "Speaking",
-        "cta": "Speaker inquiry →",
+        "cta": "Speaker inquiry \u2192",
         "href": "/contact"
       },
       {
         "index": "02",
         "title": "Ambition Sprint",
-        "cta": "Sprint inquiry →",
+        "cta": "Sprint inquiry \u2192",
         "href": "mailto:ariba@aribajahan.com?subject=Ambition%20Sprint%20Inquiry"
       },
       {
         "index": "03",
         "title": "1:1 Strategy Session",
-        "cta": "Session Booking →",
+        "cta": "Session Booking \u2192",
         "href": "https://calendar.app.google/JYrzGFdfazcSf1S48",
         "external": true
       },
       {
         "index": "04",
         "title": "Everything Else",
-        "cta": "Get in touch →",
+        "cta": "Get in touch \u2192",
         "href": "/contact",
         "sub": "Press, career advisory, quotes, and everything else."
       }

@@ -18,9 +18,11 @@ export default function Experiments() {
   return (
     <section id="experiments" className="bg-cream border-t border-charcoal/[0.08]">
       <div className="reveal max-w-[1400px] mx-auto pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] px-[clamp(24px,5vw,80px)] pb-20 max-[1024px]:pb-16 max-[700px]:pb-14">
-        <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-          {homeContent.experiments.eyebrow}
-        </div>
+        {homeContent.experiments.eyebrow && (
+          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+            {homeContent.experiments.eyebrow}
+          </div>
+        )}
         <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-charcoal mb-8">
           {homeContent.experiments.heading}
         </div>

@@ -73,9 +73,11 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
       {filterable && workFilters.filter(f => f.id !== "all").map(f => <span key={f.id} id={f.hash} aria-hidden="true" className="absolute top-0 scroll-mt-16" />)}
       <div className="max-w-[1600px] mx-auto">
         <div className="mb-14">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-            {wwmContent.caseStudiesSection.eyebrow}
-          </div>
+          {wwmContent.caseStudiesSection.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+              {wwmContent.caseStudiesSection.eyebrow}
+            </div>
+          )}
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal mb-[14px]">
             {wwmContent.caseStudiesSection.heading}
           </h2>

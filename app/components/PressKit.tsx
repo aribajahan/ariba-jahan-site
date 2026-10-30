@@ -71,7 +71,7 @@ const LONG_BIO = [bioIntro[1], bioExpanded[0], bioExpanded[1], bioExpanded[3]];
 function LogoRow({ label, logos }: { label: string; logos: { src: string; alt: string; heightPx: number }[] }) {
   return (
     <div>
-      <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/40 mb-6">{label}</div>
+      <h2 className="font-display text-base font-black uppercase text-cream/50 mb-6">{label}</h2>
       <div className="flex flex-wrap items-center gap-x-10 gap-y-5">
         {logos.map((logo, i) => (
           <Image
@@ -99,7 +99,6 @@ export default function PressKit() {
       <section className="bg-charcoal pt-[150px] pb-16 max-[700px]:pt-[110px] max-[700px]:pb-12 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[701px]:grid-cols-[1.2fr_0.8fr] gap-[60px] items-end">
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">Press Kit</div>
             <h1 className="font-display text-[clamp(40px,5.5vw,72px)] font-black uppercase tracking-[-0.01em] leading-[0.92] text-cream mb-6">
               Ariba Jahan
             </h1>
@@ -142,7 +141,7 @@ export default function PressKit() {
       {/* About */}
       <section className="pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[720px] mx-auto relative">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">About</div>
+          <h2 className="font-display text-2xl font-black uppercase text-charcoal mb-4">About</h2>
           <p className="text-[15px] text-charcoal/55 mb-8 max-w-[520px]">
             Headshot, bio, speaking topics, and current work for media, event organizers, and collaborators.
           </p>
@@ -182,7 +181,7 @@ export default function PressKit() {
       <section className="pb-16 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[701px]:grid-cols-2 gap-16">
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-6">Speaking Topics</div>
+            <h2 className="font-display text-2xl font-black uppercase text-charcoal mb-5">Speaking Topics</h2>
             <div className="flex flex-col">
               {speakingTopics.map((t, i) => (
                 <div
@@ -196,7 +195,7 @@ export default function PressKit() {
             </div>
           </div>
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-6">Recognition</div>
+            <h2 className="font-display text-2xl font-black uppercase text-charcoal mb-5">Recognition</h2>
             <div className="flex flex-col">
               {recognitionItems.map((item, i) => (
                 <div
@@ -215,7 +214,7 @@ export default function PressKit() {
       {/* Currently */}
       <section className="bg-charcoal pt-16 pb-16 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-8">Currently</div>
+          <h2 className="font-display text-2xl font-black uppercase text-cream mb-7">Currently</h2>
           <div className="grid gap-6 min-[701px]:grid-cols-3">
             {currentlyItems.map((item) => (
               <div key={item.title} className="bg-cream p-8 border-t-[3px] border-cherish flex flex-col">
@@ -259,8 +258,8 @@ export default function PressKit() {
       {/* Download kit for organizers */}
       <section className="pb-16 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto bg-[#f2efe6] p-10 max-[700px]:p-6">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-2">For Media &amp; Event Organizers</div>
-          <h2 className="font-display text-3xl font-black uppercase tracking-[-0.01em] text-charcoal mb-8">Download Kit</h2>
+          <h2 className="font-display text-3xl font-black uppercase tracking-[-0.01em] text-charcoal mb-2">Download Kit</h2>
+          <p className="text-[17px] font-bold text-cherish mb-8">For media and event organizers</p>
 
           <div className="grid grid-cols-1 min-[701px]:grid-cols-[auto_1fr] gap-12">
             <div className="flex gap-5 flex-wrap">
@@ -298,11 +297,11 @@ export default function PressKit() {
             >
               Book Me
             </span>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/60">For Bookings &amp; Inquiries</div>
           </div>
           <a href="mailto:ariba@aribajahan.com" className="font-display text-3xl font-black text-cream">
             ariba@aribajahan.com
           </a>
+          <p className="text-[17px] font-bold text-cream/60 mt-2">For bookings and inquiries</p>
         </div>
       </section>
     </div>

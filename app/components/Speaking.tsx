@@ -9,9 +9,11 @@ export default function Speaking() {
     <section id="speaker" className="bg-cream overflow-hidden">
       <div className="reveal flex flex-wrap min-h-[640px] max-w-[1400px] mx-auto">
         <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-[120px] pb-[72px] max-[1024px]:pt-24 max-[1024px]:pb-11 max-[700px]:pt-[70px] flex flex-col justify-start">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
-            {speakingTeaser.eyebrow}
-          </div>
+          {speakingTeaser.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
+              {speakingTeaser.eyebrow}
+            </div>
+          )}
           <div className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase text-charcoal leading-[0.88] tracking-[-0.02em]">
             {speakingTeaser.heading}
           </div>

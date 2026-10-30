@@ -8,9 +8,11 @@ export default function Recognition() {
     <section className="bg-cream overflow-hidden relative z-10">
       <div className="reveal flex flex-wrap min-h-[520px]">
         <div className="hidden max-[1024px]:block w-full px-[clamp(24px,5vw,80px)] pt-24 max-[700px]:pt-[70px] pb-6 bg-charcoal">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-            {recognition.eyebrow}
-          </div>
+          {recognition.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+              {recognition.eyebrow}
+            </div>
+          )}
           <div className="font-display text-[32px] font-black uppercase tracking-[-0.01em] text-cream">
             {recognition.heading}
           </div>
@@ -25,9 +27,11 @@ export default function Recognition() {
           />
         </div>
         <div className="flex-[1_1_480px] px-[clamp(24px,5vw,80px)] pt-[120px] pb-[72px] max-[1024px]:pt-8 max-[1024px]:pb-11 flex flex-col justify-center bg-charcoal">
-          <div className="max-[1024px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-            {recognition.eyebrow}
-          </div>
+          {recognition.eyebrow && (
+            <div className="max-[1024px]:hidden text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+              {recognition.eyebrow}
+            </div>
+          )}
           <div className="max-[1024px]:hidden font-display text-[48px] font-black uppercase tracking-[-0.01em] mb-9 text-cream">
             {recognition.heading}
           </div>

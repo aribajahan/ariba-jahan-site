@@ -72,9 +72,6 @@ export default function ContactForm() {
     <section className="min-h-screen flex items-center px-[clamp(24px,5vw,80px)] pt-[150px] pb-20">
       <div className="max-w-[1200px] mx-auto w-full grid grid-cols-1 min-[701px]:grid-cols-[1.3fr_0.9fr] gap-[72px] items-start">
         <div className="max-w-[640px]">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-            Get In Touch
-          </div>
           <h1 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-5">
             Let&apos;s Talk
           </h1>

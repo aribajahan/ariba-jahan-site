@@ -1,40 +1,40 @@
 {
   "hero": {
-    "eyebrow": "Speaking",
+    "eyebrow": "",
     "photoSrc": "/uploads/speaking-hero-ldl-2025.jpg",
-    "headline": "The future isn't inevitable. It reflects what we question, what we build, what we choose to protect, and what we’re willing to take responsibility for.",
+    "headline": "The future isn't inevitable. It reflects what we question, what we build, what we choose to protect, and what we\u2019re willing to take responsibility for.",
     "ctaLabel": "Bring Me to Your Event",
     "ctaHref": "#close"
   },
   "themes": {
-    "eyebrow": "Current Speaking Themes",
+    "eyebrow": "",
     "heading": "What I Speak About",
     "lead": "What happens when technology changes not only what we can build, but how people think, behave, work, and decide?",
-    "body": "My speaking focuses on the relationship between technology, human behavior, and the things we build. I'm interested in how AI and other shifts in technology reshape customer expectations, experiences, judgment, and the way people move through the world — and what that means for the products, services, and organizations being created in response. For more than fifteen years, I've spoken at companies, universities, and conferences, bringing together research, practical experience, and emerging ideas to help people make sense of a rapidly changing world.",
+    "body": "My speaking focuses on the relationship between technology, human behavior, and the things we build. I'm interested in how AI and other shifts in technology reshape customer expectations, experiences, judgment, and the way people move through the world \u2014 and what that means for the products, services, and organizations being created in response. For more than fifteen years, I've spoken at companies, universities, and conferences, bringing together research, practical experience, and emerging ideas to help people make sense of a rapidly changing world.",
     "items": [
       {
         "photoSrc": "/assets/theme-bg-1-nebula-xs.jpg",
         "title": "Cognitive Endurance",
         "question": "How do we preserve human judgment in the age of AI?",
-        "description": "As AI becomes more capable of generating ideas, summarizing information, and making recommendations, the role of human thinking doesn’t disappear, but it does change. This talk explores Cognitive Endurance, my framework for strengthening discernment, creativity, critical thinking, and independent judgment in a world where more and more cognitive work can be outsourced."
+        "description": "As AI becomes more capable of generating ideas, summarizing information, and making recommendations, the role of human thinking doesn\u2019t disappear, but it does change. This talk explores Cognitive Endurance, my framework for strengthening discernment, creativity, critical thinking, and independent judgment in a world where more and more cognitive work can be outsourced."
       },
       {
         "photoSrc": "/assets/theme-bg-2-dunes-xs.jpg",
         "title": "Leading with Momentum Through Uncertainty",
-        "question": "How do leaders create momentum when the path isn’t clear?",
-        "description": "When technology is moving fast, and the answer isn’t obvious yet, teams need more than urgency. They need shared language, room to experiment, and a way to move forward without pretending to have certainty they don’t. This talk explores how to create that kind of environment while working with AI in ways that build trust instead of eroding it."
+        "question": "How do leaders create momentum when the path isn\u2019t clear?",
+        "description": "When technology is moving fast, and the answer isn\u2019t obvious yet, teams need more than urgency. They need shared language, room to experiment, and a way to move forward without pretending to have certainty they don\u2019t. This talk explores how to create that kind of environment while working with AI in ways that build trust instead of eroding it."
       },
       {
         "photoSrc": "/assets/theme-bg-3-bark-xs.jpg",
         "title": "Brand Utility as a Moat",
-        "question": "What earns an organization a lasting place in people’s lives?",
+        "question": "What earns an organization a lasting place in people\u2019s lives?",
         "description": "The strongest brands are no longer defined solely by awareness or affinity. They're defined by the value they create. This talk explores why usefulness has become one of the most defensible competitive advantages and how organizations can rethink customer relationships, products, services, and experiences through that lens."
       },
       {
         "photoSrc": "/assets/theme-bg-4-coral-xs.jpg",
         "title": "Experience Design at the Edge of Expectation",
         "question": "How is AI reshaping what people expect from products and experiences?",
-        "description": "AI is changing more than what products can do. It’s changing what an experience even is. As interfaces become more generative, personalized, and adaptive, expectations around usefulness, trust, and quality are shifting too — especially in a world where infinite content and AI slop make good experience design matter even more. This talk explores what that means for the people building now."
+        "description": "AI is changing more than what products can do. It\u2019s changing what an experience even is. As interfaces become more generative, personalized, and adaptive, expectations around usefulness, trust, and quality are shifting too \u2014 especially in a world where infinite content and AI slop make good experience design matter even more. This talk explores what that means for the people building now."
       },
       {
         "photoSrc": "/assets/theme-bg-5-moss-xs.jpg",
@@ -45,11 +45,11 @@
     ]
   },
   "testimonialsSection": {
-    "eyebrow": "From the Stage",
+    "eyebrow": "",
     "heading": "What Audiences Say"
   },
   "engagements": {
-    "eyebrow": "Selected Speaking Engagements",
+    "eyebrow": "",
     "heading": "Spoken At 215+ Gatherings",
     "intro": "I've had the privilege of speaking at 215+ conferences, leadership events, executive offsites, universities, and workshops, including the United Nations General Assembly, Google, TikTok, Paramount, and Vox Media.",
     "formats": [
@@ -69,26 +69,26 @@
       {
         "index": "01",
         "title": "Speaking",
-        "cta": "Speaker inquiry →",
+        "cta": "Speaker inquiry \u2192",
         "href": "/contact"
       },
       {
         "index": "02",
         "title": "Work With Me",
-        "cta": "Sprints & strategy sessions →",
+        "cta": "Sprints & strategy sessions \u2192",
         "href": "/work-with-me"
       },
       {
         "index": "03",
         "title": "Unmissables",
-        "cta": "Read & subscribe →",
+        "cta": "Read & subscribe \u2192",
         "href": "https://www.unmissables.xyz/",
         "external": true
       },
       {
         "index": "04",
         "title": "Everything Else",
-        "cta": "Get in touch →",
+        "cta": "Get in touch \u2192",
         "href": "/contact"
       }
     ]

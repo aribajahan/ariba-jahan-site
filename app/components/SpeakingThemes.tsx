@@ -11,9 +11,11 @@ export default function SpeakingThemes() {
     >
       <div className="reveal max-w-[1400px] mx-auto">
         <div className="max-w-[720px] mb-16 max-[700px]:mb-10">
-          <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
-            {themes.eyebrow}
-          </div>
+          {themes.eyebrow && (
+            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
+              {themes.eyebrow}
+            </div>
+          )}
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-charcoal mb-5">
             {themes.heading}
           </h2>

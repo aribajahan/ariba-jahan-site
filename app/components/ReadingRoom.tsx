@@ -28,7 +28,7 @@ export default function ReadingRoom() {
         </svg>
         <div className={styles.inner}>
           <div className={styles.series}>
-            <p className={styles.eyebrow}>{content.eyebrow}</p>
+            {content.eyebrow && <p className={styles.eyebrow}>{content.eyebrow}</p>}
             <h2 id="reading-room-heading">{content.heading}</h2>
             <p className={styles.description}>{content.description}</p>
             <p className={styles.body}>{content.body}</p>

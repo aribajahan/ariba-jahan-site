@@ -39,9 +39,11 @@ export default function Unmissables() {
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <div className="flex items-baseline justify-between mb-9 flex-wrap gap-3">
           <div>
-            <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
-              {homeContent.unmissables.eyebrow}
-            </div>
+            {homeContent.unmissables.eyebrow && (
+              <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">
+                {homeContent.unmissables.eyebrow}
+              </div>
+            )}
             <div className="font-display text-[clamp(32px,5vw,64px)] font-black uppercase tracking-[-0.02em] leading-none text-charcoal">
               {homeContent.unmissables.heading}
             </div>
