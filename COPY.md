@@ -235,7 +235,7 @@ I build AI-enabled products, experiences, and systems, and work with organizatio
 
 ### Speaking Teaser
 
-**Heading** — People + Technology
+**Heading** — Speaking
 
 **Paragraphs**
 
