@@ -34,7 +34,7 @@ export default async function HomeOptions({ searchParams }: { searchParams: Prom
   const { showFooter } = getPageSettings("home");
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
       <RevealInit />
       <Hero />

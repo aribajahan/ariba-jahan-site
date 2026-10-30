@@ -13,10 +13,17 @@ import "./globals.css";
 // Big Shoulders Display/Text/Inline/Stencil into one variable `Big_Shoulders`
 // family with an optical-size (opsz) axis. Using `Big_Shoulders` here to keep
 // the build compiling; same weights/variable name/usage as before.
+// `adjustFontFallback` scales the local fallback face so it takes up the same
+// space as the webfont. Headings then swap in without the line shifting.
+// `fallback` names what to draw in that first moment; both are condensed, so
+// the shape is close too.
 const bigShoulders = Big_Shoulders({
   variable: "--font-big-shoulders",
   subsets: ["latin"],
   weight: ["700", "800", "900"],
+  display: "swap",
+  adjustFontFallback: true,
+  fallback: ["Arial Narrow", "Helvetica Neue", "Impact", "sans-serif"],
 });
 
 const barlow = Barlow({
@@ -24,6 +31,9 @@ const barlow = Barlow({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   style: ["normal", "italic"],
+  display: "swap",
+  adjustFontFallback: true,
+  fallback: ["Helvetica Neue", "Arial", "sans-serif"],
 });
 
 export const metadata: Metadata = {

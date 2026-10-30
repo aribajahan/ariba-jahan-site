@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-charcoal py-11 px-[clamp(24px,5vw,80px)]">
       <div className="max-w-[1200px] mx-auto flex items-start justify-between flex-wrap gap-8">
         <div className="max-w-[480px]">
-          <Image quality={90}
+          <Image
             src="/assets/wordmark-white.png"
             alt="Ariba Jahan"
             width={140}
@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex gap-5 text-cream/[0.35]">
+        <div className="flex gap-5 text-cream/70">
           {footerSocials.map((s) => (
             <a
               key={s.label}
@@ -54,7 +54,7 @@ export default function Footer() {
               Legal
             </a>
           </div>
-          <div className="text-[11px] text-cream/[0.32]">
+          <div className="text-[11px] text-cream/70">
             © {siteSettings.footer.copyrightYear} Ariba Jahan. All rights reserved.
           </div>
         </div>

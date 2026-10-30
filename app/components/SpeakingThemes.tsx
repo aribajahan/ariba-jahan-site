@@ -22,7 +22,7 @@ export default function SpeakingThemes() {
           <p className="text-[clamp(20px,1.8vw,26px)] leading-[1.4] text-charcoal mb-5 font-bold">
             {themes.lead}
           </p>
-          <p className="text-base leading-[1.62] text-charcoal/65">{themes.body}</p>
+          <p className="text-body text-charcoal/65">{themes.body}</p>
         </div>
 
         <div className="flex flex-col border-t border-charcoal/[0.12]">
@@ -34,7 +34,7 @@ export default function SpeakingThemes() {
               }`}
             >
               <div className="absolute inset-0 z-0">
-                <Image quality={90}
+                <Image
                   src={theme.photoSrc}
                   alt={theme.title}
                   fill
@@ -54,10 +54,10 @@ export default function SpeakingThemes() {
                   <div className="font-display text-[clamp(26px,2.8vw,40px)] font-black uppercase tracking-[-0.01em] leading-[1.02] text-cream mb-[10px]">
                     {theme.title}
                   </div>
-                  <p className="text-base italic leading-[1.5] text-cream/[0.82] mb-[14px]">
+                  <p className="text-body italic text-cream/[0.82] mb-[14px]">
                     {theme.question}
                   </p>
-                  <p className="text-base leading-[1.6] text-cream/[0.72]">{theme.description}</p>
+                  <p className="text-body text-cream/[0.72]">{theme.description}</p>
                 </div>
               </div>
             </div>

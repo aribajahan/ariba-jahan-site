@@ -11,7 +11,7 @@ export default function WorkWithMeClosingCTA({ closingCTA = wwmContent.closingCT
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
             {closingCTA.heading}
           </h2>
-          <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.68] max-w-[480px] mx-auto">
+          <p className="text-lede max-[700px]:text-lede-sm text-cream/[0.68] max-w-[480px] mx-auto">
             {closingCTA.subhead}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function WorkWithMeClosingCTA({ closingCTA = wwmContent.closingCT
               <span className="font-display text-[19px] min-[701px]:max-[1024px]:text-[16px] font-black uppercase text-cream">{link.title}</span>
               <span className="text-[15px] min-[701px]:max-[1024px]:text-[13px] font-bold text-cherish">{link.cta}</span>
               {link.sub && (
-                <span className="text-[11.5px] italic text-cream/35">{link.sub}</span>
+                <span className="text-[11.5px] italic text-cream/70">{link.sub}</span>
               )}
             </a>
           ))}

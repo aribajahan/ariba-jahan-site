@@ -44,7 +44,7 @@ export default function WorkWithMeOffers() {
 
           <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
-              <Image quality={90}
+              <Image
                 src={cxSprintContent.photoSrc}
                 alt="Ambition Sprint"
                 fill
@@ -54,7 +54,7 @@ export default function WorkWithMeOffers() {
             </div>
 
             <div className="max-w-[640px]">
-              <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/90 mb-[14px] font-bold">
+              <p className="text-lede max-[700px]:text-lede-sm text-cream/90 mb-[14px] font-bold">
                 {cxSprintContent.intro}
               </p>
 
@@ -74,23 +74,23 @@ export default function WorkWithMeOffers() {
                 className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
                 style={{ maxHeight: cxOpen ? 4000 : 0 }}
               >
-                <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
+                <div className="text-body max-[700px]:text-body-sm text-cream/85 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
                   {cxSprintContent.body.map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}
                 </div>
 
                 <div className="flex flex-col gap-[10px] mb-6">
-                  <p className="text-[15px] font-bold text-cream mb-[2px]">This is a good fit if:</p>
+                  <p className="text-card font-bold text-cream mb-[2px]">This is a good fit if:</p>
                   {cxSprintFitPoints.map((point) => (
                     <div key={point} className="flex gap-[14px] items-start">
-                      <span className="text-cream font-extrabold text-base leading-[1.5]">•</span>
-                      <span className="text-base leading-[1.5] text-cream/85">{point}</span>
+                      <span className="text-cream font-extrabold text-body">•</span>
+                      <span className="text-body text-cream/85">{point}</span>
                     </div>
                   ))}
                 </div>
 
-                <p className="text-base leading-[1.5] text-cream/85 mb-6">
+                <p className="text-body text-cream/85 mb-6">
                   <span className="font-bold text-cream">What comes out of it:</span> {cxSprintContent.outcome}
                 </p>
 
@@ -118,7 +118,7 @@ export default function WorkWithMeOffers() {
                         {cxSprintContent.deliverablesNote}
                       </p>
                       {cxSprintDeliverables.map((d) => (
-                        <p key={d.title} className="text-base leading-[1.55] text-cream/85">
+                        <p key={d.title} className="text-body text-cream/85">
                           <b className="text-cream">{d.title}</b> {d.description}
                         </p>
                       ))}
@@ -145,7 +145,7 @@ export default function WorkWithMeOffers() {
                   >
                     <div className="pt-4 flex flex-col gap-[10px] max-w-[460px]">
                       {cxSprintWeeks.map((w) => (
-                        <p key={w.title} className="text-base leading-[1.55] text-cream/85">
+                        <p key={w.title} className="text-body text-cream/85">
                           <b className="text-cream">{w.title}</b> {w.description}
                         </p>
                       ))}
@@ -182,7 +182,7 @@ export default function WorkWithMeOffers() {
 
           <div className="grid grid-cols-[440px_1fr] max-[1024px]:grid-cols-1 gap-12 max-[1024px]:gap-7 items-stretch">
             <div className="h-[560px] max-[700px]:h-[240px] overflow-hidden relative">
-              <Image quality={90}
+              <Image
                 src={strategySessionsContent.photoSrc}
                 alt="1:1 Strategy Sessions"
                 fill
@@ -192,7 +192,7 @@ export default function WorkWithMeOffers() {
             </div>
 
             <div className="max-w-[640px]">
-              <p className="text-[19px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.82] mb-5 font-bold">
+              <p className="text-lede max-[700px]:text-lede-sm text-cream/[0.82] mb-5 font-bold">
                 {strategySessionsContent.intro}
               </p>
 
@@ -212,13 +212,13 @@ export default function WorkWithMeOffers() {
                 className="overflow-hidden transition-[max-height] duration-300 ease-in-out min-[701px]:!max-h-none"
                 style={{ maxHeight: strategyOpen ? 4000 : 0 }}
               >
-                <div className="text-[17px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/70 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
+                <div className="text-body max-[700px]:text-body-sm text-cream/70 mb-6 flex flex-col gap-4 max-[700px]:pt-2">
                   {strategySessionsContent.body.map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}
                 </div>
 
-                <div className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 mb-[14px]">
+                <div className="text-body max-[700px]:text-body-sm text-cream/75 mb-[14px]">
                   <b className="text-cream">Best for:</b>
                   <ul className="list-disc pl-5 mt-2 flex flex-col gap-1">
                     {strategySessionBestFor.map((item) => (
@@ -227,7 +227,7 @@ export default function WorkWithMeOffers() {
                   </ul>
                 </div>
 
-                <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 mb-7">
+                <p className="text-body max-[700px]:text-body-sm text-cream/75 mb-7">
                   <b className="text-cream">What you get:</b> {strategySessionsContent.whatYouGet}
                 </p>
 

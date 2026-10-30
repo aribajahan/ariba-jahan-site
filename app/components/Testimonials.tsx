@@ -48,9 +48,9 @@ export default function Testimonials() {
                 {homeContent.testimonialsSection.eyebrow}
               </div>
             )}
-            <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em]">
+            <h2 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em]">
               {homeContent.testimonialsSection.heading}
-            </div>
+            </h2>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function Testimonials() {
                   {t.category}
                 </div>
                 <p
-                  className={`relative text-lg max-[1024px]:text-base leading-[1.5] max-[1024px]:leading-[1.45] mb-4 ${
+                  className={`relative text-lg max-[1024px]:text-body max-[1024px]:leading-[1.45] mb-4 ${
                     needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
@@ -120,7 +120,7 @@ export default function Testimonials() {
             type="button"
             aria-label="Previous testimonial"
             onClick={() => scrollBy(-1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             ←
           </button>
@@ -128,7 +128,7 @@ export default function Testimonials() {
             type="button"
             aria-label="Next testimonial"
             onClick={() => scrollBy(1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             →
           </button>

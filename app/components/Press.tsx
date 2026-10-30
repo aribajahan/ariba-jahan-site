@@ -13,9 +13,9 @@ export default function Press() {
             {press.eyebrow}
           </div>
         )}
-        <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-9">
+        <h2 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-9">
           {press.heading}
-        </div>
+        </h2>
 
         {/* Phone tier: flat list */}
         <div className="hidden max-[700px]:flex flex-col">
@@ -51,7 +51,7 @@ export default function Press() {
               className="group relative aspect-square overflow-hidden block"
               style={{ background: item.bg }}
             >
-              <Image quality={90}
+              <Image
                 src={item.photoSrc}
                 alt={item.title}
                 fill

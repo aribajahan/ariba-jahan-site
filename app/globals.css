@@ -35,6 +35,28 @@
   --color-outerspace: var(--outerspace);
   --font-display: var(--font-big-shoulders), sans-serif;
   --font-body: var(--font-barlow), sans-serif;
+
+  /* Body type. Three sizes, one per job — before this the same running prose
+     appeared at 15, 16, 17 and 18px across the site with five different line
+     heights. Each token carries its own line height, so `text-body` is the
+     whole decision and nothing drifts.
+       text-lede — the paragraph directly under a section heading
+       text-body — running prose at section level
+       text-card — body inside a card, where the measure is narrower
+     Mobile steps each one down; see --text-*-sm below. */
+  --text-lede: 19px;
+  --text-lede--line-height: 1.6;
+  --text-body: 17px;
+  --text-body--line-height: 1.6;
+  --text-card: 15px;
+  --text-card--line-height: 1.5;
+
+  --text-lede-sm: 16px;
+  --text-lede-sm--line-height: 1.45;
+  --text-body-sm: 16px;
+  --text-body-sm--line-height: 1.45;
+  --text-card-sm: 14px;
+  --text-card-sm--line-height: 1.45;
 }
 
 * {

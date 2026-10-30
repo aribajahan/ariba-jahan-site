@@ -75,7 +75,7 @@ export default function ContactForm() {
           <h1 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-5">
             Let&apos;s Talk
           </h1>
-          <p className="text-[19px] leading-[1.6] text-charcoal/70 max-w-[520px] mb-12">
+          <p className="text-lede text-charcoal/70 max-w-[520px] mb-12">
             Speaking, advisory, or something else entirely. Tell me what&apos;s on your mind and I&apos;ll get back to you within a few days.
           </p>
 
@@ -282,7 +282,7 @@ export default function ContactForm() {
         <div className="sticky top-[150px] max-[700px]:static max-[700px]:order-[-1] max-[700px]:max-w-[280px]">
           <div className="aspect-[4/5] overflow-hidden">
             <Image
-              quality={90}
+             
               src={contactPhotoSrc}
               alt="Ariba Jahan"
               width={480}

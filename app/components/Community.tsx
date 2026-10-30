@@ -9,10 +9,10 @@ export default function Community() {
   return (
     <section className="bg-charcoal pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-[100px] max-[1024px]:pb-20 max-[700px]:pb-16 overflow-hidden">
       <div className="reveal max-w-[700px] mx-auto mb-14 text-center px-[clamp(24px,5vw,80px)]">
-        <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-cream mb-4">
+        <h2 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-cream mb-4">
           {community.heading}
-        </div>
-        <p className="text-base leading-[1.6] text-cream/65">{community.intro}</p>
+        </h2>
+        <p className="text-body text-cream/65">{community.intro}</p>
       </div>
 
       <div className="overflow-hidden">
@@ -25,7 +25,7 @@ export default function Community() {
                 <span className="absolute top-2 left-2 z-[2] text-cream font-display font-extrabold text-base w-[26px] h-[26px] flex items-center justify-center [text-shadow:0_1px_4px_rgba(0,0,0,0.6)]">
                   {photo.number}
                 </span>
-                <Image quality={90}
+                <Image
                   src={photo.photoSrc}
                   alt={photo.caption}
                   fill

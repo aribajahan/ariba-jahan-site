@@ -13,10 +13,10 @@ export default function CareerAdvisory() {
             {careerAdvisory.eyebrow}
           </p>
         )}
-        <p className="text-[17px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 mb-5">
+        <p className="text-body max-[700px]:text-body-sm text-cream/85 mb-5">
           <b className="text-cream">{careerAdvisory.lead}</b>
         </p>
-        <p className="text-[19px] leading-[1.65] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/80 mb-8">{careerAdvisory.body}</p>
+        <p className="text-lede max-[700px]:text-lede-sm text-cream/80 mb-8">{careerAdvisory.body}</p>
         <a
           href={careerAdvisory.href}
           target="_blank"
@@ -27,7 +27,7 @@ export default function CareerAdvisory() {
         </a>
       </div>
       <div className="flex-[1_1_420px] max-[1024px]:flex-[1_1_340px] min-w-[320px] min-h-[520px] max-[700px]:min-h-[320px] relative">
-        <Image quality={90}
+        <Image
           src={careerAdvisory.photoSrc}
           alt="Ariba Jahan"
           fill

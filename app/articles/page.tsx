@@ -14,7 +14,7 @@ export default function ArticlesIndex() {
   const articles = publishedArticles();
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
       <section className="px-[clamp(24px,5vw,80px)] pt-[150px] pb-20 max-w-[900px] mx-auto">
         <h1 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] leading-none text-charcoal mb-12">
@@ -39,7 +39,7 @@ export default function ArticlesIndex() {
                   <h2 className="font-display text-2xl font-black uppercase text-charcoal mb-2 group-hover:text-cherish transition-colors">
                     {article.title}
                   </h2>
-                  <p className="text-charcoal/70 text-base">{article.excerpt}</p>
+                  <p className="text-charcoal/70 text-card">{article.excerpt}</p>
                 </div>
               </Link>
             ))}

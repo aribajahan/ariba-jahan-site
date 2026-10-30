@@ -11,7 +11,7 @@ export default function WorkWithMeHero({ hero = wwmContent.hero, engagementLinks
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
       <div className="absolute inset-0 z-0">
-        <Image quality={90}
+        <Image
           src={hero.photoSrc}
           alt="Ariba Jahan"
           fill
@@ -31,7 +31,7 @@ export default function WorkWithMeHero({ hero = wwmContent.hero, engagementLinks
         <h1 className="font-display text-[clamp(38px,4vw,60px)] font-black text-cream leading-none tracking-[-0.02em] max-w-[1040px]">
           {hero.headline}
         </h1>
-        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/75 max-w-[640px] mt-[22px]">
+        <p className="text-body max-[700px]:text-body-sm text-cream/75 max-w-[640px] mt-[22px]">
           {hero.subhead}
         </p>
         {hero.ctas.length > 0 && <div className="flex flex-wrap gap-4 mt-8 pointer-events-auto">

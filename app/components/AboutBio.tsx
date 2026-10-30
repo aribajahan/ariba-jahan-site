@@ -18,7 +18,7 @@ export default function AboutBio() {
         {bioIntro.map((p, i) => (
           <p
             key={i}
-            className={`text-lg leading-[1.75] max-[700px]:text-[16px] max-[700px]:leading-[1.45] mb-6 ${
+            className={`text-body max-[700px]:text-body-sm mb-6 ${
               i === 0 ? "text-cream" : "text-cream/[0.82]"
             }`}
           >
@@ -31,7 +31,7 @@ export default function AboutBio() {
           style={{ maxHeight: expanded ? 3200 : 0 }}
         >
           {bioExpanded.map((p, i) => (
-            <p key={i} className="text-lg leading-[1.75] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/[0.82] mb-6">
+            <p key={i} className="text-body max-[700px]:text-body-sm text-cream/[0.82] mb-6">
               {p}
             </p>
           ))}
@@ -46,7 +46,7 @@ export default function AboutBio() {
           {expanded ? "Show less ←" : "Read full bio →"}
         </button>
 
-        <p className="text-base leading-[1.6] text-cream/60 mt-8 mb-3">{unmissablesNudge.text}</p>
+        <p className="text-body text-cream/60 mt-8 mb-3">{unmissablesNudge.text}</p>
         <a
           href={unmissablesNudge.href}
           target="_blank"

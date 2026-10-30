@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav contactHref="/contact" />
       <ContactForm />
       <Footer />

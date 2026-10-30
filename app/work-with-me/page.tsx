@@ -21,7 +21,7 @@ export default async function WorkWithMe() {
   const { showFooter } = getPageSettings("work-with-me");
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
       <RevealInit />
       <WorkWithMeOverview />

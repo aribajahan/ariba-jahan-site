@@ -11,6 +11,8 @@ export default function Credentials() {
             key={i}
             className="text-center flex-[1_1_120px] max-[1024px]:flex-shrink-0 max-[1024px]:basis-[32vw] max-[1024px]:[scroll-snap-align:start]"
           >
+            {/* A figure, not a heading — it stays a div so it doesn't land in
+                the document outline as a section called "215+". */}
             <div className="font-display text-[clamp(38px,5vw,62px)] font-black text-cream leading-none tracking-[-0.02em] max-[700px]:text-[34px]">
               {s.value}
             </div>

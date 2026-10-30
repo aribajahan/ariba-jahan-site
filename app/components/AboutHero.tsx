@@ -6,7 +6,7 @@ export default function AboutHero() {
     <section className="bg-charcoal relative overflow-hidden">
       {/* Desktop/tablet: photo + text overlay, matches the design reference. */}
       <div className="hidden min-[701px]:block relative min-h-[min(88vh,760px)]">
-        <Image quality={90}
+        <Image
           src={aboutHero.photoSrc}
           alt="Ariba Jahan"
           fill
@@ -35,7 +35,7 @@ export default function AboutHero() {
           that keeps blank backdrop behind the text and her fully in frame on
           the right. */}
       <div className="min-[701px]:hidden relative min-h-[260px] pt-[130px] pb-8">
-        <Image quality={90}
+        <Image
           src={aboutHero.photoSrcMobile}
           alt="Ariba Jahan"
           fill

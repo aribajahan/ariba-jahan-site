@@ -11,10 +11,10 @@ export default function ClosingCTA() {
     >
       <div className="reveal max-w-[1000px] mx-auto">
         <div className="text-center mb-14">
-          <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-cream mb-4">
+          <h2 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-cream mb-4">
             {closingCTA.heading}
-          </div>
-          <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/65 max-w-[500px] mx-auto">
+          </h2>
+          <p className="text-lede max-[700px]:text-lede-sm text-cream/65 max-w-[500px] mx-auto">
             {closingCTA.subhead}
           </p>
         </div>

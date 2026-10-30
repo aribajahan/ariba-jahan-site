@@ -44,16 +44,16 @@ export default function Unmissables() {
                 {homeContent.unmissables.eyebrow}
               </div>
             )}
-            <div className="font-display text-[clamp(32px,5vw,64px)] font-black uppercase tracking-[-0.02em] leading-none text-charcoal">
+            <h2 className="font-display text-[clamp(32px,5vw,64px)] font-black uppercase tracking-[-0.02em] leading-none text-charcoal">
               {homeContent.unmissables.heading}
-            </div>
+            </h2>
           </div>
         </div>
 
         <div
           className={`grid gap-x-10 gap-y-4 mb-9 [grid-template-columns:1fr_auto] [grid-template-areas:'para_embed'_'links_links'] max-[1024px]:grid-cols-1 max-[1024px]:[grid-template-areas:'para'_'links'_'embed']`}
         >
-          <p className="[grid-area:para] text-[19px] leading-[1.62] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[720px]">
+          <p className="[grid-area:para] text-lede max-[700px]:text-lede-sm text-charcoal/65 max-w-[720px]">
             {homeContent.unmissables.intro}
           </p>
 
@@ -101,7 +101,7 @@ export default function Unmissables() {
             aria-label="Cognitive Endurance — read the framework"
             className="group relative flex-[1_1_340px] bg-cherish p-9 flex flex-col justify-end overflow-hidden min-h-[340px] no-underline"
           >
-            <Image quality={90}
+            <Image
               src="/assets/unmissables-ce.jpg"
               alt="Cognitive Endurance framework"
               fill
@@ -127,7 +127,7 @@ export default function Unmissables() {
               <br />
               Endurance
             </div>
-            <p className="relative z-[1] text-sm leading-[1.5] text-cream/[0.78] italic mb-5">
+            <p className="relative z-[1] text-card text-cream/[0.78] italic mb-5">
               &ldquo;It&rsquo;s to stay the kind of person who still decides what belongs in your mind palace, what belongs in the machine, and what deserves to be created by both.&rdquo;
             </p>
             <span className="relative z-[1] text-[15px] font-extrabold tracking-[0.12em] uppercase text-cream border-b border-cream/45 pb-[2px] w-fit">
@@ -136,7 +136,7 @@ export default function Unmissables() {
           </a>
 
           <div className="flex-[1.6_1_420px] bg-charcoal p-9 flex flex-col justify-center min-h-[160px]">
-            <div className="text-[9px] font-extrabold tracking-[0.18em] uppercase text-cream/[0.22] mb-[10px]">
+            <div className="text-[9px] font-extrabold tracking-[0.18em] uppercase text-cream/70 mb-[10px]">
               {homeContent.unmissablesStat.label}
             </div>
             <div className="font-display text-[clamp(16px,1.8vw,22px)] font-bold text-cream leading-[1.3] tracking-[-0.01em]">
@@ -168,7 +168,7 @@ export default function Unmissables() {
                 } ${i === tiles.length - 1 ? "min-[701px]:max-[1024px]:hidden" : ""}`}
                 style={{ background: tile.bg }}
               >
-                <Image quality={90}
+                <Image
                   src={tile.photoSrc}
                   alt={hidden ? "" : tile.headline}
                   fill

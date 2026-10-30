@@ -81,7 +81,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-charcoal mb-[14px]">
             {wwmContent.caseStudiesSection.heading}
           </h2>
-          <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal max-w-[640px]">
+          <p className="text-body max-[700px]:text-body-sm text-charcoal max-w-[640px]">
             {wwmContent.caseStudiesSection.intro}
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
                         Case Study {i + 1}
                       </span>
                       <div className="relative h-[460px] max-[1024px]:h-[380px] max-[700px]:h-[300px] mb-6 max-[700px]:mb-3 overflow-hidden">
-                        <Image quality={90}
+                        <Image
                           src={c.photoSrc}
                           alt={`${c.client} case study`}
                           fill
@@ -148,7 +148,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
                       <div className="font-display text-2xl max-[700px]:text-base font-black uppercase leading-[1.05] text-charcoal mb-[14px] max-[700px]:mb-[6px]">
                         {c.title}
                       </div>
-                      <p className="text-[15px] leading-[1.55] max-[700px]:text-[13px] max-[700px]:leading-[1.35] text-charcoal/65">{c.summary}</p>
+                      <p className="text-card max-[700px]:text-[13px] max-[700px]:leading-[1.35] text-charcoal/65">{c.summary}</p>
                       <div className="flex flex-wrap gap-[6px] mt-[14px] max-[700px]:mt-2">
                         {c.pills.map((pill, pillIdx) => (
                           <span
@@ -254,7 +254,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
             type="button"
             aria-label="Previous case study"
             onClick={() => scrollBy(-1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             ←
           </button>
@@ -262,7 +262,7 @@ export default function CaseStudies({ filterable = false }: { filterable?: boole
             type="button"
             aria-label="Next case study"
             onClick={() => scrollBy(1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             →
           </button>

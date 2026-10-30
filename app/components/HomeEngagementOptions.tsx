@@ -18,7 +18,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
       <div className="max-w-[1260px] mx-auto flex flex-wrap items-center gap-x-8 gap-y-4">
         <p className="text-[13px] font-semibold">Homepage preview</p>
         <nav aria-label="Engagement layout options" className="flex flex-wrap gap-x-7 gap-y-3 text-[13px] font-extrabold uppercase tracking-[0.06em]">
-          {options.map(option => <a key={option.id} href={`/home-engagement-options?layout=${option.id}#work-with-me`} aria-current={layout === option.id ? "page" : undefined} className={`py-2 border-b-2 transition-colors ${layout === option.id ? "border-cherish text-charcoal" : "border-transparent text-charcoal/65 hover:text-cherish"}`}>{option.label}</a>)}
+          {options.map(option => <a key={option.id} href={`/home-engagement-options?layout=${option.id}#work-with-me`} aria-current={layout === option.id ? "page" : undefined} className={`py-2 border-b-2 transition-colors ${layout === option.id ? "border-cherish text-charcoal" : "border-transparent text-charcoal/70 hover:text-cherish"}`}>{option.label}</a>)}
         </nav>
         <Link href="/#work-with-me" className="text-[13px] underline underline-offset-4 ml-auto">View homepage</Link>
       </div>
@@ -28,7 +28,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
         <header className="mb-9"><div>
           {content.eyebrow && <p className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/80 mb-4">{content.eyebrow}</p>}
           <h2 className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase leading-none text-cream">{content.heading}</h2>
-          <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-cream max-w-[790px] mt-5">{content.body}</p>
+          <p className="text-body text-cream max-w-[790px] mt-5">{content.body}</p>
         </div>
         </header>
         <div className={`grid grid-cols-3 ${layout === "shared" ? "max-[1150px]:grid-cols-1" : "max-[900px]:grid-cols-1"} gap-5 items-stretch`} data-layout={layout}>
@@ -45,7 +45,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
                 <h3 className={`font-display uppercase leading-[1.05] mb-4 ${layout === "shared" ? "text-center" : ""} ${layout === "shared" ? "text-[clamp(22px,1.95vw,28px)] break-words" : `text-[34px] max-[700px]:text-[30px] ${layout === "numbered" ? "min-h-[76px] max-[900px]:min-h-0" : "min-h-[72px] max-[900px]:min-h-0"}`}`}>
                   {layout === "shared" ? <span className="mark-tape relative inline-block max-w-full -rotate-[1deg] px-2 py-1" style={{ ["--tape-color" as string]: "var(--femme-pink)" }}>{title}</span> : title}
                 </h3>
-                <p className="text-[18px] max-[700px]:text-[17px] leading-[1.5] text-charcoal/85 mb-7">{offer.lead} {offer.body}</p>
+                <p className="text-body text-charcoal/85 mb-7">{offer.lead} {offer.body}</p>
                 <span className={`mt-auto pt-2 ${layout === "shared" ? "self-center text-center" : ""}`}><span className="inline-block text-[13px] font-extrabold tracking-[0.08em] uppercase text-cherish border-b-2 border-cherish pb-[3px]">{cta}</span></span>
               </div>
             </a>;

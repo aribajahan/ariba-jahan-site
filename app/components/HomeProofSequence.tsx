@@ -27,7 +27,7 @@ export default function HomeProofSequence({ quotes }: { quotes: ProofExcerpt[] }
     onFocusCapture={() => setInteracting(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setInteracting(false); }}>
     <div className="grid" aria-live="off">
       {quotes.map((quote, index) => <figure key={quote.name} className={`col-start-1 row-start-1 ${index === active ? "visible" : "invisible"}`} aria-hidden={index !== active}>
-        <blockquote className="text-[18px] max-[700px]:text-[17px] leading-[1.5]">&ldquo;{quote.excerpt}&rdquo;</blockquote>
+        <blockquote className="text-[18px] max-[700px]:text-body">&ldquo;{quote.excerpt}&rdquo;</blockquote>
         <figcaption className="text-[13px] leading-[1.4] mt-2 text-cream/90">{quote.name} · {quote.role}</figcaption>
       </figure>)}
     </div>

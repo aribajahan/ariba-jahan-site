@@ -21,7 +21,7 @@ export default async function PhotoPreview() {
   if (guard === "notFound") notFound();
   if (guard === "gate") return <PageGate pageKey="work-with-me" />;
   const { showFooter } = getPageSettings("work-with-me");
-  return <div className="bg-cream text-charcoal font-body text-lg leading-[1.6]">
+  return <div className="bg-cream text-charcoal font-body text-body">
     <Nav /><RevealInit />
     <main>
       <WorkWithMeHero hero={content.hero} />
@@ -46,7 +46,7 @@ export default async function PhotoPreview() {
               <div>
                 <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] mb-4">0{i + 1} · {o.audience}</p>
                 <h2 className="font-display uppercase text-[clamp(36px,4vw,52px)] leading-[1.02] mb-5">{o.title}</h2>
-                <p className="text-[19px] leading-[1.6] mb-5">{p.intro}</p>
+                <p className="text-lede mb-5">{p.intro}</p>
                 <p className="text-[15px] font-bold">{o.format}</p>
               </div>
               <div className="relative h-[330px] max-[850px]:h-[290px] overflow-hidden">
@@ -56,7 +56,7 @@ export default async function PhotoPreview() {
             <div className="grid grid-cols-3 gap-9 mt-10 max-[700px]:grid-cols-1 max-[700px]:gap-5">
               {p.examples.map(e => <div key={e.title} className="">
                 <h3 className="text-[18px] font-extrabold mb-2">{e.title}</h3>
-                <p className="text-[17px] leading-[1.6]">{e.text}</p>
+                <p className="text-body">{e.text}</p>
               </div>)}
             </div>
             <div className="mt-7 flex justify-between items-end gap-8 max-[700px]:flex-col max-[700px]:items-start">

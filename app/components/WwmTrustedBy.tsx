@@ -17,7 +17,7 @@ export default function WwmTrustedBy() {
             style={{ animation: "logoScroll 32s linear infinite" }}
           >
             {[...wwmTrustedByLogos, ...wwmTrustedByLogos].map((logo, i) => (
-              <Image quality={90}
+              <Image
                 key={`${logo.alt}-${i}`}
                 src={logo.src}
                 alt={logo.alt}

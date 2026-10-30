@@ -8,7 +8,7 @@ import WwmTrustedBy from "./WwmTrustedBy";
 import CaseStudies from "./CaseStudies";
 
 const wrap = "max-w-[1200px] mx-auto px-[clamp(24px,5vw,80px)]";
-const body = "text-[18px] max-[700px]:text-[17px] leading-[1.5]";
+const body = "text-[18px] max-[700px]:text-body";
 const readingWidth = "max-w-none";
 const button = "inline-block bg-cherish text-cream px-7 py-[15px] max-[700px]:px-5 max-[700px]:py-3 text-[15px] max-[700px]:text-[12px] font-extrabold tracking-[0.1em] uppercase transition-[transform,box-shadow] duration-[180ms] hover:-translate-y-1 hover:shadow-[0_12px_20px_-8px_rgba(231,49,49,0.6)] focus-visible:outline-2 focus-visible:outline-offset-4";
 
@@ -60,7 +60,7 @@ export default function WorkWithMeOverview() {
                     <Image src={card.photoSrc} alt={card.photoAlt} fill sizes="(max-width: 700px) 150px, 240px" className="object-cover object-[50%_40%]" />
                   </div>
                   <div>
-                    <p className={`text-[15px] leading-[1.5] mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
+                    <p className={`text-card mb-2 ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
                       {offer.audience}<span aria-hidden="true" className="mx-2">·</span><span className="inline-block">{offer.format}</span>
                     </p>
                     <h2 className="font-display uppercase text-[42px] max-[700px]:text-[34px] leading-[1.1] mb-2">{offer.title}</h2>
@@ -99,7 +99,7 @@ export default function WorkWithMeOverview() {
                       },
                     ].map(detail => (
                       <OfferDisclosure key={detail.heading} title={detail.heading} dark={dark}>
-                          <p className="text-[15px] leading-[1.5] text-cream/75 mb-3">{detail.note}</p>
+                          <p className="text-card text-cream/75 mb-3">{detail.note}</p>
                           <ul className={`space-y-3 ${body}`}>
                             {detail.items.map(item => <li key={item.title}><strong className="font-semibold">{item.title}</strong> {item.description}</li>)}
                           </ul>
@@ -112,7 +112,7 @@ export default function WorkWithMeOverview() {
                   <a href={offer.href} target={isAdvisory ? "_blank" : undefined} rel={isAdvisory ? "noopener" : undefined} className={button}>{offer.cta}</a>
                   <a href={`#case-studies-${offer.id}`} className="inline-flex min-h-11 items-center text-[13px] font-extrabold uppercase tracking-[0.06em] transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4">See relevant work</a>
                 </div>
-                {(offer.proofQuote || offer.proof) && <div className={`mt-4 ${readingWidth} text-[15px] leading-[1.5] ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
+                {(offer.proofQuote || offer.proof) && <div className={`mt-4 ${readingWidth} text-card ${dark ? "text-cream/75" : "text-charcoal/75"}`}>
                   {offer.proofQuote ? <blockquote><p>“{offer.proofQuote}”</p><cite className="not-italic block mt-2">{offer.proofName} · {offer.proofRole}</cite></blockquote> : <p>{offer.proof}</p>}
                 </div>}
               </div>
@@ -127,7 +127,7 @@ export default function WorkWithMeOverview() {
         <div className={`${wrap} flex justify-between gap-8 items-center max-[700px]:flex-col max-[700px]:items-start`}>
           <div className="max-w-[700px]">
             <h2 className="font-display uppercase text-[36px] leading-[1.1] mb-3">{content.contactHeading}</h2>
-            <p className="text-[17px] leading-[1.6] text-charcoal/85">{content.contactBody}</p>
+            <p className="text-body text-charcoal/85">{content.contactBody}</p>
           </div>
           <a href={content.contactHref} className={`${button} whitespace-nowrap`}>{content.contactCta}</a>
         </div>

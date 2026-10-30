@@ -27,7 +27,7 @@ export default async function About() {
   const { showFooter } = getPageSettings("about");
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <JsonLd data={aboutProfilePageSchema} />
       <Nav />
       <RevealInit />

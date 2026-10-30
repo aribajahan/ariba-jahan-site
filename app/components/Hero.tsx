@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative flex flex-col justify-end overflow-hidden bg-[#1c1212] min-h-[85vh] max-[700px]:min-h-[85vh]">
       <div className="absolute inset-0 z-0">
-        <Image quality={90}
+        <Image
           src={hero.photoSrc}
           alt="Ariba Jahan"
           fill
@@ -26,14 +26,18 @@ export default function Hero() {
         }}
       />
       <div className="relative z-[2] max-w-[1200px] mx-auto w-full px-[clamp(24px,5vw,80px)] pb-16 pt-[210px] pointer-events-none max-[700px]:pt-[160px] max-[700px]:px-6">
-        <Image quality={90}
-          src="/assets/wordmark-large-white.png"
-          alt="Ariba Jahan"
-          width={1200}
-          height={260}
-          priority
-          className="w-full h-auto mb-5 block max-[700px]:w-[80%]"
-        />
+        {/* The wordmark is the page's h1 — the alt text carries the name into
+            the outline, so the heading is present without a second visible one. */}
+        <h1>
+          <Image
+            src="/assets/wordmark-large-white.png"
+            alt="Ariba Jahan"
+            width={1200}
+            height={260}
+            priority
+            className="w-full h-auto mb-5 block max-[700px]:w-[80%]"
+          />
+        </h1>
         <p className="max-w-[650px] text-[clamp(18px,1.6vw,22px)] font-medium leading-[1.58] text-cream/[0.82] mb-11 max-[700px]:leading-[1.35]">
           {hero.subhead}
         </p>

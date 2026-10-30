@@ -23,7 +23,7 @@ export default async function Speaking() {
   const { showFooter } = getPageSettings("speaking");
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
       <RevealInit />
       <SpeakingHero />

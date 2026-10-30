@@ -31,7 +31,7 @@ const cards = [
 
 export default function NotFound() {
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
 
       <section className="relative overflow-hidden bg-cherish min-h-[100vh] flex items-center pt-[150px] pb-20 max-[700px]:pt-[130px] px-[clamp(24px,5vw,80px)]">
@@ -47,7 +47,7 @@ export default function NotFound() {
             <h1 className="font-display text-[48px] max-[700px]:text-[28px] font-black uppercase tracking-[-0.01em] leading-none text-cream mb-[18px]">
               Oops, Nothing Here
             </h1>
-            <p className="text-[19px] leading-[1.6] text-cream/85 max-w-[440px] mx-auto">
+            <p className="text-lede text-cream/85 max-w-[440px] mx-auto">
               But these might be what you were looking for.
             </p>
           </div>

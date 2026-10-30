@@ -14,7 +14,7 @@ export default function SpeakingClosingCTA() {
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
             {closingCTA.heading}
           </h2>
-          <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/85 max-w-[520px] mx-auto">
+          <p className="text-lede max-[700px]:text-lede-sm text-cream/85 max-w-[520px] mx-auto">
             {closingCTA.subhead}
           </p>
         </div>

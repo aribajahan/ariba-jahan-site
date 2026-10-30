@@ -8,7 +8,7 @@ export default function AboutClosingCTA() {
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] text-cream mb-4">
             {aboutClosingCTAContent.heading}
           </h2>
-          <p className="text-base leading-[1.6] text-cream/[0.68] max-w-[480px] mx-auto">
+          <p className="text-body text-cream/[0.68] max-w-[480px] mx-auto">
             {aboutClosingCTAContent.subhead}
           </p>
         </div>

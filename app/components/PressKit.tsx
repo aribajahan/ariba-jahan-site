@@ -75,7 +75,7 @@ function LogoRow({ label, logos }: { label: string; logos: { src: string; alt: s
       <div className="flex flex-wrap items-center gap-x-10 gap-y-5">
         {logos.map((logo, i) => (
           <Image
-            quality={90}
+           
             key={`${logo.alt}-${i}`}
             src={logo.src}
             alt={logo.alt}
@@ -94,7 +94,7 @@ export default function PressKit() {
   const [bioExpandedOpen, setBioExpandedOpen] = useState(false);
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       {/* Header */}
       <section className="bg-charcoal pt-[150px] pb-16 max-[700px]:pt-[110px] max-[700px]:pb-12 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[701px]:grid-cols-[1.2fr_0.8fr] gap-[60px] items-end">
@@ -102,7 +102,7 @@ export default function PressKit() {
             <h1 className="font-display text-[clamp(40px,5.5vw,72px)] font-black uppercase tracking-[-0.01em] leading-[0.92] text-cream mb-6">
               Ariba Jahan
             </h1>
-            <p className="text-[17px] leading-[1.6] text-cream/70 max-w-[480px] mb-7">{OFFICIAL_TITLE}</p>
+            <p className="text-body text-cream/70 max-w-[480px] mb-7">{OFFICIAL_TITLE}</p>
             <div className="flex flex-wrap gap-x-6 gap-y-2">
               {socialLinksForPress.map((s) => (
                 <a
@@ -126,7 +126,7 @@ export default function PressKit() {
             </span>
             <div className="relative aspect-[4/5] w-[240px] overflow-hidden">
               <Image
-                quality={90}
+               
                 src="/uploads/press-headshot-editorial.jpg"
                 alt="Ariba Jahan"
                 fill
@@ -142,7 +142,7 @@ export default function PressKit() {
       <section className="pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
         <div className="max-w-[720px] mx-auto relative">
           <h2 className="font-display text-2xl font-black uppercase text-charcoal mb-4">About</h2>
-          <p className="text-[15px] text-charcoal/55 mb-8 max-w-[520px]">
+          <p className="text-body text-charcoal/70 mb-8 max-w-[520px]">
             Headshot, bio, speaking topics, and current work for media, event organizers, and collaborators.
           </p>
           <div className="relative">
@@ -152,7 +152,7 @@ export default function PressKit() {
             >
               &ldquo;
             </div>
-            <p className="relative text-lg leading-[1.75] text-charcoal mb-4">{SHORT_BIO}</p>
+            <p className="relative text-body text-charcoal mb-4">{SHORT_BIO}</p>
           </div>
 
           <div
@@ -160,7 +160,7 @@ export default function PressKit() {
             style={{ maxHeight: bioExpandedOpen ? 1200 : 0 }}
           >
             {LONG_BIO.map((p, i) => (
-              <p key={i} className="text-lg leading-[1.75] text-charcoal/[0.68] mb-6">
+              <p key={i} className="text-body text-charcoal/[0.68] mb-6">
                 {p}
               </p>
             ))}
@@ -222,7 +222,7 @@ export default function PressKit() {
                 <div className="font-display text-2xl font-black uppercase tracking-[-0.01em] leading-[1.05] mb-4">
                   <span className={`inline-block -rotate-[1.5deg] ${item.chip} px-[10px] py-[3px] text-charcoal`}>{item.title}</span>
                 </div>
-                <p className="text-[15px] leading-[1.55] text-charcoal/65 mb-6 flex-1">{item.body}</p>
+                <p className="text-card text-charcoal/65 mb-6 flex-1">{item.body}</p>
                 <a
                   href={item.href}
                   target="_blank"
@@ -266,7 +266,7 @@ export default function PressKit() {
               {headshotOptions.map((h) => (
                 <div key={h.src} className="w-[130px]">
                   <div className="relative aspect-[4/5] w-[130px] overflow-hidden mb-3">
-                    <Image quality={90} src={h.src} alt={h.label} fill sizes="130px" style={{ objectFit: "cover" }} />
+                    <Image src={h.src} alt={h.label} fill sizes="130px" style={{ objectFit: "cover" }} />
                   </div>
                   <a
                     href={h.src}
@@ -281,7 +281,7 @@ export default function PressKit() {
 
             <div>
               <div className="text-[11px] font-extrabold tracking-[0.18em] uppercase text-charcoal/50 mb-2">Official Title</div>
-              <p className="text-[15px] text-charcoal">{OFFICIAL_TITLE}</p>
+              <p className="text-card text-charcoal">{OFFICIAL_TITLE}</p>
             </div>
           </div>
         </div>

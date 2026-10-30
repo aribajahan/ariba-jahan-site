@@ -23,9 +23,9 @@ export default function Experiments() {
             {homeContent.experiments.eyebrow}
           </div>
         )}
-        <div className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-charcoal mb-8">
+        <h2 className="font-display text-[48px] max-[700px]:text-[32px] font-black uppercase tracking-[-0.01em] text-charcoal mb-8">
           {homeContent.experiments.heading}
-        </div>
+        </h2>
 
         <div
           ref={scrollRef}
@@ -65,7 +65,7 @@ export default function Experiments() {
                 </span>
                 <div className="w-full h-[253px] max-[700px]:h-[200px] overflow-hidden mb-[18px] relative bg-charcoal/[0.06]">
                   {entry.photoSrc ? (
-                    <Image quality={90}
+                    <Image
                       src={entry.photoSrc}
                       alt={entry.headline}
                       fill
@@ -73,7 +73,7 @@ export default function Experiments() {
                       style={{ objectFit: "cover" }}
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center text-charcoal/40 text-xs font-semibold uppercase tracking-[0.1em]">
+                    <div className="w-full h-full flex items-center justify-center text-charcoal/70 text-xs font-semibold uppercase tracking-[0.1em]">
                       Photo coming soon
                     </div>
                   )}
@@ -86,7 +86,7 @@ export default function Experiments() {
                 <div className="font-display text-[22px] max-[700px]:text-[21px] font-black uppercase text-charcoal leading-[1.05] mb-[9px]">
                   {entry.headline}
                 </div>
-                <p className="text-[15px] leading-[1.5] text-charcoal/60">
+                <p className="text-card text-charcoal/60">
                   {entry.description}
                 </p>
                 </div>
@@ -100,7 +100,7 @@ export default function Experiments() {
             type="button"
             aria-label="Previous"
             onClick={() => scrollBy(-1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             ←
           </button>
@@ -108,7 +108,7 @@ export default function Experiments() {
             type="button"
             aria-label="Next"
             onClick={() => scrollBy(1)}
-            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/50 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+            className="w-11 h-11 flex items-center justify-center text-lg text-charcoal/70 cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
           >
             →
           </button>

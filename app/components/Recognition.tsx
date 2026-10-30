@@ -13,12 +13,12 @@ export default function Recognition() {
               {recognition.eyebrow}
             </div>
           )}
-          <div className="font-display text-[32px] font-black uppercase tracking-[-0.01em] text-cream">
+          <h2 className="font-display text-[32px] font-black uppercase tracking-[-0.01em] text-cream">
             {recognition.heading}
-          </div>
+          </h2>
         </div>
         <div className="flex-[1_1_380px] min-h-[min(420px,80vw)] min-w-0 overflow-hidden relative">
-          <Image quality={90}
+          <Image
             src={recognition.photoSrc}
             alt="Ariba Jahan receiving an award"
             fill
@@ -32,9 +32,9 @@ export default function Recognition() {
               {recognition.eyebrow}
             </div>
           )}
-          <div className="max-[1024px]:hidden font-display text-[48px] font-black uppercase tracking-[-0.01em] mb-9 text-cream">
+          <h2 className="max-[1024px]:hidden font-display text-[48px] font-black uppercase tracking-[-0.01em] mb-9 text-cream">
             {recognition.heading}
-          </div>
+          </h2>
           <div className="flex flex-col">
             {recognition.items.map((item, i) => (
               <div

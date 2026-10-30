@@ -24,13 +24,13 @@ export default function SpeakingEngagements() {
         <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-none text-cream mb-5 max-w-[800px]">
           {speakingContent.engagements.heading}
         </h2>
-        <p className="text-[19px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-cream/80 max-w-[720px] mb-9">
+        <p className="text-lede max-[700px]:text-lede-sm text-cream/80 max-w-[720px] mb-9">
           {speakingContent.engagements.intro}
         </p>
 
         <div className="grid [grid-template-columns:repeat(auto-fit,minmax(110px,1fr))] max-[1024px]:[grid-template-columns:repeat(4,1fr)] max-[700px]:!grid-cols-4 gap-[32px] gap-x-[28px] max-[1024px]:gap-y-8 max-[700px]:gap-y-6 max-[700px]:gap-x-4 items-center mb-6">
           {speakingLogos.map((logo, i) => (
-            <Image quality={90}
+            <Image
               key={logo.alt}
               src={logo.src}
               alt={logo.alt}
@@ -67,7 +67,7 @@ export default function SpeakingEngagements() {
 
         <div className="hidden max-[700px]:grid grid-cols-2 gap-[3px] mb-14">
           <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[260px]">
-            <Image quality={90}
+            <Image
               src={galleryPhotos[0]}
               alt="Ariba Jahan speaking engagement"
               fill
@@ -77,7 +77,7 @@ export default function SpeakingEngagements() {
           </div>
           {[galleryPhotos[3], galleryPhotos[2]].map((src) => (
             <div key={src} className="min-w-0 min-h-0 overflow-hidden relative h-[180px]">
-              <Image quality={90}
+              <Image
                 src={src}
                 alt="Ariba Jahan speaking engagement"
                 fill
@@ -90,7 +90,7 @@ export default function SpeakingEngagements() {
 
         <div className="max-[700px]:hidden grid grid-cols-4 max-[1024px]:grid-cols-3 gap-[3px] mb-[3px]">
           <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[260px]">
-            <Image quality={90}
+            <Image
               src={galleryPhotos[0]}
               alt="Ariba Jahan speaking engagement"
               fill
@@ -103,7 +103,7 @@ export default function SpeakingEngagements() {
               key={src}
               className="min-w-0 min-h-0 overflow-hidden relative h-[260px]"
             >
-              <Image quality={90}
+              <Image
                 src={src}
                 alt="Ariba Jahan speaking engagement"
                 fill
@@ -117,7 +117,7 @@ export default function SpeakingEngagements() {
         <div className="max-[700px]:hidden grid grid-cols-3 gap-[3px] mb-14">
           {galleryPhotos.slice(3).map((src) => (
             <div key={src} className="min-w-0 min-h-0 overflow-hidden relative h-[260px]">
-              <Image quality={90}
+              <Image
                 src={src}
                 alt="Ariba Jahan speaking engagement"
                 fill

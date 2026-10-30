@@ -28,7 +28,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const bodyHtml = marked.parse(article.body, { async: false }) as string;
 
   return (
-    <div className="bg-cream font-body text-lg leading-[1.6]">
+    <div className="bg-cream font-body text-body">
       <Nav />
       <article className="px-[clamp(24px,5vw,80px)] pt-[150px] pb-20 max-w-[760px] mx-auto">
         <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">

@@ -36,7 +36,7 @@ export default function ProblemFraming() {
         <h2 className="uppercase font-display text-[clamp(24px,3.4vw,48px)] font-black tracking-[-0.01em] leading-[1.05] text-charcoal mb-6 max-[700px]:whitespace-normal whitespace-nowrap">
           {problemFraming.heading}
         </h2>
-        <p className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 max-w-[760px] mb-[30px]">
+        <p className="text-body max-[700px]:text-body-sm text-charcoal/65 max-w-[760px] mb-[30px]">
           {problemFraming.intro}
         </p>
 
@@ -47,7 +47,7 @@ export default function ProblemFraming() {
           {problemFraming.points.map((point) => (
             <p
               key={point.label}
-              className="text-[17px] leading-[1.6] max-[700px]:text-[16px] max-[700px]:leading-[1.45] text-charcoal/65 m-0"
+              className="text-body max-[700px]:text-body-sm text-charcoal/65 m-0"
             >
               {point.label}: {point.text}
             </p>
@@ -133,7 +133,7 @@ export default function ProblemFraming() {
                       <div className="relative h-40 mt-4 max-[700px]:mt-3 mb-[14px] max-[700px]:mb-2 bg-charcoal/[0.06]">
                         {card.photoSrc ? (
                           <Image
-                            quality={90}
+                           
                             src={card.photoSrc}
                             alt={card.title}
                             fill
@@ -141,12 +141,12 @@ export default function ProblemFraming() {
                             style={{ objectFit: "cover" }}
                           />
                         ) : (
-                          <div className="w-full h-full flex items-center justify-center text-charcoal/35 text-[10px] font-semibold uppercase tracking-[0.14em]">
+                          <div className="w-full h-full flex items-center justify-center text-charcoal/70 text-[10px] font-semibold uppercase tracking-[0.14em]">
                             Image
                           </div>
                         )}
                       </div>
-                      <p className="text-[14px] leading-[1.6] text-charcoal/70">{card.description}</p>
+                      <p className="text-card text-charcoal/70">{card.description}</p>
                     </div>
                   </div>
                 );

@@ -41,7 +41,7 @@ export default function SpeakingTestimonials() {
               type="button"
               aria-label="Previous testimonial"
               onClick={() => scrollBy(-1)}
-              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/50 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/70 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
             >
               ←
             </button>
@@ -49,7 +49,7 @@ export default function SpeakingTestimonials() {
               type="button"
               aria-label="Next testimonial"
               onClick={() => scrollBy(1)}
-              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/50 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
+              className="w-11 h-11 flex items-center justify-center bg-transparent text-charcoal/70 text-base cursor-pointer transition-[color,transform] duration-150 hover:text-charcoal active:text-charcoal active:scale-90"
             >
               →
             </button>
