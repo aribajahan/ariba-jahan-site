@@ -6,7 +6,6 @@ export type PageSettings = {
   navLabel: string;
   slug: string;
   availability: Availability;
-  password: string;
   showFooter: boolean;
 };
 

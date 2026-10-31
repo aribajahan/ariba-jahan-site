@@ -18,7 +18,7 @@ export const metadata: Metadata = buildPageMetadata("speaking");
 export default async function Speaking() {
   const guard = await guardPage("speaking");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="speaking" />;
+  if (guard === "gate") return <PageGate />;
 
   const { showFooter } = getPageSettings("speaking");
 

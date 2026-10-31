@@ -19,7 +19,7 @@ const button = "inline-flex items-center justify-center gap-5 min-h-12 px-6 py-3
 export default async function PhotoPreview() {
   const guard = await guardPage("work-with-me-photo-preview");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="work-with-me-photo-preview" />;
+  if (guard === "gate") return <PageGate />;
   const { showFooter } = getPageSettings("work-with-me-photo-preview");
   return <div className="bg-cream text-charcoal font-body text-body">
     <Nav /><RevealInit />

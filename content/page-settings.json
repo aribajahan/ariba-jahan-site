@@ -3,56 +3,48 @@
     "navLabel": "Home",
     "slug": "/",
     "availability": "public",
-    "password": "",
     "showFooter": true
   },
   "speaking": {
     "navLabel": "Speaking",
     "slug": "/speaking",
     "availability": "public",
-    "password": "",
     "showFooter": true
   },
   "work-with-me": {
     "navLabel": "Work With Me",
     "slug": "/work-with-me",
     "availability": "public",
-    "password": "",
     "showFooter": true
   },
   "about": {
     "navLabel": "About",
     "slug": "/about",
     "availability": "public",
-    "password": "",
     "showFooter": true
   },
   "reading-room": {
     "navLabel": "Reading Room",
     "slug": "/reading-room",
     "availability": "draft",
-    "password": "",
     "showFooter": true
   },
   "work-with-me-2": {
     "navLabel": "Work With Me (archived build)",
     "slug": "/work-with-me-2",
     "availability": "password",
-    "password": "",
     "showFooter": true
   },
   "work-with-me-photo-preview": {
     "navLabel": "Work With Me (photo preview)",
     "slug": "/work-with-me-photo-preview",
     "availability": "password",
-    "password": "",
     "showFooter": true
   },
   "home-engagement-options": {
     "navLabel": "Home (engagement options preview)",
     "slug": "/home-engagement-options",
     "availability": "password",
-    "password": "",
     "showFooter": true
   }
 }

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { BTN_PRIMARY } from "./buttonStyles";
 
-export default function PageGate({ pageKey }: { pageKey: string }) {
+export default function PageGate() {
   const router = useRouter();
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -18,7 +18,7 @@ export default function PageGate({ pageKey }: { pageKey: string }) {
       const res = await fetch("/api/page-access", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ pageKey, password }),
+        body: JSON.stringify({ password }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));

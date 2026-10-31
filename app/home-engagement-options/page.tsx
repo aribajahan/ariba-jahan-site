@@ -29,7 +29,7 @@ export default async function HomeOptions({ searchParams }: { searchParams: Prom
   const layout: EngagementLayout = query.layout === "numbered" || query.layout === "shared" ? query.layout : "photos";
   const guard = await guardPage("home-engagement-options");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="home-engagement-options" />;
+  if (guard === "gate") return <PageGate />;
 
   const { showFooter } = getPageSettings("home-engagement-options");
 

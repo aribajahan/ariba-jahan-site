@@ -3,10 +3,10 @@ import { publishFiles, fetchContentJson } from "../../../../lib/github";
 import { buildCopyMarkdown } from "../../../../lib/copyExport.mjs";
 import { hashPagePassword, isHashedPassword } from "../../../../lib/pageAccess";
 
-const PAGE_SETTINGS_PATH = "content/page-settings.json";
+const SITE_ACCESS_PATH = "content/site-access.json";
 
 /**
- * Replaces any plaintext page password with its HMAC digest before the file is
+ * Replaces the plaintext password with its HMAC digest before the file is
  * committed. This repo is public and git history is permanent, so a plaintext
  * password reaching a commit could never be fully retracted.
  *
@@ -15,18 +15,15 @@ const PAGE_SETTINGS_PATH = "content/page-settings.json";
  * is server-only, and a server-side choke point can't be bypassed by a future
  * caller that forgets to hash.
  *
- * Throws if a password can't be secured, so the publish fails loudly instead of
- * quietly shipping a readable password.
+ * Throws if the password can't be secured, so the publish fails loudly instead
+ * of quietly shipping a readable password.
  */
-function hashPasswordsInSettings(raw: string): string {
-  const parsed = JSON.parse(raw) as Record<string, { password?: unknown } | null>;
+function hashSiteAccessPassword(raw: string): string {
+  const parsed = JSON.parse(raw) as { password?: unknown };
+  const { password } = parsed;
 
-  for (const page of Object.values(parsed)) {
-    if (!page || typeof page !== "object") continue;
-    const { password } = page;
-    if (typeof password !== "string" || password === "") continue;
-    if (isHashedPassword(password)) continue;
-    page.password = hashPagePassword(password);
+  if (typeof password === "string" && password !== "" && !isHashedPassword(password)) {
+    parsed.password = hashPagePassword(password);
   }
 
   return JSON.stringify(parsed, null, 2) + "\n";
@@ -58,16 +55,16 @@ export async function POST(request: Request) {
     }
   }
 
-  // Never let a readable page password reach a commit. Unlike COPY.md below,
-  // this is not best-effort: if it fails, the publish fails.
+  // Never let a readable password reach a commit. Unlike COPY.md below, this is
+  // not best-effort: if it fails, the publish fails.
   for (const file of fileList) {
-    if (file.path !== PAGE_SETTINGS_PATH) continue;
+    if (file.path !== SITE_ACCESS_PATH) continue;
     try {
-      file.content = hashPasswordsInSettings(file.content);
+      file.content = hashSiteAccessPassword(file.content);
     } catch (error) {
-      console.error("Refusing to publish page settings with unsecured passwords", error);
+      console.error("Refusing to publish site access with an unsecured password", error);
       return NextResponse.json(
-        { ok: false, error: "Could not secure page passwords. Nothing was published." },
+        { ok: false, error: "Could not secure the page password. Nothing was published." },
         { status: 500 }
       );
     }

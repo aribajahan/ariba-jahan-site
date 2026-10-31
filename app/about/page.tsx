@@ -22,7 +22,7 @@ export const metadata: Metadata = buildPageMetadata("about");
 export default async function About() {
   const guard = await guardPage("about");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="about" />;
+  if (guard === "gate") return <PageGate />;
 
   const { showFooter } = getPageSettings("about");
 

@@ -27,7 +27,7 @@ export const metadata: Metadata = buildPageMetadata("home", { absoluteTitle: tru
 export default async function Home() {
   const guard = await guardPage("home");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="home" />;
+  if (guard === "gate") return <PageGate />;
 
   const { showFooter } = getPageSettings("home");
 

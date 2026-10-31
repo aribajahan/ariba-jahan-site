@@ -15,7 +15,7 @@ export default async function WorkWithMeOfferDetail({ offer, overviewPath }: { o
   if (!o || !p) notFound();
   const guard = await guardPage("work-with-me");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="work-with-me" />;
+  if (guard === "gate") return <PageGate />;
   const { showFooter } = getPageSettings("work-with-me");
   return <div className="bg-cream text-charcoal font-body leading-[1.65]">
     <Nav />

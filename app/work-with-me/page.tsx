@@ -16,7 +16,7 @@ export const metadata: Metadata = buildPageMetadata("work-with-me");
 export default async function WorkWithMe() {
   const guard = await guardPage("work-with-me");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="work-with-me" />;
+  if (guard === "gate") return <PageGate />;
 
   const { showFooter } = getPageSettings("work-with-me");
 

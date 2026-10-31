@@ -9,7 +9,6 @@ type PageSettings = {
   navLabel: string;
   slug: string;
   availability: Availability;
-  password: string;
   showFooter: boolean;
 };
 type Seo = { title: string; description: string; ogImage?: string; useHomeOgImage?: boolean };
@@ -19,15 +18,18 @@ export default function PageSettingsEditor({
   allPageSettings,
   allNavVisibility,
   allSeo,
+  siteAccess,
 }: {
   pageKey: string;
   allPageSettings: Record<string, PageSettings>;
   allNavVisibility: Record<string, boolean>;
   allSeo: Record<string, Seo>;
+  siteAccess: { password: string };
 }) {
   const [pageSettings, setPageSettings] = useState(allPageSettings);
   const [navVisibility, setNavVisibility] = useState(allNavVisibility);
   const [seo, setSeo] = useState(allSeo);
+  const [password, setPassword] = useState("");
   const [tab, setTab] = useState<"general" | "nav" | "seo" | "social">("general");
   const { publish, publishing, result } = usePublish();
 
@@ -35,9 +37,13 @@ export default function PageSettingsEditor({
   const pageSeo = seo[pageKey] ?? { title: "", description: "" };
 
   // A saved password comes back as its HMAC digest (64 hex chars) — the publish
-  // route scrambles it and the plaintext is never stored. Show the field empty
-  // in that case rather than putting a meaningless hash in front of Ariba.
-  const passwordIsStored = /^[0-9a-f]{64}$/.test(settings.password);
+  // route scrambles it and the plaintext is never stored. So the field always
+  // starts empty: there is nothing readable to put in it, and typing a new
+  // password replaces the old one without the old one being needed.
+  const passwordIsStored = /^[0-9a-f]{64}$/.test(siteAccess.password);
+
+  // How many pages this one password covers, so the field can say so.
+  const protectedPages = Object.values(pageSettings).filter((p) => p.availability === "password");
 
   const updateSettings = (patch: Partial<PageSettings>) => {
     setPageSettings((s) => ({ ...s, [pageKey]: { ...s[pageKey], ...patch } }));
@@ -55,15 +61,19 @@ export default function PageSettingsEditor({
     setNavVisibility((v) => ({ ...v, [pageKey]: value }));
   };
 
-  const handlePublish = () =>
-    publish(
-      [
-        { path: "content/page-settings.json", content: JSON.stringify(pageSettings, null, 2) + "\n" },
-        { path: "content/nav-visibility.json", content: JSON.stringify(navVisibility, null, 2) + "\n" },
-        { path: "content/seo.json", content: JSON.stringify(seo, null, 2) + "\n" },
-      ],
-      `Update ${settings.navLabel} page settings via Studio`
-    );
+  const handlePublish = () => {
+    const files = [
+      { path: "content/page-settings.json", content: JSON.stringify(pageSettings, null, 2) + "\n" },
+      { path: "content/nav-visibility.json", content: JSON.stringify(navVisibility, null, 2) + "\n" },
+      { path: "content/seo.json", content: JSON.stringify(seo, null, 2) + "\n" },
+    ];
+    // Only sent when a new password was typed, so publishing any other setting
+    // can never blank out the password that's already set.
+    if (password) {
+      files.push({ path: "content/site-access.json", content: JSON.stringify({ password }, null, 2) + "\n" });
+    }
+    return publish(files, `Update ${settings.navLabel} page settings via Studio`);
+  };
 
   const tabs: { key: typeof tab; label: string }[] = [
     { key: "general", label: "General" },
@@ -116,17 +126,28 @@ export default function PageSettingsEditor({
             </select>
             {settings.availability === "password" && (
               <>
-                <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mt-4 mb-[6px]">Password</label>
+                <label className="block text-xs font-bold tracking-[0.04em] uppercase text-[#888] mt-4 mb-[6px]">
+                  Password {passwordIsStored ? "(set)" : "(not set yet)"}
+                </label>
                 <input
                   type="text"
-                  value={passwordIsStored ? "" : settings.password}
-                  placeholder={passwordIsStored ? "Password set — type a new one to change it" : "Choose a password"}
-                  onChange={(e) => updateSettings({ password: e.target.value })}
+                  value={password}
+                  placeholder={passwordIsStored ? "Type a new password to replace it" : "Choose a password"}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="w-full px-3 py-[10px] bg-[#f4f3f1] border border-[#e2e0dc] rounded-md text-sm"
                 />
                 <div className="text-xs text-[#999] mt-2">
-                  Scrambled on publish, so it&rsquo;s never readable in the site&rsquo;s code. That also means it
-                  can&rsquo;t be shown back to you here — if you forget it, set a new one.
+                  One password opens every password-protected page
+                  {protectedPages.length > 1 && <> — {protectedPages.length} of them right now</>}, and a visitor is
+                  asked for it once rather than on each page. Changing it here changes it everywhere.
+                </div>
+                <div className="text-xs text-[#999] mt-2">
+                  You never need the old one. Type a new password, publish, and the old one stops working — so
+                  forgetting it costs nothing except telling anyone you&rsquo;d shared it.
+                </div>
+                <div className="text-xs text-[#999] mt-2">
+                  It&rsquo;s scrambled on publish, so it&rsquo;s never readable in the site&rsquo;s code. That is also
+                  why it can&rsquo;t be shown back to you here.
                 </div>
               </>
             )}

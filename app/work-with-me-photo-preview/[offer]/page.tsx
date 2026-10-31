@@ -15,7 +15,7 @@ export default async function OfferDetail({ params }: { params: Promise<{ offer:
   // preview locks its detail pages too.
   const guard = await guardPage(PAGE_KEY);
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey={PAGE_KEY} />;
+  if (guard === "gate") return <PageGate />;
 
   const { offer } = await params;
   return <WorkWithMeOfferDetail offer={offer} overviewPath="/work-with-me-photo-preview" />;
