@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "Ariba Jahan — Product, Experience & AI Strategy",
+    "title": "Ariba Jahan \u2014 Product, Experience & AI Strategy",
     "description": "I build the products, experiences, and capabilities that make organizations unmissable, as AI reshapes behavior, expectations, and trust.",
     "ogImage": ""
   },
@@ -18,7 +18,31 @@
   },
   "about": {
     "title": "About",
-    "description": "Product and AI strategist, consultant, speaker, and writer. The story behind the work — and what I'm focused on right now.",
+    "description": "Product and AI strategist, consultant, speaker, and writer. The story behind the work \u2014 and what I'm focused on right now.",
+    "ogImage": "",
+    "useHomeOgImage": true
+  },
+  "reading-room": {
+    "title": "Reading Room",
+    "description": "",
+    "ogImage": "",
+    "useHomeOgImage": true
+  },
+  "work-with-me-2": {
+    "title": "Work With Me",
+    "description": "",
+    "ogImage": "",
+    "useHomeOgImage": true
+  },
+  "work-with-me-photo-preview": {
+    "title": "Work With Me",
+    "description": "",
+    "ogImage": "",
+    "useHomeOgImage": true
+  },
+  "home-engagement-options": {
+    "title": "Home",
+    "description": "",
     "ogImage": "",
     "useHomeOgImage": true
   }

@@ -8,7 +8,6 @@ export type PageSettings = {
   availability: Availability;
   password: string;
   showFooter: boolean;
-  socialImage: string;
 };
 
 export type PageKey = keyof typeof pageSettingsData;

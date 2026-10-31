@@ -11,9 +11,8 @@ type PageSettings = {
   availability: Availability;
   password: string;
   showFooter: boolean;
-  socialImage: string;
 };
-type Seo = { title: string; description: string };
+type Seo = { title: string; description: string; ogImage?: string; useHomeOgImage?: boolean };
 
 export default function PageSettingsEditor({
   pageKey,
@@ -192,14 +191,26 @@ export default function PageSettingsEditor({
           <div>
             <h3 className="text-[13px] font-bold tracking-[0.04em] uppercase mb-2">Social Image</h3>
             <p className="text-[13px] text-[#888] mb-4">
-              Not wired to the live pages yet. Every page currently shares one site-wide preview image when shared on
-              LinkedIn, Twitter, etc. This field saves, but a per-page override isn&rsquo;t shown until this gets connected.
+              The picture that shows up when this page is shared on LinkedIn, Slack, iMessage and the rest. Leave it
+              empty and the page falls back to the site-wide one.
             </p>
-            <MediaPicker
-              value={settings.socialImage}
-              onChange={(src) => updateSettings({ socialImage: src })}
-              placeholder="/uploads/photo.jpg"
-            />
+            {pageKey !== "home" && (
+              <label className="flex items-center gap-2 text-sm mb-4">
+                <input
+                  type="checkbox"
+                  checked={pageSeo.useHomeOgImage ?? false}
+                  onChange={(e) => updateSeo({ useHomeOgImage: e.target.checked })}
+                />
+                Use the same image as Home
+              </label>
+            )}
+            {!(pageKey !== "home" && pageSeo.useHomeOgImage) && (
+              <MediaPicker
+                value={pageSeo.ogImage ?? ""}
+                onChange={(src) => updateSeo({ ogImage: src })}
+                placeholder="/uploads/photo.jpg"
+              />
+            )}
           </div>
         )}
 
