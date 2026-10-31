@@ -10,8 +10,6 @@ export type SpeakingTheme = {
   description: string;
 };
 
-export const speakingThemes: SpeakingTheme[] = speakingContent.themes.items;
-
 export { type Testimonial as SpeakingTestimonial } from "./testimonials";
 import { testimonialsFor } from "./testimonials";
 

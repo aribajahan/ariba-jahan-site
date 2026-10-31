@@ -27,11 +27,11 @@ export const metadata: Metadata = { ...buildPageMetadata("home", { absoluteTitle
 export default async function HomeOptions({ searchParams }: { searchParams: Promise<{ layout?: string; copy?: string }> }) {
   const query = await searchParams;
   const layout: EngagementLayout = query.layout === "numbered" || query.layout === "shared" ? query.layout : "photos";
-  const guard = await guardPage("home");
+  const guard = await guardPage("home-engagement-options");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="home" />;
+  if (guard === "gate") return <PageGate pageKey="home-engagement-options" />;
 
-  const { showFooter } = getPageSettings("home");
+  const { showFooter } = getPageSettings("home-engagement-options");
 
   return (
     <div className="bg-cream font-body text-body">

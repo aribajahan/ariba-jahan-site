@@ -49,6 +49,7 @@ function liveEyebrow(page: PageRecord, section: SectionRecord): string | null {
 
 const BADGE: Record<EyebrowState["kind"], { label: string; className: string }> = {
   retired: { label: "Retired", className: "bg-[#efe7e7] text-[#8c3b36]" },
+  removed: { label: "Field deleted", className: "bg-[#e9e4e4] text-[#6b5250]" },
   repurposed: { label: "Now a heading or subhead", className: "bg-[#e7ecef] text-[#35566b]" },
   moved: { label: "Moved", className: "bg-[#eceae2] text-[#6b6450]" },
   untouched: { label: "Never had one", className: "bg-black/[0.05] text-black/45" },
@@ -70,10 +71,19 @@ function EyebrowDetail({ state, live }: { state: EyebrowState; live: string | nu
   if (state.kind === "repurposed") {
     return (
       <div className="text-[13px] leading-[1.5]">
-        <div className="text-black/80">
-          &ldquo;{live ?? state.was}&rdquo;
-        </div>
+        <div className="text-black/80">&ldquo;{live ?? state.was}&rdquo;</div>
         <div className="text-black/45">Renders as {state.rendersAs}.</div>
+        <div className="text-black/40">
+          The editor calls this field &ldquo;{state.studioLabel}&rdquo;.
+        </div>
+      </div>
+    );
+  }
+  if (state.kind === "removed") {
+    return (
+      <div className="text-[13px] leading-[1.5]">
+        <div className="text-black/45 line-through">&ldquo;{state.was}&rdquo;</div>
+        <div className="text-black/40">The field is gone from the content file.</div>
       </div>
     );
   }
@@ -123,6 +133,9 @@ export default function AdminArchitecture() {
         </span>
         <span className="px-3 py-[6px] rounded bg-[#eceae2] text-[#6b6450] font-semibold">
           {counts.moved ?? 0} moved
+        </span>
+        <span className="px-3 py-[6px] rounded bg-[#e9e4e4] text-[#6b5250] font-semibold">
+          {counts.removed ?? 0} field deleted
         </span>
         <span className="px-3 py-[6px] rounded bg-black/[0.05] text-black/45 font-semibold">
           {HARDCODED_RECORDS.length} written in code, no editor field

@@ -30,6 +30,14 @@ const MEDIA = [
   },
 ];
 
+// Older builds and layout experiments, kept so they can be looked at but not
+// live. Each has its own availability setting; the links go straight to it.
+const ARCHIVE = [
+  { label: "Work With Me (archived)", href: "/admin/page-settings/work-with-me-2" },
+  { label: "Work With Me (photo preview)", href: "/admin/page-settings/work-with-me-photo-preview" },
+  { label: "Home (engagement options)", href: "/admin/page-settings/home-engagement-options" },
+];
+
 const SITE = [
   { label: "Site Architecture", href: "/admin/architecture" },
   { label: "Commit Activity", href: "/admin/activity" },
@@ -128,6 +136,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <PagesNavGroup pathname={pathname} />
           <NavGroup title="Collections" items={COLLECTIONS} pathname={pathname} />
           <NavGroup title="Media" items={MEDIA} pathname={pathname} />
+          <NavGroup title="Archive & Previews" items={ARCHIVE} pathname={pathname} />
           <NavGroup title="Site" items={SITE} pathname={pathname} />
         </div>
         <div className="p-3 border-t border-white/[0.08]">

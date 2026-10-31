@@ -10,7 +10,6 @@ type PageSettings = {
   slug: string;
   availability: Availability;
   password: string;
-  showInNav: boolean;
   showFooter: boolean;
   socialImage: string;
 };
@@ -49,8 +48,11 @@ export default function PageSettingsEditor({
     setSeo((s) => ({ ...s, [pageKey]: { ...pageSeo, ...patch } }));
   };
 
+  // Nav visibility is kept in content/nav-visibility.json, which Nav reads.
+  // It used to be mirrored into page-settings.json as well; that second copy
+  // was never read and could drift, so it is gone.
+  const showInNav = navVisibility[pageKey] !== false;
   const updateShowInNav = (value: boolean) => {
-    updateSettings({ showInNav: value });
     setNavVisibility((v) => ({ ...v, [pageKey]: value }));
   };
 
@@ -142,10 +144,10 @@ export default function PageSettingsEditor({
               <span className="text-sm">Show in Nav</span>
               <button
                 type="button"
-                onClick={() => updateShowInNav(!settings.showInNav)}
-                className={`w-9 h-5 rounded-full relative transition-colors ${settings.showInNav ? "bg-[#2a7a3e]" : "bg-[#ccc]"}`}
+                onClick={() => updateShowInNav(!showInNav)}
+                className={`w-9 h-5 rounded-full relative transition-colors ${showInNav ? "bg-[#2a7a3e]" : "bg-[#ccc]"}`}
               >
-                <span className={`w-4 h-4 bg-white rounded-full absolute top-[2px] transition-all ${settings.showInNav ? "right-[2px]" : "left-[2px]"}`} />
+                <span className={`w-4 h-4 bg-white rounded-full absolute top-[2px] transition-all ${showInNav ? "right-[2px]" : "left-[2px]"}`} />
               </button>
             </div>
             <div className="flex justify-between items-center py-[10px]">

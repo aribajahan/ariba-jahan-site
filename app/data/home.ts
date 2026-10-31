@@ -18,11 +18,7 @@ export type MarqueeRow = {
   reverse?: boolean;
 };
 
-export const nameMarqueeRows: MarqueeRow[] = homeContent.nameMarquee.rows;
-
 export const stats = homeContent.credentials.stats;
-
-export const speakingPhotos = homeContent.speakingTeaser.photos;
 
 // "Projects & Quests" scroll-snap carousel. Content lives in
 // content/collections/case-studies-quests.json so it's editable via the Studio.
@@ -56,8 +52,6 @@ export type PressItem = {
   bg: string;
 };
 
-export const pressItems: PressItem[] = homeContent.press.items;
-
 export { type Testimonial } from "./testimonials";
 import { testimonialsFor } from "./testimonials";
 
@@ -68,13 +62,5 @@ export type CommunityPhoto = {
   caption: string;
   number: number;
 };
-
-const communityPhotosBase: CommunityPhoto[] = homeContent.community.photos;
-
-// Duplicated once (matching home.dc.html) so the CSS marquee loop is seamless.
-export const communityPhotos: CommunityPhoto[] = [
-  ...communityPhotosBase,
-  ...communityPhotosBase,
-];
 
 export const footerSocials = heroSocials;

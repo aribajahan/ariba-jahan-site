@@ -181,7 +181,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Work With Me Teaser" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.workWithMeTeaser.eyebrow} onChange={(e) => set("workWithMeTeaser", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.workWithMeTeaser.eyebrow} onChange={(e) => set("workWithMeTeaser", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.workWithMeTeaser.heading} onChange={(e) => set("workWithMeTeaser", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Body">
           <textarea rows={4} value={content.workWithMeTeaser.body} onChange={(e) => set("workWithMeTeaser", { body: e.target.value })} className={`${inputCls} resize-y`} />
@@ -215,7 +215,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Unmissables" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.unmissables.eyebrow} onChange={(e) => set("unmissables", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.unmissables.heading} onChange={(e) => set("unmissables", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Intro">
           <textarea rows={4} value={content.unmissables.intro} onChange={(e) => set("unmissables", { intro: e.target.value })} className={`${inputCls} resize-y`} />
@@ -243,7 +243,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
         <label className="flex gap-2 items-center text-sm mb-4"><input type="checkbox" checked={content.readingRoom.enabled} onChange={(e) => set("readingRoom", { enabled: e.target.checked })} />Show Reading Room on the homepage</label>
         <p className="text-xs text-[#777] mb-4">Appears below Unmissables and above the credibility numbers. Hides after the event end time. Update both the displayed date and the start/end timestamps for the next session.</p>
         {([
-          ["eyebrow", "Eyebrow"], ["heading", "Heading"], ["description", "Series description"], ["body", "Series details"], ["host", "Host"],
+          ["eyebrow", "Eyebrow (retired — typing here puts the label back)"], ["heading", "Heading"], ["description", "Series description"], ["body", "Series details"], ["host", "Host"],
           ["sessionLabel", "Session label"], ["cardLabel", "Card label"], ["sessionTitle", "Session question"], ["sessionSubtitle", "Session subtitle"],
           ["dateLabel", "Displayed date and time"], ["formatLabel", "Duration, location and price"], ["startsAt", "Start timestamp (include time zone)"], ["endsAt", "End timestamp / hide after (include time zone)"],
           ["ctaLabel", "Button wording"], ["ctaHref", "Booking URL"]
@@ -265,7 +265,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Speaking Teaser" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.speakingTeaser.eyebrow} onChange={(e) => set("speakingTeaser", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.speakingTeaser.eyebrow} onChange={(e) => set("speakingTeaser", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.speakingTeaser.heading} onChange={(e) => set("speakingTeaser", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Paragraphs">
           <textarea
@@ -288,13 +288,13 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Projects & Quests" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.experiments.eyebrow} onChange={(e) => set("experiments", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.experiments.eyebrow} onChange={(e) => set("experiments", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.experiments.heading} onChange={(e) => set("experiments", { heading: e.target.value })} className={inputCls} /></Field>
         <p className="text-xs text-[#999]">The project cards themselves are managed in the Case Studies & Quests collection.</p>
       </SectionCard>
 
       <SectionCard title="Recognition" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.recognition.eyebrow} onChange={(e) => set("recognition", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.recognition.eyebrow} onChange={(e) => set("recognition", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.recognition.heading} onChange={(e) => set("recognition", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Photo"><MediaPicker value={content.recognition.photoSrc} onChange={(src) => set("recognition", { photoSrc: src })} /></Field>
         <label className="block text-[13px] font-semibold mb-2">Recognition Items</label>
@@ -308,7 +308,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Press & Bylines" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.press.eyebrow} onChange={(e) => set("press", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.press.eyebrow} onChange={(e) => set("press", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.press.heading} onChange={(e) => set("press", { heading: e.target.value })} className={inputCls} /></Field>
         <label className="block text-[13px] font-semibold mb-[10px]">Press Items</label>
         <div className="flex flex-col gap-2 mb-2">
@@ -331,7 +331,7 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
       </SectionCard>
 
       <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.testimonialsSection.heading} onChange={(e) => set("testimonialsSection", { heading: e.target.value })} className={inputCls} /></Field>
         <p className="text-xs text-[#999]">Testimonials themselves are managed in the shared Testimonials collection.</p>
       </SectionCard>

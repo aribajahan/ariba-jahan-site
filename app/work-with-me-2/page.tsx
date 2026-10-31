@@ -19,11 +19,11 @@ import { buildPageMetadata } from "../../lib/seoMeta";
 export const metadata: Metadata = { ...buildPageMetadata("work-with-me"), title: "Work With Me 2", robots: { index: false, follow: false } };
 
 export default async function WorkWithMe2() {
-  const guard = await guardPage("work-with-me");
+  const guard = await guardPage("work-with-me-2");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="work-with-me" />;
+  if (guard === "gate") return <PageGate pageKey="work-with-me-2" />;
 
-  const { showFooter } = getPageSettings("work-with-me");
+  const { showFooter } = getPageSettings("work-with-me-2");
 
   return (
     <div className="bg-cream font-body text-body">

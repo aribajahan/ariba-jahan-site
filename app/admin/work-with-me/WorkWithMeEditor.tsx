@@ -208,14 +208,14 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="Trusted By" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Section heading">
           <input value={content.wwmTrustedBy.eyebrow} onChange={(e) => updateWwmTrustedBy({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <p className="text-xs text-[#999]">Logos are managed in code, not here.</p>
       </SectionCard>
 
       <SectionCard title="Problem Framing" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Eyebrow (retired — typing here puts the label back)">
           <input value={content.problemFraming.eyebrow} onChange={(e) => updateProblemFraming({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
@@ -291,7 +291,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="Ambition Sprint" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Audience">
           <input value={content.cxSprint.eyebrow} onChange={(e) => updateCxSprint({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
@@ -348,7 +348,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="1:1 Strategy Sessions" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Audience">
           <input value={content.strategySessions.eyebrow} onChange={(e) => updateStrategySessions({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
@@ -391,7 +391,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Eyebrow (retired — typing here puts the label back)">
           <input value={content.testimonialsSection.eyebrow} onChange={(e) => updateTestimonialsSection({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
@@ -401,7 +401,7 @@ export default function WorkWithMeEditor({ initialContent }: { initialContent: W
       </SectionCard>
 
       <SectionCard title="Case Studies Section Header" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Eyebrow (retired — typing here puts the label back)">
           <input value={content.caseStudiesSection.eyebrow} onChange={(e) => updateCaseStudiesSection({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">

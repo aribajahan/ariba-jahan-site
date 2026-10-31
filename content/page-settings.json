@@ -4,7 +4,6 @@
     "slug": "/",
     "availability": "public",
     "password": "",
-    "showInNav": false,
     "showFooter": true,
     "socialImage": ""
   },
@@ -13,7 +12,6 @@
     "slug": "/speaking",
     "availability": "public",
     "password": "",
-    "showInNav": true,
     "showFooter": true,
     "socialImage": ""
   },
@@ -22,7 +20,6 @@
     "slug": "/work-with-me",
     "availability": "public",
     "password": "",
-    "showInNav": true,
     "showFooter": true,
     "socialImage": ""
   },
@@ -31,7 +28,6 @@
     "slug": "/about",
     "availability": "public",
     "password": "",
-    "showInNav": true,
     "showFooter": true,
     "socialImage": ""
   },
@@ -40,7 +36,30 @@
     "slug": "/reading-room",
     "availability": "draft",
     "password": "",
-    "showInNav": false,
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "work-with-me-2": {
+    "navLabel": "Work With Me (archived build)",
+    "slug": "/work-with-me-2",
+    "availability": "password",
+    "password": "",
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "work-with-me-photo-preview": {
+    "navLabel": "Work With Me (photo preview)",
+    "slug": "/work-with-me-photo-preview",
+    "availability": "password",
+    "password": "",
+    "showFooter": true,
+    "socialImage": ""
+  },
+  "home-engagement-options": {
+    "navLabel": "Home (engagement options preview)",
+    "slug": "/home-engagement-options",
+    "availability": "password",
+    "password": "",
     "showFooter": true,
     "socialImage": ""
   }

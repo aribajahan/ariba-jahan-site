@@ -17,7 +17,8 @@
 
 export type EyebrowState =
   | { kind: "retired"; was: string }
-  | { kind: "repurposed"; was: string; rendersAs: string }
+  | { kind: "removed"; was: string }
+  | { kind: "repurposed"; was: string; rendersAs: string; studioLabel: string }
   | { kind: "moved"; was: string; movedTo: string }
   | { kind: "untouched" };
 
@@ -77,7 +78,7 @@ export const PAGE_RECORDS: PageRecord[] = [
     ],
   },
   {
-    page: "Work With Me (preview build)",
+    page: "Work With Me (archived build)",
     href: "/work-with-me-2",
     editorHref: "/admin/work-with-me",
     contentFile: "work-with-me.json",
@@ -85,7 +86,7 @@ export const PAGE_RECORDS: PageRecord[] = [
       {
         section: "Trusted By",
         path: "wwmTrustedBy",
-        eyebrow: { kind: "repurposed", was: "Trusted By", rendersAs: "the section heading" },
+        eyebrow: { kind: "repurposed", was: "Trusted By", rendersAs: "the section heading", studioLabel: "Section heading" },
         note: "The only label on the logo wall, so it became a heading rather than being cut. This is the one section in this file that also renders on the live /work-with-me, through WorkWithMeOverview.",
       },
       { section: "Problem framing", path: "problemFraming", headingKey: "heading", eyebrow: { kind: "retired", was: "What's Changed" } },
@@ -93,14 +94,14 @@ export const PAGE_RECORDS: PageRecord[] = [
         section: "Ambition Sprint",
         path: "cxSprint",
         headingKey: "heading",
-        eyebrow: { kind: "repurposed", was: "01 · For Teams & Organizations", rendersAs: "a subhead below the heading" },
+        eyebrow: { kind: "repurposed", was: "01 · For Teams & Organizations", rendersAs: "a subhead below the heading", studioLabel: "Audience" },
         note: "Says who the offer is for, which the heading cannot carry.",
       },
       {
         section: "1:1 Strategy Sessions",
         path: "strategySessions",
         headingKey: "heading",
-        eyebrow: { kind: "repurposed", was: "02 · For Individual Leaders", rendersAs: "a subhead below the heading" },
+        eyebrow: { kind: "repurposed", was: "02 · For Individual Leaders", rendersAs: "a subhead below the heading", studioLabel: "Audience" },
       },
       { section: "Testimonials", path: "testimonialsSection", headingKey: "heading", eyebrow: { kind: "retired", was: "Client Voices" } },
       { section: "Case Studies", path: "caseStudiesSection", headingKey: "heading", eyebrow: { kind: "retired", was: "Some Of My Work" } },
@@ -117,8 +118,8 @@ export const PAGE_RECORDS: PageRecord[] = [
         section: "Overview intro",
         path: "",
         headingKey: "heading",
-        eyebrow: { kind: "retired", was: "Work with me" },
-        note: "Named the page the reader was already on. Nothing renders this field today.",
+        eyebrow: { kind: "removed", was: "Work with me" },
+        note: "Named the page the reader was already on. Nothing rendered it, so the field itself was taken out of the content file on Oct 30, 2026.",
       },
     ],
   },
@@ -133,14 +134,14 @@ export const PAGE_RECORDS: PageRecord[] = [
       {
         section: "Bio",
         path: "bio",
-        eyebrow: { kind: "repurposed", was: "Bio", rendersAs: "the section heading" },
+        eyebrow: { kind: "repurposed", was: "Bio", rendersAs: "the section heading", studioLabel: "Section heading" },
         note: "The only label on the section. Worth asking whether the section needs a heading at all, or should open on the first line of the bio.",
       },
       {
         section: "Career Advisory",
         path: "careerAdvisory",
         headingKey: "headline",
-        eyebrow: { kind: "repurposed", was: "For the Career-Ambitious", rendersAs: "a subhead below the heading" },
+        eyebrow: { kind: "repurposed", was: "For the Career-Ambitious", rendersAs: "a subhead below the heading", studioLabel: "Audience" },
       },
       { section: "Recognition & features", path: "recognitionFeatures", headingKey: "heading", eyebrow: { kind: "retired", was: "Recognition & Features" } },
       { section: "Closing CTA", path: "closingCTA", headingKey: "heading", eyebrow: { kind: "untouched" } },

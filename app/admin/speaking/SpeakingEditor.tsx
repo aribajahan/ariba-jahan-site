@@ -54,7 +54,7 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
       <p className="text-[13px] text-[#999] mb-6">Click a section to expand and edit its fields.</p>
 
       <SectionCard title="Hero">
-        <Field label="Eyebrow"><input value={content.hero.eyebrow} onChange={(e) => set("hero", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.hero.eyebrow} onChange={(e) => set("hero", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Hero Photo"><MediaPicker value={content.hero.photoSrc} onChange={(src) => set("hero", { photoSrc: src })} /></Field>
         <Field label="Headline">
           <textarea rows={3} value={content.hero.headline} onChange={(e) => set("hero", { headline: e.target.value })} className={`${inputCls} resize-y`} />
@@ -65,7 +65,7 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
       </SectionCard>
 
       <SectionCard title="Speaking Themes" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.themes.eyebrow} onChange={(e) => set("themes", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.themes.eyebrow} onChange={(e) => set("themes", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.themes.heading} onChange={(e) => set("themes", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Lead (bold intro line)">
           <textarea rows={2} value={content.themes.lead} onChange={(e) => set("themes", { lead: e.target.value })} className={`${inputCls} resize-y`} />
@@ -87,13 +87,13 @@ export default function SpeakingEditor({ initialContent }: { initialContent: Spe
       </SectionCard>
 
       <SectionCard title="Testimonials Section Header" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.testimonialsSection.eyebrow} onChange={(e) => set("testimonialsSection", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.testimonialsSection.heading} onChange={(e) => set("testimonialsSection", { heading: e.target.value })} className={inputCls} /></Field>
         <p className="text-xs text-[#999]">Testimonials themselves are managed in the shared Testimonials collection.</p>
       </SectionCard>
 
       <SectionCard title="Engagements" defaultExpanded={false}>
-        <Field label="Eyebrow"><input value={content.engagements.eyebrow} onChange={(e) => set("engagements", { eyebrow: e.target.value })} className={inputCls} /></Field>
+        <Field label="Eyebrow (retired — typing here puts the label back)"><input value={content.engagements.eyebrow} onChange={(e) => set("engagements", { eyebrow: e.target.value })} className={inputCls} /></Field>
         <Field label="Heading"><input value={content.engagements.heading} onChange={(e) => set("engagements", { heading: e.target.value })} className={inputCls} /></Field>
         <Field label="Intro">
           <textarea rows={3} value={content.engagements.intro} onChange={(e) => set("engagements", { intro: e.target.value })} className={`${inputCls} resize-y`} />

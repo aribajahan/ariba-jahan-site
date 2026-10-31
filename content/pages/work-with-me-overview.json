@@ -1,5 +1,4 @@
 {
-  "eyebrow": "",
   "heading": "Let's work together.",
   "intro": "I work with leaders on what to build for customers and how to put AI to work inside their organizations. Bring me in for a focused project or work with me one-to-one.",
   "photoSrc": "/uploads/strategy-sessions-red-sweater-v1.jpg",
@@ -102,11 +101,6 @@
       "detailsLabel": "Explore the work & approach"
     }
   ],
-  "testimonial": {
-    "quote": "Customers, engineers, and executives all trusted her judgment.",
-    "name": "Mansoor Basha",
-    "role": "CTO, Stagwell Marketing Cloud"
-  },
   "contactHeading": "Have something else in mind?",
   "contactBody": "If your project crosses a few of these areas, tell me what you're working on. We can figure out the right engagement together.",
   "contactCta": "Book a discovery call",

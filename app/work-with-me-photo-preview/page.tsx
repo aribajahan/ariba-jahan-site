@@ -17,10 +17,10 @@ const wrap = "max-w-[1200px] mx-auto px-[clamp(24px,5vw,80px)]";
 const button = "inline-flex items-center justify-center gap-5 min-h-12 px-6 py-3 text-[13px] font-extrabold tracking-[0.06em] uppercase bg-cherish text-cream hover:bg-charcoal transition-colors focus-visible:outline-2 focus-visible:outline-offset-4";
 
 export default async function PhotoPreview() {
-  const guard = await guardPage("work-with-me");
+  const guard = await guardPage("work-with-me-photo-preview");
   if (guard === "notFound") notFound();
-  if (guard === "gate") return <PageGate pageKey="work-with-me" />;
-  const { showFooter } = getPageSettings("work-with-me");
+  if (guard === "gate") return <PageGate pageKey="work-with-me-photo-preview" />;
+  const { showFooter } = getPageSettings("work-with-me-photo-preview");
   return <div className="bg-cream text-charcoal font-body text-body">
     <Nav /><RevealInit />
     <main>

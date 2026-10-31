@@ -7,7 +7,6 @@ export type PageSettings = {
   slug: string;
   availability: Availability;
   password: string;
-  showInNav: boolean;
   showFooter: boolean;
   socialImage: string;
 };

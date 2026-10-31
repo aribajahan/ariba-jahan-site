@@ -17,10 +17,6 @@ import wwmContentForOffers from "../../content/pages/work-with-me.json";
 
 export type ProblemFramingView = { label: string; cards: ProblemCard[] };
 
-// Problem framing is two views — what customers experience, what organizations
-// need — switched by a toggle in the component.
-export const problemFramingViews: ProblemFramingView[] = wwmContentForOffers.problemFraming.views;
-
 export const cxSprintFitPoints: string[] = wwmContentForOffers.cxSprint.fitPoints;
 
 export type SprintDeliverable = { title: string; description: string };
@@ -67,7 +63,6 @@ import wwmCaseStudiesData from "../../content/collections/wwm-case-studies.json"
 
 export const caseStudies: CaseStudy[] = wwmCaseStudiesData;
 
-
 export type WwmClosingLink = {
   index: string;
   title: string;
@@ -76,5 +71,3 @@ export type WwmClosingLink = {
   sub?: string;
   external?: boolean;
 };
-
-export const wwmClosingLinks: WwmClosingLink[] = wwmContentForOffers.closingCTA.links;

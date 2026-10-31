@@ -160,7 +160,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
           <MediaPicker value={content.hero.photoSrcMobile} onChange={(src) => updateHero({ photoSrcMobile: src })} />
         </div>
 
-        <label className="block text-[13px] font-semibold mb-2">Eyebrow</label>
+        <label className="block text-[13px] font-semibold mb-2">Eyebrow (retired — typing here puts the label back)</label>
         <input
           value={content.hero.eyebrow}
           onChange={(e) => updateHero({ eyebrow: e.target.value })}
@@ -183,7 +183,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
       </SectionCard>
 
       <SectionCard title="Story Timeline" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Eyebrow (retired — typing here puts the label back)">
           <input value={content.storyTimeline.eyebrow} onChange={(e) => updateStoryTimeline({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
@@ -199,7 +199,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
       </SectionCard>
 
       <SectionCard title="Bio" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Section heading">
           <input value={content.bio.eyebrow} onChange={(e) => updateBio({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Short Bio (blank line between paragraphs)">
@@ -231,7 +231,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
       </SectionCard>
 
       <SectionCard title="Career Advisory" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Audience">
           <input value={content.careerAdvisory.eyebrow} onChange={(e) => updateCareerAdvisory({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Headline">
@@ -255,7 +255,7 @@ export default function AboutEditor({ initialContent }: { initialContent: AboutC
       </SectionCard>
 
       <SectionCard title="Recognition & Features" defaultExpanded={false}>
-        <Field label="Eyebrow">
+        <Field label="Eyebrow (retired — typing here puts the label back)">
           <input value={content.recognitionFeatures.eyebrow} onChange={(e) => updateRecognitionFeatures({ eyebrow: e.target.value })} className={inputCls} />
         </Field>
         <Field label="Heading">
