@@ -4,8 +4,8 @@ import wwmContent from "../../content/pages/work-with-me.json";
 
 export default function WwmTrustedBy() {
   return (
-    <section className="bg-charcoal py-10 px-[clamp(24px,5vw,80px)] overflow-hidden">
-      <div className="reveal max-w-[1400px] mx-auto">
+    <section className="bg-charcoal py-10 overflow-hidden">
+      <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         {wwmContent.wwmTrustedBy.eyebrow && (
           <h2 className="font-display text-base font-black uppercase text-cream/50 mb-[22px]">
             {wwmContent.wwmTrustedBy.eyebrow}

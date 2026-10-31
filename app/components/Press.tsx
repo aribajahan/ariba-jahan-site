@@ -6,7 +6,7 @@ export default function Press() {
   const items = press.items;
 
   return (
-    <section className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-16 max-[700px]:pb-14 border-t border-charcoal/[0.08]">
+    <section className="bg-cream pt-[120px] max-[1024px]:pt-24 max-[700px]:pt-[70px] pb-[120px] max-[1024px]:pb-20 max-[700px]:pb-16 border-t border-charcoal/[0.08]">
       <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         {press.eyebrow && (
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-4">

@@ -15,7 +15,7 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
   const { workWithMeTeaser: content } = home;
   return <section id="work-with-me" className="scroll-mt-16">
     {showOptions && <div className="sticky top-16 z-40 bg-cream px-[clamp(24px,5vw,80px)] py-5 border-y border-charcoal/15">
-      <div className="max-w-[1260px] mx-auto flex flex-wrap items-center gap-x-8 gap-y-4">
+      <div className="max-w-[1400px] mx-auto flex flex-wrap items-center gap-x-8 gap-y-4">
         <p className="text-[13px] font-semibold">Homepage preview</p>
         <nav aria-label="Engagement layout options" className="flex flex-wrap gap-x-7 gap-y-3 text-[13px] font-extrabold uppercase tracking-[0.06em]">
           {options.map(option => <a key={option.id} href={`/home-engagement-options?layout=${option.id}#work-with-me`} aria-current={layout === option.id ? "page" : undefined} className={`py-2 border-b-2 transition-colors ${layout === option.id ? "border-cherish text-charcoal" : "border-transparent text-charcoal/70 hover:text-cherish"}`}>{option.label}</a>)}
@@ -23,8 +23,8 @@ export default function HomeEngagementOptions({ layout, showOptions = true, draf
         <Link href="/#work-with-me" className="text-[13px] underline underline-offset-4 ml-auto">View homepage</Link>
       </div>
     </div>}
-    <div className="bg-cherish py-16 max-[700px]:py-12 px-[clamp(24px,5vw,80px)]">
-      <div className="max-w-[1260px] mx-auto">
+    <div className="bg-cherish py-16 max-[700px]:py-12">
+      <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         <header className="mb-9"><div>
           {content.eyebrow && <p className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cream/80 mb-4">{content.eyebrow}</p>}
           <h2 className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase leading-none text-cream">{content.heading}</h2>

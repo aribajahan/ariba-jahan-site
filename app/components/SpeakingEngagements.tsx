@@ -14,9 +14,9 @@ export default function SpeakingEngagements() {
   return (
     <section
       id="logos"
-      className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)] border-t border-cream/[0.08]"
+      className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 border-t border-cream/[0.08]"
     >
-      <div className="reveal max-w-[1400px] mx-auto">
+      <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         {speakingContent.engagements.eyebrow && (
           <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[14px]">
             {speakingContent.engagements.eyebrow}

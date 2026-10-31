@@ -4,8 +4,9 @@ export default function Positioning() {
   const { positioning } = homeContent;
 
   return (
-    <section id="positioning" className="bg-cream pt-14 px-[clamp(24px,5vw,80px)] pb-14">
-      <div className="reveal max-w-[1100px] mx-auto flex flex-col gap-6">
+    <section id="positioning" className="bg-cream pt-14 pb-14">
+      <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
+        <div className="max-w-[1100px] flex flex-col gap-6">
         {positioning.paragraphs.map((p, i) => (
           <p
             key={i}
@@ -14,6 +15,7 @@ export default function Positioning() {
             {p}
           </p>
         ))}
+        </div>
       </div>
     </section>
   );

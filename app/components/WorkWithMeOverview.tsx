@@ -47,7 +47,7 @@ export default function WorkWithMeOverview() {
         </div>
       </section>
 
-      <div className="max-w-[1380px] mx-auto px-[4%] pb-4">
+      <div className="max-w-[1400px] mx-auto px-[4%] pb-4">
         {content.offers.map((offer, index) => {
           const card = cards.offers.find(card => card.id === offer.id)!;
           const isAdvisory = offer.id === "strategy-sessions";

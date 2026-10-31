@@ -25,7 +25,7 @@ export default function Hero() {
             "linear-gradient(to top, rgba(15,10,10,0.85) 0%, rgba(15,10,10,0.35) 45%, rgba(15,10,10,0.05) 75%)",
         }}
       />
-      <div className="relative z-[2] max-w-[1200px] mx-auto w-full px-[clamp(24px,5vw,80px)] pb-16 pt-[210px] pointer-events-none max-[700px]:pt-[160px] max-[700px]:px-6">
+      <div className="relative z-[2] max-w-[1400px] mx-auto w-full px-[clamp(24px,5vw,80px)] pb-16 pt-[210px] pointer-events-none max-[700px]:pt-[160px] max-[700px]:px-6">
         {/* The wordmark is the page's h1 — the alt text carries the name into
             the outline, so the heading is present without a second visible one. */}
         <h1>

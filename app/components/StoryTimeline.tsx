@@ -160,7 +160,7 @@ export default function StoryTimeline() {
         </h2>
       </div>
 
-      <div className="max-w-[1280px] mx-auto bg-cream p-10 max-[1024px]:p-6 max-[700px]:p-0 relative">
+      <div className="max-w-[1400px] mx-auto bg-cream p-10 max-[1024px]:p-6 max-[700px]:p-0 relative">
         <div className="hidden min-[701px]:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-charcoal/[0.15] -translate-x-1/2" />
 
         {storyChapters.map((chapter) => (

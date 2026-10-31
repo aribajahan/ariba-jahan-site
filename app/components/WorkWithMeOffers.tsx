@@ -31,9 +31,9 @@ export default function WorkWithMeOffers() {
       {/* Ambition Sprint */}
       <section
         id="ambition-sprint"
-        className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9 px-[clamp(24px,5vw,80px)]"
+        className="bg-cherish pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-20 max-[700px]:pb-9"
       >
-        <div className="reveal max-w-[1400px] mx-auto">
+        <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-3">
             {cxSprintContent.heading}
           </h2>
@@ -169,9 +169,9 @@ export default function WorkWithMeOffers() {
       {/* 1:1 Strategy Sessions */}
       <section
         id="strategy-sessions"
-        className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24 px-[clamp(24px,5vw,80px)]"
+        className="bg-charcoal pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-[120px] max-[700px]:pb-20 max-[1024px]:pb-24"
       >
-        <div className="max-w-[1400px] mx-auto">
+        <div className="max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
           <h2 className="uppercase font-display text-[48px] max-[700px]:text-[32px] font-black tracking-[-0.01em] leading-[1.02] text-cream mb-3">
             {strategySessionsContent.heading}
           </h2>

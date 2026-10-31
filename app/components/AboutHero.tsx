@@ -15,7 +15,7 @@ export default function AboutHero() {
           style={{ objectFit: "cover" }}
           className="absolute inset-0 object-[center_top] max-[1024px]:object-[65%_top]"
         />
-        <div className="relative z-[2] max-w-[1300px] mx-auto h-full px-[clamp(24px,5vw,80px)] pt-[170px] pb-20 flex flex-col justify-center pointer-events-none">
+        <div className="relative z-[2] max-w-[1400px] mx-auto h-full px-[clamp(24px,5vw,80px)] pt-[170px] pb-20 flex flex-col justify-center pointer-events-none">
           {aboutHero.eyebrow && (
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-[18px]">
               {aboutHero.eyebrow}

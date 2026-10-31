@@ -26,8 +26,8 @@ export default function ProblemFraming() {
   const bodyRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   return (
-    <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14 px-[clamp(24px,5vw,80px)]">
-      <div className="reveal max-w-[1400px] mx-auto">
+    <section className="bg-cream pt-[120px] max-[700px]:pt-[70px] max-[1024px]:pt-24 pb-14">
+      <div className="reveal max-w-[1400px] mx-auto px-[clamp(24px,5vw,80px)]">
         {problemFraming.eyebrow && (
           <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-cherish mb-[14px]">
             {problemFraming.eyebrow}
