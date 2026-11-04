@@ -7,8 +7,10 @@ import homeContent from "../../content/pages/home.json";
 const CARD_WIDTH = 540;
 const GAP = 24;
 // Lauren Lavalle's quote (the shortest) is the reference length mobile cards
-// truncate to; anything longer gets a "Read more" toggle on mobile only.
+// truncate to; longer quotes get a "Read more" toggle on mobile. Full-length
+// recommendations also collapse on desktop so one card does not set a tall row.
 const MOBILE_TRUNCATE_AT = 260;
+const FULL_RECOMMENDATION_AT = 1000;
 
 const categoryStyles: Record<string, { bg: string; text: string; sub: string; border?: string }> = {
   LEADERSHIP: { bg: "var(--color-cream)", text: "var(--charcoal)", sub: "rgba(45,45,45,0.5)", border: "2px solid var(--charcoal)" },
@@ -65,6 +67,7 @@ export default function Testimonials() {
             const style = categoryStyles[t.category];
             const isExpanded = !!expanded[i];
             const needsTruncation = t.quote.length > MOBILE_TRUNCATE_AT;
+            const isFullRecommendation = t.quote.length > FULL_RECOMMENDATION_AT;
             return (
               <div
                 key={i}
@@ -83,8 +86,8 @@ export default function Testimonials() {
                   {t.category}
                 </div>
                 <p
-                  className={`relative text-lg max-[1024px]:text-body max-[1024px]:leading-[1.45] mb-4 ${
-                    needsTruncation && !isExpanded ? "max-[1024px]:line-clamp-8" : ""
+                  className={`relative whitespace-pre-line text-lg max-[1024px]:text-body max-[1024px]:leading-[1.45] mb-4 ${
+                    needsTruncation && !isExpanded ? isFullRecommendation ? "line-clamp-8" : "max-[1024px]:line-clamp-8" : ""
                   }`}
                   style={{ color: style.text }}
                 >
@@ -94,7 +97,7 @@ export default function Testimonials() {
                   <button
                     type="button"
                     onClick={() => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }))}
-                    className="hidden max-[1024px]:block relative text-xs font-bold underline mb-4 -mt-2 cursor-pointer w-fit"
+                    className={`${isFullRecommendation ? "" : "hidden max-[1024px]:block "}relative text-xs font-bold underline mb-4 -mt-2 cursor-pointer w-fit`}
                     style={{ color: style.text }}
                   >
                     {isExpanded ? "Show less" : "Read more"}
