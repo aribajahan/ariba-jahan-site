@@ -1,6 +1,15 @@
 [
   {
     "category": "LEADERSHIP",
+    "quote": "I had the pleasure of working closely with Ariba at Anomaly, where we partnered on a full reimagining of Weight Watchers’ digital experience across app and web. It was a big brief: rethink the UX end to end, recommend new user flows, and shape additional programming that would give members more reasons to stay engaged. Ariba led the transformation and UX strategy with a rare mix of vision and rigor. She never let the work become a redesign for its own sake. Every recommendation tied back to retention, conversion, and the member’s real needs.\n\nWhat sets Ariba apart is how she connects product, growth, and organizational change. She can map a customer journey, find where value is leaking, and design the product and loyalty strategy that fixes it. She also understands that new experiences only succeed when the organization behind them is set up to adopt them, and she builds that into the plan from day one.\n\nAriba is at her best in the room with senior leaders. I watched her earn the trust of executives by listening carefully, framing complex problems simply, and guiding them toward bold but achievable decisions. She’s a strategic partner, a generous collaborator, and someone who makes everyone around her sharper.\n\nAny organization looking to reimagine its product, grow its customer base, or put AI to work in a meaningful way would be lucky to have her.",
+    "name": "Jade Brent",
+    "role": "Managing Director, newkid®",
+    "showOn": [
+      "home"
+    ]
+  },
+  {
+    "category": "LEADERSHIP",
     "quote": "Ariba's superpower is her curiosity and ability to connect emerging technologies with creative opportunities. She excels at understanding how new technologies can be applied in meaningful, innovative ways to create better customer and business outcomes.",
     "name": "Lauren Lavalle",
     "role": "Chief Client Officer, Anomaly",
