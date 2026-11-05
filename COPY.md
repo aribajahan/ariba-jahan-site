@@ -1000,7 +1000,7 @@ Your place includes a bookable 30-minute session with me. If you added VIP, you�
 
 What are you hoping to build?
 
-Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series or share a buddy referral.
+Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series.
 
 Email Ariba JahanFor payment questions, include the email address you used at checkout.
 
@@ -1200,12 +1200,6 @@ This founding fee is a special rate for our first group.
 
 Optional VIP review · +$350
 
-BRING A BUDDY
-
-$1,000USD / for you
-
-Once your buddy’s paid enrollment at $1,250 is confirmed, you’ll receive a $250 discount code for your place. Already enrolled? You’ll receive a $250 refund instead.
-
 Optional VIP review
 
 +$350 USD
@@ -1250,7 +1244,7 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
@@ -1267,10 +1261,6 @@ Can’t make this round?+
 Send me a note and I’ll keep you posted when the next cohort opens. It goes straight to my inbox. I’d love to hear what you’re hoping to build.
 
 Keep me posted
-
-How does the buddy offer work?+
-
-Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribajahan.com with both of your names and enrollment email addresses so I can confirm their paid enrollment. I’ll then send you a single-use $250 discount code. If you’ve already enrolled, I’ll refund $250 to your original payment method. The discount applies to your workshop fee; the optional VIP review remains $350.
 
 Will I own my website?+
 
