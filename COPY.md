@@ -1016,7 +1016,7 @@ Skip to content
 
 AARIBA JAHANBUILD WITH ME
 
-What you buildThe sessionsThe setup
+What you buildThe sessionsThe tools
 
 FOR SOLOPRENEURS AND PROFESSIONALS
 
@@ -1170,13 +1170,25 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 Make time to build between sessions. I’ll guide your preparation with a checklist, examples, and inspiration. You’ll use December to gather content and develop your direction, then work on your site between the January sessions. Bring your progress and questions back so we can keep moving it forward together.
 
-I’ll guide you through the setup
+The tools
 
-You’ll learn by building your own site, with me walking you through each step. I’ll explain what you need, help you get set up, and show you how to direct the AI and check its work. You can come in without having used any of these tools.
+I’ll guide you through the setup and show you how to use these tools as we build. You’ll learn what each one does by working on your own site.
 
-What will we use?+
+DesignClaude Design
 
-We’ll use Claude to explore your design, then Claude Code or Codex to build with files on your computer. I’ll guide you through saving your progress in GitHub and publishing your site with Vercel. You’ll understand how to make changes and get them live.
+Explore visual directions and develop your brand book.
+
+BuildClaude Code or Codex
+
+Work with an AI coding agent on files on your computer.
+
+WebsiteNext.js + React
+
+Build the pages and components that make up your site.
+
+PublishGitHub + Vercel
+
+Keep a history of changes and publish on your own domain.
 
 Build with me.
 
