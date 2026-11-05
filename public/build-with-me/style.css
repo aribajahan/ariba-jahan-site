@@ -129,3 +129,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Guided setup first; the tool names are available on request. */
 .guided-setup .section-heading{margin-bottom:28px}.setup-details{max-width:760px;margin-left:auto;border-top:1px solid var(--line)}.setup-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;padding:20px 0;font-size:18px;font-weight:600}.setup-details summary::-webkit-details-marker{display:none}.setup-details summary span{font-weight:400;font-size:23px}.setup-details[open] summary span{transform:rotate(45deg)}.setup-details p{font-size:17px;line-height:1.65;margin:0;padding:0 0 20px}@media(max-width:720px){.guided-setup .section-heading{margin-bottom:22px}.setup-details{max-width:none}.setup-details p{font-size:16px}}
+
+/* One workshop enrollment price; optional individual feedback stays in the FAQ. */
+.price-grid.single-price{display:block;max-width:720px;margin:0 auto;text-align:center}.single-price .price-block>p:last-child{max-width:none}

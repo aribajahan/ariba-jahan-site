@@ -1198,22 +1198,6 @@ $1,250USD / participant
 
 This founding fee is a special rate for our first group.
 
-Optional VIP review · +$350
-
-Optional VIP review
-
-+$350 USD
-
-Add a 60-minute session with Ariba Jahan for bespoke feedback and recommendations. Choose one focus for your session:
-
-Website feedback
-
-Offer productization and strategy
-
-Custom site feature planning
-
-Additional to the 30-minute individual session included in the series.
-
 Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
 
 Before you join
@@ -1261,6 +1245,12 @@ Can’t make this round?+
 Send me a note and I’ll keep you posted when the next cohort opens. It goes straight to my inbox. I’d love to hear what you’re hoping to build.
 
 Keep me posted
+
+Can I book additional individual feedback?+
+
+Yes. You can add a 60-minute review with me for $350. Choose website feedback, offer productization and strategy, or custom site feature planning. Email me if you’d like to add it.
+
+This is additional to the 30-minute individual session included in your enrollment.
 
 Will I own my website?+
 
