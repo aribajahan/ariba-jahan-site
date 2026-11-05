@@ -1294,9 +1294,9 @@ You’ve put a lot into your work. Let’s give it a home you’re proud to shar
 
 Wondering whether this is right for you? Email me and tell me what you have in mind.
 
-What else could you build with AI?
+Put AI to work in your business
 
-Maybe you want to connect your tools, build your own operating system, or work through where AI could make a difference in your business. Bring me what you’re working on. We’ll figure out what’s worth doing and how to get started.
+Have a business challenge or a workflow you’d like to improve with AI? Bring me what you’re working on. We’ll figure out where AI can help and how to get started.
 
 Explore AI advisory
 
