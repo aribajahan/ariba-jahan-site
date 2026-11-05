@@ -1028,6 +1028,8 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
+Founding fee ends November 9 at 5 p.m. EST.
+
 Thursdays · 1 p.m. ETDecember 10 working kickoffJanuary 7 build start60–90 minute sessions
 
 ● ● ●aribajahan.com
@@ -1208,7 +1210,7 @@ FOUNDING FEE
 
 $1,250USD / participant
 
-This founding fee is a special rate for our first group.
+Available until November 9 at 5 p.m. EST. After that, enrollment is [new price].
 
 Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
 
@@ -1240,7 +1242,7 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250 until November 9, 2026 at 5 p.m. EST. After that, enrollment is [new price]. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 

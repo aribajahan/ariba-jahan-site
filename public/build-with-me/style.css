@@ -129,3 +129,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* One workshop enrollment price; optional individual feedback stays in the FAQ. */
 .price-grid.single-price{display:block;max-width:720px;margin:0 auto;text-align:center}.single-price .price-block>p:last-child{max-width:none}
+
+/* Founding-fee cutoff; the next price is pending confirmation in this preview. */
+.hero-price-deadline{font-size:14px;line-height:1.5;margin:12px 0 0;color:var(--ink)}
