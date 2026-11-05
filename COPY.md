@@ -1000,7 +1000,7 @@ Your place includes a bookable 30-minute session with me. If you added VIP, you�
 
 What are you hoping to build?
 
-Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series or share a buddy referral.
+Email me your current website, if you have one, and what you want your next one to do for you. You can also ask questions about the series.
 
 Email Ariba JahanFor payment questions, include the email address you used at checkout.
 
@@ -1028,6 +1028,8 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee
 
+Founding fee ends November 9 at 5 p.m. EST.
+
 Thursdays · 1 p.m. ETDecember 10 working kickoffJanuary 7 build start60–90 minute sessions
 
 ● ● ●aribajahan.com
@@ -1042,17 +1044,17 @@ YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba Jahan. The process is what you’ll learn.
 
-A presence that matches your ambition
+Put your expertise to work
 
-We’ll make your expertise, personality, and the value you bring clear to the people you want to reach.
+Bring your scattered projects and ideas into a system you can use to show what you do, update your website, and prepare your next pitch.
 
 I’m in this with you
 
 I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A website you’re proud to put into the world
+AI skills you can keep building on
 
-We’ll work toward a site that reflects your expertise and is ready to share. You’ll build it with my guidance, develop it between sessions, and learn how to keep it current as your work grows.
+Learn to give AI useful context, direct its work, and judge the results. You’ll practice with local project files, reusable skills, and commands while building your own site.
 
 What you’ll build
 
@@ -1132,7 +1134,7 @@ Bring the website you’ve been meaning to build. I’ll demonstrate each step, 
 
 December 10: our working kickoff. We’ll begin shaping your site and walk through the preparation together. I’ll give you a thorough checklist, inspiration, and guidance on the copy, images, and work samples to pull together. You’ll know what to prepare and how it supports the build.
 
-01Set the foundation+
+01Build your AI workspace+
 
 Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
@@ -1172,7 +1174,7 @@ Make time to build between sessions. I’ll guide your preparation with a checkl
 
 The tools
 
-These are the tools I used to build my site. We’ll work through what each one does and how to use them together, from exploring a design to publishing a change.
+I’ll guide you through the setup and show you how to use these tools as we build. You’ll learn what each one does by working on your own site.
 
 DesignClaude Design
 
@@ -1208,29 +1210,7 @@ FOUNDING FEE
 
 $1,250USD / participant
 
-This founding fee is a special rate for our first group.
-
-Optional VIP review · +$350
-
-BRING A BUDDY
-
-$1,000USD / for you
-
-Once your buddy’s paid enrollment at $1,250 is confirmed, you’ll receive a $250 discount code for your place. Already enrolled? You’ll receive a $250 refund instead.
-
-Optional VIP review
-
-+$350 USD
-
-Add a 60-minute session with Ariba Jahan for bespoke feedback and recommendations. Choose one focus for your session:
-
-Website feedback
-
-Offer productization and strategy
-
-Custom site feature planning
-
-Additional to the 30-minute individual session included in the series.
+Available until November 9 at 5 p.m. EST. After that, enrollment is $1,500.
 
 Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
 
@@ -1262,7 +1242,7 @@ Use your CMS to edit copy, manage your media library, add projects or case studi
 
 When does it run, and what does it cost?+
 
-We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250, with $250 off your place once your buddy’s paid enrollment at $1,250 is confirmed. You’ll receive a discount code, or a $250 refund if you’ve already enrolled. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250 until November 9, 2026 at 5 p.m. EST. After that, enrollment is $1,500. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
@@ -1280,9 +1260,11 @@ Send me a note and I’ll keep you posted when the next cohort opens. It goes st
 
 Keep me posted
 
-How does the buddy offer work?+
+Can I book additional individual feedback?+
 
-Your buddy enrolls at the $1,250 founding fee. Email Ariba Jahan at ariba@aribajahan.com with both of your names and enrollment email addresses so I can confirm their paid enrollment. I’ll then send you a single-use $250 discount code. If you’ve already enrolled, I’ll refund $250 to your original payment method. The discount applies to your workshop fee; the optional VIP review remains $350.
+Yes. You can add a 60-minute review with me for $350. Choose website feedback, offer productization and strategy, or custom site feature planning. Email me if you’d like to add it.
+
+This is additional to the 30-minute individual session included in your enrollment.
 
 Will I own my website?+
 
