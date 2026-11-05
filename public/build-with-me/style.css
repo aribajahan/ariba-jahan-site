@@ -126,3 +126,6 @@ footer.workshop-footer{display:block;min-height:0;background:var(--ink);color:va
 
 /* Keep the two sentences in the revised hero legible as separate thoughts. */
 .hero h1{font-size:clamp(54px,4.7vw,72px)}.hero h1 span{display:block}@media(max-width:720px){.hero h1{font-size:clamp(44px,11.8vw,64px)}}
+
+/* Guided setup first; the tool names are available on request. */
+.guided-setup .section-heading{margin-bottom:28px}.setup-details{max-width:760px;margin-left:auto;border-top:1px solid var(--line)}.setup-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;padding:20px 0;font-size:18px;font-weight:600}.setup-details summary::-webkit-details-marker{display:none}.setup-details summary span{font-weight:400;font-size:23px}.setup-details[open] summary span{transform:rotate(45deg)}.setup-details p{font-size:17px;line-height:1.65;margin:0;padding:0 0 20px}@media(max-width:720px){.guided-setup .section-heading{margin-bottom:22px}.setup-details{max-width:none}.setup-details p{font-size:16px}}
