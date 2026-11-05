@@ -1108,9 +1108,9 @@ Add a case study, replace a photo, update your services, or publish a testimonia
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
-The workspace behind your website
+The operating system behind your website
 
-We’ll organize your projects, testimonials, and reference material in files on your computer, then teach Claude Code or Codex how to work with them. Your positioning, voice, and design decisions will be there to build on each time you return.
+We’ll build the foundation of your own operating system (OS): a workspace on your computer where Claude Code or Codex can work with your projects, testimonials, and reference material. Your positioning, voice, and design decisions will be there to build on each time you return.
 
 Your website is our first project. You’ll also learn how to use that same material for your next case study or pitch, without explaining your work to AI all over again.
 
