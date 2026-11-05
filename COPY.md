@@ -1108,6 +1108,24 @@ Add a case study, replace a photo, update your services, or publish a testimonia
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
+The workspace behind your website
+
+We’ll organize your projects, testimonials, and reference material in files on your computer, then teach Claude Code or Codex how to work with them. Your positioning, voice, and design decisions will be there to build on each time you return.
+
+Your website is our first project. You’ll also learn how to use that same material for your next case study or pitch, without explaining your work to AI all over again.
+
+Project context
+
+Organize your files and write instructions so the AI can refer to your brief, voice, and design choices as you build.
+
+Reusable skills
+
+Package instructions for work you do repeatedly, such as writing a project page in your voice or following your brand book.
+
+Slash commands
+
+Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
+
 The workshop series
 
 Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
@@ -1171,20 +1189,6 @@ Build the pages and components that make up your site.
 PublishGitHub + Vercel
 
 Keep a history of changes and publish on your own domain.
-
-Designing your AI workspace
-
-Project context
-
-Organize your files and write instructions so the AI can refer to your brief, voice, and design choices as you build.
-
-Reusable skills
-
-Package instructions for work you do repeatedly, such as writing a project page in your voice or following your brand book.
-
-Slash commands
-
-Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
 
 Build with me.
 
