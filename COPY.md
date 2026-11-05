@@ -1042,17 +1042,17 @@ YOUR CUSTOM CMSYOUR CONTENT. YOUR CONTROLS.
 
 Built by Ariba Jahan. The process is what you’ll learn.
 
-A presence that matches your ambition
+Put your expertise to work
 
-We’ll make your expertise, personality, and the value you bring clear to the people you want to reach.
+Bring your scattered projects and ideas into a system you can use to show what you do, update your website, and prepare your next pitch.
 
 I’m in this with you
 
 I’m keeping this small so you get my attention, candid feedback, and product and design expertise applied directly to your site.
 
-A website you’re proud to put into the world
+AI skills you can keep building on
 
-We’ll work toward a site that reflects your expertise and is ready to share. You’ll build it with my guidance, develop it between sessions, and learn how to keep it current as your work grows.
+Learn to give AI useful context, direct its work, and judge the results. You’ll practice with local project files, reusable skills, and commands while building your own site.
 
 What you’ll build
 
@@ -1132,7 +1132,7 @@ Bring the website you’ve been meaning to build. I’ll demonstrate each step, 
 
 December 10: our working kickoff. We’ll begin shaping your site and walk through the preparation together. I’ll give you a thorough checklist, inspiration, and guidance on the copy, images, and work samples to pull together. You’ll know what to prepare and how it supports the build.
 
-01Set the foundation+
+01Build your AI workspace+
 
 Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
 
