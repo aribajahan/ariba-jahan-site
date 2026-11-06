@@ -313,6 +313,10 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 **Title** — Anomaly Appoints Ariba Jahan as Head of Transformation, NA
 
+##### 10. WIRED
+
+**Title** — Women are losing ground in tech. What can we do about it?
+
 ### Testimonials Section
 
 **Heading** — What People Say
