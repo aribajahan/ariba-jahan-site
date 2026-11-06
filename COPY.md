@@ -988,11 +988,11 @@ Before we build
 
 Prework before we begin
 
-I’ll email your preparation guide and walk through it with you at our December 10 working kickoff. You’ll get a thorough checklist, inspiration, and guidance on the accounts, copy, images, and work samples to pull together. We’ll use December to prepare for the build.
+I’ll email your preparation guide before the course begins. You’ll get a checklist, inspiration, and guidance on the accounts, copy, images, and work samples to pull together.
 
 Thursdays at 1 p.m. ET
 
-Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027, on Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Working sessions last 60–90 minutes. I’ll share the remaining dates before kickoff and confirm flexible office-hour times with the group.
+Course kicks off in January. Our first session is January 7, 2027, on Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK). Working sessions last 60–90 minutes. I’ll share the remaining dates before we begin and confirm flexible office-hour times with the group.
 
 Your individual time
 
@@ -1028,7 +1028,7 @@ Build with AI. Without the AI slop.
 
 I’m ready to build$1,250 founding fee until November 9, 5 p.m. EST.
 
-December 10 kickoff. Weekly builds from January 7.
+Course kicks off in January.
 
 ● ● ●aribajahan.com
 
@@ -1126,7 +1126,7 @@ The workshop series
 
 Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
 
-December 10: our working kickoff. We’ll begin shaping your site and walk through the preparation together. I’ll give you a thorough checklist, inspiration, and guidance on the copy, images, and work samples to pull together. You’ll know what to prepare and how it supports the build.
+Guided preparation. I’ll give you a checklist, inspiration, and guidance on the copy, images, and work samples to pull together before we begin.
 
 01Build your AI workspace+
 
@@ -1196,7 +1196,7 @@ Now we’ll apply that experience to yours. I’ll work with you on how your sit
 
 Join the founding cohort
 
-Working kickoff December 10, with guided preparation before weekly builds begin January 7. Thursdays at 1 p.m. ET, 60–90 minutes, with flexible office hours.
+Course kicks off in January. Sessions begin January 7, on Thursdays at 1 p.m. ET, for 60–90 minutes, with flexible office hours.
 
 FOUNDING FEE
 
@@ -1222,7 +1222,7 @@ You’ll set up a local AI workspace and create a CMS you can keep updating as y
 
 What do I need to get started?+
 
-No prior experience with these tools is needed. Bring a computer and a paid Claude account, and set aside time between sessions to work on your site. I’ll guide what you need to pull together with a thorough checklist, examples, and inspiration, including the accounts, copy, images, and work samples we’ll use. We’ll walk through the preparation at our December kickoff.
+No prior experience with these tools is needed. Bring a computer and a paid Claude account, and set aside time between sessions to work on your site. I’ll guide what you need to pull together with a thorough checklist, examples, and inspiration, including the accounts, copy, images, and work samples we’ll use. I’ll share the preparation guide before the course begins.
 
 Our goal is to get your website live. Your progress will depend on the content you bring, the work you do between sessions, and the scope of your site. I’ll help you focus on the pages and features you need most and identify anything that needs more time.
 
@@ -1240,7 +1240,7 @@ The founding fee is $1,250 until November 9, 2026 at 5 p.m. EST. After that, enr
 
 How will the schedule work?+
 
-Our working kickoff is December 10, 2026. Weekly building sessions begin January 7, 2027. We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK), for 60–90 minutes. I’ll share the remaining session dates before the kickoff.
+Course kicks off in January. Our first session is January 7, 2027. We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK), for 60–90 minutes. I’ll share the remaining session dates before we begin.
 
 Office hours provide time for questions and site feedback. I may split them into shorter sessions before and during the build, placing the support where the group needs it most. I’ll confirm those times with you.
 
