@@ -277,45 +277,45 @@ I’ve delivered 215+ talks, panels, and workshops at organizations such as the 
 
 #### Items
 
-##### 1. Marketing Brew
+##### 1. WIRED
+
+**Title** — Women are losing ground in tech. What can we do about it?
+
+##### 2. Marketing Brew
 
 **Title** — All Things AI With Ariba Jahan
 
-##### 2. LBB Online
+##### 3. LBB Online
 
 **Title** — The AI Gender Gap in Advertising
 
-##### 3. Cosmopolitan ME
+##### 4. Cosmopolitan ME
 
 **Title** — Staying Sharp in the Age of AI
 
-##### 4. Obama Foundation
+##### 5. Obama Foundation
 
 **Title** — Obama Foundation Leader, USA 2025
 
-##### 5. Cosmopolitan ME
+##### 6. Cosmopolitan ME
 
 **Title** — Digital Safety 101
 
-##### 6. WIN/WIN Podcast
+##### 7. WIN/WIN Podcast
 
 **Title** — Head of Transformation, North America
 
-##### 7. LBB Online
+##### 8. LBB Online
 
 **Title** — Career Chameleons: Strategy & Transformation
 
-##### 8. Campaign US
+##### 9. Campaign US
 
 **Title** — Campaign US Reveals 2025 Inspiring Women
 
-##### 9. AdWeek
+##### 10. AdWeek
 
 **Title** — Anomaly Appoints Ariba Jahan as Head of Transformation, NA
-
-##### 10. WIRED
-
-**Title** — Women are losing ground in tech. What can we do about it?
 
 ### Testimonials Section
 

@@ -252,6 +252,13 @@
     "heading": "Press & Bylines",
     "items": [
       {
+        "outlet": "WIRED",
+        "title": "Women are losing ground in tech. What can we do about it?",
+        "href": "https://www.wired.com/sponsored/story/women-are-losing-ground-in-tech-what-can-we-do-about-it/",
+        "photoSrc": "/assets/press-wired.jpg",
+        "bg": "#2D2D2D"
+      },
+      {
         "outlet": "Marketing Brew",
         "title": "All Things AI With Ariba Jahan",
         "href": "https://www.marketingbrew.com/stories/2025/02/14/all-things-ai-with-ariba-jahan",
@@ -312,13 +319,6 @@
         "title": "Anomaly Appoints Ariba Jahan as Head of Transformation, NA",
         "href": "https://www.adweek.com/agencyspy/anomaly-appoints-ariba-jahan-as-head-of-transformation-na/",
         "photoSrc": "/assets/press-adweek-new.jpg",
-        "bg": "#2D2D2D"
-      },
-      {
-        "outlet": "WIRED",
-        "title": "Women are losing ground in tech. What can we do about it?",
-        "href": "https://www.wired.com/sponsored/story/women-are-losing-ground-in-tech-what-can-we-do-about-it/",
-        "photoSrc": "/assets/press-wired.jpg",
         "bg": "#2D2D2D"
       }
     ]
