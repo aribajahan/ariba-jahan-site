@@ -63,6 +63,7 @@ _Last generated: 2026-11-06_
 
 **Items**
 
+- WIRED
 - Cosmopolitan
 - Adweek
 - LITTLE BLACK BOOK
@@ -605,19 +606,23 @@ If you're building something new, navigating AI, rethinking customer relationshi
 
 #### Featured Items
 
-##### 1. Cosmopolitan - Your Overdue Digital Safety Intervention
+##### Featured Items 1
 
-##### 2. Marketing Brew - All Things AI
+**Label** — WIRED - Women are losing ground in tech. What can we do about it?
 
-##### 3. LBB - Meet the Career Chameleons
+##### 2. Cosmopolitan - Your Overdue Digital Safety Intervention
 
-##### 4. LBB - "Women Don't Need Rescuing"
+##### 3. Marketing Brew - All Things AI
 
-##### 5. Recess Playbook - Contributing Creative
+##### 4. LBB - Meet the Career Chameleons
 
-##### 6. Present Yourself - Contributing Author
+##### 5. LBB - "Women Don't Need Rescuing"
 
-##### 7. Women of the Future Book Vol. 2
+##### 6. Recess Playbook - Contributing Creative
+
+##### 7. Present Yourself - Contributing Author
+
+##### 8. Women of the Future Book Vol. 2
 
 ### Closing C T A
 
