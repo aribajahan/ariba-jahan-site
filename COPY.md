@@ -1026,11 +1026,9 @@ Bring your best work out of old decks, notes, and project folders. We’ll build
 
 Build with AI. Without the AI slop.
 
-I’m ready to build$1,250 founding fee
+I’m ready to build$1,250 founding fee until November 9, 5 p.m. EST.
 
-Founding fee ends November 9 at 5 p.m. EST.
-
-Thursdays · 1 p.m. ETDecember 10 working kickoffJanuary 7 build start60–90 minute sessions
+December 10 kickoff. Weekly builds from January 7.
 
 ● ● ●aribajahan.com
 
