@@ -1272,11 +1272,11 @@ You’ve put a lot into your work. Let’s give it a home you’re proud to shar
 
 Wondering whether this is right for you? Email me and tell me what you have in mind.
 
-Put AI to work in your business
+Want to build your AI skills with one-on-one support?
 
-Have a business challenge or a workflow you’d like to improve with AI? Bring me what you’re working on. We’ll figure out where AI can help and how to get started.
+Work directly with me on what you want to build or do differently with AI. We’ll use your own projects and work through it together.
 
-Explore AI advisory
+Explore one-on-one sessions
 
 ARIBA JAHANA live workshop series for solopreneurs and professionals.
 
