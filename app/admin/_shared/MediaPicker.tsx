@@ -20,6 +20,7 @@ export default function MediaPicker({
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [uploading, setUploading] = useState(false);
+  const [uploadError, setUploadError] = useState("");
 
   useEffect(() => {
     if (!open || items) return;
@@ -43,16 +44,20 @@ export default function MediaPicker({
     const file = e.target.files?.[0];
     if (!file) return;
     setUploading(true);
+    setUploadError("");
     try {
       const data = await uploadImage(file);
-      if (data.ok && data.src) {
-        choose(data.src);
-        // Prepend the new upload to the cached list so reopening this same
-        // picker instance shows it immediately instead of a stale list.
-        setItems((list) =>
-          list ? [{ src: data.src!, alt: "", tags: [], usedOn: [], pages: [], collections: [], collectionKeys: [] }, ...list] : list
-        );
+      if (!data.ok || !data.src) {
+        setUploadError(data.error || "Upload failed.");
+        return;
       }
+      choose(data.src);
+      // Prepend the new upload to the cached list so reopening this same
+      // picker instance shows it immediately instead of a stale list.
+      const uploaded = data.src;
+      setItems((list) =>
+        list ? [{ src: uploaded, alt: "", tags: [], usedOn: [], pages: [], collections: [], collectionKeys: [] }, ...list] : list
+      );
     } finally {
       setUploading(false);
       e.target.value = "";
@@ -107,6 +112,9 @@ export default function MediaPicker({
                 ✕
               </button>
             </div>
+            {uploadError && (
+              <div className="px-5 py-3 bg-[#fdecec] text-[#b33] text-[13px] border-b border-[#eee]">{uploadError}</div>
+            )}
             <div className="p-4 border-b border-[#eee]">
               <input
                 autoFocus

@@ -111,6 +111,7 @@ export default function MediaLibraryEditor({ initialItems }: { initialItems: Med
     setUploading(true);
     try {
       const data = await uploadImage(file);
+      if (!data.ok) window.alert(data.error || "Upload failed.");
       if (data.ok && data.src) {
         setItems((list) => [
           { src: data.src!, alt: "", tags: [], usedOn: [], pages: [], collections: [], collectionKeys: [] },
