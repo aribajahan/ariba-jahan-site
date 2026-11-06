@@ -1106,8 +1106,6 @@ Your share previews: choose the image, title, and description supplied when some
 
 Your site controls: choose which links, calls to action, and page sections you want to manage.
 
-Add a case study, replace a photo, update your services, or publish a testimonial through your own content editor. Work with your AI coding agent to add features or make more of the site editable.
-
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
 Your AI operating system
@@ -1168,7 +1166,7 @@ Bring questions from your preparation, build, or launch. I may split the group o
 
 Bring: your site, the change you want to make, or the thing you’re stuck on.
 
-Make time to build between sessions. I’ll guide your preparation with a checklist, examples, and inspiration. You’ll use December to gather content and develop your direction, then work on your site between the January sessions. Bring your progress and questions back so we can keep moving it forward together.
+Make time to build between sessions. I’ll guide your preparation and help you work through questions as you go.
 
 The tools
 
@@ -1200,13 +1198,13 @@ Now we’ll apply that experience to yours. I’ll work with you on how your sit
 
 Join the founding cohort
 
-This first series is being offered privately, with an intentionally small group. We start December 10 with a working kickoff, followed by guided preparation over December. Weekly building sessions begin January 7, on Thursdays at 1 p.m. ET. Working sessions run 60–90 minutes, with flexible office hours for questions and site feedback.
-
-05 build sessions01 December working kickoff30 minutes one-on-one with Ariba Jahan
+Working kickoff December 10, with guided preparation before weekly builds begin January 7. Thursdays at 1 p.m. ET, 60–90 minutes, with flexible office hours.
 
 FOUNDING FEE
 
 $1,250USD / participant
+
+Includes a 30-minute one-on-one with Ariba Jahan.
 
 Available until November 9 at 5 p.m. EST. After that, enrollment is $1,500.
 
@@ -1238,9 +1236,9 @@ What can I update afterward?+
 
 Use your CMS to edit copy, manage your media library, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
 
-When does it run, and what does it cost?+
+What does it cost?+
 
-We start with a working kickoff on Thursday, December 10, 2026 at 1 p.m. ET. Weekly building sessions begin January 7, 2027, also at 1 p.m. ET. Working sessions last 60–90 minutes, with guided preparation over December and flexible office hours included. The founding fee is $1,250 until November 9, 2026 at 5 p.m. EST. After that, enrollment is $1,500. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
+The founding fee is $1,250 until November 9, 2026 at 5 p.m. EST. After that, enrollment is $1,500. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
