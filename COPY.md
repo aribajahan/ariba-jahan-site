@@ -1173,9 +1173,9 @@ Build with me.
 
 Ariba Jahan
 
-I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. I built my own site with AI.
+I’m a product, AI and experience strategy executive. I’ve built products and AI workflows, led innovation practices, and worked with leadership teams across startups, nonprofits, agencies, and Fortune 500 companies.
 
-I’ll show you how I decided what to put on my homepage and what to make editable. We’ll work through those decisions on your site, and I’ll give you direct feedback as you build.
+I’ve delivered more than 200 talks and workshops. I’m an Obama Foundation Leader and was named one of the Global Top 100 Women of the Future in Emerging Tech.
 
 Join the January cohort
 
