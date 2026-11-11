@@ -121,71 +121,59 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 /* A separate one-to-one invitation after the workshop closing. */
 .advisory-invite{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;background:color-mix(in srgb,var(--pink) 18%,var(--paper));border-radius:24px;padding:88px 48px;margin-bottom:48px}.advisory-invite h2{font-size:40px;letter-spacing:-.5px;max-width:650px}.advisory-invite p{max-width:720px;margin-top:18px;font-size:17px;line-height:1.6}.advisory-invite .button{background:var(--ink);color:var(--paper);border-radius:9px}.advisory-invite .button:hover{background:var(--red)}@media(max-width:720px){.advisory-invite{grid-template-columns:1fr;gap:25px;padding:52px 24px;margin-bottom:32px}.advisory-invite h2{font-size:34px}.advisory-invite p{font-size:16px}.advisory-invite .button{justify-self:start}}
 
+.tools-section h2 {
+  font: 600 clamp(25px, 3vw, 32px)/1.2 var(--body);
+  text-transform: none;
+  margin: 0;
+}
+.tools-section p {
+  font: 400 17px/1.5 var(--body);
+  color: var(--ink);
+}
+.tools-intro,
+.tools-workspace > p {
+  margin: 8px 0 22px;
+  max-width: 64ch;
+}
 .tools-section .tool-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 36px;
+  gap: 20px 32px;
 }
 .tools-section .tool-grid > div,
 .tools-section .tool-grid > div:last-child {
   margin: 0;
-  padding: 20px 24px;
+  padding: 0;
   border: 0;
-  border-radius: 12px;
-  background: var(--paper);
 }
-.tools-section .tool-grid h3 {
-  min-height: 0;
-  margin: 0 0 6px;
-}
-.tools-section .tool-grid h3 span {
-  font: 600 .54em var(--body);
+.tools-section .tool-grid h3,
+.tools-section .workspace-grid h3 {
+  font: 600 17px/1.5 var(--body);
   text-transform: none;
+  min-height: 0;
+  margin: 0 0 4px;
 }
-.tools-section .tool-grid p {
+.tools-section .tool-grid p,
+.tools-section .workspace-grid p {
+  font-size: 17px;
   min-height: 0;
   margin: 0;
 }
 .tools-platforms {
-  margin: 18px 0 0;
-  font-size: 16px;
+  margin: 20px 0 0;
 }
 .tools-workspace {
   border-top: 1px solid var(--line);
-  margin-top: 36px;
-  padding-top: 32px;
-}
-.tools-workspace h2 {
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 1.08;
-}
-.tools-workspace > p {
-  margin: 12px 0 22px;
-  max-width: 700px;
-}
-.tools-workspace .workspace-grid h3 {
-  font: 600 16px var(--body);
-  text-transform: none;
-  margin: 0 0 6px;
-}
-.tools-workspace .workspace-grid p {
-  color: var(--ink);
-  margin: 0;
+  margin-top: 32px;
+  padding-top: 28px;
 }
 @media (max-width: 720px) {
   .tools-section .tool-grid {
     grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .tools-section .tool-grid > div,
-  .tools-section .tool-grid > div:last-child {
-    padding: 16px;
+    gap: 16px;
   }
   .tools-workspace {
-    margin-top: 28px;
+    margin-top: 24px;
     padding-top: 24px;
-  }
-  .tools-workspace > p {
-    font-size: 16px;
   }
 }
 
