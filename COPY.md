@@ -985,7 +985,7 @@ In 60 minutes, we'll get to the heart of the issue, identify what matters most, 
 
 AARIBA JAHANBUILD WITH ME
 
-BUILD WITH ME · FOUNDING SERIES
+BUILD WITH ME · JANUARY COHORT
 
 I’m glad you’re building with me.
 
@@ -1203,7 +1203,7 @@ I’ve led product, innovation, and digital experience work at the Ad Council an
 
 Now we’ll apply that experience to yours. I’ll work with you on how your site communicates your value, give you direct design feedback, and guide you through directing the AI.
 
-Join the founding cohort
+Join the January cohort
 
 Course kicks off in January. Sessions begin January 7, on Thursdays at 1 p.m. ET, for 60–90 minutes, with flexible office hours.
 
@@ -1213,7 +1213,7 @@ $1,500USD / participant
 
 Includes a 30-minute one-on-one with Ariba Jahan.
 
-Join the founding cohortTool subscriptions, domain, and hosting costs are separate.
+Join the January cohortTool subscriptions, domain, and hosting costs are separate.
 
 Before you join
 
