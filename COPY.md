@@ -1031,7 +1031,7 @@ FOR SOLOPRENEURS AND PROFESSIONALS
 
 Your work has grown. Does your website help convert the work you want?
 
-Bring your best work out of old decks, notes, and project folders. We’ll build a website that shows your value, with an AI operating system that organizes your work and helps you keep your site current.
+Bring your best work out of old decks, notes, and project folders. We’ll use Claude Code or Codex to build a website that shows your value and set up an AI operating system to organize your work and keep your site current.
 
 Build with AI. Without the AI slop.
 
