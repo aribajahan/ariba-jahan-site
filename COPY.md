@@ -1137,17 +1137,13 @@ Bring the website you’ve been meaning to build. I’ll demonstrate each step, 
 
 Prework assignment will be shared.
 
-01Build your AI workspace+
+01Set up and explore your site’s purpose+
 
-Set up your local AI workspace: project folders, reference files, and instructions the AI can use across sessions. Decide who the site serves, what they need to understand about your value, and the action you want them to take. Use that to decide which pages you need and the job of each page.
+We’ll set up your project folders and get you into the AI tools. Then we’ll start exploring who you want to reach, what you want your site to do for you, and which work you’ll gather to show what you bring.
 
-You’ll work on: a working project folder, site brief, page map, and content outline.
+02Site purpose and design direction+
 
-02Find your design direction+
-
-Explore references and distinct directions in Claude Design using your own copy. Choose how to express your expertise and personality while keeping the visitor’s next step clear. You’ll learn how to judge and improve what AI builds: typography, spacing, layout, navigation, and how content adapts from desktop to mobile. We’ll work through what helps someone understand your value and know what to do next. Document your design choices in a brand book. Turn recurring design instructions into a reusable skill.
-
-You’ll work on: your chosen design direction and a reusable visual reference.
+I’ll walk you through real sites so we can look at what makes someone understand an offer and take the next step. We’ll use those examples to decide what belongs on your site, how to present your work or package your services, and what design direction fits.
 
 03Build your homepage+
 
