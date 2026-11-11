@@ -1181,6 +1181,8 @@ Spoken at
 
 Featured in
 
+WIRED
+
 Adweek
 
 Campaign US
