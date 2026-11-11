@@ -1133,7 +1133,7 @@ Create shortcuts for repeatable workflows, such as reviewing a page before publi
 
 The workshop series
 
-Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
+I’ll demonstrate each step, then you’ll apply it to your own site.
 
 Prework assignment will be shared.
 
