@@ -1249,10 +1249,6 @@ What can I update afterward?+
 
 Use your CMS to edit copy, manage your media library, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
 
-What does it cost?+
-
-Enrollment is $1,500 USD per participant. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
-
 How will the schedule work?+
 
 Course kicks off in January. Our first session is January 7, 2027. We meet Thursdays at 1 p.m. ET (10 a.m. PT / 6 p.m. UK), for 60–90 minutes. I’ll share the remaining session dates before we begin.
