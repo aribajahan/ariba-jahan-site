@@ -1155,35 +1155,19 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 Make time to build between sessions. I’ll guide your preparation and help you work through questions as you go.
 
+Tools and your AI operating system
+
 Tools we’ll use
 
 I’ll guide you through setup and show you how to use each tool as we build.
 
-Claude Design
-
-Explore design directions and develop your brand book.
-
-Claude Code or Codex
-
-Build and update your site by working with AI on files on your computer.
-
-We’ll use Next.js and React for the site, GitHub to track changes, and Vercel to publish it.
+Claude DesignExplore design directions and develop your brand book.Claude Code or CodexBuild and update your site with AI on files on your computer.Next.js, React, GitHub, and VercelBuild the pages, track changes, and publish on your domain.
 
 The AI operating system we’ll build
 
-Keep your project files, brand book, and instructions together on your computer so AI can use them each time you come back to the work.
+Keep your project files, brand book, and instructions on your computer so AI can use them each time you come back to the work.
 
-Project context
-
-Give AI your brief, voice, and design choices to refer to as you build.
-
-Reusable skills
-
-Save instructions for work you do often, like writing a case study in your voice.
-
-Slash commands
-
-Run a repeatable task with a shortcut, like checking a page before publishing.
+Project contextGive AI your brief, voice, and design choices to refer to as you build.Reusable skillsSave instructions for work you do often, like writing a case study in your voice.Slash commandsUse shortcuts for repeatable tasks, like checking a page before publishing.
 
 Build with me.
 

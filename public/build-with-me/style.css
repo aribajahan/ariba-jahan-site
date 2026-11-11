@@ -122,58 +122,49 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 .advisory-invite{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;background:color-mix(in srgb,var(--pink) 18%,var(--paper));border-radius:24px;padding:88px 48px;margin-bottom:48px}.advisory-invite h2{font-size:40px;letter-spacing:-.5px;max-width:650px}.advisory-invite p{max-width:720px;margin-top:18px;font-size:17px;line-height:1.6}.advisory-invite .button{background:var(--ink);color:var(--paper);border-radius:9px}.advisory-invite .button:hover{background:var(--red)}@media(max-width:720px){.advisory-invite{grid-template-columns:1fr;gap:25px;padding:52px 24px;margin-bottom:32px}.advisory-invite h2{font-size:34px}.advisory-invite p{font-size:16px}.advisory-invite .button{justify-self:start}}
 
 .tools-section h2 {
-  font: 600 clamp(25px, 3vw, 32px)/1.2 var(--body);
-  text-transform: none;
-  margin: 0;
+  font-size: clamp(36px, 4.5vw, 56px);
+  line-height: 1.05;
 }
-.tools-section p {
-  font: 400 17px/1.5 var(--body);
-  color: var(--ink);
-}
-.tools-intro,
-.tools-workspace > p {
-  margin: 8px 0 22px;
-  max-width: 64ch;
-}
-.tools-section .tool-grid {
+.tools-columns {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 32px;
-}
-.tools-section .tool-grid > div,
-.tools-section .tool-grid > div:last-child {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-.tools-section .tool-grid h3,
-.tools-section .workspace-grid h3 {
-  font: 600 17px/1.5 var(--body);
-  text-transform: none;
-  min-height: 0;
-  margin: 0 0 4px;
-}
-.tools-section .tool-grid p,
-.tools-section .workspace-grid p {
+  gap: 32px;
+  margin-top: 28px;
   font-size: 17px;
-  min-height: 0;
+  line-height: 1.5;
+}
+.tools-columns > section {
+  border-left: 1px solid var(--line);
+  padding-left: 32px;
+}
+.tools-columns h3 {
+  font: 600 23px/1.25 var(--body);
+  text-transform: none;
+  margin: 0 0 8px;
+}
+.tools-columns p,
+.tools-columns dl,
+.tools-columns dd {
   margin: 0;
 }
-.tools-platforms {
-  margin: 20px 0 0;
+.tools-columns dl {
+  margin-top: 20px;
 }
-.tools-workspace {
-  border-top: 1px solid var(--line);
-  margin-top: 32px;
-  padding-top: 28px;
+.tools-columns dt {
+  font-weight: 600;
 }
-@media (max-width: 720px) {
-  .tools-section .tool-grid {
+.tools-columns dd + dt {
+  margin-top: 13px;
+}
+@media (max-width: 760px) {
+  .tools-columns {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 24px;
   }
-  .tools-workspace {
-    margin-top: 24px;
-    padding-top: 24px;
+  .tools-columns > section {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 24px 0 0;
   }
 }
 
