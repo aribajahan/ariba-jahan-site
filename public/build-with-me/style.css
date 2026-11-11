@@ -121,8 +121,73 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 /* A separate one-to-one invitation after the workshop closing. */
 .advisory-invite{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;background:color-mix(in srgb,var(--pink) 18%,var(--paper));border-radius:24px;padding:88px 48px;margin-bottom:48px}.advisory-invite h2{font-size:40px;letter-spacing:-.5px;max-width:650px}.advisory-invite p{max-width:720px;margin-top:18px;font-size:17px;line-height:1.6}.advisory-invite .button{background:var(--ink);color:var(--paper);border-radius:9px}.advisory-invite .button:hover{background:var(--red)}@media(max-width:720px){.advisory-invite{grid-template-columns:1fr;gap:25px;padding:52px 24px;margin-bottom:32px}.advisory-invite h2{font-size:34px}.advisory-invite p{font-size:16px}.advisory-invite .button{justify-self:start}}
 
-/* Bring the existing AI workspace explanation beside the workshop outputs. */
-.workspace-section.workspace-outcome{display:block;margin:0 auto;padding:0 0 80px;border:0;background:transparent}.workspace-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start;padding-top:40px;border-top:1px solid var(--line)}.workspace-intro h2{font-size:44px;line-height:1.05;max-width:370px;margin:0}.workspace-intro p{font-size:18px;line-height:1.6;margin:0 0 18px;max-width:660px}.workspace-outcome .workspace-grid{margin-top:24px;gap:36px}.workspace-outcome .workspace-grid h4{font-size:15px;text-transform:none;letter-spacing:0}.workspace-outcome .workspace-grid p{font-size:15px;line-height:1.6;margin:0;color:var(--ink)}@media(max-width:720px){.workspace-section.workspace-outcome{padding-bottom:48px}.workspace-intro{grid-template-columns:1fr;gap:24px;padding-top:28px}.workspace-intro h2{font-size:36px;max-width:340px}.workspace-intro p{font-size:17px}.workspace-outcome .workspace-grid{gap:22px;margin-top:20px}}
+.tools-section .tool-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 36px;
+}
+.tools-section .tool-grid > div,
+.tools-section .tool-grid > div:last-child {
+  margin: 0;
+  padding: 20px 24px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--paper);
+}
+.tools-section .tool-grid h3 {
+  min-height: 0;
+  margin: 0 0 6px;
+}
+.tools-section .tool-grid h3 span {
+  font: 600 .54em var(--body);
+  text-transform: none;
+}
+.tools-section .tool-grid p {
+  min-height: 0;
+  margin: 0;
+}
+.tools-platforms {
+  margin: 18px 0 0;
+  font-size: 16px;
+}
+.tools-workspace {
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+  padding-top: 32px;
+}
+.tools-workspace h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
+}
+.tools-workspace > p {
+  margin: 12px 0 22px;
+  max-width: 700px;
+}
+.tools-workspace .workspace-grid h3 {
+  font: 600 16px var(--body);
+  text-transform: none;
+  margin: 0 0 6px;
+}
+.tools-workspace .workspace-grid p {
+  color: var(--ink);
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .tools-section .tool-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .tools-section .tool-grid > div,
+  .tools-section .tool-grid > div:last-child {
+    padding: 16px;
+  }
+  .tools-workspace {
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+  .tools-workspace > p {
+    font-size: 16px;
+  }
+}
 
 /* Keep the two sentences in the revised hero legible as separate thoughts. */
 .hero h1 {

@@ -1115,22 +1115,6 @@ Your site controls: choose which links, calls to action, and page sections you w
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
-Your AI operating system
-
-Your project files, voice, and design decisions, organized on your computer. You’ll learn to create reusable skills and commands so AI can build on that context when you update your site or develop your next case study or pitch.
-
-Project context
-
-Organize your files and write instructions so the AI can refer to your brief, voice, and design choices as you build.
-
-Reusable skills
-
-Package instructions for work you do repeatedly, such as writing a project page in your voice or following your brand book.
-
-Slash commands
-
-Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
-
 The workshop series
 
 I’ll demonstrate each step, then you’ll apply it to your own site.
@@ -1171,25 +1155,35 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 Make time to build between sessions. I’ll guide your preparation and help you work through questions as you go.
 
-The tools
+Tools we’ll use
 
-I’ll guide you through the setup and show you how to use these tools as we build. You’ll learn what each one does by working on your own site.
+I’ll guide you through setup and show you how to use each tool as we build.
 
-DesignClaude Design
+Claude Design
 
-Explore visual directions and develop your brand book.
+Explore design directions and develop your brand book.
 
-BuildClaude Code or Codex
+Claude Code or Codex
 
-Work with an AI coding agent on files on your computer.
+Build and update your site by working with AI on files on your computer.
 
-WebsiteNext.js + React
+We’ll use Next.js and React for the site, GitHub to track changes, and Vercel to publish it.
 
-Build the pages and components that make up your site.
+The AI operating system we’ll build
 
-PublishGitHub + Vercel
+Keep your project files, brand book, and instructions together on your computer so AI can use them each time you come back to the work.
 
-Keep a history of changes and publish on your own domain.
+Project context
+
+Give AI your brief, voice, and design choices to refer to as you build.
+
+Reusable skills
+
+Save instructions for work you do often, like writing a case study in your voice.
+
+Slash commands
+
+Run a repeatable task with a shortcut, like checking a page before publishing.
 
 Build with me.
 
