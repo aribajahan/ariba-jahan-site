@@ -88,7 +88,7 @@
     "      <div><h3>Tools we’ll use</h3><p>I’ll guide you through setup and show you how to use each tool as we build.</p>",
     "        <dl><dt>Claude Design</dt><dd>Explore design directions and develop your brand book.</dd><dt>Claude Code or Codex</dt><dd>Build and update your site with AI on files on your computer.</dd><dt>Next.js, React, GitHub, and Vercel</dt><dd>Build the pages, track changes, and publish on your domain.</dd></dl>",
     "      </div>",
-    "      <section id=\"workspace\" aria-labelledby=\"workspace-title\"><h3 id=\"workspace-title\">The AI operating system we’ll build</h3><p>Keep your project files, brand book, and instructions on your computer so AI can use them each time you come back to the work.</p>",
+    "      <section id=\"workspace\" aria-labelledby=\"workspace-title\"><h3 id=\"workspace-title\">The AI operating system we’ll build</h3><p>Use the same project notes to update your site or draft your next case study. We’ll set up your files and brand book on your computer so AI can work from them.</p>",
     "        <dl><dt>Project context</dt><dd>Give AI your brief, voice, and design choices to refer to as you build.</dd><dt>Reusable skills</dt><dd>Save instructions for work you do often, like writing a case study in your voice.</dd><dt>Slash commands</dt><dd>Use shortcuts for repeatable tasks, like checking a page before publishing.</dd></dl>",
     "      </section>",
     "    </div>",

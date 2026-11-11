@@ -1165,7 +1165,7 @@ Claude DesignExplore design directions and develop your brand book.Claude Code o
 
 The AI operating system we’ll build
 
-Keep your project files, brand book, and instructions on your computer so AI can use them each time you come back to the work.
+Use the same project notes to update your site or draft your next case study. We’ll set up your files and brand book on your computer so AI can work from them.
 
 Project contextGive AI your brief, voice, and design choices to refer to as you build.Reusable skillsSave instructions for work you do often, like writing a case study in your voice.Slash commandsUse shortcuts for repeatable tasks, like checking a page before publishing.
 
