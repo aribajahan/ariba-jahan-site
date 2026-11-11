@@ -1173,9 +1173,9 @@ Build with me.
 
 Ariba Jahan
 
-I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. I built my own site with AI and documented the decisions behind it.
+I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. I built my own site with AI.
 
-Now we’ll apply that experience to yours. I’ll work with you on how your site communicates your value, give you direct design feedback, and guide you through directing the AI.
+I’ll show you how I decided what to put on my homepage and what to make editable. We’ll work through those decisions on your site, and I’ll give you direct feedback as you build.
 
 Join the January cohort
 
