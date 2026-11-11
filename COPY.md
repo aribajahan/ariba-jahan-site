@@ -1181,6 +1181,8 @@ Spoken at
 
 Featured in
 
+WIRED
+
 Adweek
 
 Campaign US
@@ -1188,6 +1190,8 @@ Campaign US
 Cosmopolitan
 
 Marketing Brew
+
+LBB
 
 “Her ability to humanize AI experiences made the topic accessible and relatable.”
 
