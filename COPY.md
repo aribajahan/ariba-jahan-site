@@ -1177,6 +1177,24 @@ I’m a product, AI and experience strategy executive. I’ve built products and
 
 I’ve delivered more than 200 talks and workshops. I’m an Obama Foundation Leader and was named one of the Global Top 100 Women of the Future in Emerging Tech.
 
+“Her ability to humanize AI experiences made the topic accessible and relatable.”
+
+Michelle Green
+
+VP of Insights & Intelligence, Paramount+
+
+“Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth.”
+
+Greg Kelly
+
+Media Director, Ad Council
+
+“She could sit with potential customers, pull out what they actually needed, and turn it into a product direction.”
+
+Mansoor Basha
+
+CTO, Stagwell Marketing Cloud
+
 Join the January cohort
 
 Course kicks off in January. Sessions begin January 7, on Thursdays at 1 p.m. ET, for 60–90 minutes, with flexible office hours.
