@@ -1135,7 +1135,7 @@ The workshop series
 
 Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
 
-Guided preparation. I’ll give you a checklist, inspiration, and guidance on the copy, images, and work samples to pull together before we begin.
+Prework assignment will be shared.
 
 01Build your AI workspace+
 
