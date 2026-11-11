@@ -68,7 +68,7 @@ export const feedbackForms = {
         id: "could_improve",
         label: "What could I change to make the session more useful?",
         type: "textarea",
-        optionalLabel: "Optional",
+        required: true,
       },
       {
         id: "quote_permission",
