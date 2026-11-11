@@ -112,6 +112,59 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 @media(max-width:1000px){.teacher{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:40px;padding:48px 32px}}
 @media(max-width:720px){.teacher{grid-template-columns:1fr;gap:28px;padding:40px 24px}.teacher-photo{max-width:240px}.teacher-photo img{height:auto;min-height:0;aspect-ratio:1}.teacher-copy{padding:0}}
 
+.teacher {
+  row-gap: 32px;
+}
+.teacher-credentials {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 251, 243, .24);
+}
+.teacher-credential-row {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px 24px;
+}
+.teacher-credential-row h3 {
+  font: 600 15px/1.4 var(--body);
+  text-transform: none;
+  margin: 0;
+}
+.teacher-credential-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.teacher-logos img {
+  display: block;
+  width: 76px;
+  height: 44px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.teacher-press {
+  font-size: 15px;
+}
+@media (max-width: 520px) {
+  .teacher-credential-row {
+    grid-template-columns: 1fr;
+  }
+  .teacher-credential-row ul {
+    column-gap: 16px;
+  }
+  .teacher-logos img {
+    width: 54px;
+    height: 36px;
+  }
+}
+
 .teacher-testimonials {
   grid-column: 1 / -1;
   display: grid;

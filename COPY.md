@@ -1177,6 +1177,18 @@ I’m a product, AI and experience strategy executive. I’ve built products and
 
 I’ve delivered more than 200 talks and workshops. I’m an Obama Foundation Leader and was named one of the Global Top 100 Women of the Future in Emerging Tech.
 
+Spoken at
+
+Featured in
+
+Adweek
+
+Campaign US
+
+Cosmopolitan
+
+Marketing Brew
+
 “Her ability to humanize AI experiences made the topic accessible and relatable.”
 
 Michelle Green
