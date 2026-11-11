@@ -1225,10 +1225,6 @@ Join the January cohortTool subscriptions, domain, and hosting costs are separat
 
 Before you join
 
-Who is this for?+
-
-For solopreneurs and professionals who want a digital presence that reflects their expertise and ambition—whether you’re growing a business, exploring your next role, or making room for what comes next.
-
 How is this different from other courses?+
 
 We’re not just vibing. We’re using strategy and design judgment. We’ll build with AI while making deliberate choices about your brand, how your site communicates your value, and the experience people have using it. I’ll help you evaluate what’s working and guide what needs to change.
@@ -1244,14 +1240,6 @@ Our goal is to get your website live. Your progress will depend on the content y
 We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.
 
 Tool subscriptions, your domain, and hosting are separate from the workshop fee; I’ll make those requirements and costs clear before enrollment.
-
-What can I update afterward?+
-
-Use your CMS to edit copy, manage your media library, add projects or case studies, manage testimonials, and update SEO settings. Connect your own Google Analytics account to understand visits to your site. For layout changes or new features, work with your AI coding agent, check the result, and publish the change.
-
-What does it cost?+
-
-Enrollment is $1,500 USD per participant. Tool subscriptions, hosting, and your domain may carry separate costs; those requirements will be made clear before enrollment.
 
 How will the schedule work?+
 
