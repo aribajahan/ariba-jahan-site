@@ -1031,7 +1031,7 @@ FOR SOLOPRENEURS AND PROFESSIONALS
 
 Your work has grown. Does your website help convert the work you want?
 
-Bring your best work out of old decks, notes, and project folders. We’ll build a website that shows your value, with an AI operating system that organizes your work and helps you keep your site current.
+Bring your best work out of old decks, notes, and project folders. We’ll use Claude Code or Codex to build a website that shows your value and set up an AI operating system to organize your work and keep your site current.
 
 Build with AI. Without the AI slop.
 
@@ -1115,25 +1115,9 @@ Your site controls: choose which links, calls to action, and page sections you w
 
 Ariba Jahan’s CMS. You’ll build a simpler version around your own content.
 
-Your AI operating system
-
-Your project files, voice, and design decisions, organized on your computer. You’ll learn to create reusable skills and commands so AI can build on that context when you update your site or develop your next case study or pitch.
-
-Project context
-
-Organize your files and write instructions so the AI can refer to your brief, voice, and design choices as you build.
-
-Reusable skills
-
-Package instructions for work you do repeatedly, such as writing a project page in your voice or following your brand book.
-
-Slash commands
-
-Create shortcuts for repeatable workflows, such as reviewing a page before publishing. Use and refine them on your own project.
-
 The workshop series
 
-Bring the website you’ve been meaning to build. I’ll demonstrate each step, give you direct feedback, and help you work through the decisions along the way. I’m keeping the group intentionally small so we can spend time on your own site.
+I’ll demonstrate each step, then you’ll apply it to your own site.
 
 Prework assignment will be shared.
 
@@ -1171,33 +1155,57 @@ Bring: your site, the change you want to make, or the thing you’re stuck on.
 
 Make time to build between sessions. I’ll guide your preparation and help you work through questions as you go.
 
-The tools
+Tools and your AI operating system
 
-I’ll guide you through the setup and show you how to use these tools as we build. You’ll learn what each one does by working on your own site.
+Tools we’ll use
 
-DesignClaude Design
+I’ll guide you through setup and show you how to use each tool as we build.
 
-Explore visual directions and develop your brand book.
+Claude DesignExplore design directions and develop your brand book.Claude Code or CodexBuild and update your site with AI on files on your computer.Next.js, React, GitHub, and VercelBuild the pages, track changes, and publish on your domain.
 
-BuildClaude Code or Codex
+The AI operating system we’ll build
 
-Work with an AI coding agent on files on your computer.
+Use the same project notes to update your site or draft your next case study. We’ll set up your files and brand book on your computer so AI can work from them.
 
-WebsiteNext.js + React
-
-Build the pages and components that make up your site.
-
-PublishGitHub + Vercel
-
-Keep a history of changes and publish on your own domain.
+Project contextGive AI your brief, voice, and design choices to refer to as you build.Reusable skillsSave instructions for work you do often, like writing a case study in your voice.Slash commandsUse shortcuts for repeatable tasks, like checking a page before publishing.
 
 Build with me.
 
 Ariba Jahan
 
-I’ve led product, innovation, and digital experience work at the Ad Council and Anomaly. I built my own site with AI and documented the decisions behind it.
+I’m a product, AI and experience strategy executive. I’ve built products and AI workflows, led innovation practices, and worked with leadership teams across startups, nonprofits, agencies, and Fortune 500 companies.
 
-Now we’ll apply that experience to yours. I’ll work with you on how your site communicates your value, give you direct design feedback, and guide you through directing the AI.
+I’ve delivered more than 200 talks and workshops. I’m an Obama Foundation Leader and was named one of the Global Top 100 Women of the Future in Emerging Tech.
+
+Spoken at
+
+Featured in
+
+Adweek
+
+Campaign US
+
+Cosmopolitan
+
+Marketing Brew
+
+“Her ability to humanize AI experiences made the topic accessible and relatable.”
+
+Michelle Green
+
+VP of Insights & Intelligence, Paramount+
+
+“Her ability to facilitate workshops and design strategic solutions transformed our approach to innovation and growth.”
+
+Greg Kelly
+
+Media Director, Ad Council
+
+“She could sit with potential customers, pull out what they actually needed, and turn it into a product direction.”
+
+Mansoor Basha
+
+CTO, Stagwell Marketing Cloud
 
 Join the January cohort
 
