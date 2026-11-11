@@ -46,5 +46,11 @@
     "slug": "/home-engagement-options",
     "availability": "password",
     "showFooter": true
+  },
+  "ai-advisory-feedback": {
+    "navLabel": "AI advisory feedback",
+    "slug": "/feedback/ai-advisory",
+    "availability": "unlisted",
+    "showFooter": false
   }
 }
