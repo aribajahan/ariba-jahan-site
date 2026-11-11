@@ -59,6 +59,10 @@ export default function FeedbackForm({ config }: { config: FeedbackFormConfig })
         className="absolute -left-[9999px] h-px w-px opacity-0"
       />
 
+      <p className="pt-5 text-right text-[12px] text-charcoal/55 md:col-span-2" aria-hidden="true">
+        <span className="font-bold text-cherish">*</span> Required
+      </p>
+
       {config.fields.map((field, index) => (
         <div
           key={field.id}
@@ -75,6 +79,11 @@ export default function FeedbackForm({ config }: { config: FeedbackFormConfig })
             </span>
             <span>
               {field.label}
+              {field.required && (
+                <span className="ml-1 font-bold text-cherish" aria-hidden="true">
+                  *
+                </span>
+              )}
               {!field.required && field.optionalLabel && (
                 <span className="ml-2 whitespace-nowrap text-[13px] font-normal text-charcoal/45">
                   {field.optionalLabel}
