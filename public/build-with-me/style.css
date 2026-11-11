@@ -135,20 +135,24 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 }
 .teacher-credential-row ul {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   align-items: center;
   justify-items: center;
   gap: 8px 16px;
   width: 100%;
-  max-width: 620px;
+  max-width: 740px;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.teacher-logos li {
+  width: 100%;
+}
 .teacher-logos img {
   display: block;
-  width: 76px;
+  width: min(76px, 100%);
+  margin-inline: auto;
   height: 44px;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -156,7 +160,7 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 .teacher-press {
   font-size: 15px;
 }
-@media (max-width: 520px) {
+@media (max-width: 640px) {
   .teacher-credential-row {
     grid-template-columns: 1fr;
   }
