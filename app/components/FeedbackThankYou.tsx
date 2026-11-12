@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
+import type { FeedbackFormConfig } from "../data/feedbackForms";
 
 const subscribe = () => () => undefined;
 
-export default function FeedbackThankYou() {
+export default function FeedbackThankYou({ config }: { config: FeedbackFormConfig }) {
   const firstName = useSyncExternalStore(
     subscribe,
-    () => window.sessionStorage.getItem("ai-advisory-feedback-first-name") ?? "",
+    () => window.sessionStorage.getItem(`feedback-${config.id}-first-name`) ?? "",
     () => "",
   );
 
@@ -28,7 +29,7 @@ export default function FeedbackThankYou() {
             {firstName && <span className="block text-cherish">{firstName}.</span>}
           </h1>
           <p className="mt-8 max-w-[700px] text-[18px] leading-[1.6] text-charcoal/72 sm:mt-10 sm:text-[21px]">
-            I appreciate you taking the time to share this. I’ll read your feedback closely and use it to make future AI advisory sessions better.
+            {config.thankYouMessage}
           </p>
         </section>
 

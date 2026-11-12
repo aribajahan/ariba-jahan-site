@@ -35,8 +35,8 @@ export default function FeedbackForm({ config }: { config: FeedbackFormConfig })
       const result = await response.json().catch(() => ({}));
       if (!response.ok || result.ok !== true) throw new Error("Submission failed");
       const firstName = responses.name.split(/\s+/)[0];
-      window.sessionStorage.setItem("ai-advisory-feedback-first-name", firstName);
-      router.push("/feedback/ai-advisory/thank-you");
+      window.sessionStorage.setItem(`feedback-${config.id}-first-name`, firstName);
+      router.push(`/feedback/${config.id}/thank-you`);
     } catch {
       setSubmitError("Something went wrong. Please try again or email me at ariba@aribajahan.com.");
     } finally {

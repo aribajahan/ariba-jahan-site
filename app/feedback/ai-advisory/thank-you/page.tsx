@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import FeedbackThankYou from "../../../components/FeedbackThankYou";
+import { feedbackForms } from "../../../data/feedbackForms";
+
+const form = feedbackForms["ai-advisory"];
 
 export const metadata: Metadata = {
   title: "Thank you",
@@ -8,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function AiAdvisoryFeedbackThankYouPage() {
-  return <FeedbackThankYou />;
+  return <FeedbackThankYou config={form} />;
 }

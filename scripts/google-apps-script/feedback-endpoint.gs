@@ -15,6 +15,34 @@ const FORM_DEFINITIONS = {
       payload.responses.attribution || "",
     ],
   },
+  "build-with-me": {
+    sheetName: "Build With Me",
+    row: (payload) => [
+      payload.submittedAt,
+      payload.formId,
+      payload.responses.name || "",
+      payload.responses.email || "",
+      payload.responses.overall_usefulness || "",
+      payload.responses.what_built || "",
+      payload.responses.new_ai_capability || "",
+      payload.responses.describe_experience || "",
+      payload.responses.could_improve || "",
+      payload.responses.quote_permission || "",
+    ],
+  },
+  "reading-room": {
+    sheetName: "Reading Room",
+    row: (payload) => [
+      payload.submittedAt,
+      payload.formId,
+      payload.responses.name || "",
+      payload.responses.overall_usefulness || "",
+      payload.responses.leaving_with || "",
+      payload.responses.describe_experience || "",
+      payload.responses.could_improve || "",
+      payload.responses.quote_permission || "",
+    ],
+  },
 };
 
 function jsonResponse(payload) {
