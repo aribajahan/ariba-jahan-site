@@ -22,7 +22,7 @@ export const feedbackForms = {
     id: "ai-advisory",
     title: "AI advisory feedback",
     introduction:
-      "Hi, and thank you for trusting me with your work and taking the time to share your feedback. I would love to know what was useful, what changed in how you’re thinking about the issue we worked through, and what else would be helpful. Every session is informed by the feedback from the one before, so your feedback matters. Filling out the form takes less than 5 minutes.",
+      "Hi, and thank you for trusting me with your work and taking the time to share your feedback. I’d love to know what was useful, what changed in how you’re thinking about the issue we worked through, and what would have made the session more helpful.\n\nI use what I learn from every session to improve the next one, so your perspective matters. The form takes less than 5 minutes.",
     submitLabel: "Send feedback",
     fields: [
       {

@@ -28,7 +28,7 @@ export default function AiAdvisoryFeedbackPage() {
               <span className="block">AI Advisory</span>
               <span className="block text-cherish">Feedback</span>
             </h1>
-            <p className="mt-7 max-w-[610px] text-[17px] leading-[1.6] text-cream/75 sm:text-[20px]">
+            <p className="mt-7 max-w-[610px] whitespace-pre-line text-[17px] leading-[1.6] text-cream/75 sm:text-[20px]">
               {form.introduction}
             </p>
           </div>
