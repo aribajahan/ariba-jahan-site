@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import { navLinks } from "../data/home";
+import { navLinks, type NavLink } from "../data/home";
 import navVisibility from "../../content/nav-visibility.json";
 
 // Maps a nav link's href to its page-settings key, so a page's "Show in
@@ -18,6 +18,10 @@ function isNavLinkVisible(href: string): boolean {
   const pageKey = HREF_TO_PAGE_KEY[href];
   if (!pageKey) return true;
   return navVisibility[pageKey] !== false;
+}
+
+function visibleChildren(link: NavLink): NavLink[] {
+  return (link.children ?? []).filter((child) => isNavLinkVisible(child.href));
 }
 
 // NOTE: the announcement-bar feature was removed when the nav became a
@@ -199,17 +203,48 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
           style={groupStyle}
         >
           {visibleNavLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener" : undefined}
-              aria-label={link.label}
-              className={`ink-link font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap ${textColor}`}
-              style={linkStyle}
-            >
-              <InkLabel text={link.label} />
-            </a>
+            visibleChildren(link).length > 0 ? (
+              <div key={link.label} className="relative group/nav">
+                <a
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener" : undefined}
+                  aria-label={link.label}
+                  aria-haspopup="true"
+                  className={`ink-link font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap ${textColor}`}
+                  style={linkStyle}
+                >
+                  <InkLabel text={link.label} />
+                </a>
+                <div className="invisible opacity-0 translate-y-1 group-hover/nav:visible group-hover/nav:opacity-100 group-hover/nav:translate-y-0 group-focus-within/nav:visible group-focus-within/nav:opacity-100 group-focus-within/nav:translate-y-0 absolute left-1/2 top-full z-10 w-max min-w-[180px] -translate-x-1/2 pt-3 transition-[opacity,transform,visibility] duration-150">
+                  <div className="bg-cream text-charcoal p-2 shadow-[0_10px_24px_rgba(0,0,0,0.16)]">
+                    {visibleChildren(link).map((child) => (
+                      <a
+                        key={child.label}
+                        href={child.href}
+                        target={child.external ? "_blank" : undefined}
+                        rel={child.external ? "noopener" : undefined}
+                        className="block px-3 py-2 font-display font-extrabold text-[13px] tracking-[0.1em] uppercase whitespace-nowrap hover:bg-charcoal/5 focus-visible:outline-2 focus-visible:outline-offset-[-2px]"
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener" : undefined}
+                aria-label={link.label}
+                className={`ink-link font-display font-extrabold text-[16px] tracking-[0.11em] uppercase whitespace-nowrap ${textColor}`}
+                style={linkStyle}
+              >
+                <InkLabel text={link.label} />
+              </a>
+            )
           ))}
           <a
             href={contactHref}
@@ -261,16 +296,29 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
         </div>
         <nav className="flex flex-col justify-center flex-1 gap-1">
           {visibleNavLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener" : undefined}
-              onClick={() => setOpen(false)}
-              className="font-display font-black text-[clamp(38px,12vw,64px)] leading-[1.04] tracking-[-0.02em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
-            >
-              {link.label}
-            </a>
+            <div key={link.label}>
+              <a
+                href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener" : undefined}
+                onClick={() => setOpen(false)}
+                className="font-display font-black text-[clamp(38px,12vw,64px)] leading-[1.04] tracking-[-0.02em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
+              >
+                {link.label}
+              </a>
+              {visibleChildren(link).map((child) => (
+                <a
+                  key={child.label}
+                  href={child.href}
+                  target={child.external ? "_blank" : undefined}
+                  rel={child.external ? "noopener" : undefined}
+                  onClick={() => setOpen(false)}
+                  className="block ml-2 mt-2 pl-4 border-l border-cream/40 font-display font-extrabold text-[17px] tracking-[0.08em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
+                >
+                  {child.label}
+                </a>
+              ))}
+            </div>
           ))}
           <a
             href={contactHref}

@@ -3,7 +3,14 @@
     {
       "label": "Work With Me",
       "href": "/work-with-me",
-      "external": false
+      "external": false,
+      "children": [
+        {
+          "label": "Build With Me",
+          "href": "/build-with-me",
+          "external": false
+        }
+      ]
     },
     {
       "label": "Speaking",
