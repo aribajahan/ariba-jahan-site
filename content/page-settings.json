@@ -46,5 +46,23 @@
     "slug": "/home-engagement-options",
     "availability": "password",
     "showFooter": true
+  },
+  "ai-advisory-feedback": {
+    "navLabel": "AI advisory feedback",
+    "slug": "/feedback/ai-advisory",
+    "availability": "unlisted",
+    "showFooter": false
+  },
+  "build-with-me-feedback": {
+    "navLabel": "Build With Me feedback",
+    "slug": "/feedback/build-with-me",
+    "availability": "unlisted",
+    "showFooter": false
+  },
+  "reading-room-feedback": {
+    "navLabel": "Reading Room feedback",
+    "slug": "/feedback/reading-room",
+    "availability": "unlisted",
+    "showFooter": false
   }
 }
