@@ -6,6 +6,21 @@
       "external": false,
       "children": [
         {
+          "label": "Executive AI Advisory",
+          "href": "/work-with-me#strategy-sessions",
+          "external": false
+        },
+        {
+          "label": "Experience-Led Growth",
+          "href": "/work-with-me#ambition-sprint",
+          "external": false
+        },
+        {
+          "label": "AI Adoption & Orchestration",
+          "href": "/work-with-me#ai-adoption",
+          "external": false
+        },
+        {
           "label": "Build With Me",
           "href": "/build-with-me",
           "external": false
