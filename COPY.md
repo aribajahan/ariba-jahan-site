@@ -1035,7 +1035,7 @@ Bring your best work out of old decks, notes, and project folders. We’ll use C
 
 Build with AI. Without the AI slop.
 
-I’m ready to build$1,700
+I’m ready to build$1,500 · January cohort rate
 
 2 spots left.
 
@@ -1217,9 +1217,9 @@ Join the January cohort
 
 Course kicks off in January. Sessions begin January 7, on Thursdays at 1 p.m. ET, for 60–90 minutes, with flexible office hours.
 
-ENROLLMENT
+JANUARY COHORT RATE
 
-$1,700USD / participant
+$1,500USD / participant
 
 Includes a 30-minute one-on-one with Ariba Jahan.
 
