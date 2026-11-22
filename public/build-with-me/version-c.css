@@ -22,6 +22,42 @@
   text-underline-offset: 4px;
 }
 
+.version-c .waitlist-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  max-width: 720px;
+  padding: 8px 0 18px;
+}
+
+.version-c .waitlist-form label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.version-c .waitlist-form input {
+  width: 100%;
+  margin-top: 7px;
+  padding: 12px 13px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.version-c .waitlist-form button {
+  min-height: 47px;
+  cursor: pointer;
+}
+
+.version-c .waitlist-success {
+  color: var(--ink);
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+
 .version-c .outputs {
   margin-top: 72px;
   padding: 72px 56px 82px;
@@ -63,6 +99,11 @@
   .version-c .version-c-waitlist {
     margin-top: 10px;
     font-size: 12px;
+  }
+
+  .version-c .waitlist-form {
+    grid-template-columns: 1fr;
+    align-items: stretch;
   }
 
   .version-c .outputs {

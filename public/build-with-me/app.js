@@ -20,3 +20,15 @@ function setupTabs(selector, attribute, onSelect) {
 setupTabs('[data-output]', 'data-output', value => {
   document.querySelectorAll('.output-panel').forEach(panel => { panel.hidden = panel.id !== 'panel-' + value; });
 });
+
+document.querySelectorAll('.waitlist-form').forEach(form => {
+  form.addEventListener('submit', () => {
+    const submit = form.querySelector('button[type="submit"]');
+    const success = form.parentElement.querySelector('.waitlist-success');
+    if (submit) { submit.disabled = true; submit.textContent = 'Joining…'; }
+    window.setTimeout(() => {
+      form.hidden = true;
+      if (success) success.hidden = false;
+    }, 700);
+  });
+});
