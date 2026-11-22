@@ -1,0 +1,78 @@
+/* Version C review treatment. Scoped so Versions A and B stay unchanged. */
+.version-c .hero-enroll {
+  width: min(100%, 540px);
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.version-c .hero-enroll-meta {
+  background: transparent;
+  padding-left: 8px;
+}
+
+.version-c .version-c-waitlist {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.version-c .version-c-waitlist a {
+  text-underline-offset: 4px;
+}
+
+.version-c .outputs {
+  margin-top: 72px;
+  padding: 72px 56px 82px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.version-c .outputs .section-heading {
+  margin-bottom: 38px;
+}
+
+.version-c .sessions {
+  margin-top: 72px;
+  border-top: 0;
+}
+
+.version-c .teacher {
+  margin-top: 72px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.version-c .teacher-credentials,
+.version-c .teacher-testimonials {
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  .version-c .hero-enroll {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .version-c .hero-enroll-meta {
+    padding-left: 6px;
+  }
+
+  .version-c .version-c-waitlist {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .version-c .outputs {
+    margin-top: 48px;
+    padding: 42px 22px 50px;
+    border-radius: 18px;
+  }
+
+  .version-c .sessions,
+  .version-c .teacher {
+    margin-top: 48px;
+  }
+}

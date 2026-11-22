@@ -207,6 +207,24 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
   }
 }
 
+/* Keep the Ariba section in the page's cream-and-charcoal system. */
+.teacher{background:var(--paper);color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.teacher-copy h2,.teacher-copy>p:not(.eyebrow){color:var(--ink)}
+.teacher-copy>p.teacher-intro{color:var(--red)}
+.teacher-credentials,.teacher-testimonials{border-color:var(--line)}
+.teacher-logos img{filter:brightness(0)}
+
+/* Keep the FAQ available without competing with enrollment. */
+.faq{border-top:0;padding-top:72px}
+.faq>h2{color:var(--muted);font-size:42px}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list summary{font-size:16px;font-weight:500;color:var(--muted)}
+
+/* Quiet the tools section so the work and enrollment carry the page's weight. */
+.tools-section{padding:64px 0;border-top:1px solid var(--line)}
+.tools-section>.wrap{background:transparent;border-radius:0;padding:0}
+.tools-section h2{font-size:clamp(38px,4vw,52px);color:var(--ink)}
+
 /* Finished website examples beneath the desktop/mobile screenshots. */
 .responsive-caption.build-examples{font-size:14px;line-height:1.6;letter-spacing:0;color:var(--ink)}.build-examples strong{font-weight:600}.build-examples a{text-decoration:underline;text-underline-offset:3px}.build-examples a:hover{color:var(--red)}
 
@@ -285,3 +303,10 @@ footer.workshop-footer{display:block;min-height:0;background:var(--paper);color:
 
 /* Founding-fee cutoff; the next price is pending confirmation in this preview. */
 .hero-price-deadline{font-size:14px;line-height:1.6;margin:0;color:var(--ink)}
+
+/* Instructor proof follows the outputs in the same cream-and-charcoal system. */
+.teacher{background:var(--paper);color:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.teacher-copy h2,.teacher-copy>p:not(.eyebrow){color:var(--ink)}
+.teacher-copy>p.teacher-intro{color:var(--red)}
+.teacher-credentials,.teacher-testimonials{border-color:var(--line)}
+.teacher-logos img{filter:brightness(0)}
