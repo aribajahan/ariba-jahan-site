@@ -15,7 +15,7 @@ function gtag(){window.dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${googleAnalyticsId}');
 </script>`;
-  const waitlistForm = `<details id="next-cohort" class="waitlist-details"><summary>Join the waitlist for the next round<span aria-hidden="true">+</span></summary><p>Leave your name and email and I’ll let you know when the next cohort opens. It goes straight to my inbox.</p><form class="waitlist-form" action="https://docs.google.com/forms/d/e/1FAIpQLScdn6CI7w_CuxZqRmDPaUhxOrRoQr0WwEWoU9O9w_TdTp7uoA/formResponse" method="post" target="waitlist-response"><label for="waitlist-name">Name</label><input id="waitlist-name" name="entry.1829639436" type="text" autocomplete="name" required><label for="waitlist-email">Email</label><input id="waitlist-email" name="entry.1074651146" type="email" autocomplete="email" required><button class="button red" type="submit">Join the waitlist</button></form><iframe name="waitlist-response" title="Waitlist submission" hidden></iframe><p class="waitlist-success" aria-live="polite" hidden>You’re on the list. I’ll keep you posted.</p></details>`;
+  const waitlistPanel = `<section id="next-cohort" class="waitlist-panel" aria-labelledby="waitlist-title"><h3 id="waitlist-title">Join the waitlist for the next round</h3><p>Leave your name and email and I’ll let you know when the next cohort opens. It goes straight to my inbox.</p><form class="waitlist-form" action="https://docs.google.com/forms/d/e/1FAIpQLScdn6CI7w_CuxZqRmDPaUhxOrRoQr0WwEWoU9O9w_TdTp7uoA/formResponse" method="post" target="waitlist-response"><div class="waitlist-field"><label for="waitlist-name">Name</label><input id="waitlist-name" name="entry.1829639436" type="text" autocomplete="name" required></div><div class="waitlist-field"><label for="waitlist-email">Email</label><input id="waitlist-email" name="entry.1074651146" type="email" autocomplete="email" required></div><button class="button red" type="submit">Join the waitlist</button></form><iframe name="waitlist-response" title="Waitlist submission" hidden></iframe><p class="waitlist-success" aria-live="polite" hidden>You’re on the list. I’ll keep you posted.</p></section>`;
   const html = workshop.document
     .join("\n")
     .replace("<body>", '<body class="version-c">')
@@ -37,8 +37,9 @@ gtag('config', '${googleAnalyticsId}');
     )
     .replace(
       /<details id="next-cohort">[\s\S]*?<\/details>/,
-      waitlistForm,
+      "",
     )
+    .replace('  <section class="advisory-invite', `${waitlistPanel}\n  <section class="advisory-invite`)
     .replace("</head>", `${canonical}${analytics}</head>`);
   return new Response(html, {
     headers: { "Content-Type": "text/html; charset=utf-8" },

@@ -31,6 +31,29 @@
   padding: 8px 0 18px;
 }
 
+.version-c .waitlist-panel {
+  width: min(1280px, calc(100% - 96px));
+  margin: 0 auto 72px;
+  padding: 48px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.version-c .waitlist-panel h3 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1;
+}
+
+.version-c .waitlist-panel > p {
+  max-width: 680px;
+  color: var(--muted);
+}
+
+.version-c .waitlist-field {
+  display: flex;
+  flex-direction: column;
+}
+
 .version-c .waitlist-form label {
   font-size: 11px;
   font-weight: 600;
@@ -104,6 +127,12 @@
   .version-c .waitlist-form {
     grid-template-columns: 1fr;
     align-items: stretch;
+  }
+
+  .version-c .waitlist-panel {
+    width: calc(100% - 40px);
+    margin-bottom: 48px;
+    padding-top: 32px;
   }
 
   .version-c .outputs {
