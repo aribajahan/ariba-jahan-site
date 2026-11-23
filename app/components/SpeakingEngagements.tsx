@@ -83,7 +83,7 @@ export default function SpeakingEngagements() {
                 alt="Ariba Jahan speaking engagement"
                 fill
                 sizes="50vw"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: src === galleryPhotos[2] ? "center 35%" : "center" }}
               />
             </div>
           ))}
@@ -109,7 +109,7 @@ export default function SpeakingEngagements() {
                 alt="Ariba Jahan speaking engagement"
                 fill
                 sizes="(max-width: 1024px) 33vw, 25vw"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", objectPosition: src === galleryPhotos[2] ? "center 35%" : "center" }}
               />
             </div>
           ))}
