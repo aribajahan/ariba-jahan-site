@@ -81,6 +81,33 @@
   padding-bottom: 18px;
 }
 
+.version-c .pricing {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  padding: 56px 64px 60px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.version-c .pricing .section-heading {
+  margin-bottom: 34px;
+}
+
+.version-c .pricing .section-heading h2 {
+  max-width: 600px;
+}
+
+.version-c .pricing .price-grid {
+  max-width: none;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.version-c .pricing .price-footer {
+  margin-top: 32px;
+}
+
 .version-c .outputs {
   margin-top: 72px;
   padding: 72px 56px 82px;
@@ -133,6 +160,13 @@
     width: calc(100% - 40px);
     margin-bottom: 48px;
     padding-top: 32px;
+  }
+
+  .version-c .pricing {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 36px 22px 40px;
+    border-radius: 18px;
   }
 
   .version-c .outputs {
