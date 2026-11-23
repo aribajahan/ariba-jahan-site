@@ -2,9 +2,9 @@
 .version-c .hero-enroll {
   width: min(100%, 540px);
   padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--surface);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .version-c .hero-enroll-meta {
@@ -28,7 +28,10 @@
   gap: 12px;
   align-items: end;
   max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px 0 18px;
+  text-align: left;
 }
 
 .version-c .waitlist-panel {
@@ -36,6 +39,7 @@
   margin: 0 auto 72px;
   padding: 48px 0 0;
   border-top: 1px solid var(--line);
+  text-align: center;
 }
 
 .version-c .waitlist-panel h3 {
@@ -46,6 +50,8 @@
 
 .version-c .waitlist-panel > p {
   max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--muted);
 }
 
@@ -85,8 +91,30 @@
   margin-top: 72px;
   margin-bottom: 72px;
   padding: 56px 64px 60px;
-  background: var(--pink);
+  background: var(--red);
+  color: var(--paper);
   border-radius: 24px;
+}
+
+.version-c .pricing .price,
+.version-c .pricing .mini-label {
+  color: var(--paper);
+}
+
+.version-c .pricing .section-heading > p,
+.version-c .pricing .price-block > p:last-child,
+.version-c .pricing .price-footer > p {
+  color: rgba(255, 251, 243, 0.86);
+}
+
+.version-c .pricing .enrollment-button {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.version-c .pricing .enrollment-button:hover {
+  background: var(--ink);
+  color: var(--paper);
 }
 
 .version-c .advisory-invite {
@@ -94,6 +122,100 @@
   color: var(--ink);
   margin-bottom: 72px;
 }
+
+.version-c .closing {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.version-c .closing a {
+  color: var(--paper);
+}
+
+.version-c .tools-section {
+  padding: 88px 0;
+  background: var(--surface);
+}
+
+.version-c .tools-section .section-heading {
+  max-width: 100%;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 721px) {
+  .version-c .tools-section .section-heading h2 {
+    white-space: nowrap;
+  }
+}
+
+.version-c .tools-visual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.version-c .tools-visual article {
+  min-height: 210px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+}
+
+.version-c .tools-visual h3 {
+  margin: 28px 0 14px;
+}
+
+.version-c .tools-visual p {
+  max-width: 28ch;
+  color: var(--muted);
+}
+
+.version-c .output-panel-os {
+  align-items: center;
+}
+
+.version-c .os-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.version-c .os-flow article {
+  min-height: 210px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.version-c .os-flow h3 {
+  margin: 20px 0 12px;
+  font-family: var(--display);
+  font-size: 20px;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.version-c .os-flow p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.version-c .os-flow-arrow {
+  align-self: center;
+  color: var(--red);
+  font-size: 28px;
+}
+
+/* Keep the existing heading scale. Only labels share one restrained metadata treatment. */
+.version-c .mini-label,
+.version-c .eyebrow,
+.version-c .device-label,
+.version-c .tool-step { font-family: var(--body); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; line-height: 1.4; text-transform: uppercase; }
 
 .version-c .pricing .section-heading {
   margin-bottom: 34px;
@@ -117,13 +239,21 @@
 .version-c .outputs {
   margin-top: 72px;
   padding: 72px 56px 82px;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 24px;
   background: var(--surface);
 }
 
 .version-c .outputs .section-heading {
   margin-bottom: 38px;
+}
+
+.version-c .output-tabs {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.version-c .output-tabs button {
+  min-width: 0;
 }
 
 .version-c .sessions {
@@ -133,7 +263,7 @@
 
 .version-c .teacher {
   margin-top: 72px;
-  border-top: 1px solid var(--line);
+  border-top: 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -145,7 +275,7 @@
 @media (max-width: 720px) {
   .version-c .hero-enroll {
     width: 100%;
-    padding: 10px;
+    padding: 0;
   }
 
   .version-c .hero-enroll-meta {
@@ -175,6 +305,31 @@
     border-radius: 18px;
   }
 
+  .version-c .tools-section {
+    padding: 56px 0;
+  }
+
+  .version-c .tools-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .version-c .tools-visual article {
+    min-height: 0;
+  }
+
+  .version-c .os-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .version-c .os-flow article {
+    min-height: 0;
+  }
+
+  .version-c .os-flow-arrow {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
   .version-c .advisory-invite {
     margin-bottom: 48px;
   }
@@ -183,6 +338,14 @@
     margin-top: 48px;
     padding: 42px 22px 50px;
     border-radius: 18px;
+  }
+
+  .version-c .output-tabs {
+    overflow-x: auto;
+  }
+
+  .version-c .output-tabs button {
+    min-width: 150px;
   }
 
   .version-c .sessions,

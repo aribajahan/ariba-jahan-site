@@ -28,7 +28,7 @@ gtag('config', '${googleAnalyticsId}');
     )
     .replace(
       '<div class="section-heading"><div><h2>What you’ll build</h2></div></div>',
-      '<div class="section-heading"><div><h2>What you’ll leave with</h2></div></div>',
+      '<div class="section-heading"><div><h2>What we’ll make together</h2></div></div>',
     )
     .replace(
       '</div>\n    </div>\n    <div class="hero-art"',
@@ -39,6 +39,14 @@ gtag('config', '${googleAnalyticsId}');
       'href="https://docs.google.com/forms/d/e/1FAIpQLScdn6CI7w_CuxZqRmDPaUhxOrRoQr0WwEWoU9O9w_TdTp7uoA/viewform?usp=publish-editor"',
     )
     .replace(/<details id="next-cohort">[\s\S]*?<\/details>/, "")
+    .replace(
+      '</details><details><summary>How will the schedule work?',
+      '</details><details><summary>What tools and systems will we use?<span aria-hidden="true">+</span></summary><p>I’ll guide you through Claude, Claude Code or Codex, and the tools we use to build and publish your site. You don’t need to know them in advance.</p><p>We’ll also organize your project files, notes, and reusable instructions so your AI has the context to help you update the site and keep building from the same foundation.</p><p>GitHub, hosting, your domain, and any tool subscriptions are separate from the workshop fee. I’ll make the requirements and costs clear before enrollment.</p></details><details><summary>How will the schedule work?',
+    )
+    .replace(
+      '<p>We’ll set up your local AI workspace together, then work through GitHub, hosting, and connecting your domain. I’ll explain each tool and guide you through the setup. Your site will use Next.js, React, TypeScript, and Tailwind CSS with your AI coding agent.</p><p>Tool subscriptions, your domain, and hosting are separate from the workshop fee; I’ll make those requirements and costs clear before enrollment.</p>',
+      '',
+    )
     .replace('  <section class="closing"', `${waitlistPanel}\n  <section class="closing"`)
     .replace("</head>", `${canonical}${analytics}</head>`);
   return new Response(html, {
