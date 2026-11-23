@@ -8,6 +8,7 @@ import { getPageSettings } from "../lib/pageSettings";
 import Hero from "./components/Hero";
 import NameMarquee from "./components/NameMarquee";
 import Positioning from "./components/Positioning";
+import RecentWork from "./components/RecentWork";
 import WorkWithMe from "./components/WorkWithMe";
 import Unmissables from "./components/Unmissables";
 import ReadingRoom from "./components/ReadingRoom";
@@ -38,6 +39,7 @@ export default async function Home() {
       <Hero />
       <NameMarquee />
       <Positioning />
+      <RecentWork />
       <WorkWithMe />
       <Unmissables />
       <ReadingRoom />

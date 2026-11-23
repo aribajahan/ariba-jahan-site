@@ -106,6 +106,43 @@
       "I build AI-enabled products, experiences, and systems, and work with organizations to develop their own capabilities. That includes connecting tools and information, building workflows, and orchestrating work across people and AI. I’m especially interested in where AI can extend an organization’s expertise and creativity, and the choices that requires about human judgment, ownership, working rhythms, and incentives."
     ]
   },
+  "recentWork": {
+    "heading": "Recent",
+    "intro": "Press, speaking, and the systems I am building now.",
+    "items": [
+      {
+        "type": "On stage",
+        "title": "Women In Innovation Awards",
+        "description": "A recent conversation with WIRED Consulting and leaders working across technology, business, and culture.",
+        "href": "https://womenininnovation.co/awards",
+        "imageSrc": "/uploads/recent-wired-panel-1200.jpg",
+        "external": true
+      },
+      {
+        "type": "Featured in WIRED",
+        "title": "Women are losing ground in tech. What can we do about it?",
+        "description": "A WIRED story on the work required to keep women in technology.",
+        "href": "https://www.wired.com/sponsored/story/women-are-losing-ground-in-tech-what-can-we-do-about-it/",
+        "imageSrc": "/uploads/recent-wired-article.png",
+        "external": true
+      },
+      {
+        "type": "Teaching AI",
+        "title": "Does your website help convert the work you want?",
+        "description": "A behind-the-scenes course on how I built my site, CMS, and brand system with AI.",
+        "href": "/build-with-me",
+        "imageSrc": "/uploads/recent-build-with-me.png"
+      },
+      {
+        "type": "Hosting the Reading Room",
+        "title": "What is expertise when AI does more of the work?",
+        "description": "A facilitated discussion series about AI for strategists, builders, designers, and operators.",
+        "href": "https://thereadingroom.ai/",
+        "imageSrc": "/uploads/recent-reading-room-session.png",
+        "external": true
+      }
+    ]
+  },
   "workWithMeTeaser": {
     "eyebrow": "",
     "heading": "Let's Work Together",

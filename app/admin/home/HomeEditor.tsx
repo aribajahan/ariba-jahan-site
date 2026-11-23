@@ -15,6 +15,7 @@ type MarqueeRow = { label: string; items: string[]; durationSec: number; reverse
 type PressItem = { outlet: string; title: string; href: string; photoSrc: string; bg: string };
 type CommunityPhoto = { photoSrc: string; caption: string; number: number };
 type ClosingLink = { index: string; title: string; cta: string; href: string; external?: boolean };
+type RecentWorkItem = { type: string; title: string; description: string; href: string; imageSrc: string; external?: boolean };
 
 type ReadingRoomContent = {
   enabled: boolean;
@@ -30,6 +31,7 @@ type HomeContent = {
   unmissablesStat: { label: string; before: string; highlight: string; after: string };
   hero: { photoSrc: string; subhead: string; ctas: Cta[] };
   positioning: { paragraphs: string[] };
+  recentWork: { heading: string; intro: string; items: RecentWorkItem[] };
   workWithMeTeaser: { eyebrow: string; heading: string; body: string; offers: Offer[]; proofQuotes?: ProofQuote[] };
   experiments: { eyebrow: string; heading: string };
   credentials: { stats: Stat[] };
@@ -91,6 +93,12 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
   const updateMarqueeRow = (i: number, patch: Partial<MarqueeRow>) => {
     set("nameMarquee", { rows: content.nameMarquee.rows.map((r, idx) => (idx === i ? { ...r, ...patch } : r)) });
   };
+
+  const updateRecentItem = (i: number, patch: Partial<RecentWorkItem>) => {
+    set("recentWork", { items: content.recentWork.items.map((item, idx) => (idx === i ? { ...item, ...patch } : item)) });
+  };
+  const removeRecentItem = (i: number) => set("recentWork", { items: content.recentWork.items.filter((_, idx) => idx !== i) });
+  const addRecentItem = () => set("recentWork", { items: [...content.recentWork.items, { type: "New update", title: "New update", description: "", href: "", imageSrc: "" }] });
 
   const updatePressItem = (i: number, patch: Partial<PressItem>) => {
     set("press", { items: content.press.items.map((p, idx) => (idx === i ? { ...p, ...patch } : p)) });
@@ -178,6 +186,29 @@ export default function HomeEditor({ initialContent }: { initialContent: HomeCon
             className={`${inputCls} resize-y`}
           />
         </Field>
+      </SectionCard>
+
+      <SectionCard title="Recent" defaultExpanded={false}>
+        <Field label="Section label"><input value={content.recentWork.heading} onChange={(e) => set("recentWork", { heading: e.target.value })} className={inputCls} /></Field>
+        <p className="text-xs text-[#777] mb-4">Current press, speaking, teaching, and hosting updates. Each tile links to the destination below.</p>
+        <div className="flex flex-col gap-3 mb-3">
+          {content.recentWork.items.map((item, i) => (
+            <div key={i} className="p-3 bg-[#f7f6f4] rounded-md flex flex-col gap-2">
+              <div className="flex gap-2">
+                <input value={item.type} onChange={(e) => updateRecentItem(i, { type: e.target.value })} placeholder="Label" className="w-1/3 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px]" />
+                <input value={item.title} onChange={(e) => updateRecentItem(i, { title: e.target.value })} placeholder="Title" className="flex-1 border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] font-semibold" />
+              </div>
+              <textarea value={item.description} onChange={(e) => updateRecentItem(i, { description: e.target.value })} placeholder="Description" rows={2} className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] resize-y" />
+              <input value={item.href} onChange={(e) => updateRecentItem(i, { href: e.target.value })} placeholder="Link URL or page path" className="border border-[#ddd] rounded-[5px] px-2 py-[6px] text-[13px] text-[#888]" />
+              <div className="flex gap-2 items-center">
+                <div className="flex-1"><MediaPicker value={item.imageSrc} onChange={(src) => updateRecentItem(i, { imageSrc: src })} placeholder="Image path" /></div>
+                <label className="flex items-center gap-1 text-[11px] text-[#888] whitespace-nowrap"><input type="checkbox" checked={!!item.external} onChange={(e) => updateRecentItem(i, { external: e.target.checked })} />external</label>
+                <button type="button" onClick={() => removeRecentItem(i)} className="text-[#c44] text-[13px]">✕</button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <button type="button" onClick={addRecentItem} className="text-xs text-[#888] border border-dashed border-[#ccc] rounded-md px-3 py-[6px]">+ Add recent item</button>
       </SectionCard>
 
       <SectionCard title="Work With Me Teaser" defaultExpanded={false}>
