@@ -85,8 +85,14 @@
   margin-top: 72px;
   margin-bottom: 72px;
   padding: 56px 64px 60px;
-  background: #fff;
+  background: var(--pink);
   border-radius: 24px;
+}
+
+.version-c .advisory-invite {
+  background: #fff;
+  color: var(--ink);
+  margin-bottom: 72px;
 }
 
 .version-c .pricing .section-heading {
@@ -167,6 +173,10 @@
     margin-bottom: 48px;
     padding: 36px 22px 40px;
     border-radius: 18px;
+  }
+
+  .version-c .advisory-invite {
+    margin-bottom: 48px;
   }
 
   .version-c .outputs {

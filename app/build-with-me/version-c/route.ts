@@ -39,7 +39,7 @@ gtag('config', '${googleAnalyticsId}');
       'href="https://docs.google.com/forms/d/e/1FAIpQLScdn6CI7w_CuxZqRmDPaUhxOrRoQr0WwEWoU9O9w_TdTp7uoA/viewform?usp=publish-editor"',
     )
     .replace(/<details id="next-cohort">[\s\S]*?<\/details>/, "")
-    .replace('  <section class="advisory-invite', `${waitlistPanel}\n  <section class="advisory-invite`)
+    .replace('  <section class="closing"', `${waitlistPanel}\n  <section class="closing"`)
     .replace("</head>", `${canonical}${analytics}</head>`);
   return new Response(html, {
     headers: { "Content-Type": "text/html; charset=utf-8" },

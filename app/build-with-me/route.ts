@@ -39,7 +39,7 @@ gtag('config', '${googleAnalyticsId}');
       /<details id="next-cohort">[\s\S]*?<\/details>/,
       "",
     )
-    .replace('  <section class="advisory-invite', `${waitlistPanel}\n  <section class="advisory-invite`)
+    .replace('  <section class="closing"', `${waitlistPanel}\n  <section class="closing"`)
     .replace("</head>", `${canonical}${analytics}</head>`);
   return new Response(html, {
     headers: { "Content-Type": "text/html; charset=utf-8" },
