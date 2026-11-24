@@ -9,19 +9,19 @@ export default function Speaking() {
   return (
     <section id="speaker" className="bg-cream overflow-hidden">
       <div className="reveal flex flex-wrap min-h-[640px] max-w-[1400px] mx-auto">
-        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-[120px] pb-[72px] max-[1024px]:pt-24 max-[1024px]:pb-11 max-[700px]:pt-[70px] flex flex-col justify-start">
+        <div className="flex-[1_1_420px] px-[clamp(24px,5vw,80px)] pt-[120px] pb-[72px] max-[1024px]:pt-24 max-[1024px]:pb-11 max-[700px]:pt-[120px] flex flex-col justify-start">
           {speakingTeaser.eyebrow && (
             <div className="text-[11px] font-extrabold tracking-[0.22em] uppercase text-cherish mb-5">
               {speakingTeaser.eyebrow}
             </div>
           )}
-          <h2 className="font-display text-[clamp(32px,4vw,52px)] font-black uppercase text-charcoal leading-[0.88] tracking-[-0.02em]">
+          <h2 className="font-display text-[clamp(32px,4vw,52px)] max-[700px]:text-[42px] font-black uppercase text-charcoal leading-[0.88] tracking-[-0.02em]">
             {speakingTeaser.heading}
           </h2>
 
           <div className="hidden max-[1024px]:grid grid-cols-2 gap-[3px] mt-7 mb-2">
-            <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[280px] max-[700px]:h-[220px]">
-              <Image src={photos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 20%" }} />
+            <div className="col-span-2 min-w-0 min-h-0 overflow-hidden relative h-[280px] max-[700px]:h-[360px]">
+              <Image src={photos[0]} alt="Ariba Jahan speaking on stage" fill sizes="100vw" style={{ objectFit: "cover", objectPosition: "center 48%" }} />
             </div>
             <div className="min-w-0 min-h-0 overflow-hidden relative h-[165px] max-[700px]:h-[130px]">
               <Image src={photos[1]} alt="Ariba Jahan speaking on stage" fill sizes="50vw" style={{ objectFit: "cover" }} />
@@ -34,7 +34,7 @@ export default function Speaking() {
           {speakingTeaser.paragraphs.map((p, i) => (
             <p
               key={i}
-              className={`text-body text-charcoal/75 ${i === 0 ? "mt-7 max-[1024px]:mt-2" : ""} ${
+              className={`text-body text-charcoal/75 ${i === 0 ? "mt-7 max-[1024px]:mt-2 max-[700px]:mt-8" : ""} ${
                 i === speakingTeaser.paragraphs.length - 1 ? "mb-9" : "mb-[18px]"
               }`}
             >
