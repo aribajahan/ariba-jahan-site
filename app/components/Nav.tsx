@@ -290,7 +290,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
             type="button"
             onClick={() => setOpen(false)}
             aria-label="Close menu"
-            className="font-display font-extrabold text-[15px] tracking-[0.14em] uppercase transition-colors duration-150 hover:text-cherish"
+            className="font-body font-bold text-[13px] tracking-[0.14em] uppercase transition-colors duration-150 hover:text-cherish"
           >
             Close
           </button>
@@ -303,7 +303,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener" : undefined}
                 onClick={() => setOpen(false)}
-                className="font-display font-black text-[clamp(38px,12vw,64px)] leading-[1.04] tracking-[-0.02em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
+                className="font-body font-bold text-[clamp(28px,8vw,36px)] leading-[1.08] tracking-[-0.01em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
               >
                 {link.label}
               </a>
@@ -314,7 +314,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
                   target={child.external ? "_blank" : undefined}
                   rel={child.external ? "noopener" : undefined}
                   onClick={() => setOpen(false)}
-                  className="block ml-2 mt-2 pl-4 border-l border-cream/40 font-display font-extrabold text-[17px] tracking-[0.08em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
+                  className="block ml-2 mt-2 pl-4 border-l border-cream/40 font-body font-semibold text-[14px] tracking-[0.08em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
                 >
                   {child.label}
                 </a>
@@ -324,7 +324,7 @@ export default function Nav({ contactHref = "/contact" }: { contactHref?: string
           <a
             href={contactHref}
             onClick={() => setOpen(false)}
-            className="font-display font-black text-[clamp(38px,12vw,64px)] leading-[1.04] tracking-[-0.02em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
+            className="font-body font-bold text-[clamp(28px,8vw,36px)] leading-[1.08] tracking-[-0.01em] uppercase transition-colors duration-150 hover:text-cherish active:text-cherish"
           >
             Contact
           </a>
